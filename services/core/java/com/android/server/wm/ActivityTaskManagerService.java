@@ -5648,6 +5648,15 @@ public class ActivityTaskManagerService extends IActivityTaskManager.Stub {
         return createSafeActivityOptionsWithBalAllowed(ActivityOptions.fromBundle(bOptions));
     }
 
+    void registerCompatScaleProvider(@CompatScaleProvider.CompatScaleModeOrderId int id,
+            @NonNull CompatScaleProvider provider) {
+        mCompatModePackages.registerCompatScaleProvider(id, provider);
+    }
+
+    void unregisterCompatScaleProvider(@CompatScaleProvider.CompatScaleModeOrderId int id) {
+        mCompatModePackages.unregisterCompatScaleProvider(id);
+    }
+
     final class H extends Handler {
         static final int REPORT_TIME_TRACKER_MSG = 1;
         static final int END_POWER_MODE_UNKNOWN_VISIBILITY_MSG = 3;

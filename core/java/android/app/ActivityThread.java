@@ -1250,8 +1250,13 @@ public final class ActivityThread extends ClientTransactionHandler
         }
 
         private void updateCompatOverrideScale(CompatibilityInfo info) {
-            CompatibilityInfo.setOverrideInvertedScale(
-                    info.hasOverrideScaling() ? info.applicationInvertedScale : 1f);
+            if (info.hasOverrideScaling()) {
+                CompatibilityInfo.setOverrideInvertedScale(info.applicationInvertedScale,
+                        info.applicationDensityInvertedScale);
+            } else {
+                CompatibilityInfo.setOverrideInvertedScale(/* invertScale */ 1f,
+                        /* densityInvertScale */1f);
+            }
         }
 
         public final void runIsolatedEntryPoint(String entryPoint, String[] entryPointArgs) {
