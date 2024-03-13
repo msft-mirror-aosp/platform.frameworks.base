@@ -161,6 +161,7 @@ import com.android.server.net.watchlist.NetworkWatchlistService;
 import com.android.server.notification.NotificationManagerService;
 import com.android.server.oemlock.OemLockService;
 import com.android.server.om.OverlayManagerService;
+import com.android.server.ondeviceintelligence.OnDeviceIntelligenceManagerService;
 import com.android.server.os.BugreportManagerService;
 import com.android.server.os.DeviceIdentifiersPolicyService;
 import com.android.server.os.NativeTombstoneManagerService;
@@ -1965,6 +1966,7 @@ public final class SystemServer implements Dumpable {
             startSystemCaptionsManagerService(context, t);
             startTextToSpeechManagerService(context, t);
             startWearableSensingService(t);
+            startOnDeviceIntelligenceService(t);
 
             if (deviceHasConfigString(
                     context, R.string.config_defaultAmbientContextDetectionService)) {
@@ -2166,16 +2168,14 @@ public final class SystemServer implements Dumpable {
             }
             t.traceEnd();
 
-            if (mPackageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_SUBSCRIPTION)) {
-                t.traceBegin("StartVcnManagementService");
-                try {
-                    vcnManagement = VcnManagementService.create(context);
-                    ServiceManager.addService(Context.VCN_MANAGEMENT_SERVICE, vcnManagement);
-                } catch (Throwable e) {
-                    reportWtf("starting VCN Management Service", e);
-                }
-                t.traceEnd();
+            t.traceBegin("StartVcnManagementService");
+            try {
+                vcnManagement = VcnManagementService.create(context);
+                ServiceManager.addService(Context.VCN_MANAGEMENT_SERVICE, vcnManagement);
+            } catch (Throwable e) {
+                reportWtf("starting VCN Management Service", e);
             }
+            t.traceEnd();
 
             t.traceBegin("StartSystemUpdateManagerService");
             try {
@@ -3335,6 +3335,12 @@ public final class SystemServer implements Dumpable {
         t.traceEnd();
 
         t.traceEnd(); // startOtherServices
+    }
+
+    private void startOnDeviceIntelligenceService(TimingsTraceAndSlog t) {
+        t.traceBegin("startOnDeviceIntelligenceManagerService");
+        mSystemServiceManager.startService(OnDeviceIntelligenceManagerService.class);
+        t.traceEnd();
     }
 
     /**
