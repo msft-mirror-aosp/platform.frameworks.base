@@ -2656,6 +2656,11 @@ public class ActivityManagerService extends IActivityManager.Stub
         return mBackgroundLaunchBroadcasts;
     }
 
+    private String getWearRemoteIntentAction() {
+        return mContext.getResources().getString(
+                    com.android.internal.R.string.config_wearRemoteIntentAction);
+    }
+
     /**
      * Ensures that the given package name has an explicit set of allowed associations.
      * If it does not, give it an empty set.
@@ -15213,6 +15218,18 @@ public class ActivityManagerService extends IActivityManager.Stub
                 intent.addFlags(Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND);
             }
 
+            // TODO: b/329211459 - Remove this after background remote intent is fixed.
+            if (mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_WATCH)
+                    && getWearRemoteIntentAction().equals(action)) {
+                final int callerProcState = callerApp != null
+                        ? callerApp.getCurProcState()
+                        : ActivityManager.PROCESS_STATE_NONEXISTENT;
+                if (ActivityManager.RunningAppProcessInfo.procStateToImportance(callerProcState)
+                        > ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+                    return ActivityManager.START_CANCELED;
+                }
+            }
+
             switch (action) {
                 case Intent.ACTION_MEDIA_SCANNER_SCAN_FILE:
                     UserManagerInternal umInternal = LocalServices.getService(
@@ -19630,7 +19647,7 @@ public class ActivityManagerService extends IActivityManager.Stub
                 record.procStateSeqWaitingForNetwork = 0;
                 final long totalTime = SystemClock.uptimeMillis() - startTime;
                 if (totalTime >= mConstants.mNetworkAccessTimeoutMs || DEBUG_NETWORK) {
-                    Slog.w(TAG_NETWORK, "Total time waited for network rules to get updated: "
+                    Slog.wtf(TAG_NETWORK, "Total time waited for network rules to get updated: "
                             + totalTime + ". Uid: " + callingUid + " procStateSeq: "
                             + procStateSeq + " UidRec: " + record
                             + " validateUidRec: "
