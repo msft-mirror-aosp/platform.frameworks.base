@@ -477,10 +477,13 @@ flag {
 }
 
 flag {
-    name: "screenshot_private_profile"
+    name: "screenshot_private_profile_behavior_fix"
     namespace: "systemui"
     description: "Private profile support for screenshots"
     bug: "327613051"
+    metadata {
+        purpose: PURPOSE_BUGFIX
+    }
 }
 
 flag {
@@ -746,8 +749,38 @@ flag {
 }
 
 flag {
+  name: "remove_dream_overlay_hide_on_touch"
+  namespace: "systemui"
+  description: "Removes logic to hide the dream overlay on user interaction, as it conflicts with various transitions"
+  bug: "329091030"
+  metadata {
+    purpose: PURPOSE_BUGFIX
+  }
+}
+
+flag {
     name: "keyboard_docking_indicator"
     namespace: "systemui"
     description: "Glow bar indicator reveals upon keyboard docking."
     bug: "324600132"
+}
+
+flag {
+  name: "dream_overlay_bouncer_swipe_direction_filtering"
+  namespace: "systemui"
+  description: "do not initiate bouncer swipe when the direction is opposite of the expansion"
+  bug: "333632464"
+  metadata {
+    purpose: PURPOSE_BUGFIX
+  }
+}
+
+flag {
+    name: "dream_input_session_pilfer_once"
+    namespace: "systemui"
+    description: "Pilfer at most once per input session"
+    bug: "324600132"
+    metadata {
+      purpose: PURPOSE_BUGFIX
+    }
 }
