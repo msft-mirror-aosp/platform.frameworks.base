@@ -44,6 +44,7 @@ import static android.os.Process.myUid;
 import static android.os.Trace.TRACE_TAG_WINDOW_MANAGER;
 import static android.permission.flags.Flags.sensitiveContentImprovements;
 import static android.permission.flags.Flags.sensitiveContentMetricsBugfix;
+import static android.permission.flags.Flags.sensitiveContentRecentsScreenshotBugfix;
 import static android.provider.Settings.Global.DEVELOPMENT_ENABLE_FREEFORM_WINDOWS_SUPPORT;
 import static android.provider.Settings.Global.DEVELOPMENT_ENABLE_NON_RESIZABLE_MULTI_WINDOW;
 import static android.provider.Settings.Global.DEVELOPMENT_FORCE_DESKTOP_MODE_ON_EXTERNAL_DISPLAYS;
@@ -53,6 +54,7 @@ import static android.service.dreams.Flags.dreamHandlesConfirmKeys;
 import static android.view.ContentRecordingSession.RECORD_CONTENT_TASK;
 import static android.view.Display.DEFAULT_DISPLAY;
 import static android.view.Display.INVALID_DISPLAY;
+import static android.view.flags.Flags.sensitiveContentAppProtection;
 import static android.view.WindowManager.DISPLAY_IME_POLICY_FALLBACK_DISPLAY;
 import static android.view.WindowManager.DISPLAY_IME_POLICY_LOCAL;
 import static android.view.WindowManager.LayoutParams.FIRST_APPLICATION_WINDOW;
@@ -67,7 +69,7 @@ import static android.view.WindowManager.LayoutParams.FLAG_SHOW_WALLPAPER;
 import static android.view.WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED;
 import static android.view.WindowManager.LayoutParams.FLAG_SLIPPERY;
 import static android.view.WindowManager.LayoutParams.INPUT_FEATURE_NO_INPUT_CHANNEL;
-import static android.view.WindowManager.LayoutParams.INPUT_FEATURE_SENSITIVE_FOR_TRACING;
+import static android.view.WindowManager.LayoutParams.INPUT_FEATURE_SENSITIVE_FOR_PRIVACY;
 import static android.view.WindowManager.LayoutParams.INPUT_FEATURE_SPY;
 import static android.view.WindowManager.LayoutParams.INVALID_WINDOW_TYPE;
 import static android.view.WindowManager.LayoutParams.LAST_APPLICATION_WINDOW;
@@ -147,6 +149,7 @@ import static com.android.server.wm.WindowManagerDebugConfig.SHOW_STACK_CRAWLS;
 import static com.android.server.wm.WindowManagerDebugConfig.SHOW_VERBOSE_TRANSACTIONS;
 import static com.android.server.wm.WindowManagerDebugConfig.TAG_WITH_CLASS_NAME;
 import static com.android.server.wm.WindowManagerDebugConfig.TAG_WM;
+import static com.android.server.wm.WindowManagerInternal.OnWindowRemovedListener;
 import static com.android.server.wm.WindowManagerServiceDumpProto.BACK_NAVIGATION;
 import static com.android.server.wm.WindowManagerServiceDumpProto.DISPLAY_FROZEN;
 import static com.android.server.wm.WindowManagerServiceDumpProto.FOCUSED_APP;
@@ -489,6 +492,9 @@ public class WindowManagerService extends IWindowManager.Stub
 
     private final RemoteCallbackList<IKeyguardLockedStateListener> mKeyguardLockedStateListeners =
             new RemoteCallbackList<>();
+
+    private final List<OnWindowRemovedListener> mOnWindowRemovedListeners = new ArrayList<>();
+
     private boolean mDispatchedKeyguardLockedState = false;
 
     // VR Vr2d Display Id.
@@ -531,6 +537,21 @@ public class WindowManagerService extends IWindowManager.Stub
         public void dumpCritical(FileDescriptor fd, PrintWriter pw, String[] args,
                 boolean asProto) {
             doDump(fd, pw, new String[] {"-a"}, asProto);
+        }
+
+        @Override
+        public void dumpHigh(FileDescriptor fd, PrintWriter pw, String[] args,
+                boolean asProto) {
+            if (asProto) {
+                return;
+            }
+            mAtmService.dumpActivity(fd, pw, /* name= */ "all", /* args= */ new String[]{},
+                    /* opti= */ 0,
+                    /* dumpAll= */ true,
+                    /* dumpVisibleRootTasksOnly= */ true,
+                    /* dumpFocusedRootTaskOnly= */ false, INVALID_DISPLAY, UserHandle.USER_ALL,
+                    /* timeout= */ 1000
+            );
         }
 
         @Override
@@ -2073,7 +2094,11 @@ public class WindowManagerService extends IWindowManager.Stub
      */
     void postWindowRemoveCleanupLocked(WindowState win) {
         ProtoLog.v(WM_DEBUG_ADD_REMOVE, "postWindowRemoveCleanupLocked: %s", win);
-        mWindowMap.remove(win.mClient.asBinder());
+        final IBinder client = win.mClient.asBinder();
+        mWindowMap.remove(client);
+        if (sensitiveContentAppProtection()) {
+            notifyWindowRemovedListeners(client);
+        }
 
         final DisplayContent dc = win.getDisplayContent();
         dc.getDisplayRotation().markForSeamlessRotation(win, false /* seamlesslyRotated */);
@@ -5333,6 +5358,23 @@ public class WindowManagerService extends IWindowManager.Stub
         synchronized (mGlobalLock) {
             mWindowChangeListeners.remove(listener);
         }
+    }
+
+    private void notifyWindowRemovedListeners(IBinder client) {
+        OnWindowRemovedListener[] windowRemovedListeners;
+        synchronized (mGlobalLock) {
+            if (mOnWindowRemovedListeners.isEmpty()) {
+                return;
+            }
+            windowRemovedListeners = new OnWindowRemovedListener[mOnWindowRemovedListeners.size()];
+            mOnWindowRemovedListeners.toArray(windowRemovedListeners);
+        }
+        mH.post(() -> {
+            int size = windowRemovedListeners.length;
+            for (int i = 0; i < size; i++) {
+                windowRemovedListeners[i].onWindowRemoved(client);
+            }
+        });
     }
 
     private void notifyWindowsChanged() {
@@ -8827,11 +8869,25 @@ public class WindowManagerService extends IWindowManager.Stub
                         mRoot.forAllWindows((w) -> {
                             if (w.isVisible()) {
                                 WindowManagerService.this.showToastIfBlockingScreenCapture(w);
+                            } else if (sensitiveContentRecentsScreenshotBugfix()
+                                    && shouldInvalidateSnapshot(w)) {
+                                final Task task = w.getTask();
+                                // preventing from showing up in starting window.
+                                mTaskSnapshotController.removeAndDeleteSnapshot(
+                                        task.mTaskId, task.mUserId);
+                                // Refresh TaskThumbnailCache
+                                task.onSnapshotInvalidated();
                             }
                         }, /* traverseTopToBottom= */ true);
                     }
                 }
             }
+        }
+
+        private boolean shouldInvalidateSnapshot(WindowState w) {
+            return w.getTask() != null
+                    && mSensitiveContentPackages.shouldBlockScreenCaptureForApp(
+                    w.getOwningPackage(), w.getOwningUid(), w.getWindowToken());
         }
 
         @Override
@@ -8864,6 +8920,20 @@ public class WindowManagerService extends IWindowManager.Stub
                 if (sensitiveContentImprovements()) {
                     mCaptureBlockedToastShownUids.clear();
                 }
+            }
+        }
+
+        @Override
+        public void registerOnWindowRemovedListener(OnWindowRemovedListener listener) {
+            synchronized (mGlobalLock) {
+                mOnWindowRemovedListeners.add(listener);
+            }
+        }
+
+        @Override
+        public void unregisterOnWindowRemovedListener(OnWindowRemovedListener listener) {
+            synchronized (mGlobalLock) {
+                mOnWindowRemovedListeners.remove(listener);
             }
         }
 
@@ -9241,11 +9311,11 @@ public class WindowManagerService extends IWindowManager.Stub
             }
         }
 
-        // You can only use INPUT_FEATURE_SENSITIVE_FOR_TRACING on a trusted overlay.
-        if ((inputFeatures & INPUT_FEATURE_SENSITIVE_FOR_TRACING) != 0 && !isTrustedOverlay) {
-            Slog.w(TAG, "Removing INPUT_FEATURE_SENSITIVE_FOR_TRACING from '" + windowName
+        // You can only use INPUT_FEATURE_SENSITIVE_FOR_PRIVACY on a trusted overlay.
+        if ((inputFeatures & INPUT_FEATURE_SENSITIVE_FOR_PRIVACY) != 0 && !isTrustedOverlay) {
+            Slog.w(TAG, "Removing INPUT_FEATURE_SENSITIVE_FOR_PRIVACY from '" + windowName
                     + "' because it isn't a trusted overlay");
-            return inputFeatures & ~INPUT_FEATURE_SENSITIVE_FOR_TRACING;
+            return inputFeatures & ~INPUT_FEATURE_SENSITIVE_FOR_PRIVACY;
         }
         return inputFeatures;
     }

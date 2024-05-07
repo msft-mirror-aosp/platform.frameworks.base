@@ -4342,6 +4342,7 @@ public class ActivityManagerService extends IActivityManager.Stub
 
             mServices.bringDownDisabledPackageServicesLocked(
                     packageName, null, userId, false, true, true);
+            mServices.onUidRemovedLocked(uid);
 
             if (mBooted) {
                 mAtmInternal.resumeTopActivities(true);
@@ -4372,9 +4373,10 @@ public class ActivityManagerService extends IActivityManager.Stub
             Slog.w(TAG, "Can't force stop all processes of all users, that is insane!");
         }
 
+        final int uid = getPackageManagerInternal().getPackageUid(packageName,
+                            MATCH_DEBUG_TRIAGED_MISSING | MATCH_ANY_USER, UserHandle.USER_SYSTEM);
         if (appId < 0 && packageName != null) {
-            appId = UserHandle.getAppId(getPackageManagerInternal().getPackageUid(packageName,
-                    MATCH_DEBUG_TRIAGED_MISSING | MATCH_ANY_USER, UserHandle.USER_SYSTEM));
+            appId = UserHandle.getAppId(uid);
         }
 
         boolean didSomething;
@@ -4418,6 +4420,7 @@ public class ActivityManagerService extends IActivityManager.Stub
             }
             didSomething = true;
         }
+        mServices.onUidRemovedLocked(uid);
 
         if (packageName == null) {
             // Remove all sticky broadcasts from this user.
@@ -19950,6 +19953,20 @@ public class ActivityManagerService extends IActivityManager.Stub
                 return !ActivityManagerService.this.mThemeOverlayReadyUsers.contains(userId);
             }
         }
+
+        @Override
+        public void addStartInfoTimestamp(int key, long timestampNs, int uid, int pid,
+                int userId) {
+            // For the simplification, we don't support USER_ALL nor USER_CURRENT here.
+            if (userId == UserHandle.USER_ALL || userId == UserHandle.USER_CURRENT) {
+                throw new IllegalArgumentException("Unsupported userId");
+            }
+
+            mUserController.handleIncomingUser(pid, uid, userId, true,
+                    ALLOW_NON_FULL, "addStartInfoTimestampSystem", null);
+
+            addStartInfoTimestampInternal(key, timestampNs, userId, uid);
+        }
     }
 
     long inputDispatchingTimedOut(int pid, final boolean aboveSystem, TimeoutRecord timeoutRecord) {
@@ -20266,7 +20283,7 @@ public class ActivityManagerService extends IActivityManager.Stub
         final int userId = UserHandle.getCallingUserId();
         final long callingId = Binder.clearCallingIdentity();
         try {
-            if (uid == -1) {
+            if (uid == INVALID_UID) {
                 uid = mPackageManagerInt.getPackageUid(packageName, 0, userId);
             }
             mAppRestrictionController.noteAppRestrictionEnabled(packageName, uid, restrictionType,
