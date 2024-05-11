@@ -31,6 +31,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
+import androidx.compose.foundation.layout.displayCutoutPadding
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -67,6 +68,9 @@ import com.android.compose.animation.scene.animateSceneFloatAsState
 import com.android.compose.modifiers.padding
 import com.android.compose.modifiers.thenIf
 import com.android.systemui.battery.BatteryMeterViewController
+import com.android.systemui.common.ui.compose.windowinsets.CutoutLocation
+import com.android.systemui.common.ui.compose.windowinsets.LocalDisplayCutout
+import com.android.systemui.common.ui.compose.windowinsets.LocalScreenCornerRadius
 import com.android.systemui.dagger.SysUISingleton
 import com.android.systemui.media.controls.ui.composable.MediaCarousel
 import com.android.systemui.media.controls.ui.controller.MediaCarouselController
@@ -97,6 +101,7 @@ object Shade {
         val MediaCarousel = ElementKey("ShadeMediaCarousel")
         val BackgroundScrim =
             ElementKey("ShadeBackgroundScrim", scenePicker = LowestZIndexScenePicker)
+        val SplitShadeStartColumn = ElementKey("SplitShadeStartColumn")
     }
 
     object Dimensions {
@@ -206,6 +211,8 @@ private fun SceneScope.SingleShade(
     modifier: Modifier = Modifier,
     shadeSession: SaveableSession,
 ) {
+    val cutoutLocation = LocalDisplayCutout.current.location
+
     val maxNotifScrimTop = remember { mutableStateOf(0f) }
     val tileSquishiness by
         animateSceneFloatAsState(
@@ -241,19 +248,21 @@ private fun SceneScope.SingleShade(
                         Column(
                             horizontalAlignment = Alignment.CenterHorizontally,
                             modifier =
-                                Modifier.fillMaxWidth().thenIf(isClickable) {
-                                    Modifier.clickable(onClick = { viewModel.onContentClicked() })
-                                }
+                                Modifier.fillMaxWidth()
+                                    .thenIf(isClickable) {
+                                        Modifier.clickable(
+                                            onClick = { viewModel.onContentClicked() }
+                                        )
+                                    }
+                                    .thenIf(cutoutLocation != CutoutLocation.CENTER) {
+                                        Modifier.displayCutoutPadding()
+                                    },
                         ) {
                             CollapsedShadeHeader(
                                 viewModel = viewModel.shadeHeaderViewModel,
                                 createTintedIconManager = createTintedIconManager,
                                 createBatteryMeterViewController = createBatteryMeterViewController,
                                 statusBarIconController = statusBarIconController,
-                                modifier =
-                                    Modifier.padding(
-                                        horizontal = Shade.Dimensions.HorizontalPadding
-                                    )
                             )
                             Box(Modifier.element(QuickSettings.Elements.QuickQuickSettings)) {
                                 QuickSettings(
@@ -312,6 +321,8 @@ private fun SceneScope.SplitShade(
     modifier: Modifier = Modifier,
     shadeSession: SaveableSession,
 ) {
+    val screenCornerRadius = LocalScreenCornerRadius.current
+
     val isCustomizing by viewModel.qsSceneAdapter.isCustomizing.collectAsState()
     val isCustomizerShowing by viewModel.qsSceneAdapter.isCustomizerShowing.collectAsState()
     val customizingAnimationDuration by
@@ -320,7 +331,11 @@ private fun SceneScope.SplitShade(
     val footerActionsViewModel =
         remember(lifecycleOwner, viewModel) { viewModel.getFooterActionsViewModel(lifecycleOwner) }
     val tileSquishiness by
-        animateSceneFloatAsState(value = 1f, key = QuickSettings.SharedValues.TilesSquishiness)
+        animateSceneFloatAsState(
+            value = 1f,
+            key = QuickSettings.SharedValues.TilesSquishiness,
+            canOverflow = false,
+        )
     val unfoldTranslationXForStartSide by
         viewModel
             .unfoldTranslationX(
@@ -388,8 +403,7 @@ private fun SceneScope.SplitShade(
                 createBatteryMeterViewController = createBatteryMeterViewController,
                 statusBarIconController = statusBarIconController,
                 modifier =
-                    Modifier.padding(horizontal = Shade.Dimensions.HorizontalPadding)
-                        .then(brightnessMirrorShowingModifier)
+                    Modifier.then(brightnessMirrorShowingModifier)
                         .padding(
                             horizontal = { unfoldTranslationXForStartSide.roundToInt() },
                         )
@@ -398,9 +412,9 @@ private fun SceneScope.SplitShade(
             Row(modifier = Modifier.fillMaxWidth().weight(1f)) {
                 Box(
                     modifier =
-                        Modifier.weight(1f).graphicsLayer {
-                            translationX = unfoldTranslationXForStartSide
-                        },
+                        Modifier.element(Shade.Elements.SplitShadeStartColumn)
+                            .weight(1f)
+                            .graphicsLayer { translationX = unfoldTranslationXForStartSide },
                 ) {
                     BrightnessMirror(
                         viewModel = viewModel.brightnessMirrorViewModel,
@@ -467,7 +481,7 @@ private fun SceneScope.SplitShade(
                     modifier =
                         Modifier.weight(1f)
                             .fillMaxHeight()
-                            .padding(bottom = navBarBottomHeight)
+                            .padding(end = screenCornerRadius / 2f, bottom = navBarBottomHeight)
                             .then(brightnessMirrorShowingModifier)
                 )
             }

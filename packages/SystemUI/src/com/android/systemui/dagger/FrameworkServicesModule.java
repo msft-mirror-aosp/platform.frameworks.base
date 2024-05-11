@@ -49,6 +49,7 @@ import android.content.SharedPreferences;
 import android.content.om.OverlayManager;
 import android.content.pm.IPackageManager;
 import android.content.pm.LauncherApps;
+import android.content.pm.PackageInstaller;
 import android.content.pm.PackageManager;
 import android.content.pm.ShortcutManager;
 import android.content.res.AssetManager;
@@ -220,6 +221,13 @@ public class FrameworkServicesModule {
     @Singleton
     static DevicePolicyManager provideDevicePolicyManager(Context context) {
         return context.getSystemService(DevicePolicyManager.class);
+    }
+
+    @Provides
+    @Singleton
+    static UserScopedService<ColorDisplayManager> provideScopedColorDisplayManager(
+            Context context) {
+        return new UserScopedServiceImpl<>(context, ColorDisplayManager.class);
     }
 
     @Provides
@@ -479,6 +487,12 @@ public class FrameworkServicesModule {
     @Singleton
     static PackageManager providePackageManager(Context context) {
         return context.getPackageManager();
+    }
+
+    @Provides
+    @Singleton
+    static PackageInstaller providePackageInstaller(PackageManager packageManager) {
+        return packageManager.getPackageInstaller();
     }
 
     @Provides

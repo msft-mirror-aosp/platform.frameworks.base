@@ -90,7 +90,7 @@ import platform.test.runner.parameterized.Parameters
 @OptIn(ExperimentalCoroutinesApi::class)
 @SmallTest
 @RunWith(ParameterizedAndroidJunit4::class)
-class CommunalViewModelTest(flags: FlagsParameterization?) : SysuiTestCase() {
+class CommunalViewModelTest(flags: FlagsParameterization) : SysuiTestCase() {
     @Mock private lateinit var mediaHost: MediaHost
     @Mock private lateinit var user: UserInfo
     @Mock private lateinit var providerInfo: AppWidgetProviderInfo
@@ -111,7 +111,7 @@ class CommunalViewModelTest(flags: FlagsParameterization?) : SysuiTestCase() {
     private lateinit var underTest: CommunalViewModel
 
     init {
-        mSetFlagsRule.setFlagsParameterization(flags!!)
+        mSetFlagsRule.setFlagsParameterization(flags)
     }
 
     @Before
@@ -186,12 +186,12 @@ class CommunalViewModelTest(flags: FlagsParameterization?) : SysuiTestCase() {
             // Widgets available.
             val widgets =
                 listOf(
-                    CommunalWidgetContentModel(
+                    CommunalWidgetContentModel.Available(
                         appWidgetId = 0,
                         priority = 30,
                         providerInfo = providerInfo,
                     ),
-                    CommunalWidgetContentModel(
+                    CommunalWidgetContentModel.Available(
                         appWidgetId = 1,
                         priority = 20,
                         providerInfo = providerInfo,
@@ -245,7 +245,7 @@ class CommunalViewModelTest(flags: FlagsParameterization?) : SysuiTestCase() {
 
             widgetRepository.setCommunalWidgets(
                 listOf(
-                    CommunalWidgetContentModel(
+                    CommunalWidgetContentModel.Available(
                         appWidgetId = 1,
                         priority = 1,
                         providerInfo = providerInfo,

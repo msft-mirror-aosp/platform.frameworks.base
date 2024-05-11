@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 The Android Open Source Project
+ * Copyright (C) 2024 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,16 @@
  * limitations under the License.
  */
 
-package com.android.systemui.biometrics.shared.model
+package com.android.systemui.accessibility.data.model
 
-import com.android.systemui.biometrics.Utils
+import java.time.LocalTime
 
-// TODO(b/251476085): this should eventually replace Utils.CredentialType
-/** Credential options for biometric prompt. Shadows [Utils.CredentialType]. */
-sealed interface PromptKind {
-    data class Biometric(
-        val activeModalities: BiometricModalities = BiometricModalities(),
-    ) : PromptKind
-
-    object Pin : PromptKind
-    object Pattern : PromptKind
-    object Password : PromptKind
-}
+/** models the state of NightDisplayRepository */
+data class NightDisplayState(
+    val autoMode: Int = 0,
+    val isActivated: Boolean = true,
+    val startTime: LocalTime? = null,
+    val endTime: LocalTime? = null,
+    val shouldForceAutoMode: Boolean = false,
+    val locationEnabled: Boolean = false,
+)

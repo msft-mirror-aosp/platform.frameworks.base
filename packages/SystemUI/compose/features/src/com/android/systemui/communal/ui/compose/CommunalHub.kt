@@ -59,7 +59,8 @@ import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.outlined.Delete
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.TouchApp
 import androidx.compose.material.icons.outlined.Widgets
@@ -277,7 +278,6 @@ fun CommunalHub(
 
         if (viewModel.isEditMode && onOpenWidgetPicker != null && onEditDone != null) {
             Toolbar(
-                isDraggingToRemove = isDraggingToRemove,
                 setToolbarSize = { toolbarSize = it },
                 setRemoveButtonCoordinates = { removeButtonCoordinates = it },
                 onEditDone = onEditDone,
@@ -577,7 +577,6 @@ private fun LockStateIcon(
  */
 @Composable
 private fun Toolbar(
-    isDraggingToRemove: Boolean,
     removeEnabled: Boolean,
     onRemoveClicked: () -> Unit,
     setToolbarSize: (toolbarSize: IntSize) -> Unit,
@@ -591,7 +590,7 @@ private fun Toolbar(
             label = "RemoveButtonAlphaAnimation"
         )
 
-    Row(
+    Box(
         modifier =
             Modifier.fillMaxWidth()
                 .padding(
@@ -600,65 +599,54 @@ private fun Toolbar(
                     end = Dimensions.ToolbarPaddingHorizontal,
                 )
                 .onSizeChanged { setToolbarSize(it) },
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
     ) {
         val spacerModifier = Modifier.width(ButtonDefaults.IconSpacing)
-        Button(
-            onClick = onOpenWidgetPicker,
-            colors = filledButtonColors(),
-            contentPadding = Dimensions.ButtonPadding
-        ) {
-            Icon(Icons.Default.Add, stringResource(R.string.hub_mode_add_widget_button_text))
-            Spacer(spacerModifier)
-            Text(
-                text = stringResource(R.string.hub_mode_add_widget_button_text),
-            )
+
+        if (!removeEnabled) {
+            Button(
+                modifier = Modifier.align(Alignment.CenterStart),
+                onClick = onOpenWidgetPicker,
+                colors = filledButtonColors(),
+                contentPadding = Dimensions.ButtonPadding
+            ) {
+                Icon(Icons.Default.Add, stringResource(R.string.hub_mode_add_widget_button_text))
+                Spacer(spacerModifier)
+                Text(
+                    text = stringResource(R.string.hub_mode_add_widget_button_text),
+                )
+            }
         }
 
-        val colors = LocalAndroidColorScheme.current
-        if (isDraggingToRemove) {
+        if (removeEnabled) {
             Button(
-                // Button is disabled to make it non-clickable
-                enabled = false,
-                onClick = {},
-                colors =
-                    ButtonDefaults.buttonColors(
-                        disabledContainerColor = colors.primary,
-                        disabledContentColor = colors.onPrimary,
-                    ),
-                contentPadding = Dimensions.ButtonPadding,
-                modifier = Modifier.onGloballyPositioned { setRemoveButtonCoordinates(it) }
-            ) {
-                RemoveButtonContent(spacerModifier)
-            }
-        } else {
-            OutlinedButton(
-                enabled = removeEnabled,
                 onClick = onRemoveClicked,
-                colors =
-                    ButtonDefaults.outlinedButtonColors(
-                        contentColor = colors.primary,
-                        disabledContentColor = colors.primary
-                    ),
-                border = BorderStroke(width = 1.0.dp, color = colors.primary),
+                colors = filledButtonColors(),
                 contentPadding = Dimensions.ButtonPadding,
                 modifier =
                     Modifier.graphicsLayer { alpha = removeButtonAlpha }
                         .onGloballyPositioned { setRemoveButtonCoordinates(it) }
+                        .align(Alignment.Center)
             ) {
                 RemoveButtonContent(spacerModifier)
             }
         }
 
-        Button(
-            onClick = onEditDone,
-            colors = filledButtonColors(),
-            contentPadding = Dimensions.ButtonPadding
-        ) {
-            Text(
-                text = stringResource(R.string.hub_mode_editing_exit_button_text),
-            )
+        if (!removeEnabled) {
+            Button(
+                modifier = Modifier.align(Alignment.CenterEnd),
+                onClick = onEditDone,
+                colors = filledButtonColors(),
+                contentPadding = Dimensions.ButtonPadding
+            ) {
+                Icon(
+                    Icons.Default.Check,
+                    stringResource(id = R.string.hub_mode_editing_exit_button_text)
+                )
+                Spacer(spacerModifier)
+                Text(
+                    text = stringResource(R.string.hub_mode_editing_exit_button_text),
+                )
+            }
         }
     }
 }
@@ -762,7 +750,7 @@ private fun PopupOnDismissCtaTile(onHidePopup: () -> Unit) {
 
 @Composable
 private fun RemoveButtonContent(spacerModifier: Modifier) {
-    Icon(Icons.Outlined.Delete, stringResource(R.string.button_to_remove_widget))
+    Icon(Icons.Default.Close, stringResource(R.string.button_to_remove_widget))
     Spacer(spacerModifier)
     Text(
         text = stringResource(R.string.button_to_remove_widget),
@@ -804,6 +792,8 @@ private fun CommunalContent(
         is CommunalContentModel.WidgetPlaceholder -> HighlightedItem(modifier)
         is CommunalContentModel.WidgetContent.DisabledWidget ->
             DisabledWidgetPlaceholder(model, viewModel, modifier)
+        is CommunalContentModel.WidgetContent.PendingWidget ->
+            PendingWidgetPlaceholder(model, modifier)
         is CommunalContentModel.CtaTileInViewMode -> CtaTileInViewModeContent(viewModel, modifier)
         is CommunalContentModel.Smartspace -> SmartspaceContent(model, modifier)
         is CommunalContentModel.Tutorial -> TutorialContent(modifier)
@@ -929,36 +919,36 @@ private fun WidgetContent(
                     Modifier.semantics {
                         contentDescription = accessibilityLabel
                         onClick(label = clickActionLabel, action = null)
-                            val deleteAction =
-                                CustomAccessibilityAction(removeWidgetActionLabel) {
-                                    contentListState.onRemove(index)
-                                    contentListState.onSaveList()
-                                    true
-                                }
-                            val selectWidgetAction =
-                                CustomAccessibilityAction(clickActionLabel) {
-                                    val currentWidgetKey =
-                                        index?.let {
-                                            keyAtIndexIfEditable(contentListState.list, index)
-                                        }
-                                    viewModel.setSelectedKey(currentWidgetKey)
-                                    true
-                                }
-
-                            val actions = mutableListOf(deleteAction, selectWidgetAction)
-
-                            if (selectedIndex != null && selectedIndex != index) {
-                                actions.add(
-                                    CustomAccessibilityAction(placeWidgetActionLabel) {
-                                        contentListState.onMove(selectedIndex!!, index)
-                                        contentListState.onSaveList()
-                                        viewModel.setSelectedKey(null)
-                                        true
+                        val deleteAction =
+                            CustomAccessibilityAction(removeWidgetActionLabel) {
+                                contentListState.onRemove(index)
+                                contentListState.onSaveList()
+                                true
+                            }
+                        val selectWidgetAction =
+                            CustomAccessibilityAction(clickActionLabel) {
+                                val currentWidgetKey =
+                                    index?.let {
+                                        keyAtIndexIfEditable(contentListState.list, index)
                                     }
-                                )
+                                viewModel.setSelectedKey(currentWidgetKey)
+                                true
                             }
 
-                            customActions = actions
+                        val actions = mutableListOf(deleteAction, selectWidgetAction)
+
+                        if (selectedIndex != null && selectedIndex != index) {
+                            actions.add(
+                                CustomAccessibilityAction(placeWidgetActionLabel) {
+                                    contentListState.onMove(selectedIndex!!, index)
+                                    contentListState.onSaveList()
+                                    viewModel.setSelectedKey(null)
+                                    true
+                                }
+                            )
+                        }
+
+                        customActions = actions
                     }
                 }
     ) {
@@ -1074,8 +1064,38 @@ fun DisabledWidgetPlaceholder(
         Image(
             painter = rememberDrawablePainter(icon.loadDrawable(context)),
             contentDescription = stringResource(R.string.icon_description_for_disabled_widget),
-            modifier = Modifier.size(48.dp),
+            modifier = Modifier.size(Dimensions.IconSize),
             colorFilter = ColorFilter.colorMatrix(Colors.DisabledColorFilter),
+        )
+    }
+}
+
+@Composable
+fun PendingWidgetPlaceholder(
+    model: CommunalContentModel.WidgetContent.PendingWidget,
+    modifier: Modifier = Modifier,
+) {
+    val context = LocalContext.current
+    val icon: Icon =
+        if (model.icon != null) {
+            Icon.createWithBitmap(model.icon)
+        } else {
+            Icon.createWithResource(context, android.R.drawable.sym_def_app_icon)
+        }
+
+    Column(
+        modifier =
+            modifier.background(
+                MaterialTheme.colorScheme.surfaceVariant,
+                RoundedCornerShape(dimensionResource(system_app_widget_background_radius))
+            ),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Image(
+            painter = rememberDrawablePainter(icon.loadDrawable(context)),
+            contentDescription = stringResource(R.string.icon_description_for_pending_widget),
+            modifier = Modifier.size(Dimensions.IconSize),
         )
     }
 }
