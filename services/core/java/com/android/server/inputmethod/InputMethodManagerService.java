@@ -495,16 +495,6 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
         return userData.mBindingController.getSequenceNumber();
     }
 
-    /**
-     * Increase the current binding sequence number by one.
-     * Reset to 1 on overflow.
-     */
-    @GuardedBy("ImfLock.class")
-    private void advanceSequenceNumberLocked() {
-        final var userData = mUserDataRepository.getOrCreate(mCurrentUserId);
-        userData.mBindingController.advanceSequenceNumber();
-    }
-
     @GuardedBy("ImfLock.class")
     @Nullable
     InputMethodInfo queryInputMethodForCurrentUserLocked(@NonNull String imeId) {
@@ -658,16 +648,6 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
     private int getCurMethodUidLocked() {
         final var userData = mUserDataRepository.getOrCreate(mCurrentUserId);
         return userData.mBindingController.getCurMethodUid();
-    }
-
-    /**
-     * Time that we last initiated a bind to the input method, to determine
-     * if we should try to disconnect and reconnect to it.
-     */
-    @GuardedBy("ImfLock.class")
-    private long getLastBindTimeLocked() {
-        final var userData = mUserDataRepository.getOrCreate(mCurrentUserId);
-        return userData.mBindingController.getLastBindTime();
     }
 
     /**
@@ -2179,7 +2159,8 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
         final boolean connectionWasActive = mCurInputConnection != null;
 
         // Bump up the sequence for this client and attach it.
-        advanceSequenceNumberLocked();
+        userData.mBindingController.advanceSequenceNumber();
+
         mCurClient = cs;
         mCurInputConnection = inputConnection;
         mCurRemoteAccessibilityInputConnection = remoteAccessibilityInputConnection;
@@ -2362,7 +2343,8 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                         InputBindResult.ResultCode.SUCCESS_WAITING_IME_SESSION,
                         null, null, null, getCurIdLocked(), getSequenceNumberLocked(), false);
             } else {
-                long bindingDuration = SystemClock.uptimeMillis() - getLastBindTimeLocked();
+                final long lastBindTime = userData.mBindingController.getLastBindTime();
+                long bindingDuration = SystemClock.uptimeMillis() - lastBindTime;
                 if (bindingDuration < TIME_TO_RECONNECT) {
                     // In this case we have connected to the service, but
                     // don't yet have its interface.  If it hasn't been too
