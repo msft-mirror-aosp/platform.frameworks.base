@@ -38,7 +38,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
@@ -64,6 +63,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.lerp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.android.compose.animation.scene.ElementKey
 import com.android.compose.animation.scene.NestedScrollBehavior
 import com.android.compose.animation.scene.SceneScope
@@ -112,7 +112,7 @@ fun SceneScope.HeadsUpNotificationSpace(
     modifier: Modifier = Modifier,
     isPeekFromBottom: Boolean = false,
 ) {
-    val headsUpHeight = viewModel.headsUpHeight.collectAsState()
+    val headsUpHeight = viewModel.headsUpHeight.collectAsStateWithLifecycle()
 
     Element(
         Notifications.Elements.HeadsUpNotificationPlaceholder,
@@ -138,6 +138,7 @@ fun SceneScope.HeadsUpNotificationSpace(
 /** Adds the space where notification stack should appear in the scene. */
 @Composable
 fun SceneScope.ConstrainedNotificationStack(
+    stackScrollView: NotificationScrollView,
     viewModel: NotificationsPlaceholderViewModel,
     modifier: Modifier = Modifier,
 ) {
@@ -146,6 +147,7 @@ fun SceneScope.ConstrainedNotificationStack(
             modifier.onSizeChanged { viewModel.onConstrainedAvailableSpaceChanged(it.height) }
     ) {
         NotificationPlaceholder(
+            stackScrollView = stackScrollView,
             viewModel = viewModel,
             modifier = Modifier.fillMaxSize(),
         )
@@ -178,9 +180,10 @@ fun SceneScope.NotificationScrollingStack(
         shadeSession.rememberSaveableSession(saver = ScrollState.Saver, key = null) {
             ScrollState(initial = 0)
         }
-    val syntheticScroll = viewModel.syntheticScroll.collectAsState(0f)
-    val isCurrentGestureOverscroll = viewModel.isCurrentGestureOverscroll.collectAsState(false)
-    val expansionFraction by viewModel.expandFraction.collectAsState(0f)
+    val syntheticScroll = viewModel.syntheticScroll.collectAsStateWithLifecycle(0f)
+    val isCurrentGestureOverscroll =
+        viewModel.isCurrentGestureOverscroll.collectAsStateWithLifecycle(false)
+    val expansionFraction by viewModel.expandFraction.collectAsStateWithLifecycle(0f)
 
     val navBarHeight =
         with(density) { WindowInsets.systemBars.asPaddingValues().calculateBottomPadding().toPx() }
@@ -193,7 +196,8 @@ fun SceneScope.NotificationScrollingStack(
      */
     val stackHeight = remember { mutableIntStateOf(0) }
 
-    val scrimRounding = viewModel.shadeScrimRounding.collectAsState(ShadeScrimRounding())
+    val scrimRounding =
+        viewModel.shadeScrimRounding.collectAsStateWithLifecycle(ShadeScrimRounding())
 
     // the offset for the notifications scrim. Its upper bound is 0, and its lower bound is
     // calculated in minScrimOffset. The scrim is the same height as the screen minus the
@@ -334,6 +338,7 @@ fun SceneScope.NotificationScrollingStack(
                     .debugBackground(viewModel, DEBUG_BOX_COLOR)
         ) {
             NotificationPlaceholder(
+                stackScrollView = stackScrollView,
                 viewModel = viewModel,
                 modifier =
                     Modifier.verticalNestedScrollToScene(
@@ -390,6 +395,7 @@ fun SceneScope.NotificationShelfSpace(
 
 @Composable
 private fun SceneScope.NotificationPlaceholder(
+    stackScrollView: NotificationScrollView,
     viewModel: NotificationsPlaceholderViewModel,
     modifier: Modifier = Modifier,
 ) {
@@ -408,10 +414,8 @@ private fun SceneScope.NotificationPlaceholder(
                             " bounds=${coordinates.boundsInWindow()}"
                     }
                     // NOTE: positionInWindow.y scrolls off screen, but boundsInWindow.top will not
-                    viewModel.onStackBoundsChanged(
-                        top = positionInWindow.y,
-                        bottom = positionInWindow.y + coordinates.size.height,
-                    )
+                    stackScrollView.setStackTop(positionInWindow.y)
+                    stackScrollView.setStackBottom(positionInWindow.y + coordinates.size.height)
                 }
     ) {
         content {}

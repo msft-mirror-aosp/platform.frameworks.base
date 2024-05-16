@@ -34,6 +34,13 @@ flag {
 }
 
 flag {
+   name: "priority_people_section"
+   namespace: "systemui"
+   description: "Add a new section for priority people (aka important conversations)."
+   bug: "340294566"
+}
+
+flag {
    name: "notification_minimalism_prototype"
    namespace: "systemui"
    description: "Prototype of notification minimalism; the new 'Intermediate' lockscreen customization proposal."
@@ -468,6 +475,17 @@ flag {
     description: "Dismiss existing system windows when starting action from screenshot UI"
     bug: "309933761"
 }
+
+flag {
+    name: "fix_screenshot_action_dismiss_system_windows"
+    namespace: "systemui"
+    description: "Dismiss existing system windows when starting action from screenshot UI"
+    bug: "309933761"
+    metadata {
+        purpose: PURPOSE_BUGFIX
+    }
+}
+
 
 flag {
     name: "screenshot_private_profile_behavior_fix"
