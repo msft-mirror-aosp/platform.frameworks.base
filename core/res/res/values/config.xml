@@ -4723,6 +4723,8 @@
     <!-- The broadcast intent name for notifying when the on-device model has been unloaded  -->
     <string name="config_onDeviceIntelligenceModelUnloadedBroadcastKey" translatable="false"></string>
 
+    <!-- The DeviceConfig namespace for the default system on-device sandboxed inference service. -->
+    <string name="config_defaultOnDeviceIntelligenceDeviceConfigNamespace" translatable="false"></string>
 
     <!-- Component name that accepts ACTION_SEND intents for requesting ambient context consent for
          wearable sensing. -->
@@ -6950,9 +6952,6 @@
         "stopped" during initial boot of a device, or after an OTA update. Stopped state of
         an app is not changed during subsequent reboots.  -->
     <bool name="config_stopSystemPackagesByDefault">true</bool>
-
-    <!-- Whether to show weather on the lock screen by default. -->
-    <bool name="config_lockscreenWeatherEnabledByDefault">false</bool>
 
     <!-- Whether we should persist the brightness value in nits for the default display even if
          the underlying display device changes. -->

@@ -26,14 +26,6 @@ flag {
 }
 
 flag {
-
-    name: "notification_heads_up_cycling"
-    namespace: "systemui"
-    description: "Heads-up notification cycling animation for the Notification Avalanche feature."
-    bug: "316404716"
-}
-
-flag {
    name: "priority_people_section"
    namespace: "systemui"
    description: "Add a new section for priority people (aka important conversations)."
@@ -204,7 +196,16 @@ flag {
     description: "Re-enable the codepath that removed tinting of notifications when the"
         " standard background color is desired.  This was the behavior before we discovered"
         " a resources threading issue, which we worked around by tinting the notification"
-        " backgrounds and footer buttons."
+        " backgrounds."
+    bug: "294830092"
+}
+
+flag {
+    name: "notification_footer_background_tint_optimization"
+    namespace: "systemui"
+    description: "Remove duplicative tinting of notification footer buttons. This was the behavior"
+        " before we discovered a resources threading issue, which we worked around by applying the"
+        " same color as a tint to the background drawable of footer buttons."
     bug: "294830092"
 }
 
@@ -410,6 +411,13 @@ flag {
    namespace: "systemui"
    description: "Faster wallpaper unlock transition"
    bug: "298186160"
+}
+
+flag {
+   name: "confine_notification_touch_to_view_width"
+   namespace: "systemui"
+   description: "Use notification view width when detecting gestures."
+   bug: "335828150"
 }
 
 flag {
