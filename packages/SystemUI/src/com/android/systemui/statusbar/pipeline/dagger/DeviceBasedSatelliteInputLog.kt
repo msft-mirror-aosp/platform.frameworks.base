@@ -14,14 +14,16 @@
  * limitations under the License.
  */
 
-package com.android.systemui.communal.data.repository
+package com.android.systemui.statusbar.pipeline.dagger
 
-import com.android.systemui.kosmos.Kosmos
-import com.android.systemui.kosmos.Kosmos.Fixture
-import com.android.systemui.kosmos.applicationCoroutineScope
+import javax.inject.Qualifier
 
-val Kosmos.fakeCommunalRepository by Fixture {
-    FakeCommunalSceneRepository(applicationScope = applicationCoroutineScope)
-}
-
-val Kosmos.communalSceneRepository by Fixture<CommunalSceneRepository> { fakeCommunalRepository }
+/**
+ * Logs for device-based satellite events that are **not** that frequent/chatty.
+ *
+ * For chatty logs, use [VerboseDeviceBasedSatelliteInputLog] instead.
+ */
+@Qualifier
+@MustBeDocumented
+@Retention(AnnotationRetention.RUNTIME)
+annotation class DeviceBasedSatelliteInputLog
