@@ -518,7 +518,7 @@ public class BubbleController implements ConfigurationChangeListener,
     }
 
     private ExternalInterfaceBinder createExternalInterface() {
-        return new BubbleController.IBubblesImpl(this);
+        return new IBubblesImpl(this);
     }
 
     @VisibleForTesting
@@ -1457,8 +1457,9 @@ public class BubbleController implements ConfigurationChangeListener,
             SynchronousScreenCaptureListener screenCaptureListener) {
         try {
             ScreenCapture.CaptureArgs args = null;
-            if (mStackView != null) {
-                ViewRootImpl viewRoot = mStackView.getViewRootImpl();
+            View viewToUse = mStackView != null ? mStackView : mLayerView;
+            if (viewToUse != null) {
+                ViewRootImpl viewRoot = viewToUse.getViewRootImpl();
                 if (viewRoot != null) {
                     SurfaceControl bubbleLayer = viewRoot.getSurfaceControl();
                     if (bubbleLayer != null) {
@@ -2354,6 +2355,8 @@ public class BubbleController implements ConfigurationChangeListener,
         @Override
         public void invalidate() {
             mController = null;
+            // Unregister the listeners to ensure any binder death recipients are unlinked
+            mListener.unregister();
         }
 
         @Override
@@ -2530,17 +2533,6 @@ public class BubbleController implements ConfigurationChangeListener,
         }
 
         private CachedState mCachedState = new CachedState();
-
-        private IBubblesImpl mIBubbles;
-
-        @Override
-        public IBubbles createExternalInterface() {
-            if (mIBubbles != null) {
-                mIBubbles.invalidate();
-            }
-            mIBubbles = new IBubblesImpl(BubbleController.this);
-            return mIBubbles;
-        }
 
         @Override
         public boolean isBubbleNotificationSuppressedFromShade(String key, String groupKey) {

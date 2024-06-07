@@ -14,8 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.systemui.recordissue
+package com.android.systemui.statusbar.notification.row.shared
 
-import com.android.traceur.TraceUtils.PresetTraceType
+import android.widget.RemoteViews
 
-data class IssueRecordingConfig(val screenRecord: Boolean, val traceType: PresetTraceType)
+class NewRemoteViews(
+    val contracted: RemoteViews? = null,
+    val headsUp: RemoteViews? = null,
+    val expanded: RemoteViews? = null,
+    val public: RemoteViews? = null,
+    val normalGroupHeader: RemoteViews? = null,
+    val minimizedGroupHeader: RemoteViews? = null,
+)

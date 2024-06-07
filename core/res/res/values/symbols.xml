@@ -1116,6 +1116,7 @@
   <java-symbol type="string" name="accessibility_label_private_profile" />
   <java-symbol type="string" name="accessibility_label_clone_profile" />
   <java-symbol type="string" name="accessibility_label_communal_profile" />
+  <java-symbol type="string" name="private_space_biometric_prompt_title" />
   <java-symbol type="string" name="mediasize_unknown_portrait" />
   <java-symbol type="string" name="mediasize_unknown_landscape" />
   <java-symbol type="string" name="mediasize_iso_a0" />
@@ -5059,8 +5060,6 @@
   <!-- List of shared library packages that should be loaded by the classloader after the
        code and resources provided by applications. -->
   <java-symbol type="array" name="config_sharedLibrariesLoadedAfterApp" />
-
-  <java-symbol type="integer" name="config_customizedMaxCachedProcesses" />
 
   <java-symbol type="color" name="overview_background"/>
 

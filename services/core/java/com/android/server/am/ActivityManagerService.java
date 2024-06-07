@@ -5846,19 +5846,13 @@ public class ActivityManagerService extends IActivityManager.Stub
 
     @Override
     public void setProcessLimit(int max) {
-        enforceCallingPermission(android.Manifest.permission.SET_PROCESS_LIMIT,
-                "setProcessLimit()");
-        synchronized (this) {
-            mConstants.setOverrideMaxCachedProcesses(max);
-            trimApplicationsLocked(true, OOM_ADJ_REASON_PROCESS_END);
-        }
+        // Process limits are deprecated since b/253908413
     }
 
     @Override
     public int getProcessLimit() {
-        synchronized (this) {
-            return mConstants.getOverrideMaxCachedProcesses();
-        }
+        // Process limits are deprecated since b/253908413
+        return Integer.MAX_VALUE;
     }
 
     void importanceTokenDied(ImportanceToken token) {
@@ -10424,11 +10418,6 @@ public class ActivityManagerService extends IActivityManager.Stub
     public void onShellCommand(FileDescriptor in, FileDescriptor out,
             FileDescriptor err, String[] args, ShellCallback callback,
             ResultReceiver resultReceiver) {
-        final int callingUid = Binder.getCallingUid();
-        if (callingUid != ROOT_UID && callingUid != Process.SHELL_UID) {
-            resultReceiver.send(-1, null);
-            throw new SecurityException("Shell commands are only callable by root or shell");
-        }
         (new ActivityManagerShellCommand(this, false)).exec(
                 this, in, out, err, args, callback, resultReceiver);
     }
