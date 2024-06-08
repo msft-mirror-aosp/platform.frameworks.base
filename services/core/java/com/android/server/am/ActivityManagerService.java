@@ -5846,13 +5846,19 @@ public class ActivityManagerService extends IActivityManager.Stub
 
     @Override
     public void setProcessLimit(int max) {
-        // Process limits are deprecated since b/253908413
+        enforceCallingPermission(android.Manifest.permission.SET_PROCESS_LIMIT,
+                "setProcessLimit()");
+        synchronized (this) {
+            mConstants.setOverrideMaxCachedProcesses(max);
+            trimApplicationsLocked(true, OOM_ADJ_REASON_PROCESS_END);
+        }
     }
 
     @Override
     public int getProcessLimit() {
-        // Process limits are deprecated since b/253908413
-        return Integer.MAX_VALUE;
+        synchronized (this) {
+            return mConstants.getOverrideMaxCachedProcesses();
+        }
     }
 
     void importanceTokenDied(ImportanceToken token) {
@@ -10199,6 +10205,19 @@ public class ActivityManagerService extends IActivityManager.Stub
                 ALLOW_NON_FULL, "addStartInfoTimestamp", null);
 
         addStartInfoTimestampInternal(key, timestampNs, userId, callingUid);
+    }
+
+    @Override
+    public void reportStartInfoViewTimestamps(long renderThreadDrawStartTimeNs,
+            long framePresentedTimeNs) {
+        int callingUid = Binder.getCallingUid();
+        int userId = UserHandle.getUserId(callingUid);
+        addStartInfoTimestampInternal(
+                ApplicationStartInfo.START_TIMESTAMP_INITIAL_RENDERTHREAD_FRAME,
+                renderThreadDrawStartTimeNs, userId, callingUid);
+        addStartInfoTimestampInternal(
+                ApplicationStartInfo.START_TIMESTAMP_SURFACEFLINGER_COMPOSITION_COMPLETE,
+                framePresentedTimeNs, userId, callingUid);
     }
 
     private void addStartInfoTimestampInternal(int key, long timestampNs, int userId, int uid) {

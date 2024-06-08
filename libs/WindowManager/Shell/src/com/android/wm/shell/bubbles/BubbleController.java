@@ -592,11 +592,12 @@ public class BubbleController implements ConfigurationChangeListener,
      * Hides the current input method, wherever it may be focused, via InputMethodManagerInternal.
      */
     void hideCurrentInputMethod() {
+        mBubblePositioner.setImeVisible(false /* visible */, 0 /* height */);
         int displayId = mWindowManager.getDefaultDisplay().getDisplayId();
         try {
             mBarService.hideCurrentInputMethodForBubbles(displayId);
         } catch (RemoteException e) {
-            e.printStackTrace();
+            Log.e(TAG, "Failed to hide IME", e);
         }
     }
 
@@ -1549,6 +1550,12 @@ public class BubbleController implements ConfigurationChangeListener,
                     mStackView.setSelectedBubble(b);
                 } else {
                     Log.w(TAG, "Tried to add a bubble to the stack but the stack is null");
+                }
+            };
+        } else if (mBubbleData.isExpanded() && mBubbleData.getSelectedBubble() != null) {
+            callback = b -> {
+                if (b.getKey().equals(mBubbleData.getSelectedBubbleKey())) {
+                    mLayerView.showExpandedView(b);
                 }
             };
         }
