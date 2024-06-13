@@ -486,9 +486,16 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
 
     @GuardedBy("ImfLock.class")
     @NonNull
-    InputMethodBindingController getInputMethodBindingController(@UserIdInt int userId) {
-        return mUserDataRepository.getOrCreate(userId).mBindingController;
+    UserDataRepository.UserData getUserData(@UserIdInt int userId) {
+        return mUserDataRepository.getOrCreate(userId);
     }
+
+    @GuardedBy("ImfLock.class")
+    @NonNull
+    InputMethodBindingController getInputMethodBindingController(@UserIdInt int userId) {
+        return getUserData(userId).mBindingController;
+    }
+
 
     /**
      * Id obtained with {@link InputMethodInfo#getId()} for the currently selected input method.
@@ -1168,7 +1175,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             final int userId = user.getUserIdentifier();
             SecureSettingsWrapper.onUserStarting(userId);
             synchronized (ImfLock.class) {
-                mService.mUserDataRepository.getOrCreate(userId);
+                mService.getUserData(userId);
                 if (mService.mExperimentalConcurrentMultiUserModeEnabled) {
                     if (mService.mCurrentUserId != userId && mService.mSystemReady) {
                         mService.experimentalInitializeVisibleBackgroundUserLocked(userId);
@@ -1290,7 +1297,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                     bindingControllerForTesting != null ? bindingControllerForTesting
                             : bindingControllerFactory);
             for (int id : mUserManagerInternal.getUserIds()) {
-                mUserDataRepository.getOrCreate(id);
+                getUserData(id);
             }
 
             final InputMethodSettings settings = InputMethodSettingsRepository.get(mCurrentUserId);
@@ -2489,8 +2496,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
 
     @GuardedBy("ImfLock.class")
     void resetCurrentMethodAndClientLocked(@UnbindReason int unbindClientReason) {
-        final var bindingController =
-                mUserDataRepository.getOrCreate(mCurrentUserId).mBindingController;
+        final var bindingController = getInputMethodBindingController(mCurrentUserId);
         bindingController.setSelectedMethodId(null);
 
         // Callback before clean-up binding states.
@@ -3084,8 +3090,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             throw getExceptionForUnknownImeId(id);
         }
 
+        final var bindingController = getInputMethodBindingController(userId);
         // See if we need to notify a subtype change within the same IME.
-        if (id.equals(getSelectedMethodIdLocked())) {
+        if (id.equals(bindingController.getSelectedMethodId())) {
             final int subtypeCount = info.getSubtypeCount();
             if (subtypeCount <= 0) {
                 notifyInputMethodSubtypeChangedLocked(userId, info, null);
@@ -3120,7 +3127,6 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             return;
         }
 
-        final var bindingController = getInputMethodBindingController(userId);
         // Changing to a different IME.
         if (bindingController.getDeviceIdToShowIme() != DEVICE_ID_DEFAULT
                 && deviceId == DEVICE_ID_DEFAULT) {
@@ -3143,7 +3149,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             // mCurMethodId should be updated after setSelectedInputMethodAndSubtypeLocked()
             // because mCurMethodId is stored as a history in
             // setSelectedInputMethodAndSubtypeLocked().
-            getInputMethodBindingController(userId).setSelectedMethodId(id);
+            bindingController.setSelectedMethodId(id);
 
             if (mActivityManagerInternal.isSystemReady()) {
                 Intent intent = new Intent(Intent.ACTION_INPUT_METHOD_CHANGED);
@@ -6109,7 +6115,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             p.println("  mStylusIds=" + (mStylusIds != null
                     ? Arrays.toString(mStylusIds.toArray()) : ""));
             p.println("  mSwitchingController:");
-            mSwitchingController.dump(p);
+            mSwitchingController.dump(p, "    ");
 
             p.println("  mStartInputHistory:");
             mStartInputHistory.dump(pw, "    ");

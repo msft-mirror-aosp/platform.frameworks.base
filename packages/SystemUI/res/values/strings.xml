@@ -367,7 +367,7 @@
     <!-- Cling help message title when hiding the navigation bar entering immersive mode [CHAR LIMIT=none] -->
     <string name="immersive_cling_title">Viewing full screen</string>
     <!-- Cling help message description when hiding the navigation bar entering immersive mode [CHAR LIMIT=none] -->
-    <string name="immersive_cling_description">To exit, swipe down from the top.</string>
+    <string name="immersive_cling_description">To exit, swipe down from the top of your screen</string>
     <!-- Cling help message confirmation button when hiding the navigation bar entering immersive mode [CHAR LIMIT=30] -->
     <string name="immersive_cling_positive">Got it</string>
 
@@ -716,7 +716,7 @@
     <!-- QuickSettings: Accessibility label to activate a device [CHAR LIMIT=NONE]-->
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate">activate</string>
     <!-- QuickSettings: Bluetooth auto on tomorrow [CHAR LIMIT=NONE]-->
-    <string name="turn_on_bluetooth_auto_tomorrow">Automatically turn on again tomorrow</string>
+    <string name="turn_on_bluetooth_auto_tomorrow">Automatically turn on tomorrow</string>
     <!-- QuickSettings: Bluetooth auto on info text when disabled [CHAR LIMIT=NONE]-->
     <string name="turn_on_bluetooth_auto_info_disabled">Features like Quick Share and Find My Device use Bluetooth</string>
     <!-- QuickSettings: Bluetooth auto on info text when enabled [CHAR LIMIT=NONE]-->
