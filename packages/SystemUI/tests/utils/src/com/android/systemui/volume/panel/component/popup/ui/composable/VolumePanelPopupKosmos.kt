@@ -14,17 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.systemui.touchpad.tutorial.ui
+package com.android.systemui.volume.panel.component.popup.ui.composable
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import com.android.systemui.animation.dialogTransitionAnimator
+import com.android.systemui.kosmos.Kosmos
+import com.android.systemui.statusbar.phone.systemUIDialogFactory
 
-class TutorialSelectionViewModel : ViewModel()
-
-class TutorialSelectionViewModelFactory : ViewModelProvider.Factory {
-
-    @Suppress("UNCHECKED_CAST")
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return TutorialSelectionViewModel() as T
-    }
-}
+val Kosmos.volumePanelPopup: VolumePanelPopup by
+    Kosmos.Fixture { VolumePanelPopup(systemUIDialogFactory, dialogTransitionAnimator) }

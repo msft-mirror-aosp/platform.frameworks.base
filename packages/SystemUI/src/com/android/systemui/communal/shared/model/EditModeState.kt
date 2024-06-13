@@ -13,17 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.systemui.bluetooth.qsdialog
 
-import com.android.systemui.dagger.SysUISingleton
-import dagger.Binds
-import dagger.Module
+package com.android.systemui.communal.shared.model
 
-@Module
-interface BluetoothTileDialogModule {
-    @Binds
-    @SysUISingleton
-    fun bindDeviceItemActionInteractor(
-        impl: DeviceItemActionInteractorImpl
-    ): DeviceItemActionInteractor
+/**
+ * Models the state of the edit mode activity. Used to chain the animation during the transition
+ * between the hub on communal scene, and the edit mode activity after unlocking the keyguard.
+ */
+enum class EditModeState(val value: Int) {
+    // starting activity after dismissing keyguard
+    STARTING(0),
+    // activity content is showing
+    SHOWING(1),
 }

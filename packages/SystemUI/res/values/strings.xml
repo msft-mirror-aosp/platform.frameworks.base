@@ -319,6 +319,29 @@
     <string name="screenrecord_save_error">Error saving screen recording</string>
     <!-- A toast message shown when the screen recording cannot be started due to a generic error [CHAR LIMIT=NONE] -->
     <string name="screenrecord_start_error">Error starting screen recording</string>
+    <!-- Title for a dialog shown to the user that will let them stop recording their screen [CHAR LIMIT=50] -->
+    <string name="screenrecord_stop_dialog_title">Stop recording screen?</string>
+    <!-- Text telling a user that they will stop recording their screen if they click the "Stop recording" button [CHAR LIMIT=100] -->
+    <string name="screenrecord_stop_dialog_message">You will stop recording your screen</string>
+    <!-- Button to stop a screen recording [CHAR LIMIT=35] -->
+    <string name="screenrecord_stop_dialog_button">Stop recording</string>
+
+    <!-- Title for a dialog shown to the user that will let them stop sharing their screen to another app on the device [CHAR LIMIT=50] -->
+    <string name="share_to_app_stop_dialog_title">Stop sharing screen?</string>
+    <!-- Text telling a user that they will stop sharing their screen if they click the "Stop sharing" button [CHAR LIMIT=100] -->
+    <string name="share_to_app_stop_dialog_message">You will stop sharing your screen</string>
+    <!-- Button to stop screen sharing [CHAR LIMIT=35] -->
+    <string name="share_to_app_stop_dialog_button">Stop sharing</string>
+
+    <!-- Title for a dialog shown to the user that will let them stop casting their screen to a different device [CHAR LIMIT=50] -->
+    <string name="cast_to_other_device_stop_dialog_title">Stop casting screen?</string>
+    <!-- Text telling a user that they will stop casting their screen to a different device if they click the "Stop casting" button [CHAR LIMIT=100] -->
+    <string name="cast_to_other_device_stop_dialog_message">You will stop casting your screen</string>
+    <!-- Button to stop screen casting to a different device [CHAR LIMIT=35] -->
+    <string name="cast_to_other_device_stop_dialog_button">Stop casting</string>
+
+    <!-- Button to close a dialog without doing any action [CHAR LIMIT=20] -->
+    <string name="close_dialog_button">Close</string>
 
     <!-- Notification title displayed for issue recording [CHAR LIMIT=50]-->
     <string name="issuerecord_title">Issue Recorder</string>
@@ -3537,6 +3560,15 @@
          [CHAR LIMIT=NONE]
           -->
     <string name="shortcut_helper_key_combinations_or_separator">or</string>
+
+    <!-- Label for button opening tutorial for back gesture on touchpad [CHAR LIMIT=NONE] -->
+    <string name="touchpad_tutorial_back_gesture_button">Back gesture</string>
+    <!-- Label for button opening tutorial for back gesture on touchpad [CHAR LIMIT=NONE] -->
+    <string name="touchpad_tutorial_home_gesture_button">Home gesture</string>
+    <!-- Label for button opening tutorial on using Action key from keyboard [CHAR LIMIT=NONE] -->
+    <string name="touchpad_tutorial_action_key_button">Action key</string>
+    <!-- Label for button finishing touchpad tutorial [CHAR LIMIT=NONE] -->
+    <string name="touchpad_tutorial_done_button">Done</string>
 
     <!-- Content description for keyboard backlight brightness dialog [CHAR LIMIT=NONE] -->
     <string name="keyboard_backlight_dialog_title">Keyboard backlight</string>
