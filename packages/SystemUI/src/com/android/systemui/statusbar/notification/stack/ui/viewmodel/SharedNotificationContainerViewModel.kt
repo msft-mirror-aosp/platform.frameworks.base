@@ -470,6 +470,8 @@ constructor(
             }
             .dumpWhileCollecting("isTransitioningToHiddenKeyguard")
 
+    val panelAlpha = keyguardInteractor.panelAlpha
+
     fun keyguardAlpha(viewState: ViewStateAccessor): Flow<Float> {
         // All transition view models are mututally exclusive, and safe to merge
         val alphaTransitions =
@@ -497,6 +499,8 @@ constructor(
                 occludedToLockscreenTransitionViewModel.lockscreenAlpha,
                 primaryBouncerToGoneTransitionViewModel.notificationAlpha,
                 primaryBouncerToLockscreenTransitionViewModel.lockscreenAlpha,
+                glanceableHubToLockscreenTransitionViewModel.keyguardAlpha,
+                lockscreenToGlanceableHubTransitionViewModel.keyguardAlpha,
             )
 
         return merge(
