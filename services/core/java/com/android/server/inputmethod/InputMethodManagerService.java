@@ -254,7 +254,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
     private @interface MultiUserUnawareField {
     }
 
-    private static final int MSG_HIDE_ALL_INPUT_METHODS = 1035;
+    private static final int MSG_HIDE_INPUT_METHOD = 1035;
     private static final int MSG_REMOVE_IME_SURFACE = 1060;
     private static final int MSG_REMOVE_IME_SURFACE_FROM_WINDOW = 1061;
 
@@ -1126,6 +1126,21 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                 }
             });
         }
+
+        @Override
+        public void onUserStopped(@NonNull TargetUser user) {
+            final int userId = user.getUserIdentifier();
+            // Called on ActivityManager thread.
+            SecureSettingsWrapper.onUserStopped(userId);
+            mService.mIoHandler.post(() -> {
+                final var additionalSubtypeMap = AdditionalSubtypeMapRepository.get(userId);
+                final var settings = InputMethodManagerService.queryInputMethodServicesInternal(
+                        mService.mContext, userId, additionalSubtypeMap,
+                        DirectBootAwareness.AUTO).getMethodMap();
+                InputMethodSettingsRepository.put(userId,
+                        InputMethodSettings.create(settings, userId));
+            });
+        }
     }
 
     @GuardedBy("ImfLock.class")
@@ -1841,13 +1856,6 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             mVisibilityApplier.applyImeVisibility(userData.mImeBindingState.mFocusedWindow,
                     statsToken, STATE_HIDE_IME, SoftInputShowHideReason.NOT_SET /* ignore reason */,
                     userId);
-        }
-    }
-
-    @VisibleForTesting
-    void setAttachedClientForTesting(@NonNull ClientState cs) {
-        synchronized (ImfLock.class) {
-            getUserData(mCurrentUserId).mCurClient = cs;
         }
     }
 
@@ -3037,6 +3045,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
 
     @GuardedBy("ImfLock.class")
     private void sendResultReceiverFailureLocked(@Nullable ResultReceiver resultReceiver) {
+        if (resultReceiver == null) {
+            return;
+        }
         final boolean isInputShown = mVisibilityStateComputer.isInputShown();
         resultReceiver.send(isInputShown
                 ? InputMethodManager.RESULT_UNCHANGED_SHOWN
@@ -3994,7 +4005,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
         }
     }
 
-    @IInputMethodManagerImpl.PermissionVerified(Manifest.permission.WRITE_SECURE_SETTINGS)
+    @IInputMethodManagerImpl.PermissionVerified(allOf = {
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL,
+            Manifest.permission.WRITE_SECURE_SETTINGS})
     @Override
     public void showInputMethodPickerFromSystem(int auxiliarySubtypeMode, int displayId) {
         // Always call subtype picker, because subtype picker is a superset of input method
@@ -4088,7 +4101,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
         }
     }
 
-    @IInputMethodManagerImpl.PermissionVerified(Manifest.permission.WRITE_SECURE_SETTINGS)
+    @IInputMethodManagerImpl.PermissionVerified(allOf = {
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL,
+            Manifest.permission.WRITE_SECURE_SETTINGS})
     @Override
     public void onImeSwitchButtonClickFromSystem(int displayId) {
         synchronized (ImfLock.class) {
@@ -4430,7 +4445,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
         });
     }
 
-    @IInputMethodManagerImpl.PermissionVerified(Manifest.permission.INTERNAL_SYSTEM_WINDOW)
+    @IInputMethodManagerImpl.PermissionVerified(allOf = {
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL,
+            Manifest.permission.INTERNAL_SYSTEM_WINDOW})
     @Override
     public void removeImeSurface(int displayId) {
         mHandler.obtainMessage(MSG_REMOVE_IME_SURFACE).sendToTarget();
@@ -5032,7 +5049,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             return;
         }
 
-        if (Flags.imeSwitcherRevamp()) {
+        if (mNewInputMethodSwitcherMenuEnabled) {
             if (DEBUG) {
                 Slog.v(TAG, "Show IME switcher menu,"
                         + " showAuxSubtypes=" + showAuxSubtypes
@@ -5064,7 +5081,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
     @Override
     public boolean handleMessage(Message msg) {
         switch (msg.what) {
-            case MSG_HIDE_ALL_INPUT_METHODS: {
+            case MSG_HIDE_INPUT_METHOD: {
                 @SoftInputShowHideReason final int reason = msg.arg1;
                 final int originatingDisplayId = msg.arg2;
                 synchronized (ImfLock.class) {
@@ -5800,10 +5817,10 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
 
         @ImfLockFree
         @Override
-        public void hideAllInputMethods(@SoftInputShowHideReason int reason,
+        public void hideInputMethod(@SoftInputShowHideReason int reason,
                 int originatingDisplayId) {
-            mHandler.removeMessages(MSG_HIDE_ALL_INPUT_METHODS);
-            mHandler.obtainMessage(MSG_HIDE_ALL_INPUT_METHODS, reason, originatingDisplayId)
+            mHandler.removeMessages(MSG_HIDE_INPUT_METHOD);
+            mHandler.obtainMessage(MSG_HIDE_INPUT_METHOD, reason, originatingDisplayId)
                     .sendToTarget();
         }
 
