@@ -89,6 +89,7 @@ import com.android.wm.shell.R;
 import com.android.wm.shell.RootTaskDisplayAreaOrganizer;
 import com.android.wm.shell.ShellTaskOrganizer;
 import com.android.wm.shell.apptoweb.AppToWebGenericLinksParser;
+import com.android.wm.shell.common.DisplayChangeController;
 import com.android.wm.shell.common.DisplayController;
 import com.android.wm.shell.common.DisplayInsetsController;
 import com.android.wm.shell.common.DisplayLayout;
@@ -175,6 +176,7 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
     private boolean mInImmersiveMode;
     private final String mSysUIPackageName;
 
+    private final DisplayChangeController.OnDisplayChangingListener mOnDisplayChangingListener;
     private final ISystemGestureExclusionListener mGestureExclusionListener =
             new ISystemGestureExclusionListener.Stub() {
                 @Override
@@ -287,6 +289,31 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
         mSysUIPackageName = mContext.getResources().getString(
                 com.android.internal.R.string.config_systemUi);
         mInteractionJankMonitor = interactionJankMonitor;
+        mOnDisplayChangingListener = (displayId, fromRotation, toRotation, displayAreaInfo, t) -> {
+            DesktopModeWindowDecoration decoration;
+            RunningTaskInfo taskInfo;
+            for (int i = 0; i < mWindowDecorByTaskId.size(); i++) {
+                decoration = mWindowDecorByTaskId.valueAt(i);
+                if (decoration == null) {
+                    continue;
+                } else {
+                    taskInfo = decoration.mTaskInfo;
+                }
+
+                // Check if display has been rotated between portrait & landscape
+                if (displayId == taskInfo.displayId && taskInfo.isFreeform()
+                        && (fromRotation % 2 != toRotation % 2)) {
+                    // Check if the task bounds on the rotated display will be out of bounds.
+                    // If so, then update task bounds to be within reachable area.
+                    final Rect taskBounds = new Rect(
+                            taskInfo.configuration.windowConfiguration.getBounds());
+                    if (DragPositioningCallbackUtility.snapTaskBoundsIfNecessary(
+                            taskBounds, decoration.calculateValidDragArea())) {
+                        t.setBounds(taskInfo.token, taskBounds);
+                    }
+                }
+            }
+        };
 
         shellInit.addInitCallback(this::onInit, this);
     }
@@ -298,6 +325,9 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
                 new DesktopModeOnInsetsChangedListener());
         mDesktopTasksController.setOnTaskResizeAnimationListener(
                 new DesktopModeOnTaskResizeAnimationListener());
+        mDesktopTasksController.setOnTaskRepositionAnimationListener(
+                new DesktopModeOnTaskRepositionAnimationListener());
+        mDisplayController.addDisplayChangingController(mOnDisplayChangingListener);
         try {
             mWindowManager.registerSystemGestureExclusionListener(mGestureExclusionListener,
                     mContext.getDisplayId());
@@ -436,9 +466,16 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
         if (decoration == null) {
             return;
         }
-        mDesktopTasksController.snapToHalfScreen(decoration.mTaskInfo,
-                decoration.mTaskInfo.configuration.windowConfiguration.getBounds(),
-                left ? SnapPosition.LEFT : SnapPosition.RIGHT);
+
+        if (!decoration.mTaskInfo.isResizeable
+                && DesktopModeFlags.DISABLE_SNAP_RESIZE.isEnabled(mContext)) {
+            //TODO(b/354658237) - show toast with relevant string
+        } else {
+            mDesktopTasksController.snapToHalfScreen(decoration.mTaskInfo,
+                    decoration.mTaskInfo.configuration.windowConfiguration.getBounds(),
+                    left ? SnapPosition.LEFT : SnapPosition.RIGHT);
+        }
+
         decoration.closeHandleMenu();
         decoration.closeMaximizeMenu();
     }
@@ -521,6 +558,7 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
         private final DragDetector mDragDetector;
         private final GestureDetector mGestureDetector;
         private final int mDisplayId;
+        private final Rect mOnDragStartInitialBounds = new Rect();
 
         /**
          * Whether to pilfer the next motion event to send cancellations to the windows below.
@@ -591,13 +629,21 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
                     && id != R.id.maximize_window) {
                 return false;
             }
-            moveTaskToFront(decoration.mTaskInfo);
 
             final int actionMasked = e.getActionMasked();
             final boolean isDown = actionMasked == MotionEvent.ACTION_DOWN;
             final boolean isUpOrCancel = actionMasked == MotionEvent.ACTION_CANCEL
                     || actionMasked == MotionEvent.ACTION_UP;
             if (isDown) {
+                // Only move to front on down to prevent 2+ tasks from fighting
+                // (and thus flickering) for front status when drag-moving them simultaneously with
+                // two pointers.
+                // TODO(b/356962065): during a drag-move, this shouldn't be a WCT - just move the
+                //  task surface to the top of other tasks and reorder once the user releases the
+                //  gesture together with the bounds' WCT. This is probably still valid for other
+                //  gestures like simple clicks.
+                moveTaskToFront(decoration.mTaskInfo);
+
                 final boolean downInCustomizableCaptionRegion =
                         decoration.checkTouchEventInCustomizableRegion(e);
                 final boolean downInExclusionRegion = mExclusionRegion.contains(
@@ -724,10 +770,11 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
             switch (e.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN: {
                     mDragPointerId = e.getPointerId(0);
-                    mDragPositioningCallback.onDragPositioningStart(
+                    final Rect initialBounds = mDragPositioningCallback.onDragPositioningStart(
                             0 /* ctrlType */, e.getRawX(0),
                             e.getRawY(0));
                     updateDragStatus(e.getActionMasked());
+                    mOnDragStartInitialBounds.set(initialBounds);
                     mHasLongClicked = false;
                     // Do not consume input event if a button is touched, otherwise it would
                     // prevent the button's ripple effect from showing.
@@ -771,9 +818,11 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
                     // Tasks bounds haven't actually been updated (only its leash), so pass to
                     // DesktopTasksController to allow secondary transformations (i.e. snap resizing
                     // or transforming to fullscreen) before setting new task bounds.
-                    mDesktopTasksController.onDragPositioningEnd(taskInfo, position,
+                    mDesktopTasksController.onDragPositioningEnd(
+                            taskInfo, decoration.mTaskSurface, position,
                             new PointF(e.getRawX(dragPointerIdx), e.getRawY(dragPointerIdx)),
-                            newTaskBounds, decoration.calculateValidDragArea());
+                            newTaskBounds, decoration.calculateValidDragArea(),
+                            new Rect(mOnDragStartInitialBounds));
                     if (touchingButton && !mHasLongClicked) {
                         // We need the input event to not be consumed here to end the ripple
                         // effect on the touched button. We will reset drag state in the ensuing
@@ -1271,6 +1320,25 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
         pw.println(innerPrefix + "mWindowDecorByTaskId=" + mWindowDecorByTaskId);
     }
 
+    private class DesktopModeOnTaskRepositionAnimationListener
+            implements OnTaskRepositionAnimationListener {
+        @Override
+        public void onAnimationStart(int taskId) {
+            final DesktopModeWindowDecoration decoration = mWindowDecorByTaskId.get(taskId);
+            if (decoration != null) {
+                decoration.setAnimatingTaskResizeOrReposition(true);
+            }
+        }
+
+        @Override
+        public void onAnimationEnd(int taskId) {
+            final DesktopModeWindowDecoration decoration = mWindowDecorByTaskId.get(taskId);
+            if (decoration != null) {
+                decoration.setAnimatingTaskResizeOrReposition(false);
+            }
+        }
+    }
+
     private class DesktopModeOnTaskResizeAnimationListener
             implements OnTaskResizeAnimationListener {
         @Override
@@ -1281,7 +1349,7 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
                 return;
             }
             decoration.showResizeVeil(t, bounds);
-            decoration.setAnimatingTaskResize(true);
+            decoration.setAnimatingTaskResizeOrReposition(true);
         }
 
         @Override
@@ -1296,7 +1364,7 @@ public class DesktopModeWindowDecorViewModel implements WindowDecorViewModel {
             final DesktopModeWindowDecoration decoration = mWindowDecorByTaskId.get(taskId);
             if (decoration == null) return;
             decoration.hideResizeVeil();
-            decoration.setAnimatingTaskResize(false);
+            decoration.setAnimatingTaskResizeOrReposition(false);
         }
     }
 
