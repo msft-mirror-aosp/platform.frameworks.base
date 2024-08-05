@@ -44,7 +44,6 @@ import static android.view.Display.DEFAULT_DISPLAY;
 import static android.view.Display.INVALID_DISPLAY;
 import static android.view.WindowManager.DISPLAY_IME_POLICY_HIDE;
 import static android.view.WindowManager.DISPLAY_IME_POLICY_LOCAL;
-import static android.view.WindowManager.LayoutParams.TYPE_APPLICATION_STARTING;
 import static android.view.inputmethod.ConnectionlessHandwritingCallback.CONNECTIONLESS_HANDWRITING_ERROR_OTHER;
 import static android.view.inputmethod.ConnectionlessHandwritingCallback.CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTED;
 
@@ -188,7 +187,6 @@ import com.android.server.inputmethod.InputMethodSubtypeSwitchingController.ImeS
 import com.android.server.pm.UserManagerInternal;
 import com.android.server.statusbar.StatusBarManagerInternal;
 import com.android.server.utils.PriorityDump;
-import com.android.server.wm.ImeTargetChangeListener;
 import com.android.server.wm.WindowManagerInternal;
 
 import java.io.FileDescriptor;
@@ -964,37 +962,6 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             InputMethodDrawsNavBarResourceMonitor.registerCallback(context, mService.mIoHandler,
                     mService::onUpdateResourceOverlay);
 
-            // Also hook up ImeTargetChangeListener.
-            // TODO(b/356876005): Merge this into InputMethodManagerInternal.
-            final var windowManagerInternal = mService.mWindowManagerInternal;
-            windowManagerInternal.setInputMethodTargetChangeListener(new ImeTargetChangeListener() {
-                @Override
-                public void onImeTargetOverlayVisibilityChanged(@NonNull IBinder overlayWindowToken,
-                        @WindowManager.LayoutParams.WindowType int windowType, boolean visible,
-                        boolean removed, int displayId) {
-                    // Ignoring the starting window since it's ok to cover the IME target
-                    // window in temporary without affecting the IME visibility.
-                    final boolean hasOverlay = visible && !removed
-                            && windowType != TYPE_APPLICATION_STARTING;
-                    synchronized (ImfLock.class) {
-                        final var userId = mService.resolveImeUserIdFromDisplayIdLocked(displayId);
-                        mService.getUserData(userId).mVisibilityStateComputer
-                                .setHasVisibleImeLayeringOverlay(hasOverlay);
-                    }
-                }
-
-                @Override
-                public void onImeInputTargetVisibilityChanged(IBinder imeInputTarget,
-                        boolean visibleRequested, boolean removed, int displayId) {
-                    final boolean visibleAndNotRemoved = visibleRequested && !removed;
-                    synchronized (ImfLock.class) {
-                        final var userId = mService.resolveImeUserIdFromDisplayIdLocked(displayId);
-                        mService.getUserData(userId).mVisibilityStateComputer
-                                .onImeInputTargetVisibilityChanged(imeInputTarget,
-                                        visibleAndNotRemoved);
-                    }
-                }
-            });
             // Also schedule user init tasks onto an I/O thread.
             initializeUsersAsync(mService.mUserManagerInternal.getUserIds());
         }
@@ -1443,7 +1410,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                 final int currentUserId = mCurrentUserId;
                 mStatusBarManagerInternal =
                         LocalServices.getService(StatusBarManagerInternal.class);
-                hideStatusBarIconLocked();
+                hideStatusBarIconLocked(currentUserId);
                 final var bindingController = getInputMethodBindingController(currentUserId);
                 updateSystemUiLocked(bindingController.getImeWindowVis(),
                         bindingController.getBackDisposition(), currentUserId);
@@ -2586,7 +2553,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             userData.mEnabledAccessibilitySessions.clear();
             scheduleNotifyImeUidToAudioService(Process.INVALID_UID);
         }
-        hideStatusBarIconLocked();
+        hideStatusBarIconLocked(userId);
         getUserData(userId).mInFullscreenMode = false;
         mWindowManagerInternal.setDismissImeOnBackKeyPressed(false);
         scheduleResetStylusHandwriting();
@@ -2597,6 +2564,11 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             @DrawableRes int iconId, @NonNull UserData userData) {
         final int userId = userData.mUserId;
         synchronized (ImfLock.class) {
+            // To minimize app compat risk, ignore background users' request for single-user mode.
+            // TODO(b/357178609): generalize the logic and remove this special rule.
+            if (!mConcurrentMultiUserModeEnabled && userId != mCurrentUserId) {
+                return;
+            }
             if (!calledWithValidTokenLocked(token, userData)) {
                 return;
             }
@@ -2604,7 +2576,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             try {
                 if (iconId == 0) {
                     if (DEBUG) Slog.d(TAG, "hide the small icon for the input method");
-                    hideStatusBarIconLocked();
+                    hideStatusBarIconLocked(userId);
                 } else if (packageName != null) {
                     if (DEBUG) Slog.d(TAG, "show a small icon for the input method");
                     final PackageManager userAwarePackageManager =
@@ -2632,7 +2604,12 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
     }
 
     @GuardedBy("ImfLock.class")
-    private void hideStatusBarIconLocked() {
+    private void hideStatusBarIconLocked(@UserIdInt int userId) {
+        // To minimize app compat risk, ignore background users' request for single-user mode.
+        // TODO(b/357178609): generalize the logic and remove this special rule.
+        if (!mConcurrentMultiUserModeEnabled && userId != mCurrentUserId) {
+            return;
+        }
         if (mStatusBarManagerInternal != null) {
             mStatusBarManagerInternal.setIconVisibility(mSlotIme, false);
         }
@@ -2839,6 +2816,11 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
 
     @GuardedBy("ImfLock.class")
     private void updateSystemUiLocked(int vis, int backDisposition, @UserIdInt int userId) {
+        // To minimize app compat risk, ignore background users' request for single-user mode.
+        // TODO(b/357178609): generalize the logic and remove this special rule.
+        if (!mConcurrentMultiUserModeEnabled && userId != mCurrentUserId) {
+            return;
+        }
         final var userData = getUserData(userId);
         final var bindingController = userData.mBindingController;
         final var curToken = bindingController.getCurToken();
@@ -3132,11 +3114,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             if (Flags.refactorInsetsController()) {
                 final var visibilityStateComputer = userData.mVisibilityStateComputer;
                 boolean wasVisible = visibilityStateComputer.isInputShown();
-                if (userData.mImeBindingState != null
-                        && userData.mImeBindingState.mFocusedWindowClient != null
-                        && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
-                    userData.mImeBindingState.mFocusedWindowClient.mClient
-                            .setImeVisibility(true, statsToken);
+                if (setImeVisibilityOnFocusedWindowClient(false, userData, statsToken)) {
                     if (resultReceiver != null) {
                         resultReceiver.send(
                                 wasVisible ? InputMethodManager.RESULT_UNCHANGED_SHOWN
@@ -3585,13 +3563,9 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             Trace.traceBegin(TRACE_TAG_WINDOW_MANAGER, "IMMS.hideSoftInput");
             if (DEBUG) Slog.v(TAG, "Client requesting input be hidden");
             if (Flags.refactorInsetsController()) {
-                if (userData.mImeBindingState != null
-                        && userData.mImeBindingState.mFocusedWindowClient != null
-                        && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
-                    boolean wasVisible = visibilityStateComputer.isInputShown();
-                    // TODO add windowToken to interface
-                    userData.mImeBindingState.mFocusedWindowClient.mClient
-                            .setImeVisibility(false, statsToken);
+                boolean wasVisible = visibilityStateComputer.isInputShown();
+                // TODO add windowToken to interface
+                if (setImeVisibilityOnFocusedWindowClient(false, userData, statsToken)) {
                     if (resultReceiver != null) {
                         resultReceiver.send(wasVisible ? InputMethodManager.RESULT_HIDDEN
                                 : InputMethodManager.RESULT_UNCHANGED_HIDDEN, null);
@@ -4928,12 +4902,7 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                     if (Flags.refactorInsetsController()) {
                         userData.mCurClient.mClient.setImeVisibility(false, statsToken);
                         // TODO we will loose the flags here
-                        if (userData.mImeBindingState != null
-                                && userData.mImeBindingState.mFocusedWindowClient != null
-                                && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
-                            userData.mImeBindingState.mFocusedWindowClient.mClient
-                                    .setImeVisibility(false, statsToken);
-                        }
+                        setImeVisibilityOnFocusedWindowClient(false, userData, statsToken);
                     } else {
                         final var visibilityStateComputer = userData.mVisibilityStateComputer;
                         hideCurrentInputLocked(visibilityStateComputer.getLastImeTargetWindow(),
@@ -4966,14 +4935,8 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                 final long ident = Binder.clearCallingIdentity();
                 try {
                     if (Flags.refactorInsetsController()) {
-                        userData.mCurClient.mClient.setImeVisibility(false, statsToken);
-                        // TODO we will loose the flags here
-                        if (userData.mImeBindingState != null
-                                && userData.mImeBindingState.mFocusedWindowClient != null
-                                && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
-                            userData.mImeBindingState.mFocusedWindowClient.mClient
-                                    .setImeVisibility(true, statsToken);
-                        }
+                        userData.mCurClient.mClient.setImeVisibility(true, statsToken);
+                        setImeVisibilityOnFocusedWindowClient(true, userData, statsToken);
                     } else {
                         final var visibilityStateComputer = userData.mVisibilityStateComputer;
                         showCurrentInputLocked(visibilityStateComputer.getLastImeTargetWindow(),
@@ -5135,13 +5098,8 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                     final int userId = resolveImeUserIdFromDisplayIdLocked(originatingDisplayId);
                     final var userData = getUserData(userId);
                     if (Flags.refactorInsetsController()) {
-                        if (userData.mImeBindingState != null
-                                && userData.mImeBindingState.mFocusedWindowClient != null
-                                && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
-                            userData.mImeBindingState.mFocusedWindowClient.mClient
-                                    .setImeVisibility(false,
-                                            null /* TODO(b329229469) check statsToken */);
-                        }
+                        setImeVisibilityOnFocusedWindowClient(false, userData,
+                                null /* TODO(b329229469) check statsToken */);
                     } else {
 
                         hideCurrentInputLocked(userData.mImeBindingState.mFocusedWindow,
@@ -5991,6 +5949,25 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             mHandler.obtainMessage(MSG_REMOVE_IME_SURFACE).sendToTarget();
         }
 
+        @Override
+        public void setHasVisibleImeLayeringOverlay(boolean hasVisibleOverlay, int displayId) {
+            synchronized (ImfLock.class) {
+                final var userId = resolveImeUserIdFromDisplayIdLocked(displayId);
+                getUserData(userId).mVisibilityStateComputer.setHasVisibleImeLayeringOverlay(
+                        hasVisibleOverlay);
+            }
+        }
+
+        @Override
+        public void onImeInputTargetVisibilityChanged(@NonNull IBinder imeInputTarget,
+                boolean visibleAndNotRemoved, int displayId) {
+            synchronized (ImfLock.class) {
+                final var userId = resolveImeUserIdFromDisplayIdLocked(displayId);
+                getUserData(userId).mVisibilityStateComputer.onImeInputTargetVisibilityChanged(
+                        imeInputTarget, visibleAndNotRemoved);
+            }
+        }
+
         @ImfLockFree
         @Override
         public void updateImeWindowStatus(boolean disableImeIcon, int displayId) {
@@ -6810,16 +6787,8 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
                     final InputMethodSettings settings = InputMethodSettingsRepository.get(userId);
                     final var userData = getUserData(userId);
                     if (Flags.refactorInsetsController()) {
-                        if (userData.mImeBindingState != null
-                                && userData.mImeBindingState.mFocusedWindowClient != null
-                                && userData.mImeBindingState.mFocusedWindowClient.mClient
-                                != null) {
-                            userData.mImeBindingState.mFocusedWindowClient.mClient
-                                    .setImeVisibility(false,
-                                    null /* TODO(b329229469) initialize statsToken here? */);
-                        } else {
-                            // TODO(b329229469): ImeTracker?
-                        }
+                        setImeVisibilityOnFocusedWindowClient(false, userData,
+                                null /* TODO(b329229469) initialize statsToken here? */);
                     } else {
                         hideCurrentInputLocked(userData.mImeBindingState.mFocusedWindow,
                                 0 /* flags */,
@@ -6856,6 +6825,23 @@ public final class InputMethodManagerService implements IInputMethodManagerImpl.
             }
         }
         return ShellCommandResult.SUCCESS;
+    }
+
+    @GuardedBy("ImfLock.class")
+    boolean setImeVisibilityOnFocusedWindowClient(boolean visible, UserData userData,
+            @NonNull ImeTracker.Token statsToken) {
+        if (Flags.refactorInsetsController()) {
+            if (userData.mImeBindingState != null
+                    && userData.mImeBindingState.mFocusedWindowClient != null
+                    && userData.mImeBindingState.mFocusedWindowClient.mClient != null) {
+                userData.mImeBindingState.mFocusedWindowClient.mClient.setImeVisibility(visible,
+                        statsToken);
+                return true;
+            }
+            ImeTracker.forLogging().onFailed(statsToken,
+                    ImeTracker.PHASE_SERVER_SET_VISIBILITY_ON_FOCUSED_WINDOW);
+        }
+        return false;
     }
 
     /**
