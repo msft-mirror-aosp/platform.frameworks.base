@@ -936,7 +936,8 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE,
                 ApplicationInfo.FLAG_SYSTEM|ApplicationInfo.FLAG_HAS_CODE,
                 ApplicationInfo.PRIVATE_FLAG_PRIVILEGED|ApplicationInfo.PRIVATE_FLAG_HIDDEN,
-                0,
+                0, /* pkgPrivateFlagsExt */
+                0, /* sharedUserAppId */
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
                 null /*usesStaticLibraries*/,
@@ -961,7 +962,8 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE,
                 ApplicationInfo.FLAG_SYSTEM|ApplicationInfo.FLAG_HAS_CODE,
                 ApplicationInfo.PRIVATE_FLAG_PRIVILEGED|ApplicationInfo.PRIVATE_FLAG_HIDDEN,
-                0,
+                0 /*pkgPrivateFlagsExt*/,
+                0 /*sharedUserAppId*/,
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
                 null /*usesStaticLibraries*/,
@@ -971,7 +973,7 @@ public class PackageManagerSettingsTests {
         origPkgSetting01.setUserState(0, 100, 1, true, false, false, false, 0, null, false,
                 false, "lastDisabledCaller", new ArraySet<>(new String[]{"enabledComponent1"}),
                 new ArraySet<>(new String[]{"disabledComponent1"}), 0, 0, "harmfulAppWarning",
-                "splashScreenTheme", 1000L, PackageManager.USER_MIN_ASPECT_RATIO_UNSET);
+                "splashScreenTheme", 1000L, PackageManager.USER_MIN_ASPECT_RATIO_UNSET, false);
         final PersistableBundle appExtras1 = createPersistableBundle(
                 PACKAGE_NAME_1, 1L, 0.01, true, "appString1");
         final PersistableBundle launcherExtras1 = createPersistableBundle(
@@ -997,6 +999,7 @@ public class PackageManagerSettingsTests {
                 UPDATED_VERSION_CODE,
                 0 /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 0,
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
@@ -1020,6 +1023,7 @@ public class PackageManagerSettingsTests {
         testPkgSetting01.setInstalled(false /*installed*/, 0 /*userId*/);
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         final PackageSetting oldPkgSetting01 = new PackageSetting(testPkgSetting01);
         Settings.updatePackageSetting(
                 testPkgSetting01,
@@ -1032,6 +1036,7 @@ public class PackageManagerSettingsTests {
                 "armeabi" /*secondaryCpuAbi*/,
                 0 /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 UserManagerService.getInstance(),
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
@@ -1045,6 +1050,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getSecondaryCpuAbiLegacy(), is("armeabi"));
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         final PackageUserState userState = testPkgSetting01.readUserState(0);
         verifyUserState(userState, false /*notLaunched*/,
                 false /*stopped*/, false /*installed*/);
@@ -1058,6 +1064,7 @@ public class PackageManagerSettingsTests {
         testPkgSetting01.setInstalled(false /*installed*/, 0 /*userId*/);
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         final PackageSetting oldPkgSetting01 = new PackageSetting(testPkgSetting01);
         Settings.updatePackageSetting(
                 testPkgSetting01,
@@ -1070,6 +1077,7 @@ public class PackageManagerSettingsTests {
                 "armeabi" /*secondaryCpuAbi*/,
                 ApplicationInfo.FLAG_SYSTEM /*pkgFlags*/,
                 ApplicationInfo.PRIVATE_FLAG_PRIVILEGED /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 UserManagerService.getInstance(),
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
@@ -1084,6 +1092,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getFlags(), is(ApplicationInfo.FLAG_SYSTEM));
         assertThat(testPkgSetting01.isSystem(), is(true));
         assertThat(testPkgSetting01.getPrivateFlags(), is(ApplicationInfo.PRIVATE_FLAG_PRIVILEGED));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         assertThat(testPkgSetting01.isPrivileged(), is(true));
         final PackageUserState userState = testPkgSetting01.readUserState(0);
         verifyUserState(userState,  false /*notLaunched*/,
@@ -1095,7 +1104,8 @@ public class PackageManagerSettingsTests {
     public void testUpdatePackageSetting03() {
         Settings settings = makeSettings();
         final SharedUserSetting testUserSetting01 = createSharedUserSetting(
-                settings, "TestUser", 10064, 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/);
+                settings, "TestUser", 10064, 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/);
         final PackageSetting testPkgSetting01 =
                 createPackageSetting(0 /*sharedUserId*/, 0 /*pkgFlags*/);
         try {
@@ -1110,6 +1120,7 @@ public class PackageManagerSettingsTests {
                     "armeabi" /*secondaryCpuAbi*/,
                     0 /*pkgFlags*/,
                     0 /*pkgPrivateFlags*/,
+                    0 /*pkgPrivateFlagsExt*/,
                     UserManagerService.getInstance(),
                     null /*usesSdkLibraries*/,
                     null /*usesSdkLibrariesVersions*/,
@@ -1141,6 +1152,7 @@ public class PackageManagerSettingsTests {
                 UPDATED_VERSION_CODE /*versionCode*/,
                 ApplicationInfo.FLAG_SYSTEM /*pkgFlags*/,
                 ApplicationInfo.PRIVATE_FLAG_PRIVILEGED /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 null /*installUser*/,
                 false /*allowInstall*/,
                 false /*instantApp*/,
@@ -1158,6 +1170,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getFlags(), is(ApplicationInfo.FLAG_SYSTEM));
         assertThat(testPkgSetting01.isSystem(), is(true));
         assertThat(testPkgSetting01.getPrivateFlags(), is(ApplicationInfo.PRIVATE_FLAG_PRIVILEGED));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         assertThat(testPkgSetting01.isPrivileged(), is(true));
         assertThat(testPkgSetting01.getPrimaryCpuAbi(), is("arm64-v8a"));
         assertThat(testPkgSetting01.getPrimaryCpuAbiLegacy(), is("arm64-v8a"));
@@ -1186,6 +1199,7 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE /*versionCode*/,
                 0 /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 UserHandle.SYSTEM /*installUser*/,
                 true /*allowInstall*/,
                 false /*instantApp*/,
@@ -1203,6 +1217,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getPackageName(), is(PACKAGE_NAME));
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         assertThat(testPkgSetting01.getPrimaryCpuAbi(), is("x86_64"));
         assertThat(testPkgSetting01.getPrimaryCpuAbiLegacy(), is("x86_64"));
         assertThat(testPkgSetting01.getSecondaryCpuAbiLegacy(), is("x86"));
@@ -1217,7 +1232,8 @@ public class PackageManagerSettingsTests {
     public void testCreateNewSetting03() {
         Settings settings = makeSettings();
         final SharedUserSetting testUserSetting01 = createSharedUserSetting(
-                settings, "TestUser", 10064, 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/);
+                settings, "TestUser", 10064, 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/);
         final PackageSetting testPkgSetting01 = Settings.createNewSetting(
                 PACKAGE_NAME,
                 null /*originalPkg*/,
@@ -1231,6 +1247,7 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE /*versionCode*/,
                 0 /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 null /*installUser*/,
                 false /*allowInstall*/,
                 false /*instantApp*/,
@@ -1248,6 +1265,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getPackageName(), is(PACKAGE_NAME));
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         assertThat(testPkgSetting01.getPrimaryCpuAbi(), is("x86_64"));
         assertThat(testPkgSetting01.getPrimaryCpuAbiLegacy(), is("x86_64"));
         assertThat(testPkgSetting01.getSecondaryCpuAbi(), is("x86"));
@@ -1277,6 +1295,7 @@ public class PackageManagerSettingsTests {
                 UPDATED_VERSION_CODE /*versionCode*/,
                 0 /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 null /*installUser*/,
                 false /*allowInstall*/,
                 false /*instantApp*/,
@@ -1294,6 +1313,7 @@ public class PackageManagerSettingsTests {
         assertThat(testPkgSetting01.getPackageName(), is(PACKAGE_NAME));
         assertThat(testPkgSetting01.getFlags(), is(0));
         assertThat(testPkgSetting01.getPrivateFlags(), is(0));
+        assertThat(testPkgSetting01.getPrivateFlagsExt(), is(0));
         assertThat(testPkgSetting01.getPrimaryCpuAbi(), is("arm64-v8a"));
         assertThat(testPkgSetting01.getPrimaryCpuAbiLegacy(), is("arm64-v8a"));
         assertThat(testPkgSetting01.getSecondaryCpuAbi(), is("armeabi"));
@@ -1320,6 +1340,7 @@ public class PackageManagerSettingsTests {
                 UPDATED_VERSION_CODE /*versionCode*/,
                 ApplicationInfo.FLAG_SYSTEM /*pkgFlags*/,
                 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/,
                 UserHandle.SYSTEM /*installUser*/,
                 false /*allowInstall*/,
                 false /*instantApp*/,
@@ -1498,7 +1519,8 @@ public class PackageManagerSettingsTests {
     public void testAddPackageSetting() throws PackageManagerException {
         final Settings settings = makeSettings();
         final SharedUserSetting sus1 = new SharedUserSetting(
-                "TestUser", 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/);
+                "TestUser", 0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/,
+                0 /*pkgPrivateFlagsExt*/);
         sus1.mAppId = 10001;
         final PackageSetting ps1 = createPackageSetting("com.foo");
         ps1.setAppId(10001);
@@ -1565,6 +1587,7 @@ public class PackageManagerSettingsTests {
         // assertThat(origPkgSetting.pkg, is(testPkgSetting.pkg));
         assertThat(origPkgSetting.getFlags(), is(testPkgSetting.getFlags()));
         assertThat(origPkgSetting.getPrivateFlags(), is(testPkgSetting.getPrivateFlags()));
+        assertThat(origPkgSetting.getPrivateFlagsExt(), is(testPkgSetting.getPrivateFlagsExt()));
         assertSame(origPkgSetting.getPrimaryCpuAbi(), testPkgSetting.getPrimaryCpuAbi());
         assertThat(origPkgSetting.getPrimaryCpuAbi(), is(testPkgSetting.getPrimaryCpuAbi()));
         assertSame(origPkgSetting.getPrimaryCpuAbiLegacy(), testPkgSetting.getPrimaryCpuAbiLegacy());
@@ -1643,12 +1666,13 @@ public class PackageManagerSettingsTests {
     }
 
     private SharedUserSetting createSharedUserSetting(Settings settings, String userName,
-            int sharedUserId, int pkgFlags, int pkgPrivateFlags) {
+            int sharedUserId, int pkgFlags, int pkgPrivateFlags, int pkgPrivateFlagsExt) {
         return settings.addSharedUserLPw(
                 userName,
                 sharedUserId,
                 pkgFlags,
-                pkgPrivateFlags);
+                pkgPrivateFlags,
+                pkgPrivateFlagsExt);
     }
     private PackageSetting createPackageSetting(int sharedUserId, int pkgFlags) {
         return new PackageSetting(
@@ -1662,6 +1686,7 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE,
                 pkgFlags,
                 0 /*privateFlags*/,
+                0 /*privateExtFlags*/,
                 sharedUserId,
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,
@@ -1683,6 +1708,7 @@ public class PackageManagerSettingsTests {
                 INITIAL_VERSION_CODE,
                 0,
                 0 /*privateFlags*/,
+                0 /*privateExtFlags*/,
                 0,
                 null /*usesSdkLibraries*/,
                 null /*usesSdkLibrariesVersions*/,

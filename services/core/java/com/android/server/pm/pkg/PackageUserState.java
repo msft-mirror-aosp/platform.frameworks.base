@@ -225,4 +225,10 @@ public interface PackageUserState {
      */
     @PackageManager.UserMinAspectRatio
     int getMinAspectRatio();
+
+    /**
+     * @return whether the app requires display compat features
+     * @hide
+     */
+    boolean isDisplayCompat();
 }

@@ -273,7 +273,7 @@ public class ComputerEngine implements Computer {
         @Nullable
         public SharedUserSetting getSharedUserFromId(String name) {
             try {
-                return mSettings.getSharedUserLPw(name, 0, 0, false /*create*/);
+                return mSettings.getSharedUserLPw(name, 0, 0, 0, false /*create*/);
             } catch (PackageManagerException ignored) {
                 // This is impossible do to create being false
                 throw new RuntimeException(ignored);
@@ -1518,6 +1518,7 @@ public class ComputerEngine implements Computer {
             ai.setVersionCode(ps.getVersionCode());
             ai.flags = ps.getFlags();
             ai.privateFlags = ps.getPrivateFlags();
+            ai.privateFlagsExt = ps.getPrivateFlagsExt();
             pi.applicationInfo = PackageInfoUtils.generateDelegateApplicationInfo(
                     ai, flags, state, userId);
 

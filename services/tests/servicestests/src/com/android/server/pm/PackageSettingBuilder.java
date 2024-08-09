@@ -39,6 +39,7 @@ public class PackageSettingBuilder {
     private long mPVersionCode;
     private int mPkgFlags;
     private int mPrivateFlags;
+    private int mPrivateFlagsExt;
     private int mSharedUserId;
     private String mVolumeUuid;
     private int mAppId;
@@ -110,6 +111,11 @@ public class PackageSettingBuilder {
         return this;
     }
 
+    public PackageSettingBuilder setPrivateFlagsExt(int privateFlagsExt) {
+        this.mPrivateFlagsExt = privateFlagsExt;
+        return this;
+    }
+
     public PackageSettingBuilder setSharedUserId(int sharedUserId) {
         this.mSharedUserId = sharedUserId;
         return this;
@@ -161,7 +167,7 @@ public class PackageSettingBuilder {
         final PackageSetting packageSetting = new PackageSetting(mName, mRealName,
                 new File(mCodePath), mLegacyNativeLibraryPathString, mPrimaryCpuAbiString,
                 mSecondaryCpuAbiString, mCpuAbiOverrideString, mPVersionCode, mPkgFlags,
-                mPrivateFlags, mSharedUserId, null /* usesSdkLibraries */,
+                mPrivateFlags, mPrivateFlagsExt, mSharedUserId, null /* usesSdkLibraries */,
                 null /* usesSdkLibrariesVersions */, null /* usesStaticLibraries */,
                 null  /* usesStaticLibrariesVersions */, mMimeGroups, mDomainSetId);
         packageSetting.setSignatures(mSigningDetails != null

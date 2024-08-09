@@ -114,6 +114,7 @@ message PackageProto {
         optional int32 distraction_flags = 10;
         // UTC timestamp of first install for the user
         optional int32 first_install_time_ms = 11;
+        optional bool is_display_compat = 12;
     }
 
     message InstallSourceProto {

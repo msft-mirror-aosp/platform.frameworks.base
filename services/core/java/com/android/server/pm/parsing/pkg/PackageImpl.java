@@ -1674,6 +1674,11 @@ public class PackageImpl implements ParsedPackage, AndroidPackageInternal,
     }
 
     @Override
+    public boolean isDisplayCompat() {
+        return getBoolean(Booleans2.DISPLAY_COMPAT);
+    }
+
+    @Override
     public boolean isResourceOverlay() {
         return getBoolean(Booleans.OVERLAY);
     }
@@ -2163,6 +2168,12 @@ public class PackageImpl implements ParsedPackage, AndroidPackageInternal,
     @Override
     public ParsingPackage setOnBackInvokedCallbackEnabled(boolean value) {
         setBoolean(Booleans.ENABLE_ON_BACK_INVOKED_CALLBACK, value);
+        return this;
+    }
+
+    @Override
+    public ParsingPackage setDisplayCompat(boolean value) {
+        setBoolean(Booleans2.DISPLAY_COMPAT, value);
         return this;
     }
 
@@ -2713,7 +2724,8 @@ public class PackageImpl implements ParsedPackage, AndroidPackageInternal,
     private void assignDerivedFields2() {
         mBaseAppInfoFlags = PackageInfoUtils.appInfoFlags(this, null);
         mBaseAppInfoPrivateFlags = PackageInfoUtils.appInfoPrivateFlags(this, null);
-        mBaseAppInfoPrivateFlagsExt = PackageInfoUtils.appInfoPrivateFlagsExt(this, null);
+        mBaseAppInfoPrivateFlagsExt = PackageInfoUtils.appInfoPrivateFlagsExt(this, null,
+                UserHandle.getUserId(uid));
         String baseAppDataDir = Environment.getDataDirectoryPath(getVolumeUuid()) + File.separator;
         String systemUserSuffix = File.separator + UserHandle.USER_SYSTEM + File.separator;
         mBaseAppDataCredentialProtectedDirForSystemUser = TextUtils.safeIntern(
@@ -3726,5 +3738,6 @@ public class PackageImpl implements ParsedPackage, AndroidPackageInternal,
 
         private static final long STUB = 1L;
         private static final long APEX = 1L << 1;
+        private static final long DISPLAY_COMPAT = 1L << 2;
     }
 }
