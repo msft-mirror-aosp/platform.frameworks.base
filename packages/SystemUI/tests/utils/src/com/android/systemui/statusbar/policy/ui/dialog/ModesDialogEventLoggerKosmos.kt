@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 The Android Open Source Project
+ * Copyright (C) 2024 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,11 @@
  * limitations under the License.
  */
 
-package android.hardware.input;
+package com.android.systemui.statusbar.policy.ui.dialog
 
-/** @hide */
-oneway interface IKeyboardSystemShortcutListener {
+import com.android.internal.logging.uiEventLogger
+import com.android.systemui.kosmos.Kosmos
+import org.mockito.kotlin.mock
 
-    /**
-     * Called when the keyboard system shortcut is triggered.
-     */
-    void onKeyboardSystemShortcutTriggered(int deviceId, in int[] keycodes, int modifierState,
-                                           int shortcut);
-}
+var Kosmos.modesDialogEventLogger by Kosmos.Fixture { ModesDialogEventLogger(uiEventLogger) }
+var Kosmos.mockModesDialogEventLogger by Kosmos.Fixture { mock<ModesDialogEventLogger>() }
