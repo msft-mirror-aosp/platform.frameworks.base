@@ -14,6 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.wm.shell.common.desktopmode;
+package com.android.systemui.statusbar.notification.row.ui.viewmodel
 
-parcelable DesktopModeTransitionSource;
+import com.android.systemui.dump.dumpManager
+import com.android.systemui.kosmos.Kosmos
+import com.android.systemui.statusbar.notification.row.data.repository.NotificationRowRepository
+import com.android.systemui.statusbar.notification.row.domain.interactor.getNotificationRowInteractor
+
+fun Kosmos.getEnRouteViewModel(repository: NotificationRowRepository) =
+    EnRouteViewModel(
+        dumpManager = dumpManager,
+        rowInteractor = getNotificationRowInteractor(repository),
+    )
