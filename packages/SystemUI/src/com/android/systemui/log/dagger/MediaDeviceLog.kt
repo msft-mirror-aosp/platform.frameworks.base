@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.systemui.volume
+package com.android.systemui.log.dagger
 
-import com.android.systemui.kosmos.Kosmos
-import com.android.systemui.kosmos.applicationCoroutineScope
+import com.android.systemui.log.LogBuffer
+import javax.inject.Qualifier
 
-val Kosmos.volumeControllerCollector by
-    Kosmos.Fixture { VolumeControllerCollector(applicationCoroutineScope) }
+/** A [LogBuffer] for [com.android.systemui.media.controls.domain.pipeline.MediaDeviceLogger] */
+@Qualifier
+@MustBeDocumented
+@Retention(AnnotationRetention.RUNTIME)
+annotation class MediaDeviceLog
