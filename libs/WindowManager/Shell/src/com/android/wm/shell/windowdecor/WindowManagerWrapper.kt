@@ -14,10 +14,28 @@
  * limitations under the License.
  */
 
-package com.android.systemui.view.accessibility.data.repository
+package com.android.wm.shell.windowdecor
 
-import com.android.settingslib.view.accessibility.domain.interactor.CaptioningInteractor
-import com.android.systemui.kosmos.Kosmos
+import android.view.View
+import android.view.WindowManager
 
-val Kosmos.captioningRepository by Kosmos.Fixture { FakeCaptioningRepository() }
-val Kosmos.captioningInteractor by Kosmos.Fixture { CaptioningInteractor(captioningRepository) }
+/**
+ * A wrapper for [WindowManager] to make view manipulation operations related to window
+ * decors more testable.
+ */
+class WindowManagerWrapper (
+    private val windowManager: WindowManager
+){
+
+    fun addView(v: View, lp: WindowManager.LayoutParams) {
+        windowManager.addView(v, lp)
+    }
+
+    fun removeViewImmediate(v: View) {
+        windowManager.removeViewImmediate(v)
+    }
+
+    fun updateViewLayout(v: View, lp: WindowManager.LayoutParams) {
+        windowManager.updateViewLayout(v, lp)
+    }
+}

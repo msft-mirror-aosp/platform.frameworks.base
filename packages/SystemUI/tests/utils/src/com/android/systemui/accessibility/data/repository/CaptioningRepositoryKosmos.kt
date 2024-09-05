@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.systemui.media.controls.domain.pipeline
+package com.android.systemui.accessibility.data.repository
 
 import com.android.systemui.kosmos.Kosmos
-import com.android.systemui.log.logcatLogBuffer
 
-var Kosmos.mediaDeviceLogger by
-    Kosmos.Fixture { MediaDeviceLogger(logcatLogBuffer("MediaDeviceLoggerKosmos")) }
+var Kosmos.fakeCaptioningRepository by Kosmos.Fixture { FakeCaptioningRepository() }
+val Kosmos.captioningRepository by Kosmos.Fixture { fakeCaptioningRepository }
