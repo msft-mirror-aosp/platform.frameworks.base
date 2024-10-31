@@ -81,4 +81,9 @@ public class RegionUtils {
         Collections.reverse(rects);
         rects.forEach(rectConsumer);
     }
+
+    /** Returns whether the sizes between the two Rects are equal. */
+    public static boolean sizeEquals(Rect a, Rect b) {
+        return a.width() == b.width() && a.height() == b.height();
+    }
 }
