@@ -344,6 +344,11 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
     private ActivityRecord mTopResumedActivity;
 
     /**
+     * Cached value of the topmost resumed activity that reported to the client.
+     */
+    private ActivityRecord mLastReportedTopResumedActivity;
+
+    /**
      * Flag indicating whether we're currently waiting for the previous top activity to handle the
      * loss of the state and report back before making new activity top resumed.
      */
@@ -2290,6 +2295,7 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
             if (topRootTask == null) {
                 // There's no focused task and there won't have any resumed activity either.
                 scheduleTopResumedActivityStateLossIfNeeded();
+                mTopResumedActivity = null;
             }
             if (mService.isSleepingLocked()) {
                 // There won't be a next resumed activity. The top process should still be updated
@@ -2333,25 +2339,27 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
 
     /** Schedule current top resumed activity state loss */
     private void scheduleTopResumedActivityStateLossIfNeeded() {
-        if (mTopResumedActivity == null) {
+        if (mLastReportedTopResumedActivity == null) {
             return;
         }
 
         // mTopResumedActivityWaitingForPrev == true at this point would mean that an activity
         // before the prevTopActivity one hasn't reported back yet. So server never sent the top
         // resumed state change message to prevTopActivity.
-        if (!mTopResumedActivityWaitingForPrev
-                && mTopResumedActivity.scheduleTopResumedActivityChanged(false /* onTop */)) {
-            scheduleTopResumedStateLossTimeout(mTopResumedActivity);
+        if (!mTopResumedActivityWaitingForPrev && readyToResume()
+                && mLastReportedTopResumedActivity.scheduleTopResumedActivityChanged(
+                        false /* onTop */)) {
+            scheduleTopResumedStateLossTimeout(mLastReportedTopResumedActivity);
             mTopResumedActivityWaitingForPrev = true;
-            mTopResumedActivity = null;
+            mLastReportedTopResumedActivity = null;
         }
     }
 
     /** Schedule top resumed state change if previous top activity already reported back. */
     private void scheduleTopResumedActivityStateIfNeeded() {
-        if (mTopResumedActivity != null && !mTopResumedActivityWaitingForPrev) {
+        if (mTopResumedActivity != null && !mTopResumedActivityWaitingForPrev && readyToResume()) {
             mTopResumedActivity.scheduleTopResumedActivityChanged(true /* onTop */);
+            mLastReportedTopResumedActivity = mTopResumedActivity;
         }
     }
 
@@ -2598,6 +2606,10 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
      */
     void endDeferResume() {
         mDeferResumeCount--;
+        if (readyToResume() && mLastReportedTopResumedActivity != null
+                && mTopResumedActivity != mLastReportedTopResumedActivity) {
+            scheduleTopResumedActivityStateLossIfNeeded();
+        }
     }
 
     /** @return True if resume can be called. */
