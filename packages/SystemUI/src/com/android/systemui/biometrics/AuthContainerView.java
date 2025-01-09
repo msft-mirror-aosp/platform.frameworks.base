@@ -809,6 +809,10 @@ public class AuthContainerView extends LinearLayout
     }
 
     @Override
+    public String getClassNameIfItIsConfirmDeviceCredentialActivity() {
+        return  mConfig.mPromptInfo.getClassNameIfItIsConfirmDeviceCredentialActivity();
+    }
+    @Override
     public long getRequestId() {
         return mConfig.mRequestId;
     }
