@@ -253,7 +253,8 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
                     .build();
         }
 
-        final int captionHeight = loadDimensionPixelSize(resources, params.mCaptionHeightId);
+        final int captionHeight = loadDimensionPixelSize(resources, params.mCaptionHeightId)
+                + params.mCaptionTopPadding;
         final int captionWidth = taskBounds.width();
 
         startT.setWindowCrop(mCaptionContainerSurface, captionWidth, captionHeight)
@@ -316,11 +317,21 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
             if (params.mApplyStartTransactionOnDraw) {
                 mViewHost.getRootSurfaceControl().applyTransactionOnDraw(startT);
             }
+            outResult.mRootView.setPadding(
+                    outResult.mRootView.getPaddingLeft(),
+                    params.mCaptionTopPadding,
+                    outResult.mRootView.getPaddingRight(),
+                    outResult.mRootView.getPaddingBottom());
             mViewHost.setView(outResult.mRootView, lp);
         } else {
             if (params.mApplyStartTransactionOnDraw) {
                 mViewHost.getRootSurfaceControl().applyTransactionOnDraw(startT);
             }
+            outResult.mRootView.setPadding(
+                    outResult.mRootView.getPaddingLeft(),
+                    params.mCaptionTopPadding,
+                    outResult.mRootView.getPaddingRight(),
+                    outResult.mRootView.getPaddingBottom());
             mViewHost.relayout(lp);
         }
     }
@@ -469,6 +480,7 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
 
         int mCaptionX;
         int mCaptionY;
+        int mCaptionTopPadding;
 
         boolean mApplyStartTransactionOnDraw;
 
@@ -482,6 +494,7 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
 
             mCaptionX = 0;
             mCaptionY = 0;
+            mCaptionTopPadding = 0;
 
             mApplyStartTransactionOnDraw = false;
         }
