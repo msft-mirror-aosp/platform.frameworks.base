@@ -26,8 +26,6 @@ import android.view.View;
 import android.view.WindowInsets;
 import android.window.WindowContainerTransaction;
 
-import androidx.annotation.NonNull;
-
 import com.android.wm.shell.R;
 import com.android.wm.shell.ShellTaskOrganizer;
 import com.android.wm.shell.common.DisplayController;
@@ -40,6 +38,7 @@ public class CarWindowDecoration extends WindowDecoration<WindowDecorLinearLayou
     private WindowDecorLinearLayout mRootView;
     private final ShellExecutor mBgExecutor;
     private final View.OnClickListener mClickListener;
+    private final RelayoutParams mRelayoutParams = new RelayoutParams();
 
     CarWindowDecoration(
             Context context,
@@ -63,15 +62,21 @@ public class CarWindowDecoration extends WindowDecoration<WindowDecorLinearLayou
     @SuppressLint("MissingPermission")
     void relayout(ActivityManager.RunningTaskInfo taskInfo,
             SurfaceControl.Transaction startT, SurfaceControl.Transaction finishT) {
+        relayout(taskInfo, startT, finishT,
+                /* isCaptionVisible= */ mRelayoutParams.mIsCaptionVisible);
+    }
+
+    @SuppressLint("MissingPermission")
+    void relayout(ActivityManager.RunningTaskInfo taskInfo,
+            SurfaceControl.Transaction startT, SurfaceControl.Transaction finishT,
+            boolean isCaptionVisible) {
         final WindowContainerTransaction wct = new WindowContainerTransaction();
 
-        RelayoutParams relayoutParams = new RelayoutParams();
         RelayoutResult<WindowDecorLinearLayout> outResult = new RelayoutResult<>();
 
-        updateRelayoutParams(relayoutParams, taskInfo,
-                mDisplayController.getInsetsState(taskInfo.displayId));
+        updateRelayoutParams(mRelayoutParams, taskInfo, isCaptionVisible);
 
-        relayout(relayoutParams, startT, finishT, wct, mRootView, outResult);
+        relayout(mRelayoutParams, startT, finishT, wct, mRootView, outResult);
         // After this line, mTaskInfo is up-to-date and should be used instead of taskInfo
         mBgExecutor.execute(() -> mTaskOrganizer.applyTransaction(wct));
 
@@ -86,24 +91,32 @@ public class CarWindowDecoration extends WindowDecoration<WindowDecorLinearLayou
         }
     }
 
+    @Override
+    int getCaptionViewId() {
+        return R.id.caption;
+    }
+
     private void updateRelayoutParams(
             RelayoutParams relayoutParams,
             ActivityManager.RunningTaskInfo taskInfo,
-            InsetsState displayInsetsState) {
+            boolean isCaptionVisible) {
         relayoutParams.reset();
         relayoutParams.mRunningTaskInfo = taskInfo;
         // todo(b/382071404): update to car specific UI
         relayoutParams.mLayoutResId = R.layout.caption_window_decor;
         relayoutParams.mCaptionHeightId = R.dimen.freeform_decor_caption_height;
-        if (displayInsetsState != null) {
-            relayoutParams.mCaptionTopPadding = getTopPadding(
-                    taskInfo.getConfiguration().windowConfiguration.getBounds(),
-                    displayInsetsState);
-        }
+        relayoutParams.mIsCaptionVisible = isCaptionVisible;
+        relayoutParams.mCaptionTopPadding = getTopPadding(taskInfo, relayoutParams);
         relayoutParams.mApplyStartTransactionOnDraw = true;
     }
 
-    private static int getTopPadding(Rect taskBounds, @NonNull InsetsState insetsState) {
+    private int getTopPadding(ActivityManager.RunningTaskInfo taskInfo,
+            RelayoutParams relayoutParams) {
+        Rect taskBounds = taskInfo.getConfiguration().windowConfiguration.getBounds();
+        InsetsState insetsState = mDisplayController.getInsetsState(taskInfo.displayId);
+        if (insetsState == null) {
+            return relayoutParams.mCaptionTopPadding;
+        }
         Insets systemDecor = insetsState.calculateInsets(taskBounds,
                 WindowInsets.Type.systemBars() & ~WindowInsets.Type.captionBar(),
                 false /* ignoreVisibility */);
