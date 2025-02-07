@@ -289,20 +289,20 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
 
         // Task surface itself
         float shadowRadius = loadDimension(resources, params.mShadowRadiusId);
-        int backgroundColorInt = mTaskInfo.taskDescription.getBackgroundColor();
-        mTmpColor[0] = (float) Color.red(backgroundColorInt) / 255.f;
-        mTmpColor[1] = (float) Color.green(backgroundColorInt) / 255.f;
-        mTmpColor[2] = (float) Color.blue(backgroundColorInt) / 255.f;
         final Point taskPosition = mTaskInfo.positionInParent;
         startT.setWindowCrop(mTaskSurface, outResult.mWidth, outResult.mHeight)
                 .setShadowRadius(mTaskSurface, shadowRadius)
-                .setColor(mTaskSurface, mTmpColor)
                 .show(mTaskSurface);
         finishT.setPosition(mTaskSurface, taskPosition.x, taskPosition.y)
                 .setShadowRadius(mTaskSurface, shadowRadius)
                 .setWindowCrop(mTaskSurface, outResult.mWidth, outResult.mHeight);
         if (mTaskInfo.getWindowingMode() == WINDOWING_MODE_FREEFORM) {
-            startT.setCornerRadius(mTaskSurface, params.mCornerRadius);
+            int backgroundColorInt = mTaskInfo.taskDescription.getBackgroundColor();
+            mTmpColor[0] = (float) Color.red(backgroundColorInt) / 255.f;
+            mTmpColor[1] = (float) Color.green(backgroundColorInt) / 255.f;
+            mTmpColor[2] = (float) Color.blue(backgroundColorInt) / 255.f;
+            startT.setCornerRadius(mTaskSurface, params.mCornerRadius)
+                    .setColor(mTaskSurface, mTmpColor);
             finishT.setCornerRadius(mTaskSurface, params.mCornerRadius);
         }
 
