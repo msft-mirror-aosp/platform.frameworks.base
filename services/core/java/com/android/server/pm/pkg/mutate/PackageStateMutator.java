@@ -449,6 +449,15 @@ public class PackageStateMutator {
                 }
                 return this;
             }
+
+            @NonNull
+            @Override
+            public PackageUserStateWrite setDisplayCompat(boolean enabled) {
+              if (mUserState != null) {
+                  mUserState.setDisplayCompat(enabled);
+              }
+              return null;
+            }
         }
     }
 }

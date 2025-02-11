@@ -131,6 +131,7 @@ final class ScanPackageUtils {
         final SharedUserSetting oldSharedUserSetting = request.mOldSharedUserSetting;
         final SharedUserSetting sharedUserSetting = request.mSharedUserSetting;
         final UserHandle user = request.mUser;
+        final int userId = (user == null ? UserHandle.USER_SYSTEM : user.getIdentifier());
         final boolean isPlatformPackage = request.mIsPlatformPackage;
 
         List<String> changedAbiCodePath = null;
@@ -206,6 +207,7 @@ final class ScanPackageUtils {
             // PackageSetting to pass in.
             int pkgFlags = PackageInfoUtils.appInfoFlags(parsedPackage, null);
             int pkgPrivateFlags = PackageInfoUtils.appInfoPrivateFlags(parsedPackage, null);
+            int pkgPrivateFlagsExt = PackageInfoUtils.appInfoPrivateFlagsExt(parsedPackage, null, userId);
 
             // REMOVE SharedUserSetting from method; update in a separate call
             pkgSetting = Settings.createNewSetting(parsedPackage.getPackageName(),
@@ -213,8 +215,8 @@ final class ScanPackageUtils {
                     destCodeFile, parsedPackage.getNativeLibraryRootDir(),
                     AndroidPackageUtils.getRawPrimaryCpuAbi(parsedPackage),
                     AndroidPackageUtils.getRawSecondaryCpuAbi(parsedPackage),
-                    parsedPackage.getLongVersionCode(), pkgFlags, pkgPrivateFlags, user,
-                    true /*allowInstall*/, instantApp, virtualPreload, isStoppedSystemApp,
+                    parsedPackage.getLongVersionCode(), pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt,
+                    user, true /*allowInstall*/, instantApp, virtualPreload, isStoppedSystemApp,
                     UserManagerService.getInstance(), usesSdkLibraries,
                     parsedPackage.getUsesSdkLibrariesVersionsMajor(), usesStaticLibraries,
                     parsedPackage.getUsesStaticLibrariesVersions(), parsedPackage.getMimeGroups(),
@@ -235,6 +237,7 @@ final class ScanPackageUtils {
                     pkgSetting.getSecondaryCpuAbi(),
                     PackageInfoUtils.appInfoFlags(parsedPackage, pkgSetting),
                     PackageInfoUtils.appInfoPrivateFlags(parsedPackage, pkgSetting),
+                    PackageInfoUtils.appInfoPrivateFlagsExt(parsedPackage, pkgSetting, userId),
                     UserManagerService.getInstance(),
                     usesSdkLibraries, parsedPackage.getUsesSdkLibrariesVersionsMajor(),
                     usesStaticLibraries, parsedPackage.getUsesStaticLibrariesVersions(),
@@ -253,7 +256,6 @@ final class ScanPackageUtils {
             PackageManagerService.reportSettingsProblem(Log.WARN, msg);
         }
 
-        final int userId = (user == null ? UserHandle.USER_SYSTEM : user.getIdentifier());
         // for existing packages, change the install state; but, only if it's explicitly specified
         if (!createNewPackage) {
             final boolean instantApp = (scanFlags & SCAN_AS_INSTANT_APP) != 0;
@@ -431,7 +433,8 @@ final class ScanPackageUtils {
         // TODO(b/135203078): Remove, move to constructor
         pkgSetting.setPkg(parsedPackage)
                 .setFlags(PackageInfoUtils.appInfoFlags(parsedPackage, pkgSetting))
-                .setPrivateFlags(PackageInfoUtils.appInfoPrivateFlags(parsedPackage, pkgSetting));
+                .setPrivateFlags(PackageInfoUtils.appInfoPrivateFlags(parsedPackage, pkgSetting))
+                .setPrivateFlagsExt(PackageInfoUtils.appInfoPrivateFlagsExt(parsedPackage, pkgSetting, userId));
         if (parsedPackage.getLongVersionCode() != pkgSetting.getVersionCode()) {
             pkgSetting.setLongVersionCode(parsedPackage.getLongVersionCode());
         }

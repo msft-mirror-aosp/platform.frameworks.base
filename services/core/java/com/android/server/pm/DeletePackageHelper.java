@@ -611,7 +611,8 @@ final class DeletePackageHelper {
                     null /*harmfulAppWarning*/,
                     null /*splashScreenTheme*/,
                     0 /*firstInstallTime*/,
-                    PackageManager.USER_MIN_ASPECT_RATIO_UNSET);
+                    PackageManager.USER_MIN_ASPECT_RATIO_UNSET,
+                    false /*displayCompat*/);
         }
         mPm.mSettings.writeKernelMappingLPr(ps);
     }

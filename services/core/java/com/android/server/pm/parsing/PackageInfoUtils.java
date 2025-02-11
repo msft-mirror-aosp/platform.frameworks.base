@@ -464,7 +464,7 @@ public class PackageInfoUtils {
 
         info.flags |= appInfoFlags(info.flags, pkgSetting);
         info.privateFlags |= appInfoPrivateFlags(info.privateFlags, pkgSetting);
-        info.privateFlagsExt |= appInfoPrivateFlagsExt(info.privateFlagsExt, pkgSetting);
+        info.privateFlagsExt |= appInfoPrivateFlagsExt(info.privateFlagsExt, pkgSetting, userId);
 
         return info;
     }
@@ -972,7 +972,8 @@ public class PackageInfoUtils {
 
     /** @see ApplicationInfo#privateFlagsExt */
     public static int appInfoPrivateFlagsExt(AndroidPackage pkg,
-                                             @Nullable PackageStateInternal pkgSetting) {
+                                             @Nullable PackageStateInternal pkgSetting,
+                                             @UserIdInt int userId) {
         var isAllowlistedForHiddenApis = SystemConfig.getInstance().getHiddenApiWhitelistedApps()
                 .contains(pkg.getPackageName());
         // @formatter:off
@@ -981,17 +982,21 @@ public class PackageInfoUtils {
                 | flag(pkg.isAttributionsUserVisible(), ApplicationInfo.PRIVATE_FLAG_EXT_ATTRIBUTIONS_ARE_USER_VISIBLE)
                 | flag(pkg.isOnBackInvokedCallbackEnabled(), ApplicationInfo.PRIVATE_FLAG_EXT_ENABLE_ON_BACK_INVOKED_CALLBACK)
                 | flag(isAllowlistedForHiddenApis, ApplicationInfo.PRIVATE_FLAG_EXT_ALLOWLISTED_FOR_HIDDEN_APIS);
-        return appInfoPrivateFlagsExt(pkgWithoutStateFlags, pkgSetting);
+        return appInfoPrivateFlagsExt(pkgWithoutStateFlags, pkgSetting, userId);
         // @formatter:on
     }
 
     /** @see ApplicationInfo#privateFlagsExt */
-    private static int appInfoPrivateFlagsExt(int pkgWithoutStateFlags,
-                                             @Nullable PackageStateInternal pkgSetting) {
+    public static int appInfoPrivateFlagsExt(int pkgWithoutStateFlags,
+                                             @Nullable PackageStateInternal packageState,
+                                             @UserIdInt int userId) {
         // @formatter:off
+        // TODO: Add state specific flags
         int flags = pkgWithoutStateFlags;
-        if (pkgSetting != null) {
-            flags |= flag(pkgSetting.getCpuAbiOverride() != null, ApplicationInfo.PRIVATE_FLAG_EXT_CPU_OVERRIDE);
+        if (packageState != null) {
+            flags |= flag(packageState.getCpuAbiOverride() != null, ApplicationInfo.PRIVATE_FLAG_EXT_CPU_OVERRIDE);
+            flags |= flag(packageState.getUserStateOrDefault(userId).isDisplayCompat(),
+                    ApplicationInfo.PRIVATE_FLAG_EXT_DISPLAY_COMPAT);
         }
         return flags;
         // @formatter:on

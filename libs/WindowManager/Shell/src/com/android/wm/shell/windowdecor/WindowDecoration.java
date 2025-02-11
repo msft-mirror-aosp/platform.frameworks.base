@@ -221,6 +221,9 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
                     .inflate(params.mLayoutResId, null);
         }
 
+        boolean isCaptionVisible = params.mIsCaptionVisible;
+        setCaptionVisibility(outResult.mRootView, isCaptionVisible);
+
         final Resources resources = mDecorWindowContext.getResources();
         final Rect taskBounds = taskConfig.windowConfiguration.getBounds();
         outResult.mWidth = taskBounds.width();
@@ -253,7 +256,8 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
                     .build();
         }
 
-        final int captionHeight = loadDimensionPixelSize(resources, params.mCaptionHeightId);
+        final int captionHeight = loadDimensionPixelSize(resources, params.mCaptionHeightId)
+                + params.mCaptionTopPadding;
         final int captionWidth = taskBounds.width();
 
         startT.setWindowCrop(mCaptionContainerSurface, captionWidth, captionHeight)
@@ -264,33 +268,41 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
             outResult.mRootView.setTaskFocusState(mTaskInfo.isFocused);
 
             // Caption insets
-            mCaptionInsetsRect.set(taskBounds);
-            mCaptionInsetsRect.bottom = mCaptionInsetsRect.top + captionHeight + params.mCaptionY;
-            wct.addInsetsSource(mTaskInfo.token,
-                    mOwner, 0 /* index */, WindowInsets.Type.captionBar(), mCaptionInsetsRect);
-            wct.addInsetsSource(mTaskInfo.token,
-                    mOwner, 0 /* index */, WindowInsets.Type.mandatorySystemGestures(),
-                    mCaptionInsetsRect);
+            if (!isCaptionVisible) {
+                wct.removeInsetsSource(mTaskInfo.token,
+                        mOwner, 0 /* index */, WindowInsets.Type.captionBar());
+                wct.removeInsetsSource(mTaskInfo.token,
+                        mOwner, 0 /* index */, WindowInsets.Type.mandatorySystemGestures());
+            } else {
+                mCaptionInsetsRect.set(taskBounds);
+                mCaptionInsetsRect.bottom =
+                        mCaptionInsetsRect.top + captionHeight + params.mCaptionY;
+                wct.addInsetsSource(mTaskInfo.token,
+                        mOwner, 0 /* index */, WindowInsets.Type.captionBar(), mCaptionInsetsRect);
+                wct.addInsetsSource(mTaskInfo.token,
+                        mOwner, 0 /* index */, WindowInsets.Type.mandatorySystemGestures(),
+                        mCaptionInsetsRect);
+            }
         } else {
             startT.hide(mCaptionContainerSurface);
         }
 
         // Task surface itself
         float shadowRadius = loadDimension(resources, params.mShadowRadiusId);
-        int backgroundColorInt = mTaskInfo.taskDescription.getBackgroundColor();
-        mTmpColor[0] = (float) Color.red(backgroundColorInt) / 255.f;
-        mTmpColor[1] = (float) Color.green(backgroundColorInt) / 255.f;
-        mTmpColor[2] = (float) Color.blue(backgroundColorInt) / 255.f;
         final Point taskPosition = mTaskInfo.positionInParent;
         startT.setWindowCrop(mTaskSurface, outResult.mWidth, outResult.mHeight)
                 .setShadowRadius(mTaskSurface, shadowRadius)
-                .setColor(mTaskSurface, mTmpColor)
                 .show(mTaskSurface);
         finishT.setPosition(mTaskSurface, taskPosition.x, taskPosition.y)
                 .setShadowRadius(mTaskSurface, shadowRadius)
                 .setWindowCrop(mTaskSurface, outResult.mWidth, outResult.mHeight);
         if (mTaskInfo.getWindowingMode() == WINDOWING_MODE_FREEFORM) {
-            startT.setCornerRadius(mTaskSurface, params.mCornerRadius);
+            int backgroundColorInt = mTaskInfo.taskDescription.getBackgroundColor();
+            mTmpColor[0] = (float) Color.red(backgroundColorInt) / 255.f;
+            mTmpColor[1] = (float) Color.green(backgroundColorInt) / 255.f;
+            mTmpColor[2] = (float) Color.blue(backgroundColorInt) / 255.f;
+            startT.setCornerRadius(mTaskSurface, params.mCornerRadius)
+                    .setColor(mTaskSurface, mTmpColor);
             finishT.setCornerRadius(mTaskSurface, params.mCornerRadius);
         }
 
@@ -316,11 +328,21 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
             if (params.mApplyStartTransactionOnDraw) {
                 mViewHost.getRootSurfaceControl().applyTransactionOnDraw(startT);
             }
+            outResult.mRootView.setPadding(
+                    outResult.mRootView.getPaddingLeft(),
+                    params.mCaptionTopPadding,
+                    outResult.mRootView.getPaddingRight(),
+                    outResult.mRootView.getPaddingBottom());
             mViewHost.setView(outResult.mRootView, lp);
         } else {
             if (params.mApplyStartTransactionOnDraw) {
                 mViewHost.getRootSurfaceControl().applyTransactionOnDraw(startT);
             }
+            outResult.mRootView.setPadding(
+                    outResult.mRootView.getPaddingLeft(),
+                    params.mCaptionTopPadding,
+                    outResult.mRootView.getPaddingRight(),
+                    outResult.mRootView.getPaddingBottom());
             mViewHost.relayout(lp);
         }
     }
@@ -469,7 +491,8 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
 
         int mCaptionX;
         int mCaptionY;
-
+        int mCaptionTopPadding;
+        boolean mIsCaptionVisible;
         boolean mApplyStartTransactionOnDraw;
 
         void reset() {
@@ -482,6 +505,8 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
 
             mCaptionX = 0;
             mCaptionY = 0;
+            mCaptionTopPadding = 0;
+            mIsCaptionVisible = false;
 
             mApplyStartTransactionOnDraw = false;
         }
@@ -503,6 +528,21 @@ public abstract class WindowDecoration<T extends View & TaskFocusStateConsumer>
         default SurfaceControlViewHost create(Context c, Display d, WindowlessWindowManager wmm) {
             return new SurfaceControlViewHost(c, d, wmm, "WindowDecoration");
         }
+    }
+
+    private void setCaptionVisibility(View rootView, boolean visible) {
+        if (rootView == null) {
+            return;
+        }
+        final int v = visible ? View.VISIBLE : View.GONE;
+        final View captionView = rootView.findViewById(getCaptionViewId());
+        if (captionView != null) {
+            captionView.setVisibility(v);
+        }
+    }
+
+    int getCaptionViewId() {
+        return Resources.ID_NULL;
     }
 
     /**

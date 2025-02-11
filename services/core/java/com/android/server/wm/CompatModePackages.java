@@ -20,7 +20,10 @@ import static com.android.internal.protolog.ProtoLogGroup.WM_DEBUG_CONFIGURATION
 import static com.android.server.wm.ActivityTaskManagerDebugConfig.TAG_ATM;
 import static com.android.server.wm.ActivityTaskManagerDebugConfig.TAG_WITH_CLASS_NAME;
 import static com.android.server.wm.ActivityTaskSupervisor.PRESERVE_WINDOWS;
+import static com.android.server.wm.CompatScaleProvider.COMPAT_SCALE_MODE_SYSTEM_FIRST;
+import static com.android.server.wm.CompatScaleProvider.COMPAT_SCALE_MODE_SYSTEM_LAST;
 
+import android.annotation.NonNull;
 import android.app.ActivityManager;
 import android.app.AppGlobals;
 import android.app.GameManagerInternal;
@@ -32,6 +35,7 @@ import android.compat.annotation.Overridable;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.IPackageManager;
 import android.content.res.CompatibilityInfo;
+import android.content.res.CompatibilityInfo.CompatScale;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Handler;
@@ -331,6 +335,7 @@ public final class CompatModePackages {
     private final AtomicFile mFile;
     private final HashMap<String, Integer> mPackages = new HashMap<>();
     private final CompatHandler mHandler;
+    private final SparseArray<CompatScaleProvider> mProviders = new SparseArray<>();
 
     public CompatModePackages(ActivityTaskManagerService service, File systemDir, Handler handler) {
         mService = service;
@@ -441,13 +446,32 @@ public final class CompatModePackages {
 
     public CompatibilityInfo compatibilityInfoForPackageLocked(ApplicationInfo ai) {
         final boolean forceCompat = getPackageCompatModeEnabledLocked(ai);
-        final float compatScale = getCompatScale(ai.packageName, ai.uid);
+        final CompatScale compatScale = getCompatScaleFromProvider(ai.packageName, ai.uid);
+        final float appScale = compatScale != null
+                ? compatScale.mScaleFactor
+                : getCompatScale(ai.packageName, ai.uid, /* checkProvider= */ false);
+        final float densityScale = compatScale != null ? compatScale.mDensityScaleFactor : appScale;
         final Configuration config = mService.getGlobalConfiguration();
         return new CompatibilityInfo(ai, config.screenLayout, config.smallestScreenWidthDp,
-                forceCompat, compatScale);
+                forceCompat, appScale, appScale, densityScale);
     }
 
     float getCompatScale(String packageName, int uid) {
+        return getCompatScale(packageName, uid, /* checkProvider= */ true);
+    }
+
+    private CompatScale getCompatScaleFromProvider(String packageName, int uid) {
+        for (int i = 0; i < mProviders.size(); i++) {
+            final CompatScaleProvider provider = mProviders.valueAt(i);
+            final CompatScale compatScale = provider.getCompatScale(packageName, uid);
+            if (compatScale != null) {
+                return compatScale;
+            }
+        }
+        return null;
+    }
+
+    private float getCompatScale(String packageName, int uid, boolean checkProviders) {
         final UserHandle userHandle = UserHandle.getUserHandleForUid(uid);
         if (mGameManager == null) {
             mGameManager = LocalServices.getService(GameManagerInternal.class);
@@ -471,6 +495,13 @@ public final class CompatModePackages {
                 // For Upscaling the returned factor must be scalingFactor
                 // For Downscaling the returned factor must be 1f / scalingFactor
                 return isDownscaledInverseEnabled ? scalingFactor : 1f / scalingFactor;
+            }
+        }
+
+        if (checkProviders) {
+            final CompatScale compatScale = getCompatScaleFromProvider(packageName, uid);
+            if (compatScale != null) {
+                return compatScale.mScaleFactor;
             }
         }
 
@@ -528,6 +559,36 @@ public final class CompatModePackages {
             return 0.3f;
         }
         return 1f;
+    }
+
+    void registerCompatScaleProvider(@CompatScaleProvider.CompatScaleModeOrderId int id,
+            @NonNull CompatScaleProvider provider) {
+        synchronized (mService.mGlobalLock) {
+            if (mProviders.contains(id)) {
+                throw new IllegalArgumentException("Duplicate id provided: " + id);
+            }
+            if (provider == null) {
+                throw new IllegalArgumentException("The passed CompatScaleProvider "
+                        + "can not be null");
+            }
+            if (!CompatScaleProvider.isValidOrderId(id)) {
+                throw new IllegalArgumentException(
+                        "Provided id " + id + " is not in range of valid ids for system "
+                                + "services [" + COMPAT_SCALE_MODE_SYSTEM_FIRST + ","
+                                + COMPAT_SCALE_MODE_SYSTEM_LAST + "]");
+            }
+            mProviders.put(id, provider);
+        }
+    }
+
+    void unregisterCompatScaleProvider(@CompatScaleProvider.CompatScaleModeOrderId int id) {
+        synchronized (mService.mGlobalLock) {
+            if (!mProviders.contains(id)) {
+                throw new IllegalArgumentException(
+                        "CompatScaleProvider with id (" + id + ") is not registered");
+            }
+            mProviders.remove(id);
+        }
     }
 
     public int computeCompatModeLocked(ApplicationInfo ai) {

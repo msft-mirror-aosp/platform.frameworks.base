@@ -833,6 +833,13 @@ public class ApplicationInfo extends PackageItemInfo implements Parcelable {
      */
     public static final int PRIVATE_FLAG_EXT_CPU_OVERRIDE = 1 << 5;
 
+    /**
+     * Value for {@link #privateFlagsExt}: whether app requires display compatibility
+     * features
+     * @hide
+     */
+    public static final int PRIVATE_FLAG_EXT_DISPLAY_COMPAT = 1 << 6;
+
     /** @hide */
     @IntDef(flag = true, prefix = { "PRIVATE_FLAG_EXT_" }, value = {
             PRIVATE_FLAG_EXT_PROFILEABLE,
@@ -841,6 +848,7 @@ public class ApplicationInfo extends PackageItemInfo implements Parcelable {
             PRIVATE_FLAG_EXT_ENABLE_ON_BACK_INVOKED_CALLBACK,
             PRIVATE_FLAG_EXT_ALLOWLISTED_FOR_HIDDEN_APIS,
             PRIVATE_FLAG_EXT_CPU_OVERRIDE,
+            PRIVATE_FLAG_EXT_DISPLAY_COMPAT,
     })
     @Retention(RetentionPolicy.SOURCE)
     public @interface ApplicationInfoPrivateFlagsExt {}

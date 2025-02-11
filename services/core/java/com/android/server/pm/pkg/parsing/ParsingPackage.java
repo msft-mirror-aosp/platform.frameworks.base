@@ -396,6 +396,8 @@ public interface ParsingPackage {
 
     ParsingPackage setOnBackInvokedCallbackEnabled(boolean enableOnBackInvokedCallback);
 
+    ParsingPackage setDisplayCompat(boolean displayCompat);
+
     @CallSuper
     ParsedPackage hideAsParsed();
 
@@ -534,4 +536,6 @@ public interface ParsingPackage {
     boolean isNormalScreensSupported();
 
     boolean isSmallScreensSupported();
+
+    boolean isDisplayCompat();
 }

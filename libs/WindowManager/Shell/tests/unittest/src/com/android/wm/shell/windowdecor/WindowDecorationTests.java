@@ -257,8 +257,6 @@ public class WindowDecorationTests extends ShellTestCase {
         verify(mMockSurfaceControlFinishT).setCornerRadius(taskSurface, CORNER_RADIUS);
         verify(mMockSurfaceControlStartT)
                 .show(taskSurface);
-        verify(mMockSurfaceControlStartT)
-                .setColor(taskSurface, new float[] {1.f, 1.f, 0.f});
         verify(mMockSurfaceControlStartT).setShadowRadius(taskSurface, 10);
 
         assertEquals(300, mRelayoutResult.mWidth);
@@ -283,12 +281,8 @@ public class WindowDecorationTests extends ShellTestCase {
         final SurfaceControl.Transaction t = mock(SurfaceControl.Transaction.class);
         mMockSurfaceControlTransactions.add(t);
 
-        final ActivityManager.TaskDescription.Builder taskDescriptionBuilder =
-                new ActivityManager.TaskDescription.Builder()
-                        .setBackgroundColor(Color.YELLOW);
         final ActivityManager.RunningTaskInfo taskInfo = new TestRunningTaskInfoBuilder()
                 .setDisplayId(Display.DEFAULT_DISPLAY)
-                .setTaskDescriptionBuilder(taskDescriptionBuilder)
                 .setBounds(TASK_BOUNDS)
                 .setPositionInParent(TASK_POSITION_IN_PARENT.x, TASK_POSITION_IN_PARENT.y)
                 .setVisible(true)
@@ -511,6 +505,40 @@ public class WindowDecorationTests extends ShellTestCase {
         windowDecor.relayout(taskInfo, true /* applyStartTransactionOnDraw */);
 
         verify(mMockRootSurfaceControl).applyTransactionOnDraw(mMockSurfaceControlStartT);
+    }
+
+    @Test
+    public void testRelayout_freeformTask_setTaskSurfaceColor() {
+        final Display defaultDisplay = mock(Display.class);
+        doReturn(defaultDisplay).when(mMockDisplayController)
+                .getDisplay(Display.DEFAULT_DISPLAY);
+
+        final SurfaceControl decorContainerSurface = mock(SurfaceControl.class);
+        final SurfaceControl.Builder decorContainerSurfaceBuilder =
+                createMockSurfaceControlBuilder(decorContainerSurface);
+        mMockSurfaceControlBuilders.add(decorContainerSurfaceBuilder);
+        final SurfaceControl captionContainerSurface = mock(SurfaceControl.class);
+        final SurfaceControl.Builder captionContainerSurfaceBuilder =
+                createMockSurfaceControlBuilder(captionContainerSurface);
+        mMockSurfaceControlBuilders.add(captionContainerSurfaceBuilder);
+
+        final ActivityManager.TaskDescription.Builder taskDescriptionBuilder =
+                new ActivityManager.TaskDescription.Builder()
+                        .setBackgroundColor(Color.YELLOW);
+
+        final ActivityManager.RunningTaskInfo taskInfo = new TestRunningTaskInfoBuilder()
+                .setDisplayId(Display.DEFAULT_DISPLAY)
+                .setTaskDescriptionBuilder(taskDescriptionBuilder)
+                .setVisible(true)
+                .setWindowingMode(WINDOWING_MODE_FREEFORM)
+                .build();
+        taskInfo.isFocused = true;
+        final SurfaceControl taskSurface = mock(SurfaceControl.class);
+        final TestWindowDecoration windowDecor = createWindowDecoration(taskInfo, taskSurface);
+
+        windowDecor.relayout(taskInfo);
+
+        verify(mMockSurfaceControlStartT).setColor(taskSurface, new float[] {1.f, 1.f, 0.f});
     }
 
     private TestWindowDecoration createWindowDecoration(

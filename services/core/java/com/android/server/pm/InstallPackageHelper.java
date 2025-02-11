@@ -4060,7 +4060,7 @@ final class InstallPackageHelper {
             if (!ignoreSharedUserId && parsedPackage.getSharedUserId() != null) {
                 sharedUserSetting = mPm.mSettings.getSharedUserLPw(
                         parsedPackage.getSharedUserId(),
-                        0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/, true /*create*/);
+                        0 /*pkgFlags*/, 0 /*pkgPrivateFlags*/, 0 /* pkgPrivateFlagsExt */, true /*create*/);
             } else {
                 sharedUserSetting = null;
             }
@@ -4753,7 +4753,7 @@ final class InstallPackageHelper {
             try {
                 synchronized (mPm.mLock) {
                     sharedUserSetting = mPm.mSettings.getSharedUserLPw(pkg.getSharedUserId(),
-                            0, 0, false);
+                            0, 0, 0, false);
                 }
             } catch (PackageManagerException ignore) {
             }
@@ -4795,7 +4795,7 @@ final class InstallPackageHelper {
             synchronized (mPm.mLock) {
                 try {
                     sharedUserSetting = mPm.mSettings.getSharedUserLPw(pkg.getSharedUserId(), 0,
-                            0, false);
+                            0, 0, false);
                 } catch (PackageManagerException ignore) {
                 }
                 if (sharedUserSetting != null && sharedUserSetting.isPrivileged()) {

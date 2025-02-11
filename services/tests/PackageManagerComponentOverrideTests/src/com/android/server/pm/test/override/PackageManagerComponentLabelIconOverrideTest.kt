@@ -55,6 +55,7 @@ import org.junit.BeforeClass
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
+import org.mockito.ArgumentMatchers.eq
 import org.mockito.Mockito.any
 import org.mockito.Mockito.anyInt
 import org.mockito.Mockito.doReturn
@@ -301,8 +302,8 @@ class PackageManagerComponentLabelIconOverrideTest {
     private fun makePkgSetting(pkgName: String, pkg: AndroidPackageInternal) =
         PackageSetting(
             pkgName, null, File("/test"),
-            null, null, null, null, 0, 0, 0, 0, null, null, null, null, null,
-            UUID.fromString("3f9d52b7-d7b4-406a-a1da-d9f19984c72c")
+            null, null, null, null, 0, 0, 0, 0, 0, null, null, null,
+            null, null, UUID.fromString("3f9d52b7-d7b4-406a-a1da-d9f19984c72c")
         ).apply {
             if (params.isSystem) {
                 this.flags = this.flags or ApplicationInfo.FLAG_SYSTEM
@@ -383,6 +384,10 @@ class PackageManagerComponentLabelIconOverrideTest {
                     com.android.internal.R.string.config_overrideComponentUiPackage)) { VALID_PKG }
             whenever(this.checkCallingOrSelfPermission(
                     android.Manifest.permission.INTERACT_ACROSS_USERS_FULL)) {
+                PackageManager.PERMISSION_GRANTED
+            }
+            whenever(this.checkPermission(
+                eq(android.Manifest.permission.INTERACT_ACROSS_USERS_FULL), anyInt(), anyInt())) {
                 PackageManager.PERMISSION_GRANTED
             }
         }

@@ -1892,23 +1892,23 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
 
         t.traceBegin("addSharedUsers");
         mSettings.addSharedUserLPw("android.uid.system", Process.SYSTEM_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.phone", RADIO_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.log", LOG_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.nfc", NFC_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.bluetooth", BLUETOOTH_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.shell", SHELL_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.se", SE_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.networkstack", NETWORKSTACK_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         mSettings.addSharedUserLPw("android.uid.uwb", UWB_UID,
-                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED);
+                ApplicationInfo.FLAG_SYSTEM, ApplicationInfo.PRIVATE_FLAG_PRIVILEGED, 0);
         t.traceEnd();
 
         String separateProcesses = SystemProperties.get("debug.separate_processes");
@@ -6989,6 +6989,24 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
         public void onPackageProcessKilledForUninstall(String packageName) {
             mHandler.post(() -> PackageManagerService.this.notifyInstallObserver(packageName,
                     true /* killApp */));
+        }
+
+        @Override
+        public void setDisplayCompat(String packageName, int userId, boolean enabled) {
+            final int callingUid = Binder.getCallingUid();
+            final Computer snapshot = snapshotComputer();
+            snapshot.enforceCrossUserPermission(callingUid, userId, false /* requireFullPermission */,
+                    false /* checkShell */, "setDisplayCompat");
+            enforceOwnerRights(snapshot, packageName, callingUid);
+
+            PackageStateInternal packageState = snapshot.getPackageStateForInstalledAndFiltered(
+                    packageName, callingUid, userId);
+            if (packageState == null) {
+                return;
+            }
+
+            PackageManagerService.this.commitPackageStateMutation(null, packageName,
+                state -> state.userState(userId).setDisplayCompat(enabled));
         }
     }
 

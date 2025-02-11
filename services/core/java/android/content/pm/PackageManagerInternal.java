@@ -1364,4 +1364,11 @@ public abstract class PackageManagerInternal {
     @Deprecated
     public abstract void legacyReconcileSecondaryDexFiles(String packageName)
             throws LegacyDexoptDisabledException;
+    /**
+     * Sets the display compat mode for a package.
+     * @param packageName a specific package
+     * @param userId The user for whom the package is installed
+     * @param enabled Whether to enable or disable the display compat mode
+     */
+    public abstract void setDisplayCompat(String packageName, int userId, boolean enabled);
 }

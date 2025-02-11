@@ -361,6 +361,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
     private static final String ATTR_DATABASE_VERSION = "databaseVersion";
     private static final String ATTR_VALUE = "value";
     private static final String ATTR_FIRST_INSTALL_TIME = "first-install-time";
+    private static final String ATTR_DISPLAY_COMPAT = "displayCompat";
 
     private final Handler mHandler;
 
@@ -854,10 +855,10 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
 
     /** Gets and optionally creates a new shared user id. */
     SharedUserSetting getSharedUserLPw(String name, int pkgFlags, int pkgPrivateFlags,
-            boolean create) throws PackageManagerException {
+            int pkgPrivateFlagsExt, boolean create) throws PackageManagerException {
         SharedUserSetting s = mSharedUsers.get(name);
         if (s == null && create) {
-            s = new SharedUserSetting(name, pkgFlags, pkgPrivateFlags);
+            s = new SharedUserSetting(name, pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt);
             s.mAppId = mAppIds.acquireAndRegisterNewAppId(s);
             if (s.mAppId < 0) {
                 // < 0 means we couldn't assign a userid; throw exception
@@ -920,7 +921,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                 p.getLegacyNativeLibraryPath(), p.getPrimaryCpuAbiLegacy(),
                 p.getSecondaryCpuAbiLegacy(), p.getCpuAbiOverride(),
                 p.getAppId(), p.getVersionCode(), p.getFlags(), p.getPrivateFlags(),
-                p.getUsesSdkLibraries(), p.getUsesSdkLibrariesVersionsMajor(),
+                p.getPrivateFlagsExt(), p.getUsesSdkLibraries(), p.getUsesSdkLibrariesVersionsMajor(),
                 p.getUsesStaticLibraries(), p.getUsesStaticLibrariesVersions(), p.getMimeGroups(),
                 mDomainVerificationManager.generateNewId());
         if (ret != null) {
@@ -949,7 +950,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
     PackageSetting addPackageLPw(String name, String realName, File codePath,
             String legacyNativeLibraryPathString, String primaryCpuAbiString,
             String secondaryCpuAbiString, String cpuAbiOverrideString, int uid, long vc,
-            int pkgFlags, int pkgPrivateFlags, String[] usesSdkLibraries,
+            int pkgFlags, int pkgPrivateFlags, int pkgPrivateFlagsExt, String[] usesSdkLibraries,
             long[] usesSdkLibrariesVersions, String[] usesStaticLibraries,
             long[] usesStaticLibrariesVersions, Map<String, Set<String>> mimeGroups,
             @NonNull UUID domainSetId) {
@@ -964,8 +965,9 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         }
         p = new PackageSetting(name, realName, codePath, legacyNativeLibraryPathString,
                 primaryCpuAbiString, secondaryCpuAbiString, cpuAbiOverrideString, vc, pkgFlags,
-                pkgPrivateFlags, 0 /*userId*/, usesSdkLibraries, usesSdkLibrariesVersions,
-                usesStaticLibraries, usesStaticLibrariesVersions, mimeGroups, domainSetId);
+                pkgPrivateFlags, pkgPrivateFlagsExt, 0 /*userId*/, usesSdkLibraries,
+                usesSdkLibrariesVersions, usesStaticLibraries, usesStaticLibrariesVersions,
+                mimeGroups, domainSetId);
         p.setAppId(uid);
         if (mAppIds.registerExistingAppId(uid, p, name)) {
             mPackages.put(name, p);
@@ -974,7 +976,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         return null;
     }
 
-    SharedUserSetting addSharedUserLPw(String name, int uid, int pkgFlags, int pkgPrivateFlags) {
+    SharedUserSetting addSharedUserLPw(String name, int uid, int pkgFlags,
+        int pkgPrivateFlags, int pkgPrivateFlagsExt) {
         SharedUserSetting s = mSharedUsers.get(name);
         if (s != null) {
             if (s.mAppId == uid) {
@@ -984,7 +987,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                     "Adding duplicate shared user, keeping first: " + name);
             return null;
         }
-        s = new SharedUserSetting(name, pkgFlags, pkgPrivateFlags);
+        s = new SharedUserSetting(name, pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt);
         s.mAppId = uid;
         if (mAppIds.registerExistingAppId(uid, s, name)) {
             mSharedUsers.put(name, s);
@@ -1042,7 +1045,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
             PackageSetting disabledPkg, String realPkgName, SharedUserSetting sharedUser,
             File codePath, String legacyNativeLibraryPath, String primaryCpuAbi,
             String secondaryCpuAbi, long versionCode, int pkgFlags, int pkgPrivateFlags,
-            UserHandle installUser, boolean allowInstall, boolean instantApp,
+            int pkgPrivateFlagsExt, UserHandle installUser, boolean allowInstall, boolean instantApp,
             boolean virtualPreload, boolean isStoppedSystemApp, UserManagerService userManager,
             String[] usesSdkLibraries, long[] usesSdkLibrariesVersions,
             String[] usesStaticLibraries, long[] usesStaticLibrariesVersions,
@@ -1068,7 +1071,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                     .setLastModifiedTime(codePath.lastModified())
                     .setDomainSetId(domainSetId);
             pkgSetting.setFlags(pkgFlags)
-                    .setPrivateFlags(pkgPrivateFlags);
+                    .setPrivateFlags(pkgPrivateFlags)
+                    .setPrivateFlagsExt(pkgPrivateFlagsExt);
         } else {
             int installUserId = installUser != null ? installUser.getIdentifier()
                     : UserHandle.USER_SYSTEM;
@@ -1076,7 +1080,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
             pkgSetting = new PackageSetting(pkgName, realPkgName, codePath,
                     legacyNativeLibraryPath, primaryCpuAbi, secondaryCpuAbi,
                     null /*cpuAbiOverrideString*/, versionCode, pkgFlags, pkgPrivateFlags,
-                    0 /*sharedUserAppId*/, usesSdkLibraries, usesSdkLibrariesVersions,
+                    pkgPrivateFlagsExt, 0 /*sharedUserAppId*/, usesSdkLibraries, usesSdkLibrariesVersions,
                     usesStaticLibraries, usesStaticLibrariesVersions,
                     createMimeGroups(mimeGroupNames), domainSetId);
             pkgSetting.setLastModifiedTime(codePath.lastModified());
@@ -1126,7 +1130,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                                 null /*harmfulAppWarning*/,
                                 null /*splashscreenTheme*/,
                                 0 /*firstInstallTime*/,
-                                PackageManager.USER_MIN_ASPECT_RATIO_UNSET
+                                PackageManager.USER_MIN_ASPECT_RATIO_UNSET,
+                                false /*displayCompat*/
                         );
                     }
                 }
@@ -1188,7 +1193,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
             @Nullable SharedUserSetting sharedUser,
             @NonNull File codePath, @Nullable String legacyNativeLibraryPath,
             @Nullable String primaryCpuAbi, @Nullable String secondaryCpuAbi, int pkgFlags,
-            int pkgPrivateFlags, @NonNull UserManagerService userManager,
+            int pkgPrivateFlags, int pkgPrivateFlagsExt, @NonNull UserManagerService userManager,
             @Nullable String[] usesSdkLibraries, @Nullable long[] usesSdkLibrariesVersions,
             @Nullable String[] usesStaticLibraries, @Nullable long[] usesStaticLibrariesVersions,
             @Nullable Set<String> mimeGroupNames, @NonNull UUID domainSetId)
@@ -1272,6 +1277,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         newPkgFlags |= pkgFlags & ApplicationInfo.FLAG_SYSTEM;
         // Only set pkgFlags.
         pkgSetting.setFlags(newPkgFlags);
+        //pkgSetting.setPkgFlags(newPkgFlags, pkgSetting.getPrivateFlags(), pkgSetting.getPrivateFlagsExt());
 
         boolean wasRequiredForSystemUser = (pkgSetting.getPrivateFlags()
                 & ApplicationInfo.PRIVATE_FLAG_REQUIRED_FOR_SYSTEM_USER) != 0;
@@ -1802,7 +1808,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                                     null /*harmfulAppWarning*/,
                                     null /* splashScreenTheme*/,
                                     0 /*firstInstallTime*/,
-                                    PackageManager.USER_MIN_ASPECT_RATIO_UNSET
+                                    PackageManager.USER_MIN_ASPECT_RATIO_UNSET,
+                                    false /*displayCompat*/
                             );
                         }
                         return;
@@ -1900,7 +1907,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                         final int minAspectRatio = parser.getAttributeInt(null,
                                 ATTR_MIN_ASPECT_RATIO,
                                 PackageManager.USER_MIN_ASPECT_RATIO_UNSET);
-
+                        final boolean displayCompat = parser.getAttributeBoolean(null,
+                                ATTR_DISPLAY_COMPAT, false);
                         ArraySet<String> enabledComponents = null;
                         ArraySet<String> disabledComponents = null;
                         PersistableBundle suspendedAppExtras = null;
@@ -1977,7 +1985,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                                 uninstallReason, harmfulAppWarning, splashScreenTheme,
                                 firstInstallTime != 0 ? firstInstallTime :
                                         origFirstInstallTimes.getOrDefault(name, 0L),
-                                minAspectRatio);
+                                minAspectRatio, displayCompat);
 
                         mDomainVerificationManager.setLegacyUserState(name, userId, verifState);
                     } else if (tagName.equals("preferred-activities")) {
@@ -2282,6 +2290,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                             serializer.attributeInt(null, ATTR_MIN_ASPECT_RATIO,
                                     ustate.getMinAspectRatio());
                         }
+                        serializer.attributeBoolean(null, ATTR_DISPLAY_COMPAT,
+                                ustate.isDisplayCompat());
                         if (ustate.isSuspended()) {
                             for (int i = 0; i < ustate.getSuspendParams().size(); i++) {
                                 final String suspendingPackage = ustate.getSuspendParams().keyAt(i);
@@ -2984,6 +2994,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
 
         serializer.attributeInt(null, "publicFlags", pkg.getFlags());
         serializer.attributeInt(null, "privateFlags", pkg.getPrivateFlags());
+        serializer.attributeInt(null, "privateFlagsExt", pkg.getPrivateFlagsExt());
         serializer.attributeLongHex(null, "ft", pkg.getLastModifiedTime());
         serializer.attributeLongHex(null, "ut", pkg.getLastUpdateTime());
         serializer.attributeLong(null, "version", pkg.getVersionCode());
@@ -3715,6 +3726,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
 
         int pkgFlags = 0;
         int pkgPrivateFlags = 0;
+        int pkgPrivateFlagsExt = 0;
         pkgFlags |= ApplicationInfo.FLAG_SYSTEM;
         if (codePathStr.contains("/priv-app/")) {
             pkgPrivateFlags |= ApplicationInfo.PRIVATE_FLAG_PRIVILEGED;
@@ -3726,7 +3738,8 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         UUID domainSetId = DomainVerificationManagerInternal.DISABLED_ID;
         PackageSetting ps = new PackageSetting(name, realName, new File(codePathStr),
                 legacyNativeLibraryPathStr, primaryCpuAbiStr, secondaryCpuAbiStr, cpuAbiOverrideStr,
-                versionCode, pkgFlags, pkgPrivateFlags, 0 /*sharedUserAppId*/, null, null, null,
+                versionCode, pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt, 0 /*sharedUserAppId*/,
+                null, null, null,
                 null, null, domainSetId);
         long timeStamp = parser.getAttributeLongHex(null, "ft", 0);
         if (timeStamp == 0) {
@@ -3810,6 +3823,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         int categoryHint = ApplicationInfo.CATEGORY_UNDEFINED;
         int pkgFlags = 0;
         int pkgPrivateFlags = 0;
+        int pkgPrivateFlagsExt = 0;
         long timeStamp = 0;
         long firstInstallTime = 0;
         long lastUpdateTime = 0;
@@ -3881,6 +3895,13 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                     } catch (NumberFormatException e) {
                     }
                 }
+                systemStr = parser.getAttributeValue(null, "privateFlagsExt");
+                if (systemStr != null) {
+                    try {
+                      pkgPrivateFlagsExt = Integer.parseInt(systemStr);
+                    } catch (NumberFormatException e) {
+                    }
+                }
             } else {
                 // Pre-M -- both public and private flags were stored in one "flags" field.
                 systemStr = parser.getAttributeValue(null, "flags");
@@ -3938,7 +3959,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                 packageSetting = addPackageLPw(name.intern(), realName, new File(codePathStr),
                         legacyNativeLibraryPathStr, primaryCpuAbiString, secondaryCpuAbiString,
                         cpuAbiOverrideString, appId, versionCode, pkgFlags, pkgPrivateFlags,
-                        null /* usesSdkLibraries */, null /* usesSdkLibraryVersions */,
+                        pkgPrivateFlagsExt, null /* usesSdkLibraries */, null /* usesSdkLibraryVersions */,
                         null /* usesStaticLibraries */, null /* usesStaticLibraryVersions */,
                         null /* mimeGroups */, domainSetId);
                 if (PackageManagerService.DEBUG_SETTINGS)
@@ -3957,7 +3978,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                     packageSetting = new PackageSetting(name.intern(), realName,
                             new File(codePathStr), legacyNativeLibraryPathStr,
                             primaryCpuAbiString, secondaryCpuAbiString, cpuAbiOverrideString,
-                            versionCode, pkgFlags, pkgPrivateFlags, sharedUserAppId,
+                            versionCode, pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt, sharedUserAppId,
                             null /* usesSdkLibraries */,
                             null /* usesSdkLibrariesVersions */,
                             null /* usesStaticLibraries */,
@@ -4264,6 +4285,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
         String name = null;
         int pkgFlags = 0;
         int pkgPrivateFlags = 0;
+        int pkgPrivateFlagsExt = 0;
         SharedUserSetting su = null;
         {
             name = parser.getAttributeValue(null, ATTR_NAME);
@@ -4281,7 +4303,7 @@ public final class Settings implements Watchable, Snappable, ResilientAtomicFile
                                 + " has bad appId " + appId + " at "
                                 + parser.getPositionDescription());
             } else {
-                if ((su = addSharedUserLPw(name.intern(), appId, pkgFlags, pkgPrivateFlags))
+                if ((su = addSharedUserLPw(name.intern(), appId, pkgFlags, pkgPrivateFlags, pkgPrivateFlagsExt))
                         == null) {
                     PackageManagerService
                             .reportSettingsProblem(Log.ERROR, "Occurred while parsing settings at "
