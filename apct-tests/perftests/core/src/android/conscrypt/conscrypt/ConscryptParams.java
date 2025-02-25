@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 The Android Open Source Project
+ * Copyright 2025 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,22 @@
  * limitations under the License.
  */
 
-package com.android.systemui.settings.brightness.domain.interactor
+package android.conscrypt;
 
-import com.android.systemui.kosmos.Kosmos
-import com.android.systemui.settings.brightness.data.repository.brightnessMirrorShowingRepository
+import java.util.List;
 
-val Kosmos.brightnessMirrorShowingInteractor by
-    Kosmos.Fixture {
-        BrightnessMirrorShowingInteractorPassThrough(brightnessMirrorShowingRepository)
-    }
+public class ConscryptParams {
+    public static final List<String> ciphers = List.of(
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
+    );
+
+    public static final List<Integer> messageSizes = List.of(
+        64,
+        512,
+        4096
+    );
+}
