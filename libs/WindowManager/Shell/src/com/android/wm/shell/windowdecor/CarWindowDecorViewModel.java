@@ -63,7 +63,11 @@ public abstract class CarWindowDecorViewModel
     private final SparseArray<CarWindowDecoration> mWindowDecorByTaskId = new SparseArray<>();
     private final Map<Integer, DisplayInsetsController.OnInsetsChangedListener>
             mDisplayIdToInsetsChangedListenerMap = new HashMap<>();
+    private final boolean mIsWindowDecorEnabled;
 
+    /**
+     * @param isWindowDecorEnabled {@code true} if the WindowDecoration is enabled.
+     */
     public CarWindowDecorViewModel(
             Context context,
             @ShellMainThread ShellExecutor mainExecutor,
@@ -71,7 +75,8 @@ public abstract class CarWindowDecorViewModel
             ShellTaskOrganizer taskOrganizer,
             DisplayController displayController,
             DisplayInsetsController displayInsetsController,
-            SyncTransactionQueue syncQueue) {
+            SyncTransactionQueue syncQueue,
+            boolean isWindowDecorEnabled) {
         mContext = context;
         mMainExecutor = mainExecutor;
         mBgExecutor = bgExecutor;
@@ -79,6 +84,7 @@ public abstract class CarWindowDecorViewModel
         mDisplayController = displayController;
         mDisplayInsetsController = displayInsetsController;
         mSyncQueue = syncQueue;
+        mIsWindowDecorEnabled = isWindowDecorEnabled;
 
         mDisplayController.addDisplayWindowListener(this);
     }
@@ -137,6 +143,9 @@ public abstract class CarWindowDecorViewModel
             SurfaceControl taskSurface,
             SurfaceControl.Transaction startT,
             SurfaceControl.Transaction finishT) {
+        if (!mIsWindowDecorEnabled) {
+            return false;
+        }
         createWindowDecoration(taskInfo, taskSurface, startT, finishT);
         return true;
     }
@@ -162,7 +171,7 @@ public abstract class CarWindowDecorViewModel
             SurfaceControl.Transaction finishT) {
         final CarWindowDecoration decoration = mWindowDecorByTaskId.get(taskInfo.taskId);
 
-        if (!shouldShowWindowDecor(taskInfo)) {
+        if (!shouldShowWindowDecor(taskInfo) || !mIsWindowDecorEnabled) {
             if (decoration != null) {
                 destroyWindowDecoration(taskInfo);
             }
