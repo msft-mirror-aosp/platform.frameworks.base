@@ -173,6 +173,15 @@ class WindowContainer<E extends WindowContainer> extends ConfigurationContainer<
      */
     protected SparseArray<InsetsSourceProvider> mInsetsSourceProviders = null;
 
+    /**
+     * Bounds for the safe region for this window container which control the
+     * {@link AppCompatSafeRegionPolicy}. These bounds can be passed on to the subtree if the
+     * subtree has no other bounds for the safe region. The value will be null if there are no safe
+     * region bounds for the window container.
+     */
+    @Nullable
+    private Rect mSafeRegionBounds;
+
     @Nullable
     private ArrayMap<IBinder, DeathRecipient> mInsetsOwnerDeathRecipientMap;
 
@@ -553,6 +562,34 @@ class WindowContainer<E extends WindowContainer> extends ConfigurationContainer<
 
     InsetsSourceProvider getControllableInsetProvider() {
         return mControllableInsetProvider;
+    }
+
+    /**
+     * Returns the safe region bounds on the window container. If the window container has no safe
+     * region bounds set, the safe region bounds as set on the nearest ancestor is returned.
+     */
+    @Nullable
+    Rect getSafeRegionBounds() {
+        if (mSafeRegionBounds != null) {
+            return mSafeRegionBounds;
+        }
+        if (mParent == null) {
+            return null;
+        }
+        return mParent.getSafeRegionBounds();
+    }
+
+    /**
+     * Sets the safe region bounds on the window container. Set bounds to {@code null} to reset.
+     *
+     * @param safeRegionBounds the safe region {@link Rect} that should be set on this
+     *                         WindowContainer
+     */
+    void setSafeRegionBounds(@Nullable Rect safeRegionBounds) {
+        mSafeRegionBounds = safeRegionBounds;
+        // Trigger a config change whenever this method is called since the safe region bounds
+        // can be modified (including a reset).
+        onRequestedOverrideConfigurationChanged(getRequestedOverrideConfiguration());
     }
 
 
@@ -3646,6 +3683,7 @@ class WindowContainer<E extends WindowContainer> extends ConfigurationContainer<
                 mLocalInsetsSources.valueAt(i).dump(childPrefix, pw);
             }
         }
+        pw.println(prefix + mSafeRegionBounds + " SafeRegionBounds");
     }
 
     final void updateSurfacePositionNonOrganized() {
