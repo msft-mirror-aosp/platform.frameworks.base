@@ -5694,6 +5694,14 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
         commitVisibility(visible, performLayout, false /* fromTransition */);
     }
 
+    /**
+     * Sets whether safe region bounds are needed for the Activity. This is called from
+     * {@link ActivityStarter} after the source record is created.
+     */
+    void setNeedsSafeRegionBounds(boolean needsSafeRegionBounds) {
+        mAppCompatController.getSafeRegionPolicy().setNeedsSafeRegionBounds(needsSafeRegionBounds);
+    }
+
     void setNeedsLetterboxedAnimation(boolean needsLetterboxedAnimation) {
         mNeedsLetterboxedAnimation = needsLetterboxedAnimation;
     }
@@ -8371,9 +8379,11 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
         }
 
         mAppCompatController.getAppCompatAspectRatioPolicy().reset();
+        final AppCompatSafeRegionPolicy safeRegionPolicy =
+                mAppCompatController.getSafeRegionPolicy();
         mIsEligibleForFixedOrientationLetterbox = false;
         mResolveConfigHint.resolveTmpOverrides(mDisplayContent, newParentConfiguration,
-                isFixedRotationTransforming());
+                isFixedRotationTransforming(), safeRegionPolicy.getLatestSafeRegionBounds());
 
         // Can't use resolvedConfig.windowConfiguration.getWindowingMode() because it can be
         // different from windowing mode of the task (PiP) during transition from fullscreen to PiP
@@ -8427,6 +8437,14 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
                 computeConfigByResolveHint(resolvedConfig, newParentConfiguration);
             }
         }
+
+        // If activity can be letterboxed due to a safe region only, use the safe region bounds
+        // as the resolved bounds. We ignore cases where the letterboxing can happen due to other
+        // app compat conditions and a safe region since the safe region app compat is sandboxed
+        // earlier in TaskFragment.ConfigOverrideHint.resolveTmpOverrides.
+        mAppCompatController.getSafeRegionPolicy().resolveSafeRegionBoundsConfigurationIfNeeded(
+                resolvedConfig, newParentConfiguration);
+
         // If activity in fullscreen mode is letterboxed because of fixed orientation then bounds
         // are already calculated in resolveFixedOrientationConfiguration, or if in size compat
         // mode, it should already be calculated in resolveSizeCompatModeConfiguration.
@@ -8616,7 +8634,7 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
                 mAppCompatController.getAppCompatSizeCompatModePolicy();
         final Rect screenResolvedBounds = scmPolicy.replaceResolvedBoundsIfNeeded(resolvedBounds);
         final Rect parentAppBounds = mResolveConfigHint.mParentAppBoundsOverride;
-        final Rect parentBounds = newParentConfiguration.windowConfiguration.getBounds();
+        final Rect parentBounds = mResolveConfigHint.mParentBoundsOverride;
         final float screenResolvedBoundsWidth = screenResolvedBounds.width();
         final float parentAppBoundsWidth = parentAppBounds.width();
         final boolean isImmersiveMode = isImmersiveMode(parentBounds);
@@ -8828,7 +8846,7 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
      * in this method.
      */
     private void resolveFixedOrientationConfiguration(@NonNull Configuration newParentConfig) {
-        final Rect parentBounds = newParentConfig.windowConfiguration.getBounds();
+        final Rect parentBounds = mResolveConfigHint.mParentBoundsOverride;
         final Rect stableBounds = new Rect();
         final Rect outNonDecorBounds = mTmpBounds;
         // If orientation is respected when insets are applied, then stableBounds will be empty.
@@ -8962,7 +8980,7 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
     private void resolveAspectRatioRestriction(Configuration newParentConfiguration) {
         final Configuration resolvedConfig = getResolvedOverrideConfiguration();
         final Rect parentAppBounds = mResolveConfigHint.mParentAppBoundsOverride;
-        final Rect parentBounds = newParentConfiguration.windowConfiguration.getBounds();
+        final Rect parentBounds = mResolveConfigHint.mParentBoundsOverride;
         final Rect resolvedBounds = resolvedConfig.windowConfiguration.getBounds();
         // Use tmp bounds to calculate aspect ratio so we can know whether the activity should use
         // restricted size (resolved bounds may be the requested override bounds).
