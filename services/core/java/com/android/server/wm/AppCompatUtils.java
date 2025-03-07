@@ -215,7 +215,7 @@ final class AppCompatUtils {
             return "ASPECT_RATIO";
         }
         if (activityRecord.mAppCompatController.getSafeRegionPolicy()
-                .isLetterboxedForSafeRegionOnly()) {
+                .isLetterboxedForSafeRegionOnlyAllowed()) {
             return "SAFE_REGION";
         }
         return "UNKNOWN_REASON";

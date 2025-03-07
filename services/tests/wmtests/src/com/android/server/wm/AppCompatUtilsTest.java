@@ -93,7 +93,7 @@ public class AppCompatUtilsTest extends WindowTestsBase {
                     /* forFixedOrientationAndAspectRatio */ false);
             robot.setIsLetterboxedForDisplayCutout(/* displayCutout */ false);
             robot.setIsLetterboxedForAspectRatioOnly(/* forAspectRatio */ false);
-            robot.setIsLetterboxedForSafeRegionOnly(/* safeRegionOnly */ true);
+            robot.setIsLetterboxedForSafeRegionOnlyAllowed(/* safeRegionOnly */ true);
 
             robot.checkTopActivityLetterboxReason(/* expected */ "SAFE_REGION");
         });
@@ -126,7 +126,7 @@ public class AppCompatUtilsTest extends WindowTestsBase {
                     /* forFixedOrientationAndAspectRatio */ false);
             robot.setIsLetterboxedForDisplayCutout(/* displayCutout */ false);
             robot.setIsLetterboxedForAspectRatioOnly(/* forAspectRatio */ false);
-            robot.setIsLetterboxedForSafeRegionOnly(/* safeRegionOnly */ false);
+            robot.setIsLetterboxedForSafeRegionOnlyAllowed(/* safeRegionOnly */ false);
 
             robot.checkTopActivityLetterboxReason(/* expected */ "UNKNOWN_REASON");
         });
@@ -174,9 +174,9 @@ public class AppCompatUtilsTest extends WindowTestsBase {
             when(mWindowState.isLetterboxedForDisplayCutout()).thenReturn(displayCutout);
         }
 
-        void setIsLetterboxedForSafeRegionOnly(boolean safeRegionOnly) {
+        void setIsLetterboxedForSafeRegionOnlyAllowed(boolean safeRegionOnly) {
             when(activity().top().mAppCompatController.getSafeRegionPolicy()
-                    .isLetterboxedForSafeRegionOnly()).thenReturn(safeRegionOnly);
+                    .isLetterboxedForSafeRegionOnlyAllowed()).thenReturn(safeRegionOnly);
         }
 
         void checkTopActivityLetterboxReason(@NonNull String expected) {

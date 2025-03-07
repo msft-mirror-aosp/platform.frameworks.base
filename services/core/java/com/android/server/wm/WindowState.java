@@ -3955,7 +3955,7 @@ class WindowState extends WindowContainer<WindowState> implements WindowManagerP
         return mActivityRecord != null && !isStartingWindowAssociatedToTask()
                 && (mActivityRecord.areBoundsLetterboxed() || isLetterboxedForDisplayCutout()
                 || mActivityRecord.mAppCompatController
-                .getSafeRegionPolicy().isLetterboxedForSafeRegionOnly());
+                .getSafeRegionPolicy().isLetterboxedForSafeRegionOnlyAllowed());
     }
 
     /** Returns {@code true} if the window is letterboxed for the display cutout. */

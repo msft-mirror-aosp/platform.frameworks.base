@@ -65,7 +65,7 @@ class AppCompatController {
         mOrientationPolicy = new AppCompatOrientationPolicy(activityRecord, mAppCompatOverrides);
         mAppCompatAspectRatioPolicy = new AppCompatAspectRatioPolicy(activityRecord,
                 mTransparentPolicy, mAppCompatOverrides);
-        mSafeRegionPolicy = new AppCompatSafeRegionPolicy(activityRecord);
+        mSafeRegionPolicy = new AppCompatSafeRegionPolicy(activityRecord, packageManager);
         mAppCompatReachabilityPolicy = new AppCompatReachabilityPolicy(mActivityRecord,
                 wmService.mAppCompatConfiguration);
         mAppCompatLetterboxPolicy = new AppCompatLetterboxPolicy(mActivityRecord,

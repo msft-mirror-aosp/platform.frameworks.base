@@ -1223,7 +1223,14 @@ public class WindowTestsBase extends SystemServiceTestsBase {
     }
 
     static ComponentName getUniqueComponentName() {
-        return ComponentName.createRelative(DEFAULT_COMPONENT_PACKAGE_NAME,
+        return getUniqueComponentName(DEFAULT_COMPONENT_PACKAGE_NAME);
+    }
+
+    static ComponentName getUniqueComponentName(String packageName) {
+        if (packageName == null) {
+            packageName = DEFAULT_COMPONENT_PACKAGE_NAME;
+        }
+        return ComponentName.createRelative(packageName,
                 DEFAULT_COMPONENT_CLASS_NAME + sCurrentActivityId++);
     }
 
