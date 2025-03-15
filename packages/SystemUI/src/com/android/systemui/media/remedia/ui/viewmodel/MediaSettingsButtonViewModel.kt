@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 The Android Open Source Project
+ * Copyright (C) 2025 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,8 @@
  * limitations under the License.
  */
 
-package com.android.systemui.statusbar.notification.row.icon
+package com.android.systemui.media.remedia.ui.viewmodel
 
-import android.content.applicationContext
-import com.android.systemui.dump.dumpManager
-import com.android.systemui.kosmos.Kosmos
-import org.mockito.kotlin.mock
+import com.android.systemui.common.shared.model.Icon
 
-val Kosmos.mockAppIconProvider by Kosmos.Fixture { mock<AppIconProvider>() }
-
-val Kosmos.appIconProvider by
-    Kosmos.Fixture { AppIconProviderImpl(applicationContext, dumpManager) }
+data class MediaSettingsButtonViewModel(val icon: Icon.Resource, val onClick: () -> Unit)

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 The Android Open Source Project
+ * Copyright (C) 2025 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,21 @@
  * limitations under the License.
  */
 
-package com.android.systemui.statusbar.notification.row.icon
+package com.android.systemui.statusbar.pipeline.mobile.ui
 
-import android.content.applicationContext
 import com.android.systemui.dump.dumpManager
+import com.android.systemui.kairos.ActivatedKairosFixture
+import com.android.systemui.kairos.ExperimentalKairosApi
 import com.android.systemui.kosmos.Kosmos
-import org.mockito.kotlin.mock
+import com.android.systemui.statusbar.phone.ui.statusBarIconController
+import com.android.systemui.statusbar.pipeline.mobile.ui.viewmodel.mobileIconsViewModelKairos
 
-val Kosmos.mockAppIconProvider by Kosmos.Fixture { mock<AppIconProvider>() }
-
-val Kosmos.appIconProvider by
-    Kosmos.Fixture { AppIconProviderImpl(applicationContext, dumpManager) }
+@ExperimentalKairosApi
+val Kosmos.mobileUiAdapterKairos by ActivatedKairosFixture {
+    MobileUiAdapterKairos(
+        statusBarIconController,
+        mobileIconsViewModelKairos,
+        mobileViewLogger,
+        dumpManager,
+    )
+}
