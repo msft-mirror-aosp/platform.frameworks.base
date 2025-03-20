@@ -49,6 +49,7 @@ import static android.view.WindowManager.LayoutParams.TYPE_STATUS_BAR;
 
 import static com.android.dx.mockito.inline.extended.ExtendedMockito.doNothing;
 import static com.android.dx.mockito.inline.extended.ExtendedMockito.doReturn;
+import static com.android.dx.mockito.inline.extended.ExtendedMockito.doThrow;
 import static com.android.dx.mockito.inline.extended.ExtendedMockito.eq;
 import static com.android.dx.mockito.inline.extended.ExtendedMockito.mock;
 import static com.android.dx.mockito.inline.extended.ExtendedMockito.never;
@@ -4665,6 +4666,30 @@ public class SizeCompatTests extends WindowTestsBase {
     }
 
     @Test
+    public void testIsLetterboxedForSafeRegionOnly_appPropUnset_allowedForActivity_returnsTrue()
+            throws PackageManager.NameNotFoundException {
+        setUpDisplaySizeWithApp(2500, 1000);
+
+        setupSafeRegionBoundsParameters(/* dw */ 300, /* dh */ 200);
+
+        // Activity can opt-out the safe region letterboxing by component level property.
+        final ComponentName name = getUniqueComponentName(mContext.getPackageName());
+        final PackageManager pm = mContext.getPackageManager();
+        spyOn(pm);
+        throwExceptionApplicationLevelAllowSafeRegionLetterboxingProperty(name, pm);
+        updateActivityLevelAllowSafeRegionLetterboxingProperty(name, pm, true /* value */);
+
+        final ActivityRecord optOutActivity = new ActivityBuilder(mAtm)
+                .setComponent(name).setTask(mTask).build();
+        optOutActivity.mAppCompatController.getSafeRegionPolicy().setNeedsSafeRegionBounds(true);
+
+        // Since activity manifest property is defined as true, the activity can be letterboxed
+        // for safe region
+        assertTrue(optOutActivity.mAppCompatController
+                .getSafeRegionPolicy().isLetterboxedForSafeRegionOnlyAllowed());
+    }
+
+    @Test
     public void testIsLetterboxedForSafeRegionOnlyAllowed_notAllowedForActivity_returnsFalse() {
         setUpDisplaySizeWithApp(2500, 1000);
 
@@ -4734,6 +4759,16 @@ public class SizeCompatTests extends WindowTestsBase {
         // for safe region
         assertTrue(optOutAppActivity.mAppCompatController
                 .getSafeRegionPolicy().isLetterboxedForSafeRegionOnlyAllowed());
+    }
+
+    private void throwExceptionApplicationLevelAllowSafeRegionLetterboxingProperty(
+            ComponentName name,
+            PackageManager pm) throws PackageManager.NameNotFoundException {
+        PackageManager.NameNotFoundException e = new PackageManager.NameNotFoundException(
+                "Application level property not set");
+        doThrow(e).when(pm).getPropertyAsUser(
+                WindowManager.PROPERTY_COMPAT_ALLOW_SAFE_REGION_LETTERBOXING,
+                name.getPackageName(), /* className */ null, /* userId */ 0);
     }
 
     private void updateApplicationLevelAllowSafeRegionLetterboxingProperty(ComponentName name,
