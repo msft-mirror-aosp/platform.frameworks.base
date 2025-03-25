@@ -453,6 +453,26 @@ public final class WindowContainerTransaction implements Parcelable {
     }
 
     /**
+     * Sets a given safe region {@code Rect} on the {@code container}. Set {@code null} to reset
+     * safe region bounds. When a safe region is set on a WindowContainer, the activities which
+     * need to be within a safe region will be letterboxed within the set safe region bounds.
+     * <p>Note that if the position of the WindowContainer changes, the caller needs to update the
+     * safe region bounds.
+     *
+     * @param container        The window container that the safe region bounds are set on
+     * @param safeRegionBounds The rect for the safe region bounds which are absolute in nature.
+     * @hide
+     */
+    @NonNull
+    public WindowContainerTransaction setSafeRegionBounds(
+            @NonNull WindowContainerToken container,
+            @Nullable Rect safeRegionBounds) {
+        mHierarchyOps.add(
+                HierarchyOp.createForSetSafeRegionBounds(container.asBinder(), safeRegionBounds));
+        return this;
+    }
+
+    /**
      * Sets whether a container should be the launch root for the specified windowing mode and
      * activity type. This currently only applies to Task containers created by organizer.
      */
@@ -1449,6 +1469,7 @@ public final class WindowContainerTransaction implements Parcelable {
         public static final int HIERARCHY_OP_TYPE_MOVE_PIP_ACTIVITY_TO_PINNED_TASK = 18;
         public static final int HIERARCHY_OP_TYPE_SET_IS_TRIMMABLE = 19;
         public static final int HIERARCHY_OP_TYPE_RESTORE_BACK_NAVIGATION = 20;
+        public static final int HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS = 21;
 
         // The following key(s) are for use with mLaunchOptions:
         // When launching a task (eg. from recents), this is the taskId to be launched.
@@ -1511,6 +1532,9 @@ public final class WindowContainerTransaction implements Parcelable {
         private boolean mReparentLeafTaskIfRelaunch;
 
         private boolean mIsTrimmableFromRecents;
+
+        @Nullable
+        private Rect mSafeRegionBounds;
 
         public static HierarchyOp createForReparent(
                 @NonNull IBinder container, @Nullable IBinder reparent, boolean toTop) {
@@ -1624,6 +1648,16 @@ public final class WindowContainerTransaction implements Parcelable {
                     .build();
         }
 
+        /** Creates a hierarchy op for setting the safe region bounds. */
+        @NonNull
+        public static HierarchyOp createForSetSafeRegionBounds(@NonNull IBinder container,
+                @Nullable Rect safeRegionBounds) {
+            return new Builder(HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS)
+                    .setContainer(container)
+                    .setSafeRegionBounds(safeRegionBounds)
+                    .build();
+        }
+
         /** Only creates through {@link Builder}. */
         private HierarchyOp(int type) {
             mType = type;
@@ -1649,6 +1683,7 @@ public final class WindowContainerTransaction implements Parcelable {
             mAlwaysOnTop = copy.mAlwaysOnTop;
             mReparentLeafTaskIfRelaunch = copy.mReparentLeafTaskIfRelaunch;
             mIsTrimmableFromRecents = copy.mIsTrimmableFromRecents;
+            mSafeRegionBounds = copy.mSafeRegionBounds;
         }
 
         protected HierarchyOp(Parcel in) {
@@ -1671,6 +1706,7 @@ public final class WindowContainerTransaction implements Parcelable {
             mAlwaysOnTop = in.readBoolean();
             mReparentLeafTaskIfRelaunch = in.readBoolean();
             mIsTrimmableFromRecents = in.readBoolean();
+            mSafeRegionBounds = in.readTypedObject(Rect.CREATOR);
         }
 
         public int getType() {
@@ -1772,6 +1808,12 @@ public final class WindowContainerTransaction implements Parcelable {
             return mIsTrimmableFromRecents;
         }
 
+        /** Denotes the safe region bounds */
+        @Nullable
+        public Rect getSafeRegionBounds() {
+            return mSafeRegionBounds;
+        }
+
         /** Gets a string representation of a hierarchy-op type. */
         public static String hopToString(int type) {
             switch (type) {
@@ -1795,6 +1837,7 @@ public final class WindowContainerTransaction implements Parcelable {
                     return "setReparentLeafTaskIfRelaunch";
                 case HIERARCHY_OP_TYPE_ADD_TASK_FRAGMENT_OPERATION:
                     return "addTaskFragmentOperation";
+                case HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS: return "setSafeRegionBounds";
                 default: return "HOP(" + type + ")";
             }
         }
@@ -1872,6 +1915,11 @@ public final class WindowContainerTransaction implements Parcelable {
                     sb.append("container= ").append(mContainer)
                             .append(" isTrimmable= ")
                             .append(mIsTrimmableFromRecents);
+                    break;
+                case HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS:
+                    sb.append("container= ").append(mContainer)
+                            .append(" safeRegionBounds= ")
+                            .append(mSafeRegionBounds);
                 default:
                     sb.append("container=").append(mContainer)
                             .append(" reparent=").append(mReparent)
@@ -1903,6 +1951,7 @@ public final class WindowContainerTransaction implements Parcelable {
             dest.writeBoolean(mAlwaysOnTop);
             dest.writeBoolean(mReparentLeafTaskIfRelaunch);
             dest.writeBoolean(mIsTrimmableFromRecents);
+            dest.writeTypedObject(mSafeRegionBounds, flags);
         }
 
         @Override
@@ -1973,6 +2022,9 @@ public final class WindowContainerTransaction implements Parcelable {
             private boolean mReparentLeafTaskIfRelaunch;
 
             private boolean mIsTrimmableFromRecents;
+
+            @Nullable
+            private Rect mSafeRegionBounds;
 
             Builder(int type) {
                 mType = type;
@@ -2069,6 +2121,11 @@ public final class WindowContainerTransaction implements Parcelable {
                 return this;
             }
 
+            Builder setSafeRegionBounds(Rect safeRegionBounds) {
+                mSafeRegionBounds = safeRegionBounds;
+                return this;
+            }
+
             HierarchyOp build() {
                 final HierarchyOp hierarchyOp = new HierarchyOp(mType);
                 hierarchyOp.mContainer = mContainer;
@@ -2093,7 +2150,7 @@ public final class WindowContainerTransaction implements Parcelable {
                 hierarchyOp.mIncludingParents = mIncludingParents;
                 hierarchyOp.mReparentLeafTaskIfRelaunch = mReparentLeafTaskIfRelaunch;
                 hierarchyOp.mIsTrimmableFromRecents = mIsTrimmableFromRecents;
-
+                hierarchyOp.mSafeRegionBounds = mSafeRegionBounds;
                 return hierarchyOp;
             }
         }

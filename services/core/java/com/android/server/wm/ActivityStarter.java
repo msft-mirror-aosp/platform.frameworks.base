@@ -2053,6 +2053,9 @@ class ActivityStarter {
                 ? mLaunchParams.mPreferredTaskDisplayArea
                 : mRootWindowContainer.getDefaultTaskDisplayArea();
         mPreferredWindowingMode = mLaunchParams.mWindowingMode;
+        if (mLaunchParams.mNeedsSafeRegionBounds != null) {
+            r.setNeedsSafeRegionBounds(mLaunchParams.mNeedsSafeRegionBounds);
+        }
     }
 
     private TaskDisplayArea computeSuggestedLaunchDisplayArea(

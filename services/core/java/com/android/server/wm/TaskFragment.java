@@ -2240,15 +2240,26 @@ class TaskFragment extends WindowContainer<WindowContainer> {
         @Nullable DisplayInfo mTmpOverrideDisplayInfo;
         @Nullable AppCompatDisplayInsets mTmpCompatInsets;
         @Nullable Rect mParentAppBoundsOverride;
+        @Nullable Rect mParentBoundsOverride;
         int mTmpOverrideConfigOrientation;
         boolean mUseOverrideInsetsForConfig;
 
         void resolveTmpOverrides(DisplayContent dc, Configuration parentConfig,
-                boolean isFixedRotationTransforming) {
-            mParentAppBoundsOverride = new Rect(parentConfig.windowConfiguration.getAppBounds());
+                boolean isFixedRotationTransforming, @Nullable Rect safeRegionBounds) {
+            mParentAppBoundsOverride = safeRegionBounds != null ? safeRegionBounds : new Rect(
+                    parentConfig.windowConfiguration.getAppBounds());
+            mParentBoundsOverride = safeRegionBounds != null ? safeRegionBounds : new Rect(
+                    parentConfig.windowConfiguration.getBounds());
             mTmpOverrideConfigOrientation = parentConfig.orientation;
-            final Insets insets;
-            if (mUseOverrideInsetsForConfig && dc != null
+            Insets insets = Insets.NONE;
+            if (safeRegionBounds != null) {
+                // Modify orientation based on the parent app bounds if safe region bounds are set
+                // since safe region bounds are used instead of stable bounds which can include
+                // status bar, thus causing inconsistencies.
+                mTmpOverrideConfigOrientation =
+                    mParentAppBoundsOverride.height() >= mParentAppBoundsOverride.width()
+                        ? ORIENTATION_PORTRAIT : ORIENTATION_LANDSCAPE;
+            } else if (mUseOverrideInsetsForConfig && dc != null
                     && !isFloating(parentConfig.windowConfiguration.getWindowingMode())) {
                 // Insets are decoupled from configuration by default from V+, use legacy
                 // compatibility behaviour for apps targeting SDK earlier than 35
@@ -2264,10 +2275,8 @@ class TaskFragment extends WindowContainer<WindowContainer> {
                         .getDecorInsetsInfo(rotation, dw, dh);
                 final Rect stableBounds = decorInsets.mOverrideConfigFrame;
                 mTmpOverrideConfigOrientation = stableBounds.width() > stableBounds.height()
-                                ? ORIENTATION_LANDSCAPE : ORIENTATION_PORTRAIT;
+                        ? ORIENTATION_LANDSCAPE : ORIENTATION_PORTRAIT;
                 insets = Insets.of(decorInsets.mOverrideNonDecorInsets);
-            } else {
-                insets = Insets.NONE;
             }
             mParentAppBoundsOverride.inset(insets);
         }
