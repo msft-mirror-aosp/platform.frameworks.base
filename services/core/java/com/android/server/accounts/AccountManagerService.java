@@ -3174,6 +3174,12 @@ public class AccountManagerService
                                         "the type and name should not be empty");
                                 return;
                             }
+                            if (!type.equals(mAccountType)) {
+                                onError(AccountManager.ERROR_CODE_INVALID_RESPONSE,
+                                        "incorrect account type");
+                                return;
+                            }
+
                             Account resultAccount = new Account(name, type);
                             if (!customTokens) {
                                 saveAuthTokenToDatabase(
@@ -5062,6 +5068,8 @@ public class AccountManagerService
                     Log.e(TAG, String.format(tmpl, activityName, pkgName, mAccountType));
                     return false;
                 }
+                intent.setComponent(targetActivityInfo.getComponentName());
+                bundle.putParcelable(AccountManager.KEY_INTENT, intent);
                 return true;
             } finally {
                 Binder.restoreCallingIdentity(bid);
@@ -5083,14 +5091,15 @@ public class AccountManagerService
             Bundle simulateBundle = p.readBundle();
             p.recycle();
             Intent intent = bundle.getParcelable(AccountManager.KEY_INTENT, Intent.class);
-            if (intent != null && intent.getClass() != Intent.class) {
-                return false;
-            }
             Intent simulateIntent = simulateBundle.getParcelable(AccountManager.KEY_INTENT,
                     Intent.class);
             if (intent == null) {
                 return (simulateIntent == null);
             }
+            if (intent.getClass() != Intent.class || simulateIntent.getClass() != Intent.class) {
+                return false;
+            }
+
             if (!intent.filterEquals(simulateIntent)) {
                 return false;
             }
