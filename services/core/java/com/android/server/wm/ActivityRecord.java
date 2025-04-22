@@ -8549,6 +8549,15 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
     }
 
     /**
+     * Returns whether activity bounds are letterboxed and are sandboxed to within the safe region
+     * bounds.
+     */
+    boolean areSafeRegionBoundsApplied() {
+        return areBoundsLetterboxed()
+                && mAppCompatController.getSafeRegionPolicy().getLatestSafeRegionBounds() != null;
+    }
+
+    /**
      * Returns whether activity bounds are letterboxed.
      *
      * <p>Note that letterbox UI may not be shown even when this returns {@code true}. See {@link
