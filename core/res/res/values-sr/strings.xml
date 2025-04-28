@@ -603,7 +603,7 @@
     <string name="permdesc_bluetooth" product="tablet" msgid="3053222571491402635">"Дозвољава апликацији да прегледа конфигурацију Bluetooth-а на таблету, као и да успоставља и прихвата везе са упареним уређајима."</string>
     <string name="permdesc_bluetooth" product="tv" msgid="8851534496561034998">"Дозвољава апликацији да прегледа конфигурацију Bluetooth-а на Android TV уређају и да успоставља и прихвата везе са упареним уређајима."</string>
     <string name="permdesc_bluetooth" product="default" msgid="2779606714091276746">"Дозвољава апликацији да прегледа конфигурацију Bluetooth-а на телефону, као и да успоставља и прихвата везе са упареним уређајима."</string>
-    <string name="permlab_bluetooth_scan" msgid="5402587142833124594">"откривање и упаривање са оближњим Bluetooth уређ."</string>
+    <string name="permlab_bluetooth_scan" msgid="5402587142833124594">"откривање и упаривање са Bluetooth уређајима у близини"</string>
     <string name="permdesc_bluetooth_scan" product="default" msgid="6540723536925289276">"Дозвољава апликацији да открива Bluetooth уређаје у близини и упарује се са њима"</string>
     <string name="permlab_bluetooth_connect" msgid="6657463246355003528">"повезивање са упареним Bluetooth уређајима"</string>
     <string name="permdesc_bluetooth_connect" product="default" msgid="4546016548795544617">"Дозвољава апликацији да се повезује са упареним Bluetooth уређајима"</string>

@@ -1385,7 +1385,7 @@
     <string name="install_carrier_app_notification_button" msgid="6257740533102594290">"Preuzmite aplikaciju"</string>
     <string name="carrier_app_notification_title" msgid="5815477368072060250">"Umetnuta je nova SIM kartica"</string>
     <string name="carrier_app_notification_text" msgid="6567057546341958637">"Dodirnite da biste je postavili"</string>
-    <string name="time_picker_dialog_title" msgid="9053376764985220821">"Postavljanje vremena"</string>
+    <string name="time_picker_dialog_title" msgid="9053376764985220821">"Postavite vrijeme"</string>
     <string name="date_picker_dialog_title" msgid="5030520449243071926">"Postavi datum"</string>
     <string name="date_time_set" msgid="4603445265164486816">"Postavi"</string>
     <string name="date_time_done" msgid="8363155889402873463">"Gotovo"</string>
@@ -1547,7 +1547,7 @@
     <string name="vpn_lockdown_config" msgid="8331697329868252169">"Promijenite mrežu ili postavke VPN-a"</string>
     <string name="upload_file" msgid="8651942222301634271">"Odaberite datoteku"</string>
     <string name="no_file_chosen" msgid="4146295695162318057">"Nema odabranih datoteka"</string>
-    <string name="reset" msgid="3865826612628171429">"Poništi"</string>
+    <string name="reset" msgid="3865826612628171429">"Vrati na zadano"</string>
     <string name="submit" msgid="862795280643405865">"Pošalji"</string>
     <string name="car_mode_disable_notification_title" msgid="8450693275833142896">"Pokrenuta je aplikacija za vožnju"</string>
     <string name="car_mode_disable_notification_message" msgid="8954550232288567515">"Dodirnite za zatvaranje aplikacije za vožnju."</string>
@@ -1668,7 +1668,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Bežični prikaz"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Emitiranje"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Povezivanje s uređajem"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Emitiranje zaslona na uređaj"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Emitirajte zaslon na uređaj"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"Traženje uređaja…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Postavke"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Prekini vezu"</string>
@@ -1756,7 +1756,7 @@
     <string name="color_inversion_feature_name" msgid="2672824491933264951">"Inverzija boja"</string>
     <string name="color_correction_feature_name" msgid="7975133554160979214">"Korekcija boja"</string>
     <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"Način rada jednom rukom"</string>
-    <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Još tamnije"</string>
+    <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Dodatno zatamnjenje"</string>
     <string name="hearing_aids_feature_name" msgid="1125892105105852542">"Slušna pomagala"</string>
     <string name="accessibility_shortcut_enabling_service" msgid="5473495203759847687">"Držali ste tipke za glasnoću. Uključila se usluga <xliff:g id="SERVICE_NAME">%1$s</xliff:g>."</string>
     <string name="accessibility_shortcut_disabling_service" msgid="8675244165062700619">"Držali ste tipke za glasnoću. Isključila se usluga <xliff:g id="SERVICE_NAME">%1$s</xliff:g>."</string>
@@ -2069,7 +2069,7 @@
     <string name="adb_debugging_notification_channel_tv" msgid="4764046459631031496">"Otklanjanje pogrešaka putem USB-a"</string>
     <string name="time_picker_hour_label" msgid="4208590187662336864">"sat"</string>
     <string name="time_picker_minute_label" msgid="8307452311269824553">"minuta"</string>
-    <string name="time_picker_header_text" msgid="9073802285051516688">"Postavljanje vremena"</string>
+    <string name="time_picker_header_text" msgid="9073802285051516688">"Postavite vrijeme"</string>
     <string name="time_picker_input_error" msgid="8386271930742451034">"Unesite važeće vrijeme"</string>
     <string name="time_picker_prompt_label" msgid="303588544656363889">"Unesite vrijeme"</string>
     <string name="time_picker_text_input_mode_description" msgid="4761160667516611576">"Prijeđite na način unosa teksta da biste unijeli vrijeme."</string>

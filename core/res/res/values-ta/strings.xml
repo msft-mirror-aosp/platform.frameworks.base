@@ -1667,7 +1667,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"வயர்லெஸ் காட்சி"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Cast"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"சாதனத்துடன் இணைக்கவும்"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"ஸ்கிரீனை சாதனத்தில் திரையிடு"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"ஸ்கிரீனை சாதனத்தில் அலைபரப்பு"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"சாதனங்களைத் தேடுகிறது..."</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"அமைப்புகள்"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"துண்டி"</string>
@@ -1937,7 +1937,7 @@
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"வார இரவு"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"வார இறுதி"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"நிகழ்வு"</string>
-    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"உறக்கத்தில்"</string>
+    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"உறங்குதல்"</string>
     <string name="zen_mode_implicit_trigger_description" msgid="5714956693073007111">"நிர்வகிப்பது: <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="zen_mode_implicit_activated" msgid="2634285680776672994">"ஆன்"</string>
     <string name="zen_mode_implicit_deactivated" msgid="8688441768371501750">"ஆஃப்"</string>
@@ -2153,7 +2153,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"சரி"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"ஆஃப் செய்"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"மேலும் அறிக"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12 பதிப்பில் \'Android சூழலுக்கேற்ற அறிவிப்புகள்\' அம்சத்திற்குப் பதிலாக \'மேம்பட்ட அறிவிப்புகள்\' மாற்றப்பட்டுள்ளது. இந்த அம்சம், பரிந்துரைக்கப்படும் செயல்களையும் பதில்களையும் காட்டுவதுடன் உங்கள் அறிவிப்புகளையும் ஒழுங்கமைக்கும்.\n\nதொடர்புகளின் பெயர்கள், மெசேஜ்கள் போன்ற தனிப்பட்ட தகவல்கள் உட்பட அனைத்து அறிவிப்பு உள்ளடக்கத்தையும் \'மேம்பட்ட அறிவிப்புகள்\' அணுக முடியும். மேலும் இந்த அம்சத்தால் அறிவிப்புகளை நிராகரிக்கவும் அவற்றுக்குப் பதிலளிக்கவும் முடியும் (அழைப்புகளுக்குப் பதிலளிப்பது, \'தொந்தரவு செய்ய வேண்டாம்\' அம்சத்தைக் கட்டுப்படுத்துவது போன்றவை)."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12 பதிப்பில் \'Android சூழலுக்கேற்ற அறிவிப்புகள்\' அம்சத்திற்குப் பதிலாக \'மேம்பட்ட அறிவிப்புகள்\' மாற்றப்பட்டுள்ளது. இந்த அம்சம், பரிந்துரைக்கப்படும் செயல்களையும் பதில்களையும் காட்டுவதுடன் உங்கள் அறிவிப்புகளையும் ஒழுங்கமைக்கும்.\n\nதொடர்புகளின் பெயர்கள், மெசேஜ்கள் போன்ற தனிப்பட்ட தகவல்கள் உட்பட அனைத்து அறிவிப்பு உள்ளடக்கத்தையும் \'மேம்பட்ட அறிவிப்புகள்\' அணுக முடியும். மேலும் இந்த அம்சத்தால் அறிவிப்புகளை நிராகரிக்கவும் அவற்றுக்குப் பதிலளிக்கவும் முடியும் (எ.கா. அழைப்புகளுக்குப் பதிலளிப்பது) மற்றும் \'தொந்தரவு செய்ய வேண்டாம்\' அம்சத்தைக் கட்டுப்படுத்தவும் முடியும்."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"வழக்கமான பேட்டரி சேமிப்பானுக்கான விவர அறிவிப்பு"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"பேட்டரி சேமிப்பு இயக்கப்பட்டுள்ளது"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"பேட்டரி ஆயுளை நீட்டிக்க, பேட்டரி உபயோகத்தைக் குறைக்கிறது"</string>

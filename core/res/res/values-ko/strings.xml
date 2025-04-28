@@ -655,7 +655,7 @@
     <string name="screen_lock_app_setting_name" msgid="6054944352976789228">"화면 잠금 사용"</string>
     <string name="screen_lock_dialog_default_subtitle" msgid="120359538048533695">"계속하려면 화면 잠금용 사용자 인증 정보를 입력하세요"</string>
     <string name="fingerprint_acquired_partial" msgid="4323789264604479684">"센서를 세게 누르세요"</string>
-    <string name="fingerprint_acquired_insufficient" msgid="2410176550915730974">"지문을 인식할 수 없습니다. 다시 시도해 주세요."</string>
+    <string name="fingerprint_acquired_insufficient" msgid="2410176550915730974">"지문을 인식할 수 없습니다. 다시 시도해 주세요"</string>
     <string name="fingerprint_acquired_imager_dirty" msgid="1770676120848224250">"지문 센서를 닦은 후 다시 시도해 보세요."</string>
     <string name="fingerprint_acquired_imager_dirty_alt" msgid="9169582140486372897">"센서를 닦은 후 다시 시도해 보세요."</string>
     <string name="fingerprint_acquired_too_fast" msgid="1628459767349116104">"센서를 세게 누르세요"</string>
@@ -1019,7 +1019,7 @@
     <string name="lockscreen_transport_stop_description" msgid="1449552232598355348">"중지"</string>
     <string name="lockscreen_transport_rew_description" msgid="7680106856221622779">"되감기"</string>
     <string name="lockscreen_transport_ffw_description" msgid="4763794746640196772">"빨리 감기"</string>
-    <string name="emergency_calls_only" msgid="3057351206678279851">"긴급 통화만 허용"</string>
+    <string name="emergency_calls_only" msgid="3057351206678279851">"긴급 전화만 허용"</string>
     <string name="lockscreen_network_locked_message" msgid="2814046965899249635">"네트워크 잠김"</string>
     <string name="lockscreen_sim_puk_locked_message" msgid="2867953953604224166">"SIM이 PUK 잠김 상태입니다."</string>
     <string name="lockscreen_sim_puk_locked_instructions" msgid="5307979043730860995">"사용자 가이드를 참조하거나 고객지원팀에 문의하세요."</string>
@@ -1546,7 +1546,7 @@
     <string name="vpn_lockdown_config" msgid="8331697329868252169">"네트워크 또는 VPN 설정 변경"</string>
     <string name="upload_file" msgid="8651942222301634271">"파일 선택"</string>
     <string name="no_file_chosen" msgid="4146295695162318057">"파일을 선택하지 않았습니다."</string>
-    <string name="reset" msgid="3865826612628171429">"초기화"</string>
+    <string name="reset" msgid="3865826612628171429">"재설정"</string>
     <string name="submit" msgid="862795280643405865">"제출"</string>
     <string name="car_mode_disable_notification_title" msgid="8450693275833142896">"운전 앱 실행 중"</string>
     <string name="car_mode_disable_notification_message" msgid="8954550232288567515">"운전 앱을 종료하려면 탭하세요."</string>

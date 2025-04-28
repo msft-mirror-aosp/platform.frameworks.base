@@ -1739,7 +1739,7 @@
     <string name="accessibility_service_screen_control_title" msgid="190017412626919776">"Képernyő megtekintése és kezelése"</string>
     <string name="accessibility_service_screen_control_description" msgid="6946315917771791525">"Elolvashatja a képernyő tartalmát, és tartalmakat jeleníthet meg más alkalmazások felett."</string>
     <string name="accessibility_service_action_perform_title" msgid="779670378951658160">"Műveletek megtekintése és elvégzése"</string>
-    <string name="accessibility_service_action_perform_description" msgid="2718852014003170558">"Követheti az alkalmazásokkal és hardveres érzékelőkkel való interakcióit, és műveleteket végezhet az alkalmazásokkal az Ön nevében."</string>
+    <string name="accessibility_service_action_perform_description" msgid="2718852014003170558">"Követheti az appokkal és hardveres érzékelőkkel való interakcióit, és műveleteket végezhet az appokkal az Ön nevében."</string>
     <string name="accessibility_dialog_button_allow" msgid="2092558122987144530">"Engedélyezés"</string>
     <string name="accessibility_dialog_button_deny" msgid="4129575637812472671">"Tiltás"</string>
     <string name="accessibility_dialog_button_uninstall" msgid="2952465517671708108">"Eltávolítás"</string>
@@ -1753,7 +1753,7 @@
     <string name="disable_accessibility_shortcut" msgid="5806091378745232383">"Billentyűparancs kikapcsolása"</string>
     <string name="leave_accessibility_shortcut_on" msgid="6543362062336990814">"Billentyűparancs használata"</string>
     <string name="color_inversion_feature_name" msgid="2672824491933264951">"Színek invertálása"</string>
-    <string name="color_correction_feature_name" msgid="7975133554160979214">"Színjavítás"</string>
+    <string name="color_correction_feature_name" msgid="7975133554160979214">"Színkorrekció"</string>
     <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"Egykezes mód"</string>
     <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Extrasötét"</string>
     <string name="hearing_aids_feature_name" msgid="1125892105105852542">"Hallásjavító eszközök"</string>

@@ -278,7 +278,7 @@
     <string name="global_action_toggle_silent_mode" msgid="8464352592860372188">"Modo silencioso"</string>
     <string name="global_action_silent_mode_on_status" msgid="2371892537738632013">"El sonido está Desactivado"</string>
     <string name="global_action_silent_mode_off_status" msgid="6608006545950920042">"El sonido está Activado"</string>
-    <string name="global_actions_toggle_airplane_mode" msgid="6911684460146916206">"Modo de avión"</string>
+    <string name="global_actions_toggle_airplane_mode" msgid="6911684460146916206">"Modo avión"</string>
     <string name="global_actions_airplane_mode_on_status" msgid="5508025516695361936">"El modo avión está Activado"</string>
     <string name="global_actions_airplane_mode_off_status" msgid="8522219771500505475">"El modo avión está Desactivado"</string>
     <string name="global_action_settings" msgid="4671878836947494217">"Configuración"</string>
@@ -1938,7 +1938,7 @@
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"Noche, en la semana"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"Fin de semana"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"Evento"</string>
-    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"Dormir"</string>
+    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"Sueño"</string>
     <string name="zen_mode_implicit_trigger_description" msgid="5714956693073007111">"Administradas por <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="zen_mode_implicit_activated" msgid="2634285680776672994">"Activado"</string>
     <string name="zen_mode_implicit_deactivated" msgid="8688441768371501750">"Desactivado"</string>
@@ -2154,7 +2154,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"Aceptar"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"Desactivar"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"Más información"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Las notificaciones mejoradas reemplazaron a las notificaciones adaptables en Android 12. Esta función muestra respuestas y acciones sugeridas, y organiza tus notificaciones.\n\nLas notificaciones mejoradas pueden acceder a todo el contenido de notificaciones, incluida información personal, como nombres de contactos y mensajes. También pueden descartar o responder notificaciones (como contestar llamadas) y controlar la función No interrumpir."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Las notificaciones mejoradas reemplazaron a las Notificaciones adaptativas en Android 12. Esta función muestra respuestas y acciones sugeridas, y organiza tus notificaciones.\n\nLas notificaciones mejoradas pueden acceder a todo el contenido de notificaciones, incluida información personal, como nombres de contactos y mensajes. También pueden descartar o responder notificaciones (como contestar llamadas) y controlar la función No interrumpir."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"Notificación de información del modo de Rutinas"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"Ahorro de batería activado"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"Reduciendo el uso de la batería para extender su duración"</string>
@@ -2183,7 +2183,7 @@
     <string name="mime_type_spreadsheet_ext" msgid="8720173181137254414">"Hoja de cálculo <xliff:g id="EXTENSION">%1$s</xliff:g>"</string>
     <string name="mime_type_presentation" msgid="1145384236788242075">"Presentación"</string>
     <string name="mime_type_presentation_ext" msgid="8761049335564371468">"Presentación <xliff:g id="EXTENSION">%1$s</xliff:g>"</string>
-    <string name="bluetooth_airplane_mode_toast" msgid="2066399056595768554">"La conexión Bluetooth permanecerá activa durante el modo de avión"</string>
+    <string name="bluetooth_airplane_mode_toast" msgid="2066399056595768554">"La conexión Bluetooth permanecerá activa durante el modo avión"</string>
     <string name="car_loading_profile" msgid="8219978381196748070">"Cargando"</string>
     <string name="file_count" msgid="3220018595056126969">"{count,plural, =1{{file_name} y # archivo más}many{{file_name} y # archivos más}other{{file_name} y # archivos más}}"</string>
     <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"No hay personas recomendadas con quienes compartir"</string>
@@ -2440,7 +2440,7 @@
     <string name="face_dangling_notification_msg" msgid="746235263598985384">"Ya no se puede reconocer tu modelo de rostro. Vuelve a configurar el Desbloqueo facial."</string>
     <string name="biometric_dangling_notification_action_set_up" msgid="8246885009807817961">"Configurar"</string>
     <string name="biometric_dangling_notification_action_not_now" msgid="8095249216864443491">"Ahora no"</string>
-    <string name="bg_user_sound_notification_title_alarm" msgid="5251678483393143527">"Alarma para: <xliff:g id="USER_NAME">%s</xliff:g>"</string>
+    <string name="bg_user_sound_notification_title_alarm" msgid="5251678483393143527">"Alarma para <xliff:g id="USER_NAME">%s</xliff:g>"</string>
     <string name="bg_user_sound_notification_button_switch_user" msgid="3091969648572788946">"Cambiar de usuario"</string>
     <string name="bg_user_sound_notification_button_mute" msgid="4942158515665615243">"Silenciar"</string>
     <string name="bg_user_sound_notification_message" msgid="8613881975316976673">"Presiona para silenciar el sonido"</string>

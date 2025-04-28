@@ -164,7 +164,7 @@
     <string name="scNullCipherIssueNonEncryptedSummaryNotification" msgid="7386936934128110388">"သင့် <xliff:g id="NETWORK_NAME">%1$s</xliff:g> ဆင်းမ် သုံးချိန်တွင် ဖုန်း၊ မက်ဆေ့ဂျ်၊ ဒေတာ လုံခြုံမှုအားနည်းသည်"</string>
     <string name="scNullCipherIssueNonEncryptedSummary" msgid="5093428974513703253">"သင့် <xliff:g id="NETWORK_NAME">%1$s</xliff:g> ဆင်းမ် သုံးချိန်တွင် ဖုန်း၊ မက်ဆေ့ဂျ်၊ ဒေတာ လုံခြုံမှုအားနည်းသည်။\n\nသင့်ချိတ်ဆက်မှုကို ထပ်မံအသွင်ဝှက်ပါက အကြောင်းကြားချက်နောက်တစ်ခု ရရှိပါမည်။"</string>
     <string name="scNullCipherIssueActionSettings" msgid="5888857706424639946">"မိုဘိုင်းကွန်ရက် လုံခြုံရေး ဆက်တင်များ"</string>
-    <string name="scNullCipherIssueActionLearnMore" msgid="7896642417214757769">"ပိုမိုလေ့လာရန်"</string>
+    <string name="scNullCipherIssueActionLearnMore" msgid="7896642417214757769">"ပိုလေ့လာရန်"</string>
     <string name="scNullCipherIssueActionGotIt" msgid="8747796640866585787">"နားလည်ပြီ"</string>
     <string name="fcComplete" msgid="1080909484660507044">"ပုံစံကုတ်ပြီးဆုံးသည်"</string>
     <string name="fcError" msgid="5325116502080221346">"ဆက်သွယ်မှုဆိုင်ရာပြသနာ သို့မဟုတ် တရားမဝင်သောပုံစံကုတ်"</string>
@@ -1682,7 +1682,7 @@
     <string name="display_manager_overlay_display_title" msgid="1480158037150469170">"<xliff:g id="NAME">%1$s</xliff:g>: <xliff:g id="WIDTH">%2$d</xliff:g>x<xliff:g id="HEIGHT">%3$d</xliff:g>, <xliff:g id="DPI">%4$d</xliff:g>  dpi"</string>
     <string name="display_manager_overlay_display_secure_suffix" msgid="2810034719482834679">", လုံခြုံသော"</string>
     <string name="kg_forgot_pattern_button_text" msgid="406145459223122537">"ပုံဖော်မှုအား မေ့လျော့ခြင်း"</string>
-    <string name="kg_wrong_pattern" msgid="1342812634464179931">"ပုံဆွဲအမှား"</string>
+    <string name="kg_wrong_pattern" msgid="1342812634464179931">"ပုံစံ မှားနေသည်"</string>
     <string name="kg_wrong_password" msgid="2384677900494439426">"စကားဝှက်အမှား"</string>
     <string name="kg_wrong_pin" msgid="3680925703673166482">"ပင် နံပါတ်အမှား"</string>
     <string name="kg_pattern_instructions" msgid="8366024510502517748">"သင့်ရဲ့ သော့ဖွင့်သော ပုံစံကို ဆွဲပါ"</string>
@@ -1918,13 +1918,13 @@
     <string name="data_saver_enable_title" msgid="7080620065745260137">"ဒေတာချွေတာမှုစနစ် ဖွင့်မလား။"</string>
     <string name="data_saver_enable_button" msgid="4399405762586419726">"ဖွင့်ရန်"</string>
     <string name="zen_mode_duration_minutes_summary" msgid="4555514757230849789">"{count,plural, =1{တစ်မိနစ်ကြာ ({formattedTime} အထိ)}other{# မိနစ်ကြာ ({formattedTime} အထိ)}}"</string>
-    <string name="zen_mode_duration_minutes_summary_short" msgid="1187553788355486950">"{count,plural, =1{1 မိနစ်ကြာ ({formattedTime} အထိ)}other{# မိနစ်ကြာ ({formattedTime} အထိ)}}"</string>
-    <string name="zen_mode_duration_hours_summary" msgid="3866333100793277211">"{count,plural, =1{1 နာရီကြာ ({formattedTime} အထိ)}other{# နာရီကြာ ({formattedTime} အထိ)}}"</string>
-    <string name="zen_mode_duration_hours_summary_short" msgid="687919813833347945">"{count,plural, =1{1 နာရီကြာ ({formattedTime} အထိ)}other{# နာရီကြာ ({formattedTime} အထိ)}}"</string>
+    <string name="zen_mode_duration_minutes_summary_short" msgid="1187553788355486950">"{count,plural, =1{၁ မိနစ်ကြာ ({formattedTime} အထိ)}other{# မိနစ်ကြာ ({formattedTime} အထိ)}}"</string>
+    <string name="zen_mode_duration_hours_summary" msgid="3866333100793277211">"{count,plural, =1{၁ နာရီကြာ ({formattedTime} အထိ)}other{# နာရီကြာ ({formattedTime} အထိ)}}"</string>
+    <string name="zen_mode_duration_hours_summary_short" msgid="687919813833347945">"{count,plural, =1{၁ နာရီကြာ ({formattedTime} အထိ)}other{# နာရီကြာ ({formattedTime} အထိ)}}"</string>
     <string name="zen_mode_duration_minutes" msgid="2340007982276569054">"{count,plural, =1{တစ်မိနစ်ကြာ}other{# မိနစ်ကြာ}}"</string>
     <string name="zen_mode_duration_minutes_short" msgid="2435756450204526554">"{count,plural, =1{1 မိနစ်ကြာ}other{# မိနစ်ကြာ}}"</string>
-    <string name="zen_mode_duration_hours" msgid="7841806065034711849">"{count,plural, =1{1 နာရီကြာ}other{# နာရီကြာ}}"</string>
-    <string name="zen_mode_duration_hours_short" msgid="3666949653933099065">"{count,plural, =1{1 နာရီကြာ}other{# နာရီကြာ}}"</string>
+    <string name="zen_mode_duration_hours" msgid="7841806065034711849">"{count,plural, =1{၁ နာရီကြာ}other{# နာရီကြာ}}"</string>
+    <string name="zen_mode_duration_hours_short" msgid="3666949653933099065">"{count,plural, =1{1၁ နာရီကြာ}other{# နာရီကြာ}}"</string>
     <string name="zen_mode_until_next_day" msgid="1403042784161725038">"<xliff:g id="FORMATTEDTIME">%1$s</xliff:g> အထိ"</string>
     <string name="zen_mode_until" msgid="2250286190237669079">"<xliff:g id="FORMATTEDTIME">%1$s</xliff:g>အထိ"</string>
     <string name="zen_mode_alarm" msgid="7046911727540499275">"<xliff:g id="FORMATTEDTIME">%1$s</xliff:g> အထိ (လာမည့် နှိုးစက်)"</string>
@@ -2002,7 +2002,7 @@
     <string name="locale_search_menu" msgid="6258090710176422934">"ရှာဖွေရန်"</string>
     <string name="app_suspended_title" msgid="888873445010322650">"အက်ပ်ကို မရရှိနိုင်ပါ"</string>
     <string name="app_suspended_default_message" msgid="6451215678552004172">"<xliff:g id="APP_NAME_0">%1$s</xliff:g> ကို လောလောဆယ် မရနိုင်ပါ။ ၎င်းကို <xliff:g id="APP_NAME_1">%2$s</xliff:g> က စီမံထားပါသည်။"</string>
-    <string name="app_suspended_more_details" msgid="211260942831587014">"ပိုမိုလေ့လာရန်"</string>
+    <string name="app_suspended_more_details" msgid="211260942831587014">"ပိုလေ့လာရန်"</string>
     <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"အက်ပ်ကို ခဏမရပ်တော့ရန်"</string>
     <string name="work_mode_off_title" msgid="6367463960165135829">"အလုပ်သုံးအက်ပ် ပြန်ဖွင့်မလား။"</string>
     <string name="work_mode_turn_on" msgid="5316648862401307800">"ပြန်ဖွင့်ရန်"</string>
@@ -2070,7 +2070,7 @@
     <string name="time_picker_minute_label" msgid="8307452311269824553">"မိ​နစ်​"</string>
     <string name="time_picker_header_text" msgid="9073802285051516688">"အချိန်သတ်မှတ်ရန်"</string>
     <string name="time_picker_input_error" msgid="8386271930742451034">"မှန်ကန်သည့် အမည်တစ်ခု ထည့်ရန်"</string>
-    <string name="time_picker_prompt_label" msgid="303588544656363889">"အချိန်ကို ထည့်ရန်"</string>
+    <string name="time_picker_prompt_label" msgid="303588544656363889">"အချိန်ရိုက်ထည့်ပါ"</string>
     <string name="time_picker_text_input_mode_description" msgid="4761160667516611576">"အချိန်ထည့်သွင်းရန် စာသားထည့်သွင်းမှုမုဒ်သို့ ပြောင်းပါ။"</string>
     <string name="time_picker_radial_mode_description" msgid="1222342577115016953">"အချိန်ထည့်သွင်းမှုအတွက် နာရီမုဒ်သို့ ပြောင်းပါ။"</string>
     <string name="autofill_picker_accessibility_title" msgid="4425806874792196599">"အော်တိုဖြည့် ရွေးချယ်စရာများ"</string>
@@ -2152,7 +2152,7 @@
     <string name="nas_upgrade_notification_content" msgid="5157550369837103337">"အကြံပြုထားသော လုပ်ဆောင်ချက်နှင့် ပြန်စာများကို ယခုအခါ အဆင့်မြင့် အကြောင်းကြားချက်များဖြင့် ပံ့ပိုးပေးနေပါသည်။ ‘Android အလိုက်သင့် အကြောင်းကြားချက်များ’ ကို ပံ့ပိုးမပေးတော့ပါ။"</string>
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"OK"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"ပိတ်ရန်"</string>
-    <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"ပိုမိုလေ့လာရန်"</string>
+    <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"ပိုလေ့လာရန်"</string>
     <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12 တွင် ‘Android အလိုက်သင့် အကြောင်းကြားချက်များ’ ကို အဆင့်မြင့် အကြောင်းကြားချက်များဖြင့် အစားထိုးထားသည်။ ဤဝန်ဆောင်မှုက အကြံပြုထားသော လုပ်ဆောင်ချက်နှင့် ပြန်စာများကို ပြပေးပြီး သင်၏အကြောင်းကြားချက်များကို စီစဉ်ပေးသည်။\n\nအဆင့်မြင့် အကြောင်းကြားချက်များက အဆက်အသွယ်အမည်နှင့် မက်ဆေ့ဂျ်များကဲ့သို့ ကိုယ်ရေးကိုယ်တာအချက်လက်များ အပါအဝင် အကြောင်းကြားချက် အကြောင်းအရာကို သုံးနိုင်သည်။ ဤဝန်ဆောင်မှုက ဖုန်းခေါ်ဆိုမှုများ ဖြေခြင်းနှင့် ‘မနှောင့်ယှက်ရ’ ကို ထိန်းချုပ်ခြင်းကဲ့သို့ အကြောင်းကြားချက်များကို ပယ်နိုင်သည် (သို့) တုံ့ပြန်နိုင်သည်။"</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"ပုံမှန်မုဒ်အတွက် အချက်အလက်ပြသည့် အကြောင်းကြားချက်"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"ဘက်ထရီ အားထိန်း ဖွင့်ထားသည်"</string>
@@ -2440,7 +2440,7 @@
     <string name="biometric_dangling_notification_action_set_up" msgid="8246885009807817961">"စနစ်ထည့်သွင်းရန်"</string>
     <string name="biometric_dangling_notification_action_not_now" msgid="8095249216864443491">"ယခုမလုပ်ပါ"</string>
     <string name="bg_user_sound_notification_title_alarm" msgid="5251678483393143527">"<xliff:g id="USER_NAME">%s</xliff:g> အတွက် နှိုးစက်"</string>
-    <string name="bg_user_sound_notification_button_switch_user" msgid="3091969648572788946">"အသုံးပြုသူ ပြောင်းရန်"</string>
+    <string name="bg_user_sound_notification_button_switch_user" msgid="3091969648572788946">"အသုံးပြုသူပြောင်းရန်"</string>
     <string name="bg_user_sound_notification_button_mute" msgid="4942158515665615243">"အသံပိတ်ရန်"</string>
     <string name="bg_user_sound_notification_message" msgid="8613881975316976673">"အသံပိတ်ရန် တို့ပါ"</string>
     <string name="keyboard_shortcut_group_applications_browser" msgid="6535007304687100909">"ဘရောင်ဇာ"</string>

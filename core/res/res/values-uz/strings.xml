@@ -664,7 +664,7 @@
     <string name="fingerprint_acquired_too_bright" msgid="3863560181670915607">"Juda yorqin"</string>
     <string name="fingerprint_acquired_power_press" msgid="3107864151278434961">"Quvvat tugmasi bosildi"</string>
     <string name="fingerprint_acquired_try_adjusting" msgid="3667006071003809364">"Moslashga urining"</string>
-    <string name="fingerprint_acquired_immobile" msgid="1621891895241888048">"Barmoqni har safar biroz surib joylang"</string>
+    <string name="fingerprint_acquired_immobile" msgid="1621891895241888048">"Barmoqni har safar biroz suring"</string>
   <string-array name="fingerprint_acquired_vendor">
   </string-array>
     <string name="fingerprint_error_not_match" msgid="4599441812893438961">"Barmoq izi aniqlanmadi"</string>
@@ -1090,7 +1090,7 @@
     <string name="factorytest_failed" msgid="3190979160945298006">"Ishlab chiqarish sinovi amalga oshmadi"</string>
     <string name="factorytest_not_system" msgid="5658160199925519869">"The FACTORY_TEST amali faqatgina /system/app ichiga o‘rnatilgan paketlar bilan ishlay oladi."</string>
     <string name="factorytest_no_action" msgid="339252838115675515">"FACTORY_TEST amalini bajarish uchun birorta ham paket topilmadi."</string>
-    <string name="factorytest_reboot" msgid="2050147445567257365">"Qayta ishga tushirish"</string>
+    <string name="factorytest_reboot" msgid="2050147445567257365">"Qayta yoqish"</string>
     <string name="js_dialog_title" msgid="7464775045615023241">"\"<xliff:g id="TITLE">%s</xliff:g>\"dagi sahifa buni xabar qilmoqda:"</string>
     <string name="js_dialog_title_default" msgid="3769524569903332476">"JavaScript"</string>
     <string name="js_dialog_before_unload_title" msgid="7012587995876771246">"Tasdiqlash"</string>
@@ -1405,11 +1405,11 @@
     <string name="usb_power_notification_message" msgid="7284765627437897702">"Ulangan qurilma quvvatlanmoqda. Boshqa parametrlar uchun bosing."</string>
     <string name="usb_unsupported_audio_accessory_title" msgid="2335775548086533065">"Analogli audio uskuna aniqlandi"</string>
     <string name="usb_unsupported_audio_accessory_message" msgid="1300168007129796621">"Biriktirilgan qurilma mazkur telefon bilan mos emas. Batafsil axborot olish uchun bu yerga bosing."</string>
-    <string name="adb_active_notification_title" msgid="408390247354560331">"USB debagging ulandi"</string>
-    <string name="adb_active_notification_message" msgid="5617264033476778211">"USB debaggingni uzish uchun bosing"</string>
+    <string name="adb_active_notification_title" msgid="408390247354560331">"USB debaging ulandi"</string>
+    <string name="adb_active_notification_message" msgid="5617264033476778211">"Uzish uchun bosing"</string>
     <string name="adb_active_notification_message" product="tv" msgid="6624498401272780855">"USB orqali nosozliklarni tuzatishni o‘chirib qo‘yish uchun bosing."</string>
-    <string name="adbwifi_active_notification_title" msgid="6147343659168302473">"Wi-Fi orqali debagging yoqildi"</string>
-    <string name="adbwifi_active_notification_message" msgid="930987922852867972">"Wi-Fi orqali debagging uzilishi uchun bosing"</string>
+    <string name="adbwifi_active_notification_title" msgid="6147343659168302473">"Wi-Fi orqali debaging yoqildi"</string>
+    <string name="adbwifi_active_notification_message" msgid="930987922852867972">"Wi-Fi orqali debaging uzilishi uchun bosing"</string>
     <string name="adbwifi_active_notification_message" product="tv" msgid="8633421848366915478">"Uni faolsizlantirish uchun bosing."</string>
     <string name="test_harness_mode_notification_title" msgid="2282785860014142511">"Xavfsizlik sinovi rejimi yoqildi"</string>
     <string name="test_harness_mode_notification_message" msgid="3039123743127958420">"Xavfsizlik sinovi rejimini faolsizlantirish uchun zavod sozlamalariga qaytaring."</string>

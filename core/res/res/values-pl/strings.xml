@@ -590,7 +590,7 @@
     <string name="permdesc_changeWifiMulticastState" product="tablet" msgid="191079868596433554">"Pozwala aplikacji na odbieranie pakietów wysyłanych przez sieć Wi-Fi do wszystkich urządzeń, a nie tylko do Twojego tabletu, przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w trybie innym niż grupowy."</string>
     <string name="permdesc_changeWifiMulticastState" product="tv" msgid="1336952358450652595">"Pozwala aplikacji odbierać pakiety wysyłane przez sieć Wi-Fi do wszystkich urządzeń (a nie tylko do Twojego urządzenia z Androidem TV) przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w innych trybach."</string>
     <string name="permdesc_changeWifiMulticastState" product="default" msgid="8296627590220222740">"Pozwala aplikacji na odbieranie pakietów wysyłanych przez sieć Wi-Fi do wszystkich urządzeń, a nie tylko do Twojego telefonu, przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w trybie innym niż grupowy."</string>
-    <string name="permlab_bluetoothAdmin" msgid="6490373569441946064">"uzyskiwanie dostępu do ustawień Bluetooth"</string>
+    <string name="permlab_bluetoothAdmin" msgid="6490373569441946064">"uzyskiwanie dostępu do ustawień Bluetootha"</string>
     <string name="permdesc_bluetoothAdmin" product="tablet" msgid="5370837055438574863">"Pozwala aplikacji na konfigurowanie lokalnego tabletu z funkcją Bluetooth oraz na wykrywanie urządzeń zdalnych i parowanie z nimi."</string>
     <string name="permdesc_bluetoothAdmin" product="tv" msgid="1623992984547014588">"Pozwala aplikacji konfigurować Bluetootha na urządzeniu z Androidem TV oraz wykrywać urządzenia zdalne i przeprowadzać parowanie z nimi."</string>
     <string name="permdesc_bluetoothAdmin" product="default" msgid="7381341743021234863">"Pozwala aplikacji na konfigurowanie lokalnego telefonu z funkcją Bluetooth oraz na wykrywanie urządzeń zdalnych i parowanie z nimi."</string>
@@ -1669,7 +1669,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Wyświetlacz bezprzewodowy"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Przesyłaj"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Połącz z urządzeniem"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Prześlij ekran na urządzenie"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Prześlij treści z ekranu na urządzenie"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"Szukam urządzeń…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Ustawienia"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Rozłącz"</string>

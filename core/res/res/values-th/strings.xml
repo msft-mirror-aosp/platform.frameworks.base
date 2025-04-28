@@ -1004,7 +1004,7 @@
     <string name="lockscreen_password_wrong" msgid="8605355913868947490">"ลองอีกครั้ง"</string>
     <string name="lockscreen_storage_locked" msgid="634993789186443380">"ปลดล็อกฟีเจอร์และข้อมูลทั้งหมด"</string>
     <string name="faceunlock_multiple_failures" msgid="681991538434031708">"ลองใช้การปลดล็อกด้วยใบหน้าเกินจำนวนครั้งที่กำหนดแล้ว"</string>
-    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"ไม่มี SIM"</string>
+    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"ไม่มีซิม"</string>
     <string name="lockscreen_missing_sim_message" product="tablet" msgid="3986843848305639161">"ไม่มี SIM ในแท็บเล็ต"</string>
     <string name="lockscreen_missing_sim_message" product="tv" msgid="3903140876952198273">"ไม่มี SIM ในอุปกรณ์ Android TV"</string>
     <string name="lockscreen_missing_sim_message" product="default" msgid="6184187634180854181">"ไม่มี SIM ในโทรศัพท์"</string>
@@ -2214,7 +2214,7 @@
     <string name="conversation_title_fallback_one_to_one" msgid="1980753619726908614">"การสนทนา"</string>
     <string name="conversation_title_fallback_group_chat" msgid="456073374993104303">"บทสนทนากลุ่ม"</string>
     <string name="unread_convo_overflow" msgid="920517615597353833">"<xliff:g id="MAX_UNREAD_COUNT">%1$d</xliff:g>+"</string>
-    <string name="resolver_personal_tab" msgid="2051260504014442073">"ส่วนบุคคล"</string>
+    <string name="resolver_personal_tab" msgid="2051260504014442073">"ส่วนตัว"</string>
     <string name="resolver_work_tab" msgid="2690019516263167035">"งาน"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"มุมมองส่วนตัว"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"ดูงาน"</string>

@@ -2449,8 +2449,8 @@
     <string name="keyboard_shortcut_group_applications_sms" msgid="3523799286376321137">"SMS"</string>
     <string name="keyboard_shortcut_group_applications_music" msgid="2051507523525651067">"സംഗീതം"</string>
     <string name="keyboard_shortcut_group_applications_calendar" msgid="3571770335653387606">"കലണ്ടർ"</string>
-    <string name="keyboard_shortcut_group_applications_calculator" msgid="6753209559716091507">"കാൽക്കുലേറ്റർ"</string>
-    <string name="keyboard_shortcut_group_applications_maps" msgid="7950000659522589471">"മാപ്പുകൾ"</string>
+    <string name="keyboard_shortcut_group_applications_calculator" msgid="6753209559716091507">"Calculator"</string>
+    <string name="keyboard_shortcut_group_applications_maps" msgid="7950000659522589471">"Maps"</string>
     <string name="keyboard_shortcut_group_applications" msgid="3010389163951364798">"ആപ്പുകൾ"</string>
     <string name="fingerprint_loe_notification_msg" msgid="3927447270148854546">"നിങ്ങളുടെ ഫിംഗർപ്രിന്റുകൾ ഇനി തിരിച്ചറിയാനാകില്ല. ഫിംഗർപ്രിന്റ് അൺലോക്ക് വീണ്ടും സജ്ജീകരിക്കുക."</string>
 </resources>

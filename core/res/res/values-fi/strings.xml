@@ -278,7 +278,7 @@
     <string name="global_action_silent_mode_on_status" msgid="2371892537738632013">"Äänet ovat POISSA KÄYTÖSTÄ"</string>
     <string name="global_action_silent_mode_off_status" msgid="6608006545950920042">"Äänet ovat KÄYTÖSSÄ"</string>
     <string name="global_actions_toggle_airplane_mode" msgid="6911684460146916206">"Lentokonetila"</string>
-    <string name="global_actions_airplane_mode_on_status" msgid="5508025516695361936">"Lentokonetila on KÄYTÖSSÄ"</string>
+    <string name="global_actions_airplane_mode_on_status" msgid="5508025516695361936">"Lentokonetila on PÄÄLLÄ"</string>
     <string name="global_actions_airplane_mode_off_status" msgid="8522219771500505475">"Lentokonetila on POIS KÄYTÖSTÄ"</string>
     <string name="global_action_settings" msgid="4671878836947494217">"Asetukset"</string>
     <string name="global_action_assist" msgid="2517047220311505805">"Auta"</string>
@@ -299,7 +299,7 @@
     <string name="notification_channel_network_available" msgid="6083697929214165169">"Verkko käytettävissä"</string>
     <string name="notification_channel_vpn" msgid="1628529026203808999">"VPN-tila"</string>
     <string name="notification_channel_device_admin" msgid="6384932669406095506">"Ilmoitukset IT-järjestelmänvalvojalta"</string>
-    <string name="notification_channel_alerts" msgid="5070241039583668427">"Ilmoitukset"</string>
+    <string name="notification_channel_alerts" msgid="5070241039583668427">"Varoitukset"</string>
     <string name="notification_channel_retail_mode" msgid="3732239154256431213">"Esittelytila"</string>
     <string name="notification_channel_usb" msgid="1528280969406244896">"USB-yhteys"</string>
     <string name="notification_channel_heavy_weight_app" msgid="17455756500828043">"Sovellus käynnissä"</string>
@@ -1146,7 +1146,7 @@
     <string name="years" msgid="5797714729103773425">"vuotta"</string>
     <string name="now_string_shortest" msgid="3684914126941650330">"nyt"</string>
     <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g> min"</string>
-    <string name="duration_hours_shortest" msgid="1477752094141971675">"<xliff:g id="COUNT">%d</xliff:g> h"</string>
+    <string name="duration_hours_shortest" msgid="1477752094141971675">"<xliff:g id="COUNT">%d</xliff:g> t"</string>
     <string name="duration_days_shortest" msgid="4083124701676227233">"<xliff:g id="COUNT">%d</xliff:g> pv"</string>
     <string name="duration_years_shortest" msgid="483982719231145618">"<xliff:g id="COUNT">%d</xliff:g> v"</string>
     <string name="duration_minutes_shortest_future" msgid="5260857299282734759">"<xliff:g id="COUNT">%d</xliff:g> min:n päästä"</string>
@@ -1170,8 +1170,8 @@
     <string name="Noon" msgid="6902418443846838189">"Keskipäivä"</string>
     <string name="midnight" msgid="3646671134282785114">"keskiyö"</string>
     <string name="Midnight" msgid="8176019203622191377">"Keskiyö"</string>
-    <string name="elapsed_time_short_format_mm_ss" msgid="8689459651807876423">"<xliff:g id="MINUTES">%1$02d</xliff:g>:<xliff:g id="SECONDS">%2$02d</xliff:g>"</string>
-    <string name="elapsed_time_short_format_h_mm_ss" msgid="2302144714803345056">"<xliff:g id="HOURS">%1$d</xliff:g>:<xliff:g id="MINUTES">%2$02d</xliff:g>:<xliff:g id="SECONDS">%3$02d</xliff:g>"</string>
+    <string name="elapsed_time_short_format_mm_ss" msgid="8689459651807876423">"<xliff:g id="MINUTES">%1$02d</xliff:g>.<xliff:g id="SECONDS">%2$02d</xliff:g>"</string>
+    <string name="elapsed_time_short_format_h_mm_ss" msgid="2302144714803345056">"<xliff:g id="HOURS">%1$d</xliff:g>.<xliff:g id="MINUTES">%2$02d</xliff:g>.<xliff:g id="SECONDS">%3$02d</xliff:g>"</string>
     <string name="selectAll" msgid="1532369154488982046">"Valitse kaikki"</string>
     <string name="cut" msgid="2561199725874745819">"Leikkaa"</string>
     <string name="copy" msgid="5472512047143665218">"Kopioi"</string>

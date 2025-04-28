@@ -1668,7 +1668,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Visualização sem fios"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Transmitir"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Ligar ao dispositivo"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Transmitir ecrã para dispositivo"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Transmita o ecrã para o dispositivo"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"A pesquisar dispositivos…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Definições"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Desligar"</string>
