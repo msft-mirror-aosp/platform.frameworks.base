@@ -54,7 +54,7 @@
     <string name="permission_microphone" msgid="2152206421428732949">"الميكروفون"</string>
     <string name="permission_call_logs" msgid="5546761417694586041">"سجلّ المكالمات"</string>
     <string name="permission_nearby_devices" msgid="7530973297737123481">"الأجهزة المجاورة"</string>
-    <string name="permission_media_routing_control" msgid="5498639511586715253">"تغيير جهاز إخراج الوسائط"</string>
+    <string name="permission_media_routing_control" msgid="5498639511586715253">"تغيير جهاز بث الوسائط"</string>
     <string name="permission_storage" msgid="6831099350839392343">"الصور والوسائط"</string>
     <string name="permission_notifications" msgid="4099418516590632909">"الإشعارات"</string>
     <string name="permission_phone_summary" msgid="8246321093970051702">"إجراء المكالمات الهاتفية وإدارتها"</string>
@@ -68,7 +68,7 @@
     <string name="permission_notifications_summary" msgid="2272810466047367030">"‏• قراءة كل الإشعارات بما فيها المعلومات، مثل جهات الاتصال والرسائل والصور&lt;br/&gt;• إرسال الإشعارات&lt;br/&gt;&lt;br/&gt;يمكنك إدارة الإذن الممنوح لهذا التطبيق بقراءة الإشعارات وإرسالها في أي وقت من خلال الإعدادات &gt; الإشعارات."</string>
     <string name="permission_storage_summary" msgid="3918240895519506417"></string>
     <string name="permission_media_routing_control_summary" msgid="2714631092321412250">"يتيح لك هذا الإذن الاطّلاع على مجموعة من الأجهزة المتاحة وتحديد الجهاز المسموح له بتشغيل الصوت أو الفيديو أو بثّهما من التطبيقات الأخرى."</string>
-    <string name="device_type" product="default" msgid="8268703872070046263">"هاتف"</string>
+    <string name="device_type" product="default" msgid="8268703872070046263">"الهاتف"</string>
     <string name="device_type" product="tablet" msgid="5038791954983067774">"جهاز لوحي"</string>
     <string name="device_type" product="tv" msgid="5355611506659405636">"تلفزيون"</string>
     <string name="device_type" product="device" msgid="1526125965802507189">"جهاز"</string>

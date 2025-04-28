@@ -20,8 +20,8 @@
     <string name="confirmation_title" msgid="2244241995958340998">"Vil du gi &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;-appen tilgang til &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
     <string name="profile_name_watch" msgid="576290739483672360">"klokke"</string>
     <string name="chooser_title_non_profile" msgid="6035023914517087400">"Velg en enhet som skal administreres av &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;"</string>
-    <string name="chooser_title" msgid="2235819929238267637">"Velg <xliff:g id="PROFILE_NAME">%1$s</xliff:g> som skal konfigureres"</string>
-    <string name="summary_watch" msgid="8134580124808507407">"Denne appen får tillatelse til å synkronisere informasjon, for eksempel navnet til folk som ringer, og har disse tillatelsene på <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>
+    <string name="chooser_title" msgid="2235819929238267637">"Velg enheten (<xliff:g id="PROFILE_NAME">%1$s</xliff:g>) som skal konfigureres"</string>
+    <string name="summary_watch" msgid="8134580124808507407">"Denne appen får tillatelse til å synkronisere informasjon, for eksempel navnet til folk som ringer, og har disse tillatelsene på enheten din (<xliff:g id="DEVICE_TYPE">%1$s</xliff:g>)"</string>
     <string name="confirmation_title_glasses" msgid="8288346850537727333">"Vil du la &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; administrere &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
     <string name="profile_name_glasses" msgid="3506504967216601277">"enheten"</string>
     <string name="summary_glasses" msgid="5469208629679579157">"Denne appen får disse tillatelsene på <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>

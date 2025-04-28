@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label" msgid="4470785958457506021">"Companion Device Manager"</string>
     <string name="confirmation_title" msgid="2244241995958340998">"&lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt; cihazına erişmesi için &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; uygulamasına izin verin"</string>
-    <string name="profile_name_watch" msgid="576290739483672360">"saat"</string>
+    <string name="profile_name_watch" msgid="576290739483672360">"Saat"</string>
     <string name="chooser_title_non_profile" msgid="6035023914517087400">"&lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; tarafından yönetilecek bir cihaz seçin"</string>
     <string name="chooser_title" msgid="2235819929238267637">"Ayarlamak için bir <xliff:g id="PROFILE_NAME">%1$s</xliff:g> seçin"</string>
     <string name="summary_watch" msgid="8134580124808507407">"Bu uygulamanın arayan kişinin adı gibi bilgileri senkronize etmesine ve <xliff:g id="DEVICE_TYPE">%1$s</xliff:g> cihazınızda aşağıdaki izinlere erişmesine izin verilir"</string>
@@ -36,7 +36,7 @@
     <string name="title_nearby_device_streaming" msgid="4295322493408411976">"&lt;strong&gt;<xliff:g id="DEVICE_NAME_0">%1$s</xliff:g>&lt;/strong&gt; adlı uygulamanın <xliff:g id="DEVICE_TYPE">%2$s</xliff:g> cihazınızdaki uygulamaları ve sistem özelliklerini &lt;strong&gt;<xliff:g id="DEVICE_NAME_1">%3$s</xliff:g>&lt;/strong&gt; cihazına aktarmasına izin verilsin mi?"</string>
     <string name="summary_nearby_device_streaming" msgid="962267343109051648">"<xliff:g id="APP_NAME_0">%1$s</xliff:g>; ses, fotoğraflar, ödeme bilgileri, şifreler ve mesajlar da dahil olmak üzere <xliff:g id="DEVICE_TYPE">%2$s</xliff:g> cihazınızda görünen veya oynatılan her şeye erişebilecek.&lt;br/&gt;&lt;br/&gt;<xliff:g id="APP_NAME_1">%1$s</xliff:g> siz bu iznin erişimini kaldırana kadar uygulamaları ve diğer sistem özelliklerini <xliff:g id="DEVICE_NAME">%3$s</xliff:g> cihazına aktarabilecek."</string>
     <string name="helper_summary_nearby_device_streaming" msgid="8509848562931818793">"<xliff:g id="APP_NAME">%1$s</xliff:g>, cihazlarınız arasında uygulamaları ve diğer sistem özelliklerini aktarmak için <xliff:g id="DEVICE_NAME">%2$s</xliff:g> cihazınız adına izin istiyor"</string>
-    <string name="profile_name_generic" msgid="6851028682723034988">"cihaz"</string>
+    <string name="profile_name_generic" msgid="6851028682723034988">"Cihaz"</string>
     <string name="summary_generic" msgid="1761976003668044801">"Bu uygulama, arayan kişinin adı gibi bilgileri telefonunuz ve seçili cihaz arasında senkronize edebilir"</string>
     <string name="consent_yes" msgid="8344487259618762872">"İzin ver"</string>
     <string name="consent_no" msgid="2640796915611404382">"İzin verme"</string>
