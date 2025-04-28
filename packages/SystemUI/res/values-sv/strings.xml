@@ -322,8 +322,8 @@
     <string name="accessibility_quick_settings_rotation" msgid="4800050198392260738">"Rotera skärmen automatiskt"</string>
     <string name="quick_settings_location_label" msgid="2621868789013389163">"Plats"</string>
     <string name="quick_settings_screensaver_label" msgid="1495003469366524120">"Skärmsläckare"</string>
-    <string name="quick_settings_camera_label" msgid="5612076679385269339">"Kameraåtkomst"</string>
-    <string name="quick_settings_mic_label" msgid="8392773746295266375">"Mikrofonåtkomst"</string>
+    <string name="quick_settings_camera_label" msgid="5612076679385269339">"Kamera­åtkomst"</string>
+    <string name="quick_settings_mic_label" msgid="8392773746295266375">"Mikrofon­åtkomst"</string>
     <string name="quick_settings_camera_mic_available" msgid="1453719768420394314">"Tillgänglig"</string>
     <string name="quick_settings_camera_mic_blocked" msgid="4710884905006788281">"Blockerad"</string>
     <string name="quick_settings_media_device_label" msgid="8034019242363789941">"Medieenhet"</string>
@@ -340,8 +340,8 @@
     <string name="quick_settings_cast_detail_empty_text" msgid="2846282280014617785">"Inga tillgängliga enheter"</string>
     <string name="quick_settings_cast_no_network" msgid="3863016850468559522">"Ingen wifi- eller Ethernet-anslutning"</string>
     <string name="quick_settings_brightness_dialog_title" msgid="4980669966716685588">"Ljusstyrka"</string>
-    <string name="quick_settings_inversion_label" msgid="3501527749494755688">"Färginvertering"</string>
-    <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"Färgkorrigering"</string>
+    <string name="quick_settings_inversion_label" msgid="3501527749494755688">"Färg­invertering"</string>
+    <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"Färg­korrigering"</string>
     <string name="quick_settings_font_scaling_label" msgid="5289001009876936768">"Teckenstorlek"</string>
     <string name="quick_settings_more_user_settings" msgid="7634653308485206306">"Välj användare"</string>
     <string name="quick_settings_done" msgid="2163641301648855793">"Klart"</string>
@@ -383,7 +383,7 @@
     <string name="quick_settings_screen_record_label" msgid="8650355346742003694">"Skärminspelning"</string>
     <string name="quick_settings_screen_record_start" msgid="1574725369331638985">"Starta"</string>
     <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"Stoppa"</string>
-    <string name="qs_record_issue_label" msgid="8166290137285529059">"Anmäl problem"</string>
+    <string name="qs_record_issue_label" msgid="8166290137285529059">"Registrera problem"</string>
     <string name="qs_record_issue_start" msgid="2979831312582567056">"Starta"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"Stoppa"</string>
     <string name="qs_record_issue_bug_report" msgid="8229031766918650079">"Felrapport"</string>
@@ -485,7 +485,7 @@
     <string name="communal_tutorial_indicator_text" msgid="4503010353591430123">"Svep åt vänster för att börja med gruppguiden"</string>
     <string name="cta_tile_button_to_open_widget_editor" msgid="3871562362382963878">"Anpassa"</string>
     <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"Ignorera"</string>
-    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Lägg till, ta bort och ordna om dina widgetar i det här rummet"</string>
+    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Lägg till, ta bort och ordna om dina widgetar här"</string>
     <string name="cta_label_to_open_widget_picker" msgid="3874946756976360699">"Lägg till fler widgetar"</string>
     <string name="popup_on_dismiss_cta_tile_text" msgid="8292501780996070019">"Tryck länge för att anpassa widgetar"</string>
     <string name="button_to_configure_widgets_text" msgid="4191862850185256901">"Anpassa widgetar"</string>
@@ -847,7 +847,7 @@
     <string name="system_multitasking_rhs" msgid="8714224917276297810">"Anänd delad skärm med den aktuella appen till höger"</string>
     <string name="system_multitasking_lhs" msgid="8402954791206308783">"Använd delad skärm med den aktuella appen till vänster"</string>
     <string name="system_multitasking_full_screen" msgid="336048080383640562">"Byt mellan delad skärm och helskärm"</string>
-    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"Byt till appen till vänster eller nedanför när du använder delad skärm"</string>
+    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"Byt till appen till höger eller nedanför när du använder delad skärm"</string>
     <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"Byt till appen till vänster eller ovanför när du använder delad skärm"</string>
     <string name="system_multitasking_replace" msgid="7410071959803642125">"Med delad skärm: ersätt en app med en annan"</string>
     <string name="keyboard_shortcut_group_input" msgid="6888282716546625610">"Inmatning"</string>
@@ -1310,7 +1310,7 @@
     <string name="bt_le_audio_broadcast_dialog_different_output" msgid="7885102097302562674">"Byt ljudutgång"</string>
     <string name="bt_le_audio_broadcast_dialog_unknown_name" msgid="3791472237793443044">"Okänt"</string>
     <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"h.mm"</string>
-    <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"kk.mm"</string>
+    <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"kk:mm"</string>
     <string name="log_access_confirmation_title" msgid="4843557604739943395">"Vill du tillåta att <xliff:g id="LOG_ACCESS_APP_NAME">%s</xliff:g> får åtkomst till alla enhetsloggar?"</string>
     <string name="log_access_confirmation_allow" msgid="752147861593202968">"Tillåt engångsåtkomst"</string>
     <string name="log_access_confirmation_deny" msgid="2389461495803585795">"Tillåt inte"</string>
@@ -1386,7 +1386,7 @@
     <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Multikörning"</string>
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Senaste apparna"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Delad skärm"</string>
-    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Ingång"</string>
+    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Inmatning"</string>
     <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Genvägar till appar"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Aktuell app"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Tillgänglighet"</string>

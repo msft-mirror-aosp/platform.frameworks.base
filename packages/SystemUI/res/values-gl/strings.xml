@@ -124,7 +124,7 @@
     <string name="screenrecord_continue" msgid="4055347133700593164">"Iniciar"</string>
     <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Gravando pantalla"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"Gravando pantalla e audio"</string>
-    <string name="screenrecord_taps_label" msgid="1595690528298857649">"Mostrar a localización dos toques na pantalla"</string>
+    <string name="screenrecord_taps_label" msgid="1595690528298857649">"Mostrar localización dos toques na pantalla"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"Deter"</string>
     <string name="screenrecord_share_label" msgid="5025590804030086930">"Compartir"</string>
     <string name="screenrecord_save_title" msgid="1886652605520893850">"Gravación da pantalla gardada"</string>
@@ -383,7 +383,7 @@
     <string name="quick_settings_screen_record_label" msgid="8650355346742003694">"Gravar pantalla"</string>
     <string name="quick_settings_screen_record_start" msgid="1574725369331638985">"Iniciar"</string>
     <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"Deter"</string>
-    <string name="qs_record_issue_label" msgid="8166290137285529059">"Gravar problema"</string>
+    <string name="qs_record_issue_label" msgid="8166290137285529059">"Gravar incidencia"</string>
     <string name="qs_record_issue_start" msgid="2979831312582567056">"Iniciar"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"Deter"</string>
     <string name="qs_record_issue_bug_report" msgid="8229031766918650079">"Informe de erros"</string>
@@ -564,11 +564,11 @@
     <string name="media_projection_task_switcher_notification_channel" msgid="7613206306777814253">"Cambio de aplicación"</string>
     <string name="screen_capturing_disabled_by_policy_dialog_title" msgid="2113331792064527203">"O teu administrador de TI bloqueou esta aplicación"</string>
     <string name="screen_capturing_disabled_by_policy_dialog_description" msgid="6015975736747696431">"A política do dispositivo desactivou a opción de capturar a pantalla"</string>
-    <string name="clear_all_notifications_text" msgid="348312370303046130">"Eliminar todo"</string>
+    <string name="clear_all_notifications_text" msgid="348312370303046130">"Borrar todo"</string>
     <string name="manage_notifications_text" msgid="6885645344647733116">"Xestionar"</string>
     <string name="manage_notifications_history_text" msgid="57055985396576230">"Historial"</string>
     <string name="notification_section_header_incoming" msgid="850925217908095197">"Notificacións novas"</string>
-    <string name="notification_section_header_gentle" msgid="6804099527336337197">"Silenciadas"</string>
+    <string name="notification_section_header_gentle" msgid="6804099527336337197">"Notificacións silenciadas"</string>
     <string name="notification_section_header_alerting" msgid="5581175033680477651">"Notificacións"</string>
     <string name="notification_section_header_conversations" msgid="821834744538345661">"Conversas"</string>
     <string name="accessibility_notification_section_header_gentle_clear_all" msgid="6490207897764933919">"Borrar todas as notificacións silenciadas"</string>
@@ -802,7 +802,7 @@
     <string name="keyboard_key_page_up" msgid="173914303254199845">"Re Páx"</string>
     <string name="keyboard_key_page_down" msgid="9035902490071829731">"Av Páx"</string>
     <string name="keyboard_key_forward_del" msgid="5325501825762733459">"Supr"</string>
-    <string name="keyboard_key_esc" msgid="6230365950511411322">"Escape"</string>
+    <string name="keyboard_key_esc" msgid="6230365950511411322">"Esc"</string>
     <string name="keyboard_key_move_home" msgid="3496502501803911971">"Inicio"</string>
     <string name="keyboard_key_move_end" msgid="99190401463834854">"Fin"</string>
     <string name="keyboard_key_insert" msgid="4621692715704410493">"Inserir"</string>
@@ -920,16 +920,16 @@
   </string-array>
     <string name="tuner_low_priority" msgid="8412666814123009820">"Mostrar iconas das notificacións que teñan baixa prioridade"</string>
     <string name="other" msgid="429768510980739978">"Outros"</string>
-    <string name="accessibility_qs_edit_remove_tile_action" msgid="775511891457193480">"quitar tarxeta"</string>
-    <string name="accessibility_qs_edit_tile_add_action" msgid="5051211910345301833">"engadir tarxeta ao final"</string>
-    <string name="accessibility_qs_edit_tile_start_move" msgid="2009373939914517817">"Mover tarxeta"</string>
-    <string name="accessibility_qs_edit_tile_start_add" msgid="7560798153975555772">"Engadir tarxeta"</string>
+    <string name="accessibility_qs_edit_remove_tile_action" msgid="775511891457193480">"quitar atallo"</string>
+    <string name="accessibility_qs_edit_tile_add_action" msgid="5051211910345301833">"engadir atallo ao final"</string>
+    <string name="accessibility_qs_edit_tile_start_move" msgid="2009373939914517817">"Mover atallo"</string>
+    <string name="accessibility_qs_edit_tile_start_add" msgid="7560798153975555772">"Engadir atallo"</string>
     <string name="accessibility_qs_edit_tile_move_to_position" msgid="5198161544045930556">"Mover a <xliff:g id="POSITION">%1$d</xliff:g>"</string>
     <string name="accessibility_qs_edit_tile_add_to_position" msgid="9029163095148274690">"Engadir á posición <xliff:g id="POSITION">%1$d</xliff:g>"</string>
     <string name="accessibilit_qs_edit_tile_add_move_invalid_position" msgid="2858467994472624487">"Posición non válida."</string>
     <string name="accessibility_qs_edit_position" msgid="4509277359815711830">"Posición <xliff:g id="POSITION">%1$d</xliff:g>"</string>
-    <string name="accessibility_qs_edit_tile_added" msgid="9067146040380836334">"Engadiuse a tarxeta"</string>
-    <string name="accessibility_qs_edit_tile_removed" msgid="1175925632436612036">"Quitouse a tarxeta"</string>
+    <string name="accessibility_qs_edit_tile_added" msgid="9067146040380836334">"Engadiuse o atallo"</string>
+    <string name="accessibility_qs_edit_tile_removed" msgid="1175925632436612036">"Quitouse o atallo"</string>
     <string name="accessibility_desc_quick_settings_edit" msgid="741658939453595297">"Editor de configuración rápida."</string>
     <string name="accessibility_desc_notification_icon" msgid="7331265967584178674">"Notificación de <xliff:g id="ID_1">%1$s</xliff:g>: <xliff:g id="ID_2">%2$s</xliff:g>"</string>
     <string name="accessibility_quick_settings_settings" msgid="7098489591715844713">"Abrir configuración."</string>
@@ -1289,7 +1289,7 @@
     <string name="clipboard_image_preview" msgid="2156475174343538128">"Vista previa da imaxe"</string>
     <string name="clipboard_edit" msgid="4500155216174011640">"editar"</string>
     <string name="add" msgid="81036585205287996">"Engadir"</string>
-    <string name="manage_users" msgid="1823875311934643849">"Usuarios"</string>
+    <string name="manage_users" msgid="1823875311934643849">"Xestionar usuarios"</string>
     <string name="drag_split_not_supported" msgid="7173481676120546121">"Esta notificación non pode arrastrarse á pantalla dividida"</string>
     <string name="dream_overlay_location_active" msgid="6484763493158166618">"Localización activa"</string>
     <string name="dream_overlay_status_bar_wifi_off" msgid="4497069245055003582">"A wifi non está dispoñible"</string>
@@ -1391,7 +1391,7 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Aplicación actual"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Accesibilidade"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Atallos de teclado"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Atallos de busca"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Busca atallos"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Non hai resultados de busca"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Icona de contraer"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Icona de despregar"</string>
@@ -1410,7 +1410,7 @@
     <string name="touchpad_back_gesture_action_title" msgid="7199067250654332735">"Volver"</string>
     <string name="touchpad_back_gesture_guidance" msgid="6263750214998421587">"Para retroceder, pasa tres dedos cara á esquerda ou cara á dereita en calquera parte do panel táctil.\n\nTamén podes usar o atallo de teclado Acción + Escape."</string>
     <string name="touchpad_back_gesture_success_title" msgid="7240576648330612171">"Moi ben!"</string>
-    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Completaches o xesto de retroceso."</string>
+    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Completaches o titorial do xesto de retroceso."</string>
     <string name="touchpad_home_gesture_action_title" msgid="8885107349719257882">"Ir ao inicio"</string>
     <string name="touchpad_home_gesture_guidance" msgid="3043931356096731966">"Para ir á pantalla de inicio, pasa tres dedos cara arriba desde a parte inferior da pantalla."</string>
     <string name="touchpad_home_gesture_success_title" msgid="3778407003948209795">"Excelente!"</string>

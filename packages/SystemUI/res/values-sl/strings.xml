@@ -59,7 +59,7 @@
     <string name="hdmi_cec_set_menu_language_description" msgid="8176716678074126619">"Spremembo jezika sistema je zahtevala druga naprava."</string>
     <string name="hdmi_cec_set_menu_language_accept" msgid="2513689457281009578">"Spremeni jezik"</string>
     <string name="hdmi_cec_set_menu_language_decline" msgid="7650721096558646011">"Obdrži trenutni jezik"</string>
-    <string name="share_wifi_button_text" msgid="1285273973812029240">"Delite omrežje Wi‑Fi"</string>
+    <string name="share_wifi_button_text" msgid="1285273973812029240">"Deli Wi‑Fi"</string>
     <string name="wifi_debugging_title" msgid="7300007687492186076">"Ali dovolite brezžično odpravljanje napak v tem omrežju?"</string>
     <string name="wifi_debugging_message" msgid="5461204211731802995">"Ime omrežja (SSID)\n<xliff:g id="SSID_0">%1$s</xliff:g>\n\nNaslov omrežja Wi‑Fi (BSSID)\n<xliff:g id="BSSID_1">%2$s</xliff:g>"</string>
     <string name="wifi_debugging_always" msgid="2968383799517975155">"Vedno dovoli v tem omrežju"</string>
@@ -146,7 +146,7 @@
     <string name="cast_to_other_device_stop_dialog_title" msgid="7836517190930357326">"Želite ustaviti predvajanje?"</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen_with_device" msgid="1474703115926205251">"Trenutno predvajate celotni zaslon v napravi <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen" msgid="8419219169553867625">"Trenutno predvajate celotni zaslon v napravi v bližini"</string>
-    <string name="cast_to_other_device_stop_dialog_message_specific_app_with_device" msgid="2715934698604085519">"Trenutno predvajate aplikacijo <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> v napravi <xliff:g id="DEVICE_NAME">%2$s</xliff:g>"</string>
+    <string name="cast_to_other_device_stop_dialog_message_specific_app_with_device" msgid="2715934698604085519">"Trenutno predvajate aplikacijo <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> v napravi <xliff:g id="DEVICE_NAME">%2$s</xliff:g>."</string>
     <string name="cast_to_other_device_stop_dialog_message_specific_app" msgid="8616103075630934513">"Trenutno predvajate aplikacijo <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> v napravi v bližini"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic_with_device" msgid="9213582497852420203">"Trenutno predvajate v napravi <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic" msgid="4100272100480415076">"Trenutno predvajate v napravi v bližini"</string>
@@ -494,7 +494,7 @@
     <string name="icon_description_for_pending_widget" msgid="8413816401868001755">"Ikona aplikacije za nameščanje pripomočka"</string>
     <string name="edit_widget" msgid="9030848101135393954">"Urejanje pripomočka"</string>
     <string name="button_to_remove_widget" msgid="3948204829181214098">"Odstrani"</string>
-    <string name="hub_mode_add_widget_button_text" msgid="4831464661209971729">"Dodajanje pripomočka"</string>
+    <string name="hub_mode_add_widget_button_text" msgid="4831464661209971729">"Dodaj pripomoček"</string>
     <string name="hub_mode_editing_exit_button_text" msgid="3704686734192264771">"Končano"</string>
     <string name="label_for_button_in_empty_state_cta" msgid="7314975555382055823">"Dodajte pripomočke"</string>
     <string name="title_for_empty_state_cta" msgid="6161654421223450530">"Hitro dostopajte do priljubljenih pripomočkov za aplikacije brez odklepanja tabličnega računalnika."</string>
@@ -547,8 +547,8 @@
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> je onemogočila to možnost"</string>
     <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Izbira aplikacije za deljenje"</string>
     <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"Želite predvajati vsebino zaslona?"</string>
-    <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Predvajanje vsebine ene aplikacije"</string>
-    <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Predvajanje vsebine celotnega zaslona"</string>
+    <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Predvajanje ene aplikacije"</string>
+    <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Predvajanje celotnega zaslona"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Pri predvajanju vsebine celotnega zaslona je vidno vse na zaslonu. Zato bodite previdni z gesli, podatki za plačilo, sporočili, fotografijami ter z zvokom in videom."</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Pri predvajanju vsebine aplikacije je vidno vse, kar je prikazano ali predvajano v tej aplikaciji. Zato bodite previdni z gesli, podatki za plačilo, sporočili, fotografijami ter z zvokom in videom."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"Predvajanje zaslona"</string>
@@ -657,7 +657,7 @@
     <string name="screen_pinning_exit" msgid="4553787518387346893">"Aplikacija je odpeta."</string>
     <string name="stream_voice_call" msgid="7468348170702375660">"Klic"</string>
     <string name="stream_system" msgid="7663148785370565134">"Sistem"</string>
-    <string name="stream_ring" msgid="7550670036738697526">"Sprožitev zvonjenja"</string>
+    <string name="stream_ring" msgid="7550670036738697526">"Zvonjenje"</string>
     <string name="stream_music" msgid="2188224742361847580">"Predstavnost"</string>
     <string name="stream_alarm" msgid="16058075093011694">"Alarm"</string>
     <string name="stream_notification" msgid="7930294049046243939">"Obvestilo"</string>
@@ -680,7 +680,7 @@
     <string name="volume_panel_spatial_audio_title" msgid="3367048857932040660">"Prostorski zvok"</string>
     <string name="volume_panel_spatial_audio_off" msgid="4177490084606772989">"Izklopljeno"</string>
     <string name="volume_panel_spatial_audio_fixed" msgid="3136080137827746046">"Fiksno"</string>
-    <string name="volume_panel_spatial_audio_tracking" msgid="5711115234001762974">"Spremljanje premikov glave"</string>
+    <string name="volume_panel_spatial_audio_tracking" msgid="5711115234001762974">"Spremljanje glave"</string>
     <string name="volume_ringer_change" msgid="3574969197796055532">"Dotaknite se, če želite spremeniti način zvonjenja."</string>
     <string name="volume_ringer_hint_mute" msgid="4263821214125126614">"izklop zvoka"</string>
     <string name="volume_ringer_hint_unmute" msgid="6119086890306456976">"vklop zvoka"</string>
@@ -695,7 +695,7 @@
     <string name="volume_panel_hint_muted" msgid="1124844870181285320">"zvok je izklopljen"</string>
     <string name="volume_panel_hint_vibrate" msgid="4136223145435914132">"vibriranje"</string>
     <string name="media_output_label_title" msgid="872824698593182505">"Predvajanje »<xliff:g id="LABEL">%s</xliff:g>« v"</string>
-    <string name="media_output_title_without_playing" msgid="3825663683169305013">"Zvok bo predvajan v"</string>
+    <string name="media_output_title_without_playing" msgid="3825663683169305013">"Zvok bo predvajan v:"</string>
     <string name="media_output_title_ongoing_call" msgid="208426888064112006">"Poteka klicanje"</string>
     <string name="system_ui_tuner" msgid="1471348823289954729">"Uglaševalnik uporabniškega vmesnika sistema"</string>
     <string name="status_bar" msgid="4357390266055077437">"Vrstica stanja"</string>
@@ -791,8 +791,8 @@
     <string name="keyboard_key_back" msgid="4185420465469481999">"Nazaj"</string>
     <string name="keyboard_key_tab" msgid="4592772350906496730">"Tab"</string>
     <string name="keyboard_key_space" msgid="6980847564173394012">"Preslednica"</string>
-    <string name="keyboard_key_enter" msgid="8633362970109751646">"Vnesi"</string>
-    <string name="keyboard_key_backspace" msgid="4095278312039628074">"Premik nazaj"</string>
+    <string name="keyboard_key_enter" msgid="8633362970109751646">"Enter"</string>
+    <string name="keyboard_key_backspace" msgid="4095278312039628074">"Vračalka"</string>
     <string name="keyboard_key_media_play_pause" msgid="8389984232732277478">"Predvajaj/zaustavi"</string>
     <string name="keyboard_key_media_stop" msgid="1509943745250377699">"Ustavi"</string>
     <string name="keyboard_key_media_next" msgid="8502476691227914952">"Naslednji"</string>
@@ -1179,8 +1179,8 @@
     <string name="media_output_dialog_volume_percentage" msgid="1613984910585111798">"<xliff:g id="PERCENTAGE">%1$d</xliff:g> %%"</string>
     <string name="media_output_group_title_speakers_and_displays" msgid="7169712332365659820">"Zvočniki in zasloni"</string>
     <string name="media_output_group_title_suggested_device" msgid="4157186235837903826">"Predlagane naprave"</string>
-    <string name="media_input_group_title" msgid="2057057473860783021">"Vhodno"</string>
-    <string name="media_output_group_title" msgid="6789001895863332576">"Izhodno"</string>
+    <string name="media_input_group_title" msgid="2057057473860783021">"Vhod"</string>
+    <string name="media_output_group_title" msgid="6789001895863332576">"Izhod"</string>
     <string name="media_output_end_session_dialog_summary" msgid="5954520685989877347">"Ustavi deljeno sejo za premik predstavnosti v drugo napravo."</string>
     <string name="media_output_end_session_dialog_stop" msgid="208189434474624412">"Ustavi"</string>
     <string name="media_output_first_broadcast_title" msgid="6292237789860753022">"Kako deluje oddajanje"</string>
@@ -1391,7 +1391,7 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Trenutna aplikacija"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Dostopnost"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Bližnjične tipke"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Bližnjice za iskanje"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Iskanje po bližnjicah"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Ni rezultatov iskanja"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Ikona za strnitev"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Ikona za razširitev"</string>
@@ -1400,7 +1400,7 @@
     <string name="launch_keyboard_tutorial_notification_title" msgid="8849933155160522519">"Krmarjenje s tipkovnico"</string>
     <string name="launch_keyboard_tutorial_notification_content" msgid="2880339951512757918">"Učenje bližnjičnih tipk"</string>
     <string name="launch_touchpad_tutorial_notification_title" msgid="2243780062772196901">"Krmarjenje s sledilno ploščico"</string>
-    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"Učenje potez na sledilni ploščici"</string>
+    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"Naučite se uporabljati poteze na sledilni ploščici."</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"Krmarjenje s tipkovnico in sledilno ploščico"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"Učenje potez na sledilni ploščici, bližnjičnih tipk in drugega"</string>
     <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"Poteza za pomik nazaj"</string>

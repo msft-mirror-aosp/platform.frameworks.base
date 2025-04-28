@@ -139,14 +139,14 @@
     <string name="share_to_app_stop_dialog_title" msgid="9212915050910250438">"Bildschirmfreigabe beenden?"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen_with_host_app" msgid="522823522115375414">"Du teilst momentan deinen gesamten Bildschirm mit der App <xliff:g id="HOST_APP_NAME">%1$s</xliff:g>"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen" msgid="5090115386271179270">"Du teilst momentan deinen gesamten Bildschirm mit einer App"</string>
-    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"Du teilst momentan die App <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>"</string>
+    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"Du teilst momentan <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>"</string>
     <string name="share_to_app_stop_dialog_message_single_app_generic" msgid="6681016774654578261">"Du teilst momentan Inhalte einer App"</string>
     <string name="share_to_app_stop_dialog_button" msgid="6334056916284230217">"Freigabe beenden"</string>
     <string name="cast_screen_to_other_device_chip_accessibility_label" msgid="4687917476203009885">"Bildschirm wird übertragen"</string>
     <string name="cast_to_other_device_stop_dialog_title" msgid="7836517190930357326">"Streaming beenden?"</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen_with_device" msgid="1474703115926205251">"Du streamst momentan deinen gesamten Bildschirm auf das Gerät „<xliff:g id="DEVICE_NAME">%1$s</xliff:g>“"</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen" msgid="8419219169553867625">"Du streamst momentan deinen gesamten Bildschirm auf ein Gerät in der Nähe"</string>
-    <string name="cast_to_other_device_stop_dialog_message_specific_app_with_device" msgid="2715934698604085519">"Du streamst momentan die App <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> auf das Gerät „<xliff:g id="DEVICE_NAME">%2$s</xliff:g>“"</string>
+    <string name="cast_to_other_device_stop_dialog_message_specific_app_with_device" msgid="2715934698604085519">"Du streamst momentan die <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> App auf das Gerät „<xliff:g id="DEVICE_NAME">%2$s</xliff:g>“"</string>
     <string name="cast_to_other_device_stop_dialog_message_specific_app" msgid="8616103075630934513">"Du streamst momentan Inhalte der App <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> auf ein Gerät in der Nähe"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic_with_device" msgid="9213582497852420203">"Du streamst momentan Inhalte auf das Gerät „<xliff:g id="DEVICE_NAME">%1$s</xliff:g>“"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic" msgid="4100272100480415076">"Du streamst momentan auf ein Gerät in der Nähe"</string>
@@ -442,7 +442,7 @@
     <string name="zen_mode_off" msgid="1736604456618147306">"Aus"</string>
     <string name="zen_mode_set_up" msgid="7457957033034460064">"Einrichten"</string>
     <string name="zen_mode_no_manual_invocation" msgid="1769975741344633672">"In den Einstellungen verwalten"</string>
-    <string name="zen_mode_active_modes" msgid="1625850411578488856">"{count,plural, =0{Keine aktiven Modi}=1{{mode} aktiv}other{# aktiv}}"</string>
+    <string name="zen_mode_active_modes" msgid="1625850411578488856">"{count,plural, =0{Kein Modus aktiv}=1{{mode} aktiv}other{# aktiv}}"</string>
     <string name="zen_priority_introduction" msgid="3159291973383796646">"Klingeltöne und die Vibration werden deaktiviert, außer für Weckrufe, Erinnerungen, Termine sowie Anrufe von zuvor von dir festgelegten Personen. Du hörst jedoch weiterhin Sound, wenn du dir Musik anhörst, Videos ansiehst oder Spiele spielst."</string>
     <string name="zen_alarms_introduction" msgid="3987266042682300470">"Klingeltöne und die Vibration werden deaktiviert, außer für Weckrufe. Du hörst jedoch weiterhin Sound, wenn du dir Musik anhörst, Videos ansiehst oder Spiele spielst."</string>
     <string name="zen_priority_customize_button" msgid="4119213187257195047">"Anpassen"</string>
@@ -485,7 +485,7 @@
     <string name="communal_tutorial_indicator_text" msgid="4503010353591430123">"Wische nach links, um das gemeinsame Tutorial zu starten"</string>
     <string name="cta_tile_button_to_open_widget_editor" msgid="3871562362382963878">"Anpassen"</string>
     <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"Schließen"</string>
-    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Hier kannst du Widgets hinzufügen, entfernen und neu anordnen"</string>
+    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Widgets hinzufügen, entfernen und neu anordnen"</string>
     <string name="cta_label_to_open_widget_picker" msgid="3874946756976360699">"Weitere Widgets hinzufügen"</string>
     <string name="popup_on_dismiss_cta_tile_text" msgid="8292501780996070019">"Lange drücken, um Widgets anzupassen"</string>
     <string name="button_to_configure_widgets_text" msgid="4191862850185256901">"Widgets anpassen"</string>
@@ -655,7 +655,7 @@
     <string name="screen_pinning_negative" msgid="6882816864569211666">"Nein danke"</string>
     <string name="screen_pinning_start" msgid="7483998671383371313">"Bildschirm wurde fixiert"</string>
     <string name="screen_pinning_exit" msgid="4553787518387346893">"App vom Bildschirm losgelöst"</string>
-    <string name="stream_voice_call" msgid="7468348170702375660">"Anrufen"</string>
+    <string name="stream_voice_call" msgid="7468348170702375660">"Anruf"</string>
     <string name="stream_system" msgid="7663148785370565134">"System"</string>
     <string name="stream_ring" msgid="7550670036738697526">"Klingelton"</string>
     <string name="stream_music" msgid="2188224742361847580">"Medien"</string>
@@ -789,8 +789,8 @@
     <string name="keyboard_key_button_template" msgid="8005673627272051429">"Taste <xliff:g id="NAME">%1$s</xliff:g>"</string>
     <string name="keyboard_key_home" msgid="3734400625170020657">"Pos1"</string>
     <string name="keyboard_key_back" msgid="4185420465469481999">"Zurück"</string>
-    <string name="keyboard_key_tab" msgid="4592772350906496730">"Tabulatortaste"</string>
-    <string name="keyboard_key_space" msgid="6980847564173394012">"Leertaste"</string>
+    <string name="keyboard_key_tab" msgid="4592772350906496730">"Tab"</string>
+    <string name="keyboard_key_space" msgid="6980847564173394012">"Leer­taste"</string>
     <string name="keyboard_key_enter" msgid="8633362970109751646">"Eingabetaste"</string>
     <string name="keyboard_key_backspace" msgid="4095278312039628074">"Rücktaste"</string>
     <string name="keyboard_key_media_play_pause" msgid="8389984232732277478">"Wiedergabe/Pause"</string>
@@ -830,18 +830,18 @@
     <string name="keyboard_shortcut_a11y_filter_input" msgid="4589316004510335529">"Tastenkombinationen für die Eingabe werden angezeigt"</string>
     <string name="keyboard_shortcut_a11y_filter_open_apps" msgid="6175417687221004059">"Tastenkombinationen zum Öffnen von Apps werden angezeigt"</string>
     <string name="keyboard_shortcut_a11y_filter_current_app" msgid="7944592357493737911">"Tastenkombinationen für die aktuelle App werden angezeigt"</string>
-    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Benachrichtigungen ansehen"</string>
+    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Be­nach­­rich­ti­­­gun­­gen ansehen"</string>
     <string name="group_system_full_screenshot" msgid="5742204844232667785">"Screenshot erstellen"</string>
-    <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Tastenkombinationen anzeigen"</string>
+    <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Tasten­kürzel anzeigen"</string>
     <string name="group_system_go_back" msgid="2730322046244918816">"Zurück"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"Zum Startbildschirm wechseln"</string>
-    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Letzte Apps aufrufen"</string>
+    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Zuletzt verwendete Apps aufrufen"</string>
     <string name="group_system_cycle_forward" msgid="5478663965957647805">"Zuletzt verwendete Apps vorwärts durchgehen"</string>
     <string name="group_system_cycle_back" msgid="8194102916946802902">"Zuletzt verwendete Apps rückwärts durchgehen"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Liste der Apps öffnen"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"Einstellungen öffnen"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Assistant öffnen"</string>
-    <string name="group_system_lock_screen" msgid="7391191300363416543">"Sperrbildschirm"</string>
+    <string name="group_system_lock_screen" msgid="7391191300363416543">"Bildschirm sperren"</string>
     <string name="group_system_quick_memo" msgid="3764560265935722903">"Notiz machen"</string>
     <string name="keyboard_shortcut_group_system_multitasking" msgid="6967816258924795558">"Multitasking"</string>
     <string name="system_multitasking_rhs" msgid="8714224917276297810">"Splitscreen mit der aktuellen App auf der rechten Seite nutzen"</string>
@@ -853,8 +853,8 @@
     <string name="keyboard_shortcut_group_input" msgid="6888282716546625610">"Eingabe"</string>
     <string name="input_switch_input_language_next" msgid="3782155659868227855">"Zur nächsten Sprache wechseln"</string>
     <string name="input_switch_input_language_previous" msgid="6043341362202336623">"Zur vorherigen Sprache wechseln"</string>
-    <string name="input_access_emoji" msgid="8105642858900406351">"Auf Emojis zugreifen"</string>
-    <string name="input_access_voice_typing" msgid="7291201476395326141">"Auf Spracheingabe zugreifen"</string>
+    <string name="input_access_emoji" msgid="8105642858900406351">"Emojis aufrufen"</string>
+    <string name="input_access_voice_typing" msgid="7291201476395326141">"Spracheingabe aufrufen"</string>
     <string name="keyboard_shortcut_group_applications" msgid="7386239431100651266">"Apps"</string>
     <string name="keyboard_shortcut_group_applications_assist" msgid="6772492350416591448">"Assistant"</string>
     <string name="keyboard_shortcut_group_applications_browser" msgid="2776211137869809251">"Browser"</string>
@@ -1202,7 +1202,7 @@
     <string name="select_conversation_title" msgid="6716364118095089519">"Unterhaltungs-Widgets"</string>
     <string name="select_conversation_text" msgid="3376048251434956013">"Tippe auf eine Unterhaltung, um sie deinem Startbildschirm hinzuzufügen"</string>
     <string name="no_conversations_text" msgid="5354115541282395015">"Deine letzten Unterhaltungen werden hier angezeigt"</string>
-    <string name="priority_conversations" msgid="3967482288896653039">"Vorrangige Unterhaltungen"</string>
+    <string name="priority_conversations" msgid="3967482288896653039">"Priorisierte Unterhaltungen"</string>
     <string name="recent_conversations" msgid="8531874684782574622">"Neueste Unterhaltungen"</string>
     <string name="days_timestamp" msgid="5821854736213214331">"Vor <xliff:g id="DURATION">%1$s</xliff:g> Tagen"</string>
     <string name="one_week_timestamp" msgid="4925600765473875590">"Vor 1 Woche"</string>
@@ -1328,7 +1328,7 @@
     <string name="rear_display_bottom_sheet_cancel" msgid="3461468855493357248">"Abbrechen"</string>
     <string name="rear_display_bottom_sheet_confirm" msgid="1507591562761552899">"Jetzt umdrehen"</string>
     <string name="rear_display_folded_bottom_sheet_title" msgid="3930008746560711990">"Smartphone auffalten"</string>
-    <string name="rear_display_unfolded_bottom_sheet_title" msgid="6291111173057304055">"Bildschirm wechseln?"</string>
+    <string name="rear_display_unfolded_bottom_sheet_title" msgid="6291111173057304055">"Display wechseln?"</string>
     <string name="rear_display_folded_bottom_sheet_description" msgid="6842767125783222695">"Mit der Rückkamera lassen sich Fotos mit höherer Auflösung aufnehmen"</string>
     <string name="rear_display_unfolded_bottom_sheet_description" msgid="7229961336309960201">"Für höhere Auflösung Smartphone umdrehen"</string>
     <string name="rear_display_accessibility_folded_animation" msgid="1538121649587978179">"Faltbares Gerät wird geöffnet"</string>
@@ -1339,7 +1339,7 @@
     <string name="stylus_battery_low_percentage" msgid="2564243323894629626">"Akkustand des Eingabestifts: <xliff:g id="PERCENTAGE">%s</xliff:g>"</string>
     <string name="stylus_battery_low_subtitle" msgid="3583843128908823273">"Schließe deinen Eingabestift an ein Ladegerät an"</string>
     <string name="stylus_battery_low" msgid="7134370101603167096">"Stylus-Akkustand niedrig"</string>
-    <string name="video_camera" msgid="7654002575156149298">"Videokamera"</string>
+    <string name="video_camera" msgid="7654002575156149298">"Video­kamera"</string>
     <string name="call_from_work_profile_title" msgid="5418253516453177114">"Telefonieren über private App nicht möglich"</string>
     <string name="call_from_work_profile_text" msgid="2856337395968118274">"Deine Organisation lässt das Telefonieren nur über geschäftliche Apps zu"</string>
     <string name="call_from_work_profile_action" msgid="2937701298133010724">"Zum Arbeitsprofil wechseln"</string>
@@ -1384,10 +1384,10 @@
     <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"System­steuerelemente"</string>
     <string name="shortcut_helper_category_system_apps" msgid="6001757545472556810">"System-Apps"</string>
     <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Multitasking"</string>
-    <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Zuletzt aktive Apps"</string>
+    <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Zuletzt verwendete Apps"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Splitscreen"</string>
     <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Eingabe"</string>
-    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"App-Verknüpfungen"</string>
+    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Tastaturkürzel für Apps"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Aktuelle App"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Bedienungshilfen"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Tastenkürzel"</string>
@@ -1410,7 +1410,7 @@
     <string name="touchpad_back_gesture_action_title" msgid="7199067250654332735">"Zurück"</string>
     <string name="touchpad_back_gesture_guidance" msgid="6263750214998421587">"Wenn du zurückgehen möchtest, wische an einer beliebigen Stelle des Touchpads mit drei Fingern nach links oder rechts.\n\nDu kannst stattdessen auch die Tastenkombination „Aktion“ + „ESC“ verwenden."</string>
     <string name="touchpad_back_gesture_success_title" msgid="7240576648330612171">"Gut gemacht!"</string>
-    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Du hast den Schritt für die „Zurück“-Geste abgeschlossen."</string>
+    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Du hast das Tutorial für die Touch-Geste „Zurück“ abgeschlossen."</string>
     <string name="touchpad_home_gesture_action_title" msgid="8885107349719257882">"Startbildschirm"</string>
     <string name="touchpad_home_gesture_guidance" msgid="3043931356096731966">"Du kannst jederzeit zum Startbildschirm gehen, indem du mit drei Fingern vom unteren Displayrand nach oben wischst."</string>
     <string name="touchpad_home_gesture_success_title" msgid="3778407003948209795">"Sehr gut!"</string>
@@ -1426,7 +1426,7 @@
     <string name="keyboard_backlight_dialog_title" msgid="8273102932345564724">"Tastaturbeleuchtung"</string>
     <string name="keyboard_backlight_value" msgid="7336398765584393538">"Level %1$d von %2$d"</string>
     <string name="home_controls_dream_label" msgid="6567105701292324257">"Smart-Home-Steuerung"</string>
-    <string name="home_controls_dream_description" msgid="4644150952104035789">"Smart-Home-Steuerung als Bildschirmschoner nutzen"</string>
+    <string name="home_controls_dream_description" msgid="4644150952104035789">"Smart-Home-Steuer­ung als Bild­schirm­schoner nutzen"</string>
     <string name="volume_undo_action" msgid="5815519725211877114">"Rückgängig machen"</string>
     <string name="back_edu_toast_content" msgid="4530314597378982956">"Wenn du zurückgehen möchtest, wische auf dem Touchpad mit drei Fingern nach links oder rechts"</string>
     <string name="home_edu_toast_content" msgid="3381071147871955415">"Wenn du den Startbildschirm aufrufen möchtest, wische auf dem Touchpad mit drei Fingern nach oben"</string>
@@ -1434,7 +1434,7 @@
     <string name="all_apps_edu_toast_content" msgid="8807496014667211562">"Wenn du alle deine Apps aufrufen möchtest, drücke auf der Tastatur die Aktionstaste"</string>
     <string name="redacted_notification_single_line_title" msgid="212019960919261670">"Entfernt"</string>
     <string name="redacted_notification_single_line_text" msgid="8684166405005242945">"Zum Ansehen entsperren"</string>
-    <string name="back_edu_notification_title" msgid="5624780717751357278">"Über das Touchpad zurückgehen"</string>
+    <string name="back_edu_notification_title" msgid="5624780717751357278">"Zum Zurückgehen Touchpad verwenden"</string>
     <string name="back_edu_notification_content" msgid="2497557451540954068">"Wische mit drei Fingern nach links oder rechts. Tippe für mehr Infos zu Touch-Gesten."</string>
     <string name="home_edu_notification_title" msgid="6097902076909654045">"Über das Touchpad zum Startbildschirm zurückkehren"</string>
     <string name="home_edu_notification_content" msgid="6631697734535766588">"Wische mit drei Fingern nach oben. Tippe für mehr Infos zu Touch-Gesten."</string>

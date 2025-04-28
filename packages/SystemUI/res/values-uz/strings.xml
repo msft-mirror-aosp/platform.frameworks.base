@@ -60,12 +60,12 @@
     <string name="hdmi_cec_set_menu_language_accept" msgid="2513689457281009578">"Tilni almashtirish"</string>
     <string name="hdmi_cec_set_menu_language_decline" msgid="7650721096558646011">"Joriy tilni qoldirish"</string>
     <string name="share_wifi_button_text" msgid="1285273973812029240">"Wi‑Fi ulashuv"</string>
-    <string name="wifi_debugging_title" msgid="7300007687492186076">"Wi-Fi orqali debagging uchun ruxsat berilsinmi?"</string>
+    <string name="wifi_debugging_title" msgid="7300007687492186076">"Wi-Fi orqali debaging uchun ruxsat berilsinmi?"</string>
     <string name="wifi_debugging_message" msgid="5461204211731802995">"Tarmoq nomi (SSID):\n<xliff:g id="SSID_0">%1$s</xliff:g>\n\nWi‑Fi Manzil (BSSID):\n<xliff:g id="BSSID_1">%2$s</xliff:g>"</string>
     <string name="wifi_debugging_always" msgid="2968383799517975155">"Bu tarmoqda doim ruxsat etilsin"</string>
     <string name="wifi_debugging_allow" msgid="4573224609684957886">"Ruxsat"</string>
-    <string name="wifi_debugging_secondary_user_title" msgid="2493201475880517725">"Wi-Fi orqali debagging taqiqlandi"</string>
-    <string name="wifi_debugging_secondary_user_message" msgid="9085779370142222881">"Ayni paytda ushbu qurilmaga oʻz hisobi bilan kirgan foydalanuvchi Wi-Fi orqali debagging funksiyasini yoqa olmaydi. Bu funksiyadan foydalanish uchun administrator profiliga oʻting."</string>
+    <string name="wifi_debugging_secondary_user_title" msgid="2493201475880517725">"Wi-Fi orqali debaging taqiqlandi"</string>
+    <string name="wifi_debugging_secondary_user_message" msgid="9085779370142222881">"Ayni paytda ushbu qurilmaga oʻz hisobi bilan kirgan foydalanuvchi Wi-Fi orqali debaging funksiyasini yoqa olmaydi. Bu funksiyadan foydalanish uchun administrator profiliga oʻting."</string>
     <string name="usb_contaminant_title" msgid="894052515034594113">"USB port faolsizlashtirildi"</string>
     <string name="usb_contaminant_message" msgid="7730476585174719805">"Qurilmangizni suyuqlik va turli parchalardan himoya qilish uchun USB port faolsizlashtiriladi va hech qanday aksessuarni aniqlay olmaydi.\n\nUSB portdan xavfsiz foydalanish mumkin boʻlganda, sizga xabar beriladi."</string>
     <string name="usb_port_enabled" msgid="531823867664717018">"Quvvatlash moslamalari va aksessuarlarni aniqlash uchun USB port yoqildi"</string>
@@ -113,7 +113,7 @@
     <string name="screenrecord_permission_dialog_option_text_single_app" msgid="1996450687814647583">"Bitta ilovani yozib olish"</string>
     <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Butun ekranni yozib olish"</string>
     <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Butun ekranni yozib olishda ekranda koʻrsatilgan barcha axborotlar yozib olinadi. Shu sababli parollar, toʻlov tafsilotlari, xabarlar, suratlar, audio va video chiqmasligi uchun ehtiyot boʻling."</string>
-    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Ilovani yozib olishda ilova koʻrsatilgan yoki ijro etilgan barcha axborotlar yozib olinadi. Shu sababli parollar, toʻlov tafsilotlari, xabarlar, suratlar, audio va video chiqmasligi uchun ehtiyot boʻling."</string>
+    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Ilovani yozib olishda ilovada koʻrsatilgan yoki ijro etilgan barcha axborotlar yozib olinadi. Shu sababli parollar, toʻlov tafsilotlari, xabarlar, suratlar, audio va video chiqmasligi uchun ehtiyot boʻling."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Ekranni yozib olish"</string>
     <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Yozib olinadigan ilovani tanlash"</string>
     <string name="screenrecord_audio_label" msgid="6183558856175159629">"Audio yozib olish"</string>
@@ -343,7 +343,7 @@
     <string name="quick_settings_inversion_label" msgid="3501527749494755688">"Ranglarni akslantirish"</string>
     <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"Ranglarni tuzatish"</string>
     <string name="quick_settings_font_scaling_label" msgid="5289001009876936768">"Shrift hajmi"</string>
-    <string name="quick_settings_more_user_settings" msgid="7634653308485206306">"Foyd-ni boshqarish"</string>
+    <string name="quick_settings_more_user_settings" msgid="7634653308485206306">"Foydalanuvchilarni boshqarish"</string>
     <string name="quick_settings_done" msgid="2163641301648855793">"Tayyor"</string>
     <string name="quick_settings_close_user_panel" msgid="5599724542275896849">"Yopish"</string>
     <string name="quick_settings_connected" msgid="3873605509184830379">"Ulangan"</string>
@@ -830,12 +830,12 @@
     <string name="keyboard_shortcut_a11y_filter_input" msgid="4589316004510335529">"Kirish bilan bogʻliq tezkor tugmalarni koʻrsatiladi"</string>
     <string name="keyboard_shortcut_a11y_filter_open_apps" msgid="6175417687221004059">"Ilovalarni ochuvchi tezkor tugmalar koʻrsatiladi"</string>
     <string name="keyboard_shortcut_a11y_filter_current_app" msgid="7944592357493737911">"Joriy ilova uchun tezkor tugmalar koʻrsatiladi"</string>
-    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Bildirishnomalarni ochish"</string>
+    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Bildirishnomalarni koʻrish"</string>
     <string name="group_system_full_screenshot" msgid="5742204844232667785">"Skrinshot olish"</string>
     <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Yorliqlarni ochish"</string>
     <string name="group_system_go_back" msgid="2730322046244918816">"Orqaga"</string>
-    <string name="group_system_access_home_screen" msgid="4130366993484706483">"Bosh ekranni ochish"</string>
-    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Oxirgi ilovalarni ochish"</string>
+    <string name="group_system_access_home_screen" msgid="4130366993484706483">"Bosh ekranga chiqish"</string>
+    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Oxirgi ilovalarni koʻrish"</string>
     <string name="group_system_cycle_forward" msgid="5478663965957647805">"Oxirgi ilovalarni oldinga varaqlash"</string>
     <string name="group_system_cycle_back" msgid="8194102916946802902">"Oxirgi ilovalarni orqaga varaqlash"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Ilovalar roʻyxatini ochish"</string>
@@ -1059,7 +1059,7 @@
     <string name="accessibility_magnification_zoom" msgid="4222088982642063979">"Masshtab"</string>
     <string name="accessibility_magnification_medium" msgid="6994632616884562625">"Oʻrtacha"</string>
     <string name="accessibility_magnification_small" msgid="8144502090651099970">"Kichik"</string>
-    <string name="accessibility_magnification_large" msgid="6602944330021308774">"Yirik"</string>
+    <string name="accessibility_magnification_large" msgid="6602944330021308774">"Katta"</string>
     <string name="accessibility_magnification_fullscreen" msgid="5043514702759201964">"Butun ekran"</string>
     <string name="accessibility_magnification_done" msgid="263349129937348512">"Tayyor"</string>
     <string name="accessibility_magnifier_edit" msgid="1522877239671820636">"Tahrirlash"</string>
@@ -1289,7 +1289,7 @@
     <string name="clipboard_image_preview" msgid="2156475174343538128">"Rasmga razm solish"</string>
     <string name="clipboard_edit" msgid="4500155216174011640">"tahrir"</string>
     <string name="add" msgid="81036585205287996">"Kiritish"</string>
-    <string name="manage_users" msgid="1823875311934643849">"Foyd-ni boshqarish"</string>
+    <string name="manage_users" msgid="1823875311934643849">"Foydalanuvchilarni boshqarish"</string>
     <string name="drag_split_not_supported" msgid="7173481676120546121">"Bu bildirishnoma ikkiga ajratilgan ekranda ishlamaydi."</string>
     <string name="dream_overlay_location_active" msgid="6484763493158166618">"Joylashuv faol"</string>
     <string name="dream_overlay_status_bar_wifi_off" msgid="4497069245055003582">"Wi‑Fi ishlamayapti"</string>
@@ -1334,7 +1334,7 @@
     <string name="rear_display_accessibility_folded_animation" msgid="1538121649587978179">"Buklanadigan qurilma ochilmoqda"</string>
     <string name="rear_display_accessibility_unfolded_animation" msgid="1946153682258289040">"Buklanadigan qurilma aylantirilmoqda"</string>
     <string name="quick_settings_rotation_posture_folded" msgid="2430280856312528289">"buklangan"</string>
-    <string name="quick_settings_rotation_posture_unfolded" msgid="6372316273574167114">"buklanmagan"</string>
+    <string name="quick_settings_rotation_posture_unfolded" msgid="6372316273574167114">"yoyib ochilgan"</string>
     <string name="rotation_tile_with_posture_secondary_label_template" msgid="7648496484163318886">"%1$s / %2$s"</string>
     <string name="stylus_battery_low_percentage" msgid="2564243323894629626">"Stilus batareyasi: <xliff:g id="PERCENTAGE">%s</xliff:g>"</string>
     <string name="stylus_battery_low_subtitle" msgid="3583843128908823273">"Stilusni quvvat manbaiga ulang"</string>
@@ -1387,11 +1387,11 @@
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Oxirgi ilovalar"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Ekranni ikkiga ajratish"</string>
     <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Kiritish"</string>
-    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Ilova yorliqlari"</string>
+    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Ilovalar"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Joriy ilova"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Qulayliklar"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Tezkor tugmalar"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Tezkor tugmalar qidiruvi"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Qidiruv"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Hech narsa topilmadi"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Yigʻish belgisi"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Yoyish belgisi"</string>
@@ -1411,7 +1411,7 @@
     <string name="touchpad_back_gesture_guidance" msgid="6263750214998421587">"Ortga qaytish uchun sensorli panelda uchta barmoqni chapga yoki oʻngga suring.\n\nBuning uchun Action + ESC tezkor tugmalaridan ham foydalanishingiz mumkin."</string>
     <string name="touchpad_back_gesture_success_title" msgid="7240576648330612171">"Barakalla!"</string>
     <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Ortga qaytish ishorasi darsini tamomladingiz."</string>
-    <string name="touchpad_home_gesture_action_title" msgid="8885107349719257882">"Boshiga"</string>
+    <string name="touchpad_home_gesture_action_title" msgid="8885107349719257882">"Boshiga qaytish"</string>
     <string name="touchpad_home_gesture_guidance" msgid="3043931356096731966">"Istalgan vaqtda bosh ekranga oʻtish uchun ekranning pastidan uchta barmoq bilan tepaga suring."</string>
     <string name="touchpad_home_gesture_success_title" msgid="3778407003948209795">"Yaxshi!"</string>
     <string name="touchpad_home_gesture_success_body" msgid="2404031094918807067">"Bosh ekranni ochish ishorasi darsini tamomladingiz."</string>
@@ -1444,8 +1444,8 @@
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"Amal tugmasini istalganda bosing. Boshqa ishoralar bilan tanishish uchun bosing."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Juda xira endi yorqinlik slayderida joylashgan"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Endi yorqinlik darajasini yanada pasaytirish orqali ekranni yanada xiralashtirishingiz mumkin.\n\nBu funksiya yorqinlik slayderiga kiritilgani uchun \"juda xira\" buyruqlari olib tashlanmoqda."</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Juda xira buyruqlarini olib tashlash"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Juda xira buyruqlari olib tashlandi"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"“Juda xira” buyruqlarini olib tashlash"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"“Juda xira” buyruqlari olib tashlandi"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Aloqa"</string>
     <string name="qs_edit_mode_category_accessibility" msgid="7969091385071475922">"Qulayliklar"</string>
     <string name="qs_edit_mode_category_utilities" msgid="8123080090108420095">"Vositalar"</string>
