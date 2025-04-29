@@ -115,7 +115,7 @@
     <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Pantaila osoa grabatzen ari zarenean, pantailan agertzen den guztia grabatzen da. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
     <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Aplikazio bat grabatzen ari zarenean, aplikazio horretan agertzen den edo bertan erreproduzitzen ari den guztia grabatzen da. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Grabatu pantaila"</string>
-    <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Aukeratu zer aplikazio grabatu nahi duzun"</string>
+    <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Aukeratu zein aplikazio grabatu nahi duzun"</string>
     <string name="screenrecord_audio_label" msgid="6183558856175159629">"Grabatu audioa"</string>
     <string name="screenrecord_device_audio_label" msgid="9016927171280567791">"Gailuaren audioa"</string>
     <string name="screenrecord_device_audio_description" msgid="4922694220572186193">"Gailuko soinuak; adibidez, musika, deiak eta tonuak"</string>
@@ -224,7 +224,7 @@
     <string name="fingerprint_re_enroll_dialog_title" msgid="3526033128113925780">"Konfiguratu hatz-marka bidez desblokeatzeko eginbidea"</string>
     <string name="fingerprint_re_enroll_dialog_content" msgid="4866561176695984879">"Hatz-marka bidez desblokeatzeko eginbidea berriro konfiguratzeko, oraingo hatz-markaren irudiak eta ereduak ezabatu egingo dira lehendabizi.\n\nHaiek ezabatuz gero, hatz-marka bidez desblokeatzeko eginbidea berriro konfiguratu beharko duzu telefonoa hatz-marka erabilita desblokeatzeko edo zeu zarela egiaztatzeko."</string>
     <string name="fingerprint_re_enroll_dialog_content_singular" msgid="3083663339787381218">"Hatz-marka bidez desblokeatzeko eginbidea berriro konfiguratzeko, oraingo hatz-markaren irudiak eta eredua ezabatu egingo dira lehendabizi.\n\nHaiek ezabatuz gero, hatz-marka bidez desblokeatzeko eginbidea berriro konfiguratu beharko duzu telefonoa hatz-marka erabilita desblokeatzeko edo zeu zarela egiaztatzeko."</string>
-    <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Ezin izan da konfiguratu hatz-marka bidez desblokeatzeko eginbidea. Berriro saiatzeko, joan ezarpenetara."</string>
+    <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Ezin izan da konfiguratu hatz-marka bidez desblokeatzeko eginbidea. Berriro saiatzeko, joan Ezarpenak atalera."</string>
     <string name="face_re_enroll_notification_title" msgid="1850838867718410520">"Konfiguratu berriro aurpegi bidez desblokeatzeko eginbidea"</string>
     <string name="face_re_enroll_notification_name" msgid="7384545252206120659">"Aurpegi bidez desblokeatzea"</string>
     <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Konfiguratu aurpegi bidez desblokeatzeko eginbidea"</string>
@@ -375,8 +375,8 @@
     <string name="quick_settings_dark_mode_secondary_label_until_sunrise" msgid="4404885070316716472">"Egunsentira arte"</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at" msgid="5128758823486361279">"Aktibatze-ordua: <xliff:g id="TIME">%s</xliff:g>"</string>
     <string name="quick_settings_dark_mode_secondary_label_until" msgid="2289774641256492437">"Desaktibatze-ordua: <xliff:g id="TIME">%s</xliff:g>"</string>
-    <string name="quick_settings_dark_mode_secondary_label_on_at_bedtime" msgid="2274300599408864897">"Aktibatuta lo egiteko garaian"</string>
-    <string name="quick_settings_dark_mode_secondary_label_until_bedtime_ends" msgid="1790772410777123685">"Lo egiteko garaia amaitzen den arte"</string>
+    <string name="quick_settings_dark_mode_secondary_label_on_at_bedtime" msgid="2274300599408864897">"Aktibatuta lotara joateko garaian"</string>
+    <string name="quick_settings_dark_mode_secondary_label_until_bedtime_ends" msgid="1790772410777123685">"Lotara joateko garaia amaitzen den arte"</string>
     <string name="quick_settings_nfc_label" msgid="1054317416221168085">"NFCa"</string>
     <string name="quick_settings_nfc_off" msgid="3465000058515424663">"Desgaituta dago NFC"</string>
     <string name="quick_settings_nfc_on" msgid="1004976611203202230">"Gaituta dago NFC"</string>
@@ -443,7 +443,7 @@
     <string name="zen_mode_set_up" msgid="7457957033034460064">"Konfiguratu"</string>
     <string name="zen_mode_no_manual_invocation" msgid="1769975741344633672">"Kudeatu ezarpenetan"</string>
     <string name="zen_mode_active_modes" msgid="1625850411578488856">"{count,plural, =0{Ez dago modurik aktibo}=1{\"{mode}\" aktibo dago}other{# modu aktibo daude}}"</string>
-    <string name="zen_priority_introduction" msgid="3159291973383796646">"Gailuak ez du egingo ez soinurik ez dardararik, baina alarmak, gertaera eta abisuen tonuak, eta aukeratzen dituzun deitzaileen dei-tonuak joko ditu. Bestalde, zuk erreproduzitutako guztia entzungo duzu, besteak beste, musika, bideoak eta jokoak."</string>
+    <string name="zen_priority_introduction" msgid="3159291973383796646">"Gailuak ez du egingo ez soinurik ez dardararik, baina alarmak, gertaera eta gogorarazpenen tonuak, eta aukeratzen dituzun deitzaileen dei-tonuak joko ditu. Bestalde, zuk erreproduzitutako guztia entzungo duzu, besteak beste, musika, bideoak eta jokoak."</string>
     <string name="zen_alarms_introduction" msgid="3987266042682300470">"Gailuak ez du egingo ez soinurik ez dardararik, baina alarmak joko ditu. Hala ere, zuk erreproduzitutako guztia entzun ahal izango duzu, besteak beste, musika, bideoak eta jokoak."</string>
     <string name="zen_priority_customize_button" msgid="4119213187257195047">"Pertsonalizatu"</string>
     <string name="zen_silence_introduction_voice" msgid="853573681302712348">"Soinu eta dardara GUZTIAK blokeatuko dira, besteak beste, alarmak, musika, bideoak eta jokoak. Telefono-deiak egiteko aukera izaten jarraituko duzu."</string>
@@ -545,14 +545,14 @@
     <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"Aplikazio bat partekatzen ari zarenean, aplikazio horretan agertzen den edo bertan erreproduzitzen ari den guztia ikusi dezake <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> aplikazioak. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"Partekatu pantaila"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> aplikazioak aukera desgaitu du"</string>
-    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Aukeratu zer aplikazio partekatu nahi duzun"</string>
+    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Aukeratu zein aplikazio partekatu nahi duzun"</string>
     <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"Pantaila igorri nahi duzu?"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Igorri aplikazio bat"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Igorri pantaila osoa"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Pantaila osoa igortzen ari zarenean, pantailan duzun guztia dago ikusgai. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Aplikazio bat igortzen ari zarenean, aplikazio horretan agertzen den edo bertan erreproduzitzen ari den guztia dago ikusgai. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Aplikazio bat igortzen ari zarenean, aplikazio horretan agertzen edo erreproduzitzen den guztia dago ikusgai. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"Igorri pantaila"</string>
-    <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"Aukeratu zer aplikazio igorri nahi duzun"</string>
+    <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"Aukeratu zein aplikazio igorri nahi duzun"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"Partekatzen hasi nahi duzu?"</string>
     <string name="media_projection_entry_generic_permission_dialog_warning_entire_screen" msgid="5407906851409410209">"Edukia partekatzen, grabatzen edo igortzen ari zarenean, pantailan ikusgai dagoen edo gailuan erreproduzitzen ari den guztia atzi dezake Android-ek. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
     <string name="media_projection_entry_generic_permission_dialog_warning_single_app" msgid="3454859977888159495">"Aplikazio bat partekatzen, grabatzen edo igortzen ari zarenean, aplikazio horretan ikusgai dagoen edo bertan erreproduzitzen ari den guztia atzi dezake Android-ek. Beraz, kontuz ibili pasahitzekin, ordainketen xehetasunekin, mezuekin, argazkiekin, audioekin eta bideoekin, besteak beste."</string>
@@ -1436,8 +1436,8 @@
     <string name="redacted_notification_single_line_text" msgid="8684166405005242945">"Desblokeatu ikusteko"</string>
     <string name="back_edu_notification_title" msgid="5624780717751357278">"Erabili ukipen-panela atzera egiteko"</string>
     <string name="back_edu_notification_content" msgid="2497557451540954068">"Pasatu 3 hatz ezkerrera edo eskuinera. Sakatu keinu gehiago ikasteko."</string>
-    <string name="home_edu_notification_title" msgid="6097902076909654045">"Erabili ukipen-panela hasierako pantailara joateko"</string>
-    <string name="home_edu_notification_content" msgid="6631697734535766588">"Pasatu 3 hatz. Sakatu keinu gehiago ikasteko."</string>
+    <string name="home_edu_notification_title" msgid="6097902076909654045">"Erabili ukipen-panela orri nagusira joateko"</string>
+    <string name="home_edu_notification_content" msgid="6631697734535766588">"Pasatu 3 hatz gora. Sakatu keinu gehiago ikasteko."</string>
     <string name="overview_edu_notification_title" msgid="1265824157319562406">"Erabili ukipen-panela azkenaldiko aplikazioak ikusteko"</string>
     <string name="overview_edu_notification_content" msgid="3578204677648432500">"Pasatu 3 hatz gora eta eduki sakatuta. Sakatu keinu gehiago ikasteko."</string>
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"Erabili teklatua aplikazio guztiak ikusteko"</string>

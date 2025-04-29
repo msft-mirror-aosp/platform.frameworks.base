@@ -33,7 +33,7 @@
     <string name="battery_saver_dismiss_action" msgid="7199342621040014738">"Не, дзякуй"</string>
     <string name="standard_battery_saver_text" msgid="6855876746552374119">"Стандартны рэжым"</string>
     <string name="extreme_battery_saver_text" msgid="8455810156739865335">"Максімальная"</string>
-    <string name="status_bar_settings_auto_rotation" msgid="8329080442278431708">"Аўтаматычны паварот экрана"</string>
+    <string name="status_bar_settings_auto_rotation" msgid="8329080442278431708">"Аўтапаварот экрана"</string>
     <string name="usb_device_permission_prompt" msgid="4414719028369181772">"Дазволіць праграме <xliff:g id="APPLICATION">%1$s</xliff:g> доступ да прылады <xliff:g id="USB_DEVICE">%2$s</xliff:g>?"</string>
     <string name="usb_device_permission_prompt_warn" msgid="2309129784984063656">"Даць праграме \"<xliff:g id="APPLICATION">%1$s</xliff:g>\" доступ да прылады \"<xliff:g id="USB_DEVICE">%2$s</xliff:g>\"?\nУ гэтай праграмы няма дазволу на запіс, аднак яна зможа запісваць аўдыя праз гэту прыладу USB."</string>
     <string name="usb_audio_device_permission_prompt_title" msgid="4221351137250093451">"Дазволіць праграме \"<xliff:g id="APPLICATION">%1$s</xliff:g>\" доступ да прылады \"<xliff:g id="USB_DEVICE">%2$s</xliff:g>\"?"</string>
@@ -319,7 +319,7 @@
     <string name="quick_settings_bluetooth_secondary_label_hearing_aids" msgid="5553051568867097111">"Слыхавыя апараты"</string>
     <string name="quick_settings_bluetooth_secondary_label_transient" msgid="3882884317600669650">"Уключэнне…"</string>
     <string name="quick_settings_rotation_unlocked_label" msgid="2359922767950346112">"Аўтапаварот"</string>
-    <string name="accessibility_quick_settings_rotation" msgid="4800050198392260738">"Аўтаматычны паварот экрана"</string>
+    <string name="accessibility_quick_settings_rotation" msgid="4800050198392260738">"Аўтапаварот экрана"</string>
     <string name="quick_settings_location_label" msgid="2621868789013389163">"Месцазнаходжанне"</string>
     <string name="quick_settings_screensaver_label" msgid="1495003469366524120">"Экранная застаўка"</string>
     <string name="quick_settings_camera_label" msgid="5612076679385269339">"Доступ да камеры"</string>
@@ -450,7 +450,7 @@
     <string name="zen_silence_introduction" msgid="6117517737057344014">"Гэта заблакіруе ЎСЕ гукі і вібрацыі, у тым ліку ад будзільнікаў, музыкі, відэа і гульняў."</string>
     <string name="notification_tap_again" msgid="4477318164947497249">"Дакраніцеся яшчэ раз, каб адкрыць"</string>
     <string name="tap_again" msgid="1315420114387908655">"Націсніце яшчэ раз"</string>
-    <string name="keyguard_unlock" msgid="8031975796351361601">"Каб адкрыць, прагарніце ўверх"</string>
+    <string name="keyguard_unlock" msgid="8031975796351361601">"Каб адкрыць, правядзіце пальцам уверх"</string>
     <string name="keyguard_unlock_press" msgid="9140109453735019209">"Каб адкрыць, націсніце значок разблакіроўкі"</string>
     <string name="keyguard_face_successful_unlock_swipe" msgid="6180997591385846073">"Твар распазнаны. Каб адкрыць, прагарніце ўверх."</string>
     <string name="keyguard_face_successful_unlock_press" msgid="25520941264602588">"Твар распазнаны. Для адкрыцця націсніце значок разблакіроўкі"</string>
@@ -1443,7 +1443,7 @@
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"Выкарыстайце клавіятуру для прагляду ўсіх праграм"</string>
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"Можна націснуць на клавішу дзеяння ў любы момант. Націсніце, каб азнаёміцца з іншымі жэстамі."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Цяпер кіраваць дадатковым памяншэннем яркасці можна з дапамогай паўзунка яркасці"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Цяпер вы можаце дадаткова зацямніць экран, яшчэ больш панізіўшы ўзровень яркасці.\n\nПаколькі гэта функцыя цяпер уваходзіць у склад паўзунка яркасці, хуткія каманды для дадатковага памяншэння яркасці былі выдалены."</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Цяпер вы можаце дадаткова зацямніць экран, яшчэ больш панізіўшы ўзровень яркасці.\n\nПаколькі гэта функцыя цяпер уваходзіць у склад паўзунка яркасці, хуткія каманды для дадатковага памяншэння яркасці будуць выдалены."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Выдаліць хуткія каманды для дадатковага памяншэння яркасці"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Хуткія каманды для дадатковага памяншэння яркасці выдалены"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Магчымасць падключэння"</string>

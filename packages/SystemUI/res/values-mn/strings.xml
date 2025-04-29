@@ -528,7 +528,7 @@
     <string name="user_limit_reached_message" msgid="1070703858915935796">"{count,plural, =1{Зөвхөн нэг хэрэглэгч үүсгэх боломжтой.}other{Та # хүртэлх хэрэглэгч нэмж болно.}}"</string>
     <string name="user_remove_user_title" msgid="9124124694835811874">"Хэрэглэгчийг устгах уу?"</string>
     <string name="user_remove_user_message" msgid="6702834122128031833">"Энэ хэрэглэгчийн бүх апп болон мэдээлэл устах болно."</string>
-    <string name="user_remove_user_remove" msgid="8387386066949061256">"Арилгах"</string>
+    <string name="user_remove_user_remove" msgid="8387386066949061256">"Хасах"</string>
     <string name="media_projection_dialog_title" msgid="3316063622495360646">"<xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g>-тай бичлэг хийж эсвэл дамжуулж эхлэх үү?"</string>
     <string name="media_projection_dialog_warning" msgid="1303664408388363598">"<xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> нь бичлэг хийх эсвэл дамжуулах үед таны дэлгэцэд харуулсан эсвэл таны төхөөрөмжөөс тоглуулсан бүх мэдээлэлд хандах эрхтэй байна. Үүнд нууц үг, төлбөрийн дэлгэрэнгүй, зураг, мессеж болон таны тоглуулдаг аудио зэрэг мэдээлэл багтана."</string>
     <string name="media_projection_sys_service_dialog_title" msgid="3751133258891897878">"Бичлэг хийж эсвэл дамжуулж эхлэх үү?"</string>
@@ -841,7 +841,7 @@
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Аппуудын жагсаалтыг нээх"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"Тохиргоог нээх"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Туслахыг нээх"</string>
-    <string name="group_system_lock_screen" msgid="7391191300363416543">"Түгжээтэй дэлгэц"</string>
+    <string name="group_system_lock_screen" msgid="7391191300363416543">"Дэлгэц түгжих"</string>
     <string name="group_system_quick_memo" msgid="3764560265935722903">"Тэмдэглэл хөтлөх"</string>
     <string name="keyboard_shortcut_group_system_multitasking" msgid="6967816258924795558">"Олон ажил зэрэг хийх"</string>
     <string name="system_multitasking_rhs" msgid="8714224917276297810">"Одоогийн аппыг баруун талд байгаагаар дэлгэцийг хуваахыг ашиглах"</string>

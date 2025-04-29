@@ -365,7 +365,7 @@
     <string name="quick_settings_work_mode_label" msgid="6440531507319809121">"Aplikacionet e punës"</string>
     <string name="quick_settings_work_mode_paused_state" msgid="6681788236383735976">"Vendosur në pauzë"</string>
     <string name="quick_settings_night_display_label" msgid="8180030659141778180">"Drita e natës"</string>
-    <string name="quick_settings_night_secondary_label_on_at_sunset" msgid="3358706312129866626">"Aktiv në perëndim"</string>
+    <string name="quick_settings_night_secondary_label_on_at_sunset" msgid="3358706312129866626">"Aktive në perëndim"</string>
     <string name="quick_settings_night_secondary_label_until_sunrise" msgid="4063448287758262485">"Deri në lindje të diellit"</string>
     <string name="quick_settings_night_secondary_label_on_at" msgid="3584738542293528235">"Aktive në <xliff:g id="TIME">%s</xliff:g>"</string>
     <string name="quick_settings_secondary_label_until" msgid="1883981263191927372">"Deri në <xliff:g id="TIME">%s</xliff:g>"</string>
@@ -1442,10 +1442,10 @@
     <string name="overview_edu_notification_content" msgid="3578204677648432500">"Rrëshqit shpejt lart dhe mbaj shtypur me tre gishta. Trokit për të mësuar më shumë gjeste."</string>
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"Përdor tastierën për të shikuar të gjitha aplikacionet"</string>
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"Shtyp tastin e veprimit në çdo kohë. Trokit për të mësuar më shumë gjeste."</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Modaliteti \"Shumë më i zbehtë\" tani është pjesë e rrëshqitësit të ndriçimit"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Tani mund ta bësh ekranin shumë më të zbehtë duke e ulur nivelin e ndriçimit edhe më tej.\n\nDuke qenë se kjo veçori tani është pjesë e rrëshqitësit të ndriçimit, shkurtoret e modalitetit \"Shumë më i zbehtë\" janë hequr."</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Hiq shkurtoret e modalitetit \"Shumë më i zbehtë\""</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Shkurtoret e modalitetit \"Shumë më i zbehtë\" u hoqën"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Veçoria \"Shumë më i zbehtë\" tani është pjesë e rrëshqitësit të ndriçimit"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Tani mund ta bësh ekranin shumë më të zbehtë duke e ulur nivelin e ndriçimit edhe më tej.\n\nDuke qenë se kjo veçori tani është pjesë e rrëshqitësit të ndriçimit, shkurtoret e veçorisë \"Shumë më i zbehtë\" janë hequr."</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Hiq shkurtoret e veçorisë \"Shumë më i zbehtë\""</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Shkurtoret e veçorisë \"Shumë më i zbehtë\" u hoqën"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Lidhshmëria"</string>
     <string name="qs_edit_mode_category_accessibility" msgid="7969091385071475922">"Qasshmëria"</string>
     <string name="qs_edit_mode_category_utilities" msgid="8123080090108420095">"Aplikacione utilitare"</string>

@@ -550,7 +550,7 @@
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"投放一個應用程式"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"投放整個畫面"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"當你投放整個畫面時，畫面上的所有內容都會顯示出來。因此，請謹慎處理密碼、付款資料、訊息、相片和影音內容等資訊。"</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"當你投放應用程式畫面時，該應用程式呈現或播放的所有內容都會顯示出來。因此，請謹慎處理密碼、付款資料、訊息、相片和影音內容等資訊。"</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"投放應用程式畫面時，該應用程式呈現或播放的所有內容都會投放出來。因此，請謹慎處理密碼、付款資料、訊息、相片和影音內容等資訊。"</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"投放螢幕"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"選擇要投放的應用程式"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"要開始分享嗎？"</string>

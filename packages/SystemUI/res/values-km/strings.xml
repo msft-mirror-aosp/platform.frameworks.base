@@ -514,7 +514,7 @@
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"ធាតុ​ក្រាហ្វិកលើអេក្រង់ចាក់សោ"</string>
     <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"ដើម្បីបើកកម្មវិធីដោយប្រើធាតុ​ក្រាហ្វិក អ្នកនឹងត្រូវផ្ទៀងផ្ទាត់ថាជាអ្នក។ ទន្ទឹមនឹងនេះ សូមចងចាំថា នរណាក៏អាចមើលធាតុក្រាហ្វិកបាន សូម្បីពេលថេប្លេតរបស់អ្នកជាប់សោក៏ដោយ។ ធាតុ​ក្រាហ្វិកមួយចំនួនប្រហែលមិនត្រូវបានរចនាឡើងសម្រាប់អេក្រង់ចាក់សោរបស់អ្នកទេ និងមិនមានសុវត្ថិភាពឡើយ បើបញ្ចូលទៅទីនេះ។"</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"យល់ហើយ"</string>
-    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"ប្ដូរ​អ្នក​ប្រើ"</string>
+    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"ប្ដូរ​អ្នក​ប្រើប្រាស់"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"ម៉ឺនុយ​ទាញចុះ"</string>
     <string name="guest_exit_guest_dialog_message" msgid="8183450985628495709">"កម្មវិធី និងទិន្នន័យ​ទាំងអស់​ក្នុង​វគ្គ​នេះ​នឹង​ត្រូវ​លុប។"</string>
     <string name="guest_wipe_session_title" msgid="7147965814683990944">"សូម​ស្វាគមន៍​ការ​ត្រឡប់​មកវិញ, ភ្ញៀវ!"</string>
@@ -655,7 +655,7 @@
     <string name="screen_pinning_negative" msgid="6882816864569211666">"ទេ អរគុណ"</string>
     <string name="screen_pinning_start" msgid="7483998671383371313">"បានខ្ទាស់​កម្មវិធី"</string>
     <string name="screen_pinning_exit" msgid="4553787518387346893">"បានដកខ្ទាស់​កម្មវិធី"</string>
-    <string name="stream_voice_call" msgid="7468348170702375660">"ហៅ"</string>
+    <string name="stream_voice_call" msgid="7468348170702375660">"ការហៅទូរសព្ទ"</string>
     <string name="stream_system" msgid="7663148785370565134">"ប្រព័ន្ធ"</string>
     <string name="stream_ring" msgid="7550670036738697526">"រោទ៍"</string>
     <string name="stream_music" msgid="2188224742361847580">"មេឌៀ"</string>
@@ -790,7 +790,7 @@
     <string name="keyboard_key_home" msgid="3734400625170020657">"Home"</string>
     <string name="keyboard_key_back" msgid="4185420465469481999">"Back"</string>
     <string name="keyboard_key_tab" msgid="4592772350906496730">"Tab"</string>
-    <string name="keyboard_key_space" msgid="6980847564173394012">"Space"</string>
+    <string name="keyboard_key_space" msgid="6980847564173394012">"ដកឃ្លា"</string>
     <string name="keyboard_key_enter" msgid="8633362970109751646">"Enter"</string>
     <string name="keyboard_key_backspace" msgid="4095278312039628074">"Backspace"</string>
     <string name="keyboard_key_media_play_pause" msgid="8389984232732277478">"Play/Pause"</string>
@@ -1085,7 +1085,7 @@
     <string name="controls_number_of_favorites" msgid="4481806788981836355">"{count,plural, =1{បានបញ្ចូល​ការគ្រប់គ្រង #។}other{បានបញ្ចូល​ការគ្រប់គ្រង #។}}"</string>
     <string name="controls_removed" msgid="3731789252222856959">"បានដកចេញ"</string>
     <string name="controls_panel_authorization_title" msgid="267429338785864842">"បញ្ចូល <xliff:g id="APPNAME">%s</xliff:g> ឬ?"</string>
-    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> អាចជ្រើសរើសឱ្យ​ការគ្រប់គ្រង និងខ្លឹមសារណាខ្លះ​បង្ហាញនៅទីនេះ។"</string>
+    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> អាចជ្រើសរើស​ការគ្រប់គ្រង និងខ្លឹមសារដែល​បង្ហាញនៅទីនេះ។"</string>
     <string name="controls_panel_remove_app_authorization" msgid="5920442084735364674">"ដកការគ្រប់គ្រងសម្រាប់ <xliff:g id="APPNAME">%s</xliff:g> ចេញឬ?"</string>
     <string name="accessibility_control_favorite" msgid="8694362691985545985">"បានដាក់ជា​សំណព្វ"</string>
     <string name="accessibility_control_favorite_position" msgid="54220258048929221">"បានដាក់ជា​សំណព្វ ទីតាំង​ទី <xliff:g id="NUMBER">%d</xliff:g>"</string>
@@ -1383,15 +1383,15 @@
     <string name="shortcut_helper_category_system" msgid="462110876978937359">"ប្រព័ន្ធ"</string>
     <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"ការគ្រប់គ្រង​ប្រព័ន្ធ"</string>
     <string name="shortcut_helper_category_system_apps" msgid="6001757545472556810">"កម្មវិធី​ប្រព័ន្ធ"</string>
-    <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"ការដំណើរការបានច្រើន"</string>
+    <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"ការធ្វើកិច្ចការច្រើន"</string>
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"កម្មវិធី​ថ្មីៗ"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"មុខងារ​បំបែកអេក្រង់"</string>
-    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"ធាតុចូល"</string>
+    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"វិធីបញ្ចូល"</string>
     <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"ផ្លូវកាត់​កម្មវិធី"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"កម្មវិធីបច្ចុប្បន្ន"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"ភាពងាយស្រួល"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"ផ្លូវកាត់​ក្ដារ​ចុច"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"ផ្លូវ​កាត់ការស្វែងរក"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"ស្វែងរកផ្លូវ​កាត់"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"គ្មាន​លទ្ធផល​ស្វែងរក​ទេ"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"រូបតំណាង \"បង្រួម\""</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"រូបតំណាង \"ពង្រីក\""</string>
