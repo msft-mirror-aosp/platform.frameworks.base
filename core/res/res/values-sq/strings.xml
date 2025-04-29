@@ -1663,7 +1663,7 @@
     <string name="default_audio_route_name_headphones" msgid="6954070994792640762">"Kufjet"</string>
     <string name="default_audio_route_name_usb" msgid="895668743163316932">"USB"</string>
     <string name="default_audio_route_category_name" msgid="5241740395748134483">"Sistemi"</string>
-    <string name="bluetooth_a2dp_audio_route_name" msgid="4214648773120426288">"Audioja e \"bluetooth-it\""</string>
+    <string name="bluetooth_a2dp_audio_route_name" msgid="4214648773120426288">"Audioja me Bluetooth"</string>
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Ekran wireless"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Transmeto"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Lidhu me pajisjen"</string>
@@ -2185,7 +2185,7 @@
     <string name="bluetooth_airplane_mode_toast" msgid="2066399056595768554">"Bluetooth-i do të qëndrojë i aktivizuar gjatë modalitetit të aeroplanit"</string>
     <string name="car_loading_profile" msgid="8219978381196748070">"Po ngarkohet"</string>
     <string name="file_count" msgid="3220018595056126969">"{count,plural, =1{{file_name} + # skedar}other{{file_name} + # skedarë}}"</string>
-    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Nuk ka persona të rekomanduar për ta ndarë"</string>
+    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Nuk ka persona të rekomanduar për të ndarë"</string>
     <string name="chooser_all_apps_button_label" msgid="3230427756238666328">"Lista e aplikacioneve"</string>
     <string name="usb_device_resolve_prompt_warn" msgid="325871329788064199">"Këtij aplikacioni nuk i është dhënë leje për regjistrim, por mund të regjistrojë audio përmes kësaj pajisjeje USB."</string>
     <string name="accessibility_system_action_home_label" msgid="3234748160850301870">"Ekrani bazë"</string>

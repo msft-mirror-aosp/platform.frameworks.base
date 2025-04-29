@@ -354,7 +354,7 @@
     <string name="capability_title_canRequestFilterKeyEvents" msgid="2772371671541753254">"మీరు టైప్ చేస్తున్న వచనాన్ని పరిశీలిస్తుంది"</string>
     <string name="capability_desc_canRequestFilterKeyEvents" msgid="2381315802405773092">"క్రెడిట్ కార్డు నంబర్‌లు మరియు పాస్‌వర్డ్‌ల వంటి వ్యక్తిగత డేటాను కలిగి ఉంటుంది."</string>
     <string name="capability_title_canControlMagnification" msgid="7701572187333415795">"డిస్‌ప్లే మ్యాగ్నిఫికేషన్‌ను నియంత్రించండి"</string>
-    <string name="capability_desc_canControlMagnification" msgid="2206586716709254805">"డిస్‌ప్లే జూమ్ స్థాయి మరియు స్థానాన్ని నియంత్రిస్తుంది."</string>
+    <string name="capability_desc_canControlMagnification" msgid="2206586716709254805">"డిస్‌ప్లే జూమ్ స్థాయి మరియు లొకేషన్‌ని నియంత్రిస్తుంది."</string>
     <string name="capability_title_canPerformGestures" msgid="9106545062106728987">"సంజ్ఞలను చేయడం"</string>
     <string name="capability_desc_canPerformGestures" msgid="6619457251067929726">"నొక్కగలరు, స్వైప్ చేయగలరు, స్క్రీన్‌పై రెండు వేళ్లను ఉంచి ఆ వేళ్లను దగ్గరకు లేదా దూరానికి లాగగలరు మరియు ఇతర సంజ్ఞలను చేయగలరు."</string>
     <string name="capability_title_canCaptureFingerprintGestures" msgid="1189053104594608091">"వేలిముద్ర సంజ్ఞలు"</string>
@@ -608,8 +608,8 @@
     <string name="permdesc_bluetooth_connect" product="default" msgid="4546016548795544617">"పెయిర్ చేసిన బ్లూటూత్ పరికరాలకు కనెక్ట్ అవ్వడానికి యాప్‌ను అనుమతిస్తుంది"</string>
     <string name="permlab_bluetooth_advertise" msgid="2781147747928853177">"సమీపంలోని బ్లూటూత్ పరికరాలలో అడ్వర్టయిజ్ చేయండి"</string>
     <string name="permdesc_bluetooth_advertise" product="default" msgid="6085174451034210183">"సమీపంలోని బ్లూటూత్ పరికరాలలో అడ్వర్టయిజ్ చేయడానికి యాప్‌కు అనుమతిని ఇస్తుంది"</string>
-    <string name="permlab_uwb_ranging" msgid="8141915781475770665">"సమీపంలోని అల్ట్రా-వైడ్‌బ్యాండ్ పరికరాల మధ్య సాపేక్ష స్థానాన్ని నిర్ణయించండి"</string>
-    <string name="permdesc_uwb_ranging" msgid="2519723069604307055">"సమీపంలోని అల్ట్రా-వైడ్‌బ్యాండ్ పరికరాల మధ్య సాపేక్ష స్థానాన్ని నిర్ణయించడానికి యాప్‌ను అనుమతించండి"</string>
+    <string name="permlab_uwb_ranging" msgid="8141915781475770665">"సమీపంలోని అల్ట్రా-వైడ్‌బ్యాండ్ పరికరాల మధ్య సంబంధిత పొజిషన్‌ను నిర్ణయించండి"</string>
+    <string name="permdesc_uwb_ranging" msgid="2519723069604307055">"సమీపంలోని అల్ట్రా-వైడ్‌బ్యాండ్ పరికరాల మధ్య సంబంధిత పొజిషన్‌ను నిర్ణయించడానికి యాప్‌ను అనుమతించండి"</string>
     <string name="permlab_nearby_wifi_devices" msgid="392774237063608500">"సమీపంలోని Wi-Fi పరికరాలతో ఇంటరాక్ట్ చేస్తుంది"</string>
     <string name="permdesc_nearby_wifi_devices" msgid="3054307728646332906">"అడ్వర్టయిజ్, కనెక్ట్ చేయడానికి, సమీపంలోని Wi-Fi పరికరాల సంబంధిత పొజిషన్‌ను నిర్ణయించడానికి యాప్‌ను అనుమతిస్తుంది"</string>
     <string name="permlab_preferredPaymentInfo" msgid="5274423844767445054">"ప్రాధాన్యత ఇవ్వబడిన NFC చెల్లింపు సేవల సమాచారం"</string>
@@ -667,8 +667,8 @@
     <string name="fingerprint_acquired_immobile" msgid="1621891895241888048">"ప్రతిసారి మీ వేలిని కొద్ది కొద్దిగా జరపండి"</string>
   <string-array name="fingerprint_acquired_vendor">
   </string-array>
-    <string name="fingerprint_error_not_match" msgid="4599441812893438961">"వేలిముద్ర గుర్తించబడలేదు"</string>
-    <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"వేలిముద్ర గుర్తించబడలేదు"</string>
+    <string name="fingerprint_error_not_match" msgid="4599441812893438961">"వేలిముద్ర (ఫింగర్-ప్రింట్) మ్యాచ్ కాలేదు"</string>
+    <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"వేలిముద్ర (ఫింగర్-ప్రింట్) మ్యాచ్ కాలేదు"</string>
     <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"ముఖం గుర్తించలేదు. బదులుగా వేలిముద్ర ఉపయోగించండి."</string>
     <string name="fingerprint_authenticated" msgid="2024862866860283100">"వేలిముద్ర ప్రమాణీకరించబడింది"</string>
     <string name="face_authenticated_no_confirmation_required" msgid="8867889115112348167">"ముఖం ప్రమాణీకరించబడింది"</string>
@@ -720,7 +720,7 @@
     <string name="face_acquired_too_much_motion" msgid="8199691445085189528">"బాగా కదుపుతున్నారు. ఫోన్‌ను స్థిరంగా పట్టుకోండి"</string>
     <string name="face_acquired_recalibrate" msgid="8724013080976469746">"దయచేసి మీ ముఖాన్ని మళ్లీ నమోదు చేయండి."</string>
     <string name="face_acquired_too_different" msgid="4505278456634706967">"ముఖం గుర్తించబడలేదు. మళ్లీ ట్రై చేయండి."</string>
-    <string name="face_acquired_too_similar" msgid="8882920552674125694">"మీ తల స్థానాన్ని కొద్దిగా మార్చండి"</string>
+    <string name="face_acquired_too_similar" msgid="8882920552674125694">"మీ తల లొకేషన్‌ను కొద్దిగా మార్చండి"</string>
     <string name="face_acquired_pan_too_extreme" msgid="5417928604710621088">"మీ ఫోన్ వైపు మరింత నేరుగా చూడండి"</string>
     <string name="face_acquired_tilt_too_extreme" msgid="5715715666540716620">"మీ ఫోన్ వైపు మరింత నేరుగా చూడండి"</string>
     <string name="face_acquired_roll_too_extreme" msgid="8261939882838881194">"మీ ఫోన్ వైపు మరింత నేరుగా చూడండి"</string>
@@ -879,7 +879,7 @@
     <item msgid="6216981255272016212">"అనుకూలం"</item>
   </string-array>
   <string-array name="emailAddressTypes">
-    <item msgid="7786349763648997741">"ఇల్లు"</item>
+    <item msgid="7786349763648997741">"హోమ్‌"</item>
     <item msgid="435564470865989199">"కార్యాలయం"</item>
     <item msgid="4199433197875490373">"ఇతరం"</item>
     <item msgid="3233938986670468328">"అనుకూలం"</item>
@@ -1145,7 +1145,7 @@
     <string name="year" msgid="5182610307741238982">"సంవత్సరం"</string>
     <string name="years" msgid="5797714729103773425">"సంవత్సరాలు"</string>
     <string name="now_string_shortest" msgid="3684914126941650330">"ఇప్పుడు"</string>
-    <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g>నిమిషం"</string>
+    <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g>ని"</string>
     <string name="duration_hours_shortest" msgid="1477752094141971675">"<xliff:g id="COUNT">%d</xliff:g>గంట"</string>
     <string name="duration_days_shortest" msgid="4083124701676227233">"<xliff:g id="COUNT">%d</xliff:g>రోజు"</string>
     <string name="duration_years_shortest" msgid="483982719231145618">"<xliff:g id="COUNT">%d</xliff:g>సం"</string>
@@ -1252,7 +1252,7 @@
     <string name="aerr_application_repeated" msgid="7804378743218496566">"<xliff:g id="APPLICATION">%1$s</xliff:g> పునరావృతంగా ఆపివేయబడుతోంది"</string>
     <string name="aerr_process_repeated" msgid="1153152413537954974">"<xliff:g id="PROCESS">%1$s</xliff:g> పునరావృతంగా ఆపివేయబడుతోంది"</string>
     <string name="aerr_restart" msgid="2789618625210505419">"యాప్‌ను మళ్లీ తెరువు"</string>
-    <string name="aerr_report" msgid="3095644466849299308">"ఫీడ్‌బ్యాక్‌ను పంపు"</string>
+    <string name="aerr_report" msgid="3095644466849299308">"ఫీడ్‌బ్యాక్‌ను పంపండి"</string>
     <string name="aerr_close" msgid="3398336821267021852">"మూసివేయండి"</string>
     <string name="aerr_mute" msgid="2304972923480211376">"పరికరం పునఃప్రారంభమయ్యే వరకు మ్యూట్ చేయి"</string>
     <string name="aerr_wait" msgid="3198677780474548217">"వేచి ఉండండి"</string>
@@ -1667,7 +1667,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"వైర్‌లెస్ డిస్‌ప్లే"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"ప్రసారం చేయండి"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"పరికరానికి కనెక్ట్ చేయండి"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"స్క్రీన్‌ను పరికరానికి ప్రసారం చేయండి"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"స్క్రీన్‌ను డివైజ్‌కు ప్రసారం చేయండి"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"డివైజ్‌ల కోసం వెతుకుతోంది…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"సెట్టింగ్‌లు"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"డిస్‌కనెక్ట్ చేయి"</string>
@@ -1756,7 +1756,7 @@
     <string name="color_correction_feature_name" msgid="7975133554160979214">"కలర్ కరెక్షన్"</string>
     <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"వన్-హ్యాండెడ్ మోడ్"</string>
     <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"ఎక్స్‌ట్రా డిమ్"</string>
-    <string name="hearing_aids_feature_name" msgid="1125892105105852542">"వినికిడి పరికరాలు"</string>
+    <string name="hearing_aids_feature_name" msgid="1125892105105852542">"హియరింగ్ డివైజ్‌‌‌లు"</string>
     <string name="accessibility_shortcut_enabling_service" msgid="5473495203759847687">"వాల్యూమ్ కీలు నొక్కి ఉంచబడ్డాయి. <xliff:g id="SERVICE_NAME">%1$s</xliff:g> ఆన్ చేయబడింది"</string>
     <string name="accessibility_shortcut_disabling_service" msgid="8675244165062700619">"వాల్యూమ్ కీలు నొక్కి ఉంచబడ్డాయి. <xliff:g id="SERVICE_NAME">%1$s</xliff:g> ఆఫ్ చేయబడింది"</string>
     <string name="accessibility_shortcut_spoken_feedback" msgid="3760999147597564314">"వాల్యూమ్ కీలను రిలీజ్ చేయండి. <xliff:g id="SERVICE_NAME">%1$s</xliff:g>‌ను ఆన్ చేయడానికి, రెండు వాల్యూమ్ కీలను మళ్లీ 3 సెకన్ల పాటు నొక్కి పట్టుకోండి."</string>
@@ -1937,14 +1937,14 @@
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"వారపు రోజుల్లో రాత్రి"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"వారాంతం"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"ఈవెంట్"</string>
-    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"నిద్ర"</string>
+    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"స్లీప్ మోడ్"</string>
     <string name="zen_mode_implicit_trigger_description" msgid="5714956693073007111">"<xliff:g id="APP_NAME">%1$s</xliff:g> ద్వారా మేనేజ్ చేయబడుతోంది"</string>
     <string name="zen_mode_implicit_activated" msgid="2634285680776672994">"ఆన్‌లో ఉంది"</string>
     <string name="zen_mode_implicit_deactivated" msgid="8688441768371501750">"ఆఫ్‌లో ఉంది"</string>
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">", "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> - <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"ఏదైనా క్యాలెండర్"</string>
-    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> కొన్ని ధ్వనులను మ్యూట్ చేస్తోంది"</string>
+    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> కొన్ని సౌండ్స్ మ్యూట్ చేస్తోంది"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"మీ పరికరంతో అంతర్గత సమస్య ఏర్పడింది మరియు మీరు ఫ్యాక్టరీ డేటా రీసెట్ చేసే వరకు అస్థిరంగా ఉంటుంది."</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"మీ పరికరంతో అంతర్గత సమస్య ఏర్పడింది. వివరాల కోసం మీ తయారీదారుని సంప్రదించండి."</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD రిక్వెస్ట్‌ సాధారణ కాల్‌కు మార్చబడింది"</string>
@@ -1981,7 +1981,7 @@
     <string name="call_notification_screening_text" msgid="8396931408268940208">"ఇన్‌కమింగ్ కాల్‌ను స్క్రీన్ చేయండి"</string>
     <string name="default_notification_channel_label" msgid="3697928973567217330">"వర్గీకరించబడలేదు"</string>
     <string name="promotional_notification_channel_label" msgid="7414844730492860233">"ప్రమోషన్లు"</string>
-    <string name="social_notification_channel_label" msgid="106520267132019945">"సామాజికం"</string>
+    <string name="social_notification_channel_label" msgid="106520267132019945">"సోషల్ మీడియా"</string>
     <string name="news_notification_channel_label" msgid="4299937455247883311">"వార్తలు"</string>
     <string name="recs_notification_channel_label" msgid="4945985121418684297">"సిఫార్సులు"</string>
     <string name="importance_from_user" msgid="2782756722448800447">"మీరు ఈ నోటిఫికేషన్‌ల ప్రాముఖ్యతను సెట్ చేశారు."</string>
@@ -2070,7 +2070,7 @@
     <string name="time_picker_minute_label" msgid="8307452311269824553">"నిమిషం"</string>
     <string name="time_picker_header_text" msgid="9073802285051516688">"సమయాన్ని సెట్ చేయండి"</string>
     <string name="time_picker_input_error" msgid="8386271930742451034">"చెల్లుబాటు అయ్యే సమయాన్ని నమోదు చేయండి"</string>
-    <string name="time_picker_prompt_label" msgid="303588544656363889">"సమయంలో టైప్ చేయండి"</string>
+    <string name="time_picker_prompt_label" msgid="303588544656363889">"టైమ్ ఎంట‌ర్ చేయండి"</string>
     <string name="time_picker_text_input_mode_description" msgid="4761160667516611576">"సమయాన్ని నమోదు చేయడం కోసం వచన నమోదు మోడ్‌కి మారండి."</string>
     <string name="time_picker_radial_mode_description" msgid="1222342577115016953">"సమయాన్ని నమోదు చేయడం కోసం గడియారం మోడ్‌కు మారండి."</string>
     <string name="autofill_picker_accessibility_title" msgid="4425806874792196599">"స్వీయ పూరింపు ఎంపికలు"</string>
@@ -2090,7 +2090,7 @@
     <string name="autofill_save_no" msgid="9212826374207023544">"వద్దు, ధన్యవాదాలు"</string>
     <string name="autofill_save_notnow" msgid="2853932672029024195">"ఇప్పుడు కాదు"</string>
     <string name="autofill_save_never" msgid="6821841919831402526">"ఎప్పుడూ వద్దు"</string>
-    <string name="autofill_update_yes" msgid="4608662968996874445">"అప్‌డేట్ చేయి"</string>
+    <string name="autofill_update_yes" msgid="4608662968996874445">"అప్‌డేట్ చేయండి"</string>
     <string name="autofill_continue_yes" msgid="7914985605534510385">"కొనసాగించండి"</string>
     <string name="autofill_save_type_password" msgid="5624528786144539944">"పాస్‌వర్డ్"</string>
     <string name="autofill_save_type_address" msgid="3111006395818252885">"అడ్రస్‌"</string>

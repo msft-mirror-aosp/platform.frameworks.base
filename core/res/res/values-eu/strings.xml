@@ -418,11 +418,11 @@
     <string name="permlab_runInBackground" msgid="541863968571682785">"exekutatu atzeko planoan"</string>
     <string name="permdesc_runInBackground" msgid="4344539472115495141">"Atzeko planoan exekuta liteke aplikazioa eta horrek bizkorrago agor lezake bateria."</string>
     <string name="permlab_useDataInBackground" msgid="783415807623038947">"erabili datuak atzeko planoan"</string>
-    <string name="permdesc_useDataInBackground" msgid="1230753883865891987">"Aplikazioak datuak erabil litzake atzeko planoan eta horrek datu-erabilera areago lezake."</string>
+    <string name="permdesc_useDataInBackground" msgid="1230753883865891987">"Datuak atzeko planoan erabil ditzake aplikazioak, eta baliteke horrek datu-erabilera handitzea."</string>
     <string name="permlab_schedule_exact_alarm" msgid="6683283918033029730">"antolatu ekintzak une zehatzetan gerta daitezen"</string>
     <string name="permdesc_schedule_exact_alarm" msgid="8198009212013211497">"Aplikazio honek ekintzak programa ditzake etorkizunean egin daitezen. Horrek esan nahi du gailua aktiboki erabiltzen ari ez zarenean ere exekuta daitekeela aplikazioa."</string>
-    <string name="permlab_use_exact_alarm" msgid="348045139777131552">"antolatu alarmak edo gertaera-abisuak"</string>
-    <string name="permdesc_use_exact_alarm" msgid="7033761461886938912">"Aplikazioak hainbat ekintza programa ditzake; adibidez, alarmak eta abisuak, etorkizuneko une batean jakinarazpen bat jaso dezazun."</string>
+    <string name="permlab_use_exact_alarm" msgid="348045139777131552">"antolatu alarmak edo gertaera-gogorarazpenak"</string>
+    <string name="permdesc_use_exact_alarm" msgid="7033761461886938912">"Aplikazioak hainbat ekintza programa ditzake; adibidez, alarmak eta gogorarazpenak, etorkizuneko une batean jakinarazpen bat jaso dezazun."</string>
     <string name="permlab_persistentActivity" msgid="464970041740567970">"izan aplikazioa beti abian"</string>
     <string name="permdesc_persistentActivity" product="tablet" msgid="6055271149187369916">"Bere zati batzuk memoria modu iraunkorrean ezartzeko baimena ematen dio aplikazioari. Horrela, beste aplikazioek erabilgarri duten memoria murritz daiteke eta tableta motel daiteke."</string>
     <string name="permdesc_persistentActivity" product="tv" msgid="6800526387664131321">"Bere zati batzuk memorian modu iraunkorrean ezartzeko baimena ematen dio aplikazioari. Ondorioz, beste aplikazioek memoria gutxiago izan lezakete erabilgarri, eta Android TV gailuak motelago funtziona lezake."</string>
@@ -693,7 +693,7 @@
     <string name="fingerprint_or_screen_lock_dialog_default_subtitle" msgid="5195808203117992200">"Aurrera egiteko, erabili hatz-marka edo pantailaren blokeoa"</string>
   <string-array name="fingerprint_error_vendor">
   </string-array>
-    <string name="fingerprint_error_vendor_unknown" msgid="4170002184907291065">"Arazo bat izan da. Saiatu berriro."</string>
+    <string name="fingerprint_error_vendor_unknown" msgid="4170002184907291065">"Arazoren bat izan da. Saiatu berriro."</string>
     <string name="fingerprint_icon_content_description" msgid="4741068463175388817">"Hatz-markaren ikonoa"</string>
     <string name="device_unlock_notification_name" msgid="2632928999862915709">"Gailua desblokeatzea"</string>
     <string name="alternative_unlock_setup_notification_title" msgid="6241508547901933544">"Probatu gailua desblokeatzeko beste modu bat"</string>
@@ -745,7 +745,7 @@
     <string name="face_error_lockout_screen_lock" msgid="5062609811636860928">"Saiakera gehiegi egin dira. Horren ordez, erabili pantailaren blokeoa."</string>
     <string name="face_error_unable_to_process" msgid="5723292697366130070">"Ezin da egiaztatu aurpegia. Saiatu berriro."</string>
     <string name="face_error_not_enrolled" msgid="1134739108536328412">"Ez duzu konfiguratu aurpegi bidez desblokeatzeko eginbidea"</string>
-    <string name="face_error_hw_not_present" msgid="7940978724978763011">"Aurpegi bidez desblokeatzeko eginbidea ez da bateragarria gailu honekin"</string>
+    <string name="face_error_hw_not_present" msgid="7940978724978763011">"Aurpegi bidez desblokeatzeko eginbidea ez da onartzen gailu honetan"</string>
     <string name="face_error_security_update_required" msgid="5076017208528750161">"Sentsorea aldi baterako desgaitu da."</string>
     <string name="face_name_template" msgid="3877037340223318119">"<xliff:g id="FACEID">%d</xliff:g> aurpegia"</string>
     <string name="face_app_setting_name" msgid="5854024256907828015">"Erabili aurpegi bidez desblokeatzeko eginbidea"</string>
@@ -754,7 +754,7 @@
     <string name="face_or_screen_lock_dialog_default_subtitle" msgid="5006381531158341844">"Aurrera egiteko, erabili aurpegia edo pantailaren blokeoa"</string>
   <string-array name="face_error_vendor">
   </string-array>
-    <string name="face_error_vendor_unknown" msgid="7387005932083302070">"Arazo bat izan da. Saiatu berriro."</string>
+    <string name="face_error_vendor_unknown" msgid="7387005932083302070">"Arazoren bat izan da. Saiatu berriro."</string>
     <string name="face_icon_content_description" msgid="465030547475916280">"Aurpegiaren ikonoa"</string>
     <string name="permlab_readSyncSettings" msgid="6250532864893156277">"irakurri sinkronizazio-ezarpenak"</string>
     <string name="permdesc_readSyncSettings" msgid="1325658466358779298">"Kontu baten sinkronizazio-ezarpenak irakurtzeko baimena ematen dio aplikazioari. Adibidez, Jendea aplikazioa konturen batekin sinkronizatuta dagoen zehatz dezake."</string>
@@ -1532,7 +1532,7 @@
     <string name="wallpaper_binding_label" msgid="1197440498000786738">"Horma-papera"</string>
     <string name="chooser_wallpaper" msgid="3082405680079923708">"Aldatu horma-papera"</string>
     <string name="notification_listener_binding_label" msgid="2702165274471499713">"Jakinarazpen-hautemailea"</string>
-    <string name="vr_listener_binding_label" msgid="8013112996671206429">"Errealitate birtualeko hautemailea"</string>
+    <string name="vr_listener_binding_label" msgid="8013112996671206429">"EBko hautemailea"</string>
     <string name="condition_provider_service_binding_label" msgid="8490641013951857673">"Baldintza-hornitzailea"</string>
     <string name="notification_ranker_binding_label" msgid="432708245635563763">"Jakinarazpenen sailkapen-zerbitzua"</string>
     <string name="vpn_title" msgid="5906991595291514182">"VPN eginbidea aktibatuta"</string>
@@ -1764,8 +1764,8 @@
     <string name="accessibility_gesture_prompt_text" msgid="6452246951969541792">"Aukeratu eginbide bat"</string>
     <string name="accessibility_gesture_3finger_prompt_text" msgid="77745752309056152">"Aukeratu eginbide bat"</string>
     <string name="accessibility_button_instructional_text" msgid="6831154884557881996">"Erabilerraztasuna botoia sakatzen duzun hurrengoan irekiko da eginbidea"</string>
-    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"Lasterbidea erabiltzen duzun hurrengoan irekiko da eginbidea. Pasatu 2 hatz pantailaren behealdetik gorantz eta askatu bizkor."</string>
-    <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Lasterbidea erabiltzen duzun hurrengoan irekiko da eginbidea. Pasatu 3 hatz pantailaren behealdetik gorantz eta askatu bizkor."</string>
+    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"Lasterbidea erabiltzen duzun hurrengoan irekiko da eginbidea. Pasatu 2 hatz pantailaren behealdetik gora eta askatu bizkor."</string>
+    <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Lasterbidea erabiltzen duzun hurrengoan irekiko da eginbidea. Pasatu 3 hatz pantailaren behealdetik gora eta askatu bizkor."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Lupa"</string>
     <string name="user_switched" msgid="7249833311585228097">"Erabiltzailea: <xliff:g id="NAME">%1$s</xliff:g>."</string>
     <string name="user_switching_message" msgid="1912993630661332336">"\"<xliff:g id="NAME">%1$s</xliff:g>\" erabiltzailera aldatzen…"</string>

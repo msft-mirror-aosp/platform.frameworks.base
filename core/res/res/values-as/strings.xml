@@ -85,7 +85,7 @@
     <string name="NetworkPreferenceSwitchSummary" msgid="2086506181486324860">"পচন্দৰ নেটৱৰ্ক সলনি কৰি চেষ্টা কৰি চাওক। সলনি কৰিবলৈ টিপক।"</string>
     <string name="EmergencyCallWarningTitle" msgid="1615688002899152860">"জৰুৰীকালীন কল কৰাৰ সুবিধা উপলব্ধ নহয়"</string>
     <string name="EmergencyCallWarningSummary" msgid="9102799172089265268">"জৰুৰীকালীন কল কৰিবলৈ ম’বাইল নেটৱৰ্কৰ প্ৰয়োজন"</string>
-    <string name="notification_channel_network_alert" msgid="4788053066033851841">"সতৰ্কবাণীসমূহ"</string>
+    <string name="notification_channel_network_alert" msgid="4788053066033851841">"সতৰ্কবার্তা"</string>
     <string name="notification_channel_call_forward" msgid="8230490317314272406">"কল ফৰৱাৰ্ডিং"</string>
     <string name="notification_channel_emergency_callback" msgid="54074839059123159">"জৰুৰীকালীন ক\'লবেক ম\'ড"</string>
     <string name="notification_channel_mobile_data_status" msgid="1941911162076442474">"ম’বাইল ডেটাৰ স্থিতি"</string>
@@ -299,7 +299,7 @@
     <string name="notification_channel_network_available" msgid="6083697929214165169">"নেটৱৰ্ক উপলব্ধ"</string>
     <string name="notification_channel_vpn" msgid="1628529026203808999">"ভিপিএনৰ স্থিতি"</string>
     <string name="notification_channel_device_admin" msgid="6384932669406095506">"আপোনাৰ আইটি প্ৰশাসকৰ পৰা অহা সতৰ্কবাণী"</string>
-    <string name="notification_channel_alerts" msgid="5070241039583668427">"সতৰ্কবাণীসমূহ"</string>
+    <string name="notification_channel_alerts" msgid="5070241039583668427">"সতৰ্কবার্তা"</string>
     <string name="notification_channel_retail_mode" msgid="3732239154256431213">"খুচুৰা ডেম\'"</string>
     <string name="notification_channel_usb" msgid="1528280969406244896">"ইউএছবি সংযোগ"</string>
     <string name="notification_channel_heavy_weight_app" msgid="17455756500828043">"এপ্ চলি আছে"</string>

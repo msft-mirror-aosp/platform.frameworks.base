@@ -1006,7 +1006,7 @@
     <string name="lockscreen_password_wrong" msgid="8605355913868947490">"Повторите попытку"</string>
     <string name="lockscreen_storage_locked" msgid="634993789186443380">"Разблок. для доступа ко всем функциям и данным"</string>
     <string name="faceunlock_multiple_failures" msgid="681991538434031708">"Все попытки войти с помощью фейсконтроля использованы"</string>
-    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"SIM-карта отсутствует"</string>
+    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"Нет SIM-карты"</string>
     <string name="lockscreen_missing_sim_message" product="tablet" msgid="3986843848305639161">"В планшете отсутствует SIM-карта."</string>
     <string name="lockscreen_missing_sim_message" product="tv" msgid="3903140876952198273">"В устройстве Android TV отсутствует SIM-карта."</string>
     <string name="lockscreen_missing_sim_message" product="default" msgid="6184187634180854181">"В телефоне отсутствует SIM-карта."</string>
@@ -1530,7 +1530,7 @@
     <string name="forward_intent_to_work" msgid="3620262405636021151">"Вы перешли в рабочий профиль"</string>
     <string name="input_method_binding_label" msgid="1166731601721983656">"Способ ввода"</string>
     <string name="sync_binding_label" msgid="469249309424662147">"Синхр."</string>
-    <string name="accessibility_binding_label" msgid="1974602776545801715">"Спец. возможности"</string>
+    <string name="accessibility_binding_label" msgid="1974602776545801715">"Специальные возможности"</string>
     <string name="wallpaper_binding_label" msgid="1197440498000786738">"Фоновый рисунок"</string>
     <string name="chooser_wallpaper" msgid="3082405680079923708">"Сменить обои"</string>
     <string name="notification_listener_binding_label" msgid="2702165274471499713">"Служба просмотра уведомлений"</string>
@@ -1946,7 +1946,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">", "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> – <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"Любой календарь"</string>
-    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> приглушает некоторые звуки."</string>
+    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> отключает некоторые звуки"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"Произошла внутренняя ошибка, и устройство может работать нестабильно, пока вы не выполните сброс настроек."</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"Произошла внутренняя ошибка. Обратитесь к производителю устройства за подробными сведениями."</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD-запрос преобразован в обычный вызов"</string>
@@ -2217,7 +2217,7 @@
     <string name="conversation_title_fallback_group_chat" msgid="456073374993104303">"Групповой чат"</string>
     <string name="unread_convo_overflow" msgid="920517615597353833">"<xliff:g id="MAX_UNREAD_COUNT">%1$d</xliff:g>+"</string>
     <string name="resolver_personal_tab" msgid="2051260504014442073">"Личный"</string>
-    <string name="resolver_work_tab" msgid="2690019516263167035">"Рабочее"</string>
+    <string name="resolver_work_tab" msgid="2690019516263167035">"Рабочий"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"Просмотр личных данных"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"Просмотр рабочих данных"</string>
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Заблокировано вашим администратором"</string>

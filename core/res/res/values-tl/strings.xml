@@ -873,7 +873,7 @@
     <item msgid="7740243458912727194">"Mobile"</item>
     <item msgid="8526146065496663766">"Trabaho"</item>
     <item msgid="8150904584178569699">"Fax sa Trabaho"</item>
-    <item msgid="4537253139152229577">"Fax sa Tahanan"</item>
+    <item msgid="4537253139152229577">"Home Fax"</item>
     <item msgid="6751245029698664340">"Pager"</item>
     <item msgid="1692790665884224905">"Iba pa"</item>
     <item msgid="6216981255272016212">"Custom"</item>
@@ -2010,7 +2010,7 @@
     <string name="set_up_screen_lock_title" msgid="8346083801616474030">"Magtakda ng lock ng screen"</string>
     <string name="set_up_screen_lock_action_label" msgid="2687634803649209367">"Itakda ang lock ng screen"</string>
     <string name="private_space_set_up_screen_lock_message" msgid="1109956797005149814">"Para gamitin ang iyong pribadong space, magtakda ng lock ng screen sa device na ito."</string>
-    <string name="private_space_set_up_screen_lock_for_reset" msgid="7817091386408432097">"Para mag-delete ng pribadong space, magtakda ng lock ng screen sa device na ito"</string>
+    <string name="private_space_set_up_screen_lock_for_reset" msgid="7817091386408432097">"Para mag-delete ng pribadong space, magtakda ng screen lock sa device na ito"</string>
     <string name="app_blocked_title" msgid="7353262160455028160">"Hindi available ang app"</string>
     <string name="app_blocked_message" msgid="542972921087873023">"Hindi available sa ngayon ang <xliff:g id="APP_NAME">%1$s</xliff:g>."</string>
     <string name="app_streaming_blocked_title" msgid="6090945835898766139">"Hindi available ang <xliff:g id="ACTIVITY">%1$s</xliff:g>"</string>
@@ -2448,7 +2448,7 @@
     <string name="keyboard_shortcut_group_applications_email" msgid="4229037666415353683">"Email"</string>
     <string name="keyboard_shortcut_group_applications_sms" msgid="3523799286376321137">"SMS"</string>
     <string name="keyboard_shortcut_group_applications_music" msgid="2051507523525651067">"Musika"</string>
-    <string name="keyboard_shortcut_group_applications_calendar" msgid="3571770335653387606">"Kalendaryo"</string>
+    <string name="keyboard_shortcut_group_applications_calendar" msgid="3571770335653387606">"Calendar"</string>
     <string name="keyboard_shortcut_group_applications_calculator" msgid="6753209559716091507">"Calculator"</string>
     <string name="keyboard_shortcut_group_applications_maps" msgid="7950000659522589471">"Mga Mapa"</string>
     <string name="keyboard_shortcut_group_applications" msgid="3010389163951364798">"Mga Application"</string>

@@ -263,7 +263,7 @@
     <string name="global_action_power_options" msgid="1185286119330160073">"Alimentare"</string>
     <string name="global_action_restart" msgid="4678451019561687074">"Repornește"</string>
     <string name="global_action_emergency" msgid="1387617624177105088">"Urgență"</string>
-    <string name="global_action_bug_report" msgid="5127867163044170003">"Raport despre erori"</string>
+    <string name="global_action_bug_report" msgid="5127867163044170003">"Raport de eroare"</string>
     <string name="global_action_logout" msgid="6093581310002476511">"Încheie sesiunea"</string>
     <string name="global_action_screenshot" msgid="2610053466156478564">"Instantaneu"</string>
     <string name="bugreport_title" msgid="8549990811777373050">"Raport de eroare"</string>
@@ -1769,7 +1769,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Funcția se va deschide data viitoare când folosești această comandă rapidă. Glisează în sus cu trei degete din partea de jos a ecranului și ridică-le rapid."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Mărire"</string>
     <string name="user_switched" msgid="7249833311585228097">"Utilizator curent: <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Se comută la <xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Se trece la <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Se deconectează utilizatorul <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Proprietar"</string>
     <string name="guest_name" msgid="8502103277839834324">"Invitat"</string>
@@ -2150,11 +2150,11 @@
     <string name="notification_feedback_indicator_promoted" msgid="9030204303764698640">"Notificarea a fost mutată la un nivel superior. Atinge pentru a oferi feedback."</string>
     <string name="notification_feedback_indicator_demoted" msgid="8880309924296450875">"Notificarea a fost mutată la un nivel inferior. Atinge pentru a oferi feedback."</string>
     <string name="nas_upgrade_notification_title" msgid="8436359459300146555">"Notificări optimizate"</string>
-    <string name="nas_upgrade_notification_content" msgid="5157550369837103337">"Acțiunile și răspunsurile sugerate sunt acum trimise prin notificări optimizate. Notificările adaptive Android nu mai sunt acceptate."</string>
+    <string name="nas_upgrade_notification_content" msgid="5157550369837103337">"Acțiunile și răspunsurile sugerate sunt acum trimise prin notificări optimizate. Notificările adaptate Android nu mai sunt acceptate."</string>
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"OK"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"Dezactivează"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"Află mai multe"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Notificările optimizate au înlocuit Notificările adaptive Android de pe Android 12. Această funcție afișează acțiuni și răspunsuri sugerate și organizează notificările.\n\nNotificările optimizate pot accesa conținutul notificărilor, inclusiv informații cu caracter personal, precum mesajele și numele persoanelor de contact. În plus, funcția poate să închidă sau să răspundă la notificări, de exemplu, să răspundă la apeluri telefonice și să gestioneze opțiunea Nu deranja."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Notificările optimizate au înlocuit Notificările adaptate Android de pe Android 12. Această funcție afișează acțiuni și răspunsuri sugerate și organizează notificările.\n\nNotificările optimizate pot accesa conținutul notificărilor, inclusiv informații cu caracter personal, precum mesajele și numele persoanelor de contact. În plus, funcția poate să închidă sau să răspundă la notificări, de exemplu, să răspundă la apeluri telefonice și să gestioneze opțiunea Nu deranja."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"Notificare pentru informații despre modul Rutină"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"Economisirea bateriei este activată"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"Se reduce utilizarea bateriei pentru a-i extinde autonomia"</string>
@@ -2186,7 +2186,7 @@
     <string name="bluetooth_airplane_mode_toast" msgid="2066399056595768554">"Conexiunea Bluetooth va rămâne activată în modul Avion"</string>
     <string name="car_loading_profile" msgid="8219978381196748070">"Se încarcă"</string>
     <string name="file_count" msgid="3220018595056126969">"{count,plural, =1{{file_name} + # fișier}few{{file_name} + # fișiere}other{{file_name} + # de fișiere}}"</string>
-    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Nu există persoane recomandate pentru permiterea accesului"</string>
+    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Nu există persoane recomandate pentru trimitere"</string>
     <string name="chooser_all_apps_button_label" msgid="3230427756238666328">"Lista de aplicații"</string>
     <string name="usb_device_resolve_prompt_warn" msgid="325871329788064199">"Permisiunea de înregistrare nu a fost acordată aplicației, dar aceasta poate să înregistreze conținut audio prin intermediul acestui dispozitiv USB."</string>
     <string name="accessibility_system_action_home_label" msgid="3234748160850301870">"Pornire"</string>
