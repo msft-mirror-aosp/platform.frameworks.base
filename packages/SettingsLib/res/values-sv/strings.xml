@@ -82,7 +82,7 @@
     <string name="speed_label_very_fast" msgid="8215718029533182439">"Mycket snabb"</string>
     <string name="wifi_passpoint_expired" msgid="6540867261754427561">"Har upphört att gälla"</string>
     <string name="preference_summary_default_combination" msgid="2644094566845577901">"<xliff:g id="STATE">%1$s</xliff:g>/<xliff:g id="DESCRIPTION">%2$s</xliff:g>"</string>
-    <string name="bluetooth_disconnected" msgid="7739366554710388701">"Kopplas ifrån"</string>
+    <string name="bluetooth_disconnected" msgid="7739366554710388701">"Frånkopplad"</string>
     <string name="bluetooth_disconnecting" msgid="7638892134401574338">"Kopplar ifrån…"</string>
     <string name="bluetooth_connecting" msgid="5871702668260192755">"Ansluter…"</string>
     <string name="bluetooth_connected" msgid="8065345572198502293">"Ansluten<xliff:g id="ACTIVE_DEVICE">%1$s</xliff:g>"</string>
@@ -235,7 +235,7 @@
     <item msgid="6946761421234586000">"400 %"</item>
   </string-array>
     <string name="choose_profile" msgid="343803890897657450">"Välj profil"</string>
-    <string name="category_personal" msgid="6236798763159385225">"Privat"</string>
+    <string name="category_personal" msgid="6236798763159385225">"Personlig"</string>
     <string name="category_work" msgid="4014193632325996115">"Jobb"</string>
     <string name="category_private" msgid="4244892185452788977">"Privat"</string>
     <string name="category_clone" msgid="1554511758987195974">"Klon"</string>
@@ -287,9 +287,9 @@
     <string name="oem_unlock_enable_summary" msgid="5857388174390953829">"Tillåt att bootloadern låses upp"</string>
     <string name="confirm_enable_oem_unlock_title" msgid="8249318129774367535">"Vill du tillåta OEM-upplåsning?"</string>
     <string name="confirm_enable_oem_unlock_text" msgid="854131050791011970">"Varning! Funktionerna för enhetsskydd fungerar inte på enheten när den här inställningen är aktiverad."</string>
-    <string name="mock_location_app" msgid="6269380172542248304">"Välj app för påhittad plats"</string>
-    <string name="mock_location_app_not_set" msgid="6972032787262831155">"Ingen app för påhittad plats har angetts"</string>
-    <string name="mock_location_app_set" msgid="4706722469342913843">"App för påhittad plats: <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="mock_location_app" msgid="6269380172542248304">"Välj app för simulerad plats"</string>
+    <string name="mock_location_app_not_set" msgid="6972032787262831155">"Ingen app för simulerad plats har angetts"</string>
+    <string name="mock_location_app_set" msgid="4706722469342913843">"App för simulerad plats: <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="debug_networking_category" msgid="6829757985772659599">"Nätverk"</string>
     <string name="wifi_display_certification" msgid="1805579519992520381">"Certifiering för wifi-skärmdelning"</string>
     <string name="wifi_verbose_logging" msgid="1785910450009679371">"Aktivera utförlig loggning för wifi"</string>
@@ -428,9 +428,9 @@
     <string name="show_all_anrs_summary" msgid="8562788834431971392">"Visa dialogrutan om att appen inte svarar för bakgrundsappar"</string>
     <string name="show_notification_channel_warnings" msgid="3448282400127597331">"Visa varningar om aviseringskanal"</string>
     <string name="show_notification_channel_warnings_summary" msgid="68031143745094339">"Visa varningar på skärmen när en app lägger upp en avisering utan en giltig kanal"</string>
-    <string name="force_allow_on_external" msgid="9187902444231637880">"Tillåt appar i externt lagringsutrymme"</string>
+    <string name="force_allow_on_external" msgid="9187902444231637880">"Tvinga att tillåta appar i externt lagringsutrymme"</string>
     <string name="force_allow_on_external_summary" msgid="8525425782530728238">"Allar appar kan skrivas till extern lagring, oavsett manifestvärden"</string>
-    <string name="force_resizable_activities" msgid="7143612144399959606">"Framtvinga storleksanpassning för aktiviteter"</string>
+    <string name="force_resizable_activities" msgid="7143612144399959606">"Tvinga storleksanpassning för aktiviteter"</string>
     <string name="force_resizable_activities_summary" msgid="2490382056981583062">"Gör det möjligt att ändra storleken på alla aktiviteter i flerfönsterläge, oavsett manifestvärden."</string>
     <string name="enable_freeform_support" msgid="7599125687603914253">"Aktivera frihandsfönster"</string>
     <string name="local_backup_password_title" msgid="4631017948933578709">"Lösenord för säkerhetskopia av datorn"</string>
@@ -501,7 +501,7 @@
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> – laddas"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> – <xliff:g id="STATUS">%2$s</xliff:g> – fulladdad till <xliff:g id="TIME">%3$s</xliff:g>"</string>
     <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> – fulladdad till <xliff:g id="TIME">%2$s</xliff:g>"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Fulladdad till <xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Fulladdad kl. <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"Fulladdad till <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"Okänd"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"Laddar"</string>

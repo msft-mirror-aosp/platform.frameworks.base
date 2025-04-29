@@ -94,7 +94,7 @@
     <string name="bluetooth_connected_no_headset_battery_level" msgid="2661863370509206428">"منسلک ہے (فون کے علاوہ)، بیٹری <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_a2dp_battery_level" msgid="6499078454894324287">"منسلک ہے (میڈیا کے علاوہ)، بیٹری <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_headset_no_a2dp_battery_level" msgid="8477440576953067242">"منسلک ہے (فون یا میڈیا کے علاوہ)، بیٹری <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
-    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"فعال۔ <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
+    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"‏فعال۔ ‎<xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_active_battery_level_untethered" msgid="4961338936672922617">"‏فعال۔ L: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_0">%1$s</xliff:g>، ‏R: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_1">%2$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_active_battery_level_untethered_left" msgid="2895644748625343977">"فعال ہے۔ بایاں: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_active_battery_level_untethered_right" msgid="7407517998880370179">"فعال ہے۔ دایاں: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
@@ -112,7 +112,7 @@
     <string name="bluetooth_hearing_aid_left_and_right_active" msgid="4294571497939983181">"فعال ہے (بایاں اور دایاں)"</string>
     <string name="bluetooth_active_media_only_battery_level" msgid="7772517511061834073">"فعال (صرف میڈیا)۔ <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_active_media_only_battery_level_untethered" msgid="7444753133664620926">"‏فعال (صرف میڈیا)۔ L: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_0">%1$s</xliff:g>، ‏R: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_1">%2$s</xliff:g> بیٹری۔"</string>
-    <string name="bluetooth_battery_level_lea_support" msgid="5968584103507988820">"منسلک ہے (آڈیو کے اشتراک کو سپورٹ کرتا ہے)۔ <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
+    <string name="bluetooth_battery_level_lea_support" msgid="5968584103507988820">"‏منسلک ہے (آڈیو کے اشتراک کو سپورٹ کرتا ہے)۔ ‎<xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_battery_level_untethered_lea_support" msgid="803110681688633362">"‏منسلک ہے (آڈیو کے اشتراک کو سپورٹ کرتا ہے)۔ L: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_0">%1$s</xliff:g>، ‏R: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_1">%2$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_battery_level_untethered_left_lea_support" msgid="7707464334346454950">"منسلک ہے (آڈیو کے اشتراک کو سپورٹ کرتا ہے)۔ بائيں: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
     <string name="bluetooth_battery_level_untethered_right_lea_support" msgid="8941549024377771038">"منسلک ہے (آڈیو کے اشتراک کو سپورٹ کرتا ہے)۔ دائيں: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> بیٹری۔"</string>
@@ -198,7 +198,7 @@
     <string name="tts_settings" msgid="8130616705989351312">"ٹیکسٹ ٹو اسپیچ کی ترتیبات"</string>
     <string name="tts_settings_title" msgid="7602210956640483039">"ٹیکسٹ ٹو اسپیچ آؤٹ پٹ"</string>
     <string name="tts_default_rate_title" msgid="3964187817364304022">"اسپیچ کی شرح"</string>
-    <string name="tts_default_rate_summary" msgid="3781937042151716987">"متن بولے جانے کی رفتار"</string>
+    <string name="tts_default_rate_summary" msgid="3781937042151716987">"ٹیکسٹ بولے جانے کی رفتار"</string>
     <string name="tts_default_pitch_title" msgid="6988592215554485479">"پچ"</string>
     <string name="tts_default_pitch_summary" msgid="9132719475281551884">"تصنعی اسپیچ کی ٹون کو متاثر کرتا ہے"</string>
     <string name="tts_default_lang_title" msgid="4698933575028098940">"زبان"</string>
@@ -237,7 +237,7 @@
     <string name="choose_profile" msgid="343803890897657450">"پروفائل منتخب کریں"</string>
     <string name="category_personal" msgid="6236798763159385225">"ذاتی"</string>
     <string name="category_work" msgid="4014193632325996115">"دفتر"</string>
-    <string name="category_private" msgid="4244892185452788977">"نجی"</string>
+    <string name="category_private" msgid="4244892185452788977">"پرائیویٹ"</string>
     <string name="category_clone" msgid="1554511758987195974">"کلون کریں"</string>
     <string name="development_settings_title" msgid="140296922921597393">"ڈویلپر کے اختیارات"</string>
     <string name="development_settings_enable" msgid="4285094651288242183">"ڈویلپر کے اختیارات فعال کریں"</string>
@@ -382,9 +382,9 @@
     <string name="show_key_presses_summary" msgid="725387457373015024">"\'طبعی کلید کو دبانا\' کیلئے ویژوئل تاثرات دکھائیں"</string>
     <string name="touchpad_visualizer" msgid="3707916068870825115">"ٹچ پیڈ ان پٹ دکھائیں"</string>
     <string name="touchpad_visualizer_summary" msgid="4056080018119847449">"اسکرین اوورلے ٹچ پیڈ ان پٹ ڈیٹا اور تسلیم شدہ اشاروں کو ظاہر کرتا ہے"</string>
-    <string name="show_screen_updates" msgid="2078782895825535494">"سطح کے اپ ڈیٹس دکھائیں"</string>
+    <string name="show_screen_updates" msgid="2078782895825535494">"سطح کی اپ ڈیٹس دکھائیں"</string>
     <string name="show_screen_updates_summary" msgid="2126932969682087406">"اپ ڈیٹ ہونے پر ونڈو کی پوری سطحیں جھلملائیں"</string>
-    <string name="show_hw_screen_updates" msgid="2021286231267747506">"منظر کے اپ ڈیٹس دکھائیں"</string>
+    <string name="show_hw_screen_updates" msgid="2021286231267747506">"منظر کی اپ ڈیٹس دکھائیں"</string>
     <string name="show_hw_screen_updates_summary" msgid="3539770072741435691">"تیار ہونے پر ملاحظات ونڈوز کے اندر جھلملائیں"</string>
     <string name="show_hw_layers_updates" msgid="5268370750002509767">"ہارڈویئر پرتوں کی اپ ڈیٹس دکھائیں"</string>
     <string name="show_hw_layers_updates_summary" msgid="5850955890493054618">"ہارڈویئر پرتیں اپ ڈیٹ ہونے پر سبز رنگ میں جھلملائیں"</string>
@@ -425,7 +425,7 @@
     <string name="immediately_destroy_activities_summary" msgid="6289590341144557614">"صارف کی ہر سرگرمی صارف کے چھوڑنے پر حذف کر دیں"</string>
     <string name="app_process_limit_title" msgid="8361367869453043007">"پس منظر پروسیس کی حد"</string>
     <string name="show_all_anrs" msgid="9160563836616468726">"‏پس منظر ANRs دکھائیں"</string>
-    <string name="show_all_anrs_summary" msgid="8562788834431971392">"پس منظر کی ایپس کیلئے \'ایپ جواب نہیں دے رہی ہے\' ڈائلاگ ڈسپلے کریں"</string>
+    <string name="show_all_anrs_summary" msgid="8562788834431971392">"پس منظر کی ایپس کیلئے \'ایپ جواب نہیں دے رہی ہے\' ڈائیلاگ ڈسپلے کریں"</string>
     <string name="show_notification_channel_warnings" msgid="3448282400127597331">"چینل کی اطلاعی تنبیہات دکھائیں"</string>
     <string name="show_notification_channel_warnings_summary" msgid="68031143745094339">"کسی ایپ کی طرف سے درست چینل کے بغیر اطلاع پوسٹ ہونے پر آن اسکرین تنبیہ ڈسپلے کرتا ہے"</string>
     <string name="force_allow_on_external" msgid="9187902444231637880">"بیرونی پر ایپس کو زبردستی اجازت دیں"</string>
@@ -501,7 +501,7 @@
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> - چارج ہو رہی ہے"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - <xliff:g id="TIME">%3$s</xliff:g> تک مکمل ہو جائے گی"</string>
     <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="TIME">%2$s</xliff:g> تک مکمل چارج ہو جائے گی"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"<xliff:g id="TIME">%1$s</xliff:g> تک مکمل چارج ہو جائے گی"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"‫<xliff:g id="TIME">%1$s</xliff:g> تک مکمل چارج ہو جائے گی"</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"<xliff:g id="TIME">%1$s</xliff:g> تک مکمل ہو جائے گی"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"نامعلوم"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"چارج ہو رہا ہے"</string>

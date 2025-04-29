@@ -107,7 +107,7 @@
     <string name="tv_bluetooth_battery_level_untethered_right" msgid="8610019317279155595">"Destra: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
     <string name="bluetooth_active_no_battery_level" msgid="4155462233006205630">"Attivo"</string>
     <string name="bluetooth_saved_device" msgid="4895871321722311428">"Dispositivo salvato"</string>
-    <string name="bluetooth_hearing_aid_left_active" msgid="8330226430756799572">"Attivo (solo sinistro)"</string>
+    <string name="bluetooth_hearing_aid_left_active" msgid="8330226430756799572">"Attiva (solo sinistra)"</string>
     <string name="bluetooth_hearing_aid_right_active" msgid="2244728507170385397">"Attivo (solo destro)"</string>
     <string name="bluetooth_hearing_aid_left_and_right_active" msgid="4294571497939983181">"Attivi (destro e sinistro)"</string>
     <string name="bluetooth_active_media_only_battery_level" msgid="7772517511061834073">"Attivo (solo contenuti multimediali). <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> di batteria."</string>
@@ -126,7 +126,7 @@
     <string name="bluetooth_profile_headset" msgid="5395952236133499331">"Telefonate"</string>
     <string name="bluetooth_profile_opp" msgid="6692618568149493430">"Trasferimento file"</string>
     <string name="bluetooth_profile_hid" msgid="2969922922664315866">"Dispositivo di input"</string>
-    <string name="bluetooth_profile_pan" msgid="1006235139308318188">"Accesso a Internet"</string>
+    <string name="bluetooth_profile_pan" msgid="1006235139308318188">"Accesso a internet"</string>
     <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Consenti l\'accesso ai contatti e alla cronologia delle chiamate"</string>
     <string name="bluetooth_profile_pbap_summary" msgid="402819589201138227">"Le informazioni saranno utilizzate per gli annunci delle chiamate e altro ancora"</string>
     <string name="bluetooth_profile_pan_nap" msgid="7871974753822470050">"Condivisione connessione Internet"</string>
@@ -488,7 +488,7 @@
     <string name="power_discharge_by_only_enhanced" msgid="3268796172652988877">"Ora stimata esaurimento batteria in base al tuo utilizzo: <xliff:g id="TIME">%1$s</xliff:g> circa"</string>
     <string name="power_discharge_by" msgid="4113180890060388350">"Ora stimata esaurimento batteria: <xliff:g id="TIME">%1$s</xliff:g> circa (<xliff:g id="LEVEL">%2$s</xliff:g>)"</string>
     <string name="power_discharge_by_only" msgid="92545648425937000">"Ora stimata esaurimento batteria: <xliff:g id="TIME">%1$s</xliff:g> circa"</string>
-    <string name="power_discharge_by_only_short" msgid="5883041507426914446">"Fino a: <xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="power_discharge_by_only_short" msgid="5883041507426914446">"Fino alle ore: <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="power_suggestion_battery_run_out" msgid="6332089307827787087">"La batteria potrebbe esaurirsi entro le <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="power_remaining_less_than_duration_only" msgid="8956656616031395152">"Carica residua: meno di <xliff:g id="THRESHOLD">%1$s</xliff:g>"</string>
     <string name="power_remaining_less_than_duration" msgid="318215464914990578">"Carica residua: meno di <xliff:g id="THRESHOLD">%1$s</xliff:g> (<xliff:g id="LEVEL">%2$s</xliff:g>)"</string>
@@ -500,8 +500,8 @@
     <string name="power_charging_limited" msgid="4144004473976005214">"<xliff:g id="LEVEL">%1$s</xliff:g> - Ricarica in sospeso per proteggere la batteria"</string>
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> ‑ In carica"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - Ricarica completa entro <xliff:g id="TIME">%3$s</xliff:g>"</string>
-    <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> - Batteria completamente carica entro <xliff:g id="TIME">%2$s</xliff:g>"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Batteria completamente carica entro <xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> - Batteria completamente carica entro: <xliff:g id="TIME">%2$s</xliff:g>"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Batteria completamente carica entro: <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"Ricarica completa entro le ore <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"Sconosciuta"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"In carica"</string>

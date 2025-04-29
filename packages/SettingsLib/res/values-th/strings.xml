@@ -82,7 +82,7 @@
     <string name="speed_label_very_fast" msgid="8215718029533182439">"เร็วมาก"</string>
     <string name="wifi_passpoint_expired" msgid="6540867261754427561">"หมดอายุแล้ว"</string>
     <string name="preference_summary_default_combination" msgid="2644094566845577901">"<xliff:g id="STATE">%1$s</xliff:g>/<xliff:g id="DESCRIPTION">%2$s</xliff:g>"</string>
-    <string name="bluetooth_disconnected" msgid="7739366554710388701">"ตัดการเชื่อมต่อ"</string>
+    <string name="bluetooth_disconnected" msgid="7739366554710388701">"ยกเลิกการเชื่อมต่อแล้ว"</string>
     <string name="bluetooth_disconnecting" msgid="7638892134401574338">"กำลังตัดการเชื่อมต่อ..."</string>
     <string name="bluetooth_connecting" msgid="5871702668260192755">"กำลังเชื่อมต่อ…"</string>
     <string name="bluetooth_connected" msgid="8065345572198502293">"เชื่อมต่อแล้ว<xliff:g id="ACTIVE_DEVICE">%1$s</xliff:g>"</string>
@@ -304,7 +304,7 @@
     <string name="bluetooth_select_avrcp_version_dialog_title" msgid="7846922290083709633">"เลือกเวอร์ชันของบลูทูธ AVRCP"</string>
     <string name="bluetooth_select_map_version_string" msgid="526308145174175327">"เวอร์ชันของบลูทูธ MAP"</string>
     <string name="bluetooth_select_map_version_dialog_title" msgid="7085934373987428460">"เลือกเวอร์ชันของบลูทูธ MAP"</string>
-    <string name="bluetooth_select_a2dp_codec_type" msgid="952001408455456494">"ตัวแปลงสัญญาณเสียงบลูทูธ"</string>
+    <string name="bluetooth_select_a2dp_codec_type" msgid="952001408455456494">"ตัวแปลงรหัสเสียงบลูทูธ"</string>
     <string name="bluetooth_select_a2dp_codec_type_dialog_title" msgid="7510542404227225545">"ทริกเกอร์การเลือกตัวแปลงรหัส\nเสียงบลูทูธ"</string>
     <string name="bluetooth_select_a2dp_codec_sample_rate" msgid="1638623076480928191">"อัตราตัวอย่างเสียงบลูทูธ"</string>
     <string name="bluetooth_select_a2dp_codec_sample_rate_dialog_title" msgid="5876305103137067798">"ทริกเกอร์การเลือกตัวแปลงรหัส\nเสียงบลูทูธ: อัตราตัวอย่าง"</string>
@@ -313,7 +313,7 @@
     <string name="bluetooth_select_a2dp_codec_bits_per_sample_dialog_title" msgid="4898693684282596143">"ทริกเกอร์การเลือกตัวแปลงรหัส\nเสียงบลูทูธ: บิตต่อตัวอย่าง"</string>
     <string name="bluetooth_select_a2dp_codec_channel_mode" msgid="364277285688014427">"โหมดช่องสัญญาณเสียงบลูทูธ"</string>
     <string name="bluetooth_select_a2dp_codec_channel_mode_dialog_title" msgid="2076949781460359589">"ทริกเกอร์การเลือกตัวแปลงรหัส\nเสียงบลูทูธ: โหมดช่องสัญญาณ"</string>
-    <string name="bluetooth_select_a2dp_codec_ldac_playback_quality" msgid="3233402355917446304">"ตัวแปลงสัญญาณเสียงบลูทูธที่ใช้ LDAC: คุณภาพการเล่น"</string>
+    <string name="bluetooth_select_a2dp_codec_ldac_playback_quality" msgid="3233402355917446304">"ตัวแปลงรหัสเสียงบลูทูธที่ใช้ LDAC: คุณภาพการเล่น"</string>
     <string name="bluetooth_select_a2dp_codec_ldac_playback_quality_dialog_title" msgid="7274396574659784285">"ทริกเกอร์การเลือกตัวแปลงรหัส LDAC\nเสียงบลูทูธ: คุณภาพการเล่น"</string>
     <string name="bluetooth_select_a2dp_codec_streaming_label" msgid="2040810756832027227">"สตรีมมิง: <xliff:g id="STREAMING_PARAMETER">%1$s</xliff:g>"</string>
     <string name="select_private_dns_configuration_title" msgid="7887550926056143018">"DNS ส่วนตัว"</string>
@@ -431,7 +431,7 @@
     <string name="force_allow_on_external" msgid="9187902444231637880">"บังคับให้อนุญาตแอปในที่จัดเก็บข้อมูลภายนอก"</string>
     <string name="force_allow_on_external_summary" msgid="8525425782530728238">"ทำให้เขียนแอปในที่จัดเก็บข้อมูลภายนอกได้ โดยไม่คำนึงถึงค่าในไฟล์ Manifest"</string>
     <string name="force_resizable_activities" msgid="7143612144399959606">"บังคับให้กิจกรรมปรับขนาดได้"</string>
-    <string name="force_resizable_activities_summary" msgid="2490382056981583062">"ทำให้กิจกรรมทั้งหมดปรับขนาดได้สำหรับหน้าต่างหลายบาน โดยไม่คำนึงถึงค่าในไฟล์ Manifest"</string>
+    <string name="force_resizable_activities_summary" msgid="2490382056981583062">"ทำให้กิจกรรมทั้งหมดปรับขนาดได้สำหรับหลายหน้าต่าง โดยไม่คำนึงถึงค่าในไฟล์ Manifest"</string>
     <string name="enable_freeform_support" msgid="7599125687603914253">"เปิดใช้หน้าต่างรูปแบบอิสระ"</string>
     <string name="local_backup_password_title" msgid="4631017948933578709">"รหัสผ่านการสำรองข้อมูลในเดสก์ท็อป"</string>
     <string name="local_backup_password_summary_none" msgid="7646898032616361714">"การสำรองข้อมูลเต็มรูปแบบในเดสก์ท็อปไม่ได้รับการป้องกันในขณะนี้"</string>
