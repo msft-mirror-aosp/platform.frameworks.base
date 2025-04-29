@@ -127,7 +127,7 @@
     <string name="bluetooth_profile_opp" msgid="6692618568149493430">"Fayl uzatish"</string>
     <string name="bluetooth_profile_hid" msgid="2969922922664315866">"Kiritish qurilmasi"</string>
     <string name="bluetooth_profile_pan" msgid="1006235139308318188">"Internetga ulanish"</string>
-    <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Chaqiruv va kontaktlarga ruxsat berilsinmi?"</string>
+    <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Kontaktlar va chaqiruv tarixiga ruxsat berish"</string>
     <string name="bluetooth_profile_pbap_summary" msgid="402819589201138227">"Maʼlumotlar chaqiruvlar haqida xabar berish uchun ishlatiladi"</string>
     <string name="bluetooth_profile_pan_nap" msgid="7871974753822470050">"Internet aloqasi ulashmasi"</string>
     <string name="bluetooth_profile_map" msgid="8907204701162107271">"SMS xabarlari"</string>
@@ -249,11 +249,11 @@
     <string name="enable_adb" msgid="8072776357237289039">"USB orqali nosozliklarni aniqlash"</string>
     <string name="enable_adb_summary" msgid="3711526030096574316">"USB orqali kompyuterga ulanganda tuzatish rejimi yoqilsin"</string>
     <string name="clear_adb_keys" msgid="3010148733140369917">"USB orqali nosozliklarni tuzatishni taqiqlash"</string>
-    <string name="enable_adb_wireless" msgid="6973226350963971018">"Wi-Fi orqali debagging"</string>
+    <string name="enable_adb_wireless" msgid="6973226350963971018">"Wi-Fi orqali debaging"</string>
     <string name="enable_adb_wireless_summary" msgid="7344391423657093011">"Wi‑Fi tarmoqqa ulanganda nosozliklarni aniqlash rejimi"</string>
     <string name="adb_wireless_error" msgid="721958772149779856">"Xato"</string>
-    <string name="adb_wireless_settings" msgid="2295017847215680229">"Wi-Fi orqali debagging"</string>
-    <string name="adb_wireless_list_empty_off" msgid="1713707973837255490">"Mavjud qurilmalarni koʻrish va ulardan foydalanish uchun Wi-Fi orqali debagging funksiyasini yoqing"</string>
+    <string name="adb_wireless_settings" msgid="2295017847215680229">"Wi-Fi orqali debaging"</string>
+    <string name="adb_wireless_list_empty_off" msgid="1713707973837255490">"Mavjud qurilmalarni koʻrish va ulardan foydalanish uchun Wi-Fi orqali debaging funksiyasini yoqing"</string>
     <string name="adb_pair_method_qrcode_title" msgid="6982904096137468634">"Qurilmani QR kod orqali ulash"</string>
     <string name="adb_pair_method_qrcode_summary" msgid="7130694277228970888">"QR kod skaneri yordamida yangi qurilmalarni ulang"</string>
     <string name="adb_pair_method_code_title" msgid="1122590300445142904">"Qurilmani ulanish kodi orqali ulash"</string>
@@ -344,8 +344,8 @@
     <string name="tethering_hardware_offload_summary" msgid="7801345335142803029">"Modem rejimida apparatli tezlatishdan foydalanish (mavjud bo‘lsa)."</string>
     <string name="adb_warning_title" msgid="7708653449506485728">"USB orqali nosozliklarni tuzatishga ruxsat berilsinmi?"</string>
     <string name="adb_warning_message" msgid="8145270656419669221">"USB orqali nosozliklarni aniqlash faqat dasturlash maqsadlarida yoqiladi. Undan maʼlumotlarni qurilmangiz va kompyuter o‘rtasida ko‘chirish, ilovalarni xabarnomasiz o‘rnatish va jurnal maʼlumotlarini o‘qish uchun foydalaniladi."</string>
-    <string name="adbwifi_warning_title" msgid="727104571653031865">"Wi-Fi orqali debagging uchun ruxsat berilsinmi?"</string>
-    <string name="adbwifi_warning_message" msgid="8005936574322702388">"Wi-Fi orqali debagging faqat dasturlash maqsadlarida yoqiladi. Undan maʼlumotlarni qurilmangiz va kompyuter oʻrtasida koʻchirish, ilovalarni bildirishnomasiz oʻrnatish va jurnal maʼlumotlarini oʻqish uchun foydalaniladi."</string>
+    <string name="adbwifi_warning_title" msgid="727104571653031865">"Wi-Fi orqali debaging uchun ruxsat berilsinmi?"</string>
+    <string name="adbwifi_warning_message" msgid="8005936574322702388">"Wi-Fi orqali debaging faqat dasturlash maqsadlarida yoqiladi. Undan maʼlumotlarni qurilmangiz va kompyuter oʻrtasida koʻchirish, ilovalarni bildirishnomasiz oʻrnatish va jurnal maʼlumotlarini oʻqish uchun foydalaniladi."</string>
     <string name="adb_keys_warning_message" msgid="2968555274488101220">"USB orqali nosozliklarni tuzatishga berilgan ruxsat siz hisobingizga kirgan barcha kompyuterlar uchun bekor qilinsinmi?"</string>
     <string name="dev_settings_warning_title" msgid="8251234890169074553">"Dasturlash sozlamalariga ruxsat berilsinmi?"</string>
     <string name="dev_settings_warning_message" msgid="37741686486073668">"Bu sozlamalar faqat dasturlash maqsadlariga mo‘ljallangan. Shuning uchun, ular qurilmangizga va undagi ilovalariga shikast yetkazib, noto‘g‘ri ishlashiga sabab bo‘lishi mumkin."</string>
@@ -655,12 +655,12 @@
     <string name="guest_new_guest" msgid="3482026122932643557">"Mehmon kiritish"</string>
     <string name="guest_exit_guest" msgid="5908239569510734136">"Mehmonni olib tashlash"</string>
     <string name="guest_reset_guest" msgid="6110013010356013758">"Mehmon seansini tiklash"</string>
-    <string name="guest_reset_guest_dialog_title" msgid="8047270010895437534">"Mehmon seansi tiklansinmi?"</string>
+    <string name="guest_reset_guest_dialog_title" msgid="8047270010895437534">"Mehmon seansi tozalansinmi?"</string>
     <string name="guest_remove_guest_dialog_title" msgid="4548511006624088072">"Mehmon olib tashlansinmi?"</string>
     <string name="guest_reset_guest_confirm_button" msgid="2989915693215617237">"Tiklash"</string>
     <string name="guest_remove_guest_confirm_button" msgid="7858123434954143879">"Olib tashlash"</string>
     <string name="guest_resetting" msgid="7822120170191509566">"Mehmon seansi tiklanmoqda…"</string>
-    <string name="guest_reset_and_restart_dialog_title" msgid="3396657008451616041">"Mehmon seansi tiklansinmi?"</string>
+    <string name="guest_reset_and_restart_dialog_title" msgid="3396657008451616041">"Mehmon seansi tozalansinmi?"</string>
     <string name="guest_reset_and_restart_dialog_message" msgid="2764425635305200790">"Bunda yangi mehmon seansi ishga tushadi va joriy seans ilova va maʼlumotlari tozalanadi"</string>
     <string name="guest_exit_dialog_title" msgid="1846494656849381804">"Mehmon rejimidan chiqasizmi?"</string>
     <string name="guest_exit_dialog_message" msgid="1743218864242719783">"Bunda joriy mehmon seansidagi ilova va ularning maʼlumotlari tozalanadi"</string>

@@ -94,7 +94,7 @@
     <string name="bluetooth_connected_no_headset_battery_level" msgid="2661863370509206428">"Жалғанды (телефонсыз), батарея заряды: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_a2dp_battery_level" msgid="6499078454894324287">"Жалғанды (аудиосыз), батарея заряды: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_headset_no_a2dp_battery_level" msgid="8477440576953067242">"Жалғанды (телефонсыз не аудиосыз), батарея заряды: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g><xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>"</string>
-    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"Істеп тұр. Батарея зарядының деңгейі – <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
+    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"Істеп тұр. Батарея зарядының деңгейі – <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>."</string>
     <string name="bluetooth_active_battery_level_untethered" msgid="4961338936672922617">"Істеп тұр. Сол жақ: батарея зарядының деңгейі – <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_0">%1$s</xliff:g>. Оң жақ: батарея зарядының деңгейі — <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_1">%2$s</xliff:g>."</string>
     <string name="bluetooth_active_battery_level_untethered_left" msgid="2895644748625343977">"Істеп тұр. Сол жақ: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> қуат."</string>
     <string name="bluetooth_active_battery_level_untethered_right" msgid="7407517998880370179">"Істеп тұр. Оң жақ: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> қуат."</string>
@@ -127,7 +127,7 @@
     <string name="bluetooth_profile_opp" msgid="6692618568149493430">"Файл жіберу"</string>
     <string name="bluetooth_profile_hid" msgid="2969922922664315866">"Енгізу құрылғысы"</string>
     <string name="bluetooth_profile_pan" msgid="1006235139308318188">"Интернетке қосылу"</string>
-    <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Контакт пен қоңырау тарихына рұқсат беру"</string>
+    <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Контактілерге және қоңыраулар тарихына рұқсат беру"</string>
     <string name="bluetooth_profile_pbap_summary" msgid="402819589201138227">"Ақпарат қоңырау туралы хабарландыру, т.б. үшін қолданылады."</string>
     <string name="bluetooth_profile_pan_nap" msgid="7871974753822470050">"Интернет байланысын ортақ қолдану"</string>
     <string name="bluetooth_profile_map" msgid="8907204701162107271">"Мәтіндік хабарлар"</string>
@@ -199,8 +199,8 @@
     <string name="tts_settings_title" msgid="7602210956640483039">"Мәтінді дыбыстау"</string>
     <string name="tts_default_rate_title" msgid="3964187817364304022">"Сөйлеу жылдамдығы"</string>
     <string name="tts_default_rate_summary" msgid="3781937042151716987">"Мәтіннің оқылу жылдамдығы"</string>
-    <string name="tts_default_pitch_title" msgid="6988592215554485479">"Дауыс жиілігі"</string>
-    <string name="tts_default_pitch_summary" msgid="9132719475281551884">"Синтезделген сөйлеу үніне әсер етеді"</string>
+    <string name="tts_default_pitch_title" msgid="6988592215554485479">"Тон"</string>
+    <string name="tts_default_pitch_summary" msgid="9132719475281551884">"Синтезделген дауыс тонына әсер етеді."</string>
     <string name="tts_default_lang_title" msgid="4698933575028098940">"Тіл"</string>
     <string name="tts_lang_use_system" msgid="6312945299804012406">"Жүйе тілін пайдалану"</string>
     <string name="tts_lang_not_selected" msgid="7927823081096056147">"Тіл таңдалған жоқ"</string>
@@ -427,7 +427,7 @@
     <string name="show_all_anrs" msgid="9160563836616468726">"Фондық ANR-ларды көрсету"</string>
     <string name="show_all_anrs_summary" msgid="8562788834431971392">"Фондық қолданбалар үшін \"Қолданба жауап бермейді\" терезесін шығару"</string>
     <string name="show_notification_channel_warnings" msgid="3448282400127597331">"Хабарландыру арнасының ескертулерін көрсету"</string>
-    <string name="show_notification_channel_warnings_summary" msgid="68031143745094339">"Қолданба жарамсыз арна арқылы хабарландыру жариялағанда, экранға ескерту шығарады."</string>
+    <string name="show_notification_channel_warnings_summary" msgid="68031143745094339">"Қолданба жарамды арнасыз хабарландыру жариялағанда, экранға ескерту шығарады."</string>
     <string name="force_allow_on_external" msgid="9187902444231637880">"Сыртқы жадта сақтауға рұқсат ету"</string>
     <string name="force_allow_on_external_summary" msgid="8525425782530728238">"Манифест мәндеріне қарамастан, кез келген қолданбаны сыртқы жадқа жазуға рұқсат беру"</string>
     <string name="force_resizable_activities" msgid="7143612144399959606">"Әрекеттердің өлшемін өзгертуге рұқсат ету"</string>
@@ -501,7 +501,7 @@
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> – Зарядталып жатыр"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - Зарядталып болады: <xliff:g id="TIME">%3$s</xliff:g>"</string>
     <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> - Толық заряд алуға қалған уақыт: <xliff:g id="TIME">%2$s</xliff:g>"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Толық заряд алуға қалған уақыт: <xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Сағат <xliff:g id="TIME">%1$s</xliff:g> шамасында толықтай зарядталып болады."</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"Заряд толуына қалған уақыт: <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"Белгісіз"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"Зарядталуда"</string>
@@ -565,7 +565,7 @@
     <string name="alarms_and_reminders_footer_title" msgid="6302587438389079695">"Бұл қолданбаға оятқыштарды орнатуға және уақытқа байланысты әрекеттерді жоспарлауға рұқсат береді. Мұндайда қолданба фондық режимде жұмыс істейді, сондықтан батарея шығыны артуы мүмкін.\n\nБұл рұқсат өшірулі болса, осы қолданбада жоспарланған ағымдағы оятқыштар мен уақытқа байланысты іс-шаралар жұмыс істемейді."</string>
     <string name="keywords_alarms_and_reminders" msgid="6633360095891110611">"кесте, оятқыш, еске салғыш, сағат"</string>
     <string name="zen_mode_do_not_disturb_name" msgid="6798711401734798283">"Мазаламау"</string>
-    <string name="zen_mode_settings_title" msgid="7374070457626419755">"Мазаламау"</string>
+    <string name="zen_mode_settings_title" msgid="7374070457626419755">"Мазала­мау"</string>
     <string name="zen_mode_enable_dialog_turn_on" msgid="6418297231575050426">"Қосу"</string>
     <string name="zen_mode_settings_turn_on_dialog_title" msgid="2760567063190790696">"Мазаламау режимін қосу"</string>
     <string name="zen_mode_settings_summary_off" msgid="3832876036123504076">"Ешқашан"</string>

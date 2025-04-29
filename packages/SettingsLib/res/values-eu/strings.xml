@@ -396,7 +396,7 @@
     <string name="usb_audio_disable_routing" msgid="3367656923544254975">"Desgaitu USB bidez audioa bideratzeko aukera"</string>
     <string name="usb_audio_disable_routing_summary" msgid="8768242894849534699">"Desgaitu USB bidezko audio-gailuetara automatikoki bideratzeko aukera"</string>
     <string name="debug_layout" msgid="1659216803043339741">"Erakutsi diseinu-mugak"</string>
-    <string name="debug_layout_summary" msgid="8825829038287321978">"Erakutsi kliparen mugak, marjinak, etab."</string>
+    <string name="debug_layout_summary" msgid="8825829038287321978">"Erakutsi ebakiaren mugak, marjinak, etab."</string>
     <string name="force_rtl_layout_all_locales" msgid="8690762598501599796">"Eskuinetik ezkerrerako norabidea"</string>
     <string name="force_rtl_layout_all_locales_summary" msgid="6663016859517239880">"Behartu pantaila-diseinuaren norabidea eskuin-ezker izatera lurraldeko ezarpen guztiekin"</string>
     <string name="transparent_navigation_bar" msgid="1933192171384678484">"Nabigazio-barra gardena"</string>
@@ -404,7 +404,7 @@
     <string name="window_blurs" msgid="6831008984828425106">"Gaitu leiho-lausotzeak"</string>
     <string name="force_msaa" msgid="4081288296137775550">"Behartu 4x MSAA"</string>
     <string name="force_msaa_summary" msgid="9070437493586769500">"Gaitu 4x MSAA, OpenGL ES 2.0 aplikazioetan"</string>
-    <string name="show_non_rect_clip" msgid="7499758654867881817">"Araztu angeluzuzenak ez diren klip-eragiketak"</string>
+    <string name="show_non_rect_clip" msgid="7499758654867881817">"Araztu angeluzuzenak ez diren ebaketa-eragiketak"</string>
     <string name="track_frame_time" msgid="522674651937771106">"Profilaren HWUI errendatzea"</string>
     <string name="enable_gpu_debug_layers" msgid="4986675516188740397">"Gaitu GPUaren arazketa-geruzak"</string>
     <string name="enable_gpu_debug_layers_summary" msgid="4921521407377170481">"Eman GPUaren arazketa-geruzak kargatzeko baimena arazketa-aplikazioei"</string>
@@ -559,12 +559,12 @@
     <string name="save" msgid="3745809743277153149">"Gorde"</string>
     <string name="okay" msgid="949938843324579502">"Ados"</string>
     <string name="done" msgid="381184316122520313">"Eginda"</string>
-    <string name="alarms_and_reminders_label" msgid="6918395649731424294">"Alarmak eta abisuak"</string>
-    <string name="alarms_and_reminders_switch_title" msgid="4939393911531826222">"Eman alarmak eta abisuak ezartzeko baimena"</string>
-    <string name="alarms_and_reminders_title" msgid="8819933264635406032">"Alarmak eta abisuak"</string>
+    <string name="alarms_and_reminders_label" msgid="6918395649731424294">"Alarmak eta gogorarazpenak"</string>
+    <string name="alarms_and_reminders_switch_title" msgid="4939393911531826222">"Eman alarmak eta gogorarazpenak ezartzeko baimena"</string>
+    <string name="alarms_and_reminders_title" msgid="8819933264635406032">"Alarmak eta gogorarazpenak"</string>
     <string name="alarms_and_reminders_footer_title" msgid="6302587438389079695">"Eman alarmak ezartzeko eta denbora-muga duten ekintzak programatzeko baimena aplikazioari. Hala, aplikazioak atzeko planoan funtzionatuko du, eta litekeena da bateria gehiago kontsumitzea.\n\nBaimen hori ematen ez baduzu, ez dute funtzionatuko aplikazio honen bidez programatutako alarmek eta denbora-muga duten ekintzek."</string>
-    <string name="keywords_alarms_and_reminders" msgid="6633360095891110611">"programazioa, alarma, abisua, erlojua"</string>
-    <string name="zen_mode_do_not_disturb_name" msgid="6798711401734798283">"Ez molestatzeko"</string>
+    <string name="keywords_alarms_and_reminders" msgid="6633360095891110611">"programazioa, alarma, gogorarazpena, erlojua"</string>
+    <string name="zen_mode_do_not_disturb_name" msgid="6798711401734798283">"Ez molestatzeko modua"</string>
     <string name="zen_mode_settings_title" msgid="7374070457626419755">"Ez molestatzeko modua"</string>
     <string name="zen_mode_enable_dialog_turn_on" msgid="6418297231575050426">"Aktibatu"</string>
     <string name="zen_mode_settings_turn_on_dialog_title" msgid="2760567063190790696">"Aktibatu ez molestatzeko modua"</string>

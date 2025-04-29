@@ -81,7 +81,7 @@
     <string name="speed_label_fast" msgid="2677719134596044051">"Élevée"</string>
     <string name="speed_label_very_fast" msgid="8215718029533182439">"Très rapide"</string>
     <string name="wifi_passpoint_expired" msgid="6540867261754427561">"Arrivé à expiration"</string>
-    <string name="preference_summary_default_combination" msgid="2644094566845577901">"<xliff:g id="STATE">%1$s</xliff:g>/<xliff:g id="DESCRIPTION">%2$s</xliff:g>"</string>
+    <string name="preference_summary_default_combination" msgid="2644094566845577901">"<xliff:g id="STATE">%1$s</xliff:g> / <xliff:g id="DESCRIPTION">%2$s</xliff:g>"</string>
     <string name="bluetooth_disconnected" msgid="7739366554710388701">"Déconnecté"</string>
     <string name="bluetooth_disconnecting" msgid="7638892134401574338">"Déconnexion…"</string>
     <string name="bluetooth_connecting" msgid="5871702668260192755">"Connexion…"</string>
@@ -254,8 +254,8 @@
     <string name="adb_wireless_error" msgid="721958772149779856">"Erreur"</string>
     <string name="adb_wireless_settings" msgid="2295017847215680229">"Débogage sans fil"</string>
     <string name="adb_wireless_list_empty_off" msgid="1713707973837255490">"Pour afficher et utiliser les appareils disponibles, activez le débogage sans fil"</string>
-    <string name="adb_pair_method_qrcode_title" msgid="6982904096137468634">"Associer l\'appareil avec un code QR"</string>
-    <string name="adb_pair_method_qrcode_summary" msgid="7130694277228970888">"Associer les nouveaux appareils à l\'aide d\'un lecteur de code QR"</string>
+    <string name="adb_pair_method_qrcode_title" msgid="6982904096137468634">"Associer l\'appareil avec un QR code"</string>
+    <string name="adb_pair_method_qrcode_summary" msgid="7130694277228970888">"Associer les nouveaux appareils à l\'aide d\'un lecteur de QR code"</string>
     <string name="adb_pair_method_code_title" msgid="1122590300445142904">"Associer l\'appareil avec un code d\'association"</string>
     <string name="adb_pair_method_code_summary" msgid="6370414511333685185">"Associer les nouveaux appareils à l\'aide d\'un code à six chiffres"</string>
     <string name="adb_paired_devices_title" msgid="5268997341526217362">"Appareils associés"</string>
@@ -269,15 +269,15 @@
     <string name="adb_pairing_device_dialog_pairing_code_label" msgid="3639239786669722731">"Code d\'association via le Wi-Fi"</string>
     <string name="adb_pairing_device_dialog_failed_title" msgid="3426758947882091735">"Échec de l\'association"</string>
     <string name="adb_pairing_device_dialog_failed_msg" msgid="6611097519661997148">"Assurez-vous que l\'appareil est connecté au même réseau."</string>
-    <string name="adb_wireless_qrcode_summary" msgid="8051414549011801917">"Associer l\'appareil via le Wi‑Fi à l\'aide d\'un code QR"</string>
+    <string name="adb_wireless_qrcode_summary" msgid="8051414549011801917">"Associer l\'appareil via le Wi‑Fi à l\'aide d\'un QR code"</string>
     <string name="adb_wireless_verifying_qrcode_text" msgid="6123192424916029207">"Association de l\'appareil…"</string>
-    <string name="adb_qrcode_pairing_device_failed_msg" msgid="6936292092592914132">"Échec de l\'association à l\'appareil. Le code QR est incorrect, ou l\'appareil n\'est pas connecté au même réseau."</string>
+    <string name="adb_qrcode_pairing_device_failed_msg" msgid="6936292092592914132">"Échec de l\'association à l\'appareil. Le QR code est incorrect, ou l\'appareil n\'est pas connecté au même réseau."</string>
     <string name="adb_wireless_ip_addr_preference_title" msgid="8335132107715311730">"Adresse IP et port"</string>
-    <string name="adb_wireless_qrcode_pairing_title" msgid="1906409667944674707">"Scanner un code QR"</string>
-    <string name="adb_wireless_qrcode_pairing_description" msgid="6014121407143607851">"Associez l\'appareil via le Wi‑Fi à l\'aide d\'un code QR"</string>
+    <string name="adb_wireless_qrcode_pairing_title" msgid="1906409667944674707">"Scanner un QR code"</string>
+    <string name="adb_wireless_qrcode_pairing_description" msgid="6014121407143607851">"Associez l\'appareil via le Wi‑Fi à l\'aide d\'un QR code"</string>
     <string name="adb_wireless_no_network_msg" msgid="2365795244718494658">"Connectez-vous à un réseau Wi-Fi"</string>
     <string name="keywords_adb_wireless" msgid="6507505581882171240">"adb, débogage, dev"</string>
-    <string name="bugreport_in_power" msgid="8664089072534638709">"Raccourci vers rapport de bug"</string>
+    <string name="bugreport_in_power" msgid="8664089072534638709">"Raccourci vers le rapport de bug"</string>
     <string name="bugreport_in_power_summary" msgid="1885529649381831775">"Afficher un bouton dans le menu de démarrage permettant de créer un rapport de bug"</string>
     <string name="keep_screen_on" msgid="1187161672348797558">"Laisser activé"</string>
     <string name="keep_screen_on_summary" msgid="1510731514101925829">"L\'écran ne se met jamais en veille lorsque l\'appareil est en charge"</string>
@@ -462,7 +462,7 @@
     <string name="transcode_disable_cache" msgid="3160069309377467045">"Désactiver la cache de transcodage"</string>
     <string name="runningservices_settings_title" msgid="6460099290493086515">"Services en cours d\'exécution"</string>
     <string name="runningservices_settings_summary" msgid="1046080643262665743">"Afficher et contrôler les services en cours d\'exécution"</string>
-    <string name="select_webview_provider_title" msgid="3917815648099445503">"Mise en œuvre WebView"</string>
+    <string name="select_webview_provider_title" msgid="3917815648099445503">"Implémentation WebView"</string>
     <string name="select_webview_provider_dialog_title" msgid="2444261109877277714">"Définir la mise en œuvre WebView"</string>
     <string name="select_webview_provider_toast_text" msgid="8512254949169359848">"Ce choix n\'est plus valide. Réessayez."</string>
     <string name="picture_color_mode" msgid="1013807330552931903">"Mode de couleur des images"</string>
@@ -501,7 +501,7 @@
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> - En charge"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - Complètement chargé d\'ici <xliff:g id="TIME">%3$s</xliff:g>"</string>
     <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> - Complètement chargé dans <xliff:g id="TIME">%2$s</xliff:g>"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Complètement chargé dans <xliff:g id="TIME">%1$s</xliff:g>"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"Recharge complète d\'ici <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"Complètement chargé d\'ici <xliff:g id="TIME">%1$s</xliff:g>"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"Inconnu"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"Batterie en charge"</string>
@@ -676,7 +676,7 @@
     <string name="guest_exit_quick_settings_button" msgid="1912362095913765471">"Quitter la session Invité"</string>
     <string name="guest_notification_ephemeral" msgid="7263252466950923871">"Toute l\'activité sera supprimée à la fin de la session"</string>
     <string name="guest_notification_non_ephemeral" msgid="6843799963012259330">"Vous pouvez enregistrer ou supprimer l\'activité en quittant"</string>
-    <string name="guest_notification_non_ephemeral_non_first_login" msgid="8009307983766934876">"Réinitialisez la session pour supprimer immédiatement l\'activité. Vous pourrez aussi l\'enregistrer ou la supprimer en quittant la session."</string>
+    <string name="guest_notification_non_ephemeral_non_first_login" msgid="8009307983766934876">"Réinitialisez pour supprimer immédiatement l\'activité de la session, ou choisissez d\'enregistrer ou de supprimer l\'activité à la fin de la session."</string>
     <string name="user_image_photo_selector" msgid="433658323306627093">"Sélectionner une photo"</string>
     <string name="failed_attempts_now_wiping_device" msgid="4016329172216428897">"Trop de tentatives incorrectes. Les données de cet appareil vont être supprimées."</string>
     <string name="failed_attempts_now_wiping_user" msgid="469060411789668050">"Trop de tentatives incorrectes. Ce compte utilisateur va être supprimé."</string>
