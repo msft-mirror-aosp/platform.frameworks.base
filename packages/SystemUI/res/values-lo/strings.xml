@@ -484,7 +484,7 @@
     <string name="accessibility_announcement_communal_widget_added" msgid="6911593106099328271">"ເພີ່ມວິດເຈັດ <xliff:g id="WIDGET_NAME">%1$s</xliff:g> ໃສ່ໜ້າຈໍລັອກແລ້ວ"</string>
     <string name="communal_tutorial_indicator_text" msgid="4503010353591430123">"ປັດຊ້າຍເພື່ອເລີ່ມບົດແນະນຳສ່ວນກາງ"</string>
     <string name="cta_tile_button_to_open_widget_editor" msgid="3871562362382963878">"ປັບແຕ່ງ"</string>
-    <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"ປ່ອຍ​ໄປ"</string>
+    <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"ປິດໄວ້"</string>
     <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"ເພີ່ມ, ລຶບອອກ ແລະ ຈັດຮຽງວິດເຈັດຂອງທ່ານຄືນໃໝ່ໃນພື້ນທີ່ນີ້"</string>
     <string name="cta_label_to_open_widget_picker" msgid="3874946756976360699">"ເພີ່ມວິດເຈັດເພີ່ມເຕີມ"</string>
     <string name="popup_on_dismiss_cta_tile_text" msgid="8292501780996070019">"ກົດຄ້າງໄວ້ເພື່ອປັບແຕ່ງວິດເຈັດ"</string>

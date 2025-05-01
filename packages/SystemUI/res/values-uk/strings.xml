@@ -493,7 +493,7 @@
     <string name="icon_description_for_disabled_widget" msgid="4693151565003206943">"Значок додатка для вимкненого віджета"</string>
     <string name="icon_description_for_pending_widget" msgid="8413816401868001755">"Значок додатка для віджета, що встановлюється"</string>
     <string name="edit_widget" msgid="9030848101135393954">"Редагувати віджет"</string>
-    <string name="button_to_remove_widget" msgid="3948204829181214098">"Видалити"</string>
+    <string name="button_to_remove_widget" msgid="3948204829181214098">"Вилучити"</string>
     <string name="hub_mode_add_widget_button_text" msgid="4831464661209971729">"Додати віджет"</string>
     <string name="hub_mode_editing_exit_button_text" msgid="3704686734192264771">"Готово"</string>
     <string name="label_for_button_in_empty_state_cta" msgid="7314975555382055823">"Додати віджети"</string>

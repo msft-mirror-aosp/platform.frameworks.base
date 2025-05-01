@@ -106,7 +106,7 @@
     <string name="backlinks_include_link" msgid="4562093591148248158">"Zahrnúť odkaz"</string>
     <string name="backlinks_duplicate_label_format" msgid="558445128952827926">"<xliff:g id="APPNAME">%1$s</xliff:g> <xliff:g id="FREQUENCYCOUNT">(%2$d)</xliff:g>"</string>
     <string name="backlinks_cross_profile_error" msgid="1355798585727802282">"Odkazy z iných profilov sa nedajú pridať"</string>
-    <string name="screenrecord_title" msgid="4257171601439507792">"Rekordér obrazovky"</string>
+    <string name="screenrecord_title" msgid="4257171601439507792">"Nahrávanie obrazovky"</string>
     <string name="screenrecord_background_processing_label" msgid="7244617554884238898">"Spracúva sa záznam obrazovky"</string>
     <string name="screenrecord_channel_description" msgid="4147077128486138351">"Zobrazuje sa upozornenie týkajúce sa relácie záznamu obrazovky"</string>
     <string name="screenrecord_permission_dialog_title" msgid="7415261783188749730">"Chcete nahrávať obrazovku?"</string>

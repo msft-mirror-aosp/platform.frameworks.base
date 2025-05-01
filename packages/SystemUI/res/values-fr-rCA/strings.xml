@@ -122,7 +122,7 @@
     <string name="screenrecord_mic_label" msgid="2111264835791332350">"Microphone"</string>
     <string name="screenrecord_device_audio_and_mic_label" msgid="1831323771978646841">"Audio de l\'appareil et du microphone"</string>
     <string name="screenrecord_continue" msgid="4055347133700593164">"Commencer"</string>
-    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Enregistrement de l\'écran"</string>
+    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Enregistrement de l\'écran en cours…"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"Enregistrement de l\'écran et de l\'audio"</string>
     <string name="screenrecord_taps_label" msgid="1595690528298857649">"Afficher les endroits touchés à l\'écran"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"Arrêter"</string>
@@ -307,7 +307,7 @@
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_disconnect" msgid="415980329093277342">"Déconnecter"</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate" msgid="3724301751036877403">"Activer"</string>
     <string name="turn_on_bluetooth_auto_tomorrow" msgid="3345758139235739006">"L\'activer automatiquement demain"</string>
-    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Les fonctionnalités comme Partage rapide et Localiser mon appareil utilisent le Bluetooth"</string>
+    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Les fonctionnalités comme le Partage rapide et Localiser mon appareil utilisent le Bluetooth"</string>
     <string name="turn_on_bluetooth_auto_info_enabled" msgid="7440944034584560279">"Le Bluetooth s\'activera demain matin"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button" msgid="7545274861795853838">"Partager l\'audio"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button_sharing" msgid="3069309588231072128">"Partage de l\'audio en cours"</string>
@@ -542,7 +542,7 @@
     <!-- no translation found for media_projection_entry_app_permission_dialog_option_text_entire_screen (5100078808078139706) -->
     <skip />
     <string name="media_projection_entry_app_permission_dialog_warning_entire_screen" msgid="5504288438067851086">"Lorsque vous partagez l\'intégralité de votre écran, tout ce qui s\'y trouve est visible par <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g>. Par conséquent, soyez prudent avec les mots de passe, les détails du mode de paiement, les messages, les photos et les contenus audio et vidéo."</string>
-    <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"Lorsque vous partagez une appli, tout ce qui s\'y affiche ou s\'y joue est visible par <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g>. Par conséquent, soyez prudent avec les mots de passe, les détails du mode de paiement, les messages, les photos et les contenus audio et vidéo."</string>
+    <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"Lorsque vous partagez une appli, tout ce qui s\'y affiche ou s\'y joue est visible par <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g>. Par conséquent, soyez prudent avec les mots de passe, les détails de paiement, les messages, les photos et les contenus audio et vidéo."</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"Partager l\'écran"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> a désactivé cette option"</string>
     <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Choisir l\'appli à partager"</string>

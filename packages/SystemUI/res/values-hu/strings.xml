@@ -122,7 +122,7 @@
     <string name="screenrecord_mic_label" msgid="2111264835791332350">"Mikrofon"</string>
     <string name="screenrecord_device_audio_and_mic_label" msgid="1831323771978646841">"Eszköz hangja és mikrofon"</string>
     <string name="screenrecord_continue" msgid="4055347133700593164">"Indítás"</string>
-    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Kép rögzítése folyamatban"</string>
+    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Képernyőfelvétel folyamatban"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"Kép és hang rögzítése folyamatban"</string>
     <string name="screenrecord_taps_label" msgid="1595690528298857649">"A képernyőn végzett érintések mutatása"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"Leállítás"</string>

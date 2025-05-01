@@ -542,7 +542,7 @@
     <!-- no translation found for media_projection_entry_app_permission_dialog_option_text_entire_screen (5100078808078139706) -->
     <skip />
     <string name="media_projection_entry_app_permission_dialog_warning_entire_screen" msgid="5504288438067851086">"เมื่อกำลังแชร์ทั้งหน้าจอ <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> จะมองเห็นทุกสิ่งที่อยู่บนหน้าจอ ดังนั้นโปรดระวังสิ่งต่างๆ อย่างเช่นรหัสผ่าน รายละเอียดการชำระเงิน ข้อความ รูปภาพ รวมถึงเสียงและวิดีโอ"</string>
-    <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"เมื่อกำลังแชร์แอป <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> จะมองเห็นทุกสิ่งที่แสดงหรือเล่นอยู่ในแอปดังกล่าว ดังนั้นโปรดระวังสิ่งต่างๆ อย่างเช่นรหัสผ่าน รายละเอียดการชำระเงิน ข้อความ รูปภาพ รวมถึงเสียงและวิดีโอ"</string>
+    <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"เมื่อกำลังแชร์แอป ทุกสิ่งที่แสดงหรือเล่นอยู่ในแอปดังกล่าวจะปรากฏใน <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> ดังนั้นโปรดระวังสิ่งต่างๆ อย่างเช่นรหัสผ่าน รายละเอียดการชำระเงิน ข้อความ รูปภาพ รวมถึงเสียงและวิดีโอ"</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"แชร์หน้าจอ"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> ปิดใช้ตัวเลือกนี้"</string>
     <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"เลือกแอปที่จะแชร์"</string>
