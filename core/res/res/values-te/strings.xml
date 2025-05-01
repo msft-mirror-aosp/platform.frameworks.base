@@ -711,7 +711,7 @@
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"తగినంత వెలుతురు లేదు"</string>
     <string name="face_acquired_too_close" msgid="4453646176196302462">"ఫోన్‌ను కాస్త దూరంగా జరపండి"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"ఫోన్‌ను దగ్గరగా పట్టుకోండి"</string>
-    <string name="face_acquired_too_high" msgid="8278815780046368576">"ఫోన్‌ను పైకి పట్టుకోండి"</string>
+    <string name="face_acquired_too_high" msgid="8278815780046368576">"ఫోన్‌ను ఇంకాస్త పైకి జరపండి"</string>
     <string name="face_acquired_too_low" msgid="4075391872960840081">"ఫోన్‌ను కిందికి జరపండి"</string>
     <string name="face_acquired_too_right" msgid="6245286514593540859">"ఫోన్‌ను మీ ఎడమ వైపునకు జరపండి"</string>
     <string name="face_acquired_too_left" msgid="9201762240918405486">"ఫోన్‌ను మీ కుడి వైపునకు జరపండి"</string>
@@ -732,7 +732,7 @@
     <skip />
     <string name="face_acquired_recalibrate_alt" msgid="5702674220280332115">"మీ ఫేస్‌మోడల్ క్రియేషన్ కుదరదు. మళ్లీ ట్రై చేయండి."</string>
     <string name="face_acquired_dark_glasses_detected_alt" msgid="4052123776406041972">"డార్క్ గ్లాసెస్ గుర్తించబడ్డాయి. మీ ముఖం పూర్తిగా కనిపించాలి."</string>
-    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"ముఖం మీద ఏదో  కవరింగ్ ఉన్నట్టు గుర్తించబడింది."</string>
+    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"ముఖాన్ని ఏదో కప్పి ఉంచినట్లు  గుర్తించబడింది. మీ ముఖం పూర్తిగా కనబడాలి."</string>
   <string-array name="face_acquired_vendor">
   </string-array>
     <string name="face_error_hw_not_available" msgid="5085202213036026288">"ముఖం ధృవీకరించలేరు. హార్డ్‌వేర్ అందుబాటులో లేదు."</string>
@@ -2153,7 +2153,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"సరే"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"ఆఫ్ చేయండి"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"మరింత తెలుసుకోండి"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12లో \'మెరుగైన నోటిఫికేషన్‌లు\', \'Android అనుకూల నోటిఫికేషన్‌ల\'ను రీప్లేస్ చేశాయి. చేయాల్సిన పనులను, రిప్లయిలను ఈ ఫీచర్ మీకు చూపిస్తుంది. అలాగే మీ నోటిఫికేషన్‌లను ఆర్గనైజ్ చేస్తుంది. \n\nనోటిఫికేషన్ కంటెంట్‌ను \'మెరుగైన నోటిఫికేషన్‌లు\' ఫీచర్ యాక్సెస్ చేయగలదు. కాంటాక్ట్ పేర్లు, మెసేజ్‌ల వంటి వ్యక్తిగత సమాచారం కూడా ఈ కంటెంట్‌లో ఉంటుంది. ఈ ఫీచర్, నోటిఫికేషన్‌లను విస్మరించగలదు (డిస్మిస్ చేయగలదు) లేదా వాటికి ప్రతిస్పందించగలదు (రెస్పాండ్ కాగలదు). ఫోన్ కాల్స్‌కు సమాధానమివ్వడం, \'అంతరాయం కలిగించవద్దు\' ఆప్షన్‌ను కంట్రోల్ చేయడం లాంటి పనులు కూడా ఇందులో ఉంటాయి."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12లో \'మెరుగైన నోటిఫికేషన్‌లు\', \'Android అనుకూల నోటిఫికేషన్‌ల\'ను రీప్లేస్ చేశాయి. చేయాల్సిన పనులను, రిప్లయిలను ఈ ఫీచర్ మీకు చూపిస్తుంది. అలాగే మీ నోటిఫికేషన్‌లను ఆర్గనైజ్ చేస్తుంది. \n\nనోటిఫికేషన్ కంటెంట్‌ను \'మెరుగైన నోటిఫికేషన్‌లు\' ఫీచర్ యాక్సెస్ చేయగలదు. కాంటాక్ట్ పేర్లు, మెసేజ్‌ల వంటి వ్యక్తిగత సమాచారం కూడా ఈ కంటెంట్‌లో ఉంటుంది. ఈ ఫీచర్, నోటిఫికేషన్‌లను విస్మరించగలదు (డిస్మిస్ చేయగలదు) లేదా వాటికి ప్రతిస్పందించగలదు (రెస్పాండ్ కాగలదు). ఫోన్ కాల్స్‌కు సమాధానమివ్వడం, \'డిస్టర్బ్ చేయవద్దు\' ఆప్షన్‌ను కంట్రోల్ చేయడం లాంటి పనులు కూడా ఇందులో ఉంటాయి."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"రొటీన్ మోడ్ సమాచార నోటిఫికేషన్"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"బ్యాటరీ సేవర్ ఆన్ చేయబడింది"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"బ్యాటరీ జీవితకాలాన్ని పొడిగించడానికి బ్యాటరీ వినియోగాన్ని తగ్గించడం"</string>
@@ -2221,7 +2221,7 @@
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"మీ IT అడ్మిన్ ద్వారా బ్లాక్ చేయబడింది"</string>
     <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"ఈ కంటెంట్ వర్క్ యాప్‌తో షేర్ చేయడం సాధ్యం కాదు"</string>
     <string name="resolver_cant_access_work_apps_explanation" msgid="1129960195389373279">"ఈ కంటెంట్ వర్క్ యాప్‌తో తెరవడం సాధ్యం కాదు"</string>
-    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"ఈ కంటెంట్ వ్యక్తిగత యాప్‌తో షేర్ చేయడం సాధ్యం కాదు"</string>
+    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"ఈ కంటెంట్‌ను వ్యక్తిగత (పర్సనల్) యాప్స్‌కు షేర్ చేయడం సాధ్యపడదు"</string>
     <string name="resolver_cant_access_personal_apps_explanation" msgid="1679399548862724359">"ఈ కంటెంట్ వ్యక్తిగత యాప్‌తో తెరవడం సాధ్యం కాదు"</string>
     <string name="resolver_turn_on_work_apps" msgid="1535946298236678122">"వర్క్ యాప్‌లు పాజ్ అయ్యాయి"</string>
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"అన్‌పాజ్ చేయండి"</string>
@@ -2391,7 +2391,7 @@
     <string name="mic_access_off_toast" msgid="8111040892954242437">"మైక్రోఫోన్ బ్లాక్ చేయబడింది"</string>
     <string name="connected_display_unavailable_notification_title" msgid="5265409360902073556">"డిస్‌ప్లే చేయడానికి మిర్రర్ చేయడం సాధ్యపడదు"</string>
     <string name="connected_display_unavailable_notification_content" msgid="3845903313751217516">"వేరే కేబుల్‌ను ఉపయోగించి, మళ్లీ ట్రై చేయండి"</string>
-    <string name="connected_display_thermally_unavailable_notification_content" msgid="9205758199439955949">"మీ పరికరం చాలా వెచ్చగా ఉంది, అది చల్లబడే వరకు డిస్‌ప్లే చేయడానికి మిర్రర్ చేయడం సాధ్యపడదు"</string>
+    <string name="connected_display_thermally_unavailable_notification_content" msgid="9205758199439955949">"మీ డివైజ్ చాలా వెచ్చగా ఉంది, అది చల్లబడే వరకు డిస్‌ప్లే చేయడానికి మిర్రర్ చేయడం సాధ్యపడదు"</string>
     <string name="concurrent_display_notification_name" msgid="1526911253558311131">"Dual Screen"</string>
     <string name="concurrent_display_notification_active_title" msgid="4892473462327943673">"Dual Screen ఆన్‌లో ఉంది"</string>
     <string name="concurrent_display_notification_active_content" msgid="5889355473710601270">"కంటెంట్‌ను చూపడం కోసం <xliff:g id="APP_NAME">%1$s</xliff:g> రెండు డిస్‌ప్లేలనూ ఉపయోగిస్తోంది"</string>

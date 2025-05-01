@@ -1769,7 +1769,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"La fonctionnalité s\'ouvrira la prochaine fois que vous utiliserez ce raccourci. Balayez l\'écran du bas vers le haut avec trois doigts et relâchez rapidement."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Agrandissement"</string>
     <string name="user_switched" msgid="7249833311585228097">"Utilisateur actuel : <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Passage au profil : <xliff:g id="NAME">%1$s</xliff:g> en cours…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Passage au profil de <xliff:g id="NAME">%1$s</xliff:g> en cours…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Déconnexion de <xliff:g id="NAME">%1$s</xliff:g> en cours..."</string>
     <string name="owner_name" msgid="8713560351570795743">"Propriétaire"</string>
     <string name="guest_name" msgid="8502103277839834324">"Invité"</string>
@@ -1915,8 +1915,8 @@
     <string name="confirm_battery_saver" msgid="5247976246208245754">"OK"</string>
     <string name="battery_saver_description_with_learn_more" msgid="5444908404021316250">"Le mode Économiseur de pile active le thème sombre et limite ou désactive l\'activité en arrière-plan, certains effets visuels, certaines fonctionnalités et certaines connexions réseau."</string>
     <string name="battery_saver_description" msgid="8518809702138617167">"Le mode Économiseur de pile active le thème sombre et limite ou désactive l\'activité en arrière-plan, certains effets visuels, certaines fonctionnalités et certaines connexions réseau."</string>
-    <string name="data_saver_description" msgid="4995164271550590517">"Pour aider à diminuer l\'utilisation des données, la fonctionnalité Économiseur de données empêche certaines applis d\'envoyer ou de recevoir des données en arrière-plan. Une appli que vous utilisez actuellement peut accéder à des données, mais peut le faire moins souvent. Cela peut signifier, par exemple, que les images ne s\'affichent pas jusqu\'à ce que vous les touchiez."</string>
-    <string name="data_saver_enable_title" msgid="7080620065745260137">"Activer l\'économiseur de données?"</string>
+    <string name="data_saver_description" msgid="4995164271550590517">"Pour aider à diminuer l\'utilisation des données, la fonctionnalité Économiseur de données empêche certaines applis d\'envoyer ou de recevoir des données en arrière-plan. Une appli que vous êtes en train d\'utiliser peut accéder à des données, mais peut le faire moins souvent. Cela peut signifier, par exemple, que les images ne s\'affichent pas jusqu\'à ce que vous les touchiez."</string>
+    <string name="data_saver_enable_title" msgid="7080620065745260137">"Activer l\'Économiseur de données?"</string>
     <string name="data_saver_enable_button" msgid="4399405762586419726">"Activer"</string>
     <string name="zen_mode_duration_minutes_summary" msgid="4555514757230849789">"{count,plural, =1{Pendant une minute (jusqu\'à {formattedTime})}one{Pendant # minute (jusqu\'à {formattedTime})}many{Pendant # minutes (jusqu\'à {formattedTime})}other{Pendant # minutes (jusqu\'à {formattedTime})}}"</string>
     <string name="zen_mode_duration_minutes_summary_short" msgid="1187553788355486950">"{count,plural, =1{Pendant 1 m (jusqu\'à {formattedTime})}one{Pendant # m (jusqu\'à {formattedTime})}many{Pendant # m (jusqu\'à {formattedTime})}other{Pendant # m (jusqu\'à {formattedTime})}}"</string>

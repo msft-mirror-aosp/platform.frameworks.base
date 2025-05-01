@@ -1770,7 +1770,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Funkcja otworzy się, gdy następnym razem użyjesz tego skrótu. Przesuń 3 palcami z dołu ekranu i szybko je unieś."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Powiększenie"</string>
     <string name="user_switched" msgid="7249833311585228097">"Bieżący użytkownik: <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Przełączam na użytkownika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Przełączam na użytkownika: <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Wylogowuję użytkownika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Właściciel"</string>
     <string name="guest_name" msgid="8502103277839834324">"Gość"</string>

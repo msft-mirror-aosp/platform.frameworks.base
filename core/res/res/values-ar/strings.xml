@@ -713,12 +713,12 @@
     <string name="face_acquired_insufficient" msgid="6889245852748492218">"يتعذّر إنشاء نموذج الوجه. يُرجى إعادة المحاولة."</string>
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"ساطع للغاية. يُرجى تجربة مستوى سطوع أقلّ"</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"الإضاءة غير كافية"</string>
-    <string name="face_acquired_too_close" msgid="4453646176196302462">"يُرجى إبعاد الهاتف عنك."</string>
+    <string name="face_acquired_too_close" msgid="4453646176196302462">"يُرجى إبعاد الهاتف عن وجهك قليلاً"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"يُرجى تقريب الهاتف منك"</string>
-    <string name="face_acquired_too_high" msgid="8278815780046368576">"ارفع الهاتف للأعلى"</string>
-    <string name="face_acquired_too_low" msgid="4075391872960840081">"خفّض الهاتف للأسفل"</string>
-    <string name="face_acquired_too_right" msgid="6245286514593540859">"حرِّك الهاتف لجهة اليسار"</string>
-    <string name="face_acquired_too_left" msgid="9201762240918405486">"حرِّك الهاتف لجهة اليمين"</string>
+    <string name="face_acquired_too_high" msgid="8278815780046368576">"يُرجى رفع الهاتف للأعلى"</string>
+    <string name="face_acquired_too_low" msgid="4075391872960840081">"يُرجى خفّض الهاتف للأسفل"</string>
+    <string name="face_acquired_too_right" msgid="6245286514593540859">"يُرجى تحريك الهاتف لجهة اليسار"</string>
+    <string name="face_acquired_too_left" msgid="9201762240918405486">"يُرجى تحريك الهاتف لجهة اليمين"</string>
     <string name="face_acquired_poor_gaze" msgid="4427153558773628020">"يُرجى النظر إلى جهازك مباشرة أكثر."</string>
     <string name="face_acquired_not_detected" msgid="1057966913397548150">"ارفع هاتفك إلى مستوى العينَين لأنّه تتعذّر رؤية وجهك"</string>
     <string name="face_acquired_too_much_motion" msgid="8199691445085189528">"حركة أكثر من اللازم. يُرجى حمل الهاتف بثبات."</string>

@@ -2005,7 +2005,7 @@
     <string name="app_suspended_title" msgid="888873445010322650">"Aplikácia nie je k dispozícii"</string>
     <string name="app_suspended_default_message" msgid="6451215678552004172">"Aplikácia <xliff:g id="APP_NAME_0">%1$s</xliff:g> nie je momentálne k dispozícii. Spravuje to aplikácia <xliff:g id="APP_NAME_1">%2$s</xliff:g>."</string>
     <string name="app_suspended_more_details" msgid="211260942831587014">"Ďalšie informácie"</string>
-    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Znova spustiť aplikáciu"</string>
+    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Zrušiť pozastavenie aplikácie"</string>
     <string name="work_mode_off_title" msgid="6367463960165135829">"Zrušiť pozast. prac. aplikácií?"</string>
     <string name="work_mode_turn_on" msgid="5316648862401307800">"Zrušiť pozastavenie"</string>
     <string name="work_mode_emergency_call_button" msgid="6818855962881612322">"Tiesňová linka"</string>
@@ -2217,13 +2217,13 @@
     <string name="conversation_title_fallback_group_chat" msgid="456073374993104303">"Skupinová konverzácia"</string>
     <string name="unread_convo_overflow" msgid="920517615597353833">"<xliff:g id="MAX_UNREAD_COUNT">%1$d</xliff:g>+"</string>
     <string name="resolver_personal_tab" msgid="2051260504014442073">"Osobné"</string>
-    <string name="resolver_work_tab" msgid="2690019516263167035">"Práca"</string>
+    <string name="resolver_work_tab" msgid="2690019516263167035">"Pracovné"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"Osobné zobrazenie"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"Pracovné zobrazenie"</string>
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Blokované vaším správcom IT"</string>
     <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"Tento obsah sa nedá zdieľať pomocou pracovných aplikácií"</string>
     <string name="resolver_cant_access_work_apps_explanation" msgid="1129960195389373279">"Tento obsah sa nedá otvoriť pomocou pracovných aplikácií"</string>
-    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Tento obsah sa nedá zdieľať pomocou osobných aplikácií"</string>
+    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Tento obsah sa nedá zdieľať s osobnými aplikáciami"</string>
     <string name="resolver_cant_access_personal_apps_explanation" msgid="1679399548862724359">"Tento obsah sa nedá otvoriť pomocou osobných aplikácií"</string>
     <string name="resolver_turn_on_work_apps" msgid="1535946298236678122">"Pracovné aplikácie sú pozastavené"</string>
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"Zrušiť pozastavenie"</string>

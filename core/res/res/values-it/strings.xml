@@ -293,7 +293,7 @@
     <string name="notification_channel_car_mode" msgid="2123919247040988436">"Modalità automobile"</string>
     <string name="notification_channel_account" msgid="6436294521740148173">"Stato dell\'account"</string>
     <string name="notification_channel_developer" msgid="1691059964407549150">"Messaggi dello sviluppatore"</string>
-    <string name="notification_channel_developer_important" msgid="7197281908918789589">"Messaggi importanti relativi agli sviluppatori"</string>
+    <string name="notification_channel_developer_important" msgid="7197281908918789589">"Messaggi importanti per gli sviluppatori"</string>
     <string name="notification_channel_updates" msgid="7907863984825495278">"Aggiornamenti"</string>
     <string name="notification_channel_network_status" msgid="2127687368725272809">"Stato della rete"</string>
     <string name="notification_channel_network_alerts" msgid="6312366315654526528">"Avvisi di rete"</string>
@@ -711,7 +711,7 @@
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"Troppa luce. Prova con una luce più soft."</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"Luce insufficiente"</string>
     <string name="face_acquired_too_close" msgid="4453646176196302462">"Allontana il telefono"</string>
-    <string name="face_acquired_too_far" msgid="2922278214231064859">"Avvicina il telefono"</string>
+    <string name="face_acquired_too_far" msgid="2922278214231064859">"Avvicina lo smartphone"</string>
     <string name="face_acquired_too_high" msgid="8278815780046368576">"Sposta lo smartphone più in alto"</string>
     <string name="face_acquired_too_low" msgid="4075391872960840081">"Sposta lo smartphone più in basso"</string>
     <string name="face_acquired_too_right" msgid="6245286514593540859">"Sposta lo smartphone verso sinistra"</string>

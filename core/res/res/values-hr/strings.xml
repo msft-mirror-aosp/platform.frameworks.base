@@ -712,8 +712,8 @@
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"Nema dovoljno svjetla"</string>
     <string name="face_acquired_too_close" msgid="4453646176196302462">"Udaljite telefon"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"Približite telefon"</string>
-    <string name="face_acquired_too_high" msgid="8278815780046368576">"Pomaknite telefon prema gore"</string>
-    <string name="face_acquired_too_low" msgid="4075391872960840081">"Pomaknite telefon prema dolje"</string>
+    <string name="face_acquired_too_high" msgid="8278815780046368576">"Pomaknite telefon više"</string>
+    <string name="face_acquired_too_low" msgid="4075391872960840081">"Pomaknite telefon niže"</string>
     <string name="face_acquired_too_right" msgid="6245286514593540859">"Pomaknite telefon ulijevo"</string>
     <string name="face_acquired_too_left" msgid="9201762240918405486">"Pomaknite telefon udesno"</string>
     <string name="face_acquired_poor_gaze" msgid="4427153558773628020">"Gledajte izravnije prema uređaju."</string>
@@ -1769,7 +1769,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Značajka će se otvoriti sljedeći put kad upotrijebite ovaj prečac. Nakratko prijeđite s dna zaslona trima prstima."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Povećavanje"</string>
     <string name="user_switched" msgid="7249833311585228097">"Trenutačni korisnik <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Prebacivanje na korisnika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Prebacivanje na: <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Odjavljivanje korisnika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Vlasnik"</string>
     <string name="guest_name" msgid="8502103277839834324">"Gost"</string>
@@ -2004,7 +2004,7 @@
     <string name="app_suspended_title" msgid="888873445010322650">"Aplikacija nije dostupna"</string>
     <string name="app_suspended_default_message" msgid="6451215678552004172">"Aplikacija <xliff:g id="APP_NAME_0">%1$s</xliff:g> trenutačno nije dostupna. Ovime upravlja aplikacija <xliff:g id="APP_NAME_1">%2$s</xliff:g>."</string>
     <string name="app_suspended_more_details" msgid="211260942831587014">"Saznajte više"</string>
-    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Prekini pauzu aplikacije"</string>
+    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Prestani pauzirati aplikaciju"</string>
     <string name="work_mode_off_title" msgid="6367463960165135829">"Pokrenuti poslovne aplikacije?"</string>
     <string name="work_mode_turn_on" msgid="5316648862401307800">"Ponovno pokreni"</string>
     <string name="work_mode_emergency_call_button" msgid="6818855962881612322">"Hitni slučaj"</string>
@@ -2222,7 +2222,7 @@
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Blokirao vaš IT administrator"</string>
     <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"Taj se sadržaj ne može dijeliti pomoću poslovnih aplikacija"</string>
     <string name="resolver_cant_access_work_apps_explanation" msgid="1129960195389373279">"Taj se sadržaj ne može otvoriti pomoću poslovnih aplikacija"</string>
-    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Taj se sadržaj ne može dijeliti pomoću osobnih aplikacija"</string>
+    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Taj se sadržaj ne može dijeliti s osobnim aplikacijama"</string>
     <string name="resolver_cant_access_personal_apps_explanation" msgid="1679399548862724359">"Taj se sadržaj ne može otvoriti pomoću osobnih aplikacija"</string>
     <string name="resolver_turn_on_work_apps" msgid="1535946298236678122">"Poslovne aplikacije su pauzirane"</string>
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"Ponovno pokreni"</string>
