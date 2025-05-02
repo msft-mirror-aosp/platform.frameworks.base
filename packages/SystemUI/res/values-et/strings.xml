@@ -139,8 +139,8 @@
     <string name="share_to_app_stop_dialog_title" msgid="9212915050910250438">"Kas lõpetada ekraanikuva jagamine?"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen_with_host_app" msgid="522823522115375414">"Jagate praegu kogu oma ekraanikuva rakendusega <xliff:g id="HOST_APP_NAME">%1$s</xliff:g>"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen" msgid="5090115386271179270">"Jagate praegu kogu oma ekraanikuva rakendusega"</string>
-    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"Jagate praegu rakenduse <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> kuva"</string>
-    <string name="share_to_app_stop_dialog_message_single_app_generic" msgid="6681016774654578261">"Jagate praegu rakenduse kuva"</string>
+    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"Jagate praegu rakenduse <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> kuva."</string>
+    <string name="share_to_app_stop_dialog_message_single_app_generic" msgid="6681016774654578261">"Jagate praegu rakenduse kuva."</string>
     <string name="share_to_app_stop_dialog_button" msgid="6334056916284230217">"Lõpeta jagamine"</string>
     <string name="cast_screen_to_other_device_chip_accessibility_label" msgid="4687917476203009885">"Ekraanikuva ülekandmine"</string>
     <string name="cast_to_other_device_stop_dialog_title" msgid="7836517190930357326">"Kas peatada ülekandmine?"</string>
@@ -296,7 +296,7 @@
     <string name="quick_settings_modes_label" msgid="879156359479504244">"Režiimid"</string>
     <string name="quick_settings_bluetooth_label" msgid="7018763367142041481">"Bluetooth"</string>
     <string name="quick_settings_bluetooth_detail_empty_text" msgid="5760239584390514322">"Ühtegi seotud seadet pole saadaval"</string>
-    <string name="quick_settings_bluetooth_tile_subtitle" msgid="212752719010829550">"Puudutage seadme ühendamiseks või ühenduse katkestamiseks"</string>
+    <string name="quick_settings_bluetooth_tile_subtitle" msgid="212752719010829550">"Puudutage seadme ühendamiseks või ühenduse katkestamiseks."</string>
     <string name="pair_new_bluetooth_devices" msgid="4601767620843349645">"Uue seadme sidumine"</string>
     <string name="see_all_bluetooth_devices" msgid="1761596816620200433">"Kuva kõik"</string>
     <string name="turn_on_bluetooth" msgid="5681370462180289071">"Kasuta Bluetoothi"</string>

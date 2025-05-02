@@ -72,7 +72,7 @@
     <string name="usb_disable_contaminant_detection" msgid="3827082183595978641">"Միացնել USB-ն"</string>
     <string name="learn_more" msgid="4690632085667273811">"Իմանալ ավելին"</string>
     <string name="global_action_screenshot" msgid="2760267567509131654">"Սքրինշոթ"</string>
-    <string name="global_action_smart_lock_disabled" msgid="6286551337177954859">"«Հետաձգված ապակողպում» գործառույթն անջատված է"</string>
+    <string name="global_action_smart_lock_disabled" msgid="6286551337177954859">"«Հետաձգված կողպում» գործառույթն անջատված է"</string>
     <string name="remote_input_image_insertion_text" msgid="4850791636452521123">"պատկեր է ուղարկվել"</string>
     <string name="screenshot_saving_title" msgid="2298349784913287333">"Սքրինշոթը պահվում է..."</string>
     <string name="screenshot_saving_work_profile_title" msgid="5332829607308450880">"Սքրինշոթը պահվում է աշխատանքային պրոֆիլում…"</string>

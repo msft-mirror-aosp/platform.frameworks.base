@@ -59,7 +59,7 @@
     <string name="hdmi_cec_set_menu_language_description" msgid="8176716678074126619">"Jiné zařízení požádalo o změnu systémového jazyka"</string>
     <string name="hdmi_cec_set_menu_language_accept" msgid="2513689457281009578">"Změnit jazyk"</string>
     <string name="hdmi_cec_set_menu_language_decline" msgid="7650721096558646011">"Zachovat stávající jazyk"</string>
-    <string name="share_wifi_button_text" msgid="1285273973812029240">"Sdílení sítě Wi-Fi"</string>
+    <string name="share_wifi_button_text" msgid="1285273973812029240">"Sdílet Wi-Fi"</string>
     <string name="wifi_debugging_title" msgid="7300007687492186076">"Povolit v této síti bezdrátové ladění?"</string>
     <string name="wifi_debugging_message" msgid="5461204211731802995">"Název sítě (SSID)\n<xliff:g id="SSID_0">%1$s</xliff:g>\n\nAdresa Wi‑Fi (BSSID)\n<xliff:g id="BSSID_1">%2$s</xliff:g>"</string>
     <string name="wifi_debugging_always" msgid="2968383799517975155">"V této síti vždy povolit"</string>
@@ -122,7 +122,7 @@
     <string name="screenrecord_mic_label" msgid="2111264835791332350">"Mikrofon"</string>
     <string name="screenrecord_device_audio_and_mic_label" msgid="1831323771978646841">"Zvuk zařízení a mikrofon"</string>
     <string name="screenrecord_continue" msgid="4055347133700593164">"Začít"</string>
-    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Nahrávání obrazovky"</string>
+    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"Nahrává se obrazovka"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"Nahrávání obrazovky a zvuku"</string>
     <string name="screenrecord_taps_label" msgid="1595690528298857649">"Zobrazovat klepnutí na displej"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"Zastavit"</string>
@@ -485,7 +485,7 @@
     <string name="communal_tutorial_indicator_text" msgid="4503010353591430123">"Přejetím doleva spustíte komunitní výukový program"</string>
     <string name="cta_tile_button_to_open_widget_editor" msgid="3871562362382963878">"Přizpůsobit"</string>
     <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"Zavřít"</string>
-    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"V tomto prostoru můžete přidávat a odstraňovat widgety a měnit jejich pořadí"</string>
+    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Zde můžete přidávat, odstraňovat a přesouvat widgety"</string>
     <string name="cta_label_to_open_widget_picker" msgid="3874946756976360699">"Přidat další widgety"</string>
     <string name="popup_on_dismiss_cta_tile_text" msgid="8292501780996070019">"Dlouhým stisknutím můžete přizpůsobit widgety"</string>
     <string name="button_to_configure_widgets_text" msgid="4191862850185256901">"Přizpůsobit widgety"</string>

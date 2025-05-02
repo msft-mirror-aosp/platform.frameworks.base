@@ -307,7 +307,7 @@
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_disconnect" msgid="415980329093277342">"prekinitev povezave"</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate" msgid="3724301751036877403">"aktiviranje"</string>
     <string name="turn_on_bluetooth_auto_tomorrow" msgid="3345758139235739006">"Samodejno vklopi jutri"</string>
-    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Funkcije, kot sta Hitro deljenje in Poišči mojo napravo, uporabljajo Bluetooth"</string>
+    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Funkcije, kot sta Hitro deljenje in Poišči mojo napravo, uporabljajo Bluetooth."</string>
     <string name="turn_on_bluetooth_auto_info_enabled" msgid="7440944034584560279">"Bluetooth se bo vklopil jutri zjutraj"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button" msgid="7545274861795853838">"Deli zvok"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button_sharing" msgid="3069309588231072128">"Poteka deljenje zvoka"</string>

@@ -387,7 +387,7 @@
     <string name="qs_record_issue_start" msgid="2979831312582567056">"Hasi"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"Gelditu"</string>
     <string name="qs_record_issue_bug_report" msgid="8229031766918650079">"Akatsen txostena"</string>
-    <string name="qs_record_issue_dropdown_header" msgid="5995983175678658329">"Gailuaren erabileraren zer alderdiri eragin dio?"</string>
+    <string name="qs_record_issue_dropdown_header" msgid="5995983175678658329">"Gailuaren erabileraren zein alderdiri eragin dio?"</string>
     <string name="qs_record_issue_dropdown_prompt" msgid="2526949919167046219">"Hautatu arazo mota"</string>
     <string name="qs_record_issue_dropdown_screenrecord" msgid="6396141928484257626">"Pantaila-grabaketa"</string>
     <string name="performance" msgid="6552785217174378320">"Errendimendua"</string>
