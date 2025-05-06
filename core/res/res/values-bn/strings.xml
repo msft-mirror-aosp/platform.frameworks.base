@@ -669,7 +669,7 @@
   </string-array>
     <string name="fingerprint_error_not_match" msgid="4599441812893438961">"ফিঙ্গারপ্রিন্ট শনাক্ত করা যায়নি"</string>
     <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"ফিঙ্গারপ্রিন্ট শনাক্ত করা যায়নি"</string>
-    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"মুখ শনাক্ত করা যায়নি। এর পরিবর্তে ফিঙ্গারপ্রিন্ট ব্যবহার করুন।"</string>
+    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"ফেস চেনা যায়নি। এর পরিবর্তে ফিঙ্গারপ্রিন্ট ব্যবহার করুন।"</string>
     <string name="fingerprint_authenticated" msgid="2024862866860283100">"আঙ্গুলের ছাপ যাচাই করা হয়েছে"</string>
     <string name="face_authenticated_no_confirmation_required" msgid="8867889115112348167">"ফেস যাচাই করা হয়েছে"</string>
     <string name="face_authenticated_confirmation_required" msgid="6872632732508013755">"ফেস যাচাই করা হয়েছে, \'কনফার্ম করুন\' বোতাম প্রেস করুন"</string>
@@ -1764,7 +1764,7 @@
     <string name="accessibility_gesture_prompt_text" msgid="6452246951969541792">"ফিচার বেছে নিন"</string>
     <string name="accessibility_gesture_3finger_prompt_text" msgid="77745752309056152">"ফিচার বেছে নিন"</string>
     <string name="accessibility_button_instructional_text" msgid="6831154884557881996">"পরের বার অ্যাক্সেসিবিলিটি বোতামে ট্যাপ করলে, ফিচারটি চালু হয়ে যাবে"</string>
-    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ২টি আঙ্গুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
+    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ২টি আঙুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ৩টি আঙ্গুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"বড় করে দেখা"</string>
     <string name="user_switched" msgid="7249833311585228097">"বর্তমান ব্যবহারকারী <xliff:g id="NAME">%1$s</xliff:g>৷"</string>

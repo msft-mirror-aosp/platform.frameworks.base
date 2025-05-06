@@ -2381,8 +2381,8 @@
     <string name="default_card_name" msgid="9198284935962911468">"کارت <xliff:g id="CARDNUMBER">%d</xliff:g>"</string>
     <string name="permlab_companionProfileWatch" msgid="2457738382085872542">"اجازه نمایه «ساعت همراه» برای مدیریت ساعت‌ها"</string>
     <string name="permdesc_companionProfileWatch" msgid="5655698581110449397">"به برنامه همراه اجازه می‌دهد ساعت‌ها را مدیریت کند."</string>
-    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"بررسی حضور دستگاه همراه"</string>
-    <string name="permdesc_observeCompanionDevicePresence" msgid="3011699826788697852">"به برنامه همراه اجازه می‌دهد وقتی دستگاه‌های همراه نزدیک یا دور هستند، حضور آن‌ها را بررسی کند."</string>
+    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"بررسی حضور دستگاه همپا"</string>
+    <string name="permdesc_observeCompanionDevicePresence" msgid="3011699826788697852">"به برنامه همپا اجازه می‌دهد وقتی دستگاه‌های همراه نزدیک یا دور هستند، حضور آن‌ها را بررسی کند."</string>
     <string name="permlab_deliverCompanionMessages" msgid="3931552294842980887">"ارسال پیام‌های همراه"</string>
     <string name="permdesc_deliverCompanionMessages" msgid="2170847384281412850">"به برنامه همراه اجازه می‌دهد پیام‌های همراه را به دستگاه‌های دیگر ارسال کند."</string>
     <string name="permlab_startForegroundServicesFromBackground" msgid="6363004936218638382">"اجرای سرویس‌های پیش‌نما از پس‌زمینه"</string>
