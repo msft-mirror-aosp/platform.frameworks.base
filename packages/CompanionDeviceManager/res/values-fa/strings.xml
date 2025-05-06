@@ -16,7 +16,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="4470785958457506021">"مدیر دستگاه مرتبط"</string>
+    <string name="app_label" msgid="4470785958457506021">"مدیر دستگاه همپا"</string>
     <string name="confirmation_title" msgid="2244241995958340998">"‏به برنامه &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; اجازه داده شود به &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt; دسترسی پیدا کند؟"</string>
     <string name="profile_name_watch" msgid="576290739483672360">"ساعت"</string>
     <string name="chooser_title_non_profile" msgid="6035023914517087400">"‏انتخاب دستگاه برای مدیریت شدن توسط &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;"</string>
