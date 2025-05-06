@@ -545,7 +545,7 @@
     <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"Pri zdieľaní aplikácie vidí aplikácia <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> všetko, čo sa v zdieľanej aplikácii zobrazuje alebo prehráva. Preto zvýšte pozornosť v prípade položiek, ako sú heslá, platobné údaje, správy, fotky a zvuk či video."</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"Zdieľať obrazovku"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"Aplikácia <xliff:g id="APP_NAME">%1$s</xliff:g> túto možnosť zakázala"</string>
-    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Vyberte aplikáciu, do ktorej chcete zdieľať"</string>
+    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Vyberte aplikáciu, ktorú chcete zdieľať"</string>
     <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"Chcete prenášať obrazovku?"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Prenášať jednu aplikáciu"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Prenášať celú obrazovku"</string>

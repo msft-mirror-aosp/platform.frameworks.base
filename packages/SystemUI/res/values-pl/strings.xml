@@ -1040,7 +1040,7 @@
     <string name="accessibility_control_increase_window_height" msgid="2200966116612324260">"Zwiększ wysokość lupy"</string>
     <string name="accessibility_control_decrease_window_height" msgid="2054479949445332761">"Zmniejsz wysokość lupy"</string>
     <string name="magnification_mode_switch_description" msgid="2698364322069934733">"Przełączanie powiększenia"</string>
-    <string name="magnification_mode_switch_state_full_screen" msgid="5229653514979530561">"Powiększanie pełnego ekranu"</string>
+    <string name="magnification_mode_switch_state_full_screen" msgid="5229653514979530561">"Powiększ pełny ekran"</string>
     <string name="magnification_mode_switch_state_window" msgid="8597100249594076965">"Powiększ część ekranu"</string>
     <string name="magnification_open_settings_click_label" msgid="6151849212725923363">"Otwórz ustawienia powiększenia"</string>
     <string name="magnification_close_settings_click_label" msgid="4642477260651704517">"Zamknij ustawienia powiększenia"</string>

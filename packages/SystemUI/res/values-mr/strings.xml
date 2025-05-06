@@ -382,7 +382,7 @@
     <string name="quick_settings_nfc_on" msgid="1004976611203202230">"NFC सक्षम केले आहे"</string>
     <string name="quick_settings_screen_record_label" msgid="8650355346742003694">"स्क्रीन रेकॉर्ड"</string>
     <string name="quick_settings_screen_record_start" msgid="1574725369331638985">"सुरू"</string>
-    <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"थांबा"</string>
+    <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"थांबवा"</string>
     <string name="qs_record_issue_label" msgid="8166290137285529059">"समस्या रेकॉर्ड करा"</string>
     <string name="qs_record_issue_start" msgid="2979831312582567056">"सुरुवात करा"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"थांबवा"</string>

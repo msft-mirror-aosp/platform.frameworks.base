@@ -1080,7 +1080,7 @@
     <string name="accessibility_floating_button_action_remove_menu" msgid="6730432848162552135">"କାଢ଼ି ଦିଅନ୍ତୁ"</string>
     <string name="accessibility_floating_button_action_double_tap_to_toggle" msgid="7976492639670692037">"ଟୋଗଲ୍ କରନ୍ତୁ"</string>
     <string name="accessibility_floating_button_action_edit" msgid="1688227814600463987">"ଏଡିଟ କରନ୍ତୁ"</string>
-    <string name="quick_controls_title" msgid="6839108006171302273">"ଡିଭାଇସ୍ ନିୟନ୍ତ୍ରଣଗୁଡ଼ିକ"</string>
+    <string name="quick_controls_title" msgid="6839108006171302273">"ଡିଭାଇସ ନିୟନ୍ତ୍ରଣ"</string>
     <string name="controls_providers_title" msgid="6879775889857085056">"ନିୟନ୍ତ୍ରଣଗୁଡ଼ିକୁ ଯୋଗ କରିବାକୁ ଆପ୍ ବାଛନ୍ତୁ"</string>
     <string name="controls_number_of_favorites" msgid="4481806788981836355">"{count,plural, =1{#ଟି ନିୟନ୍ତ୍ରଣ ଯୋଗ କରାଯାଇଛି।}other{#ଟି ନିୟନ୍ତ୍ରଣ ଯୋଗ କରାଯାଇଛି।}}"</string>
     <string name="controls_removed" msgid="3731789252222856959">"କାଢ଼ି ଦିଆଯାଇଛି"</string>
@@ -1362,7 +1362,7 @@
     <string name="mirror_display" msgid="2515262008898122928">"ଡିସପ୍ଲେ ମିରର କରନ୍ତୁ"</string>
     <string name="dismiss_dialog" msgid="2195508495854675882">"ଖାରଜ କରନ୍ତୁ"</string>
     <string name="connected_display_icon_desc" msgid="6373560639989971997">"ଡିସପ୍ଲେ କନେକ୍ଟ କରାଯାଇଛି"</string>
-    <string name="privacy_dialog_title" msgid="7839968133469098311">"ମାଇକ୍ରୋଫୋନ ଏବଂ କେମେରା"</string>
+    <string name="privacy_dialog_title" msgid="7839968133469098311">"Microphone ଏବଂ Camera"</string>
     <string name="privacy_dialog_summary" msgid="2458769652125995409">"ବର୍ତ୍ତମାନର ଆପ ବ୍ୟବହାର"</string>
     <string name="privacy_dialog_more_button" msgid="7610604080293562345">"ବର୍ତ୍ତମାନର ଆକ୍ସେସ ଦେଖନ୍ତୁ"</string>
     <string name="privacy_dialog_done_button" msgid="4504330708531434263">"ହୋଇଗଲା"</string>

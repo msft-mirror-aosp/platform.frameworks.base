@@ -903,7 +903,7 @@
     <string name="left_icon" msgid="5036278531966897006">"Vasak ikoon"</string>
     <string name="right_icon" msgid="1103955040645237425">"Parem ikoon"</string>
     <string name="drag_to_add_tiles" msgid="8933270127508303672">"Paanide lisamiseks hoidke all ja lohistage"</string>
-    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Paanide ümberpaigutamiseks hoidke neid all ja lohistage"</string>
+    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Paanide ümberpaigutamiseks hoidke neid all ja lohistage."</string>
     <string name="drag_to_remove_tiles" msgid="4682194717573850385">"Lohistage eemaldamiseks siia"</string>
     <string name="drag_to_remove_disabled" msgid="933046987838658850">"Teil on vaja vähemalt <xliff:g id="MIN_NUM_TILES">%1$d</xliff:g> paani"</string>
     <string name="qs_edit" msgid="5583565172803472437">"Muutmine"</string>

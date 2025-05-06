@@ -1364,7 +1364,7 @@
     <string name="connected_display_icon_desc" msgid="6373560639989971997">"Display કનેક્ટેડ છે"</string>
     <string name="privacy_dialog_title" msgid="7839968133469098311">"માઇક્રોફોન અને કૅમેરા"</string>
     <string name="privacy_dialog_summary" msgid="2458769652125995409">"તાજેતરનો ઍપનો વપરાશ"</string>
-    <string name="privacy_dialog_more_button" msgid="7610604080293562345">"તાજેતરનો ઍક્સેસ મેનેજ કરો"</string>
+    <string name="privacy_dialog_more_button" msgid="7610604080293562345">"તાજેતરનો ઍક્સેસ જુઓ"</string>
     <string name="privacy_dialog_done_button" msgid="4504330708531434263">"થઈ ગયું"</string>
     <string name="privacy_dialog_expand_action" msgid="9129262348628331377">"મોટું કરો અને વિકલ્પો બતાવો"</string>
     <string name="privacy_dialog_collapse_action" msgid="277419962019466347">"નાનું કરો"</string>

@@ -1400,7 +1400,7 @@
     <string name="launch_keyboard_tutorial_notification_title" msgid="8849933155160522519">"キーボードを使用して移動する"</string>
     <string name="launch_keyboard_tutorial_notification_content" msgid="2880339951512757918">"キーボード ショートカットの詳細"</string>
     <string name="launch_touchpad_tutorial_notification_title" msgid="2243780062772196901">"タッチパッドを使用して移動する"</string>
-    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"タッチパッド操作の詳細"</string>
+    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"タッチパッド ジェスチャーの使い方"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"キーボードとタッチパッドを使用して移動する"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"タッチパッド操作やキーボード ショートカットなどの詳細"</string>
     <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"「戻る」ジェスチャー"</string>

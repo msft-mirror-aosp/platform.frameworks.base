@@ -1363,7 +1363,7 @@
     <string name="dismiss_dialog" msgid="2195508495854675882">"Ignora"</string>
     <string name="connected_display_icon_desc" msgid="6373560639989971997">"Pantalla connectada"</string>
     <string name="privacy_dialog_title" msgid="7839968133469098311">"Micròfon i càmera"</string>
-    <string name="privacy_dialog_summary" msgid="2458769652125995409">"Ús recent de l\'aplicació"</string>
+    <string name="privacy_dialog_summary" msgid="2458769652125995409">"Ús recent en aplicacions"</string>
     <string name="privacy_dialog_more_button" msgid="7610604080293562345">"Mostra l\'accés recent"</string>
     <string name="privacy_dialog_done_button" msgid="4504330708531434263">"Fet"</string>
     <string name="privacy_dialog_expand_action" msgid="9129262348628331377">"Desplega i mostra opcions"</string>
