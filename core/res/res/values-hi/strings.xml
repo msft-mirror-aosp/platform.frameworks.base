@@ -669,7 +669,7 @@
   </string-array>
     <string name="fingerprint_error_not_match" msgid="4599441812893438961">"फ़िंगरप्रिंट की पहचान नहीं हो पाई"</string>
     <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"फ़िंगरप्रिंट की पहचान नहीं हो पाई"</string>
-    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"चेहरा की पहचान नहीं हो पाई. फ़िंगरप्रिंट का इस्तेमाल करें."</string>
+    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"चेहरे की पहचान नहीं हो पाई. फ़िंगरप्रिंट इस्तेमाल करें."</string>
     <string name="fingerprint_authenticated" msgid="2024862866860283100">"फ़िंगरप्रिंट की पुष्टि हो गई"</string>
     <string name="face_authenticated_no_confirmation_required" msgid="8867889115112348167">"चेहरे की पहचान की गई"</string>
     <string name="face_authenticated_confirmation_required" msgid="6872632732508013755">"चेहरे की पहचान की गई, कृपया पुष्टि बटन दबाएं"</string>
@@ -1754,7 +1754,7 @@
     <string name="leave_accessibility_shortcut_on" msgid="6543362062336990814">"शॉर्टकट का उपयोग करें"</string>
     <string name="color_inversion_feature_name" msgid="2672824491933264951">"रंग बदलने की सुविधा"</string>
     <string name="color_correction_feature_name" msgid="7975133554160979214">"रंग में सुधार करने की सुविधा"</string>
-    <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"वन-हैंडेड मोड"</string>
+    <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"एक हाथ से इस्तेमाल करने की सुविधा"</string>
     <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करने की सुविधा"</string>
     <string name="hearing_aids_feature_name" msgid="1125892105105852542">"कान की मशीन"</string>
     <string name="accessibility_shortcut_enabling_service" msgid="5473495203759847687">"आवाज़ कम-ज़्यादा करने वाले दोनों बटन दबाकर रखें. <xliff:g id="SERVICE_NAME">%1$s</xliff:g> को चालू कर दिया गया."</string>

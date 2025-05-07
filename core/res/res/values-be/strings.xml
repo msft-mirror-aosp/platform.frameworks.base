@@ -2383,7 +2383,7 @@
     <string name="default_card_name" msgid="9198284935962911468">"КАРТА <xliff:g id="CARDNUMBER">%d</xliff:g>"</string>
     <string name="permlab_companionProfileWatch" msgid="2457738382085872542">"Дазвол для спадарожнай праграмы кіраваць гадзіннікамі"</string>
     <string name="permdesc_companionProfileWatch" msgid="5655698581110449397">"Спадарожная праграма зможа кіраваць гадзіннікамі."</string>
-    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"Выяўленне звязаных прылад"</string>
+    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"Выяўленне спадарожных прылад"</string>
     <string name="permdesc_observeCompanionDevicePresence" msgid="3011699826788697852">"Спадарожная праграма зможа выяўляць звязаныя з ёй прылады незалежна ад таго, ці далёка яны знаходзяцца."</string>
     <string name="permlab_deliverCompanionMessages" msgid="3931552294842980887">"Адпраўка паведамленняў спадарожнай праграмай"</string>
     <string name="permdesc_deliverCompanionMessages" msgid="2170847384281412850">"Спадарожная праграма зможа дастаўляць паведамленні на іншыя прылады."</string>
