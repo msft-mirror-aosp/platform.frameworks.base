@@ -580,7 +580,7 @@
     <string name="zen_mode_forever" msgid="3339224497605461291">"Jusqu\'à la désactivation"</string>
     <string name="zen_mode_starred_contacts_empty_name" msgid="933552939706125937">"(Sans nom)"</string>
     <string name="time_unit_just_now" msgid="3006134267292728099">"À l\'instant"</string>
-    <string name="media_transfer_this_device_name" msgid="2357329267148436433">"ce téléphone"</string>
+    <string name="media_transfer_this_device_name" msgid="2357329267148436433">"Ce téléphone"</string>
     <string name="media_transfer_this_device_name_tablet" msgid="2975593806278422086">"Cette tablette"</string>
     <string name="media_transfer_this_device_name_desktop" msgid="7912386128141470452">"Cet ordinateur (interne)"</string>
     <!-- no translation found for media_transfer_this_device_name_tv (5285685336836896535) -->
@@ -589,7 +589,7 @@
     <string name="media_transfer_dock_speaker_device_name" msgid="2856219597113881950">"Haut-parleur du socle"</string>
     <string name="media_transfer_external_device_name" msgid="2588672258721846418">"Appareil externe"</string>
     <string name="media_transfer_default_device_name" msgid="4315604017399871828">"Appareil connecté"</string>
-    <string name="media_transfer_this_phone" msgid="7194341457812151531">"ce téléphone"</string>
+    <string name="media_transfer_this_phone" msgid="7194341457812151531">"Ce téléphone"</string>
     <string name="media_output_status_unknown_error" msgid="5098565887497902222">"Impossible de faire jouer le contenu sur cet appareil"</string>
     <string name="media_output_status_require_premium" msgid="8411255800047014822">"Mettez à jour le compte pour passer à la version payante"</string>
     <string name="media_output_status_not_support_downloads" msgid="4523828729240373315">"Lecture des téléchargements impossible ici"</string>
