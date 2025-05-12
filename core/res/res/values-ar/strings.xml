@@ -716,7 +716,7 @@
     <string name="face_acquired_too_close" msgid="4453646176196302462">"يُرجى إبعاد الهاتف عن وجهك قليلاً"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"يُرجى تقريب الهاتف منك"</string>
     <string name="face_acquired_too_high" msgid="8278815780046368576">"يُرجى رفع الهاتف للأعلى"</string>
-    <string name="face_acquired_too_low" msgid="4075391872960840081">"يُرجى خفّض الهاتف للأسفل"</string>
+    <string name="face_acquired_too_low" msgid="4075391872960840081">"يُرجى خفض الهاتف للأسفل"</string>
     <string name="face_acquired_too_right" msgid="6245286514593540859">"يُرجى تحريك الهاتف لجهة اليسار"</string>
     <string name="face_acquired_too_left" msgid="9201762240918405486">"يُرجى تحريك الهاتف لجهة اليمين"</string>
     <string name="face_acquired_poor_gaze" msgid="4427153558773628020">"يُرجى النظر إلى جهازك مباشرة أكثر."</string>
