@@ -99,7 +99,7 @@
     <string name="camera_compat_dismiss_button_description" msgid="2795364433503817511">"Inga problem med kameran? Tryck för att ignorera."</string>
     <string name="letterbox_education_dialog_title" msgid="7739895354143295358">"Se och gör mer"</string>
     <string name="letterbox_education_split_screen_text" msgid="449233070804658627">"Dra till en annan app för att dela upp skärmen"</string>
-    <string name="letterbox_education_reposition_text" msgid="4589957299813220661">"Tryck snabbt två gånger utanför en app för att flytta den"</string>
+    <string name="letterbox_education_reposition_text" msgid="4589957299813220661">"Dubbeltryck utanför en app för att flytta den"</string>
     <string name="letterbox_education_got_it" msgid="4057634570866051177">"OK"</string>
     <string name="letterbox_education_expand_button_description" msgid="1729796567101129834">"Utöka för mer information."</string>
     <string name="letterbox_restart_dialog_title" msgid="8543049527871033505">"Vill du starta om för en bättre vy?"</string>
@@ -107,7 +107,7 @@
     <string name="letterbox_restart_cancel" msgid="1342209132692537805">"Avbryt"</string>
     <string name="letterbox_restart_restart" msgid="8529976234412442973">"Starta om"</string>
     <string name="letterbox_restart_dialog_checkbox_title" msgid="5252918008140768386">"Visa inte igen"</string>
-    <string name="letterbox_reachability_reposition_text" msgid="3522042240665748268">"Tryck snabbt två gånger\nför att flytta denna app"</string>
+    <string name="letterbox_reachability_reposition_text" msgid="3522042240665748268">"Dubbeltryck\nför att flytta denna app"</string>
     <string name="maximize_button_text" msgid="1650859196290301963">"Utöka"</string>
     <string name="minimize_button_text" msgid="271592547935841753">"Minimera"</string>
     <string name="close_button_text" msgid="2913281996024033299">"Stäng"</string>
