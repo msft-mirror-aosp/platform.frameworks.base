@@ -219,17 +219,17 @@
     <string name="biometric_re_enroll_dialog_confirm" msgid="3049858021857801836">"Configurar"</string>
     <string name="biometric_re_enroll_dialog_cancel" msgid="93760939407091417">"Agora não"</string>
     <string name="biometric_re_enroll_notification_content" msgid="8685925877186288180">"Ação necessária para melhorar a segurança e o desempenho"</string>
-    <string name="fingerprint_re_enroll_notification_title" msgid="4539432429683916604">"Configurar o Desbloqueio por impressão digital de novo"</string>
+    <string name="fingerprint_re_enroll_notification_title" msgid="4539432429683916604">"Configurar o desbloqueio por impressão digital de novo"</string>
     <string name="fingerprint_re_enroll_notification_name" msgid="630798657797645704">"Desbloqueio por impressão digital"</string>
-    <string name="fingerprint_re_enroll_dialog_title" msgid="3526033128113925780">"Configurar o Desbloqueio por impressão digital"</string>
-    <string name="fingerprint_re_enroll_dialog_content" msgid="4866561176695984879">"Os modelos e as imagens atuais serão excluídos para reconfigurar o Desbloqueio por impressão digital.\n\nDepois disso, você vai precisar configurar esse recurso de novo para desbloquear o smartphone com o dedo ou confirmar sua identidade."</string>
-    <string name="fingerprint_re_enroll_dialog_content_singular" msgid="3083663339787381218">"O modelo e as imagens atuais serão excluídos para reconfigurar o Desbloqueio por impressão digital.\n\nDepois disso, você vai precisar configurar esse recurso de novo para desbloquear o smartphone com o dedo ou confirmar sua identidade."</string>
-    <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Não foi possível configurar o Desbloqueio por impressão digital. Acesse as Configurações e tente de novo."</string>
-    <string name="face_re_enroll_notification_title" msgid="1850838867718410520">"Configurar o Desbloqueio facial de novo"</string>
+    <string name="fingerprint_re_enroll_dialog_title" msgid="3526033128113925780">"Configurar o desbloqueio por impressão digital"</string>
+    <string name="fingerprint_re_enroll_dialog_content" msgid="4866561176695984879">"Os modelos e as imagens atuais serão excluídos para reconfigurar o desbloqueio por impressão digital.\n\nDepois disso, você vai precisar configurar esse recurso de novo para desbloquear o smartphone com o dedo ou confirmar sua identidade."</string>
+    <string name="fingerprint_re_enroll_dialog_content_singular" msgid="3083663339787381218">"O modelo e as imagens atuais serão excluídos para reconfigurar o desbloqueio por impressão digital.\n\nDepois disso, você vai precisar configurar esse recurso de novo para desbloquear o smartphone com o dedo ou confirmar sua identidade."</string>
+    <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Não foi possível configurar o desbloqueio por impressão digital. Acesse as Configurações e tente de novo."</string>
+    <string name="face_re_enroll_notification_title" msgid="1850838867718410520">"Configure o desbloqueio facial de novo"</string>
     <string name="face_re_enroll_notification_name" msgid="7384545252206120659">"Desbloqueio facial"</string>
-    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Configurar o Desbloqueio facial"</string>
-    <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"O modelo de rosto atual será excluído para reconfigurar o Desbloqueio facial.\n\nVocê vai precisar configurar esse recurso de novo para desbloquear o smartphone com o rosto."</string>
-    <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"Não foi possível configurar o Desbloqueio facial. Acesse as Configurações e tente de novo."</string>
+    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Configurar o desbloqueio facial"</string>
+    <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"O modelo de rosto atual será excluído para reconfigurar o desbloqueio facial.\n\nVocê vai precisar configurar esse recurso de novo para desbloquear o smartphone com o rosto."</string>
+    <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"Não foi possível configurar o desbloqueio facial. Acesse as Configurações e tente de novo."</string>
     <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"Toque no sensor de impressão digital"</string>
     <string name="fingerprint_dialog_authenticated_confirmation" msgid="1603899612957562862">"Pressione o ícone de desbloqueio para continuar"</string>
     <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5542430577183894219">"Rosto não reconhecido. Use a impressão digital."</string>
@@ -237,7 +237,7 @@
     <skip />
     <string name="keyguard_face_failed" msgid="2346762871330729634">"Rosto não reconhecido"</string>
     <string name="keyguard_suggest_fingerprint" msgid="8742015961962702960">"Use a impressão digital"</string>
-    <string name="keyguard_face_unlock_unavailable" msgid="1581949044193418736">"O Desbloqueio facial não está disponível"</string>
+    <string name="keyguard_face_unlock_unavailable" msgid="1581949044193418736">"O desbloqueio facial não está disponível"</string>
     <string name="accessibility_bluetooth_connected" msgid="4745196874551115205">"Bluetooth conectado."</string>
     <string name="accessibility_bluetooth_device_icon" msgid="9163840051642587982">"Ícone de dispositivo Bluetooth"</string>
     <string name="accessibility_bluetooth_device_settings_gear" msgid="3314916468105272540">"Clique para configurar os detalhes do dispositivo"</string>
@@ -460,7 +460,7 @@
     <string name="keyguard_face_successful_unlock" msgid="4203999851465708287">"Desbloqueado pelo rosto"</string>
     <string name="keyguard_face_successful_unlock_alt1" msgid="5853906076353839628">"Rosto reconhecido"</string>
     <string name="keyguard_retry" msgid="886802522584053523">"Deslize para cima para tentar novamente"</string>
-    <string name="accesssibility_keyguard_retry" msgid="8880238862712870676">"Deslize para cima para usar o Desbloqueio facial e novo"</string>
+    <string name="accesssibility_keyguard_retry" msgid="8880238862712870676">"Deslize para cima para usar o desbloqueio facial de novo"</string>
     <string name="require_unlock_for_nfc" msgid="1305686454823018831">"Desbloqueie para usar a NFC"</string>
     <string name="do_disclosure_generic" msgid="4896482821974707167">"Este dispositivo pertence à sua organização"</string>
     <string name="do_disclosure_with_name" msgid="2091641464065004091">"Este dispositivo pertence à organização <xliff:g id="ORGANIZATION_NAME">%s</xliff:g>"</string>
@@ -557,7 +557,7 @@
     <string name="media_projection_entry_generic_permission_dialog_warning_entire_screen" msgid="5407906851409410209">"Quando você compartilha, grava ou transmite a tela, o Android tem acesso a todas as informações visíveis nela ou reproduzidas no dispositivo. Portanto, tenha cuidado com senhas, detalhes de pagamento, mensagens, fotos, áudios e vídeos."</string>
     <string name="media_projection_entry_generic_permission_dialog_warning_single_app" msgid="3454859977888159495">"Quando você compartilha, grava ou transmite um app, o Android tem acesso a todas as informações visíveis ou reproduzidas nele. Tenha cuidado com senhas, detalhes de pagamento, mensagens, fotos, áudios e vídeos."</string>
     <string name="media_projection_entry_generic_permission_dialog_continue" msgid="8640381403048097116">"Início"</string>
-    <string name="media_projection_entry_generic_permission_dialog_continue_single_app" msgid="5920814988611877051">"Próxima"</string>
+    <string name="media_projection_entry_generic_permission_dialog_continue_single_app" msgid="5920814988611877051">"Avançar"</string>
     <string name="media_projection_task_switcher_text" msgid="590885489897412359">"O compartilhamento é pausado na troca de apps"</string>
     <string name="media_projection_task_switcher_action_switch" msgid="8682258717291921123">"Compartilhar este app"</string>
     <string name="media_projection_task_switcher_action_back" msgid="5324164224147845282">"Voltar"</string>
