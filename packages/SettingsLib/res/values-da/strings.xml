@@ -372,7 +372,7 @@
     <string name="debug_hw_drawing_category" msgid="5830815169336975162">"Hardware-accelereret gengivelse"</string>
     <string name="media_category" msgid="8122076702526144053">"Medie"</string>
     <string name="debug_monitoring_category" msgid="1597387133765424994">"Overvågning"</string>
-    <string name="strict_mode" msgid="889864762140862437">"Striks tilstand aktiveret"</string>
+    <string name="strict_mode" msgid="889864762140862437">"Streng tilstand aktiveret"</string>
     <string name="strict_mode_summary" msgid="1838248687233554654">"Blink med skærmen, når apps foretager handlinger på hovedtråd"</string>
     <string name="pointer_location" msgid="7516929526199520173">"Markørens lokation"</string>
     <string name="pointer_location_summary" msgid="957120116989798464">"Skærmoverlejringen viser de aktuelle berøringsdata"</string>
