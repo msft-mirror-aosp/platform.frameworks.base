@@ -686,7 +686,7 @@
     <string name="volume_ringer_hint_unmute" msgid="6119086890306456976">"zapnite zvuk"</string>
     <string name="volume_ringer_hint_vibrate" msgid="6211609047099337509">"zapnite vibrovanie"</string>
     <string name="volume_dialog_title" msgid="6502703403483577940">"Ovládacie prvky hlasitosti %s"</string>
-    <string name="volume_dialog_ringer_guidance_ring" msgid="9143194270463146858">"Hovory a upozornenia spustia zvonenie (<xliff:g id="VOLUME_LEVEL">%1$s</xliff:g>)"</string>
+    <string name="volume_dialog_ringer_guidance_ring" msgid="9143194270463146858">"Hovory a upozornenia budú vyzváňať (<xliff:g id="VOLUME_LEVEL">%1$s</xliff:g>)"</string>
     <string name="volume_panel_enter_media_output_settings" msgid="8824244246272552669">"Zadať nastavenia výstupu"</string>
     <string name="volume_panel_expanded_sliders" msgid="1885750987768506271">"Posúvače hlasitosti sú rozbalené"</string>
     <string name="volume_panel_collapsed_sliders" msgid="1413383759434791450">"Posúvače hlasitosti sú zbalené"</string>

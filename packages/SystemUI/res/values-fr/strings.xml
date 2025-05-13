@@ -383,7 +383,7 @@
     <string name="quick_settings_screen_record_label" msgid="8650355346742003694">"Enregistr. écran"</string>
     <string name="quick_settings_screen_record_start" msgid="1574725369331638985">"Démarrer"</string>
     <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"Arrêter"</string>
-    <string name="qs_record_issue_label" msgid="8166290137285529059">"Enregistrer problème"</string>
+    <string name="qs_record_issue_label" msgid="8166290137285529059">"Enregistrer le problème"</string>
     <string name="qs_record_issue_start" msgid="2979831312582567056">"Lancer"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"Arrêter"</string>
     <string name="qs_record_issue_bug_report" msgid="8229031766918650079">"Rapport de bug"</string>
@@ -658,7 +658,7 @@
     <string name="stream_voice_call" msgid="7468348170702375660">"Appel"</string>
     <string name="stream_system" msgid="7663148785370565134">"Système"</string>
     <string name="stream_ring" msgid="7550670036738697526">"Sonnerie"</string>
-    <string name="stream_music" msgid="2188224742361847580">"Contenus multimédias"</string>
+    <string name="stream_music" msgid="2188224742361847580">"Multimédia"</string>
     <string name="stream_alarm" msgid="16058075093011694">"Alarme"</string>
     <string name="stream_notification" msgid="7930294049046243939">"Notification"</string>
     <string name="stream_bluetooth_sco" msgid="6234562365528664331">"Bluetooth"</string>
