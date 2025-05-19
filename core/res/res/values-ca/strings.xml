@@ -1877,7 +1877,7 @@
     <string name="reason_unknown" msgid="5599739807581133337">"desconegut"</string>
     <string name="reason_service_unavailable" msgid="5288405248063804713">"El servei d\'impressió no està activat."</string>
     <string name="print_service_installed_title" msgid="6134880817336942482">"S\'ha instal·lat el servei <xliff:g id="NAME">%s</xliff:g>"</string>
-    <string name="print_service_installed_message" msgid="7005672469916968131">"Toca per activar-lo"</string>
+    <string name="print_service_installed_message" msgid="7005672469916968131">"Toca per activar"</string>
     <string name="restr_pin_enter_admin_pin" msgid="1199419462726962697">"Introdueix el PIN d\'administrador"</string>
     <string name="restr_pin_enter_pin" msgid="373139384161304555">"Introdueix el PIN"</string>
     <string name="restr_pin_incorrect" msgid="3861383632940852496">"Incorrecte"</string>
