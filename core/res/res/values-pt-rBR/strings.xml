@@ -2158,8 +2158,8 @@
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"Notificação de informação do modo rotina"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"Economia de bateria ativada"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"Reduzindo o uso da bateria para prolongar a duração dela"</string>
-    <string name="dynamic_mode_notification_title_v2" msgid="5072385242078021152">"A Economia de bateria está ativada"</string>
-    <string name="dynamic_mode_notification_summary_v2" msgid="2142444344663147938">"A Economia de bateria está ativada para prolongar a duração da carga"</string>
+    <string name="dynamic_mode_notification_title_v2" msgid="5072385242078021152">"Economia de bateria ativada"</string>
+    <string name="dynamic_mode_notification_summary_v2" msgid="2142444344663147938">"A economia de bateria está ativada para prolongar a duração da carga"</string>
     <string name="battery_saver_notification_channel_name" msgid="3918243458067916913">"Economia de bateria"</string>
     <string name="battery_saver_off_notification_title" msgid="7637255960468032515">"\"Economia de bateria\" desativada"</string>
     <string name="battery_saver_charged_notification_summary" product="default" msgid="5544457317418624367">"Não há carga suficiente no smartphone. Os recursos não estão mais restritos."</string>
