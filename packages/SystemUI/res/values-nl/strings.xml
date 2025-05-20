@@ -870,7 +870,7 @@
     <string name="battery" msgid="769686279459897127">"Batterij"</string>
     <string name="headset" msgid="4485892374984466437">"Headset"</string>
     <string name="accessibility_long_click_tile" msgid="210472753156768705">"Instellingen openen"</string>
-    <string name="accessibility_status_bar_headphones" msgid="1304082414912647414">"Hoofdtelefoon aangesloten"</string>
+    <string name="accessibility_status_bar_headphones" msgid="1304082414912647414">"Koptelefoon aangesloten"</string>
     <string name="accessibility_status_bar_headset" msgid="2699275863720926104">"Headset aangesloten"</string>
     <string name="data_saver" msgid="3484013368530820763">"Databesparing"</string>
     <string name="accessibility_data_saver_on" msgid="5394743820189757731">"Databesparing staat aan"</string>

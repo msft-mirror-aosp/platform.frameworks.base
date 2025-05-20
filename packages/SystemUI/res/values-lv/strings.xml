@@ -1289,7 +1289,7 @@
     <string name="clipboard_image_preview" msgid="2156475174343538128">"Attēla priekšskatījums"</string>
     <string name="clipboard_edit" msgid="4500155216174011640">"rediģētu"</string>
     <string name="add" msgid="81036585205287996">"Pievienot"</string>
-    <string name="manage_users" msgid="1823875311934643849">"Pārvaldīt"</string>
+    <string name="manage_users" msgid="1823875311934643849">"Pārvaldīt lietotājus"</string>
     <string name="drag_split_not_supported" msgid="7173481676120546121">"Šis paziņojums neatbalsta vilkšanu uz sadalīto ekrānu."</string>
     <string name="dream_overlay_location_active" msgid="6484763493158166618">"Atrašanās vietas noteikšana ir aktīva"</string>
     <string name="dream_overlay_status_bar_wifi_off" msgid="4497069245055003582">"Wi‑Fi nav pieejams"</string>
