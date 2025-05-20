@@ -856,7 +856,7 @@
     <string name="input_access_emoji" msgid="8105642858900406351">"访问表情符号"</string>
     <string name="input_access_voice_typing" msgid="7291201476395326141">"访问语音输入"</string>
     <string name="keyboard_shortcut_group_applications" msgid="7386239431100651266">"应用"</string>
-    <string name="keyboard_shortcut_group_applications_assist" msgid="6772492350416591448">"Google 助理"</string>
+    <string name="keyboard_shortcut_group_applications_assist" msgid="6772492350416591448">"助理"</string>
     <string name="keyboard_shortcut_group_applications_browser" msgid="2776211137869809251">"浏览器"</string>
     <string name="keyboard_shortcut_group_applications_contacts" msgid="2807268086386201060">"通讯录"</string>
     <string name="keyboard_shortcut_group_applications_email" msgid="7852376788894975192">"电子邮件"</string>

@@ -28,7 +28,7 @@
     <string name="invalid_charger_text" msgid="2339310107232691577">"మీ పరికరంతో వచ్చిన ఛార్జర్‌ను ఉపయోగించండి"</string>
     <string name="battery_saver_confirmation_title" msgid="1234998463717398453">"బ్యాటరీ సేవర్‌ను ఆన్ చేయాలా?"</string>
     <string name="battery_saver_confirmation_title_generic" msgid="2299231884234959849">"బ్యాటరీ సేవర్ గురించి"</string>
-    <string name="battery_saver_confirmation_ok" msgid="5042136476802816494">"ఆన్ చేయి"</string>
+    <string name="battery_saver_confirmation_ok" msgid="5042136476802816494">"ఆన్ చేయండి"</string>
     <string name="battery_saver_start_action" msgid="8353766979886287140">"ఆన్ చేయండి"</string>
     <string name="battery_saver_dismiss_action" msgid="7199342621040014738">"వద్దు, ధన్యవాదాలు"</string>
     <string name="standard_battery_saver_text" msgid="6855876746552374119">"స్టాండర్డ్"</string>
