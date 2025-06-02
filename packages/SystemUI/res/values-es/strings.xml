@@ -393,7 +393,7 @@
     <string name="performance" msgid="6552785217174378320">"Rendimiento"</string>
     <string name="user_interface" msgid="3712869377953950887">"Interfaz de usuario"</string>
     <string name="thermal" msgid="6758074791325414831">"Temperatura"</string>
-    <string name="custom" msgid="3337456985275158299">"Otro"</string>
+    <string name="custom" msgid="3337456985275158299">"Config. personalizada"</string>
     <string name="custom_trace_settings_dialog_title" msgid="2608570500144830554">"Ajustes de traza personalizados"</string>
     <string name="restore_default" msgid="5259420807486239755">"Restaurar ajustes predeterminados"</string>
     <string name="quick_settings_onehanded_label" msgid="2416537930246274991">"Modo Una mano"</string>
