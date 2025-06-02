@@ -75,14 +75,14 @@
     <string name="bubble_dismiss_text" msgid="8816558050659478158">"Odbaci oblačić"</string>
     <string name="bubble_fullscreen_text" msgid="1006758103218086231">"Prebaci na ceo ekran"</string>
     <string name="bubbles_dont_bubble_conversation" msgid="310000317885712693">"Ne koristi oblačiće za konverzaciju"</string>
-    <string name="bubbles_user_education_title" msgid="2112319053732691899">"Ćaskajte u oblačićima"</string>
+    <string name="bubbles_user_education_title" msgid="2112319053732691899">"Četujte u oblačićima"</string>
     <string name="bubbles_user_education_description" msgid="4215862563054175407">"Nove konverzacije se prikazuju kao plutajuće ikone ili oblačići. Dodirnite da biste otvorili oblačić. Prevucite da biste ga premestili."</string>
     <string name="bubbles_user_education_manage_title" msgid="7042699946735628035">"Kontrolišite oblačiće u bilo kom trenutku"</string>
     <string name="bubbles_user_education_manage" msgid="3460756219946517198">"Dodirnite Upravljajte da biste isključili oblačiće iz ove aplikacije"</string>
     <string name="bubbles_user_education_got_it" msgid="3382046149225428296">"Važi"</string>
     <string name="bubble_overflow_empty_title" msgid="2397251267073294968">"Nema nedavnih oblačića"</string>
     <string name="bubble_overflow_empty_subtitle" msgid="2627417924958633713">"Ovde se prikazuju nedavni i odbačeni oblačići"</string>
-    <string name="bubble_bar_education_stack_title" msgid="2486903590422497245">"Ćaskajte u oblačićima"</string>
+    <string name="bubble_bar_education_stack_title" msgid="2486903590422497245">"Četujte u oblačićima"</string>
     <string name="bubble_bar_education_stack_text" msgid="2446934610817409820">"Nove konverzacije se pojavljuju kao ikone u donjem uglu ekrana. Dodirnite da biste ih proširili ili prevucite da biste ih odbacili."</string>
     <string name="bubble_bar_education_manage_title" msgid="6148404487810835924">"Kontrolišite oblačiće u svakom trenutku"</string>
     <string name="bubble_bar_education_manage_text" msgid="3199732148641842038">"Dodirnite ovde i odredite koje aplikacije i konverzacije mogu da imaju oblačić"</string>

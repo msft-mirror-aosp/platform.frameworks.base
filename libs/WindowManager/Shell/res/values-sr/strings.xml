@@ -75,14 +75,14 @@
     <string name="bubble_dismiss_text" msgid="8816558050659478158">"Одбаци облачић"</string>
     <string name="bubble_fullscreen_text" msgid="1006758103218086231">"Пребаци на цео екран"</string>
     <string name="bubbles_dont_bubble_conversation" msgid="310000317885712693">"Не користи облачиће за конверзацију"</string>
-    <string name="bubbles_user_education_title" msgid="2112319053732691899">"Ћаскајте у облачићима"</string>
+    <string name="bubbles_user_education_title" msgid="2112319053732691899">"Четујте у облачићима"</string>
     <string name="bubbles_user_education_description" msgid="4215862563054175407">"Нове конверзације се приказују као плутајуће иконе или облачићи. Додирните да бисте отворили облачић. Превуците да бисте га преместили."</string>
     <string name="bubbles_user_education_manage_title" msgid="7042699946735628035">"Контролишите облачиће у било ком тренутку"</string>
     <string name="bubbles_user_education_manage" msgid="3460756219946517198">"Додирните Управљајте да бисте искључили облачиће из ове апликације"</string>
     <string name="bubbles_user_education_got_it" msgid="3382046149225428296">"Важи"</string>
     <string name="bubble_overflow_empty_title" msgid="2397251267073294968">"Нема недавних облачића"</string>
     <string name="bubble_overflow_empty_subtitle" msgid="2627417924958633713">"Овде се приказују недавни и одбачени облачићи"</string>
-    <string name="bubble_bar_education_stack_title" msgid="2486903590422497245">"Ћаскајте у облачићима"</string>
+    <string name="bubble_bar_education_stack_title" msgid="2486903590422497245">"Четујте у облачићима"</string>
     <string name="bubble_bar_education_stack_text" msgid="2446934610817409820">"Нове конверзације се појављују као иконе у доњем углу екрана. Додирните да бисте их проширили или превуците да бисте их одбацили."</string>
     <string name="bubble_bar_education_manage_title" msgid="6148404487810835924">"Контролишите облачиће у сваком тренутку"</string>
     <string name="bubble_bar_education_manage_text" msgid="3199732148641842038">"Додирните овде и одредите које апликације и конверзације могу да имају облачић"</string>
