@@ -51,7 +51,7 @@
     <string name="permission_sms" msgid="6337141296535774786">"SMS"</string>
     <string name="permission_contacts" msgid="3858319347208004438">"କଣ୍ଟାକ୍ଟଗୁଡ଼ିକ"</string>
     <string name="permission_calendar" msgid="6805668388691290395">"କେଲେଣ୍ଡର"</string>
-    <string name="permission_microphone" msgid="2152206421428732949">"ମାଇକ୍ରୋଫୋନ"</string>
+    <string name="permission_microphone" msgid="2152206421428732949">"Microphone"</string>
     <string name="permission_call_logs" msgid="5546761417694586041">"କଲ ଲଗଗୁଡ଼ିକ"</string>
     <string name="permission_nearby_devices" msgid="7530973297737123481">"ଆଖପାଖର ଡିଭାଇସ"</string>
     <string name="permission_media_routing_control" msgid="5498639511586715253">"ମିଡିଆ ଆଉଟପୁଟ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
