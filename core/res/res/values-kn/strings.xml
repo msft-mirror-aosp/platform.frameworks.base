@@ -1418,7 +1418,7 @@
     <string name="console_running_notification_title" msgid="6087888939261635904">"ಸರಣಿ ಕನ್ಸೋಲ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"</string>
     <string name="console_running_notification_message" msgid="7892751888125174039">"ಕಾರ್ಯಕ್ಷಮತೆಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು, ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ."</string>
     <string name="mte_override_notification_title" msgid="4731115381962792944">"ಪ್ರಾಯೋಗಿಕ MTE ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"</string>
-    <string name="mte_override_notification_message" msgid="2441170442725738942">"ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಸ್ಥಿರತೆಯ ಮೇಲೆ ಪ್ರಭಾವ ಬೀರಬಹುದು. ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ರೀಬೂಟ್ ಮಾಡಿ. arm64.memtag.bootctl ಬಳಸಿ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಅದಕ್ಕೂ ಮೊದಲು ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು \"ಯಾವುದೂ ಅಲ್ಲ\" ಎಂದು ಸೆಟ್ ಮಾಡಿ."</string>
+    <string name="mte_override_notification_message" msgid="2441170442725738942">"ಪರ್ಫಾರ್ಮೆನ್ಸ್ ಮತ್ತು ಸ್ಥಿರತೆಯ ಮೇಲೆ ಪ್ರಭಾವ ಬೀರಬಹುದು. ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ರೀಬೂಟ್ ಮಾಡಿ. arm64.memtag.bootctl ಬಳಸಿ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಅದಕ್ಕೂ ಮೊದಲು ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು \"ಯಾವುದೂ ಅಲ್ಲ\" ಎಂದು ಸೆಟ್ ಮಾಡಿ."</string>
     <string name="usb_contaminant_detected_title" msgid="4359048603069159678">"USB ಪೋರ್ಟ್‌ನಲ್ಲಿ ದ್ರವ ಅಥವಾ ಧೂಳಿನ ಕಣಗಳಿವೆ"</string>
     <string name="usb_contaminant_detected_message" msgid="7346100585390795743">"USB ಪೋರ್ಟ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ. ಇನ್ನಷ್ಟು ತಿಳಿಯಲು ಟ್ಯಾಪ್ ಮಾಡಿ"</string>
     <string name="usb_contaminant_not_detected_title" msgid="2651167729563264053">"USB ಪೋರ್ಟ್ ಬಳಸಲು ಸರಿ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"</string>
