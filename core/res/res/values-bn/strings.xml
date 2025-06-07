@@ -321,7 +321,7 @@
     <string name="permgroupdesc_contacts" msgid="9163927941244182567">"আপনার পরিচিতিগুলিতে অ্যাক্সেস"</string>
     <string name="permgrouplab_location" msgid="1858277002233964394">"লোকেশন"</string>
     <string name="permgroupdesc_location" msgid="1995955142118450685">"এই ডিভাইসের লোকেশন অ্যাক্সেস"</string>
-    <string name="permgrouplab_calendar" msgid="6426860926123033230">"ক্যালেন্ডার"</string>
+    <string name="permgrouplab_calendar" msgid="6426860926123033230">"Calendar"</string>
     <string name="permgroupdesc_calendar" msgid="6762751063361489379">"আপনার ক্যালেন্ডারে অ্যাক্সেস"</string>
     <string name="permgrouplab_sms" msgid="795737735126084874">"SMS"</string>
     <string name="permgroupdesc_sms" msgid="5726462398070064542">"এসএমএসগুলি পাঠাতে এবং দেখতে"</string>
@@ -669,7 +669,7 @@
   </string-array>
     <string name="fingerprint_error_not_match" msgid="4599441812893438961">"ফিঙ্গারপ্রিন্ট শনাক্ত করা যায়নি"</string>
     <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"ফিঙ্গারপ্রিন্ট শনাক্ত করা যায়নি"</string>
-    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"মুখ শনাক্ত করা যায়নি। এর পরিবর্তে ফিঙ্গারপ্রিন্ট ব্যবহার করুন।"</string>
+    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"ফেস চেনা যায়নি। এর পরিবর্তে ফিঙ্গারপ্রিন্ট ব্যবহার করুন।"</string>
     <string name="fingerprint_authenticated" msgid="2024862866860283100">"আঙ্গুলের ছাপ যাচাই করা হয়েছে"</string>
     <string name="face_authenticated_no_confirmation_required" msgid="8867889115112348167">"ফেস যাচাই করা হয়েছে"</string>
     <string name="face_authenticated_confirmation_required" msgid="6872632732508013755">"ফেস যাচাই করা হয়েছে, \'কনফার্ম করুন\' বোতাম প্রেস করুন"</string>
@@ -1764,7 +1764,7 @@
     <string name="accessibility_gesture_prompt_text" msgid="6452246951969541792">"ফিচার বেছে নিন"</string>
     <string name="accessibility_gesture_3finger_prompt_text" msgid="77745752309056152">"ফিচার বেছে নিন"</string>
     <string name="accessibility_button_instructional_text" msgid="6831154884557881996">"পরের বার অ্যাক্সেসিবিলিটি বোতামে ট্যাপ করলে, ফিচারটি চালু হয়ে যাবে"</string>
-    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ২টি আঙ্গুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
+    <string name="accessibility_gesture_instructional_text" msgid="4133877896011098550">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ২টি আঙুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"পরের বার এই শর্টকাট ব্যবহার করলে, ফিচারটি চালু হয়ে যাবে। ৩টি আঙ্গুল দিয়ে স্ক্রিনের নিচ থেকে উপরের দিকে সোয়াইপ করে দ্রুত ছেড়ে দিন।"</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"বড় করে দেখা"</string>
     <string name="user_switched" msgid="7249833311585228097">"বর্তমান ব্যবহারকারী <xliff:g id="NAME">%1$s</xliff:g>৷"</string>
@@ -2035,7 +2035,7 @@
     <string name="app_streaming_blocked_message_for_settings_dialog" product="tablet" msgid="3286849551133045896">"আপনার <xliff:g id="DEVICE">%1$s</xliff:g>-এ এটি অ্যাক্সেস করা যাবে না। পরিবর্তে আপনার ট্যাবলেটে ব্যবহার করে দেখুন।"</string>
     <string name="app_streaming_blocked_message_for_settings_dialog" product="default" msgid="6264287556598916295">"আপনার <xliff:g id="DEVICE">%1$s</xliff:g>-এ এটি অ্যাক্সেস করা যাবে না। পরিবর্তে আপনার ফোনে ব্যবহার করে দেখুন।"</string>
     <string name="deprecated_target_sdk_message" msgid="5246906284426844596">"Android-এর আরও পুরনো ভার্সনের জন্য এই অ্যাপ তৈরি করা হয়েছিল। এটি সঠিকভাবে কাজ নাও করতে পারে এবং এর মধ্যে লেটেস্ট সুরক্ষা ও গোপনীয়তার নিরাপত্তা ব্যবস্থা অন্তর্ভুক্ত করা নেই। আপডেটের জন্য চেক করুন বা অ্যাপের ডেভেলপারের সাথে যোগাযোগ করুন।"</string>
-    <string name="deprecated_target_sdk_app_store" msgid="8456784048558808909">"আপডেট পাওয়া যাচ্ছে কিনা দেখুন"</string>
+    <string name="deprecated_target_sdk_app_store" msgid="8456784048558808909">"আপডেট করতে হবে কিনা দেখুন"</string>
     <string name="deprecated_abi_message" msgid="6820548011196218091">"Android-এর লেটেস্ট ভার্সনের সাথে এই অ্যাপটি মানানসই নয়। আপডেটের জন্য চেক করুন বা অ্যাপ ডেভেলপারের সাথে যোগাযোগ করুন।"</string>
     <string name="new_sms_notification_title" msgid="6528758221319927107">"আপনার নতুন মেসেজ আছে"</string>
     <string name="new_sms_notification_content" msgid="3197949934153460639">"দেখার জন্য SMS অ্যাপ্লিকেশান খুলুন"</string>

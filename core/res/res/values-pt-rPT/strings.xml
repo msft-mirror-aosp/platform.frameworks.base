@@ -293,7 +293,7 @@
     <string name="notification_channel_car_mode" msgid="2123919247040988436">"Modo automóvel"</string>
     <string name="notification_channel_account" msgid="6436294521740148173">"Estado da conta"</string>
     <string name="notification_channel_developer" msgid="1691059964407549150">"Mensagens do programador"</string>
-    <string name="notification_channel_developer_important" msgid="7197281908918789589">"Mensagens importantes relativas a programadores"</string>
+    <string name="notification_channel_developer_important" msgid="7197281908918789589">"Mensagens importantes para programadores"</string>
     <string name="notification_channel_updates" msgid="7907863984825495278">"Atualizações"</string>
     <string name="notification_channel_network_status" msgid="2127687368725272809">"Estado da rede"</string>
     <string name="notification_channel_network_alerts" msgid="6312366315654526528">"Alertas da rede"</string>
@@ -1668,7 +1668,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Visualização sem fios"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Transmitir"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Ligar ao dispositivo"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Transmitir ecrã para dispositivo"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Transmita o ecrã para o dispositivo"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"A pesquisar dispositivos…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Definições"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Desligar"</string>
@@ -2127,8 +2127,8 @@
     <string name="harmful_app_warning_title" msgid="8794823880881113856">"Aplicação prejudicial detetada"</string>
     <string name="slices_permission_request" msgid="3677129866636153406">"A app <xliff:g id="APP_0">%1$s</xliff:g> quer mostrar partes da app <xliff:g id="APP_2">%2$s</xliff:g>."</string>
     <string name="screenshot_edit" msgid="7408934887203689207">"Editar"</string>
-    <string name="volume_dialog_ringer_guidance_vibrate" msgid="2055927873175228519">"As chamadas e as notificações vibram."</string>
-    <string name="volume_dialog_ringer_guidance_silent" msgid="1011246774949993783">"É desativado o som das chamadas e das notificações."</string>
+    <string name="volume_dialog_ringer_guidance_vibrate" msgid="2055927873175228519">"As chamadas e as notificações vibram"</string>
+    <string name="volume_dialog_ringer_guidance_silent" msgid="1011246774949993783">"É desativado o som das chamadas e das notificações"</string>
     <string name="notification_channel_system_changes" msgid="2462010596920209678">"Alterações ao sistema"</string>
     <string name="notification_channel_do_not_disturb" msgid="7832584281883687653">"Não incomodar"</string>
     <string name="zen_upgrade_notification_visd_title" msgid="2001148984371968620">"Novo: o modo Não incomodar está a ocultar as notificações"</string>

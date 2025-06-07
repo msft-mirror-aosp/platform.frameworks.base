@@ -234,7 +234,7 @@
     <string name="turn_on_radio" msgid="2961717788170634233">"ਵਾਇਰਲੈਸ ਚਾਲੂ ਕਰੋ"</string>
     <string name="turn_off_radio" msgid="7222573978109933360">"ਵਾਇਰਲੈਸ ਬੰਦ ਕਰੋ"</string>
     <string name="screen_lock" msgid="2072642720826409809">"ਸਕ੍ਰੀਨ ਲਾਕ"</string>
-    <string name="power_off" msgid="4111692782492232778">"ਫ਼ੋਨ ਬੰਦ ਕਰੋ"</string>
+    <string name="power_off" msgid="4111692782492232778">"ਪਾਵਰ ਬੰਦ ਕਰੋ"</string>
     <string name="silent_mode_silent" msgid="5079789070221150912">"ਰਿੰਗਰ ਬੰਦ"</string>
     <string name="silent_mode_vibrate" msgid="8821830448369552678">"ਰਿੰਗਰ ਥਰਥਰਾਹਟ"</string>
     <string name="silent_mode_ring" msgid="6039011004781526678">"ਰਿੰਗਰ ਚਾਲੂ"</string>
@@ -258,7 +258,7 @@
     <string name="global_actions" product="tv" msgid="3871763739487450369">"Android TV ਦੇ ਵਿਕਲਪ"</string>
     <string name="global_actions" product="default" msgid="6410072189971495460">"ਫ਼ੋਨ ਚੋਣਾਂ"</string>
     <string name="global_action_lock" msgid="6949357274257655383">"ਸਕ੍ਰੀਨ ਲਾਕ"</string>
-    <string name="global_action_power_off" msgid="4404936470711393203">"ਫ਼ੋਨ ਬੰਦ ਕਰੋ"</string>
+    <string name="global_action_power_off" msgid="4404936470711393203">"ਪਾਵਰ ਬੰਦ ਕਰੋ"</string>
     <string name="global_action_power_options" msgid="1185286119330160073">"ਪਾਵਰ"</string>
     <string name="global_action_restart" msgid="4678451019561687074">"ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
     <string name="global_action_emergency" msgid="1387617624177105088">"ਐਮਰਜੈਂਸੀ"</string>
@@ -669,7 +669,7 @@
   </string-array>
     <string name="fingerprint_error_not_match" msgid="4599441812893438961">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋਈ"</string>
     <string name="fingerprint_udfps_error_not_match" msgid="8236930793223158856">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋਈ"</string>
-    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"ਚਿਹਰੇ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋਈ। ਇਸਦੀ ਥਾਂ ਫਿੰਗਰਪ੍ਰਿੰਟ ਵਰਤੋ।"</string>
+    <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5590293588784953188">"ਚਿਹਰੇ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋਈ। ਇਸਦੀ ਬਜਾਏ ਫਿੰਗਰਪ੍ਰਿੰਟ ਵਰਤੋ।"</string>
     <string name="fingerprint_authenticated" msgid="2024862866860283100">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਪ੍ਰਮਾਣਿਤ ਹੋਇਆ"</string>
     <string name="face_authenticated_no_confirmation_required" msgid="8867889115112348167">"ਚਿਹਰਾ ਪੁਸ਼ਟੀਕਰਨ"</string>
     <string name="face_authenticated_confirmation_required" msgid="6872632732508013755">"ਚਿਹਰਾ ਪੁਸ਼ਟੀਕਰਨ, ਕਿਰਪਾ ਕਰਕੇ \'ਪੁਸ਼ਟੀ ਕਰੋ\' ਦਬਾਓ"</string>
@@ -1668,7 +1668,7 @@
     <string name="media_route_button_content_description" msgid="2299223698196869956">"ਪ੍ਰਸਾਰਿਤ ਕਰੋ"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"ਡੀਵਾਈਸ ਨਾਲ ਕਨੈਕਟ ਕਰੋ"</string>
     <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"ਡੀਵਾਈਸ \'ਤੇ ਸਕ੍ਰੀਨ ਕਾਸਟ ਕਰੋ"</string>
-    <string name="media_route_chooser_searching" msgid="6119673534251329535">"ਡੀਵਾਈਸਾਂ ਦੀ ਖੋਜ ਹੋ ਰਹੀ ਹੈ…"</string>
+    <string name="media_route_chooser_searching" msgid="6119673534251329535">"ਡੀਵਾਈਸਾਂ ਦੀ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"ਸੈਟਿੰਗਾਂ"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"ਡਿਸਕਨੈਕਟ ਕਰੋ"</string>
     <string name="media_route_status_scanning" msgid="8045156315309594482">"ਸਕੈਨ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."</string>
@@ -1956,7 +1956,7 @@
     <string name="stk_cc_ss_to_ussd" msgid="8417905193112944760">"SS ਬੇਨਤੀ ਨੂੰ USSD ਬੇਨਤੀ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ"</string>
     <string name="stk_cc_ss_to_ss" msgid="132040645206514450">"ਨਵੀਂ SS ਬੇਨਤੀ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ"</string>
     <string name="notification_phishing_alert_content_description" msgid="494227305355958790">"ਫ਼ਿਸ਼ਿੰਗ ਸੰਬੰਧੀ ਅਲਰਟ"</string>
-    <string name="notification_work_profile_content_description" msgid="5296477955677725799">"ਕਾਰਜ ਪ੍ਰੋਫਾਈਲ"</string>
+    <string name="notification_work_profile_content_description" msgid="5296477955677725799">"ਕੰਮ ਸੰਬੰਧੀ ਪ੍ਰੋਫਾਈਲ"</string>
     <string name="notification_alerted_content_description" msgid="6139691253611265992">"ਅਲਰਟ"</string>
     <string name="notification_verified_content_description" msgid="6401483602782359391">"ਪੁਸ਼ਟੀਕਿਰਤ"</string>
     <string name="expand_button_content_description_collapsed" msgid="3873368935659010279">"ਵਿਸਤਾਰ ਕਰੋ"</string>
@@ -2415,7 +2415,7 @@
     <string name="profile_label_work_3" msgid="4834572253956798917">"ਕੰਮ ਸੰਬੰਧੀ 3"</string>
     <string name="profile_label_test" msgid="9168641926186071947">"ਜਾਂਚ"</string>
     <string name="profile_label_communal" msgid="8743921499944800427">"ਭਾਈਚਾਰਕ"</string>
-    <string name="accessibility_label_managed_profile" msgid="3366526886209832641">"ਕਾਰਜ ਪ੍ਰੋਫਾਈਲ"</string>
+    <string name="accessibility_label_managed_profile" msgid="3366526886209832641">"ਕੰਮ ਸੰਬੰਧੀ ਪ੍ਰੋਫਾਈਲ"</string>
     <string name="accessibility_label_private_profile" msgid="1436459319135548969">"ਪ੍ਰਾਈਵੇਟ ਸਪੇਸ"</string>
     <string name="accessibility_label_clone_profile" msgid="7579118375042398784">"ਕਲੋਨ"</string>
     <string name="accessibility_label_communal_profile" msgid="1437173163111334791">"ਭਾਈਚਾਰਕ"</string>

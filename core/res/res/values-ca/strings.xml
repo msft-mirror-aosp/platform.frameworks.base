@@ -710,7 +710,7 @@
     <string name="face_acquired_insufficient" msgid="6889245852748492218">"No es pot crear el model facial. Torna-ho a provar."</string>
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"Massa brillant Prova una il·luminació més suau."</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"No hi ha prou llum"</string>
-    <string name="face_acquired_too_close" msgid="4453646176196302462">"Allunya\'t del telèfon"</string>
+    <string name="face_acquired_too_close" msgid="4453646176196302462">"Allunya el telèfon"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"Apropa el telèfon"</string>
     <string name="face_acquired_too_high" msgid="8278815780046368576">"Apuja el telèfon"</string>
     <string name="face_acquired_too_low" msgid="4075391872960840081">"Abaixa el telèfon"</string>
@@ -733,7 +733,7 @@
     <skip />
     <string name="face_acquired_recalibrate_alt" msgid="5702674220280332115">"No es pot crear el model facial. Torna-ho a provar."</string>
     <string name="face_acquired_dark_glasses_detected_alt" msgid="4052123776406041972">"S\'han detectat ulleres fosques. La cara ha de veure\'s sencera."</string>
-    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"Tens la cara tapada. La cara ha de veure\'s sencera."</string>
+    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"Tens la cara tapada. S\'ha de veure sencera."</string>
   <string-array name="face_acquired_vendor">
   </string-array>
     <string name="face_error_hw_not_available" msgid="5085202213036026288">"No es pot verificar la cara. Maquinari no disponible."</string>
@@ -838,11 +838,11 @@
     <string name="policylab_watchLogin" msgid="7599669460083719504">"Supervisar els intents de desbloqueig de la pantalla"</string>
     <string name="policydesc_watchLogin" product="tablet" msgid="2388436408621909298">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja la tauleta o esborra\'n totes les dades si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policydesc_watchLogin" product="tv" msgid="2140588224468517507">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el dispositiu Android TV o esborra\'n totes les dades si s\'introdueixen massa contrasenyes incorrectes."</string>
-    <string name="policydesc_watchLogin" product="automotive" msgid="7011438994051251521">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el sistema d\'informació i entreteniment o esborra\'n totes les dades si s\'introdueixen massa contrasenyes incorrectes."</string>
+    <string name="policydesc_watchLogin" product="automotive" msgid="7011438994051251521">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el sistema d\'infoentreteniment o esborra\'n totes les dades si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policydesc_watchLogin" product="default" msgid="4885030206253600299">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el telèfon o esborra\'n totes les dades si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policydesc_watchLogin_secondaryUser" product="tablet" msgid="2049038943004297474">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja la tauleta o esborra totes les dades d\'aquest usuari si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policydesc_watchLogin_secondaryUser" product="tv" msgid="8965224107449407052">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el dispositiu Android TV o esborra totes les dades d\'aquest usuari si s\'introdueixen massa contrasenyes incorrectes."</string>
-    <string name="policydesc_watchLogin_secondaryUser" product="automotive" msgid="7180857406058327941">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el sistema d\'informació i entreteniment o esborra totes les dades d\'aquest perfil si s\'introdueixen massa contrasenyes incorrectes."</string>
+    <string name="policydesc_watchLogin_secondaryUser" product="automotive" msgid="7180857406058327941">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el sistema d\'infoentreteniment o esborra totes les dades d\'aquest perfil si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policydesc_watchLogin_secondaryUser" product="default" msgid="9177645136475155924">"Supervisa el nombre de contrasenyes incorrectes introduïdes per desbloquejar la pantalla i bloqueja el telèfon o esborra totes les dades d\'aquest usuari si s\'introdueixen massa contrasenyes incorrectes."</string>
     <string name="policylab_resetPassword" msgid="214556238645096520">"Canviar el bloqueig de pantalla"</string>
     <string name="policydesc_resetPassword" msgid="4626419138439341851">"Canvia el bloqueig de pantalla."</string>
@@ -851,13 +851,13 @@
     <string name="policylab_wipeData" msgid="1359485247727537311">"Esborrar totes les dades"</string>
     <string name="policydesc_wipeData" product="tablet" msgid="7245372676261947507">"Esborra les dades de la tauleta sense avisar mitjançant el restabliment de les dades de fàbrica."</string>
     <string name="policydesc_wipeData" product="tv" msgid="513862488950801261">"Suprimeix les dades del dispositiu Android TV sense previ avís mitjançant el restabliment de les dades de fàbrica."</string>
-    <string name="policydesc_wipeData" product="automotive" msgid="660804547737323300">"Esborra les dades del sistema d\'informació i entreteniment sense avisar mitjançant el restabliment de les dades de fàbrica."</string>
+    <string name="policydesc_wipeData" product="automotive" msgid="660804547737323300">"Esborra les dades del sistema d\'infoentreteniment sense avisar mitjançant el restabliment de les dades de fàbrica."</string>
     <string name="policydesc_wipeData" product="default" msgid="8036084184768379022">"Esborra les dades del telèfon sense avisar mitjançant el restabliment de les dades de fàbrica."</string>
     <string name="policylab_wipeData_secondaryUser" product="automotive" msgid="115034358520328373">"Esborra les dades del perfil"</string>
     <string name="policylab_wipeData_secondaryUser" product="default" msgid="413813645323433166">"Esborrar les dades de l\'usuari"</string>
     <string name="policydesc_wipeData_secondaryUser" product="tablet" msgid="2336676480090926470">"Esborra les dades de l\'usuari desades a la tauleta sense avisar-ne."</string>
     <string name="policydesc_wipeData_secondaryUser" product="tv" msgid="2293713284515865200">"Esborra les dades de l\'usuari desades al dispositiu Android TV sense previ avís."</string>
-    <string name="policydesc_wipeData_secondaryUser" product="automotive" msgid="4658832487305780879">"Esborra les dades del perfil d\'aquest sistema d\'informació i entreteniment sense avisar."</string>
+    <string name="policydesc_wipeData_secondaryUser" product="automotive" msgid="4658832487305780879">"Esborra les dades del perfil d\'aquest sistema d\'infoentreteniment sense avisar."</string>
     <string name="policydesc_wipeData_secondaryUser" product="default" msgid="2788325512167208654">"Esborra les dades de l\'usuari desades al telèfon sense avisar-ne."</string>
     <string name="policylab_setGlobalProxy" msgid="215332221188670221">"Definir el servidor intermediari global del dispositiu"</string>
     <string name="policydesc_setGlobalProxy" msgid="7149665222705519604">"Si la política s\'activa, s\'utilitza el servidor intermediari global del dispositiu. Només el propietari del dispositiu el pot establir."</string>
@@ -1877,7 +1877,7 @@
     <string name="reason_unknown" msgid="5599739807581133337">"desconegut"</string>
     <string name="reason_service_unavailable" msgid="5288405248063804713">"El servei d\'impressió no està activat."</string>
     <string name="print_service_installed_title" msgid="6134880817336942482">"S\'ha instal·lat el servei <xliff:g id="NAME">%s</xliff:g>"</string>
-    <string name="print_service_installed_message" msgid="7005672469916968131">"Toca per activar-lo"</string>
+    <string name="print_service_installed_message" msgid="7005672469916968131">"Toca per activar"</string>
     <string name="restr_pin_enter_admin_pin" msgid="1199419462726962697">"Introdueix el PIN d\'administrador"</string>
     <string name="restr_pin_enter_pin" msgid="373139384161304555">"Introdueix el PIN"</string>
     <string name="restr_pin_incorrect" msgid="3861383632940852496">"Incorrecte"</string>
@@ -1929,7 +1929,7 @@
     <string name="zen_mode_until_next_day" msgid="1403042784161725038">"Finalitza: <xliff:g id="FORMATTEDTIME">%1$s</xliff:g>"</string>
     <string name="zen_mode_until" msgid="2250286190237669079">"Finalitza: <xliff:g id="FORMATTEDTIME">%1$s</xliff:g>"</string>
     <string name="zen_mode_alarm" msgid="7046911727540499275">"Finalitza: <xliff:g id="FORMATTEDTIME">%1$s</xliff:g> (propera alarma)"</string>
-    <string name="zen_mode_forever" msgid="740585666364912448">"Fins que no el desactivis"</string>
+    <string name="zen_mode_forever" msgid="740585666364912448">"Fins que no ho desactivis"</string>
     <string name="zen_mode_forever_dnd" msgid="3423201955704180067">"Fins que desactivis el mode No molestis"</string>
     <string name="zen_mode_rule_name_combination" msgid="7174598364351313725">"<xliff:g id="FIRST">%1$s</xliff:g> / <xliff:g id="REST">%2$s</xliff:g>"</string>
     <string name="toolbar_collapse_description" msgid="8009920446193610996">"Replega"</string>
@@ -1938,7 +1938,7 @@
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"Nit entre setmana"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"Cap de setmana"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"Esdeveniment"</string>
-    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"Mentre dormo"</string>
+    <string name="zen_mode_default_every_night_name" msgid="1467765312174275823">"Dormint"</string>
     <string name="zen_mode_implicit_trigger_description" msgid="5714956693073007111">"Gestionat per <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="zen_mode_implicit_activated" msgid="2634285680776672994">"Activat"</string>
     <string name="zen_mode_implicit_deactivated" msgid="8688441768371501750">"Desactivat"</string>
@@ -2216,7 +2216,7 @@
     <string name="conversation_title_fallback_group_chat" msgid="456073374993104303">"Conversa de grup"</string>
     <string name="unread_convo_overflow" msgid="920517615597353833">"<xliff:g id="MAX_UNREAD_COUNT">%1$d</xliff:g>+"</string>
     <string name="resolver_personal_tab" msgid="2051260504014442073">"Personal"</string>
-    <string name="resolver_work_tab" msgid="2690019516263167035">"Feina"</string>
+    <string name="resolver_work_tab" msgid="2690019516263167035">"Treball"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"Visualització personal"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"Visualització de treball"</string>
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Bloquejat per l\'administrador de TI"</string>

@@ -94,7 +94,7 @@
     <string name="bluetooth_connected_no_headset_battery_level" msgid="2661863370509206428">"Prisijungta (<xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>), (telefono nėra), akumuliatoriaus įkrovos lygis: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_a2dp_battery_level" msgid="6499078454894324287">"Prisijungta (<xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>), (medijos nėra), akumuliatoriaus įkrovos lygis: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
     <string name="bluetooth_connected_no_headset_no_a2dp_battery_level" msgid="8477440576953067242">"Prisijungta (<xliff:g id="ACTIVE_DEVICE">%2$s</xliff:g>), (telefono ar medijos nėra), akumuliatoriaus įkrovos lygis: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
-    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"Aktyvus. Akumuliatorius lygis: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>."</string>
+    <string name="bluetooth_active_battery_level" msgid="2685517576209066008">"Aktyvus. Akumuliatoriaus lygis: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>."</string>
     <string name="bluetooth_active_battery_level_untethered" msgid="4961338936672922617">"Aktyvus. Akumuliatoriaus lygis kairėje: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_0">%1$s</xliff:g>, dešinėje: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE_1">%2$s</xliff:g>."</string>
     <string name="bluetooth_active_battery_level_untethered_left" msgid="2895644748625343977">"Aktyvus. K.: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> akumuliatoriaus įkrova."</string>
     <string name="bluetooth_active_battery_level_untethered_right" msgid="7407517998880370179">"Aktyvus. D.: <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g> akumuliatoriaus įkrova."</string>
@@ -235,7 +235,7 @@
     <item msgid="6946761421234586000">"400 proc."</item>
   </string-array>
     <string name="choose_profile" msgid="343803890897657450">"Profilio pasirinkimas"</string>
-    <string name="category_personal" msgid="6236798763159385225">"Asmeninės"</string>
+    <string name="category_personal" msgid="6236798763159385225">"Asmeninis"</string>
     <string name="category_work" msgid="4014193632325996115">"Darbo"</string>
     <string name="category_private" msgid="4244892185452788977">"Privatus"</string>
     <string name="category_clone" msgid="1554511758987195974">"Identiška kopija"</string>
@@ -279,7 +279,7 @@
     <string name="keywords_adb_wireless" msgid="6507505581882171240">"ADB, derinti, kūrėjas"</string>
     <string name="bugreport_in_power" msgid="8664089072534638709">"Pranešimo apie riktą spartusis klavišas"</string>
     <string name="bugreport_in_power_summary" msgid="1885529649381831775">"Rodyti pranešimo apie riktą mygtuką maitinimo meniu"</string>
-    <string name="keep_screen_on" msgid="1187161672348797558">"Veikti"</string>
+    <string name="keep_screen_on" msgid="1187161672348797558">"Ekrano neišjungti"</string>
     <string name="keep_screen_on_summary" msgid="1510731514101925829">"Kraunant ekranas niekada neveiks miego režimu"</string>
     <string name="bt_hci_snoop_log" msgid="7291287955649081448">"Įgalinti „Bluetooth“ HCI šnipinėjimo žurnalą"</string>
     <string name="bt_hci_snoop_log_summary" msgid="6808538971394092284">"Fiksuoti „Bluetooth“ paketus. (Perjungti „Bluetooth“ pakeitus šį nustatymą)"</string>

@@ -141,6 +141,13 @@ final class AppCompatUtils {
         appCompatTaskInfo.setLetterboxEducationEnabled(top.mAppCompatController
                 .getAppCompatLetterboxOverrides().isLetterboxEducationEnabled());
 
+        // Whether the activity is using safe region letterboxing bounds. This happens when the
+        // activity is in compat mode and is being sandboxed within the safe region bounds or if
+        // the safe region bounds are applied directly on the activity.
+        appCompatTaskInfo.setTopActivitySafeRegionLetterboxed(top.areSafeRegionBoundsApplied()
+                || top.mAppCompatController.getSafeRegionPolicy()
+                    .isLetterboxedForSafeRegionOnlyAllowed());
+
         final AppCompatAspectRatioOverrides aspectRatioOverrides =
                 top.mAppCompatController.getAppCompatAspectRatioOverrides();
         appCompatTaskInfo.setUserFullscreenOverrideEnabled(
@@ -213,6 +220,10 @@ final class AppCompatUtils {
         }
         if (aspectRatioPolicy.isLetterboxedForAspectRatioOnly()) {
             return "ASPECT_RATIO";
+        }
+        if (activityRecord.mAppCompatController.getSafeRegionPolicy()
+                .isLetterboxedForSafeRegionOnlyAllowed()) {
+            return "SAFE_REGION";
         }
         return "UNKNOWN_REASON";
     }

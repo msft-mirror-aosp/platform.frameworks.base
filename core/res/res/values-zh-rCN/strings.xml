@@ -265,7 +265,7 @@
     <string name="global_action_bug_report" msgid="5127867163044170003">"错误报告"</string>
     <string name="global_action_logout" msgid="6093581310002476511">"结束会话"</string>
     <string name="global_action_screenshot" msgid="2610053466156478564">"屏幕截图"</string>
-    <string name="bugreport_title" msgid="8549990811777373050">"错误报告"</string>
+    <string name="bugreport_title" msgid="8549990811777373050">"Bug 报告"</string>
     <string name="bugreport_message" msgid="5212529146119624326">"这会收集有关当前设备状态的信息，并以电子邮件的形式进行发送。从开始生成错误报告到准备好发送需要一点时间，请耐心等待。"</string>
     <string name="bugreport_option_interactive_title" msgid="7968287837902871289">"互动式报告"</string>
     <string name="bugreport_option_interactive_summary" msgid="8493795476325339542">"在大多数情况下，建议您使用此选项，以便追踪报告的生成进度，输入与相应问题相关的更多详细信息，以及截取屏幕截图。系统可能会省略掉一些不常用的区段，从而缩短生成报告的时间。"</string>
@@ -612,8 +612,8 @@
     <string name="permdesc_uwb_ranging" msgid="2519723069604307055">"允许应用确定附近超宽带设备之间的相对位置"</string>
     <string name="permlab_nearby_wifi_devices" msgid="392774237063608500">"与附近的 WLAN 设备互动"</string>
     <string name="permdesc_nearby_wifi_devices" msgid="3054307728646332906">"允许该应用向附近的 WLAN 设备进行广播、连接到这些设备以及确定这些设备的相对位置"</string>
-    <string name="permlab_preferredPaymentInfo" msgid="5274423844767445054">"首选 NFC 付款服务信息"</string>
-    <string name="permdesc_preferredPaymentInfo" msgid="8583552469807294967">"允许应用获取首选 NFC 付款服务信息，例如注册的应用标识符和路线目的地。"</string>
+    <string name="permlab_preferredPaymentInfo" msgid="5274423844767445054">"首选 NFC 支付服务信息"</string>
+    <string name="permdesc_preferredPaymentInfo" msgid="8583552469807294967">"允许应用获取首选 NFC 支付服务信息，例如注册的应用标识符和路线目的地。"</string>
     <string name="permlab_nfc" msgid="1904455246837674977">"控制近距离通信"</string>
     <string name="permdesc_nfc" msgid="8352737680695296741">"允许应用与近距离无线通信(NFC)标签、卡和读取器通信。"</string>
     <string name="permlab_nfcTransactionEvent" msgid="5868209446710407679">"安全元件事务事件"</string>
@@ -655,7 +655,7 @@
     <string name="screen_lock_app_setting_name" msgid="6054944352976789228">"使用屏幕锁定凭据"</string>
     <string name="screen_lock_dialog_default_subtitle" msgid="120359538048533695">"输入您的屏幕锁定凭据才能继续"</string>
     <string name="fingerprint_acquired_partial" msgid="4323789264604479684">"请用力按住传感器"</string>
-    <string name="fingerprint_acquired_insufficient" msgid="2410176550915730974">"无法识别指纹。请重试。"</string>
+    <string name="fingerprint_acquired_insufficient" msgid="2410176550915730974">"无法识别指纹，请重试。"</string>
     <string name="fingerprint_acquired_imager_dirty" msgid="1770676120848224250">"请清洁指纹传感器，然后重试"</string>
     <string name="fingerprint_acquired_imager_dirty_alt" msgid="9169582140486372897">"请清洁传感器，然后重试"</string>
     <string name="fingerprint_acquired_too_fast" msgid="1628459767349116104">"请用力按住传感器"</string>
@@ -702,7 +702,7 @@
     <string name="face_recalibrate_notification_name" msgid="7311163114750748686">"人脸解锁"</string>
     <string name="face_recalibrate_notification_title" msgid="2524791952735579082">"人脸解锁存在问题"</string>
     <string name="face_recalibrate_notification_content" msgid="3064513770251355594">"请点按以删除您的脸部模型，然后再添加您的脸部模型"</string>
-    <string name="face_sensor_privacy_enabled" msgid="7407126963510598508">"如需使用人脸解锁功能，请在“设置”&gt;“隐私权”中开启"<b>"摄像头使用权限"</b></string>
+    <string name="face_sensor_privacy_enabled" msgid="7407126963510598508">"如需使用人脸解锁功能，请在“设置”&gt;“隐私权”中开启"<b>"相机权限"</b></string>
     <string name="fingerprint_recalibrate_notification_name" msgid="1414578431898579354">"指纹解锁"</string>
     <string name="fingerprint_recalibrate_notification_title" msgid="2406561052064558497">"无法使用指纹传感器"</string>
     <string name="fingerprint_recalibrate_notification_content" msgid="8519935717822194943">"请联系维修服务提供商。"</string>
@@ -732,7 +732,7 @@
     <skip />
     <string name="face_acquired_recalibrate_alt" msgid="5702674220280332115">"无法创建您的脸部模型，请重试。"</string>
     <string name="face_acquired_dark_glasses_detected_alt" msgid="4052123776406041972">"检测到墨镜，您的脸部必须完全可见。"</string>
-    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"检测到面部被遮挡，请露出整个面部。"</string>
+    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"检测到面部被遮挡，请露出整个面部"</string>
   <string-array name="face_acquired_vendor">
   </string-array>
     <string name="face_error_hw_not_available" msgid="5085202213036026288">"无法验证人脸。硬件无法使用。"</string>
@@ -1019,7 +1019,7 @@
     <string name="lockscreen_transport_stop_description" msgid="1449552232598355348">"停止"</string>
     <string name="lockscreen_transport_rew_description" msgid="7680106856221622779">"快退"</string>
     <string name="lockscreen_transport_ffw_description" msgid="4763794746640196772">"快进"</string>
-    <string name="emergency_calls_only" msgid="3057351206678279851">"只能拨打紧急呼叫电话"</string>
+    <string name="emergency_calls_only" msgid="3057351206678279851">"只能拨打紧急求助电话"</string>
     <string name="lockscreen_network_locked_message" msgid="2814046965899249635">"网络已锁定"</string>
     <string name="lockscreen_sim_puk_locked_message" msgid="2867953953604224166">"SIM 卡已用 PUK 码锁定。"</string>
     <string name="lockscreen_sim_puk_locked_instructions" msgid="5307979043730860995">"请参阅《用户指南》或与客服人员联系。"</string>
@@ -1621,7 +1621,7 @@
     <string name="extract_edit_menu_button" msgid="63954536535863040">"修改"</string>
     <string name="data_usage_warning_title" msgid="9034893717078325845">"数据流量警告"</string>
     <string name="data_usage_warning_body" msgid="1669325367188029454">"您已使用 <xliff:g id="APP">%s</xliff:g> 的数据流量"</string>
-    <string name="data_usage_mobile_limit_title" msgid="3911447354393775241">"已达到移动数据流量上限"</string>
+    <string name="data_usage_mobile_limit_title" msgid="3911447354393775241">"已达到移动流量使用上限"</string>
     <string name="data_usage_wifi_limit_title" msgid="2069698056520812232">"已达到 WLAN 流量上限"</string>
     <string name="data_usage_limit_body" msgid="3567699582000085710">"已暂停使用数据网络连接，直到这个周期结束为止"</string>
     <string name="data_usage_mobile_limit_snoozed_title" msgid="101888478915677895">"已超出移动数据流量上限"</string>
@@ -1667,7 +1667,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"无线显示"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"投放"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"连接到设备"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"将屏幕投放到设备上"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"投屏到设备上"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"正在搜索设备…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"设置"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"断开连接"</string>
@@ -1682,7 +1682,7 @@
     <string name="display_manager_overlay_display_title" msgid="1480158037150469170">"<xliff:g id="NAME">%1$s</xliff:g>：<xliff:g id="WIDTH">%2$d</xliff:g>x<xliff:g id="HEIGHT">%3$d</xliff:g>，<xliff:g id="DPI">%4$d</xliff:g> dpi"</string>
     <string name="display_manager_overlay_display_secure_suffix" msgid="2810034719482834679">"，安全"</string>
     <string name="kg_forgot_pattern_button_text" msgid="406145459223122537">"忘记了图案"</string>
-    <string name="kg_wrong_pattern" msgid="1342812634464179931">"图案错误"</string>
+    <string name="kg_wrong_pattern" msgid="1342812634464179931">"解锁图案错误"</string>
     <string name="kg_wrong_password" msgid="2384677900494439426">"密码错误"</string>
     <string name="kg_wrong_pin" msgid="3680925703673166482">"PIN码有误"</string>
     <string name="kg_pattern_instructions" msgid="8366024510502517748">"绘制您的图案"</string>
@@ -1914,7 +1914,7 @@
     <string name="confirm_battery_saver" msgid="5247976246208245754">"确定"</string>
     <string name="battery_saver_description_with_learn_more" msgid="5444908404021316250">"在省电模式下，系统会启用深色主题，并限制或关闭后台活动、某些视觉效果、特定功能和部分网络连接。"</string>
     <string name="battery_saver_description" msgid="8518809702138617167">"在省电模式下，系统会启用深色主题，并限制或关闭后台活动、某些视觉效果、特定功能和部分网络连接。"</string>
-    <string name="data_saver_description" msgid="4995164271550590517">"为了减少流量消耗，省流模式会阻止某些应用在后台收发数据。您当前使用的应用可以收发数据，但频率可能会降低。举例而言，这可能意味着图片只有在您点按之后才会显示。"</string>
+    <string name="data_saver_description" msgid="4995164271550590517">"省流模式会阻止部分应用在后台收发数据，以减少流量消耗。您正在使用的应用可以收发数据，但频率可能会降低。例如，图片可能需要点按才会显示。"</string>
     <string name="data_saver_enable_title" msgid="7080620065745260137">"要开启省流模式吗？"</string>
     <string name="data_saver_enable_button" msgid="4399405762586419726">"开启"</string>
     <string name="zen_mode_duration_minutes_summary" msgid="4555514757230849789">"{count,plural, =1{1 分钟（直到 {formattedTime}）}other{# 分钟（直到 {formattedTime}）}}"</string>
@@ -1944,7 +1944,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">"、 "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> - <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"所有日历"</string>
-    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g>正在将某些音效设为静音"</string>
+    <string name="muted_by" msgid="91464083490094950">"“<xliff:g id="THIRD_PARTY">%1$s</xliff:g>”已将某些音效设为静音"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"您的设备内部出现了问题。如果不将设备恢复出厂设置，设备运行可能会不稳定。"</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"您的设备内部出现了问题。请联系您的设备制造商了解详情。"</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD 请求已更改为普通通话"</string>
@@ -2042,7 +2042,7 @@
     <string name="profile_encrypted_title" msgid="9001208667521266472">"部分功能可能会受到限制"</string>
     <string name="profile_encrypted_detail" msgid="5279730442756849055">"工作资料已锁定"</string>
     <string name="profile_encrypted_message" msgid="1128512616293157802">"点按即可解锁工作资料"</string>
-    <string name="usb_mtp_launch_notification_title" msgid="774319638256707227">"已连接到<xliff:g id="PRODUCT_NAME">%1$s</xliff:g>"</string>
+    <string name="usb_mtp_launch_notification_title" msgid="774319638256707227">"已连接到“<xliff:g id="PRODUCT_NAME">%1$s</xliff:g>”"</string>
     <string name="usb_mtp_launch_notification_description" msgid="6942535713629852684">"点按即可查看文件"</string>
     <string name="pin_target" msgid="8036028973110156895">"置顶"</string>
     <string name="pin_specific_target" msgid="7824671240625957415">"将<xliff:g id="LABEL">%1$s</xliff:g>置顶"</string>
@@ -2099,7 +2099,7 @@
     <string name="autofill_save_type_payment_card" msgid="6555012156728690856">"支付卡"</string>
     <string name="autofill_save_type_generic_card" msgid="1019367283921448608">"卡片"</string>
     <string name="autofill_save_type_username" msgid="1018816929884640882">"用户名"</string>
-    <string name="autofill_save_type_email_address" msgid="1303262336895591924">"电子邮件地址"</string>
+    <string name="autofill_save_type_email_address" msgid="1303262336895591924">"邮箱"</string>
     <string name="etws_primary_default_message_earthquake" msgid="8401079517718280669">"请保持冷静，并寻找附近的避难地点。"</string>
     <string name="etws_primary_default_message_tsunami" msgid="5828171463387976279">"请立即从沿海和河滨区域撤离到高地等较安全的地方。"</string>
     <string name="etws_primary_default_message_earthquake_and_tsunami" msgid="4888224011071875068">"请保持冷静，并寻找附近的避难地点。"</string>

@@ -301,7 +301,7 @@
     <string name="notification_channel_device_admin" msgid="6384932669406095506">"Ծանուցումներ ձեր ՏՏ ադմինիստրատորից"</string>
     <string name="notification_channel_alerts" msgid="5070241039583668427">"Ծանուցումներ"</string>
     <string name="notification_channel_retail_mode" msgid="3732239154256431213">"Խանութի ցուցադրական ռեժիմ"</string>
-    <string name="notification_channel_usb" msgid="1528280969406244896">"USB կապակցում"</string>
+    <string name="notification_channel_usb" msgid="1528280969406244896">"USB միացում"</string>
     <string name="notification_channel_heavy_weight_app" msgid="17455756500828043">"Հավելվածն աշխատում է"</string>
     <string name="notification_channel_foreground_service" msgid="7102189948158885178">"Մարտկոցի լիցքը ծախսող հավելվածներ"</string>
     <string name="notification_channel_accessibility_magnification" msgid="1707913872219798098">"Խոշորացում"</string>
@@ -1112,7 +1112,7 @@
     <string name="menu_sym_shortcut_label" msgid="4037566049061218776">"Sym+"</string>
     <string name="menu_function_shortcut_label" msgid="2367112760987662566">"Function+"</string>
     <string name="menu_space_shortcut_label" msgid="5949311515646872071">"բացակ"</string>
-    <string name="menu_enter_shortcut_label" msgid="6709499510082897320">"մուտք"</string>
+    <string name="menu_enter_shortcut_label" msgid="6709499510082897320">"enter"</string>
     <string name="menu_delete_shortcut_label" msgid="4365787714477739080">"ջնջել"</string>
     <string name="search_go" msgid="2141477624421347086">"Որոնել"</string>
     <string name="search_hint" msgid="455364685740251925">"Որոնում..."</string>
@@ -1600,7 +1600,7 @@
     <string name="keyboardview_keycode_done" msgid="2524518019001653851">"Պատրաստ է"</string>
     <string name="keyboardview_keycode_mode_change" msgid="2743735349997999020">"Ռեժիմի փոփոխում"</string>
     <string name="keyboardview_keycode_shift" msgid="3026509237043975573">"Shift"</string>
-    <string name="keyboardview_keycode_enter" msgid="168054869339091055">"Մուտք"</string>
+    <string name="keyboardview_keycode_enter" msgid="168054869339091055">"Enter"</string>
     <string name="activitychooserview_choose_application" msgid="3500574466367891463">"Ընտրել ծրագիր"</string>
     <string name="activitychooserview_choose_application_error" msgid="6937782107559241734">"Չհաջողվեց գործարկել <xliff:g id="APPLICATION_NAME">%s</xliff:g> ծրագիրը"</string>
     <string name="shareactionprovider_share_with" msgid="2753089758467748982">"Կիսվել"</string>
@@ -2185,7 +2185,7 @@
     <string name="bluetooth_airplane_mode_toast" msgid="2066399056595768554">"Ավիառեժիմի ժամանակ Bluetooth-ը չի անջատվի"</string>
     <string name="car_loading_profile" msgid="8219978381196748070">"Բեռնում"</string>
     <string name="file_count" msgid="3220018595056126969">"{count,plural, =1{{file_name} ու ևս # ֆայլ}one{{file_name} ու ևս # ֆայլ}other{{file_name} ու ևս # ֆայլ}}"</string>
-    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Չկան օգտատերեր, որոնց հետ կարող եք կիսվել"</string>
+    <string name="chooser_no_direct_share_targets" msgid="1511722103987329028">"Առաջարկվող հասցեատերեր չկան"</string>
     <string name="chooser_all_apps_button_label" msgid="3230427756238666328">"Հավելվածների ցանկ"</string>
     <string name="usb_device_resolve_prompt_warn" msgid="325871329788064199">"Հավելվածը ձայնագրելու թույլտվություն չունի, սակայն կկարողանա գրանցել ձայնն այս USB սարքի միջոցով։"</string>
     <string name="accessibility_system_action_home_label" msgid="3234748160850301870">"Սկիզբ"</string>

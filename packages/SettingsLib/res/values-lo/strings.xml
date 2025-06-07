@@ -235,7 +235,7 @@
     <item msgid="6946761421234586000">"400%"</item>
   </string-array>
     <string name="choose_profile" msgid="343803890897657450">"ເລືອກໂປຣໄຟລ໌"</string>
-    <string name="category_personal" msgid="6236798763159385225">"ສ່ວນຕົວ"</string>
+    <string name="category_personal" msgid="6236798763159385225">"ສ່ວນບຸກຄົນ"</string>
     <string name="category_work" msgid="4014193632325996115">"​ບ່ອນ​ເຮັດ​ວຽກ"</string>
     <string name="category_private" msgid="4244892185452788977">"ສ່ວນຕົວ"</string>
     <string name="category_clone" msgid="1554511758987195974">"ໂຄລນ"</string>
@@ -430,7 +430,7 @@
     <string name="show_notification_channel_warnings_summary" msgid="68031143745094339">"ສະແດງຄຳເຕືອນໃນໜ້າຈໍເມື່ອແອັບໂພສການແຈ້ງເຕືອນໂດຍບໍ່ມີຊ່ອງທີ່ຖືກຕ້ອງ"</string>
     <string name="force_allow_on_external" msgid="9187902444231637880">"ບັງຄັບອະນຸຍາດແອັບ​ຢູ່​ພາຍນອກ"</string>
     <string name="force_allow_on_external_summary" msgid="8525425782530728238">"ເຮັດໃຫ້ທຸກແອັບມີສິດໄດ້ຮັບການຂຽນໃສ່ພື້ນທີ່ຈັດເກັບຂໍ້ມູນພາຍນອກ, ໂດຍບໍ່ຄຳນຶງເຖິງຄ່າ manifest"</string>
-    <string name="force_resizable_activities" msgid="7143612144399959606">"ບັງ​ຄັງ​ໃຫ້​ການ​ເຄື່ອນ​ໄຫວ​ປ່ຽນ​ຂະ​ໜາດ​ໄດ້"</string>
+    <string name="force_resizable_activities" msgid="7143612144399959606">"ບັງ​ຄັບໃຫ້​ການ​ເຄື່ອນ​ໄຫວ​ປ່ຽນ​ຂະ​ໜາດ​ໄດ້"</string>
     <string name="force_resizable_activities_summary" msgid="2490382056981583062">"ເຮັດໃຫ້ທຸກການ​ເຄື່ອນ​ໄຫວສາມາດປັບຂະໜາດໄດ້ສຳລັບຫຼາຍໜ້າຈໍ, ໂດຍບໍ່ຄຳນຶງເຖິງຄ່າ manifest."</string>
     <string name="enable_freeform_support" msgid="7599125687603914253">"ເປີດໃຊ້ໜ້າຈໍຮູບແບບອິດສະຫຼະ"</string>
     <string name="local_backup_password_title" msgid="4631017948933578709">"ລະຫັດຜ່ານການສຳຮອງຂໍ້ມູນເດັສທັອບ"</string>

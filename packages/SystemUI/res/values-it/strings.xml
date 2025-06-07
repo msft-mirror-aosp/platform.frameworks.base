@@ -112,9 +112,9 @@
     <string name="screenrecord_permission_dialog_title" msgid="7415261783188749730">"Registrare lo schermo?"</string>
     <string name="screenrecord_permission_dialog_option_text_single_app" msgid="1996450687814647583">"Registra un\'app"</string>
     <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Registra l\'intero schermo"</string>
-    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Quando registri l\'intero schermo, tutto ciò che viene mostrato sullo schermo viene registrato. Presta quindi attenzione a password, dati di pagamento, messaggi, foto, audio e video."</string>
+    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Quando registri l\'intera schermata, tutto ciò che viene mostrato sullo schermo viene registrato. Presta quindi attenzione a password, dati di pagamento, messaggi, foto, audio e video."</string>
     <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Quando registri un\'app, tutto ciò che viene mostrato o riprodotto al suo interno viene registrato. Presta quindi attenzione a password, dati di pagamento, messaggi, foto, audio e video."</string>
-    <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Registra lo schermo"</string>
+    <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Registra schermo"</string>
     <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Scegli l\'app da registrare"</string>
     <string name="screenrecord_audio_label" msgid="6183558856175159629">"Registra audio"</string>
     <string name="screenrecord_device_audio_label" msgid="9016927171280567791">"Audio del dispositivo"</string>
@@ -136,7 +136,7 @@
     <string name="screenrecord_stop_dialog_message_specific_app" msgid="5995770227684523244">"Al momento stai registrando <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="screenrecord_stop_dialog_button" msgid="2883812564938194350">"Interrompi registrazione"</string>
     <string name="share_to_app_chip_accessibility_label" msgid="4210256229976947065">"Condivisione dello schermo in corso"</string>
-    <string name="share_to_app_stop_dialog_title" msgid="9212915050910250438">"Vuoi interrompere la condivisione dello schermo?"</string>
+    <string name="share_to_app_stop_dialog_title" msgid="9212915050910250438">"Interrompere la condivisione dello schermo?"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen_with_host_app" msgid="522823522115375414">"Al momento stai condividendo l\'intero schermo con <xliff:g id="HOST_APP_NAME">%1$s</xliff:g>"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen" msgid="5090115386271179270">"Al momento stai condividendo l\'intero schermo con un\'app"</string>
     <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"Al momento stai condividendo <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>"</string>
@@ -163,7 +163,7 @@
     <string name="issuerecord_start_error" msgid="3402782952722871190">"Impossibile avviare la registrazione del problema"</string>
     <string name="immersive_cling_title" msgid="8372056499315585941">"Visualizzazione a schermo intero"</string>
     <string name="immersive_cling_description" msgid="2717426731830851921">"Per uscire, scorri verso il basso dalla parte superiore dello schermo"</string>
-    <string name="immersive_cling_positive" msgid="3076681691468978568">"OK"</string>
+    <string name="immersive_cling_positive" msgid="3076681691468978568">"Ok"</string>
     <string name="accessibility_back" msgid="6530104400086152611">"Indietro"</string>
     <string name="accessibility_home" msgid="5430449841237966217">"Home"</string>
     <string name="accessibility_menu" msgid="2701163794470513040">"Menu"</string>
@@ -397,8 +397,8 @@
     <string name="custom_trace_settings_dialog_title" msgid="2608570500144830554">"Impostazioni di traccia personalizzate"</string>
     <string name="restore_default" msgid="5259420807486239755">"Ripristina predefinite"</string>
     <string name="quick_settings_onehanded_label" msgid="2416537930246274991">"Modalità a una mano"</string>
-    <string name="quick_settings_hearing_devices_label" msgid="7277170419679404129">"Apparecchi acustici"</string>
-    <string name="quick_settings_hearing_devices_connected" msgid="6519069502397037781">"Attivi"</string>
+    <string name="quick_settings_hearing_devices_label" msgid="7277170419679404129">"Protesi uditive"</string>
+    <string name="quick_settings_hearing_devices_connected" msgid="6519069502397037781">"Attive"</string>
     <string name="quick_settings_hearing_devices_disconnected" msgid="8907061223998176187">"Disconnessi"</string>
     <string name="quick_settings_hearing_devices_dialog_title" msgid="9004774017688484981">"Protesi uditive"</string>
     <string name="quick_settings_pair_hearing_devices" msgid="5987105102207447322">"Accoppia nuovo dispositivo"</string>
@@ -651,7 +651,7 @@
     <string name="screen_pinning_toast" msgid="8177286912533744328">"Per sbloccare questa app, tocca e tieni premuti i pulsanti Indietro e Panoramica"</string>
     <string name="screen_pinning_toast_recents_invisible" msgid="6850978077443052594">"Per sbloccare questa app, tocca e tieni premuti i pulsanti Indietro e Home"</string>
     <string name="screen_pinning_toast_gesture_nav" msgid="170699893395336705">"Per sbloccare questa app, scorri verso l\'alto e tieni premuto"</string>
-    <string name="screen_pinning_positive" msgid="3285785989665266984">"OK"</string>
+    <string name="screen_pinning_positive" msgid="3285785989665266984">"Ok"</string>
     <string name="screen_pinning_negative" msgid="6882816864569211666">"No, grazie"</string>
     <string name="screen_pinning_start" msgid="7483998671383371313">"App bloccata"</string>
     <string name="screen_pinning_exit" msgid="4553787518387346893">"App sbloccata"</string>
@@ -680,7 +680,7 @@
     <string name="volume_panel_spatial_audio_title" msgid="3367048857932040660">"Audio spaziale"</string>
     <string name="volume_panel_spatial_audio_off" msgid="4177490084606772989">"Off"</string>
     <string name="volume_panel_spatial_audio_fixed" msgid="3136080137827746046">"Fisso"</string>
-    <string name="volume_panel_spatial_audio_tracking" msgid="5711115234001762974">"Rilev. movim. testa"</string>
+    <string name="volume_panel_spatial_audio_tracking" msgid="5711115234001762974">"Tracciamento testa"</string>
     <string name="volume_ringer_change" msgid="3574969197796055532">"Tocca per cambiare la modalità della suoneria"</string>
     <string name="volume_ringer_hint_mute" msgid="4263821214125126614">"silenzia"</string>
     <string name="volume_ringer_hint_unmute" msgid="6119086890306456976">"riattiva l\'audio"</string>
@@ -730,7 +730,7 @@
     <string name="tuner_warning_title" msgid="7721976098452135267">"Il divertimento riservato a pochi eletti"</string>
     <string name="tuner_warning" msgid="1861736288458481650">"L\'Ottimizzatore UI di sistema mette a disposizione altri metodi per modificare e personalizzare l\'interfaccia utente di Android. Queste funzioni sperimentali potrebbero cambiare, interrompersi o scomparire nelle versioni successive. Procedi con cautela."</string>
     <string name="tuner_persistent_warning" msgid="230466285569307806">"Queste funzioni sperimentali potrebbero cambiare, interrompersi o scomparire nelle versioni successive. Procedi con cautela."</string>
-    <string name="got_it" msgid="477119182261892069">"OK"</string>
+    <string name="got_it" msgid="477119182261892069">"Ok"</string>
     <string name="tuner_toast" msgid="3812684836514766951">"Complimenti! L\'Ottimizzatore UI di sistema è stato aggiunto alle impostazioni."</string>
     <string name="remove_from_settings" msgid="633775561782209994">"Rimuovi dalle impostazioni"</string>
     <string name="remove_from_settings_prompt" msgid="551565437265615426">"Vuoi rimuovere l\'Ottimizzatore UI di sistema dalle impostazioni e smettere di utilizzare tutte le sue funzioni?"</string>
@@ -833,7 +833,7 @@
     <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Visualizza notifiche"</string>
     <string name="group_system_full_screenshot" msgid="5742204844232667785">"Acquisisci screenshot"</string>
     <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Mostra scorciatoie"</string>
-    <string name="group_system_go_back" msgid="2730322046244918816">"Indietro"</string>
+    <string name="group_system_go_back" msgid="2730322046244918816">"Torna indietro"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"Vai alla schermata Home"</string>
     <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Visualizza app recenti"</string>
     <string name="group_system_cycle_forward" msgid="5478663965957647805">"Spostati avanti tra le app recenti"</string>
@@ -1334,7 +1334,7 @@
     <string name="rear_display_accessibility_folded_animation" msgid="1538121649587978179">"Dispositivo pieghevole che viene aperto"</string>
     <string name="rear_display_accessibility_unfolded_animation" msgid="1946153682258289040">"Dispositivo pieghevole che viene capovolto"</string>
     <string name="quick_settings_rotation_posture_folded" msgid="2430280856312528289">"Piegato"</string>
-    <string name="quick_settings_rotation_posture_unfolded" msgid="6372316273574167114">"Non piegato"</string>
+    <string name="quick_settings_rotation_posture_unfolded" msgid="6372316273574167114">"Aperto"</string>
     <string name="rotation_tile_with_posture_secondary_label_template" msgid="7648496484163318886">"%1$s / %2$s"</string>
     <string name="stylus_battery_low_percentage" msgid="2564243323894629626">"Batteria dello stilo: <xliff:g id="PERCENTAGE">%s</xliff:g>"</string>
     <string name="stylus_battery_low_subtitle" msgid="3583843128908823273">"Connetti lo stilo a un caricabatterie"</string>
@@ -1391,7 +1391,7 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"App corrente"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Accessibilità"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Scorciatoie da tastiera"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Scorciatoie per la ricerca"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Cerca scorciatoie"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Nessun risultato di ricerca"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Icona Comprimi"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Icona Espandi"</string>
@@ -1402,7 +1402,7 @@
     <string name="launch_touchpad_tutorial_notification_title" msgid="2243780062772196901">"Naviga usando il touchpad"</string>
     <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"Impara i gesti con il touchpad"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"Naviga usando la tastiera e il touchpad"</string>
-    <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"Scopri gesti con il touchpad, scorciatoie da tastiera e altro ancora"</string>
+    <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"Impara i gesti con il touchpad, le scorciatoie da tastiera e altro ancora"</string>
     <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"Gesto Indietro"</string>
     <string name="touchpad_tutorial_home_gesture_button" msgid="7640544867625955304">"Gesto Home"</string>
     <string name="touchpad_tutorial_recent_apps_gesture_button" msgid="8919227647650347359">"Visualizza app recenti"</string>
@@ -1417,7 +1417,7 @@
     <string name="touchpad_home_gesture_success_body" msgid="2404031094918807067">"Hai completato il gesto Vai alla schermata Home."</string>
     <string name="touchpad_recent_apps_gesture_action_title" msgid="934906836867137906">"Visualizza app recenti"</string>
     <string name="touchpad_recent_apps_gesture_guidance" msgid="6012057247259983871">"Scorri verso l\'alto e tieni premuto con tre dita sul touchpad."</string>
-    <string name="touchpad_recent_apps_gesture_success_title" msgid="8481920554139332593">"Ottimo lavoro."</string>
+    <string name="touchpad_recent_apps_gesture_success_title" msgid="8481920554139332593">"Ottimo lavoro!"</string>
     <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"Hai completato il gesto Visualizza app recenti."</string>
     <string name="tutorial_action_key_title" msgid="2659466586996495447">"Tasto azione"</string>
     <string name="tutorial_action_key_guidance" msgid="5718948664616999196">"Per accedere alle tue app, premi il tasto azione sulla tastiera."</string>
@@ -1426,9 +1426,9 @@
     <string name="keyboard_backlight_dialog_title" msgid="8273102932345564724">"Retroilluminazione della tastiera"</string>
     <string name="keyboard_backlight_value" msgid="7336398765584393538">"Livello %1$d di %2$d"</string>
     <string name="home_controls_dream_label" msgid="6567105701292324257">"Controlli della casa"</string>
-    <string name="home_controls_dream_description" msgid="4644150952104035789">"Accedi rapidamente ai controlli della casa dal salvaschermo"</string>
+    <string name="home_controls_dream_description" msgid="4644150952104035789">"Accedi ai controlli della casa dal salvaschermo"</string>
     <string name="volume_undo_action" msgid="5815519725211877114">"Annulla"</string>
-    <string name="back_edu_toast_content" msgid="4530314597378982956">"Per tornare indietro, scorri verso sinistra o verso destra con tre dita sul touchpad."</string>
+    <string name="back_edu_toast_content" msgid="4530314597378982956">"Per tornare indietro, scorri verso sinistra o destra con tre dita sul touchpad."</string>
     <string name="home_edu_toast_content" msgid="3381071147871955415">"Per andare alla schermata Home, scorri verso l\'alto con tre dita sul touchpad"</string>
     <string name="overview_edu_toast_content" msgid="5797030644017804518">"Per visualizzare le app recenti, scorri verso l\'alto e tieni premuto con tre dita sul touchpad"</string>
     <string name="all_apps_edu_toast_content" msgid="8807496014667211562">"Per visualizzare tutte le tue app, premi il tasto azione sulla tastiera"</string>
@@ -1443,7 +1443,7 @@
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"Usa la tastiera per visualizzare tutte le app"</string>
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"Premi il tasto azione in qualsiasi momento. Tocca per scoprire altri gesti."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Ora l\'attenuazione extra è nel cursore della luminosità"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Ora puoi usare l\'attenuazione extra per lo schermo abbassando il livello di luminosità ancora di più.\n\nDato che questa funzionalità ora fa parte del cursore della luminosità, le scorciatoie per l\'attenuazione extra vengono rimosse."</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Ora puoi usare l\'attenuazione extra per lo schermo abbassando ulteriormente il livello di luminosità.\n\nDato che questa funzionalità è ora integrata nel cursore della luminosità, le scorciatoie per l\'attenuazione extra vengono rimosse."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Rimuovi scorciatoie attenuazione extra"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Scorciatoie attenuazione extra rimosse"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Connettività"</string>

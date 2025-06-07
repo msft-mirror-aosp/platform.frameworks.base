@@ -550,7 +550,7 @@
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Truyền một ứng dụng"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Truyền toàn bộ màn hình"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Khi bạn truyền toàn bộ màn hình thì người khác sẽ thấy được mọi nội dung trên màn hình của bạn. Vì vậy, hãy thận trọng đối với những thông tin như mật khẩu, thông tin thanh toán, tin nhắn, ảnh, âm thanh và video."</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Khi bạn truyền một ứng dụng, thì người khác sẽ thấy được mọi nội dung xuất hiện hoặc phát trên ứng dụng đó. Vì vậy, hãy thận trọng đối với những thông tin như mật khẩu, thông tin thanh toán, tin nhắn, ảnh, âm thanh và video."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Khi bạn truyền một ứng dụng, mọi nội dung xuất hiện hoặc phát trên ứng dụng đó đều hiển thị trên thiết bị được truyền tới. Vì vậy, hãy thận trọng đối với những thông tin như mật khẩu, thông tin thanh toán, tin nhắn, ảnh, âm thanh và video."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"Màn hình truyền"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"Chọn ứng dụng để truyền"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"Bắt đầu chia sẻ?"</string>
@@ -632,7 +632,7 @@
     <string name="volume_odi_captions_content_description" msgid="4172765742046013630">"Lớp phủ phụ đề"</string>
     <string name="volume_odi_captions_hint_enable" msgid="2073091194012843195">"bật"</string>
     <string name="volume_odi_captions_hint_disable" msgid="2518846326748183407">"tắt"</string>
-    <string name="sound_settings" msgid="8874581353127418308">"Âm thanh và chế độ rung"</string>
+    <string name="sound_settings" msgid="8874581353127418308">"Âm thanh và rung"</string>
     <string name="volume_panel_dialog_settings_button" msgid="2513228491513390310">"Cài đặt"</string>
     <string name="volume_panel_captioning_title" msgid="5984936949147684357">"Phụ đề trực tiếp"</string>
     <string name="csd_lowered_title" product="default" msgid="2464112924151691129">"Âm lượng đã giảm xuống mức an toàn hơn"</string>
@@ -807,7 +807,7 @@
     <string name="keyboard_key_move_end" msgid="99190401463834854">"Cuối"</string>
     <string name="keyboard_key_insert" msgid="4621692715704410493">"Insert"</string>
     <string name="keyboard_key_num_lock" msgid="7209960042043090548">"Num Lock"</string>
-    <string name="keyboard_key_numpad_template" msgid="7316338238459991821">"Bàn phím số <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="keyboard_key_numpad_template" msgid="7316338238459991821">"Số <xliff:g id="NAME">%1$s</xliff:g> trên bàn phím số"</string>
     <string name="notif_inline_reply_remove_attachment_description" msgid="7954075334095405429">"Xóa tệp đính kèm"</string>
     <string name="keyboard_shortcut_group_system" msgid="1583416273777875970">"Hệ thống"</string>
     <string name="keyboard_shortcut_group_system_home" msgid="7465138628692109907">"Màn hình chính"</string>
@@ -819,7 +819,7 @@
     <string name="keyboard_shortcut_join" msgid="3578314570034512676">"hoặc"</string>
     <string name="keyboard_shortcut_clear_text" msgid="6631051796030377857">"Xoá cụm từ tìm kiếm"</string>
     <string name="keyboard_shortcut_search_list_title" msgid="4271769465397671138">"Phím tắt"</string>
-    <string name="keyboard_shortcut_search_list_hint" msgid="5982623262974326746">"Tìm lối tắt"</string>
+    <string name="keyboard_shortcut_search_list_hint" msgid="5982623262974326746">"Tìm phím tắt"</string>
     <string name="keyboard_shortcut_search_list_no_result" msgid="6819302191660875501">"Không tìm thấy lối tắt"</string>
     <string name="keyboard_shortcut_search_category_system" msgid="1151182120757052669">"Hệ thống"</string>
     <string name="keyboard_shortcut_search_category_input" msgid="5440558509904296233">"Đầu vào"</string>
@@ -836,8 +836,8 @@
     <string name="group_system_go_back" msgid="2730322046244918816">"Quay lại"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"Chuyển đến màn hình chính"</string>
     <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Xem các ứng dụng gần đây"</string>
-    <string name="group_system_cycle_forward" msgid="5478663965957647805">"Di chuyển tiến trong danh sách các ứng dụng gần đây"</string>
-    <string name="group_system_cycle_back" msgid="8194102916946802902">"Di chuyển lùi trong danh sách các ứng dụng gần đây"</string>
+    <string name="group_system_cycle_forward" msgid="5478663965957647805">"Di chuyển tiến qua các ứng dụng gần đây"</string>
+    <string name="group_system_cycle_back" msgid="8194102916946802902">"Di chuyển lùi qua các ứng dụng gần đây"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Mở danh sách ứng dụng"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"Mở phần cài đặt"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Mở Trợ lý"</string>
@@ -1085,7 +1085,7 @@
     <string name="controls_number_of_favorites" msgid="4481806788981836355">"{count,plural, =1{Đã thêm # chế độ điều khiển.}other{Đã thêm # chế độ điều khiển.}}"</string>
     <string name="controls_removed" msgid="3731789252222856959">"Đã xóa"</string>
     <string name="controls_panel_authorization_title" msgid="267429338785864842">"Thêm <xliff:g id="APPNAME">%s</xliff:g>?"</string>
-    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> có thể chọn các nút điều khiển và nội dung hiện ở đây."</string>
+    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> có thể chọn các nút điều khiển và nội dung xuất hiện ở đây."</string>
     <string name="controls_panel_remove_app_authorization" msgid="5920442084735364674">"Xoá chế độ điều khiển cho <xliff:g id="APPNAME">%s</xliff:g>?"</string>
     <string name="accessibility_control_favorite" msgid="8694362691985545985">"Được yêu thích"</string>
     <string name="accessibility_control_favorite_position" msgid="54220258048929221">"Được yêu thích, vị trí số <xliff:g id="NUMBER">%d</xliff:g>"</string>
@@ -1381,17 +1381,17 @@
     <string name="privacy_dialog_active_app_usage_2" msgid="2770926061339921767">"<xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>) đang dùng"</string>
     <string name="privacy_dialog_recent_app_usage_2" msgid="2874689735085367167">"<xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>) đã dùng gần đây"</string>
     <string name="shortcut_helper_category_system" msgid="462110876978937359">"Hệ thống"</string>
-    <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"Cài đặt hệ thống"</string>
+    <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"Điều khiển hệ thống"</string>
     <string name="shortcut_helper_category_system_apps" msgid="6001757545472556810">"Ứng dụng hệ thống"</string>
     <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Đa nhiệm"</string>
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Ứng dụng gần đây"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Chia đôi màn hình"</string>
     <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Phương thức nhập"</string>
-    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Lối tắt ứng dụng"</string>
+    <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Phím tắt cho ứng dụng"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Ứng dụng hiện tại"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Hỗ trợ tiếp cận"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Phím tắt"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Lối tắt tìm kiếm"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Tìm phím tắt"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Không có kết quả tìm kiếm nào"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Biểu tượng Thu gọn"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Biểu tượng Mở rộng"</string>
@@ -1426,7 +1426,7 @@
     <string name="keyboard_backlight_dialog_title" msgid="8273102932345564724">"Đèn nền bàn phím"</string>
     <string name="keyboard_backlight_value" msgid="7336398765584393538">"Độ sáng %1$d/%2$d"</string>
     <string name="home_controls_dream_label" msgid="6567105701292324257">"Điều khiển nhà"</string>
-    <string name="home_controls_dream_description" msgid="4644150952104035789">"Điều khiển nhà nhanh bằng trình bảo vệ màn hình"</string>
+    <string name="home_controls_dream_description" msgid="4644150952104035789">"Điều khiển nhà bằng trình bảo vệ màn hình"</string>
     <string name="volume_undo_action" msgid="5815519725211877114">"Huỷ"</string>
     <string name="back_edu_toast_content" msgid="4530314597378982956">"Để quay lại, hãy dùng 3 ngón tay vuốt sang trái hoặc phải trên bàn di chuột"</string>
     <string name="home_edu_toast_content" msgid="3381071147871955415">"Để trở về màn hình chính, hãy dùng 3 ngón tay vuốt lên trên bàn di chuột"</string>

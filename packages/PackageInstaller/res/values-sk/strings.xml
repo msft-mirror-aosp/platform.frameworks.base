@@ -78,7 +78,7 @@
     <string name="uninstalling" msgid="8709566347688966845">"Prebieha odinštalovanie..."</string>
     <string name="uninstalling_app" msgid="8866082646836981397">"Prebieha odinštalovanie balíka <xliff:g id="PACKAGE_LABEL">%1$s</xliff:g>…"</string>
     <string name="uninstall_done" msgid="439354138387969269">"Odinštalovanie bolo dokončené."</string>
-    <string name="uninstall_done_app" msgid="4588850984473605768">"Balík <xliff:g id="PACKAGE_LABEL">%1$s</xliff:g> bol odinštalovaný"</string>
+    <string name="uninstall_done_app" msgid="4588850984473605768">"Aplikácia <xliff:g id="PACKAGE_LABEL">%1$s</xliff:g> bola odinštalovaná"</string>
     <string name="uninstall_done_clone_app" msgid="5578308154544195413">"Klon aplikácie <xliff:g id="PACKAGE_LABEL">%1$s</xliff:g> bol odstránený"</string>
     <string name="uninstall_failed" msgid="1847750968168364332">"Nepodarilo sa odinštalovať."</string>
     <string name="uninstall_failed_app" msgid="5506028705017601412">"Balík <xliff:g id="PACKAGE_LABEL">%1$s</xliff:g> sa nepodarilo odinštalovať."</string>
@@ -96,7 +96,7 @@
     <string name="app_name_unknown" msgid="6881210203354323926">"Neznáma"</string>
     <string name="untrusted_external_source_warning" product="tablet" msgid="7067510047443133095">"Váš tablet momentálne nemôže z bezpečnostných dôvodov inštalovať neznáme aplikácie z tohto zdroja. Môžete to zmeniť v Nastaveniach."</string>
     <string name="untrusted_external_source_warning" product="tv" msgid="7057271609532508035">"Váš televízor momentálne nemôže z bezpečnostných dôvodov inštalovať neznáme aplikácie z tohto zdroja. Môžete to zmeniť v Nastaveniach."</string>
-    <string name="untrusted_external_source_warning" product="watch" msgid="7195163388090818636">"Z bezpečnostných dôvodov momentálne nemôžete v hodnikách inštalovať neznáme aplikácie z tohto zdroja. Môžete to zmeniť v Nastaveniach."</string>
+    <string name="untrusted_external_source_warning" product="watch" msgid="7195163388090818636">"Z bezpečnostných dôvodov momentálne nemôžete v hodinkách inštalovať neznáme aplikácie z tohto zdroja. Môžete to zmeniť v Nastaveniach."</string>
     <string name="untrusted_external_source_warning" product="default" msgid="8444191224459138919">"Váš telefón momentálne nemôže z bezpečnostných dôvodov inštalovať neznáme aplikácie z tohto zdroja. Môžete to zmeniť v nastaveniach."</string>
     <string name="anonymous_source_warning" product="default" msgid="2784902545920822500">"Váš telefón a osobné údaje sú zraniteľnejšie voči útoku z neznámych aplikácií. Inštaláciou tejto aplikácie vyjadrujete súhlas s tým, že nesiete zodpovednosť za akékoľvek poškodenie telefónu alebo stratu údajov, ktoré by mohli nastať pri jej používaní."</string>
     <string name="anonymous_source_warning" product="tablet" msgid="3939101621438855516">"Váš tablet a osobné dáta sú náchylnejšie na útok z neznámych aplikácií. Inštaláciou tejto aplikácie vyjadrujete súhlas s tým, že nesiete zodpovednosť za akékoľvek poškodenie tabletu alebo stratu dát, ktoré by mohli nastať pri jej používaní."</string>

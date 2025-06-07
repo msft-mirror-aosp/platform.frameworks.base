@@ -118,14 +118,14 @@
     <string name="bluetooth_battery_level_untethered_right_lea_support" msgid="8941549024377771038">"‏البلوتوث متصل (ميزة \"مشاركة الصوت\" متاحة). مستوى الشحن في سماعة الرأس اليمنى: ‎<xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%1$s</xliff:g>"</string>
     <string name="bluetooth_no_battery_level_lea_support" msgid="5721725041048434075">"البلوتوث متصل (ميزة \"مشاركة الصوت\" متاحة)"</string>
     <string name="bluetooth_active_media_only_no_battery_level" msgid="71106861912593126">"البلوتوث مفعَّل (للوسائط فقط)"</string>
-    <string name="bluetooth_saved_device_lea_support" msgid="7231323139968285768">"تتوفّر ميزة \"مشاركة الصوت\""</string>
+    <string name="bluetooth_saved_device_lea_support" msgid="7231323139968285768">"ميزة \"مشاركة الصوت\" متاحة"</string>
     <string name="bluetooth_hearing_aid_media_only_left_active" msgid="1632152540901488645">"السماعة اليسرى فقط مشغَّلة (للوسائط فقط)"</string>
     <string name="bluetooth_hearing_aid_media_only_right_active" msgid="3854140683042617230">"السماعة اليمنى فقط مشغَّلة (للوسائط فقط)"</string>
     <string name="bluetooth_hearing_aid_media_only_left_and_right_active" msgid="1299913413062528417">"السماعتان اليسرى واليمنى مشغَّلتان (للوسائط فقط)"</string>
     <string name="bluetooth_profile_a2dp" msgid="4632426382762851724">"الإعدادات الصوتية للوسائط"</string>
     <string name="bluetooth_profile_headset" msgid="5395952236133499331">"المكالمات الهاتفية"</string>
     <string name="bluetooth_profile_opp" msgid="6692618568149493430">"نقل الملف"</string>
-    <string name="bluetooth_profile_hid" msgid="2969922922664315866">"جهاز إدخال بيانات"</string>
+    <string name="bluetooth_profile_hid" msgid="2969922922664315866">"جهاز إدخال"</string>
     <string name="bluetooth_profile_pan" msgid="1006235139308318188">"الوصول إلى الإنترنت"</string>
     <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"السماح بالوصول إلى جهات الاتصال وسجلّ المكالمات"</string>
     <string name="bluetooth_profile_pbap_summary" msgid="402819589201138227">"سيتم استخدام المعلومات لإرسال إشعارات المكالمات وغيرها"</string>
@@ -250,7 +250,7 @@
     <string name="enable_adb_summary" msgid="3711526030096574316">"‏وضع تصحيح الأخطاء عند توصيل USB"</string>
     <string name="clear_adb_keys" msgid="3010148733140369917">"‏إلغاء عمليات تفويض تصحيح أخطاء USB"</string>
     <string name="enable_adb_wireless" msgid="6973226350963971018">"تصحيح الأخطاء اللاسلكي"</string>
-    <string name="enable_adb_wireless_summary" msgid="7344391423657093011">"‏وضع تصحيح الأخطاء عندما يتم الاتصال بشبكة Wi‑Fi"</string>
+    <string name="enable_adb_wireless_summary" msgid="7344391423657093011">"‏بدء تصحيح الأخطاء عند الاتصال بشبكة Wi‑Fi"</string>
     <string name="adb_wireless_error" msgid="721958772149779856">"خطأ"</string>
     <string name="adb_wireless_settings" msgid="2295017847215680229">"تصحيح الأخطاء اللاسلكي"</string>
     <string name="adb_wireless_list_empty_off" msgid="1713707973837255490">"لعرض الأجهزة المتاحة واستخدامها، فعِّل ميزة \"تصحيح الأخطاء اللاسلكي\"."</string>
@@ -281,7 +281,7 @@
     <string name="bugreport_in_power_summary" msgid="1885529649381831775">"عرض زر في قائمة زر التشغيل لإعداد تقرير بالأخطاء"</string>
     <string name="keep_screen_on" msgid="1187161672348797558">"البقاء في الوضع النشط"</string>
     <string name="keep_screen_on_summary" msgid="1510731514101925829">"عدم دخول الشاشة في وضع السكون مطلقًا أثناء الشحن"</string>
-    <string name="bt_hci_snoop_log" msgid="7291287955649081448">"تفعيل سجلّ تطفل بواجهة وحدة تحكم المضيف في بلوتوث"</string>
+    <string name="bt_hci_snoop_log" msgid="7291287955649081448">"تفعيل سجلّ التتبع لواجهة تحكم مضيف البلوتوث"</string>
     <string name="bt_hci_snoop_log_summary" msgid="6808538971394092284">"رَقمِن محتوى حزم بيانات البلوتوث. (تبديل البلوتوث بعد تغيير هذا الإعداد)"</string>
     <string name="oem_unlock_enable" msgid="5334869171871566731">"فتح قفل المصنّع الأصلي للجهاز"</string>
     <string name="oem_unlock_enable_summary" msgid="5857388174390953829">"‏السماح بإلغاء قفل برنامج bootloader"</string>
@@ -467,7 +467,7 @@
     <string name="select_webview_provider_toast_text" msgid="8512254949169359848">"لم يعد هذا الاختيار صالحًا. أعد المحاولة."</string>
     <string name="picture_color_mode" msgid="1013807330552931903">"نمط لون الصورة"</string>
     <string name="picture_color_mode_desc" msgid="151780973768136200">"‏استخدام sRGB"</string>
-    <string name="daltonizer_mode_disabled" msgid="403424372812399228">"غير مفعّل"</string>
+    <string name="daltonizer_mode_disabled" msgid="403424372812399228">"غير مفعّلة"</string>
     <string name="daltonizer_mode_monochromacy" msgid="362060873835885014">"عمى ألوان كامل"</string>
     <string name="daltonizer_mode_deuteranomaly" msgid="3507284319584683963">"العجز في رؤية اللونين الأخضر والأحمر"</string>
     <string name="daltonizer_mode_protanomaly" msgid="7805583306666608440">"غطش الأحمر (الأحمر والأخضر)"</string>
@@ -496,7 +496,7 @@
     <string name="power_remaining_only_more_than_subtext" msgid="4873750633368888062">"سيبقى شحن البطارية أكثر من <xliff:g id="TIME_REMAINING">%1$s</xliff:g>."</string>
     <string name="power_charging" msgid="6727132649743436802">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATE">%2$s</xliff:g>"</string>
     <string name="power_remaining_charging_duration_only" msgid="8085099012811384899">"يتبقّى <xliff:g id="TIME">%1$s</xliff:g> حتى اكتمال شحن البطارية"</string>
-    <string name="power_charging_duration" msgid="6127154952524919719">"<xliff:g id="LEVEL">%1$s</xliff:g> - يتبقّى <xliff:g id="TIME">%2$s</xliff:g> حتى اكتمال شحن البطارية."</string>
+    <string name="power_charging_duration" msgid="6127154952524919719">"‫<xliff:g id="LEVEL">%1$s</xliff:g> - يتبقّى <xliff:g id="TIME">%2$s</xliff:g> حتى اكتمال شحن البطارية"</string>
     <string name="power_charging_limited" msgid="4144004473976005214">"‫<xliff:g id="LEVEL">%1$s</xliff:g>: الشحن معلَّق لحماية البطارية"</string>
     <string name="power_charging_future_paused" msgid="1809543660923642799">"‫<xliff:g id="LEVEL">%1$s</xliff:g>: جارٍ الشحن"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"‏‫‎<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - سيكتمل الشحن بحلول <xliff:g id="TIME">%3$s</xliff:g>"</string>
@@ -550,7 +550,7 @@
     <string name="ims_reg_status_not_registered" msgid="2989287366045704694">"غير مُسجَّل"</string>
     <string name="status_unavailable" msgid="5279036186589861608">"غير متاح"</string>
     <string name="wifi_status_mac_randomized" msgid="466382542497832189">"‏يتم اختيار عنوان MAC بشكل انتقائي."</string>
-    <string name="wifi_tether_connected_summary" msgid="5100712926640492336">"{count,plural, =1{هناك جهاز واحد متصل.}zero{هناك # جهاز متصل.}two{هناك جهازان متصلان.}few{هناك # أجهزة متصلة.}many{هناك # جهازًا متصلاً.}other{هناك # جهاز متصل.}}"</string>
+    <string name="wifi_tether_connected_summary" msgid="5100712926640492336">"{count,plural, =1{هناك جهاز واحد متصل}zero{ليس هناك أي أجهزة متّصلة}two{هناك جهازان متصلان}few{هناك # أجهزة متصلة}many{هناك # جهازًا متصلاً}other{هناك # جهاز متصل}}"</string>
     <string name="accessibility_manual_zen_more_time" msgid="5141801092071134235">"وقت أكثر."</string>
     <string name="accessibility_manual_zen_less_time" msgid="6828877595848229965">"وقت أقل."</string>
     <string name="cancel" msgid="5665114069455378395">"إلغاء"</string>
@@ -668,7 +668,7 @@
     <string name="not_grant_admin" msgid="3557849576157702485">"لا أريد منح هذا المستخدم امتيازات المشرف."</string>
     <string name="guest_exit_dialog_button" msgid="1736401897067442044">"خروج"</string>
     <string name="guest_exit_dialog_title_non_ephemeral" msgid="7675327443743162986">"هل تريد حفظ النشاط في وضع الضيف؟"</string>
-    <string name="guest_exit_dialog_message_non_ephemeral" msgid="223385323235719442">"يمكنك حفظ نشاط من الجلسة الحالية أو حذف كلّ التطبيقات والبيانات."</string>
+    <string name="guest_exit_dialog_message_non_ephemeral" msgid="223385323235719442">"يمكنك حفظ نشاطك من الجلسة الحالية أو حذف كلّ التطبيقات والبيانات."</string>
     <string name="guest_exit_clear_data_button" msgid="3425812652180679014">"حذف"</string>
     <string name="guest_exit_save_data_button" msgid="3690974510644963547">"حِفظ"</string>
     <string name="guest_exit_button" msgid="5774985819191803960">"الخروج من وضع الضيف"</string>

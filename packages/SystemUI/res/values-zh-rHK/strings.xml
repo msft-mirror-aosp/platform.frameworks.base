@@ -139,7 +139,7 @@
     <string name="share_to_app_stop_dialog_title" msgid="9212915050910250438">"要停止分享螢幕嗎？"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen_with_host_app" msgid="522823522115375414">"你正與「<xliff:g id="HOST_APP_NAME">%1$s</xliff:g>」分享整個螢幕畫面"</string>
     <string name="share_to_app_stop_dialog_message_entire_screen" msgid="5090115386271179270">"你正與一個應用程式分享整個螢幕畫面"</string>
-    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"你正在分享「<xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>」"</string>
+    <string name="share_to_app_stop_dialog_message_single_app_specific" msgid="5923772039347985172">"你現正分享「<xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>」"</string>
     <string name="share_to_app_stop_dialog_message_single_app_generic" msgid="6681016774654578261">"你正在分享一個應用程式"</string>
     <string name="share_to_app_stop_dialog_button" msgid="6334056916284230217">"停止分享"</string>
     <string name="cast_screen_to_other_device_chip_accessibility_label" msgid="4687917476203009885">"正在投放螢幕"</string>
@@ -325,7 +325,7 @@
     <string name="quick_settings_camera_label" msgid="5612076679385269339">"相機存取權"</string>
     <string name="quick_settings_mic_label" msgid="8392773746295266375">"麥克風存取權"</string>
     <string name="quick_settings_camera_mic_available" msgid="1453719768420394314">"允許"</string>
-    <string name="quick_settings_camera_mic_blocked" msgid="4710884905006788281">"已禁用"</string>
+    <string name="quick_settings_camera_mic_blocked" msgid="4710884905006788281">"已封鎖"</string>
     <string name="quick_settings_media_device_label" msgid="8034019242363789941">"媒體裝置"</string>
     <string name="quick_settings_user_title" msgid="8673045967216204537">"使用者"</string>
     <string name="quick_settings_wifi_label" msgid="2879507532983487244">"Wi-Fi"</string>
@@ -364,7 +364,7 @@
     <string name="quick_settings_cellular_detail_data_warning" msgid="7957253810481086455">"<xliff:g id="DATA_LIMIT">%s</xliff:g> 警告"</string>
     <string name="quick_settings_work_mode_label" msgid="6440531507319809121">"工作應用程式"</string>
     <string name="quick_settings_work_mode_paused_state" msgid="6681788236383735976">"已暫停"</string>
-    <string name="quick_settings_night_display_label" msgid="8180030659141778180">"夜間模式"</string>
+    <string name="quick_settings_night_display_label" msgid="8180030659141778180">"夜燈模式"</string>
     <string name="quick_settings_night_secondary_label_on_at_sunset" msgid="3358706312129866626">"在日落時開啟"</string>
     <string name="quick_settings_night_secondary_label_until_sunrise" msgid="4063448287758262485">"在日出時關閉"</string>
     <string name="quick_settings_night_secondary_label_on_at" msgid="3584738542293528235">"<xliff:g id="TIME">%s</xliff:g> 開啟"</string>
@@ -437,8 +437,8 @@
     <string name="zen_modes_dialog_title" msgid="8854640808100096934">"模式"</string>
     <string name="zen_modes_dialog_done" msgid="6654130880256438950">"完成"</string>
     <string name="zen_modes_dialog_settings" msgid="2310248023728936697">"設定"</string>
-    <string name="zen_mode_on" msgid="9085304934016242591">"開啟"</string>
-    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"開 • <xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="zen_mode_on" msgid="9085304934016242591">"已開啟"</string>
+    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"已開啟 • <xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g>"</string>
     <string name="zen_mode_off" msgid="1736604456618147306">"關閉"</string>
     <string name="zen_mode_set_up" msgid="7457957033034460064">"設定"</string>
     <string name="zen_mode_no_manual_invocation" msgid="1769975741344633672">"在「設定」中管理"</string>
@@ -836,8 +836,8 @@
     <string name="group_system_go_back" msgid="2730322046244918816">"返回"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"前往主畫面"</string>
     <string name="group_system_overview_open_apps" msgid="5659958952937994104">"查看最近使用的應用程式"</string>
-    <string name="group_system_cycle_forward" msgid="5478663965957647805">"輪流切換最近使用的應用程式 (向前)"</string>
-    <string name="group_system_cycle_back" msgid="8194102916946802902">"輪流切換最近使用的應用程式 (向後)"</string>
+    <string name="group_system_cycle_forward" msgid="5478663965957647805">"順序查看最近使用的應用程式"</string>
+    <string name="group_system_cycle_back" msgid="8194102916946802902">"倒序查看最近使用的應用程式"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"開啟應用程式清單"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"開啟設定"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"開啟「Google 助理」"</string>
@@ -1267,7 +1267,7 @@
     <string name="qs_tile_request_dialog_add" msgid="4888460910694986304">"新增圖塊"</string>
     <string name="qs_tile_request_dialog_not_add" msgid="4168716573114067296">"不要新增圖塊"</string>
     <string name="qs_user_switch_dialog_title" msgid="3045189293587781366">"選取使用者"</string>
-    <string name="fgs_manager_footer_label" msgid="8276763570622288231">"{count,plural, =1{已啟用 # 個應用程式}other{已啟用 # 個應用程式}}"</string>
+    <string name="fgs_manager_footer_label" msgid="8276763570622288231">"{count,plural, =1{# 個應用程式使用中}other{# 個應用程式使用中}}"</string>
     <string name="fgs_dot_content_description" msgid="2865071539464777240">"新資料"</string>
     <string name="fgs_manager_dialog_title" msgid="5879184257257718677">"使用中的應用程式"</string>
     <string name="fgs_manager_dialog_message" msgid="2670045017200730076">"這些應用程式已啟用並執行 (即使你沒有使用)。這會提升應用程式的功能，但也可影響電池壽命。"</string>
@@ -1372,13 +1372,13 @@
     <string name="privacy_dialog_close_app_message" msgid="1316408652526310985">"<xliff:g id="APP_NAME">%1$s</xliff:g> 已關閉"</string>
     <string name="privacy_dialog_manage_service" msgid="8320590856621823604">"管理服務"</string>
     <string name="privacy_dialog_manage_permissions" msgid="2543451567190470413">"管理存取權"</string>
-    <string name="privacy_dialog_active_call_usage" msgid="7858746847946397562">"手機通話正在使用"</string>
+    <string name="privacy_dialog_active_call_usage" msgid="7858746847946397562">"正由「手機通話」使用"</string>
     <string name="privacy_dialog_recent_call_usage" msgid="1214810644978167344">"手機通話最近使用過此權限"</string>
-    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> 正在使用"</string>
+    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"正由「<xliff:g id="APP_NAME">%1$s</xliff:g>」使用"</string>
     <string name="privacy_dialog_recent_app_usage" msgid="4883417856848222450">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」最近使用過此權限"</string>
-    <string name="privacy_dialog_active_app_usage_1" msgid="9047570143069220911">"<xliff:g id="APP_NAME">%1$s</xliff:g> 正在使用 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>)"</string>
+    <string name="privacy_dialog_active_app_usage_1" msgid="9047570143069220911">"正由「<xliff:g id="APP_NAME">%1$s</xliff:g>」使用 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>)"</string>
     <string name="privacy_dialog_recent_app_usage_1" msgid="2551340497722370109">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」最近使用過此權限 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>)"</string>
-    <string name="privacy_dialog_active_app_usage_2" msgid="2770926061339921767">"<xliff:g id="APP_NAME">%1$s</xliff:g> 正在使用 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>)"</string>
+    <string name="privacy_dialog_active_app_usage_2" msgid="2770926061339921767">"正由「<xliff:g id="APP_NAME">%1$s</xliff:g>」使用 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>)"</string>
     <string name="privacy_dialog_recent_app_usage_2" msgid="2874689735085367167">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」最近使用過此權限 (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>)"</string>
     <string name="shortcut_helper_category_system" msgid="462110876978937359">"系統"</string>
     <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"系統控制項"</string>
@@ -1443,7 +1443,7 @@
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"使用鍵盤查看所有應用程式"</string>
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"隨時按下快捷操作鍵。輕按即可瞭解更多手勢。"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"亮度滑桿現已加入超暗功能"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"而家只要將亮度校得越低，螢幕就會更加暗。\n\n由於亮度滑桿而家加入咗呢個功能，所以系統將會移除超暗功能捷徑。"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"現在，只要調校亮度就能將螢幕變得超暗。\n\n由於超暗功能已加到亮度滑桿，其功能捷徑將被移除。"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"移除超暗功能捷徑"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"超暗功能捷徑已移除"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"裝置連接"</string>

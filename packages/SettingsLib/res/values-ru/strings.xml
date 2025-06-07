@@ -122,10 +122,10 @@
     <string name="bluetooth_hearing_aid_media_only_left_active" msgid="1632152540901488645">"Используется (только для медиа), только левый"</string>
     <string name="bluetooth_hearing_aid_media_only_right_active" msgid="3854140683042617230">"Используется (только для медиа), правый наушник"</string>
     <string name="bluetooth_hearing_aid_media_only_left_and_right_active" msgid="1299913413062528417">"Используется (только для медиа), левый и правый наушники"</string>
-    <string name="bluetooth_profile_a2dp" msgid="4632426382762851724">"Профиль A2DP"</string>
+    <string name="bluetooth_profile_a2dp" msgid="4632426382762851724">"Аудио мультимедиа"</string>
     <string name="bluetooth_profile_headset" msgid="5395952236133499331">"Звонки"</string>
     <string name="bluetooth_profile_opp" msgid="6692618568149493430">"Профиль OPP"</string>
-    <string name="bluetooth_profile_hid" msgid="2969922922664315866">"Профиль HID"</string>
+    <string name="bluetooth_profile_hid" msgid="2969922922664315866">"Устройство ввода"</string>
     <string name="bluetooth_profile_pan" msgid="1006235139308318188">"Доступ к интернету"</string>
     <string name="bluetooth_profile_pbap" msgid="2103406516858653017">"Разрешить доступ к контактам и журналу звонков"</string>
     <string name="bluetooth_profile_pbap_summary" msgid="402819589201138227">"Эти сведения нужны для оповещений о звонках и других функций"</string>
@@ -283,7 +283,7 @@
     <string name="keep_screen_on_summary" msgid="1510731514101925829">"Во время зарядки экран будет всегда включен"</string>
     <string name="bt_hci_snoop_log" msgid="7291287955649081448">"Включить snoop-логи Bluetooth HCI"</string>
     <string name="bt_hci_snoop_log_summary" msgid="6808538971394092284">"Сохранять все пакеты Bluetooth (перезапустите Bluetooth после изменения этой настройки)"</string>
-    <string name="oem_unlock_enable" msgid="5334869171871566731">"Заводская разблокировка"</string>
+    <string name="oem_unlock_enable" msgid="5334869171871566731">"Разблокировка загрузчика"</string>
     <string name="oem_unlock_enable_summary" msgid="5857388174390953829">"Разрешить разблокировку загрузчика ОС"</string>
     <string name="confirm_enable_oem_unlock_title" msgid="8249318129774367535">"Разрешить заводскую разблокировку?"</string>
     <string name="confirm_enable_oem_unlock_text" msgid="854131050791011970">"ВНИМАНИЕ! Функции защиты не будут работать на устройстве, пока включен этот параметр."</string>
@@ -382,7 +382,7 @@
     <string name="show_key_presses_summary" msgid="725387457373015024">"Показывать визуальный отклик при нажатии клавиш"</string>
     <string name="touchpad_visualizer" msgid="3707916068870825115">"Показать входные данные сенсорной панели"</string>
     <string name="touchpad_visualizer_summary" msgid="4056080018119847449">"Экранный оверлей, на котором изображены входные данные сенсорной панели и распознанные жесты"</string>
-    <string name="show_screen_updates" msgid="2078782895825535494">"Показ. обнов. поверхности"</string>
+    <string name="show_screen_updates" msgid="2078782895825535494">"Показывать обновления поверхности"</string>
     <string name="show_screen_updates_summary" msgid="2126932969682087406">"Подсвечивать поверхности окон при обновлении"</string>
     <string name="show_hw_screen_updates" msgid="2021286231267747506">"Показывать обнов. экрана"</string>
     <string name="show_hw_screen_updates_summary" msgid="3539770072741435691">"Подсвечивать области экрана при отрисовке"</string>
@@ -475,7 +475,7 @@
     <string name="accessibility_display_daltonizer_preference_title" msgid="1810693571332381974">"Коррекция цвета"</string>
     <string name="accessibility_display_daltonizer_preference_subtitle" msgid="1522101114585266455">"Используйте коррекцию цвета, чтобы:&lt;br/&gt; &lt;ol&gt; &lt;li&gt; Добиться нужной цветопередачи.&lt;/li&gt; &lt;li&gt; Убрать цвета, которые мешают сосредоточиться.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="daltonizer_type_overridden" msgid="4509604753672535721">"Новая настройка: <xliff:g id="TITLE">%1$s</xliff:g>"</string>
-    <string name="power_remaining_settings_home_page" msgid="4885165789445462557">"Уровень заряда – <xliff:g id="PERCENTAGE">%1$s</xliff:g>. <xliff:g id="TIME_STRING">%2$s</xliff:g>."</string>
+    <string name="power_remaining_settings_home_page" msgid="4885165789445462557">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> - <xliff:g id="TIME_STRING">%2$s</xliff:g>"</string>
     <string name="power_charging_on_hold_settings_home_page" msgid="7690464049464805856">"<xliff:g id="LEVEL">%1$s</xliff:g>, зарядка приостановлена для защиты батареи"</string>
     <string name="power_incompatible_charging_settings_home_page" msgid="1322050766135126880">"<xliff:g id="LEVEL">%1$s</xliff:g>, проверьте зарядное устройство"</string>
     <string name="power_remaining_duration_only" msgid="8264199158671531431">"Заряда хватит примерно на <xliff:g id="TIME_REMAINING">%1$s</xliff:g>"</string>
@@ -582,7 +582,7 @@
     <string name="time_unit_just_now" msgid="3006134267292728099">"Только что"</string>
     <string name="media_transfer_this_device_name" msgid="2357329267148436433">"Этот смартфон"</string>
     <string name="media_transfer_this_device_name_tablet" msgid="2975593806278422086">"Этот планшет"</string>
-    <string name="media_transfer_this_device_name_desktop" msgid="7912386128141470452">"Встроенный динамик компьютера"</string>
+    <string name="media_transfer_this_device_name_desktop" msgid="7912386128141470452">"Встроенное"</string>
     <!-- no translation found for media_transfer_this_device_name_tv (5285685336836896535) -->
     <skip />
     <string name="media_transfer_internal_mic" msgid="797333824290228595">"Микрофон (встроенный)"</string>
@@ -732,7 +732,7 @@
     <string name="bt_le_audio_broadcast_dialog_switch_app" msgid="5749813313369517812">"Транслировать \"<xliff:g id="SWITCHAPP">%1$s</xliff:g>\""</string>
     <string name="bt_le_audio_broadcast_dialog_different_output" msgid="2638402023060391333">"Транслировать на другое устройство"</string>
     <string name="back_navigation_animation" msgid="8105467568421689484">"Анимации подсказки для жеста \"Назад\""</string>
-    <string name="back_navigation_animation_summary" msgid="741292224121599456">"Включить системную анимацию подсказки для жеста \"Назад\"."</string>
+    <string name="back_navigation_animation_summary" msgid="741292224121599456">"Включить системную анимацию подсказки для жеста \"Назад\""</string>
     <string name="back_navigation_animation_dialog" msgid="8696966520944625596">"С помощью этого параметра можно включить системные анимации подсказок для жестов. Для этого нужно установить значение true для enableOnBackInvokedCallback в файле манифеста приложения."</string>
     <string name="font_scale_percentage" msgid="2624057443622817886">"<xliff:g id="PERCENTAGE">%1$d</xliff:g> %%"</string>
     <string name="not_specified" msgid="5423502443185110328">"Не указан"</string>

@@ -150,7 +150,7 @@
     <string name="cast_to_other_device_stop_dialog_message_specific_app" msgid="8616103075630934513">"ನೀವು ಪ್ರಸ್ತುತ <xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g> ಅನ್ನು ಸಮೀಪದ ಸಾಧನಕ್ಕೆ ಬಿತ್ತರಿಸುತ್ತಿದ್ದೀರಿ"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic_with_device" msgid="9213582497852420203">"ನೀವು ಪ್ರಸ್ತುತ <xliff:g id="DEVICE_NAME">%1$s</xliff:g> ಗೆ ಬಿತ್ತರಿಸುತ್ತಿದ್ದೀರಿ"</string>
     <string name="cast_to_other_device_stop_dialog_message_generic" msgid="4100272100480415076">"ನೀವು ಪ್ರಸ್ತುತ ಸಮೀಪದ ಸಾಧನಕ್ಕೆ ಬಿತ್ತರಿಸುತ್ತಿದ್ದೀರಿ"</string>
-    <string name="cast_to_other_device_stop_dialog_button" msgid="6420183747435521834">"ಬಿತ್ತರಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ"</string>
+    <string name="cast_to_other_device_stop_dialog_button" msgid="6420183747435521834">"ಕ್ಯಾಸ್ಟಿಂಗ್ ನಿಲ್ಲಿಸಿ"</string>
     <string name="close_dialog_button" msgid="4749497706540104133">"ಮುಚ್ಚಿರಿ"</string>
     <string name="issuerecord_title" msgid="286627115110121849">"ಸಮಸ್ಯೆ ರೆಕಾರ್ಡರ್"</string>
     <string name="issuerecord_background_processing_label" msgid="1666840264959336876">"ಸಮಸ್ಯೆ ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆ…"</string>
@@ -266,7 +266,7 @@
     <string name="accessibility_desc_quick_settings" msgid="4374766941484719179">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳು."</string>
     <string name="accessibility_desc_qs_notification_shade" msgid="8327226953072700376">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳು ಮತ್ತು ಅಧಿಸೂಚನೆಯ ಪರದೆ."</string>
     <string name="accessibility_desc_lock_screen" msgid="409034672704273634">"ಲಾಕ್ ಸ್ಕ್ರೀನ್"</string>
-    <string name="accessibility_desc_work_lock" msgid="4355620395354680575">"ಕೆಲಸದ ಲಾಕ್ ಪರದೆ"</string>
+    <string name="accessibility_desc_work_lock" msgid="4355620395354680575">"ಕೆಲಸದ ಲಾಕ್ ಸ್ಕ್ರೀನ್"</string>
     <string name="accessibility_desc_close" msgid="8293708213442107755">"ಮುಚ್ಚಿ"</string>
     <string name="accessibility_quick_settings_dnd_none_on" msgid="3235552940146035383">"ಸಂಪೂರ್ಣ ನಿಶ್ಯಬ್ಧ"</string>
     <string name="accessibility_quick_settings_dnd_alarms_on" msgid="3375848309132140014">"ಅಲಾರಮ್‌ಗಳು ಮಾತ್ರ"</string>
@@ -546,11 +546,11 @@
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"ಸ್ಕ್ರೀನ್‌ ಹಂಚಿಕೊಳ್ಳಿ"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> ಈ ಆಯ್ಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದೆ"</string>
     <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"ಹಂಚಿಕೊಳ್ಳಲು ಆ್ಯಪ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
-    <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಕ್ಯಾಸ್ಟ್ ಮಾಡಬೇಕೆ?"</string>
-    <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"ಒಂದು ಆ್ಯಪ್ ಅನ್ನು ಕ್ಯಾಸ್ಟ್ ಮಾಡಿ"</string>
+    <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಬಿತ್ತರಿಸಬೇಕೇ?"</string>
+    <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"ಒಂದು ಆ್ಯಪ್ ಅನ್ನು ಬಿತ್ತರಿಸಿ"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"ಸಂಪೂರ್ಣ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಕ್ಯಾಸ್ಟ್ ಮಾಡಿ"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಸ್ಕ್ರೀನ್ ಅನ್ನು ನೀವು ಕ್ಯಾಸ್ಟ್ ಮಾಡುವಾಗ, ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಏನಾದರೂ ಗೋಚರಿಸುತ್ತದೆ. ಆದ್ದರಿಂದ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು, ಪಾವತಿ ವಿವರಗಳು, ಸಂದೇಶಗಳು, ಫೋಟೋಗಳು ಹಾಗೂ ಆಡಿಯೊ ಮತ್ತು ವೀಡಿಯೊದಂತಹ ವಿಷಯಗಳ ಕುರಿತು ಜಾಗರೂಕರಾಗಿರಿ."</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"ನೀವು ಆ್ಯಪ್ ಅನ್ನು ಕ್ಯಾಸ್ಟ್ ಮಾಡುತ್ತಿರುವಾಗ, ಆ ಆ್ಯಪ್‌ನಲ್ಲಿ ತೋರಿಸಿರುವ ಅಥವಾ ಪ್ಲೇ ಮಾಡಿರುವುದು ಗೋಚರಿಸುತ್ತದೆ. ಆದ್ದರಿಂದ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು, ಪಾವತಿ ವಿವರಗಳು, ಸಂದೇಶಗಳು, ಫೋಟೋಗಳು ಹಾಗೂ ಆಡಿಯೊ ಮತ್ತು ವೀಡಿಯೊದಂತಹ ವಿಷಯಗಳ ಕುರಿತು ಜಾಗರೂಕರಾಗಿರಿ."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"ನೀವು ಆ್ಯಪ್ ಅನ್ನು ಬಿತ್ತರಿಸುತ್ತಿರುವಾಗ, ಆ ಆ್ಯಪ್‌ನಲ್ಲಿ ತೋರಿಸಿರುವ ಅಥವಾ ಪ್ಲೇ ಮಾಡಿರುವುದು ಗೋಚರಿಸುತ್ತದೆ. ಆದ್ದರಿಂದ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು, ಪಾವತಿ ವಿವರಗಳು, ಸಂದೇಶಗಳು, ಫೋಟೋಗಳು ಹಾಗೂ ಆಡಿಯೊ ಮತ್ತು ವೀಡಿಯೊದಂತಹ ವಿಷಯಗಳ ಕುರಿತು ಜಾಗರೂಕರಾಗಿರಿ."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"ಸ್ಕ್ರೀನ್‌ ಅನ್ನು ಬಿತ್ತರಿಸಿ"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"ಬಿತ್ತರಿಸಲು ಆ್ಯಪ್‌ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"ಹಂಚಿಕೊಳ್ಳಲು ಪ್ರಾರಂಭಿಸಬೇಕೇ?"</string>
@@ -657,7 +657,7 @@
     <string name="screen_pinning_exit" msgid="4553787518387346893">"ಆ್ಯಪ್ ಅನ್‌ಪಿನ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="stream_voice_call" msgid="7468348170702375660">"ಕರೆ ಮಾಡಿ"</string>
     <string name="stream_system" msgid="7663148785370565134">"ಸಿಸ್ಟಂ"</string>
-    <string name="stream_ring" msgid="7550670036738697526">"ರಿಂಗ್ ಮಾಡಿ"</string>
+    <string name="stream_ring" msgid="7550670036738697526">"ರಿಂಗ್"</string>
     <string name="stream_music" msgid="2188224742361847580">"ಮಾಧ್ಯಮ"</string>
     <string name="stream_alarm" msgid="16058075093011694">"ಅಲಾರಮ್"</string>
     <string name="stream_notification" msgid="7930294049046243939">"ನೋಟಿಫಿಕೇಶನ್"</string>
@@ -745,7 +745,7 @@
     <string name="notification_alert_title" msgid="3656229781017543655">"ಡೀಫಾಲ್ಟ್"</string>
     <string name="notification_automatic_title" msgid="3745465364578762652">"ಸ್ವಯಂಚಾಲಿತ"</string>
     <string name="notification_channel_summary_low" msgid="4860617986908931158">"ಯಾವುದೇ ಧ್ವನಿ ಅಥವಾ ವೈಬ್ರೇಷನ್‌ ಆಗುವುದಿಲ್ಲ"</string>
-    <string name="notification_conversation_summary_low" msgid="3855696451919728790">"ಯಾವುದೇ ಸೌಂಡ್ ಅಥವಾ ವೈಬ್ರೇಷನ್‌ ಇಲ್ಲ, ಆದರೆ ಇದು ಇನ್ನೂ ಸಂಭಾಷಣೆಗಳ ವಿಭಾಗದಲ್ಲಿ ತೋರಿಸುತ್ತದೆ"</string>
+    <string name="notification_conversation_summary_low" msgid="3855696451919728790">"ಯಾವುದೇ ಸೌಂಡ್ ಅಥವಾ ವೈಬ್ರೇಷನ್‌ ಇಲ್ಲ, ಆದರೆ ಇದು ಇನ್ನೂ ಸಂಭಾಷಣೆಗಳ ವಿಭಾಗದಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ"</string>
     <string name="notification_channel_summary_default" msgid="777294388712200605">"ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಧರಿಸಿ ಸಾಧನ ರಿಂಗ್ ಅಥವಾ ವೈಬ್ರೇಟ್ ಆಗುತ್ತದೆ"</string>
     <string name="notification_channel_summary_default_with_bubbles" msgid="3482483084451555344">"ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಧರಿಸಿ ಫೋನ್ ರಿಂಗ್ ಅಥವಾ ವೈಬ್ರೇಟ್ ಆಗುತ್ತದೆ. ಡಿಫಾಲ್ಟ್ ಆಗಿ, <xliff:g id="APP_NAME">%1$s</xliff:g> ಬಬಲ್ ಸಂಭಾಷಣೆಗಳು."</string>
     <string name="notification_channel_summary_automatic" msgid="5813109268050235275">"ಈ ಅಧಿಸೂಚನೆಯು ಶಬ್ದ ಮಾಡಬೇಕೇ ಅಥವಾ ವೈಬ್ರೇಟ್ ಮಾಡಬೇಕೇ ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸುವ ಅವಕಾಶವನ್ನು ಸಿಸ್ಟಂಗೆ ನೀಡಿ"</string>
@@ -847,8 +847,8 @@
     <string name="system_multitasking_rhs" msgid="8714224917276297810">"ಬಲಭಾಗದಲ್ಲಿ ಪ್ರಸ್ತುತ ಆ್ಯಪ್ ಮೂಲಕ ಸ್ಪ್ಲಿಟ್ ಸ್ಕ್ರೀನ್ ಬಳಸಿ"</string>
     <string name="system_multitasking_lhs" msgid="8402954791206308783">"ಎಡಭಾಗದಲ್ಲಿ ಪ್ರಸ್ತುತ ಆ್ಯಪ್ ಮೂಲಕ ಸ್ಪ್ಲಿಟ್ ಸ್ಕ್ರೀನ್ ಬಳಸಿ"</string>
     <string name="system_multitasking_full_screen" msgid="336048080383640562">"ಸ್ಕ್ರೀನ್ ಬೇರ್ಪಡಿಸಿ ಮೋಡ್‌ನಿಂದ ಪೂರ್ಣ ಸ್ಕ್ರೀನ್‌ಗೆ ಬದಲಿಸಿ"</string>
-    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"ಪರದೆ ಬೇರ್ಪಡಿಸಿ ಮೋಡ್ ಬಳಸುವಾಗ ಬಲಭಾಗ ಅಥವಾ ಕೆಳಭಾಗದಲ್ಲಿರುವ ಆ್ಯಪ್‌ಗೆ ಬದಲಿಸಿ"</string>
-    <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"ಪರದೆ ಬೇರ್ಪಡಿಸಿ ಮೋಡ್ ಬಳಸುವಾಗ ಎಡಭಾಗ ಅಥವಾ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ ಆ್ಯಪ್‌ಗೆ ಬದಲಿಸಿ"</string>
+    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"ಸ್ಕ್ರೀನ್ ಬೇರ್ಪಡಿಸಿ ಮೋಡ್ ಬಳಸುವಾಗ ಬಲಭಾಗ ಅಥವಾ ಕೆಳಭಾಗದಲ್ಲಿರುವ ಆ್ಯಪ್‌ಗೆ ಬದಲಿಸಿ"</string>
+    <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"ಸ್ಕ್ರೀನ್ ಬೇರ್ಪಡಿಸಿ ಮೋಡ್ ಬಳಸುವಾಗ ಎಡಭಾಗ ಅಥವಾ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ ಆ್ಯಪ್‌ಗೆ ಬದಲಿಸಿ"</string>
     <string name="system_multitasking_replace" msgid="7410071959803642125">"ಸ್ಕ್ರೀನ್ ಬೇರ್ಪಡಿಸುವ ಸಮಯದಲ್ಲಿ: ಒಂದು ಆ್ಯಪ್‌ನಿಂದ ಮತ್ತೊಂದು ಆ್ಯಪ್‌ಗೆ ಬದಲಿಸಿ"</string>
     <string name="keyboard_shortcut_group_input" msgid="6888282716546625610">"ಇನ್‌ಪುಟ್"</string>
     <string name="input_switch_input_language_next" msgid="3782155659868227855">"ಮುಂದಿನ ಭಾಷೆಗೆ ಬದಲಿಸಿ"</string>
@@ -1173,7 +1173,7 @@
     <string name="media_output_dialog_pairing_new" msgid="5098212763195577270">"ಸಾಧನವನ್ನು ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
     <string name="media_output_dialog_launch_app_text" msgid="1527413319632586259">"ಈ ಸೆಶನ್ ಕಾಸ್ಟ್ ಮಾಡಲು, ಆ್ಯಪ್ ಅನ್ನು ತೆರೆಯಿರಿ."</string>
     <string name="media_output_dialog_unknown_launch_app_name" msgid="1084899329829371336">"ಅಪರಿಚಿತ ಆ್ಯಪ್"</string>
-    <string name="media_output_dialog_button_stop_casting" msgid="6581379537930199189">"ಬಿತ್ತರಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ"</string>
+    <string name="media_output_dialog_button_stop_casting" msgid="6581379537930199189">"ಕ್ಯಾಸ್ಟಿಂಗ್ ನಿಲ್ಲಿಸಿ"</string>
     <string name="media_output_dialog_accessibility_title" msgid="4681741064190167888">"ಆಡಿಯೋ ಔಟ್‌ಪುಟ್‌ಗಾಗಿ ಲಭ್ಯವಿರುವ ಸಾಧನಗಳು."</string>
     <string name="media_output_dialog_accessibility_seekbar" msgid="5332843993805568978">"ವಾಲ್ಯೂಮ್"</string>
     <string name="media_output_dialog_volume_percentage" msgid="1613984910585111798">"<xliff:g id="PERCENTAGE">%1$d</xliff:g>%%"</string>
@@ -1227,7 +1227,7 @@
     <string name="status_before_loading" msgid="1500477307859631381">"ಕಂಟೆಂಟ್‌ ಶೀಘ್ರದಲ್ಲೇ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ"</string>
     <string name="missed_call" msgid="4228016077700161689">"ಮಿಸ್ಡ್ ಕಾಲ್"</string>
     <string name="messages_count_overflow_indicator" msgid="7850934067082006043">"<xliff:g id="NUMBER">%d</xliff:g>+"</string>
-    <string name="people_tile_description" msgid="8154966188085545556">"ಇತ್ತೀಚಿನ ಸಂದೇಶಗಳು, ಮಿಸ್ಡ್ ಕಾಲ್‌ಗಳು ಮತ್ತು ಸ್ಥಿತಿ ಅಪ್‌ಡೇಟ್‌ಗಳು"</string>
+    <string name="people_tile_description" msgid="8154966188085545556">"ಇತ್ತೀಚಿನ ಸಂದೇಶಗಳು, ಮಿಸ್ಡ್ ಕಾಲ್‌ಗಳು ಮತ್ತು ಸ್ಥಿತಿ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ನೋಡಿ"</string>
     <string name="people_tile_title" msgid="6589377493334871272">"ಸಂಭಾಷಣೆ"</string>
     <string name="paused_by_dnd" msgid="7856941866433556428">"\'ಅಡಚಣೆ ಮಾಡಬೇಡಿ\' ನಿಂದ ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"</string>
     <string name="new_notification_text_content_description" msgid="2915029960094389291">"<xliff:g id="NAME">%1$s</xliff:g> ಅವರು ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿದ್ದಾರೆ: <xliff:g id="NOTIFICATION">%2$s</xliff:g>"</string>
@@ -1375,7 +1375,7 @@
     <string name="privacy_dialog_active_call_usage" msgid="7858746847946397562">"ಫೋನ್ ಕರೆ ಮೂಲಕ ಬಳಕೆಯಲ್ಲಿದೆ"</string>
     <string name="privacy_dialog_recent_call_usage" msgid="1214810644978167344">"ಫೋನ್ ಕರೆಯಲ್ಲಿ ಇತ್ತೀಚಿಗೆ ಬಳಸಲಾಗಿದೆ"</string>
     <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> ನಿಂದ ಬಳಕೆಯಲ್ಲಿದೆ"</string>
-    <string name="privacy_dialog_recent_app_usage" msgid="4883417856848222450">"ಇತ್ತೀಚೆಗೆ <xliff:g id="APP_NAME">%1$s</xliff:g> ಇದನ್ನು ಬಳಸಿದೆ"</string>
+    <string name="privacy_dialog_recent_app_usage" msgid="4883417856848222450">"<xliff:g id="APP_NAME">%1$s</xliff:g> ಇತ್ತೀಚೆಗೆ ಇದನ್ನು ಬಳಸಿದೆ"</string>
     <string name="privacy_dialog_active_app_usage_1" msgid="9047570143069220911">"<xliff:g id="APP_NAME">%1$s</xliff:g> ನಿಂದ ಬಳಕೆಯಲ್ಲಿದೆ (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>)"</string>
     <string name="privacy_dialog_recent_app_usage_1" msgid="2551340497722370109">"ಇತ್ತೀಚೆಗೆ <xliff:g id="APP_NAME">%1$s</xliff:g> ಇದನ್ನು ಬಳಸಿದೆ (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>)"</string>
     <string name="privacy_dialog_active_app_usage_2" msgid="2770926061339921767">"<xliff:g id="APP_NAME">%1$s</xliff:g> ನಿಂದ ಬಳಕೆಯಲ್ಲಿದೆ (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g> • <xliff:g id="PROXY_LABEL">%3$s</xliff:g>)"</string>
@@ -1400,7 +1400,7 @@
     <string name="launch_keyboard_tutorial_notification_title" msgid="8849933155160522519">"ನಿಮ್ಮ ಕೀಬೋರ್ಡ್ ಬಳಸಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
     <string name="launch_keyboard_tutorial_notification_content" msgid="2880339951512757918">"ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳನ್ನು ಕಲಿಯಿರಿ"</string>
     <string name="launch_touchpad_tutorial_notification_title" msgid="2243780062772196901">"ನಿಮ್ಮ ಟಚ್‌ಪ್ಯಾಡ್ ಬಳಸಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
-    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"ಟಚ್‌ಪ್ಯಾಡ್ ಗೆಸ್ಚರ್‌ಗಳನ್ನು ಕಲಿಯಿರಿ"</string>
+    <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"ಟಚ್‌ಪ್ಯಾಡ್ ಜೆಸ್ಚರ್‌ಗಳನ್ನು ಕಲಿಯಿರಿ"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"ನಿಮ್ಮ ಕೀಬೋರ್ಡ್ ಮತ್ತು ಟಚ್‌ಪ್ಯಾಡ್ ಬಳಸಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"ಟಚ್‌ಪ್ಯಾಡ್ ಗೆಸ್ಚರ್‌ಗಳು, ಕೀಬೋರ್ಡ್‌ಗಳ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿನದನ್ನು ತಿಳಿಯಿರಿ"</string>
     <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"ಹಿಂಬದಿ ಗೆಸ್ಚರ್"</string>
@@ -1418,7 +1418,7 @@
     <string name="touchpad_recent_apps_gesture_action_title" msgid="934906836867137906">"ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ"</string>
     <string name="touchpad_recent_apps_gesture_guidance" msgid="6012057247259983871">"ನಿಮ್ಮ ಟಚ್‌ಪ್ಯಾಡ್‌ನಲ್ಲಿ ಮೂರು ಬೆರಳುಗಳನ್ನು ಬಳಸಿ ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ ಮತ್ತು ಹಿಡಿದುಕೊಳ್ಳಿ."</string>
     <string name="touchpad_recent_apps_gesture_success_title" msgid="8481920554139332593">"ಭೇಷ್‌!"</string>
-    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"ನೀವು ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳ ಗೆಸ್ಚರ್‌ ವೀಕ್ಷಣೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ."</string>
+    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"ನೀವು ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳ ಜೆಸ್ಚರ್‌ ವೀಕ್ಷಣೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ."</string>
     <string name="tutorial_action_key_title" msgid="2659466586996495447">"ಆ್ಯಕ್ಷನ್‌ ಕೀ"</string>
     <string name="tutorial_action_key_guidance" msgid="5718948664616999196">"ನಿಮ್ಮ ಆ್ಯಪ್‌ಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು, ನಿಮ್ಮ ಕೀಬೋರ್ಡ್‌ನಲ್ಲಿರುವ ಆ್ಯಕ್ಷನ್‌ ಕೀಯನ್ನು ಒತ್ತಿರಿ."</string>
     <string name="tutorial_action_key_success_title" msgid="466467860120112933">"ಅಭಿನಂದನೆಗಳು!"</string>

@@ -1057,7 +1057,7 @@
     <string name="lockscreen_access_pattern_cell_added_verbose" msgid="2931364927622563465">"<xliff:g id="CELL_INDEX">%1$s</xliff:g> කොටුව එකතු කරන ලදි"</string>
     <string name="lockscreen_access_pattern_detected" msgid="3931150554035194012">"රටාව සම්පූර්ණයි"</string>
     <string name="lockscreen_access_pattern_area" msgid="1288780416685002841">"රටා ප්‍රදේශය."</string>
-    <string name="keyguard_accessibility_widget_changed" msgid="7298011259508200234">"%%1$s. %%3$d න් %%2$d විජටය."</string>
+    <string name="keyguard_accessibility_widget_changed" msgid="7298011259508200234">"%1$s. %3$d න් %2$d විජටය."</string>
     <string name="keyguard_accessibility_add_widget" msgid="8245795023551343672">"විජටය එක් කරන්න."</string>
     <string name="keyguard_accessibility_widget_empty_slot" msgid="544239307077644480">"හිස්"</string>
     <string name="keyguard_accessibility_unlock_area_expanded" msgid="7768634718706488951">"අගුළු අරින ප්‍රදේශය විදහා ඇත."</string>
@@ -1667,7 +1667,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"නොරැහැන් සංදර්ශකය"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Cast"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"උපාංගයට සම්බන්ධ වන්න"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"තිරය උපාංගයට යොමු කරන්න"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"තිරය උපාංගයට විකාශය කරන්න"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"උපාංග සඳහා සොයමින්…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"සැකසීම්"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"විසන්ධි කරන්න"</string>
@@ -2408,7 +2408,7 @@
     <string name="keyboard_layout_notification_more_than_three_selected_message" msgid="1581834181578206937">"යතුරු පුවරුව <xliff:g id="LAYOUT_1">%1$s</xliff:g>, <xliff:g id="LAYOUT_2">%2$s</xliff:g>, <xliff:g id="LAYOUT_3">%3$s</xliff:g> ලෙස සකසා ඇත… වෙනස් කිරීමට තට්ටු කරන්න."</string>
     <string name="keyboard_layout_notification_multiple_selected_title" msgid="5242444914367024499">"භෞතික යතුරු පුවරුව වින්‍යාස කෙරිණි"</string>
     <string name="keyboard_layout_notification_multiple_selected_message" msgid="6576533454124419202">"යතුරු පුවරු බැලීමට තට්ටු කරන්න"</string>
-    <string name="profile_label_private" msgid="6463418670715290696">"පෞද්ගලික"</string>
+    <string name="profile_label_private" msgid="6463418670715290696">"රහසිගත"</string>
     <string name="profile_label_clone" msgid="769106052210954285">"ක්ලෝන කරන්න"</string>
     <string name="profile_label_work" msgid="3495359133038584618">"කාර්යාලය"</string>
     <string name="profile_label_work_2" msgid="4691533661598632135">"කාර්යාලය 2"</string>

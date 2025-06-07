@@ -115,14 +115,14 @@
     <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"முழுத் திரையை நீங்கள் ரெக்கார்டு செய்யும்போது அதில் காட்டப்படும் அனைத்தும் ரெக்கார்டு செய்யப்படும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்துக் கவனத்துடன் இருங்கள்."</string>
     <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"ஓர் ஆப்ஸை ரெக்கார்டு செய்யும்போது அதில் காட்டப்படும் அல்லது பிளே செய்யப்படும் அனைத்தும் ரெக்கார்டு செய்யப்படும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்துக் கவனத்துடன் இருங்கள்."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"திரையை ரெக்கார்டு செய்"</string>
-    <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"ரெக்கார்டு செய்ய ஆப்ஸைத் தேர்வுசெய்தல்"</string>
-    <string name="screenrecord_audio_label" msgid="6183558856175159629">"ஆடியோவை ரெக்கார்டு செய்"</string>
+    <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"ரெக்கார்டு செய்ய ஆப்ஸைத் தேர்வுசெய்க"</string>
+    <string name="screenrecord_audio_label" msgid="6183558856175159629">"ஆடியோவை ரெக்கார்டு செய்தல்"</string>
     <string name="screenrecord_device_audio_label" msgid="9016927171280567791">"சாதன ஆடியோ"</string>
     <string name="screenrecord_device_audio_description" msgid="4922694220572186193">"இசை, அழைப்புகள், ரிங்டோன்கள் போன்ற உங்கள் சாதனத்திலிருந்து வரும் ஒலி"</string>
     <string name="screenrecord_mic_label" msgid="2111264835791332350">"மைக்ரோஃபோன்"</string>
     <string name="screenrecord_device_audio_and_mic_label" msgid="1831323771978646841">"சாதன ஆடியோ மற்றும் மைக்ரோஃபோன்"</string>
     <string name="screenrecord_continue" msgid="4055347133700593164">"தொடங்கு"</string>
-    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"ஸ்கிரீன் ரெக்கார்ட் செய்யப்படுகிறது"</string>
+    <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"ஸ்கிரீன் ரெக்கார்டு செய்யப்படுகிறது"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"ஸ்கிரீன் மற்றும் ஆடியோ ரெக்கார்ட் செய்யப்படுகிறது"</string>
     <string name="screenrecord_taps_label" msgid="1595690528298857649">"திரையில் உள்ள தொடுதல்களைக் காட்டு"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"நிறுத்து"</string>
@@ -306,7 +306,7 @@
     <string name="quick_settings_bluetooth_device_saved" msgid="7549938728928069477">"சேமிக்கப்பட்டது"</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_disconnect" msgid="415980329093277342">"இணைப்பு நீக்கும்"</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate" msgid="3724301751036877403">"செயல்படுத்தும்"</string>
-    <string name="turn_on_bluetooth_auto_tomorrow" msgid="3345758139235739006">"தானாகவே நாளை இயக்கப்படும்"</string>
+    <string name="turn_on_bluetooth_auto_tomorrow" msgid="3345758139235739006">"தானாகவே நாளை இயங்குதல்"</string>
     <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"விரைவுப் பகிர்தல், Find My Device போன்ற அம்சங்கள் புளூடூத்தைப் பயன்படுத்துகின்றன"</string>
     <string name="turn_on_bluetooth_auto_info_enabled" msgid="7440944034584560279">"நாளை காலை புளூடூத் இயக்கப்படும்"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button" msgid="7545274861795853838">"ஆடியோவைப் பகிர்"</string>
@@ -366,13 +366,13 @@
     <string name="quick_settings_work_mode_paused_state" msgid="6681788236383735976">"இடைநிறுத்தப்பட்டது"</string>
     <string name="quick_settings_night_display_label" msgid="8180030659141778180">"நைட் லைட்"</string>
     <string name="quick_settings_night_secondary_label_on_at_sunset" msgid="3358706312129866626">"மாலையில் ஆன் செய்"</string>
-    <string name="quick_settings_night_secondary_label_until_sunrise" msgid="4063448287758262485">"காலை வரை"</string>
+    <string name="quick_settings_night_secondary_label_until_sunrise" msgid="4063448287758262485">"சூரிய உதயம் வரை"</string>
     <string name="quick_settings_night_secondary_label_on_at" msgid="3584738542293528235">"<xliff:g id="TIME">%s</xliff:g>க்கு ஆன் செய்"</string>
     <string name="quick_settings_secondary_label_until" msgid="1883981263191927372">"<xliff:g id="TIME">%s</xliff:g> வரை"</string>
     <string name="quick_settings_ui_mode_night_label" msgid="1398928270610780470">"டார்க் தீம்"</string>
     <string name="quick_settings_dark_mode_secondary_label_battery_saver" msgid="4990712734503013251">"பேட்டரி சேமிப்பு"</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at_sunset" msgid="6017379738102015710">"மாலையில் ஆன் செய்"</string>
-    <string name="quick_settings_dark_mode_secondary_label_until_sunrise" msgid="4404885070316716472">"காலை வரை"</string>
+    <string name="quick_settings_dark_mode_secondary_label_until_sunrise" msgid="4404885070316716472">"சூரிய உதயம் வரை"</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at" msgid="5128758823486361279">"<xliff:g id="TIME">%s</xliff:g>க்கு ஆன் செய்"</string>
     <string name="quick_settings_dark_mode_secondary_label_until" msgid="2289774641256492437">"<xliff:g id="TIME">%s</xliff:g> வரை"</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at_bedtime" msgid="2274300599408864897">"உறக்க நேரத்தின்போது இயக்கப்படும்"</string>
@@ -545,11 +545,11 @@
     <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"ஓர் ஆப்ஸைப் பகிரும்போது, அதில் காட்டப்படும்/பிளே செய்யப்படும் அனைத்தும் <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> இல் தெரியும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்துக் கவனத்துடன் இருங்கள்."</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"திரையைப் பகிர்"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> ஆப்ஸ் இந்த விருப்பத்தை முடக்கியுள்ளது"</string>
-    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"பகிர ஆப்ஸைத் தேர்வுசெய்தல்"</string>
+    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"பகிர ஆப்ஸைத் தேர்வுசெய்க"</string>
     <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"உங்கள் திரையை அலைபரப்ப வேண்டுமா?"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"ஓர் ஆப்ஸை அலைபரப்பு"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"முழுத்திரையையும் அலைபரப்பு"</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"உங்கள் முழுத்திரையையும் அலைபரப்பும்போது திரையில் உள்ள அனைத்தையும் பார்க்க முடியும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்துக் கவனத்துடன் இருங்கள்."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"உங்கள் முழுத்திரையையும் அலைபரப்பும்போது திரையில் உள்ள அனைத்தையும் பார்க்க முடியும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்து கவனத்துடன் இருங்கள்."</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"ஓர் ஆப்ஸை அலைபரப்பும்போது அதில் காட்டப்படுகின்ற அல்லது அதில் பிளே செய்யப்படுகின்ற அனைத்தையும் பார்க்க முடியும். எனவே கடவுச்சொற்கள், பேமெண்ட் விவரங்கள், மெசேஜ்கள், படங்கள், ஆடியோ, வீடியோ போன்றவை குறித்துக் கவனத்துடன் இருங்கள்."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"திரையை அலைபரப்பு"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"அலைபரப்ப ஆப்ஸைத் தேர்வுசெய்தல்"</string>
@@ -790,7 +790,7 @@
     <string name="keyboard_key_home" msgid="3734400625170020657">"ஹோம்"</string>
     <string name="keyboard_key_back" msgid="4185420465469481999">"பேக்"</string>
     <string name="keyboard_key_tab" msgid="4592772350906496730">"Tab"</string>
-    <string name="keyboard_key_space" msgid="6980847564173394012">"ஸ்பேஸ்"</string>
+    <string name="keyboard_key_space" msgid="6980847564173394012">"Space"</string>
     <string name="keyboard_key_enter" msgid="8633362970109751646">"என்டர்"</string>
     <string name="keyboard_key_backspace" msgid="4095278312039628074">"பேக்ஸ்பேஸ்"</string>
     <string name="keyboard_key_media_play_pause" msgid="8389984232732277478">"பிளே/பாஸ்"</string>
@@ -844,8 +844,8 @@
     <string name="group_system_lock_screen" msgid="7391191300363416543">"பூட்டுத் திரை"</string>
     <string name="group_system_quick_memo" msgid="3764560265935722903">"குறிப்பெடுத்தல்"</string>
     <string name="keyboard_shortcut_group_system_multitasking" msgid="6967816258924795558">"பல வேலைகளைச் செய்தல்"</string>
-    <string name="system_multitasking_rhs" msgid="8714224917276297810">"தற்போது உள்ள ஆப்ஸுடன் வலதுபுறத்தில் திரைப் பிரிப்பைப் பயன்படுத்துதல்"</string>
-    <string name="system_multitasking_lhs" msgid="8402954791206308783">"தற்போது உள்ள ஆப்ஸுடன் இடதுபுறத்தில் திரைப் பிரிப்பைப் பயன்படுத்துதல்"</string>
+    <string name="system_multitasking_rhs" msgid="8714224917276297810">"தற்போது உள்ள ஆப்ஸ் வலதுபுறம் வரும்படி திரைப் பிரிப்பைப் பயன்படுத்துதல்"</string>
+    <string name="system_multitasking_lhs" msgid="8402954791206308783">"தற்போது உள்ள ஆப்ஸ் இடதுபுறம் வரும்படி திரைப் பிரிப்பைப் பயன்படுத்துதல்"</string>
     <string name="system_multitasking_full_screen" msgid="336048080383640562">"திரைப் பிரிப்பு பயன்முறையிலிருந்து முழுத்திரைக்கு மாற்றுதல்"</string>
     <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"திரைப் பிரிப்பைப் பயன்படுத்தும்போது வலது/கீழ் உள்ள ஆப்ஸுக்கு மாறுதல்"</string>
     <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"திரைப் பிரிப்பைப் பயன்படுத்தும்போது இடது/மேலே உள்ள ஆப்ஸுக்கு மாறுதல்"</string>
@@ -969,7 +969,7 @@
     <string name="notification_channel_screenshot" msgid="7665814998932211997">"ஸ்கிரீன் ஷாட்டுகள்"</string>
     <string name="notification_channel_instant" msgid="7556135423486752680">"இன்ஸ்டண்ட் ஆப்ஸ்"</string>
     <string name="notification_channel_setup" msgid="7660580986090760350">"அமைவு"</string>
-    <string name="notification_channel_storage" msgid="2720725707628094977">"சேமிப்பிடம்"</string>
+    <string name="notification_channel_storage" msgid="2720725707628094977">"சேமிப்பகம்"</string>
     <string name="notification_channel_hints" msgid="7703783206000346876">"குறிப்புகள்"</string>
     <string name="notification_channel_accessibility" msgid="8956203986976245820">"மாற்றுத்திறன் வசதி"</string>
     <string name="instant_apps" msgid="8337185853050247304">"Instant Apps"</string>
@@ -1391,7 +1391,7 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"தற்போதைய ஆப்ஸ்"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"மாற்றுத்திறன் வசதி"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"கீபோர்டு ஷார்ட்கட்கள்"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"தேடல் ஷார்ட்கட்கள்"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"ஷார்ட்கட்களைத் தேடுக"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"தேடல் முடிவுகள் இல்லை"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"சுருக்குவதற்கான ஐகான்"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"விரிவாக்குவதற்கான ஐகான்"</string>

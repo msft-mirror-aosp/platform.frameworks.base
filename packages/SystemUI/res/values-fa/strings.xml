@@ -124,7 +124,7 @@
     <string name="screenrecord_continue" msgid="4055347133700593164">"شروع"</string>
     <string name="screenrecord_ongoing_screen_only" msgid="4459670242451527727">"درحال ضبط صفحه‌نمایش"</string>
     <string name="screenrecord_ongoing_screen_and_audio" msgid="5351133763125180920">"درحال ضبط صفحه‌نمایش و صدا"</string>
-    <string name="screenrecord_taps_label" msgid="1595690528298857649">"نمایش قسمت‌های لمس‌شده روی صفحه‌نمایش"</string>
+    <string name="screenrecord_taps_label" msgid="1595690528298857649">"نمایش نقاط لمس روی صفحه‌نمایش"</string>
     <string name="screenrecord_stop_label" msgid="72699670052087989">"متوقف کردن"</string>
     <string name="screenrecord_share_label" msgid="5025590804030086930">"هم‌رسانی"</string>
     <string name="screenrecord_save_title" msgid="1886652605520893850">"قطعه ضبط‌شده از صفحه‌نمایش ذخیره شد"</string>
@@ -132,7 +132,7 @@
     <string name="screenrecord_save_error" msgid="5862648532560118815">"خطا در ذخیره‌سازی ضبط صفحه‌نمایش"</string>
     <string name="screenrecord_start_error" msgid="2200660692479682368">"خطا هنگام شروع ضبط صفحه‌نمایش"</string>
     <string name="screenrecord_stop_dialog_title" msgid="8716193661764511095">"ضبط متوقف شود؟"</string>
-    <string name="screenrecord_stop_dialog_message" msgid="6262768207331626817">"اکنون درحال ضبط کل صفحه‌نمایشتان هستید"</string>
+    <string name="screenrecord_stop_dialog_message" msgid="6262768207331626817">"اکنون درحال ضبط کل صفحه‌نمایش هستید"</string>
     <string name="screenrecord_stop_dialog_message_specific_app" msgid="5995770227684523244">"اکنون درحال ضبط <xliff:g id="APP_NAME">%1$s</xliff:g> هستید"</string>
     <string name="screenrecord_stop_dialog_button" msgid="2883812564938194350">"توقف ضبط"</string>
     <string name="share_to_app_chip_accessibility_label" msgid="4210256229976947065">"درحال هم‌رسانی صفحه"</string>
@@ -163,7 +163,7 @@
     <string name="issuerecord_start_error" msgid="3402782952722871190">"هنگام شروع ضبط مشکل، خطایی پیش آمد"</string>
     <string name="immersive_cling_title" msgid="8372056499315585941">"درحال مشاهده در حالت تمام‌صفحه"</string>
     <string name="immersive_cling_description" msgid="2717426731830851921">"برای خروج، از بالای صفحه تند به پایین بکشید"</string>
-    <string name="immersive_cling_positive" msgid="3076681691468978568">"متوجه‌ام"</string>
+    <string name="immersive_cling_positive" msgid="3076681691468978568">"متوجهم"</string>
     <string name="accessibility_back" msgid="6530104400086152611">"برگشت"</string>
     <string name="accessibility_home" msgid="5430449841237966217">"صفحهٔ اصلی"</string>
     <string name="accessibility_menu" msgid="2701163794470513040">"منو"</string>
@@ -300,7 +300,7 @@
     <string name="pair_new_bluetooth_devices" msgid="4601767620843349645">"جفت کردن دستگاه جدید"</string>
     <string name="see_all_bluetooth_devices" msgid="1761596816620200433">"دیدن همه"</string>
     <string name="turn_on_bluetooth" msgid="5681370462180289071">"استفاده از بلوتوث"</string>
-    <string name="quick_settings_bluetooth_device_connected" msgid="7884777006729260996">"متصل"</string>
+    <string name="quick_settings_bluetooth_device_connected" msgid="7884777006729260996">"وصل‌شده"</string>
     <string name="quick_settings_bluetooth_device_audio_sharing" msgid="1496358082943301670">"اشتراک صدا"</string>
     <string name="quick_settings_bluetooth_device_audio_sharing_or_switch_active" msgid="3227408556754456024">"برای فعال کردن و هم‌رسانی صدا، تک‌ضرب بزنید"</string>
     <string name="quick_settings_bluetooth_device_saved" msgid="7549938728928069477">"ذخیره‌شده"</string>
@@ -383,7 +383,7 @@
     <string name="quick_settings_screen_record_label" msgid="8650355346742003694">"ضبط صفحه‌نمایش"</string>
     <string name="quick_settings_screen_record_start" msgid="1574725369331638985">"شروع"</string>
     <string name="quick_settings_screen_record_stop" msgid="8087348522976412119">"متوقف کردن"</string>
-    <string name="qs_record_issue_label" msgid="8166290137285529059">"ضبط مشکل"</string>
+    <string name="qs_record_issue_label" msgid="8166290137285529059">"مشکل ضبط"</string>
     <string name="qs_record_issue_start" msgid="2979831312582567056">"شروع"</string>
     <string name="qs_record_issue_stop" msgid="3531747965741982657">"توقف"</string>
     <string name="qs_record_issue_bug_report" msgid="8229031766918650079">"گزارش اشکال"</string>
@@ -405,7 +405,7 @@
     <string name="accessibility_hearing_device_pair_new_device" msgid="8440082580186130090">"برای جفت کردن دستگاه جدید، کلیک کنید"</string>
     <string name="hearing_devices_presets_error" msgid="350363093458408536">"پیش‌تنظیم به‌روزرسانی نشد"</string>
     <string name="hearing_devices_preset_label" msgid="7878267405046232358">"پیش‌تنظیم"</string>
-    <string name="quick_settings_hearing_devices_live_caption_title" msgid="1054814050932225451">"زیرنویس ناشنوایان زنده"</string>
+    <string name="quick_settings_hearing_devices_live_caption_title" msgid="1054814050932225451">"زیرنویس زنده ناشنوایان"</string>
     <string name="sensor_privacy_start_use_mic_dialog_title" msgid="563796653825944944">"میکروفون دستگاه لغو انسداد شود؟"</string>
     <string name="sensor_privacy_start_use_camera_dialog_title" msgid="8807639852654305227">"دوربین دستگاه لغو انسداد شود؟"</string>
     <string name="sensor_privacy_start_use_mic_camera_dialog_title" msgid="4316471859905020023">"دوربین و میکروفون دستگاه لغو انسداد شود؟"</string>
@@ -513,8 +513,8 @@
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"لغو انتخاب ابزاره"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"ابزاره‌های صفحه قفل"</string>
     <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"برای باز کردن برنامه بااستفاده از ابزاره، باید هویت خودتان را به‌تأیید برسانید. همچنین، به‌خاطر داشته باشید که همه می‌توانند آن‌ها را مشاهده کنند، حتی وقتی رایانه لوحی‌تان قفل است. برخی‌از ابزاره‌ها ممکن است برای صفحه قفل درنظر گرفته نشده باشند و ممکن است اضافه کردن آن‌ها در اینجا ناامن باشد."</string>
-    <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"متوجه‌ام"</string>
-    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"تغییر کاربر"</string>
+    <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"متوجهم"</string>
+    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"تعویض کاربر"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"منوی پایین‌پر"</string>
     <string name="guest_exit_guest_dialog_message" msgid="8183450985628495709">"همه برنامه‌ها و داده‌های این جلسه حذف خواهد شد."</string>
     <string name="guest_wipe_session_title" msgid="7147965814683990944">"مهمان گرامی، بازگشتتان را خوش آمد می‌گوییم!"</string>
@@ -576,7 +576,7 @@
     <string name="media_projection_action_text" msgid="3634906766918186440">"اکنون شروع کنید"</string>
     <string name="empty_shade_text" msgid="8935967157319717412">"اعلانی موجود نیست"</string>
     <string name="no_unseen_notif_text" msgid="395512586119868682">"اعلان جدیدی وجود ندارد"</string>
-    <string name="adaptive_notification_edu_hun_title" msgid="7790738150177329960">"«استراحت اعلان‌ها» روشن است"</string>
+    <string name="adaptive_notification_edu_hun_title" msgid="7790738150177329960">"«آرام‌سازی اعلان‌ها» روشن است"</string>
     <string name="adaptive_notification_edu_hun_text" msgid="7743367744129536610">"وقتی به‌طور هم‌زمان تعداد بسیار زیادی اعلان دریافت کنید، میزان صدای دستگاه و هشدارها به‌طور خودکار تا ۲ دقیقه کاهش می‌یابد."</string>
     <string name="go_to_adaptive_notification_settings" msgid="2423690125178298479">"خاموش کردن"</string>
     <string name="unlock_to_see_notif_text" msgid="7439033907167561227">"برای دیدن اعلان‌های قبلی قفل را باز کنید"</string>
@@ -634,7 +634,7 @@
     <string name="volume_odi_captions_hint_disable" msgid="2518846326748183407">"غیرفعال کردن"</string>
     <string name="sound_settings" msgid="8874581353127418308">"صدا و لرزش"</string>
     <string name="volume_panel_dialog_settings_button" msgid="2513228491513390310">"تنظیمات"</string>
-    <string name="volume_panel_captioning_title" msgid="5984936949147684357">"زیرنویس ناشنوایان زنده"</string>
+    <string name="volume_panel_captioning_title" msgid="5984936949147684357">"زیرنویس زنده ناشنوایان"</string>
     <string name="csd_lowered_title" product="default" msgid="2464112924151691129">"صدا به سطح ایمن‌تر کاهش یافت"</string>
     <string name="csd_system_lowered_text" product="default" msgid="1250251883692996888">"صدای هدفون برای مدتی طولانی‌تر از حد توصیه‌شده بلند بوده است"</string>
     <string name="csd_500_system_lowered_text" product="default" msgid="7414943302186884124">"صدای هدفون از حد ایمن برای این هفته فراتر رفته است"</string>
@@ -676,7 +676,7 @@
     <string name="volume_stream_content_description_mute" msgid="4079046784917920984">"‏%1$s. برای صامت کردن تک‌ضرب بزنید. ممکن است سرویس‌های دسترس‌پذیری صامت شود."</string>
     <string name="volume_stream_content_description_vibrate_a11y" msgid="2742330052979397471">"‏%1$s. برای تنظیم روی لرزش، تک‌ضرب بزنید."</string>
     <string name="volume_stream_content_description_mute_a11y" msgid="5743548478357238156">"‏%1$s. برای صامت کردن تک‌ضرب بزنید."</string>
-    <string name="volume_panel_noise_control_title" msgid="7413949943872304474">"کنترل صدای محیط"</string>
+    <string name="volume_panel_noise_control_title" msgid="7413949943872304474">"کنترل نوفه زمینه"</string>
     <string name="volume_panel_spatial_audio_title" msgid="3367048857932040660">"صدای فضایی"</string>
     <string name="volume_panel_spatial_audio_off" msgid="4177490084606772989">"خاموش"</string>
     <string name="volume_panel_spatial_audio_fixed" msgid="3136080137827746046">"ثابت"</string>
@@ -790,7 +790,7 @@
     <string name="keyboard_key_home" msgid="3734400625170020657">"ابتدا"</string>
     <string name="keyboard_key_back" msgid="4185420465469481999">"برگشت"</string>
     <string name="keyboard_key_tab" msgid="4592772350906496730">"Tab"</string>
-    <string name="keyboard_key_space" msgid="6980847564173394012">"Space"</string>
+    <string name="keyboard_key_space" msgid="6980847564173394012">"فاصله"</string>
     <string name="keyboard_key_enter" msgid="8633362970109751646">"Enter"</string>
     <string name="keyboard_key_backspace" msgid="4095278312039628074">"Backspace"</string>
     <string name="keyboard_key_media_play_pause" msgid="8389984232732277478">"پخش/مکث"</string>
@@ -802,7 +802,7 @@
     <string name="keyboard_key_page_up" msgid="173914303254199845">"صفحه بعد"</string>
     <string name="keyboard_key_page_down" msgid="9035902490071829731">"صفحه قبل"</string>
     <string name="keyboard_key_forward_del" msgid="5325501825762733459">"حذف"</string>
-    <string name="keyboard_key_esc" msgid="6230365950511411322">"کلید گریز"</string>
+    <string name="keyboard_key_esc" msgid="6230365950511411322">"Esc"</string>
     <string name="keyboard_key_move_home" msgid="3496502501803911971">"ابتدا"</string>
     <string name="keyboard_key_move_end" msgid="99190401463834854">"End"</string>
     <string name="keyboard_key_insert" msgid="4621692715704410493">"Insert"</string>
@@ -1084,8 +1084,8 @@
     <string name="controls_providers_title" msgid="6879775889857085056">"انتخاب برنامه برای افزودن کنترل‌ها"</string>
     <string name="controls_number_of_favorites" msgid="4481806788981836355">"{count,plural, =1{# کنترل اضافه شد.}one{# کنترل اضافه شد.}other{# کنترل اضافه شد.}}"</string>
     <string name="controls_removed" msgid="3731789252222856959">"حذف شد"</string>
-    <string name="controls_panel_authorization_title" msgid="267429338785864842">"<xliff:g id="APPNAME">%s</xliff:g> افزوده شود؟"</string>
-    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> می‌تواند انتخاب کند چه کنترل‌ها و محتوایی اینجا نشان داده شود."</string>
+    <string name="controls_panel_authorization_title" msgid="267429338785864842">"‫<xliff:g id="APPNAME">%s</xliff:g> افزوده شود؟"</string>
+    <string name="controls_panel_authorization" msgid="7045551688535104194">"‫<xliff:g id="APPNAME">%s</xliff:g> می‌تواند انتخاب کند چه کنترل‌ها و محتوایی اینجا نشان داده شود."</string>
     <string name="controls_panel_remove_app_authorization" msgid="5920442084735364674">"کنترل‌های <xliff:g id="APPNAME">%s</xliff:g> برداشته شود؟"</string>
     <string name="accessibility_control_favorite" msgid="8694362691985545985">"به موارد دلخواه اضافه شد"</string>
     <string name="accessibility_control_favorite_position" msgid="54220258048929221">"به «موارد دلخواه» اضافه شد، جایگاه <xliff:g id="NUMBER">%d</xliff:g>"</string>
@@ -1257,9 +1257,9 @@
     <string name="tap_a_network_to_connect" msgid="1565073330852369558">"برای اتصال به شبکه روی آن تک‌ضرب بزنید"</string>
     <string name="unlock_to_view_networks" msgid="5072880496312015676">"برای مشاهده شبکه‌ها، قفل صفحه را باز کنید"</string>
     <string name="wifi_empty_list_wifi_on" msgid="3864376632067585377">"درحال جستجوی شبکه…"</string>
-    <string name="wifi_failed_connect_message" msgid="4161863112079000071">"اتصال به شبکه برقرار نشد"</string>
+    <string name="wifi_failed_connect_message" msgid="4161863112079000071">"به شبکه متصل نشد"</string>
     <string name="wifi_wont_autoconnect_for_now" msgid="5782282612749867762">"‏فعلاً Wi-Fi به‌طور خودکار متصل نمی‌شود"</string>
-    <string name="see_all_networks" msgid="3773666844913168122">"مشاهده همه"</string>
+    <string name="see_all_networks" msgid="3773666844913168122">"دیدن همه"</string>
     <string name="to_switch_networks_disconnect_ethernet" msgid="6698111101156951955">"برای تغییر شبکه، اترنت را قطع کنید"</string>
     <string name="wifi_scan_notify_message" msgid="3753839537448621794">"‏برای بهبود تجربه استفاده از دستگاه، برنامه‌ها و سرویس‌ها همچنان می‌توانند در هر زمانی شبکه‌های Wi-Fi را اسکن کنند؛ حتی وقتی که Wi-Fi خاموش باشد. می‌توانید این مورد را در تنظیمات اسکن کردن Wi‑Fi تغییر دهید. "<annotation id="link">"تغییر"</annotation></string>
     <string name="turn_off_airplane_mode" msgid="8425587763226548579">"خاموش کردن حالت هواپیما"</string>
@@ -1405,7 +1405,7 @@
     <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"آشنایی با اشاره‌های صفحه لمسی، میان‌برهای صفحه‌کلید، و موارد دیگر"</string>
     <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"اشاره برگشت"</string>
     <string name="touchpad_tutorial_home_gesture_button" msgid="7640544867625955304">"اشاره صفحه اصلی"</string>
-    <string name="touchpad_tutorial_recent_apps_gesture_button" msgid="8919227647650347359">"مشاهده کردن برنامه‌های اخیر"</string>
+    <string name="touchpad_tutorial_recent_apps_gesture_button" msgid="8919227647650347359">"مشاهده برنامه‌های اخیر"</string>
     <string name="touchpad_tutorial_done_button" msgid="176168488821755503">"تمام"</string>
     <string name="touchpad_back_gesture_action_title" msgid="7199067250654332735">"برگشتن"</string>
     <string name="touchpad_back_gesture_guidance" msgid="6263750214998421587">"برای برگشتن، در هر جایی از صفحه لمسی، با سه انگشت تند به‌چپ یا راست بکشید.\n\nبرای این کار می‌توانید از میان‌بر صفحه‌کلید «کنش + گریز» هم استفاده کنید."</string>
@@ -1415,10 +1415,10 @@
     <string name="touchpad_home_gesture_guidance" msgid="3043931356096731966">"برای رفتن به صفحه اصلی در هرزمانی، با سه انگشت از پایین صفحه‌نمایش تند به‌بالا بکشید."</string>
     <string name="touchpad_home_gesture_success_title" msgid="3778407003948209795">"آفرین!"</string>
     <string name="touchpad_home_gesture_success_body" msgid="2404031094918807067">"اشاره رفتن به صفحه اصلی را تکمیل کردید."</string>
-    <string name="touchpad_recent_apps_gesture_action_title" msgid="934906836867137906">"مشاهده کردن برنامه‌های اخیر"</string>
+    <string name="touchpad_recent_apps_gesture_action_title" msgid="934906836867137906">"مشاهده برنامه‌های اخیر"</string>
     <string name="touchpad_recent_apps_gesture_guidance" msgid="6012057247259983871">"با سه انگشت روی صفحه لمسی تند به‌بالا بکشید و نگه دارید."</string>
     <string name="touchpad_recent_apps_gesture_success_title" msgid="8481920554139332593">"عالی است!"</string>
-    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"اشاره مشاهده برنامه‌های اخیر را انجام دادید"</string>
+    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"اشاره «مشاهده برنامه‌های اخیر» را تمام کردید"</string>
     <string name="tutorial_action_key_title" msgid="2659466586996495447">"دکمه کنش"</string>
     <string name="tutorial_action_key_guidance" msgid="5718948664616999196">"برای دسترسی به برنامه‌هایتان، دکمه کنش در صفحه‌کلید را فشار دهید."</string>
     <string name="tutorial_action_key_success_title" msgid="466467860120112933">"تبریک!"</string>

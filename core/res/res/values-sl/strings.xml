@@ -274,7 +274,7 @@
     <string name="bugreport_option_full_title" msgid="7681035745950045690">"Celotno poročilo"</string>
     <string name="bugreport_option_full_summary" msgid="1975130009258435885">"To možnost uporabite za najmanj motenj sistema, če je naprava neodzivna ali prepočasna oziroma ko potrebujete vse razdelke poročila. Ne omogoča vnosa več podrobnosti ali snemanja dodatnih posnetkov zaslona."</string>
     <string name="bugreport_countdown" msgid="6418620521782120755">"{count,plural, =1{Posnetek zaslona za poročilo o napakah bo narejen čez # sekundo.}one{Posnetek zaslona za poročilo o napakah bo narejen čez # sekundo.}two{Posnetek zaslona za poročilo o napakah bo narejen čez # sekundi.}few{Posnetek zaslona za poročilo o napakah bo narejen čez # sekunde.}other{Posnetek zaslona za poročilo o napakah bo narejen čez # sekund.}}"</string>
-    <string name="bugreport_screenshot_success_toast" msgid="7986095104151473745">"Posnetek zaslona s poročilom o napakah je izdelan"</string>
+    <string name="bugreport_screenshot_success_toast" msgid="7986095104151473745">"Posnetek zaslona s poročilom je ustvarjen"</string>
     <string name="bugreport_screenshot_failure_toast" msgid="6736320861311294294">"Izdelava posnetka zaslona s poročilom o napakah ni uspela"</string>
     <string name="global_action_toggle_silent_mode" msgid="8464352592860372188">"Tihi način"</string>
     <string name="global_action_silent_mode_on_status" msgid="2371892537738632013">"Zvok je IZKLOPLJEN"</string>
@@ -285,7 +285,7 @@
     <string name="global_action_settings" msgid="4671878836947494217">"Nastavitve"</string>
     <string name="global_action_assist" msgid="2517047220311505805">"Pomoč"</string>
     <string name="global_action_voice_assist" msgid="6655788068555086695">"Glas. pomočnik"</string>
-    <string name="global_action_lockdown" msgid="2475471405907902963">"Zakleni"</string>
+    <string name="global_action_lockdown" msgid="2475471405907902963">"Zaklep"</string>
     <string name="status_bar_notification_info_overflow" msgid="3330152558746563475">"999 +"</string>
     <string name="notification_compact_heads_up_reply" msgid="2425293958371284340">"Odgovori"</string>
     <string name="notification_hidden_text" msgid="2835519769868187223">"Novo obvestilo"</string>
@@ -711,7 +711,7 @@
     <string name="face_acquired_insufficient" msgid="6889245852748492218">"Modela obraza ni mogoče ustvariti. Poskusite znova."</string>
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"Presvetlo. Poskusite z blažjo osvetlitvijo."</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"Premalo svetlobe"</string>
-    <string name="face_acquired_too_close" msgid="4453646176196302462">"Telefon nekoliko odmaknite."</string>
+    <string name="face_acquired_too_close" msgid="4453646176196302462">"Telefon nekoliko odmaknite"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"Bolj približajte telefon."</string>
     <string name="face_acquired_too_high" msgid="8278815780046368576">"Telefon premaknite višje"</string>
     <string name="face_acquired_too_low" msgid="4075391872960840081">"Telefon premaknite nižje"</string>
@@ -1006,7 +1006,7 @@
     <string name="lockscreen_password_wrong" msgid="8605355913868947490">"Poskusite znova"</string>
     <string name="lockscreen_storage_locked" msgid="634993789186443380">"Odklenite za dostop do vseh funkcij in podatkov"</string>
     <string name="faceunlock_multiple_failures" msgid="681991538434031708">"Presegli ste dovoljeno število poskusov odklepanja z obrazom"</string>
-    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"Ni kartice SIM."</string>
+    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"Ni kartice SIM"</string>
     <string name="lockscreen_missing_sim_message" product="tablet" msgid="3986843848305639161">"V tabličnem računalniku ni kartice SIM."</string>
     <string name="lockscreen_missing_sim_message" product="tv" msgid="3903140876952198273">"V napravi Android TV ni kartice SIM."</string>
     <string name="lockscreen_missing_sim_message" product="default" msgid="6184187634180854181">"V telefonu ni kartice SIM."</string>

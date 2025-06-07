@@ -111,8 +111,8 @@
     <string name="screenrecord_channel_description" msgid="4147077128486138351">"Ekran kaydı oturumu için devam eden bildirim"</string>
     <string name="screenrecord_permission_dialog_title" msgid="7415261783188749730">"Ekranınız kaydedilsin mi?"</string>
     <string name="screenrecord_permission_dialog_option_text_single_app" msgid="1996450687814647583">"Bir uygulamayı kaydet"</string>
-    <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Tüm ekranı kaydedin"</string>
-    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Tüm ekranınızı kaydettiğinizde ekranınızda gösterilen her şey kaydedilir. Bu nedenle şifre, ödeme ayrıntıları, mesaj, fotoğraf, ses ve video gibi öğeler konusunda dikkatli olun."</string>
+    <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Tüm ekranı kaydet"</string>
+    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Ekranın tamamını kaydederken ekranınızda gösterilen her şey kaydedilir. Bu nedenle şifre, ödeme ayrıntıları, mesaj, fotoğraf, ses ve video gibi öğeler konusunda dikkatli olun."</string>
     <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Bir uygulamayı kaydettiğinizde o uygulamada gösterilen veya oynatılan her şey kaydedilir. Bu nedenle şifre, ödeme ayrıntıları, mesaj, fotoğraf, ses ve video gibi öğeler konusunda dikkatli olun."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Ekranı kaydet"</string>
     <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Kaydedilecek uygulamayı seçin"</string>
@@ -227,7 +227,7 @@
     <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Parmak izi kilidi kurulamadı. Tekrar denemek için Ayarlar\'a gidin."</string>
     <string name="face_re_enroll_notification_title" msgid="1850838867718410520">"Yüz Tanıma Kilidi\'ni tekrar kurun"</string>
     <string name="face_re_enroll_notification_name" msgid="7384545252206120659">"Yüz Tanıma Kilidi"</string>
-    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Yüz Tanıma Kilidi\'ni kurun"</string>
+    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Yüz Tanıma Kilidi\'ni ayarla"</string>
     <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"Yüz Tanıma Kilidi\'ni tekrar kurmak için mevcut yüz modeliniz silinir.\n\nYüzünüzü kullanarak telefonunuzun kilidini açmak için bu özelliği yeniden kurmanız gerekir."</string>
     <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"Yüz tanıma kilidi kurulamadı. Tekrar denemek için Ayarlar\'a gidin."</string>
     <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"Parmak izi sensörüne dokunun"</string>
@@ -307,7 +307,7 @@
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_disconnect" msgid="415980329093277342">"bağlantıyı kes"</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate" msgid="3724301751036877403">"etkinleştir"</string>
     <string name="turn_on_bluetooth_auto_tomorrow" msgid="3345758139235739006">"Yarın otomatik olarak aç"</string>
-    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Quick Share ve Cihazımı Bul gibi özellikler Bluetooth\'u kullanır"</string>
+    <string name="turn_on_bluetooth_auto_info_disabled" msgid="682984290339848844">"Quick Share ve Cihazımı Bul gibi özellikler Bluetooth\'u kullanır."</string>
     <string name="turn_on_bluetooth_auto_info_enabled" msgid="7440944034584560279">"Bluetooth yarın sabah açılacak"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button" msgid="7545274861795853838">"Sesi paylaş"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button_sharing" msgid="3069309588231072128">"Ses paylaşılıyor"</string>
@@ -485,7 +485,7 @@
     <string name="communal_tutorial_indicator_text" msgid="4503010353591430123">"Ortak eğitimi başlatmak için sola kaydırın"</string>
     <string name="cta_tile_button_to_open_widget_editor" msgid="3871562362382963878">"Özelleştir"</string>
     <string name="cta_tile_button_to_dismiss" msgid="3377597875997861754">"Kapat"</string>
-    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Burada widget\'larınızı ekleyin, kaldırın ve düzenleyin"</string>
+    <string name="cta_label_to_edit_widget" msgid="6496885074209203756">"Widget ekleyin, kaldırın ve düzenleyin"</string>
     <string name="cta_label_to_open_widget_picker" msgid="3874946756976360699">"Daha fazla widget ekle"</string>
     <string name="popup_on_dismiss_cta_tile_text" msgid="8292501780996070019">"Widget\'ları özelleştirmek için uzun basın"</string>
     <string name="button_to_configure_widgets_text" msgid="4191862850185256901">"Widget\'ları özelleştir"</string>
@@ -514,7 +514,7 @@
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"Kilit ekranı widget\'ları"</string>
     <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"Widget kullanarak bir uygulamayı açmak için kimliğinizi doğrulamanız gerekir. Ayrıca, tabletiniz kilitliyken bile widget\'ların herkes tarafından görüntülenebileceğini unutmayın. Bazı widget\'lar kilit ekranınız için tasarlanmamış olabileceğinden buraya eklenmeleri güvenli olmayabilir."</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"Anladım"</string>
-    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"Kullanıcı değiştirme"</string>
+    <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"Kullanıcı değiştir"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"açılır menü"</string>
     <string name="guest_exit_guest_dialog_message" msgid="8183450985628495709">"Bu oturumdaki tüm uygulamalar ve veriler silinecek."</string>
     <string name="guest_wipe_session_title" msgid="7147965814683990944">"Misafir kullanıcı, tekrar hoşgeldiniz"</string>
@@ -745,7 +745,7 @@
     <string name="notification_alert_title" msgid="3656229781017543655">"Varsayılan"</string>
     <string name="notification_automatic_title" msgid="3745465364578762652">"Otomatik"</string>
     <string name="notification_channel_summary_low" msgid="4860617986908931158">"Sessiz veya titreşim yok"</string>
-    <string name="notification_conversation_summary_low" msgid="3855696451919728790">"Ses veya titreşim olmamasına rağmen görüşme bölümünde görünmeye devam ediyor"</string>
+    <string name="notification_conversation_summary_low" msgid="3855696451919728790">"Ses veya titreşim olmaz ama görüşme bölümünde görünmeye devam eder"</string>
     <string name="notification_channel_summary_default" msgid="777294388712200605">"Cihaz ayarlarına bağlı olarak zili çalabilir veya titreyebilir"</string>
     <string name="notification_channel_summary_default_with_bubbles" msgid="3482483084451555344">"Cihaz ayarlarına bağlı olarak zili çalabilir veya titreyebilir <xliff:g id="APP_NAME">%1$s</xliff:g> adlı uygulamadan görüşmeler varsayılan olarak baloncukla gösterilir."</string>
     <string name="notification_channel_summary_automatic" msgid="5813109268050235275">"Bu bildirimin ses çıkarması veya titreşmesi gerekip gerekmediğine sistem karar versin"</string>
@@ -841,13 +841,13 @@
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Uygulama listesini aç"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"Ayarları aç"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Asistan\'ı aç"</string>
-    <string name="group_system_lock_screen" msgid="7391191300363416543">"Kilit ekranı"</string>
+    <string name="group_system_lock_screen" msgid="7391191300363416543">"Ekranı kilitle"</string>
     <string name="group_system_quick_memo" msgid="3764560265935722903">"Not al"</string>
     <string name="keyboard_shortcut_group_system_multitasking" msgid="6967816258924795558">"Çoklu görev"</string>
-    <string name="system_multitasking_rhs" msgid="8714224917276297810">"Sağdaki mevcut uygulamayla birlikte bölünmüş ekranı kullanın"</string>
-    <string name="system_multitasking_lhs" msgid="8402954791206308783">"Soldaki mevcut uygulamayla birlikte bölünmüş ekranı kullanın"</string>
+    <string name="system_multitasking_rhs" msgid="8714224917276297810">"Sağdaki mevcut uygulamayla birlikte bölünmüş ekranı kullan"</string>
+    <string name="system_multitasking_lhs" msgid="8402954791206308783">"Soldaki mevcut uygulamayla birlikte bölünmüş ekranı kullan"</string>
     <string name="system_multitasking_full_screen" msgid="336048080383640562">"Bölünmüş ekrandan tam ekrana geç"</string>
-    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"Bölünmüş ekran kullanırken sağdaki veya alttaki uygulamaya geçiş yapın"</string>
+    <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"Bölünmüş ekran kullanırken sağdaki veya alttaki uygulamaya geçiş yap"</string>
     <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"Bölünmüş ekran kullanırken soldaki veya üstteki uygulamaya geçiş yapın"</string>
     <string name="system_multitasking_replace" msgid="7410071959803642125">"Bölünmüş ekran etkinken: Bir uygulamayı başkasıyla değiştir"</string>
     <string name="keyboard_shortcut_group_input" msgid="6888282716546625610">"Giriş"</string>
@@ -1199,7 +1199,7 @@
     <string name="build_number_clip_data_label" msgid="3623176728412560914">"Derleme numarası"</string>
     <string name="build_number_copy_toast" msgid="877720921605503046">"Derleme numarası panoya kopyalandı."</string>
     <string name="basic_status" msgid="2315371112182658176">"Görüşmeyi aç"</string>
-    <string name="select_conversation_title" msgid="6716364118095089519">"Görüşme widget\'ları"</string>
+    <string name="select_conversation_title" msgid="6716364118095089519">"İletişim widget\'ları"</string>
     <string name="select_conversation_text" msgid="3376048251434956013">"Ana ekranınıza eklemek için bir görüşmeye dokunun"</string>
     <string name="no_conversations_text" msgid="5354115541282395015">"Son görüşmeleriniz burada gösterilir"</string>
     <string name="priority_conversations" msgid="3967482288896653039">"Öncelikli görüşmeler"</string>
@@ -1383,7 +1383,7 @@
     <string name="shortcut_helper_category_system" msgid="462110876978937359">"Sistem"</string>
     <string name="shortcut_helper_category_system_controls" msgid="3153344561395751020">"Sistem kontrolleri"</string>
     <string name="shortcut_helper_category_system_apps" msgid="6001757545472556810">"Sistem uygulamaları"</string>
-    <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Çoklu görev becerisi"</string>
+    <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Çoklu görev"</string>
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Son uygulamalar"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Bölünmüş ekran"</string>
     <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Giriş"</string>
@@ -1391,7 +1391,7 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Mevcut Uygulama"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Erişilebilirlik"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Klavye kısayolları"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Arama kısayolları"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Kısayollarda ara"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Arama sonucu yok"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Daralt simgesi"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Genişlet simgesi"</string>

@@ -16,12 +16,12 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="4470785958457506021">"Menadžer pridruženog uređaja"</string>
+    <string name="app_label" msgid="4470785958457506021">"Menadžer pratećeg uređaja"</string>
     <string name="confirmation_title" msgid="2244241995958340998">"Dozvolite da aplikacija &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; pristupa uređaju &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;"</string>
     <string name="profile_name_watch" msgid="576290739483672360">"sat"</string>
     <string name="chooser_title_non_profile" msgid="6035023914517087400">"Odaberite uređaj kojim će upravljati aplikacija &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;"</string>
-    <string name="chooser_title" msgid="2235819929238267637">"Odaberite profil <xliff:g id="PROFILE_NAME">%1$s</xliff:g> koji želite da podesite"</string>
-    <string name="summary_watch" msgid="8134580124808507407">"Ovoj aplikaciji će biti dozvoljeno da sinhronizuje podatke, poput imena pozivaoca, i pristupa tim dozvolama na uređaju <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>
+    <string name="chooser_title" msgid="2235819929238267637">"Odaberite <xliff:g id="PROFILE_NAME">%1$s</xliff:g> koji želite da podesite"</string>
+    <string name="summary_watch" msgid="8134580124808507407">"Ovoj aplikaciji će biti dozvoljeno da sinhronizuje podatke, poput imena pozivaoca, i pristupa sledećim dozvolama na <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>
     <string name="confirmation_title_glasses" msgid="8288346850537727333">"Želite li da dozvolite da &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; upravlja uređajem &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
     <string name="profile_name_glasses" msgid="3506504967216601277">"uređaj"</string>
     <string name="summary_glasses" msgid="5469208629679579157">"Ovoj aplikaciji će biti dozvoljeno da pristupa ovim dozvolama na uređaju <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>

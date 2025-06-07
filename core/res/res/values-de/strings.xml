@@ -1914,7 +1914,7 @@
     <string name="confirm_battery_saver" msgid="5247976246208245754">"OK"</string>
     <string name="battery_saver_description_with_learn_more" msgid="5444908404021316250">"Der Energiesparmodus aktiviert das dunkle Design. Hintergrundaktivitäten, einige Funktionen und optische Effekte und manche Netzwerkverbindungen werden eingeschränkt oder deaktiviert."</string>
     <string name="battery_saver_description" msgid="8518809702138617167">"Der Energiesparmodus aktiviert das dunkle Design. Hintergrundaktivitäten, einige Funktionen und optische Effekte sowie manche Netzwerkverbindungen werden eingeschränkt oder deaktiviert."</string>
-    <string name="data_saver_description" msgid="4995164271550590517">"Der Datensparmodus verhindert, dass manche Apps im Hintergrund Daten senden oder empfangen, sodass weniger Daten verbraucht werden. Auch werden die Datenzugriffe der gerade aktiven App eingeschränkt, was z. B. dazu führen kann, dass Bilder erst angetippt werden müssen, bevor sie sichtbar werden."</string>
+    <string name="data_saver_description" msgid="4995164271550590517">"Der Datensparmodus verhindert, dass manche Apps im Hintergrund Daten senden oder empfangen. So werden weniger Daten verbraucht. Auch die Datenzugriffe der gerade aktiven App werden eingeschränkt, was etwa dazu führen kann, dass Bilder erst angetippt werden müssen, bevor sie sichtbar werden."</string>
     <string name="data_saver_enable_title" msgid="7080620065745260137">"Datensparmodus aktivieren?"</string>
     <string name="data_saver_enable_button" msgid="4399405762586419726">"Aktivieren"</string>
     <string name="zen_mode_duration_minutes_summary" msgid="4555514757230849789">"{count,plural, =1{Für eine Minute (bis {formattedTime})}other{Für # Minuten (bis {formattedTime})}}"</string>
@@ -1944,7 +1944,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">", "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g>–<xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"Alle Kalender"</string>
-    <string name="muted_by" msgid="91464083490094950">"Einige Töne werden von <xliff:g id="THIRD_PARTY">%1$s</xliff:g> stummgeschaltet"</string>
+    <string name="muted_by" msgid="91464083490094950">"Stummschaltung einiger Töne durch <xliff:g id="THIRD_PARTY">%1$s</xliff:g>"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"Es liegt ein internes Problem mit deinem Gerät vor. Möglicherweise verhält es sich instabil, bis du es auf die Werkseinstellungen zurücksetzt."</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"Es liegt ein internes Problem mit deinem Gerät vor. Bitte wende dich diesbezüglich an den Hersteller."</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD-Anfrage wurde in normalen Anruf geändert"</string>
@@ -2003,7 +2003,7 @@
     <string name="app_suspended_title" msgid="888873445010322650">"App nicht verfügbar"</string>
     <string name="app_suspended_default_message" msgid="6451215678552004172">"<xliff:g id="APP_NAME_0">%1$s</xliff:g> ist momentan nicht verfügbar. Dies wird über die App \"<xliff:g id="APP_NAME_1">%2$s</xliff:g>\" verwaltet."</string>
     <string name="app_suspended_more_details" msgid="211260942831587014">"Weitere Informationen"</string>
-    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"App-Pausierung aufheben"</string>
+    <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Pausierung der App aufheben"</string>
     <string name="work_mode_off_title" msgid="6367463960165135829">"Geschäftliche Apps nicht mehr pausieren?"</string>
     <string name="work_mode_turn_on" msgid="5316648862401307800">"Nicht mehr pausieren"</string>
     <string name="work_mode_emergency_call_button" msgid="6818855962881612322">"Notruf"</string>
@@ -2219,9 +2219,9 @@
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"Private Ansicht"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"Geschäftliche Ansicht"</string>
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Von deinem IT-Administrator blockiert"</string>
-    <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"Diese Art von Inhalt kann nicht über geschäftliche Apps geteilt werden"</string>
+    <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"Dieser Inhalt kann nicht über geschäftliche Apps geteilt werden"</string>
     <string name="resolver_cant_access_work_apps_explanation" msgid="1129960195389373279">"Diese Art von Inhalt kann nicht mit geschäftlichen Apps geöffnet werden"</string>
-    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Diese Art von Inhalt kann nicht über private Apps geteilt werden"</string>
+    <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Dieser Inhalt kann nicht über private Apps geteilt werden"</string>
     <string name="resolver_cant_access_personal_apps_explanation" msgid="1679399548862724359">"Diese Art von Inhalt kann nicht mit privaten Apps geöffnet werden"</string>
     <string name="resolver_turn_on_work_apps" msgid="1535946298236678122">"Geschäftliche Apps sind pausiert"</string>
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"Nicht mehr pausieren"</string>
@@ -2381,8 +2381,8 @@
     <string name="default_card_name" msgid="9198284935962911468">"KARTE <xliff:g id="CARDNUMBER">%d</xliff:g>"</string>
     <string name="permlab_companionProfileWatch" msgid="2457738382085872542">"Berechtigung für Companion-Smartwatch-Profil zum Verwalten von Smartwatches"</string>
     <string name="permdesc_companionProfileWatch" msgid="5655698581110449397">"Ermöglicht einer Companion-App, Smartwatches zu verwalten."</string>
-    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"Präsenz von Companion-Geräten beobachten"</string>
-    <string name="permdesc_observeCompanionDevicePresence" msgid="3011699826788697852">"Ermöglicht einer Companion-App, die Präsenz von Companion-Geräten zu beobachten, wenn sie in der Nähe oder weit entfernt sind."</string>
+    <string name="permlab_observeCompanionDevicePresence" msgid="9008994909653990465">"Präsenz von Begleitgeräten beobachten"</string>
+    <string name="permdesc_observeCompanionDevicePresence" msgid="3011699826788697852">"Ermöglicht einer Companion-App, die Präsenz von Begleitgeräten zu beobachten, wenn sie in der Nähe oder weit entfernt sind."</string>
     <string name="permlab_deliverCompanionMessages" msgid="3931552294842980887">"Companion-Nachrichten senden"</string>
     <string name="permdesc_deliverCompanionMessages" msgid="2170847384281412850">"Ermöglicht einer Companion-App, Companion-Nachrichten an andere Geräte zu senden."</string>
     <string name="permlab_startForegroundServicesFromBackground" msgid="6363004936218638382">"Dienste im Vordergrund aus dem Hintergrund starten"</string>
@@ -2394,7 +2394,7 @@
     <string name="connected_display_thermally_unavailable_notification_content" msgid="9205758199439955949">"Dein Gerät ist zu heiß und kann den Bildschirm erst spiegeln, wenn es abgekühlt ist"</string>
     <string name="concurrent_display_notification_name" msgid="1526911253558311131">"Dual Screen"</string>
     <string name="concurrent_display_notification_active_title" msgid="4892473462327943673">"Dual Screen ist aktiviert"</string>
-    <string name="concurrent_display_notification_active_content" msgid="5889355473710601270">"<xliff:g id="APP_NAME">%1$s</xliff:g> nutzt zum Anzeigen von Inhalten beide Displays"</string>
+    <string name="concurrent_display_notification_active_content" msgid="5889355473710601270">"<xliff:g id="APP_NAME">%1$s</xliff:g> nutzt beide Displays zum Anzeigen von Inhalten"</string>
     <string name="concurrent_display_notification_thermal_title" msgid="5921609404644739229">"Gerät ist zu warm"</string>
     <string name="concurrent_display_notification_thermal_content" msgid="2075484836527609319">"Dual Screen ist nicht verfügbar, weil dein Smartphone zu warm ist"</string>
     <string name="concurrent_display_notification_power_save_title" msgid="1794569070730736281">"Dual Screen ist nicht verfügbar"</string>

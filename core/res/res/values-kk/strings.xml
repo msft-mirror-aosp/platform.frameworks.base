@@ -709,8 +709,8 @@
     <string name="face_acquired_insufficient" msgid="6889245852748492218">"Бет үлгісі жасалмады. Қайталап көріңіз."</string>
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"Тым ашық. Күңгірттеу жарық керек."</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"Жарық жеткіліксіз"</string>
-    <string name="face_acquired_too_close" msgid="4453646176196302462">"Телефонды алшақ ұстаңыз."</string>
-    <string name="face_acquired_too_far" msgid="2922278214231064859">"Телефонды жақынырақ ұстаңыз."</string>
+    <string name="face_acquired_too_close" msgid="4453646176196302462">"Телефонды алшақ ұстаңыз"</string>
+    <string name="face_acquired_too_far" msgid="2922278214231064859">"Телефонды жақынырақ ұстаңыз"</string>
     <string name="face_acquired_too_high" msgid="8278815780046368576">"Телефонды жоғарырақ ұстаңыз"</string>
     <string name="face_acquired_too_low" msgid="4075391872960840081">"Телефонды төменірек ұстаңыз"</string>
     <string name="face_acquired_too_right" msgid="6245286514593540859">"Телефонды солға қарай жылжытыңыз"</string>
@@ -1394,7 +1394,7 @@
     <string name="perm_costs_money" msgid="749054595022779685">"бұған төлем қажет болуы мүмкін"</string>
     <string name="dlg_ok" msgid="5103447663504839312">"Жарайды"</string>
     <string name="usb_charging_notification_title" msgid="1674124518282666955">"Құрылғы USB арқылы зарядталып тұр"</string>
-    <string name="usb_supplying_notification_title" msgid="5378546632408101811">"Жалғанған құрылғы USB арқылы зарядталуда"</string>
+    <string name="usb_supplying_notification_title" msgid="5378546632408101811">"Жалғанған құрылғы USB арқылы зарядталып жатыр"</string>
     <string name="usb_mtp_notification_title" msgid="1065989144124499810">"USB арқылы файл жіберу мүмкіндігі қосылды"</string>
     <string name="usb_ptp_notification_title" msgid="5043437571863443281">"PTP режимі USB арқылы қосылды"</string>
     <string name="usb_tether_notification_title" msgid="8828527870612663771">"USB-тетеринг режимі қосылды"</string>
@@ -1944,7 +1944,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">", "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> – <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"Кез келген күнтізбе"</string>
-    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> кейбір дыбыстарды өшіруде"</string>
+    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g> кейбір дыбыстарды өшіріп жатыр."</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"There\'s an internal problem with your device, and it may be unstable until you factory data reset."</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"There\'s an internal problem with your device. Contact your manufacturer for details."</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD сұрауы кәдімгі қоңырауға өзгертілді"</string>
@@ -1979,7 +1979,7 @@
     <string name="call_notification_incoming_text" msgid="6143109825406638201">"Кіріс қоңырау"</string>
     <string name="call_notification_ongoing_text" msgid="3880832933933020875">"Қоңырау"</string>
     <string name="call_notification_screening_text" msgid="8396931408268940208">"Келген қоңырауды сүзу"</string>
-    <string name="default_notification_channel_label" msgid="3697928973567217330">"Санатқа жатқызылмаған"</string>
+    <string name="default_notification_channel_label" msgid="3697928973567217330">"Санаты көрсетілмеген"</string>
     <string name="promotional_notification_channel_label" msgid="7414844730492860233">"Промонауқандар"</string>
     <string name="social_notification_channel_label" msgid="106520267132019945">"Әлеуметтік желі"</string>
     <string name="news_notification_channel_label" msgid="4299937455247883311">"Жаңалықтар"</string>
@@ -2002,7 +2002,7 @@
     <string name="locale_search_menu" msgid="6258090710176422934">"Іздеу"</string>
     <string name="app_suspended_title" msgid="888873445010322650">"Қолданба қолжетімді емес"</string>
     <string name="app_suspended_default_message" msgid="6451215678552004172">"<xliff:g id="APP_NAME_0">%1$s</xliff:g> дәл қазір қолжетімді емес. Ол <xliff:g id="APP_NAME_1">%2$s</xliff:g> арқылы басқарылады."</string>
-    <string name="app_suspended_more_details" msgid="211260942831587014">"Толығырақ"</string>
+    <string name="app_suspended_more_details" msgid="211260942831587014">"Толық ақпарат"</string>
     <string name="app_suspended_unsuspend_message" msgid="1665438589450555459">"Қолданбаны қайта қосу"</string>
     <string name="work_mode_off_title" msgid="6367463960165135829">"Жұмыс қолданбаларын қайта қосасыз ба?"</string>
     <string name="work_mode_turn_on" msgid="5316648862401307800">"Қайта қосу"</string>
@@ -2152,7 +2152,7 @@
     <string name="nas_upgrade_notification_content" msgid="5157550369837103337">"Ұсынылған әрекеттер мен жауаптар енді кеңейтілген хабарландырулар функциясы арқылы қамтамасыз етіледі. Android-тың \"Бейімделетін хабарландырулар\" функциясына бұдан былай қолдау көрсетілмейді."</string>
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"Жарайды"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"Өшіру"</string>
-    <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"Толығырақ"</string>
+    <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"Толық ақпарат"</string>
     <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"Android 12 жүйесінде \"Бейімделетін хабарландырулар\" функциясын \"Кеңейтілген хабарландырулар\" алмастырды. Бұл функция ұсынылған әрекеттер мен жауаптарды көрсетіп, хабарландыруларыңызды ретке келтіреді.\n\nОл хабарландыру контентін, соның ішінде жеке ақпаратыңызды (мысалы, контакт аттары мен хабарларды) пайдалана алады. Сондай-ақ бұл функция арқылы хабарландыруларды жабуға немесе оларға жауап беруге (мысалы, телефон қоңырауларына жауап беруге және Мазаламау режимін басқаруға) болады."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"Режим туралы хабарландыру"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"Батареяны үнемдеу режимі қосулы"</string>
@@ -2218,7 +2218,7 @@
     <string name="resolver_work_tab" msgid="2690019516263167035">"Жұмыс"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"Жеке көру"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"Жұмыс деректерін көру"</string>
-    <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Әкімшіңіз бөгеген"</string>
+    <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"Әкімшіңіз блоктаған"</string>
     <string name="resolver_cant_share_with_work_apps_explanation" msgid="9071442683080586643">"Бұл контентті жұмыс қолданбаларымен бөлісу мүмкін емес."</string>
     <string name="resolver_cant_access_work_apps_explanation" msgid="1129960195389373279">"Бұл контентті жұмыс қолданбаларымен ашу мүмкін емес."</string>
     <string name="resolver_cant_share_with_personal_apps_explanation" msgid="6349766201904601544">"Бұл контентті жеке қолданбалармен бөлісу мүмкін емес."</string>

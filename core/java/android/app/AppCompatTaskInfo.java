@@ -97,6 +97,8 @@ public class AppCompatTaskInfo implements Parcelable {
     private static final int FLAG_FULLSCREEN_OVERRIDE_USER = FLAG_BASE << 8;
     /** Top activity flag for whether min aspect ratio of the activity has been overridden.*/
     public static final int FLAG_HAS_MIN_ASPECT_RATIO_OVERRIDE = FLAG_BASE << 9;
+    /** Top activity flag for whether activity is letterboxed for a safe region. */
+    public static final int FLAG_SAFE_REGION_LETTERBOXED = FLAG_BASE << 10;
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef(flag = true, value = {
@@ -111,7 +113,8 @@ public class AppCompatTaskInfo implements Parcelable {
             FLAG_ELIGIBLE_FOR_USER_ASPECT_RATIO_BUTTON,
             FLAG_FULLSCREEN_OVERRIDE_SYSTEM,
             FLAG_FULLSCREEN_OVERRIDE_USER,
-            FLAG_HAS_MIN_ASPECT_RATIO_OVERRIDE
+            FLAG_HAS_MIN_ASPECT_RATIO_OVERRIDE,
+            FLAG_SAFE_REGION_LETTERBOXED
     })
     public @interface TopActivityFlag {}
 
@@ -125,7 +128,8 @@ public class AppCompatTaskInfo implements Parcelable {
 
     @TopActivityFlag
     private static final int FLAGS_COMPAT_UI_INTERESTED = FLAGS_ORGANIZER_INTERESTED
-            | FLAG_IN_SIZE_COMPAT | FLAG_ELIGIBLE_FOR_LETTERBOX_EDU | FLAG_LETTERBOX_EDU_ENABLED;
+            | FLAG_IN_SIZE_COMPAT | FLAG_ELIGIBLE_FOR_LETTERBOX_EDU | FLAG_LETTERBOX_EDU_ENABLED
+            | FLAG_SAFE_REGION_LETTERBOXED;
 
     private AppCompatTaskInfo() {
         // Do nothing
@@ -288,6 +292,21 @@ public class AppCompatTaskInfo implements Parcelable {
      */
     public void setTopActivityInSizeCompat(boolean enable) {
         setTopActivityFlag(FLAG_IN_SIZE_COMPAT, enable);
+    }
+
+    /**
+     * @return {@code true} if the top activity bounds are letterboxed for a safe region.
+     */
+    public boolean isTopActivitySafeRegionLetterboxed() {
+        return isTopActivityFlagEnabled(FLAG_SAFE_REGION_LETTERBOXED);
+    }
+
+    /**
+     * Sets the top activity flag for whether the top activity bounds are letterboxed for a safe
+     * region.
+     */
+    public void setTopActivitySafeRegionLetterboxed(boolean enable) {
+        setTopActivityFlag(FLAG_SAFE_REGION_LETTERBOXED, enable);
     }
 
     /**

@@ -1667,7 +1667,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Þráðlaus skjábirting"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Senda út"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Tengjast tæki"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Senda skjá út í tæki"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Varpa skjá í tæki"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"Leitar að tækjum…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Stillingar"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Aftengja"</string>
@@ -1768,7 +1768,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Eiginleikinn opnast næst þegar þú notar þessa flýtileið Strjúktu upp með 3 fingrum frá neðsta hluta skjásins og slepptu hratt."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Stækkun"</string>
     <string name="user_switched" msgid="7249833311585228097">"Núverandi notandi <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Skiptir yfir á <xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Skiptir yfir í: <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Skráir <xliff:g id="NAME">%1$s</xliff:g> út…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Eigandi"</string>
     <string name="guest_name" msgid="8502103277839834324">"Gestur"</string>
@@ -2439,7 +2439,7 @@
     <string name="face_dangling_notification_msg" msgid="746235263598985384">"Ekki er hægt að bera kennsl á andlitslíkanið þitt lengur. Settu upp andlitskenni aftur."</string>
     <string name="biometric_dangling_notification_action_set_up" msgid="8246885009807817961">"Setja upp"</string>
     <string name="biometric_dangling_notification_action_not_now" msgid="8095249216864443491">"Ekki núna"</string>
-    <string name="bg_user_sound_notification_title_alarm" msgid="5251678483393143527">"Viðvörun fyrir: <xliff:g id="USER_NAME">%s</xliff:g>"</string>
+    <string name="bg_user_sound_notification_title_alarm" msgid="5251678483393143527">"Viðvörun: <xliff:g id="USER_NAME">%s</xliff:g>"</string>
     <string name="bg_user_sound_notification_button_switch_user" msgid="3091969648572788946">"Skipta um notanda"</string>
     <string name="bg_user_sound_notification_button_mute" msgid="4942158515665615243">"Þagga"</string>
     <string name="bg_user_sound_notification_message" msgid="8613881975316976673">"Ýttu til að þagga hljóð"</string>

@@ -71,6 +71,7 @@ import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP
 import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP_TYPE_SET_LAUNCH_ADJACENT_FLAG_ROOT;
 import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP_TYPE_SET_LAUNCH_ROOT;
 import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP_TYPE_SET_REPARENT_LEAF_TASK_IF_RELAUNCH;
+import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS;
 import static android.window.WindowContainerTransaction.HierarchyOp.HIERARCHY_OP_TYPE_START_SHORTCUT;
 
 import static com.android.internal.protolog.ProtoLogGroup.WM_DEBUG_WINDOW_ORGANIZER;
@@ -1444,6 +1445,19 @@ class WindowOrganizerController extends IWindowOrganizerController.Stub
                 }
                 break;
             }
+            case HIERARCHY_OP_TYPE_SET_SAFE_REGION_BOUNDS: {
+                final WindowContainer container = WindowContainer.fromBinder(hop.getContainer());
+                if (container == null || !container.isAttached()) {
+                    Slog.e(TAG,
+                            "Attempt to operate on unknown or detached container: " + container);
+                    break;
+                }
+                if (chain.mTransition != null) {
+                    chain.mTransition.collect(container);
+                }
+                container.setSafeRegionBounds(hop.getSafeRegionBounds());
+                effects |= TRANSACT_EFFECTS_CLIENT_CONFIG;
+            }
         }
         return effects;
     }
@@ -1501,8 +1515,10 @@ class WindowOrganizerController extends IWindowOrganizerController.Stub
                 final IBinder callerActivityToken = operation.getActivityToken();
                 final Intent activityIntent = operation.getActivityIntent();
                 final Bundle activityOptions = operation.getBundle();
+                final SafeActivityOptions safeOptions =
+                        SafeActivityOptions.fromBundle(activityOptions, caller.mPid, caller.mUid);
                 final int result = waitAsyncStart(() -> mService.getActivityStartController()
-                        .startActivityInTaskFragment(taskFragment, activityIntent, activityOptions,
+                        .startActivityInTaskFragment(taskFragment, activityIntent, safeOptions,
                                 callerActivityToken, caller.mUid, caller.mPid,
                                 errorCallbackToken));
                 if (!isStartResultSuccessful(result)) {

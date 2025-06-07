@@ -563,7 +563,7 @@
     <string name="permlab_accessHiddenProfile" msgid="8607094418491556823">"Adgang til skjulte profiler"</string>
     <string name="permdesc_accessHiddenProfile" msgid="1543153202481009676">"Giver appen adgang til skjulte profiler."</string>
     <string name="permlab_setWallpaperHints" msgid="1153485176642032714">"ændre størrelsen på din baggrund"</string>
-    <string name="permdesc_setWallpaperHints" msgid="6257053376990044668">"Tillader, at appen giver tips til systembaggrundens størrelse."</string>
+    <string name="permdesc_setWallpaperHints" msgid="6257053376990044668">"Tillader, at appen giver tip til systembaggrundens størrelse."</string>
     <string name="permlab_setTimeZone" msgid="7922618798611542432">"angive tidszone"</string>
     <string name="permdesc_setTimeZone" product="tablet" msgid="1788868809638682503">"Tillader, at appen kan ændre tidszonen på din tablet."</string>
     <string name="permdesc_setTimeZone" product="tv" msgid="9069045914174455938">"Tillader, at appen kan ændre tidszonen på din Android TV-enhed."</string>
@@ -1753,8 +1753,8 @@
     <string name="disable_accessibility_shortcut" msgid="5806091378745232383">"Deaktiver genvej"</string>
     <string name="leave_accessibility_shortcut_on" msgid="6543362062336990814">"Brug genvej"</string>
     <string name="color_inversion_feature_name" msgid="2672824491933264951">"Ombytning af farver"</string>
-    <string name="color_correction_feature_name" msgid="7975133554160979214">"Farvekorrigering"</string>
-    <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"Enhåndstilstand"</string>
+    <string name="color_correction_feature_name" msgid="7975133554160979214">"Farve­korri­gering"</string>
+    <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"En­hånds­tilstand"</string>
     <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Ekstra dæmpet belysning"</string>
     <string name="hearing_aids_feature_name" msgid="1125892105105852542">"Høreapparater"</string>
     <string name="accessibility_shortcut_enabling_service" msgid="5473495203759847687">"Lydstyrkeknapperne blev holdt nede. <xliff:g id="SERVICE_NAME">%1$s</xliff:g> er aktiveret."</string>
@@ -2449,7 +2449,7 @@
     <string name="keyboard_shortcut_group_applications_sms" msgid="3523799286376321137">"Sms"</string>
     <string name="keyboard_shortcut_group_applications_music" msgid="2051507523525651067">"Musik"</string>
     <string name="keyboard_shortcut_group_applications_calendar" msgid="3571770335653387606">"Kalender"</string>
-    <string name="keyboard_shortcut_group_applications_calculator" msgid="6753209559716091507">"Lommeregner"</string>
+    <string name="keyboard_shortcut_group_applications_calculator" msgid="6753209559716091507">"Lomme­regner"</string>
     <string name="keyboard_shortcut_group_applications_maps" msgid="7950000659522589471">"Kort"</string>
     <string name="keyboard_shortcut_group_applications" msgid="3010389163951364798">"Apps"</string>
     <string name="fingerprint_loe_notification_msg" msgid="3927447270148854546">"Dine fingeraftryk kan ikke længere genkendes. Konfigurer fingeroplåsning igen."</string>

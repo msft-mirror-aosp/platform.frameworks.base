@@ -230,7 +230,7 @@
     <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"ਫ਼ੇਸ ਅਣਲਾਕ ਦਾ ਸੈੱਟਅੱਪ ਕਰੋ"</string>
     <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"ਫ਼ੇਸ ਅਣਲਾਕ ਦਾ ਦੁਬਾਰਾ ਸੈੱਟਅੱਪ ਕਰਨ ਲਈ, ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਚਿਹਰੇ ਦੇ ਮਾਡਲ ਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।\n\nਤੁਹਾਨੂੰ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਅਣਲਾਕ ਕਰਨ ਲਈ ਆਪਣੇ ਚਿਹਰੇ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਸਤੇ ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਦਾ ਦੁਬਾਰਾ ਸੈੱਟਅੱਪ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ।"</string>
     <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"ਫ਼ੇਸ ਅਣਲਾਕ ਦਾ ਸੈੱਟਅੱਪ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਸੈਟਿੰਗਾਂ \'ਤੇ ਜਾਓ।"</string>
-    <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਸੈਂਸਰ ਨੂੰ ਸਪੱਰਸ਼ ਕਰੋ"</string>
+    <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"ਫਿੰਗਰਪ੍ਰਿੰਟ ਸੈਂਸਰ ਨੂੰ ਸਪਰਸ਼ ਕਰੋ"</string>
     <string name="fingerprint_dialog_authenticated_confirmation" msgid="1603899612957562862">"ਜਾਰੀ ਰੱਖਣ ਲਈ \'ਅਣਲਾਕ ਕਰੋ\' ਪ੍ਰਤੀਕ ਨੂੰ ਦਬਾਓ"</string>
     <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5542430577183894219">"ਚਿਹਰੇ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋਈ। ਇਸਦੀ ਬਜਾਏ ਫਿੰਗਰਪ੍ਰਿੰਟ ਵਰਤੋ।"</string>
     <!-- no translation found for keyguard_face_failed_use_fp (7140293906176164263) -->
@@ -342,7 +342,7 @@
     <string name="quick_settings_brightness_dialog_title" msgid="4980669966716685588">"ਚਮਕ"</string>
     <string name="quick_settings_inversion_label" msgid="3501527749494755688">"ਰੰਗ ਪਲਟਨਾ"</string>
     <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"ਰੰਗ ਸੁਧਾਈ"</string>
-    <string name="quick_settings_font_scaling_label" msgid="5289001009876936768">"ਫੌਂਟ ਦਾ ਆਕਾਰ"</string>
+    <string name="quick_settings_font_scaling_label" msgid="5289001009876936768">"ਫੌਂਟ ਸਾਈਜ਼"</string>
     <string name="quick_settings_more_user_settings" msgid="7634653308485206306">"ਵਰਤੋਂਕਾਰਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
     <string name="quick_settings_done" msgid="2163641301648855793">"ਹੋ ਗਿਆ"</string>
     <string name="quick_settings_close_user_panel" msgid="5599724542275896849">"ਬੰਦ ਕਰੋ"</string>
@@ -438,7 +438,7 @@
     <string name="zen_modes_dialog_done" msgid="6654130880256438950">"ਹੋ ਗਿਆ"</string>
     <string name="zen_modes_dialog_settings" msgid="2310248023728936697">"ਸੈਟਿੰਗਾਂ"</string>
     <string name="zen_mode_on" msgid="9085304934016242591">"ਚਾਲੂ"</string>
-    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"<xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g> • \'ਤੇ"</string>
+    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"ਚਾਲੂ • <xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g>"</string>
     <string name="zen_mode_off" msgid="1736604456618147306">"ਬੰਦ"</string>
     <string name="zen_mode_set_up" msgid="7457957033034460064">"ਸੈੱਟਅੱਪ ਕਰੋ"</string>
     <string name="zen_mode_no_manual_invocation" msgid="1769975741344633672">"ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
@@ -726,7 +726,7 @@
     <string name="accessibility_status_bar_satellite_available" msgid="6514855015496916829">"ਸੈਟੇਲਾਈਟ, ਕਨੈਕਸ਼ਨ ਉਪਲਬਧ ਹੈ"</string>
     <string name="satellite_connected_carrier_text" msgid="118524195198532589">"ਸੈਟੇਲਾਈਟ SOS"</string>
     <string name="satellite_emergency_only_carrier_text" msgid="828510231597991206">"ਐਮਰਜੈਂਸੀ ਕਾਲਾਂ ਜਾਂ ਸਹਾਇਤਾ"</string>
-    <string name="accessibility_managed_profile" msgid="4703836746209377356">"ਕਾਰਜ ਪ੍ਰੋਫਾਈਲ"</string>
+    <string name="accessibility_managed_profile" msgid="4703836746209377356">"ਕੰਮ ਸੰਬੰਧੀ ਪ੍ਰੋਫਾਈਲ"</string>
     <string name="tuner_warning_title" msgid="7721976098452135267">"ਕੁਝ ਵਾਸਤੇ ਤਾਂ ਮਜ਼ੇਦਾਰ ਹੈ ਲੇਕਿਨ ਸਾਰਿਆਂ ਵਾਸਤੇ ਨਹੀਂ"</string>
     <string name="tuner_warning" msgid="1861736288458481650">"ਸਿਸਟਮ UI ਟਿਊਨਰ ਤੁਹਾਨੂੰ Android ਵਰਤੋਂਕਾਰ ਇੰਟਰਫ਼ੇਸ ਤਬਦੀਲ ਕਰਨ ਅਤੇ ਵਿਉਂਤਬੱਧ ਕਰਨ ਲਈ ਵਾਧੂ ਤਰੀਕੇ ਦਿੰਦਾ ਹੈ। ਇਹ ਪ੍ਰਯੋਗਾਤਮਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਭਵਿੱਖ ਦੀ ਰੀਲੀਜ਼ ਵਿੱਚ ਬਦਲ ਸਕਦੀਆਂ ਹਨ, ਟੁੱਟ ਸਕਦੀਆਂ ਹਨ, ਜਾਂ ਅਲੋਪ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਸਾਵਧਾਨੀ ਨਾਲ ਅੱਗੇ ਵੱਧੋ।"</string>
     <string name="tuner_persistent_warning" msgid="230466285569307806">"ਇਹ ਪ੍ਰਯੋਗਾਤਮਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਭਵਿੱਖ ਦੀ ਰੀਲੀਜ਼ ਵਿੱਚ ਬਦਲ ਸਕਦੀਆਂ ਹਨ, ਟੁੱਟ ਸਕਦੀਆਂ ਹਨ, ਜਾਂ ਅਲੋਪ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਸਾਵਧਾਨੀ ਨਾਲ ਅੱਗੇ ਵੱਧੋ।"</string>
@@ -1024,7 +1024,7 @@
     <string name="privacy_type_media_projection" msgid="8136723828804251547">"ਸਕ੍ਰੀਨ ਰਿਕਾਰਡਿੰਗ"</string>
     <string name="music_controls_no_title" msgid="4166497066552290938">"ਕੋਈ ਸਿਰਲੇਖ ਨਹੀਂ"</string>
     <string name="inattentive_sleep_warning_title" msgid="3891371591713990373">"ਸਟੈਂਡਬਾਈ"</string>
-    <string name="font_scaling_dialog_title" msgid="6273107303850248375">"ਫ਼ੌਂਟ ਦਾ ਆਕਾਰ"</string>
+    <string name="font_scaling_dialog_title" msgid="6273107303850248375">"ਫ਼ੌਂਟ ਸਾਈਜ਼"</string>
     <string name="font_scaling_smaller" msgid="1012032217622008232">"ਛੋਟਾ ਕਰੋ"</string>
     <string name="font_scaling_larger" msgid="5476242157436806760">"ਵੱਡਾ ਕਰੋ"</string>
     <string name="magnification_window_title" msgid="4863914360847258333">"ਵੱਡਦਰਸ਼ੀਕਰਨ Window"</string>
@@ -1084,8 +1084,8 @@
     <string name="controls_providers_title" msgid="6879775889857085056">"ਕੰਟਰੋਲ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਐਪ ਚੁਣੋ"</string>
     <string name="controls_number_of_favorites" msgid="4481806788981836355">"{count,plural, =1{# ਕੰਟਰੋਲ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ।}one{# ਕੰਟਰੋਲ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ।}other{# ਕੰਟਰੋਲ ਸ਼ਾਮਲ ਕੀਤੇ ਗਏ।}}"</string>
     <string name="controls_removed" msgid="3731789252222856959">"ਹਟਾਇਆ ਗਿਆ"</string>
-    <string name="controls_panel_authorization_title" msgid="267429338785864842">"ਕੀ <xliff:g id="APPNAME">%s</xliff:g> ਸ਼ਾਮਲ ਕਰਨਾ ਹੈ?"</string>
-    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> ਚੁਣ ਸਕਦੀ ਹੈ ਕਿ ਇੱਥੇ ਕਿਹੜੇ ਕੰਟਰੋਲ ਅਤੇ ਕਿਹੜੀ ਸਮੱਗਰੀ ਦਿਸੇਗੀ।"</string>
+    <string name="controls_panel_authorization_title" msgid="267429338785864842">"ਕੀ <xliff:g id="APPNAME">%s</xliff:g> ਐਪ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਹੈ?"</string>
+    <string name="controls_panel_authorization" msgid="7045551688535104194">"<xliff:g id="APPNAME">%s</xliff:g> ਐਪ ਚੁਣ ਸਕਦੀ ਹੈ ਕਿ ਇੱਥੇ ਕਿਹੜੇ ਕੰਟਰੋਲ ਅਤੇ ਕਿਹੜੀ ਸਮੱਗਰੀ ਦਿਸੇਗੀ।"</string>
     <string name="controls_panel_remove_app_authorization" msgid="5920442084735364674">"ਕੀ <xliff:g id="APPNAME">%s</xliff:g> ਲਈ ਕੰਟਰੋਲਾਂ ਨੂੰ ਹਟਾਉਣਾ ਹੈ?"</string>
     <string name="accessibility_control_favorite" msgid="8694362691985545985">"ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ"</string>
     <string name="accessibility_control_favorite_position" msgid="54220258048929221">"ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ, ਸਥਾਨ <xliff:g id="NUMBER">%d</xliff:g>"</string>
@@ -1363,7 +1363,7 @@
     <string name="dismiss_dialog" msgid="2195508495854675882">"ਖਾਰਜ ਕਰੋ"</string>
     <string name="connected_display_icon_desc" msgid="6373560639989971997">"ਡਿਸਪਲੇ ਨੂੰ ਕਨੈਕਟ ਕੀਤਾ ਗਿਆ"</string>
     <string name="privacy_dialog_title" msgid="7839968133469098311">"ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਅਤੇ ਕੈਮਰਾ"</string>
-    <string name="privacy_dialog_summary" msgid="2458769652125995409">"ਹਾਲ ਹੀ ਵਿੱਚ ਵਰਤੀ ਗਈ ਐਪ"</string>
+    <string name="privacy_dialog_summary" msgid="2458769652125995409">"ਹਾਲ ਹੀ ਵਿੱਚ ਵਰਤੋਂ ਕਰਨ ਵਾਲੀ ਐਪ"</string>
     <string name="privacy_dialog_more_button" msgid="7610604080293562345">"ਹਾਲੀਆ ਪਹੁੰਚ ਦੇਖੋ"</string>
     <string name="privacy_dialog_done_button" msgid="4504330708531434263">"ਹੋ ਗਿਆ"</string>
     <string name="privacy_dialog_expand_action" msgid="9129262348628331377">"ਵਿਸਤਾਰ ਕਰੋ ਅਤੇ ਵਿਕਲਪ ਦਿਖਾਓ"</string>
@@ -1374,7 +1374,7 @@
     <string name="privacy_dialog_manage_permissions" msgid="2543451567190470413">"ਪਹੁੰਚ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
     <string name="privacy_dialog_active_call_usage" msgid="7858746847946397562">"ਫ਼ੋਨ ਕਾਲ ਵੱਲੋਂ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"</string>
     <string name="privacy_dialog_recent_call_usage" msgid="1214810644978167344">"ਹਾਲ ਹੀ ਵਿੱਚ ਫ਼ੋਨ ਕਾਲ ਵਿੱਚ ਵਰਤਿਆ ਗਿਆ"</string>
-    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> ਵੱਲੋਂ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"</string>
+    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> ਐਪ ਵੱਲੋਂ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"</string>
     <string name="privacy_dialog_recent_app_usage" msgid="4883417856848222450">"ਹਾਲ ਹੀ ਵਿੱਚ <xliff:g id="APP_NAME">%1$s</xliff:g> ਵੱਲੋਂ ਵਰਤਿਆ ਗਿਆ"</string>
     <string name="privacy_dialog_active_app_usage_1" msgid="9047570143069220911">"<xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>) ਵੱਲੋਂ ਵਰਤੋਂ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"</string>
     <string name="privacy_dialog_recent_app_usage_1" msgid="2551340497722370109">"ਹਾਲ ਹੀ ਵਿੱਚ <xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>) ਵੱਲੋਂ ਵਰਤਿਆ ਗਿਆ"</string>
@@ -1391,14 +1391,14 @@
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"ਮੌਜੂਦਾ ਐਪ"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"ਪਹੁੰਚਯੋਗਤਾ"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"ਖੋਜ ਸੰਬੰਧੀ ਸ਼ਾਰਟਕੱਟ"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"ਸ਼ਾਰਟਕੱਟ ਖੋਜੋ"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"ਕੋਈ ਖੋਜ ਨਤੀਜਾ ਨਹੀਂ ਮਿਲਿਆ"</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"ਪ੍ਰਤੀਕ ਨੂੰ ਸਮੇਟੋ"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"ਪ੍ਰਤੀਕ ਦਾ ਵਿਸਤਾਰ ਕਰੋ"</string>
     <string name="shortcut_helper_key_combinations_or_separator" msgid="7082902112102125540">"ਜਾਂ"</string>
     <string name="shortcut_helper_content_description_drag_handle" msgid="5092426406009848110">"ਘਸੀਟਣ ਵਾਲਾ ਹੈਂਡਲ"</string>
     <string name="launch_keyboard_tutorial_notification_title" msgid="8849933155160522519">"ਆਪਣੇ ਕੀ-ਬੋਰਡ ਦੀ ਵਰਤੋਂ ਕਰ ਕੇ ਨੈਵੀਗੇਟ ਕਰੋ"</string>
-    <string name="launch_keyboard_tutorial_notification_content" msgid="2880339951512757918">"ਕੀ-ਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਬਾਰੇ ਜਾਣੋ"</string>
+    <string name="launch_keyboard_tutorial_notification_content" msgid="2880339951512757918">"ਕੀ-ਬੋਰਡ ਦੇ ਸ਼ਾਰਟਕੱਟਾਂ ਬਾਰੇ ਜਾਣੋ"</string>
     <string name="launch_touchpad_tutorial_notification_title" msgid="2243780062772196901">"ਆਪਣੇ ਟੱਚਪੈਡ ਦੀ ਵਰਤੋਂ ਕਰ ਕੇ ਨੈਵੀਗੇਟ ਕਰੋ"</string>
     <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"ਟੱਚਪੈਡ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਜਾਣੋ"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"ਆਪਣੇ ਕੀ-ਬੋਰਡ ਅਤੇ ਟੱਚਪੈਡ ਦੀ ਵਰਤੋਂ ਕਰ ਕੇ ਨੈਵੀਗੇਟ ਕਰੋ"</string>

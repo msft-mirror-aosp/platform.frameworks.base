@@ -1768,7 +1768,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"ຄຸນສົມບັດນີ້ຈະເປີດຂຶ້ນໃນເທື່ອຕໍ່ໄປທີ່ທ່ານໃຊ້ທາງລັດນີ້. ໃຊ້ 3 ນິ້ວປັດຂຶ້ນຈາກລຸ່ມສຸດຂອງໜ້າຈໍຂອງທ່ານແລ້ວປ່ອຍແບບໄວໆ."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"ການຂະຫຍາຍ"</string>
     <string name="user_switched" msgid="7249833311585228097">"ຜູ່ໃຊ້ປັດຈຸບັນ <xliff:g id="NAME">%1$s</xliff:g> ."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"ກຳລັງສະຫຼັບໄປຫາ<xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"ກຳລັງສະຫຼັບໄປຫາ <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"ກຳລັງອອກຈາກລະບົບ <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"ເຈົ້າຂອງ"</string>
     <string name="guest_name" msgid="8502103277839834324">"ແຂກ"</string>
@@ -2215,7 +2215,7 @@
     <string name="conversation_title_fallback_group_chat" msgid="456073374993104303">"ການສົນທະນາກຸ່ມ"</string>
     <string name="unread_convo_overflow" msgid="920517615597353833">"<xliff:g id="MAX_UNREAD_COUNT">%1$d</xliff:g>+"</string>
     <string name="resolver_personal_tab" msgid="2051260504014442073">"ສ່ວນຕົວ"</string>
-    <string name="resolver_work_tab" msgid="2690019516263167035">"ວຽກ"</string>
+    <string name="resolver_work_tab" msgid="2690019516263167035">"ບ່ອນເຮັດວຽກ"</string>
     <string name="resolver_personal_tab_accessibility" msgid="5739524949153091224">"ມຸມມອງສ່ວນຕົວ"</string>
     <string name="resolver_work_tab_accessibility" msgid="4753168230363802734">"ມຸມມອງວຽກ"</string>
     <string name="resolver_cross_profile_blocked" msgid="3014597376026044840">"ຖືກບລັອກໄວ້ໂດຍຜູ້ເບິ່ງແຍງໄອທີຂອງທ່ານ"</string>

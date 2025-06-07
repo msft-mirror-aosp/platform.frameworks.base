@@ -658,11 +658,11 @@
     <string name="biometric_error_generic" msgid="6784371929985434439">"خطأ في المصادقة"</string>
     <string name="screen_lock_app_setting_name" msgid="6054944352976789228">"استخدام قفل الشاشة"</string>
     <string name="screen_lock_dialog_default_subtitle" msgid="120359538048533695">"أدخِل قفل الشاشة للمتابعة"</string>
-    <string name="fingerprint_acquired_partial" msgid="4323789264604479684">"اضغط بقوة على أداة الاستشعار"</string>
+    <string name="fingerprint_acquired_partial" msgid="4323789264604479684">"اضغط بثبات على أداة الاستشعار"</string>
     <string name="fingerprint_acquired_insufficient" msgid="2410176550915730974">"لم يتم التعرّف على بصمة الإصبع. يُرجى إعادة المحاولة."</string>
     <string name="fingerprint_acquired_imager_dirty" msgid="1770676120848224250">"يُرجى تنظيف مستشعر بصمات الإصبع ثم إعادة المحاولة."</string>
     <string name="fingerprint_acquired_imager_dirty_alt" msgid="9169582140486372897">"تنظيف المستشعر ثم إعادة المحاولة"</string>
-    <string name="fingerprint_acquired_too_fast" msgid="1628459767349116104">"اضغط بقوة على أداة الاستشعار"</string>
+    <string name="fingerprint_acquired_too_fast" msgid="1628459767349116104">"اضغط بثبات على أداة الاستشعار"</string>
     <string name="fingerprint_acquired_too_slow" msgid="6683510291554497580">"تم تحريك الإصبع ببطء شديد. يُرجى إعادة المحاولة."</string>
     <string name="fingerprint_acquired_already_enrolled" msgid="2285166003936206785">"يمكنك تجربة بصمة إصبع أخرى."</string>
     <string name="fingerprint_acquired_too_bright" msgid="3863560181670915607">"الصورة ساطعة للغاية."</string>
@@ -713,12 +713,12 @@
     <string name="face_acquired_insufficient" msgid="6889245852748492218">"يتعذّر إنشاء نموذج الوجه. يُرجى إعادة المحاولة."</string>
     <string name="face_acquired_too_bright" msgid="8070756048978079164">"ساطع للغاية. يُرجى تجربة مستوى سطوع أقلّ"</string>
     <string name="face_acquired_too_dark" msgid="8539853432479385326">"الإضاءة غير كافية"</string>
-    <string name="face_acquired_too_close" msgid="4453646176196302462">"يُرجى إبعاد الهاتف عنك."</string>
+    <string name="face_acquired_too_close" msgid="4453646176196302462">"يُرجى إبعاد الهاتف عن وجهك قليلاً"</string>
     <string name="face_acquired_too_far" msgid="2922278214231064859">"يُرجى تقريب الهاتف منك"</string>
-    <string name="face_acquired_too_high" msgid="8278815780046368576">"ارفع الهاتف للأعلى"</string>
-    <string name="face_acquired_too_low" msgid="4075391872960840081">"خفّض الهاتف للأسفل"</string>
-    <string name="face_acquired_too_right" msgid="6245286514593540859">"حرِّك الهاتف لجهة اليسار"</string>
-    <string name="face_acquired_too_left" msgid="9201762240918405486">"حرِّك الهاتف لجهة اليمين"</string>
+    <string name="face_acquired_too_high" msgid="8278815780046368576">"يُرجى رفع الهاتف للأعلى"</string>
+    <string name="face_acquired_too_low" msgid="4075391872960840081">"يُرجى خفض الهاتف للأسفل"</string>
+    <string name="face_acquired_too_right" msgid="6245286514593540859">"يُرجى تحريك الهاتف لجهة اليسار"</string>
+    <string name="face_acquired_too_left" msgid="9201762240918405486">"يُرجى تحريك الهاتف لجهة اليمين"</string>
     <string name="face_acquired_poor_gaze" msgid="4427153558773628020">"يُرجى النظر إلى جهازك مباشرة أكثر."</string>
     <string name="face_acquired_not_detected" msgid="1057966913397548150">"ارفع هاتفك إلى مستوى العينَين لأنّه تتعذّر رؤية وجهك"</string>
     <string name="face_acquired_too_much_motion" msgid="8199691445085189528">"حركة أكثر من اللازم. يُرجى حمل الهاتف بثبات."</string>
@@ -1008,7 +1008,7 @@
     <string name="lockscreen_password_wrong" msgid="8605355913868947490">"أعد المحاولة"</string>
     <string name="lockscreen_storage_locked" msgid="634993789186443380">"فتح القفل للوصول إلى جميع الميزات والبيانات"</string>
     <string name="faceunlock_multiple_failures" msgid="681991538434031708">"تم تجاوز الحد الأقصى لعدد محاولات فتح الجهاز ببصمة الوجه"</string>
-    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"‏لا تتوفر شريحة SIM."</string>
+    <string name="lockscreen_missing_sim_message_short" msgid="1229301273156907613">"‏لا تتوفر شريحة SIM"</string>
     <string name="lockscreen_missing_sim_message" product="tablet" msgid="3986843848305639161">"‏لا تتوفر شريحة SIM في الجهاز اللوحي."</string>
     <string name="lockscreen_missing_sim_message" product="tv" msgid="3903140876952198273">"‏لا تتوفر شريحة SIM في جهاز Android TV."</string>
     <string name="lockscreen_missing_sim_message" product="default" msgid="6184187634180854181">"‏لا تتوفر شريحة SIM في الهاتف."</string>
@@ -1061,19 +1061,19 @@
     <string name="lockscreen_access_pattern_cell_added_verbose" msgid="2931364927622563465">"تمت إضافة الخلية <xliff:g id="CELL_INDEX">%1$s</xliff:g>"</string>
     <string name="lockscreen_access_pattern_detected" msgid="3931150554035194012">"اكتمل النمط"</string>
     <string name="lockscreen_access_pattern_area" msgid="1288780416685002841">"منطقة النقش."</string>
-    <string name="keyguard_accessibility_widget_changed" msgid="7298011259508200234">"‏%1$s. الأداة %2$d من %3$d."</string>
-    <string name="keyguard_accessibility_add_widget" msgid="8245795023551343672">"إضافة أداة."</string>
+    <string name="keyguard_accessibility_widget_changed" msgid="7298011259508200234">"‏%1$s. التطبيق المصغَّر %2$d من %3$d."</string>
+    <string name="keyguard_accessibility_add_widget" msgid="8245795023551343672">"إضافة تطبيق مصغَّر."</string>
     <string name="keyguard_accessibility_widget_empty_slot" msgid="544239307077644480">"فارغة"</string>
     <string name="keyguard_accessibility_unlock_area_expanded" msgid="7768634718706488951">"تم توسيع منطقة فتح القفل."</string>
     <string name="keyguard_accessibility_unlock_area_collapsed" msgid="4729922043778400434">"تم تصغير منطقة فتح القفل."</string>
-    <string name="keyguard_accessibility_widget" msgid="6776892679715699875">"أداة <xliff:g id="WIDGET_INDEX">%1$s</xliff:g>."</string>
+    <string name="keyguard_accessibility_widget" msgid="6776892679715699875">"التطبيق المصغَّر <xliff:g id="WIDGET_INDEX">%1$s</xliff:g>."</string>
     <string name="keyguard_accessibility_user_selector" msgid="1466067610235696600">"محدد المستخدم"</string>
     <string name="keyguard_accessibility_status" msgid="6792745049712397237">"الحالة"</string>
     <string name="keyguard_accessibility_camera" msgid="7862557559464986528">"الكاميرا"</string>
     <string name="keygaurd_accessibility_media_controls" msgid="2267379779900620614">"أدوات التحكم في الوسائط"</string>
-    <string name="keyguard_accessibility_widget_reorder_start" msgid="7066213328912939191">"بدأت إعادة ترتيب الأدوات."</string>
-    <string name="keyguard_accessibility_widget_reorder_end" msgid="1083806817600593490">"انتهت إعادة ترتيب الأدوات."</string>
-    <string name="keyguard_accessibility_widget_deleted" msgid="1509738950119878705">"تم حذف أداة <xliff:g id="WIDGET_INDEX">%1$s</xliff:g>."</string>
+    <string name="keyguard_accessibility_widget_reorder_start" msgid="7066213328912939191">"بدأت إعادة ترتيب التطبيقات المصغَّرة."</string>
+    <string name="keyguard_accessibility_widget_reorder_end" msgid="1083806817600593490">"انتهت إعادة ترتيب التطبيقات المصغَّرة."</string>
+    <string name="keyguard_accessibility_widget_deleted" msgid="1509738950119878705">"تم حذف التطبيق المصغَّر <xliff:g id="WIDGET_INDEX">%1$s</xliff:g>."</string>
     <string name="keyguard_accessibility_expand_lock_area" msgid="4215280881346033434">"توسيع منطقة فتح القفل."</string>
     <string name="keyguard_accessibility_slide_unlock" msgid="2968195219692413046">"فتح القفل باستخدام التمرير."</string>
     <string name="keyguard_accessibility_pattern_unlock" msgid="8669128146589233293">"فتح القفل باستخدام النقش."</string>
@@ -1149,7 +1149,7 @@
     <string name="year" msgid="5182610307741238982">"سنة"</string>
     <string name="years" msgid="5797714729103773425">"أعوام"</string>
     <string name="now_string_shortest" msgid="3684914126941650330">"الآن"</string>
-    <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g> دقيقة"</string>
+    <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g> د"</string>
     <string name="duration_hours_shortest" msgid="1477752094141971675">"<xliff:g id="COUNT">%d</xliff:g> ساعة"</string>
     <string name="duration_days_shortest" msgid="4083124701676227233">"<xliff:g id="COUNT">%d</xliff:g> يوم"</string>
     <string name="duration_years_shortest" msgid="483982719231145618">"<xliff:g id="COUNT">%d</xliff:g> سنة"</string>
@@ -1410,7 +1410,7 @@
     <string name="usb_unsupported_audio_accessory_title" msgid="2335775548086533065">"تم اكتشاف ملحق صوتي تناظري"</string>
     <string name="usb_unsupported_audio_accessory_message" msgid="1300168007129796621">"الجهاز الذي تم توصيله بالهاتف غير متوافق معه. انقر للحصول على المزيد من المعلومات."</string>
     <string name="adb_active_notification_title" msgid="408390247354560331">"‏تم توصيل USB لتصحيح أخطاء الجهاز"</string>
-    <string name="adb_active_notification_message" msgid="5617264033476778211">"‏انقر لإيقاف تصحيح أخطاء الجهاز عبر USB"</string>
+    <string name="adb_active_notification_message" msgid="5617264033476778211">"‏يُرجى النقر لإيقاف تصحيح أخطاء الجهاز عبر USB"</string>
     <string name="adb_active_notification_message" product="tv" msgid="6624498401272780855">"‏اختيار إيقاف تصحيح أخطاء USB."</string>
     <string name="adbwifi_active_notification_title" msgid="6147343659168302473">"تم تفعيل ميزة \"تصحيح الأخطاء اللاسلكي\"."</string>
     <string name="adbwifi_active_notification_message" msgid="930987922852867972">"انقر لإيقاف ميزة \"تصحيح الأخطاء اللاسلكي\"."</string>
@@ -1442,7 +1442,7 @@
     <string name="select_keyboard_layout_notification_message" msgid="8835158247369158154">"انقر لاختيار لغة وتنسيق"</string>
     <string name="fast_scroll_alphabet" msgid="8854435958703888376">" أ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي"</string>
     <string name="fast_scroll_numeric_alphabet" msgid="2529539945421557329">" 0123456789 أ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي"</string>
-    <string name="alert_windows_notification_channel_group_name" msgid="6063891141815714246">"إظهار فوق التطبيقات الأخرى"</string>
+    <string name="alert_windows_notification_channel_group_name" msgid="6063891141815714246">"الظهور فوق التطبيقات الأخرى"</string>
     <string name="alert_windows_notification_channel_name" msgid="3437528564303192620">"جارٍ عرض <xliff:g id="NAME">%s</xliff:g> فوق تطبيقات أخرى"</string>
     <string name="alert_windows_notification_title" msgid="6331662751095228536">"يتم عرض <xliff:g id="NAME">%s</xliff:g> فوق التطبيقات الأخرى."</string>
     <string name="alert_windows_notification_message" msgid="6538171456970725333">"إذا كنت لا تريد أن يستخدم <xliff:g id="NAME">%s</xliff:g> هذه الميزة، فانقر لفتح الإعدادات، ثم اختر إيقافها."</string>
@@ -1510,7 +1510,7 @@
     <string name="permlab_queryAllPackages" msgid="2928450604653281650">"البحث في كل الحِزم"</string>
     <string name="permdesc_queryAllPackages" msgid="5339069855520996010">"يسمح هذا الإذن للتطبيق بعرض كل الحِزم المثبّتة."</string>
     <string name="tutorial_double_tap_to_zoom_message_short" msgid="1842872462124648678">"اضغط مرتين للتحكم في التكبير أو التصغير"</string>
-    <string name="gadget_host_error_inflating" msgid="2449961590495198720">"تعذرت إضافة أداة."</string>
+    <string name="gadget_host_error_inflating" msgid="2449961590495198720">"تعذرت إضافة تطبيق مصغَّر."</string>
     <string name="ime_action_go" msgid="5536744546326495436">"تنفيذ"</string>
     <string name="ime_action_search" msgid="4501435960587287668">"بحث"</string>
     <string name="ime_action_send" msgid="8456843745664334138">"إرسال"</string>
@@ -1937,7 +1937,7 @@
     <string name="zen_mode_rule_name_combination" msgid="7174598364351313725">"<xliff:g id="FIRST">%1$s</xliff:g> / <xliff:g id="REST">%2$s</xliff:g>"</string>
     <string name="toolbar_collapse_description" msgid="8009920446193610996">"تصغير"</string>
     <string name="zen_mode_feature_name" msgid="3785547207263754500">"عدم الإزعاج"</string>
-    <string name="zen_mode_downtime_feature_name" msgid="5886005761431427128">"التعطل"</string>
+    <string name="zen_mode_downtime_feature_name" msgid="5886005761431427128">"فترة التوقّف"</string>
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"ليلة يوم من أيام الأسبوع"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"نهاية الأسبوع"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"حدث"</string>
@@ -1948,7 +1948,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">"، "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"من <xliff:g id="START">%1$s</xliff:g> إلى <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"أي تقويم"</string>
-    <string name="muted_by" msgid="91464083490094950">"يعمل <xliff:g id="THIRD_PARTY">%1$s</xliff:g> على كتم بعض الأصوات."</string>
+    <string name="muted_by" msgid="91464083490094950">"يتم كتم بعض الأصوات بواسطة <xliff:g id="THIRD_PARTY">%1$s</xliff:g>."</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"حدثت مشكلة داخلية في جهازك، وقد لا يستقر وضعه حتى إجراء إعادة الضبط على الإعدادات الأصلية."</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"حدثت مشكلة داخلية في جهازك. يمكنك الاتصال بالمصنِّع للحصول على تفاصيل."</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"‏تم تغيير طلب USSD إلى مكالمة عادية."</string>
@@ -2157,7 +2157,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"حسنًا"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"إيقاف"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"مزيد من المعلومات"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"‏تم إبدال الإشعارات التكيُّفية لنظام التشغيل Android في الإصدار 12 منه بالإشعارات المحسّنة. تعرض هذه الميزة إجراءات وردودًا مقترحة وتنظِّم الإشعارات.\n\nيمكن للإشعارات المحسّنة الوصول إلى محتوى الإشعارات، بما في ذلك المعلومات الشخصية، مثلاً أسماء جهات الاتصال والرسائل. يمكن لهذه الميزة أيضًا إغلاق الإشعارات أو الاستجابة لها، مثلاً الردّ على مكالمات الهاتف والتحكّم في ميزة \"عدم الإزعاج\"."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"‏تم استبدال \"الإشعارات التكيُّفية\" بـ \"الإشعارات المحسّنة\" في الإصدار 12 من Android. تعرض هذه الميزة إجراءات وردودًا مقترحة وتنظِّم الإشعارات.\n\nتستطيع \"الإشعارات المحسّنة\" الوصول إلى محتوى الإشعارات، بما في ذلك المعلومات الشخصية، مثلاً أسماء جهات الاتصال والرسائل. ويمكنها أيضًا إغلاق الإشعارات أو الاستجابة لها، مثلاً الردّ على مكالمات الهاتف والتحكّم في ميزة \"عدم الإزعاج\"."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"إشعار معلومات \"وضع سلسلة الإجراءات\""</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"تم تفعيل ميزة توفير شحن البطارية"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"يتم تقليل استخدام البطارية لإطالة عمرها."</string>

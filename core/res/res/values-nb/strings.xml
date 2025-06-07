@@ -272,7 +272,7 @@
     <string name="bugreport_option_full_title" msgid="7681035745950045690">"Fullstendig rapport"</string>
     <string name="bugreport_option_full_summary" msgid="1975130009258435885">"Bruk dette alternativet for minst mulig forstyrrelse på systemet når enheten din er treg eller ikke svarer, eller når du trenger alle rapportdelene. Det tas ikke noen skjermbilde, og du kan ikke legge til flere detaljer."</string>
     <string name="bugreport_countdown" msgid="6418620521782120755">"{count,plural, =1{Tar skjermbilde for feilrapporten om # sekund.}other{Tar skjermbilde for feilrapporten om # sekunder.}}"</string>
-    <string name="bugreport_screenshot_success_toast" msgid="7986095104151473745">"En skjermbilde er tatt med feilrapporten"</string>
+    <string name="bugreport_screenshot_success_toast" msgid="7986095104151473745">"Et skjermbilde er tatt med feilrapporten"</string>
     <string name="bugreport_screenshot_failure_toast" msgid="6736320861311294294">"Kunne ikke ta skjermbilde med feilrapporten"</string>
     <string name="global_action_toggle_silent_mode" msgid="8464352592860372188">"Stillemodus"</string>
     <string name="global_action_silent_mode_on_status" msgid="2371892537738632013">"Lyden er av"</string>
@@ -1383,7 +1383,7 @@
     <string name="install_carrier_app_notification_text_app_name" msgid="4086877327264106484">"Last ned <xliff:g id="APP_NAME">%1$s</xliff:g>-appen for å aktivere det nye SIM-kortet ditt"</string>
     <string name="install_carrier_app_notification_button" msgid="6257740533102594290">"Last ned appen"</string>
     <string name="carrier_app_notification_title" msgid="5815477368072060250">"Et nytt SIM-kort er satt inn"</string>
-    <string name="carrier_app_notification_text" msgid="6567057546341958637">"Trykk for å konfigurere"</string>
+    <string name="carrier_app_notification_text" msgid="6567057546341958637">"Konfigurer"</string>
     <string name="time_picker_dialog_title" msgid="9053376764985220821">"Angi tidspunkt"</string>
     <string name="date_picker_dialog_title" msgid="5030520449243071926">"Angi dato"</string>
     <string name="date_time_set" msgid="4603445265164486816">"Lagre"</string>
@@ -1448,7 +1448,7 @@
     <string name="ext_media_checking_notification_message" product="tv" msgid="7986154434946021415">"Analyserer medielagring"</string>
     <string name="ext_media_new_notification_title" msgid="3517407571407687677">"Ny <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="ext_media_new_notification_title" product="automotive" msgid="9085349544984742727">"<xliff:g id="NAME">%s</xliff:g> fungerer ikke"</string>
-    <string name="ext_media_new_notification_message" msgid="6095403121990786986">"Trykk for å konfigurere"</string>
+    <string name="ext_media_new_notification_message" msgid="6095403121990786986">"Konfigurer"</string>
     <string name="ext_media_new_notification_message" product="tv" msgid="216863352100263668">"Velg for å konfigurere"</string>
     <string name="ext_media_new_notification_message" product="automotive" msgid="5140127881613227162">"Du må muligens reformatere enheten. Trykk for å løse ut."</string>
     <string name="ext_media_ready_notification_message" msgid="7509496364380197369">"For lagring av bilder, videoer, musikk med mer"</string>
@@ -1460,7 +1460,7 @@
     <string name="ext_media_unmountable_notification_message" product="automotive" msgid="2274596120715020680">"Du må muligens reformatere enheten. Trykk for å løse ut."</string>
     <string name="ext_media_unsupported_notification_title" msgid="3487534182861251401">"<xliff:g id="NAME">%s</xliff:g> er oppdaget"</string>
     <string name="ext_media_unsupported_notification_title" product="automotive" msgid="6004193172658722381">"<xliff:g id="NAME">%s</xliff:g> fungerer ikke"</string>
-    <string name="ext_media_unsupported_notification_message" msgid="8463636521459807981">"Trykk for å konfigurere."</string>
+    <string name="ext_media_unsupported_notification_message" msgid="8463636521459807981">"Konfigurer."</string>
     <string name="ext_media_unsupported_notification_message" product="tv" msgid="1595482802187036532">"Velg for å konfigurere <xliff:g id="NAME">%s</xliff:g> i et format som støttes."</string>
     <string name="ext_media_unsupported_notification_message" product="automotive" msgid="3412494732736336330">"Du må muligens reformatere enheten"</string>
     <string name="ext_media_badremoval_notification_title" msgid="4114625551266196872">"<xliff:g id="NAME">%s</xliff:g> ble uventet fjernet"</string>
@@ -1752,7 +1752,7 @@
     <string name="done_accessibility_shortcut_menu_button" msgid="3668407723770815708">"Ferdig"</string>
     <string name="disable_accessibility_shortcut" msgid="5806091378745232383">"Slå av snarveien"</string>
     <string name="leave_accessibility_shortcut_on" msgid="6543362062336990814">"Bruk snarveien"</string>
-    <string name="color_inversion_feature_name" msgid="2672824491933264951">"Fargeinvertering"</string>
+    <string name="color_inversion_feature_name" msgid="2672824491933264951">"Farge&amp;#173;invertering"</string>
     <string name="color_correction_feature_name" msgid="7975133554160979214">"Fargekorrigering"</string>
     <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"Enhåndsmodus"</string>
     <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Ekstra dimmet"</string>

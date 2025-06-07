@@ -590,7 +590,7 @@
     <string name="permdesc_changeWifiMulticastState" product="tablet" msgid="191079868596433554">"Pozwala aplikacji na odbieranie pakietów wysyłanych przez sieć Wi-Fi do wszystkich urządzeń, a nie tylko do Twojego tabletu, przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w trybie innym niż grupowy."</string>
     <string name="permdesc_changeWifiMulticastState" product="tv" msgid="1336952358450652595">"Pozwala aplikacji odbierać pakiety wysyłane przez sieć Wi-Fi do wszystkich urządzeń (a nie tylko do Twojego urządzenia z Androidem TV) przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w innych trybach."</string>
     <string name="permdesc_changeWifiMulticastState" product="default" msgid="8296627590220222740">"Pozwala aplikacji na odbieranie pakietów wysyłanych przez sieć Wi-Fi do wszystkich urządzeń, a nie tylko do Twojego telefonu, przy użyciu adresów połączeń grupowych. Powoduje większe zapotrzebowanie na energię niż w trybie innym niż grupowy."</string>
-    <string name="permlab_bluetoothAdmin" msgid="6490373569441946064">"uzyskiwanie dostępu do ustawień Bluetooth"</string>
+    <string name="permlab_bluetoothAdmin" msgid="6490373569441946064">"uzyskiwanie dostępu do ustawień Bluetootha"</string>
     <string name="permdesc_bluetoothAdmin" product="tablet" msgid="5370837055438574863">"Pozwala aplikacji na konfigurowanie lokalnego tabletu z funkcją Bluetooth oraz na wykrywanie urządzeń zdalnych i parowanie z nimi."</string>
     <string name="permdesc_bluetoothAdmin" product="tv" msgid="1623992984547014588">"Pozwala aplikacji konfigurować Bluetootha na urządzeniu z Androidem TV oraz wykrywać urządzenia zdalne i przeprowadzać parowanie z nimi."</string>
     <string name="permdesc_bluetoothAdmin" product="default" msgid="7381341743021234863">"Pozwala aplikacji na konfigurowanie lokalnego telefonu z funkcją Bluetooth oraz na wykrywanie urządzeń zdalnych i parowanie z nimi."</string>
@@ -1669,7 +1669,7 @@
     <string name="wireless_display_route_description" msgid="8297563323032966831">"Wyświetlacz bezprzewodowy"</string>
     <string name="media_route_button_content_description" msgid="2299223698196869956">"Przesyłaj"</string>
     <string name="media_route_chooser_title" msgid="6646594924991269208">"Połącz z urządzeniem"</string>
-    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Prześlij ekran na urządzenie"</string>
+    <string name="media_route_chooser_title_for_remote_display" msgid="3105906508794326446">"Prześlij treści z ekranu na urządzenie"</string>
     <string name="media_route_chooser_searching" msgid="6119673534251329535">"Szukam urządzeń…"</string>
     <string name="media_route_chooser_extended_settings" msgid="2506352159381327741">"Ustawienia"</string>
     <string name="media_route_controller_disconnect" msgid="7362617572732576959">"Rozłącz"</string>
@@ -1770,7 +1770,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Funkcja otworzy się, gdy następnym razem użyjesz tego skrótu. Przesuń 3 palcami z dołu ekranu i szybko je unieś."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Powiększenie"</string>
     <string name="user_switched" msgid="7249833311585228097">"Bieżący użytkownik: <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Przełączam na użytkownika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Przełączam na użytkownika: <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Wylogowuję użytkownika <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Właściciel"</string>
     <string name="guest_name" msgid="8502103277839834324">"Gość"</string>
@@ -2128,8 +2128,8 @@
     <string name="harmful_app_warning_title" msgid="8794823880881113856">"Wykryto szkodliwą aplikację"</string>
     <string name="slices_permission_request" msgid="3677129866636153406">"Aplikacja <xliff:g id="APP_0">%1$s</xliff:g> chce pokazywać wycinki z aplikacji <xliff:g id="APP_2">%2$s</xliff:g>"</string>
     <string name="screenshot_edit" msgid="7408934887203689207">"Edytuj"</string>
-    <string name="volume_dialog_ringer_guidance_vibrate" msgid="2055927873175228519">"Wibracje przy połączeniach i powiadomieniach"</string>
-    <string name="volume_dialog_ringer_guidance_silent" msgid="1011246774949993783">"Wyciszenie połączeń i powiadomień"</string>
+    <string name="volume_dialog_ringer_guidance_vibrate" msgid="2055927873175228519">"Połączenia i powiadomienia będą uruchamiały wibracje"</string>
+    <string name="volume_dialog_ringer_guidance_silent" msgid="1011246774949993783">"Połączenia i powiadomienia będą wyciszone"</string>
     <string name="notification_channel_system_changes" msgid="2462010596920209678">"Zmiany w systemie"</string>
     <string name="notification_channel_do_not_disturb" msgid="7832584281883687653">"Nie przeszkadzać"</string>
     <string name="zen_upgrade_notification_visd_title" msgid="2001148984371968620">"Nowość: w trybie Nie przeszkadzać powiadomienia są ukrywane"</string>

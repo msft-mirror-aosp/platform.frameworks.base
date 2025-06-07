@@ -1575,7 +1575,7 @@
     <string name="sync_really_delete" msgid="5657871730315579051">"Видалити елементи"</string>
     <string name="sync_undo_deletes" msgid="5786033331266418896">"Відмінити видалення"</string>
     <string name="sync_do_nothing" msgid="4528734662446469646">"Наразі нічого не робити"</string>
-    <string name="choose_account_label" msgid="5557833752759831548">"Вибрати обліковий запис"</string>
+    <string name="choose_account_label" msgid="5557833752759831548">"Вибрати облік. запис"</string>
     <string name="add_account_label" msgid="4067610644298737417">"Додати обліковий запис"</string>
     <string name="add_account_button_label" msgid="322390749416414097">"Додати облік. запис"</string>
     <string name="number_picker_increment_button" msgid="7621013714795186298">"Збільшити"</string>
@@ -1770,7 +1770,7 @@
     <string name="accessibility_gesture_3finger_instructional_text" msgid="1124458279366968154">"Функція відкриється, коли ви наступного разу скористаєтеся цією швидкою командою. Проведіть трьома пальцями вгору від низу екрана й швидко відпустіть."</string>
     <string name="accessibility_magnification_chooser_text" msgid="1502075582164931596">"Збільшення"</string>
     <string name="user_switched" msgid="7249833311585228097">"Поточний користувач: <xliff:g id="NAME">%1$s</xliff:g>."</string>
-    <string name="user_switching_message" msgid="1912993630661332336">"Перехід у режим \"<xliff:g id="NAME">%1$s</xliff:g>\"…"</string>
+    <string name="user_switching_message" msgid="1912993630661332336">"Перехід в обліковий запис \"<xliff:g id="NAME">%1$s</xliff:g>\"…"</string>
     <string name="user_logging_out_message" msgid="7216437629179710359">"Вихід з облікового запису користувача <xliff:g id="NAME">%1$s</xliff:g>…"</string>
     <string name="owner_name" msgid="8713560351570795743">"Власник"</string>
     <string name="guest_name" msgid="8502103277839834324">"Гість"</string>
@@ -2401,7 +2401,7 @@
     <string name="concurrent_display_notification_thermal_content" msgid="2075484836527609319">"Функція Dual Screen недоступна, оскільки телефон сильно нагрівається"</string>
     <string name="concurrent_display_notification_power_save_title" msgid="1794569070730736281">"Функція Dual Screen недоступна"</string>
     <string name="concurrent_display_notification_power_save_content" msgid="2198116070583851493">"Функція Dual Screen недоступна, оскільки ввімкнено режим енергозбереження. Її можна вимкнути в налаштуваннях."</string>
-    <string name="device_state_notification_settings_button" msgid="691937505741872749">"Перейти до налаштувань"</string>
+    <string name="device_state_notification_settings_button" msgid="691937505741872749">"Відкрити налаштування"</string>
     <string name="device_state_notification_turn_off_button" msgid="6327161707661689232">"Вимкнути"</string>
     <string name="keyboard_layout_notification_selected_title" msgid="1202560174252421219">"Клавіатуру \"<xliff:g id="DEVICE_NAME">%s</xliff:g>\" налаштовано"</string>
     <string name="keyboard_layout_notification_one_selected_message" msgid="4314216053129257197">"Вибрано розкладку клавіатури \"<xliff:g id="LAYOUT_1">%s</xliff:g>\". Натисніть, щоб змінити."</string>

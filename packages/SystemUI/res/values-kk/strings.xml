@@ -70,7 +70,7 @@
     <string name="usb_contaminant_message" msgid="7730476585174719805">"Құрылғыңызға сұйықтық немесе қоқыс кіріп кетпеуі үшін, USB порты өшірілген және ешқандай керек-жарақты анықтамайды.\n\nUSB портын қайта пайдалануға болатын кезде хабарландыру аласыз."</string>
     <string name="usb_port_enabled" msgid="531823867664717018">"Зарядтағыштар мен аксессуарларды анықтау үшін USB порты қосылды."</string>
     <string name="usb_disable_contaminant_detection" msgid="3827082183595978641">"USB қосу"</string>
-    <string name="learn_more" msgid="4690632085667273811">"Толығырақ"</string>
+    <string name="learn_more" msgid="4690632085667273811">"Толық ақпарат"</string>
     <string name="global_action_screenshot" msgid="2760267567509131654">"Скриншот"</string>
     <string name="global_action_smart_lock_disabled" msgid="6286551337177954859">"Құлыпты ашық ұстау функциясы өшірілді."</string>
     <string name="remote_input_image_insertion_text" msgid="4850791636452521123">"сурет жіберілді"</string>
@@ -112,8 +112,8 @@
     <string name="screenrecord_permission_dialog_title" msgid="7415261783188749730">"Қолданба экранын жазасыз ба?"</string>
     <string name="screenrecord_permission_dialog_option_text_single_app" msgid="1996450687814647583">"Бір қолданба экранын жазу"</string>
     <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Бүкіл экранды жазу"</string>
-    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Бүкіл экранды жазған кезде, онда көрінетін барлық нәрсе жазылады. Сондықтан құпия сөздерді, төлем туралы мәліметті, хабарларды немесе басқа құпия ақпаратты енгізген кезде сақ болыңыз."</string>
-    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Қолданбаны жазған кезде, онда көрінетін не ойнатылатын барлық нәрсе жазылады. Сондықтан құпия сөздерді, төлем туралы мәліметті, хабарларды немесе басқа құпия ақпаратты енгізген кезде сақ болыңыз."</string>
+    <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Бүкіл экранды жазған кезде, онда көрінетін барлық нәрсе жазылады. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, дыбыстар мен бейнелерге сақ болыңыз."</string>
+    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Қолданбаны жазған кезде, онда көрінетін не ойнатылатын барлық нәрсе жазылады. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, дыбыстар мен бейнелерге сақ болыңыз."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Экранды жазу"</string>
     <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Жазатын қолданба экранын таңдау"</string>
     <string name="screenrecord_audio_label" msgid="6183558856175159629">"Аудио жазу"</string>
@@ -143,7 +143,7 @@
     <string name="share_to_app_stop_dialog_message_single_app_generic" msgid="6681016774654578261">"Қазір қолданбаны бөлісіп жатырсыз."</string>
     <string name="share_to_app_stop_dialog_button" msgid="6334056916284230217">"Бөлісуді тоқтату"</string>
     <string name="cast_screen_to_other_device_chip_accessibility_label" msgid="4687917476203009885">"Экранды трансляциялап жатырсыз."</string>
-    <string name="cast_to_other_device_stop_dialog_title" msgid="7836517190930357326">"Трансляциялау тоқтасын ба?"</string>
+    <string name="cast_to_other_device_stop_dialog_title" msgid="7836517190930357326">"Трансляцияны тоқтату керек пе?"</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen_with_device" msgid="1474703115926205251">"Қазір бүкіл экранды құрылғыға (<xliff:g id="DEVICE_NAME">%1$s</xliff:g>) трансляциялап жатырсыз."</string>
     <string name="cast_to_other_device_stop_dialog_message_entire_screen" msgid="8419219169553867625">"Қазір бүкіл экранды маңайдағы құрылғыға трансляциялап жатырсыз."</string>
     <string name="cast_to_other_device_stop_dialog_message_specific_app_with_device" msgid="2715934698604085519">"Қазір қолданбаны (<xliff:g id="APP_BEING_SHARED_NAME">%1$s</xliff:g>) құрылғыға (<xliff:g id="DEVICE_NAME">%2$s</xliff:g>) трансляциялап жатырсыз."</string>
@@ -230,7 +230,7 @@
     <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Бет тану функциясын реттеу"</string>
     <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"Бет тану функциясын қайта реттеу үшін қолданыстағы бет үлгісі жойылады.\n\nБет үлгісімен телефон құлпын ашу үшін бұл функцияны қайта реттеуіңіз қажет."</string>
     <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"Бет тану функциясы реттелмеді. \"Параметрлер\" бөліміне өтіп, әрекетті қайталап көріңіз."</string>
-    <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"Саусақ ізін оқу сканерін түртіңіз"</string>
+    <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"Саусақ ізін оқу сканерін түртіңіз."</string>
     <string name="fingerprint_dialog_authenticated_confirmation" msgid="1603899612957562862">"Жалғастыру үшін құлыпты ашу белгішесін басыңыз."</string>
     <string name="fingerprint_dialog_use_fingerprint_instead" msgid="5542430577183894219">"Бет танылмады. Орнына саусақ ізін пайдаланыңыз."</string>
     <!-- no translation found for keyguard_face_failed_use_fp (7140293906176164263) -->
@@ -297,7 +297,7 @@
     <string name="quick_settings_bluetooth_label" msgid="7018763367142041481">"Bluetooth"</string>
     <string name="quick_settings_bluetooth_detail_empty_text" msgid="5760239584390514322">"Жұптасқан құрылғылар жоқ"</string>
     <string name="quick_settings_bluetooth_tile_subtitle" msgid="212752719010829550">"Құрылғыны жалғау не ажырату үшін түртіңіз."</string>
-    <string name="pair_new_bluetooth_devices" msgid="4601767620843349645">"Жаңа құрылғыны жұптау"</string>
+    <string name="pair_new_bluetooth_devices" msgid="4601767620843349645">"Жаңа құрылғымен жұптау"</string>
     <string name="see_all_bluetooth_devices" msgid="1761596816620200433">"Барлығын көру"</string>
     <string name="turn_on_bluetooth" msgid="5681370462180289071">"Bluetooth-ты пайдалану"</string>
     <string name="quick_settings_bluetooth_device_connected" msgid="7884777006729260996">"Қосылды"</string>
@@ -401,16 +401,16 @@
     <string name="quick_settings_hearing_devices_connected" msgid="6519069502397037781">"Қосулы"</string>
     <string name="quick_settings_hearing_devices_disconnected" msgid="8907061223998176187">"Ажыратулы"</string>
     <string name="quick_settings_hearing_devices_dialog_title" msgid="9004774017688484981">"Есту құрылғылары"</string>
-    <string name="quick_settings_pair_hearing_devices" msgid="5987105102207447322">"Жаңа құрылғыны жұптау"</string>
+    <string name="quick_settings_pair_hearing_devices" msgid="5987105102207447322">"Жаңа құрылғымен жұптау"</string>
     <string name="accessibility_hearing_device_pair_new_device" msgid="8440082580186130090">"Жаңа құрылғыны жұптау үшін басыңыз."</string>
     <string name="hearing_devices_presets_error" msgid="350363093458408536">"Параметрлер жинағын жаңарту мүмкін болмады."</string>
     <string name="hearing_devices_preset_label" msgid="7878267405046232358">"Параметрлер жинағы"</string>
-    <string name="quick_settings_hearing_devices_live_caption_title" msgid="1054814050932225451">"Live Caption"</string>
+    <string name="quick_settings_hearing_devices_live_caption_title" msgid="1054814050932225451">"Автоматты субтитр"</string>
     <string name="sensor_privacy_start_use_mic_dialog_title" msgid="563796653825944944">"Құрылғы микрофонын блоктан шығару керек пе?"</string>
     <string name="sensor_privacy_start_use_camera_dialog_title" msgid="8807639852654305227">"Құрылғы камерасын блоктан шығару керек пе?"</string>
     <string name="sensor_privacy_start_use_mic_camera_dialog_title" msgid="4316471859905020023">"Құрылғы камерасы мен микрофонын блоктан шығару керек пе?"</string>
-    <string name="sensor_privacy_start_use_mic_dialog_content" msgid="1624701280680913717">"Микрофоныңызды пайдалануға рұқсат берілген барлық қолданба мен қызмет блоктан шығарылады."</string>
-    <string name="sensor_privacy_start_use_camera_dialog_content" msgid="4704948062372435963">"Камераңызды пайдалануға рұқсат берілген барлық қолданба мен қызмет блоктан шығарылады."</string>
+    <string name="sensor_privacy_start_use_mic_dialog_content" msgid="1624701280680913717">"Микрофоныңызды пайдалануға рұқсат берілген барлық қолданба мен қызмет үшін блоктан шығарылады."</string>
+    <string name="sensor_privacy_start_use_camera_dialog_content" msgid="4704948062372435963">"Камераңызды пайдалануға рұқсат берілген барлық қолданба мен қызмет үшін блоктан шығарылады."</string>
     <string name="sensor_privacy_start_use_mic_camera_dialog_content" msgid="3577642558418404919">"Камераңызды немесе микрофоныңызды пайдалануға рұқсат берілген барлық қолданба мен қызметтің бөгеуі алынады."</string>
     <string name="sensor_privacy_start_use_mic_blocked_dialog_title" msgid="2640140287496469689">"Микрофон блокталған"</string>
     <string name="sensor_privacy_start_use_camera_blocked_dialog_title" msgid="7398084286822440384">"Камера блокталған"</string>
@@ -545,24 +545,24 @@
     <string name="media_projection_entry_app_permission_dialog_warning_single_app" msgid="7094417930857938876">"Қолданбаны бөліскен кезде, онда көрінетін не ойнатылатын барлық контент <xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> қолданбасында көрсетіледі. Сондықтан құпия сөздерді, төлем туралы мәліметті, хабарларды, фотосуреттерді және аудио мен бейнені ашқанда сақ болыңыз."</string>
     <string name="media_projection_entry_app_permission_dialog_continue_entire_screen" msgid="1850848182344377579">"Экранды бөлісу"</string>
     <string name="media_projection_entry_app_permission_dialog_single_app_disabled" msgid="8999903044874669995">"<xliff:g id="APP_NAME">%1$s</xliff:g> қолданбасы осы опцияны өшірді."</string>
-    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Бөлісетін қолданба экранын таңдау"</string>
+    <string name="media_projection_entry_share_app_selector_title" msgid="1419515119767501822">"Көрсетілетін қолданба экранын таңдау"</string>
     <string name="media_projection_entry_cast_permission_dialog_title" msgid="752756942658159416">"Экранды трансляциялау керек пе?"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Бір қолданба экранын трансляциялау"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Бүкіл экранды трансляциялау"</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Бүкіл экранды трансляциялаған кезде экранда барлық нәрсе көрсетіледі. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, аудиоконтент пен бейнелерге сақ болыңыз."</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Қолданба экранын трансляциялаған кезде қолданбадағы барлық контент көрсетіледі. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, аудиоконтент пен бейнелерге сақ болыңыз."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Бүкіл экранды трансляциялаған кезде, экрандағы барлық нәрсе көрсетіледі. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, аудиоконтент пен бейнелерге сақ болыңыз."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Қолданба экранын трансляциялаған кезде, қолданбадағы барлық контент көрсетіледі. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, аудиоконтент пен бейнелерге сақ болыңыз."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"Экранды трансляциялау"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"Трансляциялайтын қолданба экранын таңдау"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"Бөлісу басталсын ба?"</string>
     <string name="media_projection_entry_generic_permission_dialog_warning_entire_screen" msgid="5407906851409410209">"Бөлісу, жазу не трансляциялау кезінде Android жүйесі экраныңызда көрінетін не құрылғыңызда ойнатылатын барлық нәрсені пайдалана алады. Сондықтан құпия сөздерді, төлем туралы мәліметті, хабарларды немесе басқа құпия ақпаратты енгізген кезде сақ болыңыз."</string>
-    <string name="media_projection_entry_generic_permission_dialog_warning_single_app" msgid="3454859977888159495">"Қолданба экранын бөлісу, жазу не трансляциялау кезінде Android жүйесі онда көрінетін не ойнатылатын барлық нәрсені пайдалана алады. Сондықтан құпия сөздерді, төлем туралы мәліметті, хабарларды немесе басқа құпия ақпаратты енгізген кезде сақ болыңыз."</string>
+    <string name="media_projection_entry_generic_permission_dialog_warning_single_app" msgid="3454859977888159495">"Қолданба экранын бөлісу, жазу не трансляциялау кезінде Android жүйесі онда көрінетін не ойнатылатын барлық нәрсені пайдалана алады. Сондықтан құпия сөздерге, төлем туралы мәліметке, хабарларға, фотосуреттерге, дыбыстар мен бейнелерге сақ болыңыз."</string>
     <string name="media_projection_entry_generic_permission_dialog_continue" msgid="8640381403048097116">"Бастау"</string>
     <string name="media_projection_entry_generic_permission_dialog_continue_single_app" msgid="5920814988611877051">"Келесі"</string>
     <string name="media_projection_task_switcher_text" msgid="590885489897412359">"Қолданба ауыстырғанда, бөлісу кідіртіледі."</string>
     <string name="media_projection_task_switcher_action_switch" msgid="8682258717291921123">"Орнына осы қолданбаны бөлісу"</string>
     <string name="media_projection_task_switcher_action_back" msgid="5324164224147845282">"Қайта ауысу"</string>
     <string name="media_projection_task_switcher_notification_channel" msgid="7613206306777814253">"Қолданба ауыстыру"</string>
-    <string name="screen_capturing_disabled_by_policy_dialog_title" msgid="2113331792064527203">"Әкімшіңіз бөгеген"</string>
+    <string name="screen_capturing_disabled_by_policy_dialog_title" msgid="2113331792064527203">"Әкімшіңіз блоктаған"</string>
     <string name="screen_capturing_disabled_by_policy_dialog_description" msgid="6015975736747696431">"Құрылғы саясатына байланысты экранды түсіру өшірілді."</string>
     <string name="clear_all_notifications_text" msgid="348312370303046130">"Барлығын тазарту"</string>
     <string name="manage_notifications_text" msgid="6885645344647733116">"Басқару"</string>
@@ -634,7 +634,7 @@
     <string name="volume_odi_captions_hint_disable" msgid="2518846326748183407">"өшіру"</string>
     <string name="sound_settings" msgid="8874581353127418308">"Дыбыс және діріл"</string>
     <string name="volume_panel_dialog_settings_button" msgid="2513228491513390310">"Параметрлер"</string>
-    <string name="volume_panel_captioning_title" msgid="5984936949147684357">"Live Caption"</string>
+    <string name="volume_panel_captioning_title" msgid="5984936949147684357">"Автоматты субтитр"</string>
     <string name="csd_lowered_title" product="default" msgid="2464112924151691129">"Дыбыс қауіпсіз деңгейге түсірілді"</string>
     <string name="csd_system_lowered_text" product="default" msgid="1250251883692996888">"Құлақаспаптың жоғары дыбыс деңгейі ұсынылған уақыттан ұзақ қосылып тұрды."</string>
     <string name="csd_500_system_lowered_text" product="default" msgid="7414943302186884124">"Құлақаспаптың дыбыс деңгейі осы аптадағы қауіпсіз шектен асып кетті."</string>
@@ -655,11 +655,11 @@
     <string name="screen_pinning_negative" msgid="6882816864569211666">"Жоқ, рақмет"</string>
     <string name="screen_pinning_start" msgid="7483998671383371313">"Қолданба бекітілді."</string>
     <string name="screen_pinning_exit" msgid="4553787518387346893">"Қолданба босатылды."</string>
-    <string name="stream_voice_call" msgid="7468348170702375660">"Қоңырау шалу"</string>
+    <string name="stream_voice_call" msgid="7468348170702375660">"Сөйлесу кезіндегі дыбыс"</string>
     <string name="stream_system" msgid="7663148785370565134">"Жүйе"</string>
-    <string name="stream_ring" msgid="7550670036738697526">"Шылдыр"</string>
+    <string name="stream_ring" msgid="7550670036738697526">"Қоңырау сигналы"</string>
     <string name="stream_music" msgid="2188224742361847580">"Мультимедиа"</string>
-    <string name="stream_alarm" msgid="16058075093011694">"Дабыл"</string>
+    <string name="stream_alarm" msgid="16058075093011694">"Оятқыш"</string>
     <string name="stream_notification" msgid="7930294049046243939">"Хабарландыру"</string>
     <string name="stream_bluetooth_sco" msgid="6234562365528664331">"Bluetooth"</string>
     <string name="stream_dtmf" msgid="7322536356554673067">"Қос үнді көп жиілік"</string>
@@ -668,7 +668,7 @@
     <string name="volume_ringer_status_vibrate" msgid="6970078708957857825">"Діріл"</string>
     <string name="volume_ringer_status_silent" msgid="3691324657849880883">"Дыбысын өшіру"</string>
     <string name="media_device_cast" msgid="4786241789687569892">"Трансляциялау"</string>
-    <string name="stream_notification_unavailable" msgid="4313854556205836435">"Қолжетімді емес, шылдырлату өшірулі."</string>
+    <string name="stream_notification_unavailable" msgid="4313854556205836435">"Телефонның дыбысы өшіп тұрғанда қолжетімсіз."</string>
     <string name="stream_alarm_unavailable" msgid="4059817189292197839">"Мазаламау режимі қосылғандықтан өзгерту мүмкін емес."</string>
     <string name="stream_media_unavailable" msgid="6823020894438959853">"Мазаламау режимі қосылғандықтан өзгерту мүмкін емес."</string>
     <string name="volume_stream_content_description_unmute" msgid="7729576371406792977">"%1$s. Дыбысын қосу үшін түртіңіз."</string>
@@ -830,22 +830,22 @@
     <string name="keyboard_shortcut_a11y_filter_input" msgid="4589316004510335529">"Енгізу жылдам пәрмендерін көрсетеді."</string>
     <string name="keyboard_shortcut_a11y_filter_open_apps" msgid="6175417687221004059">"Қолданбаларды ашатын жылдам пәрмендерді көрсетеді."</string>
     <string name="keyboard_shortcut_a11y_filter_current_app" msgid="7944592357493737911">"Қазіргі қолданбаға арналған жылдам пәрмендер көрсетіледі."</string>
-    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Хабарландыруларды көру"</string>
+    <string name="group_system_access_notification_shade" msgid="1619028907006553677">"Хабарландыру­ларды көру"</string>
     <string name="group_system_full_screenshot" msgid="5742204844232667785">"Скриншот жасау"</string>
-    <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Жылдам пәрмендерді көрсету"</string>
+    <string name="group_system_access_system_app_shortcuts" msgid="8562482996626694026">"Пернелер тіркесімдерін көрсету"</string>
     <string name="group_system_go_back" msgid="2730322046244918816">"Артқа"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"Негізгі экранға өту"</string>
-    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Соңғы қолданбаларды көру"</string>
+    <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Соңғы қолданбалар­­ды көру"</string>
     <string name="group_system_cycle_forward" msgid="5478663965957647805">"Соңғы қолданбалар тізімінде алға өту"</string>
     <string name="group_system_cycle_back" msgid="8194102916946802902">"Соңғы қолданбалар тізімінде артқа өту"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Қолданбалар тізімін ашу"</string>
-    <string name="group_system_access_system_settings" msgid="8731721963449070017">"Параметрлерді ашу"</string>
+    <string name="group_system_access_system_settings" msgid="8731721963449070017">"Параметрлер­ді ашу"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Assistant-ті ашу"</string>
     <string name="group_system_lock_screen" msgid="7391191300363416543">"Экранды құлыптау"</string>
     <string name="group_system_quick_memo" msgid="3764560265935722903">"Ескертпе жазу"</string>
     <string name="keyboard_shortcut_group_system_multitasking" msgid="6967816258924795558">"Мультитаскинг"</string>
-    <string name="system_multitasking_rhs" msgid="8714224917276297810">"Ағымдағы қолданба оң жақта тұратын бөлінген экранды пайдаланыңыз"</string>
-    <string name="system_multitasking_lhs" msgid="8402954791206308783">"Ағымдағы қолданба сол жақта тұратын бөлінген экранды пайдаланыңыз"</string>
+    <string name="system_multitasking_rhs" msgid="8714224917276297810">"Қолданбаны бөлінген экранның оң жағынан пайдалану"</string>
+    <string name="system_multitasking_lhs" msgid="8402954791206308783">"Қолданбаны бөлінген экранның сол жағынан пайдалану"</string>
     <string name="system_multitasking_full_screen" msgid="336048080383640562">"Бөлінген экран режимінен толық экран режиміне ауысу"</string>
     <string name="system_multitasking_splitscreen_focus_rhs" msgid="3838578650313318508">"Бөлінген экранда оң не төмен жақтағы қолданбаға ауысу"</string>
     <string name="system_multitasking_splitscreen_focus_lhs" msgid="3164261844398662518">"Бөлінген экранда сол не жоғары жақтағы қолданбаға ауысу"</string>
@@ -877,7 +877,7 @@
     <string name="switch_bar_on" msgid="1770868129120096114">"Қосулы"</string>
     <string name="switch_bar_off" msgid="5669805115416379556">"Өшірулі"</string>
     <string name="tile_unavailable" msgid="3095879009136616920">"Қолжетімді емес"</string>
-    <string name="accessibility_tile_disabled_by_policy_action_description" msgid="6958422730461646926">"толығырақ"</string>
+    <string name="accessibility_tile_disabled_by_policy_action_description" msgid="6958422730461646926">"Толық ақпарат"</string>
     <string name="nav_bar" msgid="4642708685386136807">"Шарлау тақтасы"</string>
     <string name="nav_bar_layout" msgid="4716392484772899544">"Формат"</string>
     <string name="left_nav_bar_button_type" msgid="2634852842345192790">"Қосымша сол жақ түйме түрі"</string>
@@ -903,7 +903,7 @@
     <string name="left_icon" msgid="5036278531966897006">"Сол жақ белгіше"</string>
     <string name="right_icon" msgid="1103955040645237425">"Оң жақ белгіше"</string>
     <string name="drag_to_add_tiles" msgid="8933270127508303672">"Қажетті элементтерді сүйреп әкеліп қойыңыз"</string>
-    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Элементтердің ретін өзгерту үшін оларды басып тұрып сүйреңіз"</string>
+    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Элементтердің ретін өзгерту үшін оларды басып тұрып сүйреңіз."</string>
     <string name="drag_to_remove_tiles" msgid="4682194717573850385">"Керексіздерін осы жерге сүйреңіз"</string>
     <string name="drag_to_remove_disabled" msgid="933046987838658850">"Кемінде <xliff:g id="MIN_NUM_TILES">%1$d</xliff:g> бөлшек қажет."</string>
     <string name="qs_edit" msgid="5583565172803472437">"Өзгерту"</string>
@@ -1179,7 +1179,7 @@
     <string name="media_output_dialog_volume_percentage" msgid="1613984910585111798">"<xliff:g id="PERCENTAGE">%1$d</xliff:g>%%"</string>
     <string name="media_output_group_title_speakers_and_displays" msgid="7169712332365659820">"Динамиктер мен дисплейлер"</string>
     <string name="media_output_group_title_suggested_device" msgid="4157186235837903826">"Ұсынылған құрылғылар"</string>
-    <string name="media_input_group_title" msgid="2057057473860783021">"Кіріс"</string>
+    <string name="media_input_group_title" msgid="2057057473860783021">"Енгізу"</string>
     <string name="media_output_group_title" msgid="6789001895863332576">"Шығыс"</string>
     <string name="media_output_end_session_dialog_summary" msgid="5954520685989877347">"Мультимедиа файлын басқа құрылғыға жылжыту үшін ортақ сеансты тоқтатыңыз."</string>
     <string name="media_output_end_session_dialog_stop" msgid="208189434474624412">"Тоқтату"</string>
@@ -1374,7 +1374,7 @@
     <string name="privacy_dialog_manage_permissions" msgid="2543451567190470413">"Пайдалану рұқсатын басқару"</string>
     <string name="privacy_dialog_active_call_usage" msgid="7858746847946397562">"Телефон қоңырауы үшін пайдаланылып жатыр"</string>
     <string name="privacy_dialog_recent_call_usage" msgid="1214810644978167344">"Соңғы рет телефон қоңырауы үшін пайдаланылды."</string>
-    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> қолданбасы пайдаланып жатыр"</string>
+    <string name="privacy_dialog_active_app_usage" msgid="631997836335929880">"<xliff:g id="APP_NAME">%1$s</xliff:g> қолданбасы пайдаланып жатыр."</string>
     <string name="privacy_dialog_recent_app_usage" msgid="4883417856848222450">"Соңғы рет <xliff:g id="APP_NAME">%1$s</xliff:g> қолданбасы пайдаланды."</string>
     <string name="privacy_dialog_active_app_usage_1" msgid="9047570143069220911">"<xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>) қолданбасы пайдаланып жатыр"</string>
     <string name="privacy_dialog_recent_app_usage_1" msgid="2551340497722370109">"Соңғы рет <xliff:g id="APP_NAME">%1$s</xliff:g> (<xliff:g id="ATTRIBUTION_LABEL">%2$s</xliff:g>) қолданбасы пайдаланды."</string>
@@ -1386,12 +1386,12 @@
     <string name="shortcut_helper_category_multitasking" msgid="7413381961404090136">"Мультитаскинг"</string>
     <string name="shortcutHelper_category_recent_apps" msgid="7918731953612377145">"Соңғы қолданбалар"</string>
     <string name="shortcutHelper_category_split_screen" msgid="1159669813444812244">"Экранды бөлу"</string>
-    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Кіріс"</string>
+    <string name="shortcut_helper_category_input" msgid="8674018654124839566">"Енгізу"</string>
     <string name="shortcut_helper_category_app_shortcuts" msgid="8010249408308587117">"Қолданба таңбашалары"</string>
     <string name="shortcut_helper_category_current_app_shortcuts" msgid="4017840565974573628">"Қолданыстағы қолданба"</string>
     <string name="shortcut_helper_category_a11y" msgid="6314444792641773464">"Арнайы мүмкіндіктер"</string>
     <string name="shortcut_helper_title" msgid="8567500639300970049">"Перне тіркесімдері"</string>
-    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Іздеу жылдам пәрмендері"</string>
+    <string name="shortcut_helper_search_placeholder" msgid="5488547526269871819">"Тіркесімдерді іздеу"</string>
     <string name="shortcut_helper_no_search_results" msgid="8554756497996692160">"Іздеу нәтижелері жоқ."</string>
     <string name="shortcut_helper_content_description_collapse_icon" msgid="8028015738431664954">"Жию белгішесі"</string>
     <string name="shortcut_helper_content_description_expand_icon" msgid="1084435697860417390">"Жаю белгішесі"</string>

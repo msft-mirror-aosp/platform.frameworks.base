@@ -20,7 +20,7 @@
     <string name="confirmation_title" msgid="2244241995958340998">"Autoriser l\'appli &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; à accéder à &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
     <string name="profile_name_watch" msgid="576290739483672360">"montre"</string>
     <string name="chooser_title_non_profile" msgid="6035023914517087400">"Choisir un appareil qui sera géré par &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;"</string>
-    <string name="chooser_title" msgid="2235819929238267637">"Choisir un appareil (<xliff:g id="PROFILE_NAME">%1$s</xliff:g>) pour le configurer"</string>
+    <string name="chooser_title" msgid="2235819929238267637">"Choisir votre <xliff:g id="PROFILE_NAME">%1$s</xliff:g> à configurer"</string>
     <string name="summary_watch" msgid="8134580124808507407">"Cette appli sera autorisée à synchroniser des informations, comme le nom de l\'appelant, et à accéder à ces autorisations sur votre <xliff:g id="DEVICE_TYPE">%1$s</xliff:g>"</string>
     <string name="confirmation_title_glasses" msgid="8288346850537727333">"Autoriser &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; à gérer &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
     <string name="profile_name_glasses" msgid="3506504967216601277">"appareil"</string>

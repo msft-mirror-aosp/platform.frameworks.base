@@ -37,7 +37,7 @@
     <string name="summary_nearby_device_streaming" msgid="962267343109051648">"У приложения \"<xliff:g id="APP_NAME_0">%1$s</xliff:g>\" будет доступ ко всему, что показывается или воспроизводится на вашем устройстве (<xliff:g id="DEVICE_TYPE">%2$s</xliff:g>), включая аудиофайлы, фотографии, платежные данные, пароли и сообщения.&lt;br/&gt;&lt;br/&gt;Приложение \"<xliff:g id="APP_NAME_1">%1$s</xliff:g>\" сможет транслировать приложения и системные функции на устройство \"<xliff:g id="DEVICE_NAME">%3$s</xliff:g>\", пока вы не отзовете разрешение."</string>
     <string name="helper_summary_nearby_device_streaming" msgid="8509848562931818793">"Приложение \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" от имени вашего устройства \"<xliff:g id="DEVICE_NAME">%2$s</xliff:g>\" запрашивает разрешение транслировать приложения и системные функции между устройствами."</string>
     <string name="profile_name_generic" msgid="6851028682723034988">"устройство"</string>
-    <string name="summary_generic" msgid="1761976003668044801">"Приложение сможет синхронизировать информацию между телефоном и выбранным устройством, например данные из журнала звонков."</string>
+    <string name="summary_generic" msgid="1761976003668044801">"Приложение сможет синхронизировать информацию между телефоном и выбранным устройством, например имя того, кто вам звонит."</string>
     <string name="consent_yes" msgid="8344487259618762872">"Разрешить"</string>
     <string name="consent_no" msgid="2640796915611404382">"Запретить"</string>
     <string name="consent_cancel" msgid="5655005528379285841">"Отмена"</string>
@@ -68,7 +68,7 @@
     <string name="permission_notifications_summary" msgid="2272810466047367030">"• Чтение всех уведомлений, в том числе сведений о контактах, сообщениях и фотографиях&lt;br/&gt;• Отправка уведомлений&lt;br/&gt;&lt;br/&gt;В разделе \"Настройки &gt; Уведомления\" вы можете в любое время разрешить или запретить этому приложению читать и отправлять уведомления."</string>
     <string name="permission_storage_summary" msgid="3918240895519506417"></string>
     <string name="permission_media_routing_control_summary" msgid="2714631092321412250">"Просмотр списка доступных устройств и управление тем, на котором будет транслироваться аудио и видео из других приложений"</string>
-    <string name="device_type" product="default" msgid="8268703872070046263">"телефоне"</string>
+    <string name="device_type" product="default" msgid="8268703872070046263">"телефон"</string>
     <string name="device_type" product="tablet" msgid="5038791954983067774">"планшете"</string>
     <string name="device_type" product="tv" msgid="5355611506659405636">"телевизор"</string>
     <string name="device_type" product="device" msgid="1526125965802507189">"другое устройство"</string>

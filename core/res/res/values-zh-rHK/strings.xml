@@ -732,7 +732,7 @@
     <skip />
     <string name="face_acquired_recalibrate_alt" msgid="5702674220280332115">"無法建立面部模型，請再試一次。"</string>
     <string name="face_acquired_dark_glasses_detected_alt" msgid="4052123776406041972">"偵測到深色眼鏡。你必須展示整個面孔。"</string>
-    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"偵測到面部遮蓋物。你必須展示整個面孔。"</string>
+    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"偵測到面部被遮住。你必須展示整個面孔。"</string>
   <string-array name="face_acquired_vendor">
   </string-array>
     <string name="face_error_hw_not_available" msgid="5085202213036026288">"無法驗證面孔，硬件無法使用。"</string>
@@ -1944,7 +1944,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">"、 "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> - <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"任何日曆"</string>
-    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g>正將某些音效設為靜音"</string>
+    <string name="muted_by" msgid="91464083490094950">"<xliff:g id="THIRD_PARTY">%1$s</xliff:g>目前將部分音效設為靜音"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"你裝置的系統發生問題，回復原廠設定後即可解決該問題。"</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"你裝置的系統發生問題，請聯絡你的製造商瞭解詳情。"</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD 要求已變更為一般通話"</string>

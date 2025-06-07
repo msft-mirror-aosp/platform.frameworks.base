@@ -113,7 +113,7 @@
     <string name="screenrecord_permission_dialog_option_text_single_app" msgid="1996450687814647583">"Grabar una app"</string>
     <string name="screenrecord_permission_dialog_option_text_entire_screen" msgid="2794896384693120020">"Grabar toda la pantalla"</string>
     <string name="screenrecord_permission_dialog_warning_entire_screen" msgid="1321758636709366068">"Cuando grabes toda la pantalla, se grabará todo lo que se muestre en ella. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
-    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Cuando grabes una app, se registrará todo lo que se muestre o reproduzca en ella. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
+    <string name="screenrecord_permission_dialog_warning_single_app" msgid="3738199712880063924">"Cuando grabes una app, se grabará todo lo que se muestre o reproduzca en ella. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
     <string name="screenrecord_permission_dialog_continue_entire_screen" msgid="5557974446773486600">"Grabar pantalla"</string>
     <string name="screenrecord_app_selector_title" msgid="3854492366333954736">"Elige una app para grabar"</string>
     <string name="screenrecord_audio_label" msgid="6183558856175159629">"Grabar audio"</string>
@@ -249,7 +249,7 @@
     <string name="accessibility_not_connected" msgid="4061305616351042142">"No conectado"</string>
     <string name="data_connection_roaming" msgid="375650836665414797">"Roaming"</string>
     <string name="cell_data_off" msgid="4886198950247099526">"Desactivados"</string>
-    <string name="accessibility_airplane_mode" msgid="1899529214045998505">"Modo de avión"</string>
+    <string name="accessibility_airplane_mode" msgid="1899529214045998505">"Modo avión."</string>
     <string name="accessibility_vpn_on" msgid="8037549696057288731">"VPN activada"</string>
     <string name="accessibility_battery_level" msgid="5143715405241138822">"Batería <xliff:g id="NUMBER">%d</xliff:g> por ciento"</string>
     <string name="accessibility_battery_level_with_estimate" msgid="6548654589315074529">"Batería: <xliff:g id="PERCENTAGE">%1$d</xliff:g> por ciento; <xliff:g id="TIME">%2$s</xliff:g>"</string>
@@ -340,8 +340,8 @@
     <string name="quick_settings_cast_detail_empty_text" msgid="2846282280014617785">"No hay dispositivos disponibles"</string>
     <string name="quick_settings_cast_no_network" msgid="3863016850468559522">"No hay conexión Ethernet ni Wi-Fi"</string>
     <string name="quick_settings_brightness_dialog_title" msgid="4980669966716685588">"Brillo"</string>
-    <string name="quick_settings_inversion_label" msgid="3501527749494755688">"Invertir colores"</string>
-    <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"Corregir colores"</string>
+    <string name="quick_settings_inversion_label" msgid="3501527749494755688">"Inversión de colores"</string>
+    <string name="quick_settings_color_correction_label" msgid="5636617913560474664">"Corrección de colores"</string>
     <string name="quick_settings_font_scaling_label" msgid="5289001009876936768">"Tamaño de fuente"</string>
     <string name="quick_settings_more_user_settings" msgid="7634653308485206306">"Administrar usuarios"</string>
     <string name="quick_settings_done" msgid="2163641301648855793">"Listo"</string>
@@ -438,11 +438,11 @@
     <string name="zen_modes_dialog_done" msgid="6654130880256438950">"Listo"</string>
     <string name="zen_modes_dialog_settings" msgid="2310248023728936697">"Configuración"</string>
     <string name="zen_mode_on" msgid="9085304934016242591">"Activado"</string>
-    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"Sí • <xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="zen_mode_on_with_details" msgid="7416143430557895497">"Activado • <xliff:g id="TRIGGER_DESCRIPTION">%1$s</xliff:g>"</string>
     <string name="zen_mode_off" msgid="1736604456618147306">"Desactivado"</string>
     <string name="zen_mode_set_up" msgid="7457957033034460064">"Configurar"</string>
     <string name="zen_mode_no_manual_invocation" msgid="1769975741344633672">"Administrar en configuración"</string>
-    <string name="zen_mode_active_modes" msgid="1625850411578488856">"{count,plural, =0{No hay modos activos}=1{{mode} está activo}many{# de modos están activos}other{# modos están activos}}"</string>
+    <string name="zen_mode_active_modes" msgid="1625850411578488856">"{count,plural, =0{No hay modos activos}=1{{mode} activo}many{# de modos activos}other{# modos activos}}"</string>
     <string name="zen_priority_introduction" msgid="3159291973383796646">"No te molestarán los sonidos ni las vibraciones, excepto las alarmas, los recordatorios, los eventos y las llamadas de los emisores que especifiques. Podrás escuchar el contenido que reproduzcas, como música, videos y juegos."</string>
     <string name="zen_alarms_introduction" msgid="3987266042682300470">"No te molestarán los sonidos ni las vibraciones, excepto las alarmas. Podrás escuchar el contenido que reproduzcas, como música, videos y juegos."</string>
     <string name="zen_priority_customize_button" msgid="4119213187257195047">"Personalizar"</string>
@@ -550,7 +550,7 @@
     <string name="media_projection_entry_cast_permission_dialog_option_text_single_app" msgid="6073353940838561981">"Transmitir una app"</string>
     <string name="media_projection_entry_cast_permission_dialog_option_text_entire_screen" msgid="8389508187954155307">"Transmitir pantalla entera"</string>
     <string name="media_projection_entry_cast_permission_dialog_warning_entire_screen" msgid="4040447861037324017">"Cuando transmitas la pantalla entera, todo lo que se muestre es visible. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
-    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Cuando transmitas una app, todo lo que se muestre o reproduzcas en ella será visible. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
+    <string name="media_projection_entry_cast_permission_dialog_warning_single_app" msgid="7487834861348460736">"Cuando transmitas una app, todo lo que se muestre o reproduzca en ella será visible. Por lo tanto, debes tener cuidado con contraseñas, detalles de pagos, mensajes, fotos, audios y videos."</string>
     <string name="media_projection_entry_cast_permission_dialog_continue_entire_screen" msgid="3261124185304676483">"Transmitir pantalla"</string>
     <string name="media_projection_entry_cast_app_selector_title" msgid="6323062146661922387">"Elige la app para transmitir"</string>
     <string name="media_projection_entry_generic_permission_dialog_title" msgid="4519802931547483628">"¿Quieres empezar a compartir?"</string>
@@ -668,7 +668,7 @@
     <string name="volume_ringer_status_vibrate" msgid="6970078708957857825">"Vibrar"</string>
     <string name="volume_ringer_status_silent" msgid="3691324657849880883">"Silenciar"</string>
     <string name="media_device_cast" msgid="4786241789687569892">"Transmisión"</string>
-    <string name="stream_notification_unavailable" msgid="4313854556205836435">"No disponible por timbre silenciado"</string>
+    <string name="stream_notification_unavailable" msgid="4313854556205836435">"No disponible porque el timbre está silenciado"</string>
     <string name="stream_alarm_unavailable" msgid="4059817189292197839">"No disponible si está activado No interrumpir"</string>
     <string name="stream_media_unavailable" msgid="6823020894438959853">"No disponible si está activado No interrumpir"</string>
     <string name="volume_stream_content_description_unmute" msgid="7729576371406792977">"%1$s. Presiona para dejar de silenciar."</string>
@@ -715,7 +715,7 @@
     <string name="qr_code_scanner_title" msgid="1938155688725760702">"Escáner de código QR"</string>
     <string name="qr_code_scanner_updating_secondary_label" msgid="8344598017007876352">"Actualizando"</string>
     <string name="status_bar_work" msgid="5238641949837091056">"Perfil de trabajo"</string>
-    <string name="status_bar_airplane" msgid="4848702508684541009">"Modo de avión"</string>
+    <string name="status_bar_airplane" msgid="4848702508684541009">"Modo avión"</string>
     <string name="zen_alarm_warning" msgid="7844303238486849503">"No oirás la próxima alarma a la(s) <xliff:g id="WHEN">%1$s</xliff:g>"</string>
     <string name="alarm_template" msgid="2234991538018805736">"a la(s) <xliff:g id="WHEN">%1$s</xliff:g>"</string>
     <string name="alarm_template_far" msgid="3561752195856839456">"el <xliff:g id="WHEN">%1$s</xliff:g>"</string>
@@ -754,9 +754,9 @@
     <string name="notification_channel_summary_automatic_promoted" msgid="1301710305149590426">"&lt;b&gt;Estado:&lt;/b&gt; Se clasificó en una posición superior"</string>
     <string name="notification_channel_summary_automatic_demoted" msgid="1831303964660807700">"&lt;b&gt;Estado:&lt;/b&gt; Se clasificó en una posición inferior"</string>
     <string name="notification_channel_summary_priority_baseline" msgid="46674690072551234">"Aparece como foto de perfil en la parte superior de las notificaciones de conversación, en la pantalla de bloqueo"</string>
-    <string name="notification_channel_summary_priority_bubble" msgid="1275413109619074576">"Aparece en forma de burbuja y como foto de perfil en la parte superior de las notificaciones de conversación, en la pantalla de bloqueo"</string>
+    <string name="notification_channel_summary_priority_bubble" msgid="1275413109619074576">"Aparece en la parte superior de las notificaciones de conversación y como foto de perfil en la pantalla de bloqueo, aparece en forma de burbuja"</string>
     <string name="notification_channel_summary_priority_dnd" msgid="6665395023264154361">"Aparece como foto de perfil en la parte superior de las notificaciones de conversación, en la pantalla de bloqueo, y detiene el modo No interrumpir"</string>
-    <string name="notification_channel_summary_priority_all" msgid="7151752959650048285">"Aparece en forma de burbuja y como foto de perfil en la parte superior de las notificaciones de conversación, en la pantalla de bloqueo, y detiene el modo No interrumpir"</string>
+    <string name="notification_channel_summary_priority_all" msgid="7151752959650048285">"Aparece en la parte superior de las notificaciones de conversación y como foto de perfil en la pantalla de bloqueo, aparece en forma de burbuja, ignora el modo No interrumpir"</string>
     <string name="notification_priority_title" msgid="2079708866333537093">"Prioritaria"</string>
     <string name="no_shortcut" msgid="8257177117568230126">"<xliff:g id="APP_NAME">%1$s</xliff:g> no admite funciones de conversación"</string>
     <string name="notification_unblockable_desc" msgid="2073030886006190804">"No se pueden modificar estas notificaciones."</string>
@@ -836,8 +836,8 @@
     <string name="group_system_go_back" msgid="2730322046244918816">"Atrás"</string>
     <string name="group_system_access_home_screen" msgid="4130366993484706483">"Ir a la pantalla principal"</string>
     <string name="group_system_overview_open_apps" msgid="5659958952937994104">"Ver apps recientes"</string>
-    <string name="group_system_cycle_forward" msgid="5478663965957647805">"Desplazar por las apps recientes (adelante)"</string>
-    <string name="group_system_cycle_back" msgid="8194102916946802902">"Desplazar por las apps recientes (atrás)"</string>
+    <string name="group_system_cycle_forward" msgid="5478663965957647805">"Desplazarse por las apps recientes (adelante)"</string>
+    <string name="group_system_cycle_back" msgid="8194102916946802902">"Desplazarse por las apps recientes (atrás)"</string>
     <string name="group_system_access_all_apps_search" msgid="1553588630154197469">"Abrir lista de apps"</string>
     <string name="group_system_access_system_settings" msgid="8731721963449070017">"Abrir configuración"</string>
     <string name="group_system_access_google_assistant" msgid="7210074957915968110">"Abrir Asistente"</string>
@@ -902,8 +902,8 @@
     <string name="right_keycode" msgid="2480715509844798438">"Clave de código derecho"</string>
     <string name="left_icon" msgid="5036278531966897006">"Ícono izquierdo"</string>
     <string name="right_icon" msgid="1103955040645237425">"Ícono derecho"</string>
-    <string name="drag_to_add_tiles" msgid="8933270127508303672">"Mantén presionada la tarjeta y arrástrala para agregarla"</string>
-    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Mantén presionada la tarjeta y arrástrala para reorganizarla"</string>
+    <string name="drag_to_add_tiles" msgid="8933270127508303672">"Mantén presionada una tarjeta y arrástrala para agregarla"</string>
+    <string name="drag_to_rearrange_tiles" msgid="2143204300089638620">"Mantén presionada una tarjeta y arrástrala para reubicarla"</string>
     <string name="drag_to_remove_tiles" msgid="4682194717573850385">"Arrastra aquí para quitar"</string>
     <string name="drag_to_remove_disabled" msgid="933046987838658850">"Necesitas al menos <xliff:g id="MIN_NUM_TILES">%1$d</xliff:g> tarjetas"</string>
     <string name="qs_edit" msgid="5583565172803472437">"Editar"</string>
@@ -984,7 +984,7 @@
     <string name="wifi_is_off" msgid="5389597396308001471">"Wi-Fi desactivado"</string>
     <string name="bt_is_off" msgid="7436344904889461591">"Bluetooth desactivado"</string>
     <string name="dnd_is_off" msgid="3185706903793094463">"No interrumpir desactivado"</string>
-    <string name="dnd_is_on" msgid="7009368176361546279">"No interrumpir está activado"</string>
+    <string name="dnd_is_on" msgid="7009368176361546279">"No interrumpir activado"</string>
     <string name="qs_dnd_prompt_auto_rule" msgid="3535469468310002616">"Se activó el modo No interrumpir con una regla automática (<xliff:g id="ID_1">%s</xliff:g>)."</string>
     <string name="qs_dnd_prompt_app" msgid="4027984447935396820">"Se activó el modo No interrumpir con una app (<xliff:g id="ID_1">%s</xliff:g>)."</string>
     <string name="qs_dnd_prompt_auto_rule_app" msgid="1841469944118486580">"Se activó el modo No interrumpir con una app o regla automática."</string>
@@ -1262,7 +1262,7 @@
     <string name="see_all_networks" msgid="3773666844913168122">"Ver todo"</string>
     <string name="to_switch_networks_disconnect_ethernet" msgid="6698111101156951955">"Para cambiar de red, desconéctate de Ethernet"</string>
     <string name="wifi_scan_notify_message" msgid="3753839537448621794">"Para mejorar la experiencia con el dispositivo, las apps y los servicios pueden seguir buscando redes Wi-Fi en cualquier momento, incluso cuando la conexión Wi-Fi esté desactivada. Puedes cambiar este parámetro en la configuración de búsqueda de Wi-Fi. "<annotation id="link">"Cambiar"</annotation></string>
-    <string name="turn_off_airplane_mode" msgid="8425587763226548579">"Desactivar el modo de avión"</string>
+    <string name="turn_off_airplane_mode" msgid="8425587763226548579">"Desactivar el modo avión"</string>
     <string name="qs_tile_request_dialog_text" msgid="3501359944139877694">"<xliff:g id="APPNAME">%1$s</xliff:g> quiere agregar la siguiente tarjeta a la Configuración rápida"</string>
     <string name="qs_tile_request_dialog_add" msgid="4888460910694986304">"Agregar tarjeta"</string>
     <string name="qs_tile_request_dialog_not_add" msgid="4168716573114067296">"No agregar tarjeta"</string>
@@ -1426,7 +1426,7 @@
     <string name="keyboard_backlight_dialog_title" msgid="8273102932345564724">"Retroiluminación del teclado"</string>
     <string name="keyboard_backlight_value" msgid="7336398765584393538">"Nivel %1$d de %2$d"</string>
     <string name="home_controls_dream_label" msgid="6567105701292324257">"Controles de la casa"</string>
-    <string name="home_controls_dream_description" msgid="4644150952104035789">"Usa rápidamente los controles de la casa como protector de pantalla"</string>
+    <string name="home_controls_dream_description" msgid="4644150952104035789">"Para usar rápidamente los controles de la casa"</string>
     <string name="volume_undo_action" msgid="5815519725211877114">"Deshacer"</string>
     <string name="back_edu_toast_content" msgid="4530314597378982956">"Para ir hacia atrás, desliza hacia la izquierda o la derecha con tres dedos en el panel táctil"</string>
     <string name="home_edu_toast_content" msgid="3381071147871955415">"Para ir a la pantalla principal, desliza hacia arriba con tres dedos en el panel táctil"</string>
@@ -1443,14 +1443,14 @@
     <string name="all_apps_edu_notification_title" msgid="372262997265569063">"Usa el teclado para ver todas las apps"</string>
     <string name="all_apps_edu_notification_content" msgid="3255070575694025585">"Presiona la tecla de acción en cualquier momento. Presiona para aprender más gestos."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"La atenuación extra ahora es parte del control deslizante de brillo"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Ahora puedes bajar el nivel del brillo de la pantalla para atenuarla aún más.\n\nComo esta función ahora es parte del control deslizante de brillo, se quitaron los accesos directos de atenuación extra."</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Ahora puedes bajar el nivel del brillo de la pantalla para atenuarla aún más.\n\nComo esta función ahora es parte del control deslizante de brillo, se quitaron los accesos directos a la atenuación extra."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Quitar accesos directos a la atenuación extra"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Se quitaron los accesos directos a la atenuación extra"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Conectividad"</string>
     <string name="qs_edit_mode_category_accessibility" msgid="7969091385071475922">"Accesibilidad"</string>
     <string name="qs_edit_mode_category_utilities" msgid="8123080090108420095">"Utilidades"</string>
     <string name="qs_edit_mode_category_privacy" msgid="6577774443194551775">"Privacidad"</string>
-    <string name="qs_edit_mode_category_providedByApps" msgid="8346112074897919019">"Proporcionado por apps"</string>
+    <string name="qs_edit_mode_category_providedByApps" msgid="8346112074897919019">"Proporcionadas por apps"</string>
     <string name="qs_edit_mode_category_display" msgid="4749511439121053942">"Pantalla"</string>
     <string name="qs_edit_mode_category_unknown" msgid="509314252124053550">"Desconocido"</string>
 </resources>

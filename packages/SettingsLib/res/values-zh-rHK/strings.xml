@@ -324,7 +324,7 @@
     <string name="private_dns_mode_provider_hostname_hint" msgid="6564868953748514595">"輸入 DNS 供應商主機名稱"</string>
     <string name="private_dns_mode_provider_failure" msgid="8356259467861515108">"無法連線"</string>
     <string name="wifi_display_certification_summary" msgid="8111151348106907513">"顯示無線螢幕分享認證的選項"</string>
-    <string name="wifi_verbose_logging_summary" msgid="4993823188807767892">"讓 Wi‑Fi 記錄功能升級，在 Wi‑Fi 選擇器中依每個 SSID RSSI 顯示 Wi‑Fi 詳細紀錄"</string>
+    <string name="wifi_verbose_logging_summary" msgid="4993823188807767892">"將 Wi‑Fi 記錄功能升級，在 Wi‑Fi 選擇器中按每個 SSID RSSI 顯示 Wi‑Fi 詳細紀錄"</string>
     <string name="wifi_scan_throttling_summary" msgid="2577105472017362814">"減低耗電量並改善網絡表現"</string>
     <string name="wifi_non_persistent_mac_randomization_summary" msgid="2159794543105053930">"啟用此模式後，每次連接至已啟用 MAC 隨機處理的網絡時，此裝置的 MAC 位址都可能會變更。"</string>
     <string name="wifi_metered_label" msgid="8737187690304098638">"按用量收費"</string>
@@ -360,13 +360,13 @@
     <string name="hdcp_checking_title" msgid="3155692785074095986">"HDCP 檢查"</string>
     <string name="hdcp_checking_dialog_title" msgid="7691060297616217781">"設定 HDCP 檢查行為"</string>
     <string name="debug_debugging_category" msgid="535341063709248842">"除錯"</string>
-    <string name="debug_app" msgid="8903350241392391766">"選取除錯應用程式"</string>
-    <string name="debug_app_not_set" msgid="1934083001283807188">"未設定除錯應用程式"</string>
+    <string name="debug_app" msgid="8903350241392391766">"選取偵錯應用程式"</string>
+    <string name="debug_app_not_set" msgid="1934083001283807188">"未設定偵錯應用程式"</string>
     <string name="debug_app_set" msgid="6599535090477753651">"正在為應用程式除錯：<xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="select_application" msgid="2543228890535466325">"選取應用程式"</string>
     <string name="no_application" msgid="9038334538870247690">"無"</string>
-    <string name="wait_for_debugger" msgid="7461199843335409809">"等待除錯程式"</string>
-    <string name="wait_for_debugger_summary" msgid="6846330006113363286">"執行已除錯的應用程式前等待附加除錯程式"</string>
+    <string name="wait_for_debugger" msgid="7461199843335409809">"等待偵錯程式"</string>
+    <string name="wait_for_debugger_summary" msgid="6846330006113363286">"執行已偵錯的應用程式前，先等待偵錯程式完成附加程序"</string>
     <string name="debug_input_category" msgid="7349460906970849771">"輸入"</string>
     <string name="debug_drawing_category" msgid="5066171112313666619">"繪圖"</string>
     <string name="debug_hw_drawing_category" msgid="5830815169336975162">"硬件加速轉譯"</string>
@@ -381,7 +381,7 @@
     <string name="show_key_presses" msgid="6360141722735900214">"顯示按鍵操作"</string>
     <string name="show_key_presses_summary" msgid="725387457373015024">"顯示實際按鍵操作的視覺回應"</string>
     <string name="touchpad_visualizer" msgid="3707916068870825115">"顯示觸控板輸入內容"</string>
-    <string name="touchpad_visualizer_summary" msgid="4056080018119847449">"重疊式畫面正在顯示觸控板輸入的資料和已辨識的手勢"</string>
+    <string name="touchpad_visualizer_summary" msgid="4056080018119847449">"在重疊式畫面上顯示觸控板輸入的資料和已辨識的手勢"</string>
     <string name="show_screen_updates" msgid="2078782895825535494">"顯示表層更新"</string>
     <string name="show_screen_updates_summary" msgid="2126932969682087406">"更新表層時閃動整個視窗表層"</string>
     <string name="show_hw_screen_updates" msgid="2021286231267747506">"顯示畫面更新"</string>
@@ -473,7 +473,7 @@
     <string name="daltonizer_mode_protanomaly" msgid="7805583306666608440">"紅色弱視 (紅綠)"</string>
     <string name="daltonizer_mode_tritanomaly" msgid="7135266249220732267">"藍色弱視 (藍黃)"</string>
     <string name="accessibility_display_daltonizer_preference_title" msgid="1810693571332381974">"色彩校正"</string>
-    <string name="accessibility_display_daltonizer_preference_subtitle" msgid="1522101114585266455">"「色彩校正」功能適用於以下情況：:&lt;br/&gt; &lt;ol&gt; &lt;li&gt;&amp;nbsp;你想讓裝置顯示更準確的色彩&lt;/li&gt; &lt;li&gt;&amp;nbsp;你想移除色彩以提高專注力&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_daltonizer_preference_subtitle" msgid="1522101114585266455">"「色彩校正」功能適用於以下情況：&lt;br/&gt; &lt;ol&gt; &lt;li&gt;&amp;nbsp;你想讓裝置顯示更準確的色彩&lt;/li&gt; &lt;li&gt;&amp;nbsp;你想移除色彩以提高專注力&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="daltonizer_type_overridden" msgid="4509604753672535721">"已由「<xliff:g id="TITLE">%1$s</xliff:g>」覆寫"</string>
     <string name="power_remaining_settings_home_page" msgid="4885165789445462557">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> - <xliff:g id="TIME_STRING">%2$s</xliff:g>"</string>
     <string name="power_charging_on_hold_settings_home_page" msgid="7690464049464805856">"<xliff:g id="LEVEL">%1$s</xliff:g> - 為保護電池，目前暫停充電"</string>
@@ -501,7 +501,7 @@
     <string name="power_charging_future_paused" msgid="1809543660923642799">"<xliff:g id="LEVEL">%1$s</xliff:g> ‑ 充電中"</string>
     <string name="power_fast_charging_duration_v2" msgid="3797735998640359490">"<xliff:g id="LEVEL">%1$s</xliff:g> - <xliff:g id="STATUS">%2$s</xliff:g> - 在 <xliff:g id="TIME">%3$s</xliff:g>前充滿電"</string>
     <string name="power_charging_duration_v2" msgid="2938998284074003248">"<xliff:g id="LEVEL">%1$s</xliff:g> • 在 <xliff:g id="TIME">%2$s</xliff:g>前充滿電"</string>
-    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"在 <xliff:g id="TIME">%1$s</xliff:g>前充滿電"</string>
+    <string name="power_remaining_charging_duration_only_v2" msgid="5358176435722950193">"在<xliff:g id="TIME">%1$s</xliff:g> 前充滿電"</string>
     <string name="power_remaining_fast_charging_duration_only_v2" msgid="6270950195810579563">"<xliff:g id="TIME">%1$s</xliff:g> 前充滿電"</string>
     <string name="battery_info_status_unknown" msgid="268625384868401114">"未知"</string>
     <string name="battery_info_status_charging" msgid="4279958015430387405">"充電中"</string>
@@ -580,7 +580,7 @@
     <string name="zen_mode_forever" msgid="3339224497605461291">"直至你關閉為止"</string>
     <string name="zen_mode_starred_contacts_empty_name" msgid="933552939706125937">"(沒有名稱)"</string>
     <string name="time_unit_just_now" msgid="3006134267292728099">"剛剛"</string>
-    <string name="media_transfer_this_device_name" msgid="2357329267148436433">"此手機"</string>
+    <string name="media_transfer_this_device_name" msgid="2357329267148436433">"這部手機"</string>
     <string name="media_transfer_this_device_name_tablet" msgid="2975593806278422086">"此平板電腦"</string>
     <string name="media_transfer_this_device_name_desktop" msgid="7912386128141470452">"此電腦 (內置)"</string>
     <!-- no translation found for media_transfer_this_device_name_tv (5285685336836896535) -->
@@ -632,7 +632,7 @@
     <string name="user_grant_admin_title" msgid="5157031020083343984">"要指定此使用者為管理員嗎？"</string>
     <string name="user_grant_admin_message" msgid="1673791931033486709">"管理員擁有其他使用者沒有的特殊權限。管理員可管理所有使用者、更新或重設此裝置、修改設定、查看所有已安裝的應用程式，以及對其他使用者授予或撤銷管理員權限。"</string>
     <string name="user_grant_admin_button" msgid="5441486731331725756">"指定為管理員"</string>
-    <string name="user_setup_dialog_title" msgid="8037342066381939995">"立即設定使用者？"</string>
+    <string name="user_setup_dialog_title" msgid="8037342066381939995">"要立即設定使用者嗎？"</string>
     <string name="user_setup_dialog_message" msgid="269931619868102841">"請確保對方現在可以在裝置上設定自己的空間"</string>
     <string name="user_setup_profile_dialog_message" msgid="4788197052296962620">"立即設定個人檔案？"</string>
     <string name="user_setup_button_setup_now" msgid="1708269547187760639">"立即設定"</string>

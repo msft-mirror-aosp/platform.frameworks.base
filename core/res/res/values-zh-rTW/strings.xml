@@ -640,12 +640,12 @@
     <string name="permdesc_imagesWrite" msgid="5195054463269193317">"允許應用程式修改你的相片收藏。"</string>
     <string name="permlab_mediaLocation" msgid="7368098373378598066">"讀取你的媒體收藏的位置資訊"</string>
     <string name="permdesc_mediaLocation" msgid="597912899423578138">"允許應用程式讀取你的媒體收藏的位置資訊。"</string>
-    <string name="biometric_app_setting_name" msgid="3339209978734534457">"使用生物特徵辨識功能"</string>
-    <string name="biometric_or_screen_lock_app_setting_name" msgid="5348462421758257752">"使用生物特徵辨識或螢幕鎖定功能"</string>
+    <string name="biometric_app_setting_name" msgid="3339209978734534457">"使用生物辨識功能"</string>
+    <string name="biometric_or_screen_lock_app_setting_name" msgid="5348462421758257752">"使用生物辨識或螢幕鎖定功能"</string>
     <string name="biometric_dialog_default_title" msgid="55026799173208210">"驗證你的身分"</string>
-    <string name="biometric_dialog_default_subtitle" msgid="8457232339298571992">"如要繼續操作，請使用生物特徵辨識功能驗證身分"</string>
-    <string name="biometric_or_screen_lock_dialog_default_subtitle" msgid="159539678371552009">"請使用生物特徵辨識或螢幕鎖定功能驗證身分，才能繼續操作"</string>
-    <string name="biometric_error_hw_unavailable" msgid="2494077380540615216">"無法使用生物特徵辨識硬體"</string>
+    <string name="biometric_dialog_default_subtitle" msgid="8457232339298571992">"如要繼續操作，請使用生物辨識功能驗證身分"</string>
+    <string name="biometric_or_screen_lock_dialog_default_subtitle" msgid="159539678371552009">"請使用生物辨識或螢幕鎖定功能驗證身分，才能繼續操作"</string>
+    <string name="biometric_error_hw_unavailable" msgid="2494077380540615216">"無法使用生物辨識硬體"</string>
     <string name="biometric_error_user_canceled" msgid="6732303949695293730">"已取消驗證"</string>
     <string name="biometric_not_recognized" msgid="5106687642694635888">"無法辨識"</string>
     <string name="biometric_face_not_recognized" msgid="5535599455744525200">"無法辨識臉孔"</string>
@@ -732,7 +732,7 @@
     <skip />
     <string name="face_acquired_recalibrate_alt" msgid="5702674220280332115">"無法建立臉部模型，請再試一次。"</string>
     <string name="face_acquired_dark_glasses_detected_alt" msgid="4052123776406041972">"偵測到墨鏡，請露出整張臉。"</string>
-    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"偵測到有物品遮住臉，請露出整張臉。"</string>
+    <string name="face_acquired_mouth_covering_detected_alt" msgid="1122294982850589766">"偵測到臉被遮住，請露出整張臉"</string>
   <string-array name="face_acquired_vendor">
   </string-array>
     <string name="face_error_hw_not_available" msgid="5085202213036026288">"相關硬體無法使用，因此無法驗證臉孔。"</string>
@@ -1944,7 +1944,7 @@
     <string name="zen_mode_trigger_summary_divider_text" msgid="7461583466043698862">"、 "</string>
     <string name="zen_mode_trigger_summary_range_symbol_combination" msgid="1804900738798069619">"<xliff:g id="START">%1$s</xliff:g> - <xliff:g id="END">%2$s</xliff:g>"</string>
     <string name="zen_mode_trigger_event_calendar_any" msgid="2086784607921121803">"任何日曆"</string>
-    <string name="muted_by" msgid="91464083490094950">"「<xliff:g id="THIRD_PARTY">%1$s</xliff:g>」正在關閉部分音效"</string>
+    <string name="muted_by" msgid="91464083490094950">"「<xliff:g id="THIRD_PARTY">%1$s</xliff:g>」關閉了部分音效"</string>
     <string name="system_error_wipe_data" msgid="5910572292172208493">"你的裝置發生內部問題，必須將裝置恢復原廠設定才能解除不穩定狀態。"</string>
     <string name="system_error_manufacturer" msgid="703545241070116315">"你的裝置發生內部問題，詳情請洽裝置製造商。"</string>
     <string name="stk_cc_ussd_to_dial" msgid="3139884150741157610">"USSD 要求已變更為一般通話"</string>
@@ -2153,7 +2153,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"確定"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"關閉"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"瞭解詳情"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"在 Android 12 中，加強型通知功能已取代 Android 自動調整通知。這項功能可以顯示建議的操作和回覆內容，也可以幫你整理通知訊息。\n\n加強型通知功能可存取通知內容，包括聯絡人名稱和訊息內文等個人資訊。此外，這項功能還能關閉或回覆通知，例如接聽來電及控管「零打擾」功能。"</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"在 Android 12 中，加強型通知功能已取代 Android 自動調整通知，會顯示建議的操作和回覆內容，也可以幫你整理通知訊息。\n\n加強型通知功能可存取通知內容，包括聯絡人名稱和訊息內文等個人資訊；此外，還能關閉或回覆通知，例如接聽來電及控管「零打擾」功能。"</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"日常安排模式資訊通知"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"已開啟省電模式"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"降低電池用量，以便延長電池續航力"</string>
