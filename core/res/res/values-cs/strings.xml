@@ -1687,7 +1687,7 @@
     <string name="kg_wrong_pattern" msgid="1342812634464179931">"Nesprávné gesto"</string>
     <string name="kg_wrong_password" msgid="2384677900494439426">"Nesprávné heslo"</string>
     <string name="kg_wrong_pin" msgid="3680925703673166482">"Nesprávný kód PIN"</string>
-    <string name="kg_pattern_instructions" msgid="8366024510502517748">"Nakreslete gesto"</string>
+    <string name="kg_pattern_instructions" msgid="8366024510502517748">"Zadejte gesto"</string>
     <string name="kg_sim_pin_instructions" msgid="6479401489471690359">"Zadejte kód PIN SIM karty"</string>
     <string name="kg_pin_instructions" msgid="7355933174673539021">"Zadejte kód PIN"</string>
     <string name="kg_password_instructions" msgid="7179782578809398050">"Zadejte heslo"</string>
