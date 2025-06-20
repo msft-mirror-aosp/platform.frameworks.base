@@ -279,7 +279,7 @@
     <string name="keywords_adb_wireless" msgid="6507505581882171240">"ADB, Debug, Dev"</string>
     <string name="bugreport_in_power" msgid="8664089072534638709">"Verknüpfung zu Fehlerbericht"</string>
     <string name="bugreport_in_power_summary" msgid="1885529649381831775">"Im Ein/Aus-Menü wird eine Option zum Erstellen eines Fehlerberichts angezeigt"</string>
-    <string name="keep_screen_on" msgid="1187161672348797558">"Bildschirm aktiv lassen"</string>
+    <string name="keep_screen_on" msgid="1187161672348797558">"Display aktiv lassen"</string>
     <string name="keep_screen_on_summary" msgid="1510731514101925829">"Display wird beim Laden nie in den Ruhezustand versetzt"</string>
     <string name="bt_hci_snoop_log" msgid="7291287955649081448">"Bluetooth HCI-Snoop-Protokoll aktivieren"</string>
     <string name="bt_hci_snoop_log_summary" msgid="6808538971394092284">"Bluetooth-Pakete erfassen. Nach der Änderung muss Bluetooth aus- und wieder eingeschaltet werden"</string>
