@@ -1263,9 +1263,13 @@ class TaskFragment extends WindowContainer<WindowContainer> {
                 continue;
             }
 
-            final int otherWindowingMode = other.getWindowingMode();
-            if (otherWindowingMode == WINDOWING_MODE_FULLSCREEN
-                    || (otherWindowingMode != WINDOWING_MODE_PINNED && other.matchParentBounds())) {
+            // Must fill the parent to affect visibility.
+            boolean affectsSiblingVisibility = other.fillsParentBounds();
+            // It also must have filling content itself, to prevent empty or only partially
+            // occluding containers from affecting visibility.
+            affectsSiblingVisibility &= other.hasFillingContent();
+            if (affectsSiblingVisibility) {
+                // This task fragment is fully covered by |other|.
                 if (isTranslucent(other, starting)) {
                     // Can be visible behind a translucent TaskFragment.
                     gotTranslucentFullscreen = true;
