@@ -104,6 +104,12 @@ public class ShellTaskOrganizer extends TaskOrganizer {
         default void onTaskAppeared(RunningTaskInfo taskInfo, SurfaceControl leash) {}
         default void onTaskInfoChanged(RunningTaskInfo taskInfo) {}
         default void onTaskVanished(RunningTaskInfo taskInfo) {}
+        /**
+         * Invoked when back is pressed on the base activity of the task. If the task is not
+         * organized, there will be no callback.
+         *
+         * @param taskInfo The RunningTaskInfo for the Task which received back event.
+         */
         default void onBackPressedOnTaskRoot(RunningTaskInfo taskInfo) {}
         /** Whether this task listener supports compat UI. */
         default boolean supportCompatUI() {
