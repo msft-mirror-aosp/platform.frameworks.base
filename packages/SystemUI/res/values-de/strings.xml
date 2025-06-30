@@ -1403,14 +1403,14 @@
     <string name="launch_touchpad_tutorial_notification_content" msgid="7931085031240753226">"Informationen zu Touchpad-Gesten"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_title" msgid="1940023776496198762">"Navigation mit Tastatur und Touchpad"</string>
     <string name="launch_keyboard_touchpad_tutorial_notification_content" msgid="1780725168171929365">"Informationen zu Touchpad-Gesten, Tastenkombinationen und mehr"</string>
-    <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"Touch-Geste „Zurück“"</string>
-    <string name="touchpad_tutorial_home_gesture_button" msgid="7640544867625955304">"Touch-Geste „Startbildschirm“"</string>
+    <string name="touchpad_tutorial_back_gesture_button" msgid="2746834288077265946">"Touchgeste „Zurück“"</string>
+    <string name="touchpad_tutorial_home_gesture_button" msgid="7640544867625955304">"Touchgeste „Startbildschirm“"</string>
     <string name="touchpad_tutorial_recent_apps_gesture_button" msgid="8919227647650347359">"Letzte Apps aufrufen"</string>
     <string name="touchpad_tutorial_done_button" msgid="176168488821755503">"Fertig"</string>
     <string name="touchpad_back_gesture_action_title" msgid="7199067250654332735">"Zurück"</string>
     <string name="touchpad_back_gesture_guidance" msgid="6263750214998421587">"Wenn du zurückgehen möchtest, wische an einer beliebigen Stelle des Touchpads mit drei Fingern nach links oder rechts.\n\nDu kannst stattdessen auch die Tastenkombination „Aktion“ + „ESC“ verwenden."</string>
     <string name="touchpad_back_gesture_success_title" msgid="7240576648330612171">"Gut gemacht!"</string>
-    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Du hast das Tutorial für die Touch-Geste „Zurück“ abgeschlossen."</string>
+    <string name="touchpad_back_gesture_success_body" msgid="2324724953720741719">"Du hast das Tutorial für die Touchgeste „Zurück“ abgeschlossen."</string>
     <string name="touchpad_home_gesture_action_title" msgid="8885107349719257882">"Startbildschirm"</string>
     <string name="touchpad_home_gesture_guidance" msgid="3043931356096731966">"Du kannst jederzeit zum Startbildschirm gehen, indem du mit drei Fingern vom unteren Displayrand nach oben wischst."</string>
     <string name="touchpad_home_gesture_success_title" msgid="3778407003948209795">"Sehr gut!"</string>
@@ -1418,7 +1418,7 @@
     <string name="touchpad_recent_apps_gesture_action_title" msgid="934906836867137906">"Letzte Apps aufrufen"</string>
     <string name="touchpad_recent_apps_gesture_guidance" msgid="6012057247259983871">"Wische mit 3 Fingern nach oben und halte das Touchpad gedrückt."</string>
     <string name="touchpad_recent_apps_gesture_success_title" msgid="8481920554139332593">"Gut gemacht!"</string>
-    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"Du hast das Tutorial für die Touch-Geste zum Aufrufen der zuletzt verwendeten Apps abgeschlossen."</string>
+    <string name="touchpad_recent_apps_gesture_success_body" msgid="4334263906697493273">"Du hast das Tutorial für die Touchgeste zum Aufrufen der zuletzt verwendeten Apps abgeschlossen."</string>
     <string name="tutorial_action_key_title" msgid="2659466586996495447">"Aktionstaste"</string>
     <string name="tutorial_action_key_guidance" msgid="5718948664616999196">"Wenn du auf deine Apps zugreifen möchtest, drücke auf der Tastatur die Aktionstaste."</string>
     <string name="tutorial_action_key_success_title" msgid="466467860120112933">"Glückwunsch!"</string>

@@ -778,7 +778,7 @@
     <string name="notification_conversation_unbubble" msgid="6908427185031099868">"Rimuovi bolle"</string>
     <string name="notification_menu_accessibility" msgid="8984166825879886773">"<xliff:g id="APP_NAME">%1$s</xliff:g> <xliff:g id="MENU_DESCRIPTION">%2$s</xliff:g>"</string>
     <string name="notification_menu_gear_description" msgid="6429668976593634862">"gestione delle notifiche"</string>
-    <string name="notification_menu_snooze_description" msgid="4740133348901973244">"opzioni di posticipazione notifiche"</string>
+    <string name="notification_menu_snooze_description" msgid="4740133348901973244">"opzioni di posticipo notifiche"</string>
     <string name="notification_menu_snooze_action" msgid="5415729610393475019">"Ricordamelo"</string>
     <string name="snooze_undo" msgid="2738844148845992103">"Annulla"</string>
     <string name="snooze_undo_content_description" msgid="2711656788917580801">"Annulla ripetizione notifica"</string>
