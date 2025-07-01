@@ -277,7 +277,7 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
     /** Helper for {@link Task#fillTaskInfo}. */
     final TaskInfoHelper mTaskInfoHelper = new TaskInfoHelper();
 
-    final OpaqueActivityHelper mOpaqueActivityHelper = new OpaqueActivityHelper();
+    final OpaqueContainerHelper mOpaqueContainerHelper = new OpaqueContainerHelper();
 
     private final ActivityTaskSupervisorHandler mHandler;
     final Looper mLooper;
@@ -2887,42 +2887,78 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
         }
     }
 
-    /** The helper to get the top opaque activity of a container. */
-    static class OpaqueActivityHelper implements Predicate<ActivityRecord> {
+    /** The helper to calculate whether a container is opaque. */
+    static class OpaqueContainerHelper implements Predicate<ActivityRecord> {
         private ActivityRecord mStarting;
-        private boolean mIncludeInvisibleAndFinishing;
+        private boolean mIgnoringInvisibleActivity;
         private boolean mIgnoringKeyguard;
 
-        ActivityRecord getOpaqueActivity(
-                @NonNull WindowContainer<?> container, boolean ignoringKeyguard) {
-            mIncludeInvisibleAndFinishing = true;
-            mIgnoringKeyguard = ignoringKeyguard;
-            return container.getActivity(this,
-                    true /* traverseTopToBottom */, null /* boundary */);
+        /** Whether the container is opaque. */
+        boolean isOpaque(@NonNull WindowContainer<?> container) {
+            return isOpaque(container, null /* starting */, true /* ignoringKeyguard */,
+                    false /* ignoringInvisibleActivity */);
         }
 
-        ActivityRecord getVisibleOpaqueActivity(
+        /**
+         * Whether the container is opaque, but only including visible activities in its
+         * calculation.
+         */
+        boolean isOpaque(
                 @NonNull WindowContainer<?> container, @Nullable ActivityRecord starting,
-                boolean ignoringKeyguard) {
+                boolean ignoringKeyguard,  boolean ignoringInvisibleActivity) {
             mStarting = starting;
-            mIncludeInvisibleAndFinishing = false;
+            mIgnoringInvisibleActivity = ignoringInvisibleActivity;
             mIgnoringKeyguard = ignoringKeyguard;
-            final ActivityRecord opaque = container.getActivity(this,
-                    true /* traverseTopToBottom */, null /* boundary */);
+
+            final boolean isOpaque;
+            isOpaque = isOpaqueInner(container);
             mStarting = null;
-            return opaque;
+            return isOpaque;
+        }
+
+        private boolean isOpaqueInner(@NonNull WindowContainer<?> container) {
+            // If it's a leaf task fragment, then opacity is calculated based on its activities.
+            if (container.asTaskFragment() != null
+                    && ((TaskFragment) container).isLeafTaskFragment()) {
+                return container.getActivity(this,
+                        true /* traverseTopToBottom */, null /* boundary */) != null;
+            }
+            // When not a leaf, it's considered opaque if any of its opaque children fill this
+            // container, unless the children are adjacent fragments, in which case as long as they
+            // are all opaque then |container| is also considered opaque, even if the adjacent
+            // task fragment aren't filling.
+            for (int i = 0; i < container.getChildCount(); i++) {
+                final WindowContainer<?> child = container.getChildAt(i);
+                if (child.fillsParent() && isOpaque(child)) {
+                    return true;
+                }
+
+                if (child.asTaskFragment() != null
+                        && child.asTaskFragment().getAdjacentTaskFragment() != null) {
+                    final boolean isAnyTranslucent;
+                    final TaskFragment adjacent = child.asTaskFragment()
+                            .getAdjacentTaskFragment();
+                    isAnyTranslucent = !isOpaque(child) || !isOpaque(adjacent);
+                    if (!isAnyTranslucent) {
+                        // This task fragment and all its adjacent task fragments are opaque,
+                        // consider it opaque even if it doesn't fill its parent.
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         @Override
         public boolean test(ActivityRecord r) {
-            if (!mIncludeInvisibleAndFinishing && r != mStarting
+            if (mIgnoringInvisibleActivity && r != mStarting
                     && ((mIgnoringKeyguard && !r.visibleIgnoringKeyguard)
                     || (!mIgnoringKeyguard && !r.isVisible()))) {
                 // Ignore invisible activities that are not the currently starting activity
                 // (about to be visible).
                 return false;
             }
-            return r.occludesParent(mIncludeInvisibleAndFinishing /* includingFinishing */);
+            return r.occludesParent(!mIgnoringInvisibleActivity /* includingFinishing */);
         }
     }
 
