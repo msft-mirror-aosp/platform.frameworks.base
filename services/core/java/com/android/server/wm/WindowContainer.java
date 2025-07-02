@@ -1794,6 +1794,51 @@ class WindowContainer<E extends WindowContainer> extends ConfigurationContainer<
         return false;
     }
 
+    /**
+     * Returns true if this container fills its parent by policy or bounds.
+     *
+     * Note: this does not necessarily mean the container "occludes" its siblings or affects their
+     * lifecycle. A container may fill its parent but have no content in it, so it would be
+     * equivalent to not existing.
+     *
+     * TODO(b/409417223): Consolidate with {@link #matchParentBounds}.
+     */
+    boolean fillsParentBounds() {
+        final int windowingMode = getWindowingMode();
+        return windowingMode == WINDOWING_MODE_FULLSCREEN
+                || (windowingMode != WINDOWING_MODE_PINNED && matchParentBounds());
+    }
+
+    /**
+     * Returns true if this container or its children have content that fills it.
+     *
+     * Note: a container that fills its parent may not occlude its siblings, such as when it is
+     * translucent.
+     */
+    boolean hasFillingContent() {
+        final int childCount = getChildCount();
+        if (childCount == 0) {
+            return false;
+        }
+        for (int i = 0; i < childCount; i++) {
+            final WindowContainer<?> child = getChildAt(i);
+            if (child.fillsParentBounds() && child.hasFillingContent()) {
+                // At least one child fills this container and has content filling itself.
+                return true;
+            }
+            if (child.asTaskFragment() != null
+                    && child.asTaskFragment().getAdjacentTaskFragment() != null
+                    && child.hasFillingContent()
+                    && child.asTaskFragment().getAdjacentTaskFragment().hasFillingContent()) {
+                // There's a child adjacent task fragment. Consider the parent filling as long as
+                // the adjacent task fragment has filling content. Whether or not they fill the
+                // parent in union is not important.
+                return true;
+            }
+        }
+        return false;
+    }
+
     /** Computes LONG, SIZE and COMPAT parts of {@link Configuration#screenLayout}. */
     static int computeScreenLayout(int sourceScreenLayout, int screenWidthDp,
             int screenHeightDp) {
