@@ -207,7 +207,7 @@ class AppCompatSizeCompatModePolicy {
                 : aspectRatioPolicy.isLetterboxedForFixedOrientationAndAspectRatio();
         final Rect containerBounds = useResolvedBounds
                 ? new Rect(resolvedBounds)
-                : newParentConfiguration.windowConfiguration.getBounds();
+                : mActivityRecord.mResolveConfigHint.mParentBoundsOverride;
         final Rect containerAppBounds = useResolvedBounds
                 ? new Rect(resolvedConfig.windowConfiguration.getAppBounds())
                 : mActivityRecord.mResolveConfigHint.mParentAppBoundsOverride;
