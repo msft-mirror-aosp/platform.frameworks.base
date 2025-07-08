@@ -110,6 +110,7 @@ public class CompatUIWindowManagerTest extends ShellTestCase {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         doReturn(100).when(mCompatUIConfiguration).getHideSizeCompatRestartButtonTolerance();
+        doReturn(true).when(mCompatUIConfiguration).isRestartButtonConfigEnabled();
         mTaskInfo = createTaskInfo(/* hasSizeCompat= */ false);
 
         final DisplayInfo displayInfo = new DisplayInfo();
@@ -441,6 +442,46 @@ public class CompatUIWindowManagerTest extends ShellTestCase {
         taskInfo.appCompatTaskInfo.topActivityLetterboxWidth = 950;
         taskInfo.appCompatTaskInfo.topActivityLetterboxHeight = 1900;
         assertTrue(mWindowManager.shouldShowSizeCompatRestartButton(taskInfo));
+    }
+
+    @Test
+    @RequiresFlagsDisabled(FLAG_APP_COMPAT_UI_FRAMEWORK)
+    public void testRestartButtonDisabledShouldNotShowSizeCompatRestartButton() {
+        mSetFlagsRule.enableFlags(Flags.FLAG_ALLOW_HIDE_SCM_BUTTON);
+        doReturn(85).when(mCompatUIConfiguration).getHideSizeCompatRestartButtonTolerance();
+        doReturn(false).when(mCompatUIConfiguration).isRestartButtonConfigEnabled();
+        mWindowManager = new CompatUIWindowManager(mContext, mTaskInfo, mSyncTransactionQueue,
+                mCallback, mTaskListener, mDisplayLayout, new CompatUIHintsState(),
+                mCompatUIConfiguration, mOnRestartButtonClicked);
+
+        // Simulate rotation of activity in square display
+        TaskInfo taskInfo = createTaskInfo(true);
+        taskInfo.appCompatTaskInfo.topActivityLetterboxHeight = TASK_HEIGHT;
+        taskInfo.appCompatTaskInfo.topActivityLetterboxWidth = 1850;
+
+        assertFalse(mWindowManager.shouldShowSizeCompatRestartButton(taskInfo));
+
+        // Simulate exiting split screen/folding
+        taskInfo.appCompatTaskInfo.topActivityLetterboxWidth = 1000;
+        assertFalse(mWindowManager.shouldShowSizeCompatRestartButton(taskInfo));
+
+        // Simulate folding
+        final InsetsState insetsState = new InsetsState();
+        insetsState.setDisplayFrame(new Rect(0, 0, 1000, TASK_HEIGHT));
+        final InsetsSource insetsSource = new InsetsSource(
+                InsetsSource.createId(null, 0, navigationBars()), navigationBars());
+        insetsSource.setFrame(0, TASK_HEIGHT - 200, 1000, TASK_HEIGHT);
+        insetsState.addSource(insetsSource);
+        mDisplayLayout.setInsets(mContext.getResources(), insetsState);
+        mWindowManager.updateDisplayLayout(mDisplayLayout);
+        taskInfo.configuration.smallestScreenWidthDp = LARGE_SCREEN_SMALLEST_SCREEN_WIDTH_DP - 100;
+        assertFalse(mWindowManager.shouldShowSizeCompatRestartButton(taskInfo));
+
+        // Simulate floating app with 90& area, more than tolerance
+        taskInfo.configuration.smallestScreenWidthDp = LARGE_SCREEN_SMALLEST_SCREEN_WIDTH_DP;
+        taskInfo.appCompatTaskInfo.topActivityLetterboxWidth = 950;
+        taskInfo.appCompatTaskInfo.topActivityLetterboxHeight = 1900;
+        assertFalse(mWindowManager.shouldShowSizeCompatRestartButton(taskInfo));
     }
 
     private static TaskInfo createTaskInfo(boolean hasSizeCompat) {
