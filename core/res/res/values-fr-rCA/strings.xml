@@ -1145,7 +1145,7 @@
     <string name="weeks" msgid="3516247214269821391">"semaines"</string>
     <string name="year" msgid="5182610307741238982">"an"</string>
     <string name="years" msgid="5797714729103773425">"ans"</string>
-    <string name="now_string_shortest" msgid="3684914126941650330">"maintenant"</string>
+    <string name="now_string_shortest" msgid="3684914126941650330">"Maintenant"</string>
     <string name="duration_minutes_shortest" msgid="5744379079540806690">"<xliff:g id="COUNT">%d</xliff:g> m"</string>
     <string name="duration_hours_shortest" msgid="1477752094141971675">"<xliff:g id="COUNT">%d</xliff:g> h"</string>
     <string name="duration_days_shortest" msgid="4083124701676227233">"<xliff:g id="COUNT">%d</xliff:g> j"</string>
