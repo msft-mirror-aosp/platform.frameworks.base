@@ -819,8 +819,8 @@
     <string name="permdesc_bindCarrierMessagingService" msgid="6316457028173478345">"Permite que o proprietário use a interface de nível superior de um serviço de mensagens de operadora. Não deve ser necessária para apps comuns."</string>
     <string name="permlab_bindCarrierServices" msgid="2395596978626237474">"vincular a serviços da operadora"</string>
     <string name="permdesc_bindCarrierServices" msgid="9185614481967262900">"Permite que o proprietário use serviços da operadora. Não deve ser necessário para apps comuns."</string>
-    <string name="permlab_access_notification_policy" msgid="5524112842876975537">"acessar \"Não perturbe\""</string>
-    <string name="permdesc_access_notification_policy" msgid="8538374112403845013">"Permitir que o app leia e grave a configuração \"Não perturbe\"."</string>
+    <string name="permlab_access_notification_policy" msgid="5524112842876975537">"acessar não perturbe"</string>
+    <string name="permdesc_access_notification_policy" msgid="8538374112403845013">"Permitir que o app leia e grave a configuração não perturbe."</string>
     <string name="permlab_startViewPermissionUsage" msgid="1504564328641112341">"começar a usar a permissão para ver"</string>
     <string name="permdesc_startViewPermissionUsage" msgid="2820325605959586538">"Permite que o sistema inicie o uso de permissão para um app. Não deve ser necessário para apps comuns."</string>
     <string name="permlab_startReviewPermissionDecisions" msgid="8690578688476599284">"decisões de permissão da visualização inicial"</string>
@@ -1930,7 +1930,7 @@
     <string name="zen_mode_until" msgid="2250286190237669079">"Até <xliff:g id="FORMATTEDTIME">%1$s</xliff:g>"</string>
     <string name="zen_mode_alarm" msgid="7046911727540499275">"Até <xliff:g id="FORMATTEDTIME">%1$s</xliff:g> (próximo alarme)"</string>
     <string name="zen_mode_forever" msgid="740585666364912448">"Até você desativar"</string>
-    <string name="zen_mode_forever_dnd" msgid="3423201955704180067">"Até que você desative \"Não perturbe\""</string>
+    <string name="zen_mode_forever_dnd" msgid="3423201955704180067">"Até que você desative não perturbe"</string>
     <string name="zen_mode_rule_name_combination" msgid="7174598364351313725">"<xliff:g id="FIRST">%1$s</xliff:g> / <xliff:g id="REST">%2$s</xliff:g>"</string>
     <string name="toolbar_collapse_description" msgid="8009920446193610996">"Recolher"</string>
     <string name="zen_mode_feature_name" msgid="3785547207263754500">"Não perturbe"</string>
@@ -2131,9 +2131,9 @@
     <string name="volume_dialog_ringer_guidance_silent" msgid="1011246774949993783">"Chamadas e notificações ficarão silenciadas"</string>
     <string name="notification_channel_system_changes" msgid="2462010596920209678">"Alterações do sistema"</string>
     <string name="notification_channel_do_not_disturb" msgid="7832584281883687653">"Não perturbe"</string>
-    <string name="zen_upgrade_notification_visd_title" msgid="2001148984371968620">"Novo: o modo Não perturbe está ocultando as notificações"</string>
+    <string name="zen_upgrade_notification_visd_title" msgid="2001148984371968620">"Novo: o modo não perturbe está ocultando as notificações"</string>
     <string name="zen_upgrade_notification_visd_content" msgid="3683314609114134946">"Toque para saber mais e fazer alterações."</string>
-    <string name="zen_upgrade_notification_title" msgid="8198167698095298717">"O modo \"Não perturbe\" foi alterado"</string>
+    <string name="zen_upgrade_notification_title" msgid="8198167698095298717">"O modo não perturbe foi alterado"</string>
     <string name="zen_upgrade_notification_content" msgid="5228458567180124005">"Toque para verificar o que está bloqueado."</string>
     <string name="review_notification_settings_title" msgid="5102557424459810820">"Revise as configurações de notificação"</string>
     <string name="review_notification_settings_text" msgid="5916244866751849279">"No Android 13 ou em versões mais recentes, os apps que você instala precisam de permissão para enviar notificações. Toque para mudar essa permissão para os apps já instalados."</string>
@@ -2154,7 +2154,7 @@
     <string name="nas_upgrade_notification_enable_action" msgid="3046406808378726874">"OK"</string>
     <string name="nas_upgrade_notification_disable_action" msgid="3794833210043497982">"Desativar"</string>
     <string name="nas_upgrade_notification_learn_more_action" msgid="7011130656195423947">"Saiba mais"</string>
-    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"No Android 12, as notificações avançadas substituíram as notificações adaptativas. Esse recurso mostra ações e respostas sugeridas, além de organizar suas notificações.\n\nAs notificações avançadas podem acessar o conteúdo das notificações, incluindo informações pessoais como nomes de contatos e mensagens. Elas também podem dispensar ou responder às notificações, como atender ligações telefônicas e controlar o Não perturbe."</string>
+    <string name="nas_upgrade_notification_learn_more_content" msgid="3735480566983530650">"No Android 12, as notificações avançadas substituíram as notificações adaptativas. Esse recurso mostra ações e respostas sugeridas, além de organizar suas notificações.\n\nAs notificações avançadas podem acessar o conteúdo das notificações, incluindo informações pessoais como nomes de contatos e mensagens. Elas também podem dispensar ou responder às notificações, como atender ligações telefônicas e controlar o não perturbe."</string>
     <string name="dynamic_mode_notification_channel_name" msgid="2986926422100223328">"Notificação de informação do modo rotina"</string>
     <string name="dynamic_mode_notification_title" msgid="1388718452788985481">"Economia de bateria ativada"</string>
     <string name="dynamic_mode_notification_summary" msgid="1639031262484979689">"Reduzindo o uso da bateria para prolongar a duração dela"</string>
