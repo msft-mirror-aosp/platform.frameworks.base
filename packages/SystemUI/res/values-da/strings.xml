@@ -168,7 +168,7 @@
     <string name="accessibility_home" msgid="5430449841237966217">"Hjem"</string>
     <string name="accessibility_menu" msgid="2701163794470513040">"Menu"</string>
     <string name="accessibility_accessibility_button" msgid="4089042473497107709">"Hjælpefunktioner"</string>
-    <string name="accessibility_rotate_button" msgid="1238584767612362586">"Roter skærmen"</string>
+    <string name="accessibility_rotate_button" msgid="1238584767612362586">"Rotér skærmen"</string>
     <string name="accessibility_recent" msgid="901641734769533575">"Oversigt"</string>
     <string name="accessibility_camera_button" msgid="2938898391716647247">"Kamera"</string>
     <string name="accessibility_phone_button" msgid="4256353121703100427">"Telefon"</string>
@@ -1309,7 +1309,7 @@
     <string name="bt_le_audio_broadcast_dialog_switch_app" msgid="6098768269397105733">"Send <xliff:g id="SWITCHAPP">%1$s</xliff:g>"</string>
     <string name="bt_le_audio_broadcast_dialog_different_output" msgid="7885102097302562674">"Skift output"</string>
     <string name="bt_le_audio_broadcast_dialog_unknown_name" msgid="3791472237793443044">"Ukendt"</string>
-    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"tt.mm"</string>
+    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"h.mm"</string>
     <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"kk.mm"</string>
     <string name="log_access_confirmation_title" msgid="4843557604739943395">"Vil du give <xliff:g id="LOG_ACCESS_APP_NAME">%s</xliff:g> adgang til alle enhedslogs?"</string>
     <string name="log_access_confirmation_allow" msgid="752147861593202968">"Tillad engangsadgang"</string>
