@@ -1309,8 +1309,8 @@
     <string name="bt_le_audio_broadcast_dialog_switch_app" msgid="6098768269397105733">"<xliff:g id="SWITCHAPP">%1$s</xliff:g> tətbiqini yayımlayın"</string>
     <string name="bt_le_audio_broadcast_dialog_different_output" msgid="7885102097302562674">"Nəticəni dəyişdirin"</string>
     <string name="bt_le_audio_broadcast_dialog_unknown_name" msgid="3791472237793443044">"Naməlum"</string>
-    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"s:dd"</string>
-    <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"ss:dd"</string>
+    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"h:mm"</string>
+    <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"kk:mm"</string>
     <string name="log_access_confirmation_title" msgid="4843557604739943395">"<xliff:g id="LOG_ACCESS_APP_NAME">%s</xliff:g> tətbiqinin bütün cihaz qeydlərinə girişinə icazə verilsin?"</string>
     <string name="log_access_confirmation_allow" msgid="752147861593202968">"Birdəfəlik girişə icazə verin"</string>
     <string name="log_access_confirmation_deny" msgid="2389461495803585795">"İcazə verməyin"</string>
