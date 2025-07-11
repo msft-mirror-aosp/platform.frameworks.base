@@ -15,20 +15,45 @@
  */
 
 #include <fcntl.h>
+#ifdef __ANDROID__
 #include <sys/mman.h>
+#else
+#include <android-base/mapped_file.h>
+#endif
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
 
 #include <algorithm>
+#include <string>
 
 #include <core_jni_helpers.h>
 #include <minikin/Hyphenator.h>
 
 namespace android {
 
+static std::string hyphenDataDir = "";
+
+// returns result from java.lang.System.getProperty
+static std::string getJavaProperty(JNIEnv* env, const char* property_name,
+                                   const char* defaultValue = "") {
+    jclass system = FindClassOrDie(env, "java/lang/System");
+    jmethodID getPropertyMethod =
+            GetStaticMethodIDOrDie(env, system, "getProperty",
+                                   "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+    auto jString = (jstring)env->CallStaticObjectMethod(system, getPropertyMethod,
+                                                        env->NewStringUTF(property_name),
+                                                        env->NewStringUTF(defaultValue));
+    ScopedUtfChars chars(env, jString);
+    return std::string(chars.c_str());
+}
+
 static std::string buildFileName(const std::string& locale) {
+#ifdef __ANDROID__
     constexpr char SYSTEM_HYPHENATOR_PREFIX[] = "/system/usr/hyphen-data/hyph-";
+#else
+    std::string SYSTEM_HYPHENATOR_PREFIX = hyphenDataDir + "/hyph-";
+#endif
     constexpr char SYSTEM_HYPHENATOR_SUFFIX[] = ".hyb";
     std::string lowerLocale;
     lowerLocale.reserve(locale.size());
@@ -49,12 +74,23 @@ static const uint8_t* mmapPatternFile(const std::string& locale) {
         return nullptr;
     }
 
+#ifdef __ANDROID__
     void* ptr = mmap(nullptr, st.st_size, PROT_READ, MAP_SHARED, fd, 0 /* offset */);
     close(fd);
     if (ptr == MAP_FAILED) {
         return nullptr;
     }
     return reinterpret_cast<const uint8_t*>(ptr);
+#else
+    std::unique_ptr<base::MappedFile> patternFile =
+            base::MappedFile::FromFd(fd, 0, st.st_size, PROT_READ);
+    close(fd);
+    if (patternFile == nullptr) {
+        return nullptr;
+    }
+    auto* mappedPtr = new base::MappedFile(std::move(*patternFile));
+    return reinterpret_cast<const uint8_t*>(mappedPtr->data());
+#endif
 }
 
 static void addHyphenatorWithoutPatternFile(const std::string& locale, int minPrefix,
@@ -77,7 +113,11 @@ static void addHyphenatorAlias(const std::string& from, const std::string& to) {
     minikin::addHyphenatorAlias(from, to);
 }
 
-static void init() {
+static void init(JNIEnv* env) {
+    hyphenDataDir = getJavaProperty(env, "hyphen.data.dir", "");
+    if (hyphenDataDir.empty()) {
+        jniThrowRuntimeException(env, "The system property hyphen.data.dir is not set");
+    }
     // TODO: Confirm that these are the best values. Various sources suggest (1, 1), but that
     // appears too small.
     constexpr int INDIC_MIN_PREFIX = 2;
