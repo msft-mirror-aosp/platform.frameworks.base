@@ -265,7 +265,7 @@ public final class AssociationDiskStore {
     }
 
     @NonNull
-    public static Associations readAssociationsFromInputStream(@UserIdInt int userId,
+    private static Associations readAssociationsFromInputStream(@UserIdInt int userId,
             @NonNull InputStream in, @NonNull String rootTag)
             throws XmlPullParserException, IOException {
         final TypedXmlPullParser parser = Xml.resolvePullParser(in);
@@ -281,15 +281,10 @@ public final class AssociationDiskStore {
             case 1:
                 while (true) {
                     parser.nextTag();
-                    if (isEndOfTag(parser, rootTag)) {
-                        break;
-                    }
                     if (isStartOfTag(parser, XML_TAG_ASSOCIATIONS)) {
                         associations = readAssociationsV1(parser, userId);
-                    } else {
-                        Slog.e(TAG, "Unexpected tag " + parser.getName()
-                                + " inside <" + rootTag + "> for user " + userId);
-                        XmlUtils.skipCurrentTag(parser);
+                    } else if (isEndOfTag(parser, rootTag)) {
+                        break;
                     }
                 }
                 break;
@@ -304,7 +299,7 @@ public final class AssociationDiskStore {
         writeToFileSafely(file, out -> {
             final TypedXmlSerializer serializer = Xml.resolveSerializer(out);
             serializer.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true);
-            serializer.startDocument("UTF-8", true);
+            serializer.startDocument(null, true);
             serializer.startTag(null, XML_TAG_STATE);
             writeIntAttribute(serializer,
                     XML_ATTR_PERSISTENCE_VERSION, CURRENT_PERSISTENCE_VERSION);
@@ -414,18 +409,13 @@ public final class AssociationDiskStore {
 
         while (true) {
             parser.nextTag();
-            if (isEndOfTag(parser, XML_TAG_ASSOCIATIONS)) {
-                break;
-            }
-            if (isStartOfTag(parser, XML_TAG_ASSOCIATION)) {
-                AssociationInfo association = readAssociationV1(parser, userId);
-                associations.addAssociation(association);
-                maxId = Math.max(maxId, association.getId());
-            } else {
-                Slog.e(TAG, "Unexpected tag " + parser.getName()
-                        + " inside <" + XML_TAG_ASSOCIATIONS + "> for user " + userId);
-                XmlUtils.skipCurrentTag(parser);
-            }
+            if (isEndOfTag(parser, XML_TAG_ASSOCIATIONS)) break;
+            if (!isStartOfTag(parser, XML_TAG_ASSOCIATION)) continue;
+
+            AssociationInfo association = readAssociationV1(parser, userId);
+            associations.addAssociation(association);
+
+            maxId = Math.max(maxId, association.getId());
         }
 
         associations.setMaxId(maxId);
@@ -464,10 +454,10 @@ public final class AssociationDiskStore {
             @NonNull Associations associations)
             throws IOException {
         final XmlSerializer serializer = parent.startTag(null, XML_TAG_ASSOCIATIONS);
-        writeIntAttribute(serializer, XML_ATTR_MAX_ID, associations.getMaxId());
         for (AssociationInfo association : associations.getAssociations()) {
             writeAssociation(serializer, association);
         }
+        writeIntAttribute(serializer, XML_ATTR_MAX_ID, associations.getMaxId());
         serializer.endTag(null, XML_TAG_ASSOCIATIONS);
     }
 
