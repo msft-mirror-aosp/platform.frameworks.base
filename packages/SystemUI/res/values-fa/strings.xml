@@ -512,7 +512,7 @@
     <string name="communal_widget_picker_description" msgid="490515450110487871">"همه می‌توانند ابزاره‌ها را در صفحه قفل شما ببینند، حتی اگر رایانه لوحی قفل باشد."</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"لغو انتخاب ابزاره"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"ابزاره‌های صفحه قفل"</string>
-    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"برای باز کردن برنامه بااستفاده از ابزاره، باید هویت خودتان را به‌تأیید برسانید. همچنین، به‌خاطر داشته باشید که همه می‌توانند آن‌ها را مشاهده کنند، حتی وقتی رایانه لوحی‌تان قفل است. برخی‌از ابزاره‌ها ممکن است برای صفحه قفل درنظر گرفته نشده باشند و ممکن است اضافه کردن آن‌ها در اینجا ناامن باشد."</string>
+    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"برای باز کردن برنامه بااستفاده از ابزاره، باید هویت خودتان را درستی‌سنجی کنید. همچنین، به‌خاطر داشته باشید که حتی وقتی رایانه لوحی‌تان قفل است، هرکسی می‌تواند آن‌ها را مشاهده کند. برخی‌از ابزاره‌ها ممکن است برای صفحه قفل درنظر گرفته نشده باشند و ممکن است افزوددن آن‌ها در اینجا ناامن باشد."</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"متوجهم"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"تعویض کاربر"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"منوی پایین‌پر"</string>

@@ -227,7 +227,7 @@
     <string name="fingerprint_reenroll_failure_dialog_content" msgid="4733768492747300666">"Fingeroplåsning kunne ikke konfigureres. Gå til Indstillinger for at prøve igen."</string>
     <string name="face_re_enroll_notification_title" msgid="1850838867718410520">"Konfigurer ansigtsoplåsning igen"</string>
     <string name="face_re_enroll_notification_name" msgid="7384545252206120659">"Ansigtsoplåsning"</string>
-    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Konfigurer ansigts­oplåsning"</string>
+    <string name="face_re_enroll_dialog_title" msgid="6392173708176069994">"Konfigurer Ansigts­oplåsning"</string>
     <string name="face_re_enroll_dialog_content" msgid="7353502359464038511">"Hvis du vil konfigurere ansigtsoplåsning igen, bliver din nuværende ansigtsmodel slettet.\n\nDu skal konfigurere funktionen igen for at bruge ansigtsgenkendelse til at låse din telefon op."</string>
     <string name="face_reenroll_failure_dialog_content" msgid="7073947334397236935">"Ansigtsoplåsning kunne ikke konfigureres. Gå til Indstillinger for at prøve igen."</string>
     <string name="fingerprint_dialog_touch_sensor" msgid="2817887108047658975">"Sæt fingeren på fingeraftrykssensoren"</string>

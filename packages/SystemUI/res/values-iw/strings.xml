@@ -512,7 +512,7 @@
     <string name="communal_widget_picker_description" msgid="490515450110487871">"כולם יכולים לראות את הווידג\'טים במסך הנעילה שלך, גם אם הטאבלט נעול."</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"ביטול הבחירה בווידג\'ט"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"ווידג\'טים במסך הנעילה"</string>
-    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"כדי לפתוח אפליקציה באמצעות ווידג\'ט, עליך לאמת את זהותך. בנוסף, כדאי לזכור שכל אחד יכול לראות את הווידג\'טים גם כשהטאבלט שלך נעול. יכול להיות שחלק מהווידג\'טים לא נועדו למסך הנעילה ושלא בטוח להוסיף אותם לכאן."</string>
+    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"כדי לפתוח אפליקציה באמצעות ווידג\'ט, עליך לאמת את זהותך. בנוסף, חשוב לזכור שהווידג\'טים יהיו גלויים אם מישהו אחר יסתכל בטאבלט שלך כשהוא נעול. חוץ מזה, חלק מהווידג\'טים לא נועדו למסך הנעילה ומסוכן להוסיף אותם לכאן."</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"הבנתי"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"החלפת משתמש"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"תפריט במשיכה למטה"</string>
