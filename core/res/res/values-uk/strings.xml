@@ -2066,7 +2066,7 @@
     <string name="app_category_maps" msgid="6395725487922533156">"Карти й навігація"</string>
     <string name="app_category_productivity" msgid="1844422703029557883">"Продуктивність"</string>
     <string name="app_category_accessibility" msgid="6643521607848547683">"Доступність"</string>
-    <string name="device_storage_monitor_notification_channel" msgid="5164244565844470758">"Пам’ять пристрою"</string>
+    <string name="device_storage_monitor_notification_channel" msgid="5164244565844470758">"Сховище пристрою"</string>
     <string name="adb_debugging_notification_channel_tv" msgid="4764046459631031496">"Налагодження USB"</string>
     <string name="time_picker_hour_label" msgid="4208590187662336864">"години"</string>
     <string name="time_picker_minute_label" msgid="8307452311269824553">"хвилини"</string>

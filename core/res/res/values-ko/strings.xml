@@ -2227,11 +2227,11 @@
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"일시중지 해제"</string>
     <string name="resolver_no_work_apps_available" msgid="3298291360133337270">"직장 앱 없음"</string>
     <string name="resolver_no_personal_apps_available" msgid="6284837227019594881">"개인 앱 없음"</string>
-    <string name="miniresolver_open_work" msgid="6286176185835401931">"직장 <xliff:g id="APP">%s</xliff:g> 앱을 여시겠습니까?"</string>
+    <string name="miniresolver_open_work" msgid="6286176185835401931">"업무용 <xliff:g id="APP">%s</xliff:g> 앱을 여시겠습니까?"</string>
     <string name="miniresolver_open_in_personal" msgid="807427577794490375">"개인 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
-    <string name="miniresolver_open_in_work" msgid="941341494673509916">"직장 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
-    <string name="miniresolver_call_in_work" msgid="528779988307529039">"직장 앱을 사용한 통화인가요?"</string>
-    <string name="miniresolver_switch_to_work" msgid="1042640606122638596">"직장 앱으로 전환할까요?"</string>
+    <string name="miniresolver_open_in_work" msgid="941341494673509916">"업무용 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
+    <string name="miniresolver_call_in_work" msgid="528779988307529039">"업무용 앱을 사용한 통화인가요?"</string>
+    <string name="miniresolver_switch_to_work" msgid="1042640606122638596">"업무용 앱으로 전환할까요?"</string>
     <string name="miniresolver_call_information" msgid="6739417525304184083">"귀하의 조직에서 직장 앱을 사용한 통화만 허용합니다."</string>
     <string name="miniresolver_sms_information" msgid="4311292661329483088">"귀하의 조직에서 직장 앱을 사용한 메시지 전송만 허용합니다."</string>
     <string name="miniresolver_private_space_phone_information" msgid="4469511223312488570">"개인 전화 앱에서만 전화를 걸 수 있습니다. 개인 전화로 통화한 내역은 개인 통화 기록에 추가됩니다."</string>

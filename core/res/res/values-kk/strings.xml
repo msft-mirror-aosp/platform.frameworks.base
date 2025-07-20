@@ -240,7 +240,7 @@
     <string name="silent_mode_ring" msgid="6039011004781526678">"Қоңырау қосулы"</string>
     <string name="reboot_to_update_title" msgid="2125818841916373708">"Android жүйе жаңартулары"</string>
     <string name="reboot_to_update_prepare" msgid="6978842143587422365">"Жаңартуға дайындалуда..."</string>
-    <string name="reboot_to_update_package" msgid="4644104795527534811">"Жаңарту бумасы өңделуде…"</string>
+    <string name="reboot_to_update_package" msgid="4644104795527534811">"Жаңарту бумасы өңделіп жатыр…"</string>
     <string name="reboot_to_update_reboot" msgid="4474726009984452312">"Қайта іске қосылуда…"</string>
     <string name="reboot_to_reset_title" msgid="2226229680017882787">"Зауыттық деректерді қалпына келтіру"</string>
     <string name="reboot_to_reset_message" msgid="3347690497972074356">"Қайта іске қосылуда…"</string>
