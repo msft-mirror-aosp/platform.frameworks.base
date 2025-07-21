@@ -512,7 +512,7 @@
     <string name="communal_widget_picker_description" msgid="490515450110487871">"任何人都可以查看锁屏上的微件，平板电脑处于锁定状态时也是如此。"</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"取消选中微件"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"锁屏微件"</string>
-    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"若要使用微件打开应用，您需要验证是您本人在操作。另外请注意，任何人都可以查看此类微件，即使您的平板电脑已锁定。有些微件可能不适合显示在锁定的屏幕中，因此添加到这里可能不安全。"</string>
+    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"若要通过微件打开应用，您需要验证是您本人在操作。请注意，任何人都可以查看这些微件，即使您的平板电脑处于锁定状态。有些微件并非针对锁屏场景而设计，因此添加到此处可能存在安全风险。"</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"知道了"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"切换用户"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"下拉菜单"</string>

@@ -512,7 +512,7 @@
     <string name="communal_widget_picker_description" msgid="490515450110487871">"無論平板電腦的螢幕是否已上鎖，任何人都可以看到上鎖畫面小工具。"</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"取消揀小工具"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"上鎖畫面小工具"</string>
-    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"如要使用小工具開啟應用程式，系統會要求你驗證身分。請注意，所有人都能查看小工具，即使平板電腦已鎖定亦然。部分小工具可能不適用於上鎖畫面，新增至這裡可能會有安全疑慮。"</string>
+    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"如要使用小工具開啟應用程式，系統會要求你驗證身分。請注意，所有人都能查看小工具，即使平板電腦已鎖定亦然。部分小工具可能非為上鎖畫面而設，新增至這裡可能會有安全疑慮。"</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"知道了"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"切換使用者"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"下拉式選單"</string>
