@@ -36,7 +36,6 @@ import static junit.framework.Assert.assertNull;
 import static junit.framework.Assert.assertTrue;
 
 import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -847,9 +846,12 @@ public class NotificationRecordTest extends UiServiceTestCase {
         StatusBarNotification sbn =
                 new StatusBarNotification(PKG_P, PKG_P, id1, tag1, uid, uid, n, mUser, null, uid);
 
-        assertThrows("App provided uri for p targeting app should throw exception",
-                SecurityException.class,
-                () -> new NotificationRecord(mMockContext, sbn, channel));
+        try {
+            NotificationRecord record = new NotificationRecord(mMockContext, sbn, channel);
+            fail("App provided uri for p targeting app should throw exception");
+        } catch (SecurityException e) {
+            // expected
+        }
     }
 
     @Test
@@ -869,7 +871,6 @@ public class NotificationRecordTest extends UiServiceTestCase {
         StatusBarNotification sbn =
                 new StatusBarNotification(PKG_P, PKG_P, id1, tag1, uid, uid, n, mUser, null, uid);
         NotificationRecord record = new NotificationRecord(mMockContext, sbn, channel);
-
         assertEquals(Settings.System.DEFAULT_NOTIFICATION_URI, record.getSound());
     }
 
