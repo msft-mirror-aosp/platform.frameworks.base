@@ -851,7 +851,7 @@
     <string name="policydesc_wipeData" product="tablet" msgid="7245372676261947507">"फ्याक्ट्रूी रिसेट गरेर चेतावनी नआउँदै ट्याबल्टको डेटा मेट्नुहोस्।"</string>
     <string name="policydesc_wipeData" product="tv" msgid="513862488950801261">"फ्याक्ट्री डेटा रिसेट गरेर चेतावनी नदिइकन आफ्नो Android टिभी डिभाइसको डेटा मेटाउनुहोस्।"</string>
     <string name="policydesc_wipeData" product="automotive" msgid="660804547737323300">"यो इन्फोटेनमेन्ट प्रणालीको डेटा कुनै चेतावनीविनै फ्याक्ट्री डेटा रिसेट गरेर मेटाउनुहोस्।"</string>
-    <string name="policydesc_wipeData" product="default" msgid="8036084184768379022">"फ्याक्ट्रूी रिसेट गरेर चेतावनी नदिइकन फोनको डेटा मेट्नुहोस्।"</string>
+    <string name="policydesc_wipeData" product="default" msgid="8036084184768379022">"फ्याक्ट्रूी रिसेट गरेर चेतावनी नदिइकन फोनको डेटा मेट्न।"</string>
     <string name="policylab_wipeData_secondaryUser" product="automotive" msgid="115034358520328373">"प्रोफाइल डेटा मेटाउनुहोस्"</string>
     <string name="policylab_wipeData_secondaryUser" product="default" msgid="413813645323433166">"प्रयोगकर्ता डेटा मेट्नुहोस्"</string>
     <string name="policydesc_wipeData_secondaryUser" product="tablet" msgid="2336676480090926470">"चेतावनी बिना यो ट्याब्लेटमा यस प्रयोगकर्ताको डेटा मेट्नुहोस्।"</string>
