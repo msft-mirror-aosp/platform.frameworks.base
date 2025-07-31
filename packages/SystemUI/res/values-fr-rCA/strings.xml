@@ -763,7 +763,7 @@
     <string name="notification_unblockable_call_desc" msgid="5907328164696532169">"Les notifications d\'appel ne peuvent pas être modifiées."</string>
     <string name="notification_multichannel_desc" msgid="7414593090056236179">"Ce groupe de notifications ne peut pas être configuré ici"</string>
     <string name="notification_delegate_header" msgid="1264510071031479920">"Notification par mandataire"</string>
-    <string name="notification_channel_dialog_title" msgid="6856514143093200019">"Toutes les notifications de <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="notification_channel_dialog_title" msgid="6856514143093200019">"Toutes les notifications de l\'appli <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
     <string name="see_more_title" msgid="7409317011708185729">"En voir plus"</string>
     <string name="feedback_alerted" msgid="5192459808484271208">"La notification a été automatiquement &lt;b&gt;élevée à la catégorie Par défaut&lt;/b&gt; par le système."</string>
     <string name="feedback_silenced" msgid="9116540317466126457">"La notification a été automatiquement &lt;b&gt;abaissée à la catégorie Silencieux&lt;/b&gt; par le système."</string>
