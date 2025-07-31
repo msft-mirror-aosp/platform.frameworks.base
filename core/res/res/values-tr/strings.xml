@@ -847,7 +847,7 @@
     <string name="policydesc_resetPassword" msgid="4626419138439341851">"Ekran kilidini değiştirir."</string>
     <string name="policylab_forceLock" msgid="7360335502968476434">"Ekranı kilitleme"</string>
     <string name="policydesc_forceLock" msgid="1008844760853899693">"Ekranın nasıl ve ne zaman kilitleneceğini denetler."</string>
-    <string name="policylab_wipeData" msgid="1359485247727537311">"Tüm verileri sil"</string>
+    <string name="policylab_wipeData" msgid="1359485247727537311">"Tüm verileri silme"</string>
     <string name="policydesc_wipeData" product="tablet" msgid="7245372676261947507">"Fabrika verilerine sıfırlama işlemi gerçekleştirerek tabletteki verileri uyarıda bulunmadan siler."</string>
     <string name="policydesc_wipeData" product="tv" msgid="513862488950801261">"Fabrika verilerine sıfırlama işlemi gerçekleştirerek Android TV cihazınızdaki verileri uyarıda bulunmadan siler."</string>
     <string name="policydesc_wipeData" product="automotive" msgid="660804547737323300">"Fabrika verilerine sıfırlama işlemi gerçekleştirerek bilgi-eğlence sistemindeki veriler uyarıda bulunmadan silinir."</string>
@@ -1933,7 +1933,7 @@
     <string name="zen_mode_rule_name_combination" msgid="7174598364351313725">"<xliff:g id="FIRST">%1$s</xliff:g> / <xliff:g id="REST">%2$s</xliff:g>"</string>
     <string name="toolbar_collapse_description" msgid="8009920446193610996">"Daralt"</string>
     <string name="zen_mode_feature_name" msgid="3785547207263754500">"Rahatsız etmeyin"</string>
-    <string name="zen_mode_downtime_feature_name" msgid="5886005761431427128">"Bildirim istenmeyen zaman"</string>
+    <string name="zen_mode_downtime_feature_name" msgid="5886005761431427128">"Dinlenme zamanı"</string>
     <string name="zen_mode_default_weeknights_name" msgid="7902108149994062847">"Hafta içi gece"</string>
     <string name="zen_mode_default_weekends_name" msgid="4707200272709377930">"Hafta sonu"</string>
     <string name="zen_mode_default_events_name" msgid="2280682960128512257">"Etkinlik"</string>
