@@ -273,8 +273,6 @@ public class CompanionDeviceManagerService extends SystemService {
         for (ObservableUuid uuid : uuidsTobeObserved) {
             mObservableUuidStore.removeObservableUuid(userId, uuid.getUuid(), packageName);
         }
-
-        mCompanionAppBinder.onPackagesChanged(userId);
     }
 
     private void onPackageModifiedInternal(@UserIdInt int userId, @NonNull String packageName) {
@@ -284,8 +282,6 @@ public class CompanionDeviceManagerService extends SystemService {
             updateSpecialAccessPermissionForAssociatedPackage(association.getUserId(),
                     association.getPackageName());
         }
-
-        mCompanionAppBinder.onPackagesChanged(userId);
     }
 
     private void onPackageAddedInternal(@UserIdInt int userId, @NonNull String packageName) {
