@@ -125,7 +125,7 @@
     <string name="unarchive_error_installer_uninstalled_title" msgid="3748354109176326489">"<xliff:g id="INSTALLERNAME">%1$s</xliff:g> видалено"</string>
     <string name="unarchive_error_installer_uninstalled_body" msgid="944733542444183204">"Щоб відновити цей додаток, установіть <xliff:g id="INSTALLERNAME">%1$s</xliff:g>"</string>
     <string name="unarchive_action_required_continue" msgid="5711202111224184257">"Продовжити"</string>
-    <string name="unarchive_clear_storage_button" msgid="1549537154535608744">"Очистити пам’ять"</string>
+    <string name="unarchive_clear_storage_button" msgid="1549537154535608744">"Очистити сховище"</string>
     <string name="unarchive_settings_button" msgid="3504171760009177425">"Налаштування"</string>
     <string name="close" msgid="5214897374055647996">"Закрити"</string>
 </resources>
