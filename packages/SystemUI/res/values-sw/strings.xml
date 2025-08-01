@@ -1445,7 +1445,7 @@
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Sasa kipunguza mwangaza zaidi ni sehemu ya kitelezi cha mwangaza"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Sasa unaweza kupunguza kiwango cha mwangaza wa skrini hata zaidi.\n\nKwa kuwa kipengele hiki sasa ni sehemu ya kitelezi cha mwangaza, njia za mkato za kipunguza mwangaza zaidi zinaondolewa."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Ondoa njia za mkato za kipunguza mwangaza zaidi"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Njia za mkato za kipunguza mwangaza zaidi zimeondolewa"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Njia za mkato za kupunguza mwanga zaidi zimeondolewa"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Muunganisho"</string>
     <string name="qs_edit_mode_category_accessibility" msgid="7969091385071475922">"Ufikivu"</string>
     <string name="qs_edit_mode_category_utilities" msgid="8123080090108420095">"Vipengee"</string>
