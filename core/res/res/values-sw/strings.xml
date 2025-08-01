@@ -867,7 +867,7 @@
     <string name="policylab_disableCamera" msgid="5749486347810162018">"Kuzima kamera"</string>
     <string name="policydesc_disableCamera" msgid="3204405908799676104">"Kuzuia matumizi yote ya kamera za kifaa."</string>
     <string name="policylab_disableKeyguardFeatures" msgid="5071855750149949741">"Kuzima baadhi ya vipengele vya kufunga skrini"</string>
-    <string name="policydesc_disableKeyguardFeatures" msgid="6641673177041195957">"Zuia matumizi ya baadhi ya vipengele vya kufunga skrini."</string>
+    <string name="policydesc_disableKeyguardFeatures" msgid="6641673177041195957">"Kuzuia matumizi ya baadhi ya vipengele vya kufunga skrini."</string>
   <string-array name="phoneTypes">
     <item msgid="8996339953292723951">"Ya nyumbani"</item>
     <item msgid="7740243458912727194">"Simu ya mkononi"</item>
@@ -1755,7 +1755,7 @@
     <string name="color_inversion_feature_name" msgid="2672824491933264951">"Ugeuzaji rangi"</string>
     <string name="color_correction_feature_name" msgid="7975133554160979214">"Usahihishaji wa rangi"</string>
     <string name="one_handed_mode_feature_name" msgid="2334330034828094891">"Kutumia kwa mkono mmoja"</string>
-    <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Kipunguza mwangaza zaidi"</string>
+    <string name="reduce_bright_colors_feature_name" msgid="3222994553174604132">"Kupunguza mwanga zaidi"</string>
     <string name="hearing_aids_feature_name" msgid="1125892105105852542">"Vifaa vya kusaidia kusikia"</string>
     <string name="accessibility_shortcut_enabling_service" msgid="5473495203759847687">"Vitufe vya sauti vilivyoshikiliwa. Umewasha <xliff:g id="SERVICE_NAME">%1$s</xliff:g>."</string>
     <string name="accessibility_shortcut_disabling_service" msgid="8675244165062700619">"Vitufe vya sauti vimeshikiliwa. Umezima <xliff:g id="SERVICE_NAME">%1$s</xliff:g>."</string>
