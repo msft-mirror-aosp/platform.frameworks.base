@@ -932,7 +932,7 @@
     <string name="accessibility_qs_edit_tile_removed" msgid="1175925632436612036">"Cardul a fost eliminat"</string>
     <string name="accessibility_desc_quick_settings_edit" msgid="741658939453595297">"Editorul pentru setări rapide."</string>
     <string name="accessibility_desc_notification_icon" msgid="7331265967584178674">"Notificare <xliff:g id="ID_1">%1$s</xliff:g>: <xliff:g id="ID_2">%2$s</xliff:g>"</string>
-    <string name="accessibility_quick_settings_settings" msgid="7098489591715844713">"Deschide setările."</string>
+    <string name="accessibility_quick_settings_settings" msgid="7098489591715844713">"Deschide setările"</string>
     <string name="accessibility_quick_settings_expand" msgid="2609275052412521467">"Deschide setările rapide."</string>
     <string name="accessibility_quick_settings_collapse" msgid="4674876336725041982">"Închide setările rapide."</string>
     <string name="accessibility_quick_settings_user" msgid="505821942882668619">"Conectat(ă) ca <xliff:g id="ID_1">%s</xliff:g>"</string>

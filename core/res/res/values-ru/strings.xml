@@ -1220,7 +1220,7 @@
     <string name="whichApplication" msgid="5432266899591255759">"Что использовать?"</string>
     <string name="whichApplicationNamed" msgid="6969946041713975681">"Выполнить с помощью приложения \"%1$s\""</string>
     <string name="whichApplicationLabel" msgid="7852182961472531728">"Выполнить действие"</string>
-    <string name="whichViewApplication" msgid="5733194231473132945">"Открыть с помощью приложения:"</string>
+    <string name="whichViewApplication" msgid="5733194231473132945">"Открыть в приложении"</string>
     <string name="whichViewApplicationNamed" msgid="415164730629690105">"Открыть с помощью приложения \"%1$s\""</string>
     <string name="whichViewApplicationLabel" msgid="7367556735684742409">"Открыть"</string>
     <string name="whichOpenHostLinksWith" msgid="7645631470199397485">"Открывать ссылки <xliff:g id="HOST">%1$s</xliff:g> с помощью:"</string>
@@ -1916,7 +1916,7 @@
     <string name="confirm_battery_saver" msgid="5247976246208245754">"ОК"</string>
     <string name="battery_saver_description_with_learn_more" msgid="5444908404021316250">"В режиме энергосбережения включается тёмная тема, ограничиваются или отключаются фоновые процессы, а также некоторые визуальные эффекты, часть функций и сетевых подключений."</string>
     <string name="battery_saver_description" msgid="8518809702138617167">"В режиме энергосбережения включается тёмная тема, ограничиваются или отключаются фоновые процессы, а также некоторые визуальные эффекты, часть функций и сетевых подключений."</string>
-    <string name="data_saver_description" msgid="4995164271550590517">"В режиме экономии трафика фоновая передача данных для некоторых приложений отключена. Приложение, которым вы пользуетесь, может получать и отправлять данные, но реже, чем обычно. Например, изображения могут не загружаться, пока вы не нажмете на них."</string>
+    <string name="data_saver_description" msgid="4995164271550590517">"В режиме экономии трафика фоновая передача данных для некоторых приложений отключена. Приложение, которым вы активно пользуетесь, может получать и отправлять данные, но реже, чем обычно. Например, изображения могут не загружаться, пока вы на них не нажмете."</string>
     <string name="data_saver_enable_title" msgid="7080620065745260137">"Включить экономию трафика?"</string>
     <string name="data_saver_enable_button" msgid="4399405762586419726">"Включить"</string>
     <string name="zen_mode_duration_minutes_summary" msgid="4555514757230849789">"{count,plural, =1{На 1 минуту (до {formattedTime})}one{На # минуту (до {formattedTime})}few{На # минуты (до {formattedTime})}many{На # минут (до {formattedTime})}other{На # минуты (до {formattedTime})}}"</string>
@@ -1996,7 +1996,7 @@
     <string name="country_selection_title" msgid="5221495687299014379">"Региональные настройки"</string>
     <string name="search_language_hint" msgid="7004225294308793583">"Введите название языка"</string>
     <string name="language_picker_section_suggested" msgid="6556199184638990447">"Рекомендуемые"</string>
-    <string name="language_picker_regions_section_suggested" msgid="6080131515268225316">"Доступные регионы"</string>
+    <string name="language_picker_regions_section_suggested" msgid="6080131515268225316">"Рекомендованные"</string>
     <string name="language_picker_section_suggested_bilingual" msgid="5932198319583556613">"Рекомендуемые языки"</string>
     <string name="region_picker_section_suggested_bilingual" msgid="704607569328224133">"Предлагаемые регионы"</string>
     <string name="language_picker_section_all" msgid="1985809075777564284">"Все языки"</string>

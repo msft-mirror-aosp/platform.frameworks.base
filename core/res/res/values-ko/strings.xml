@@ -1037,7 +1037,7 @@
     <string name="lockscreen_failed_attempts_now_wiping" product="tablet" msgid="8682445539263683414">"태블릿을 잠금 해제하려는 시도가 <xliff:g id="NUMBER">%d</xliff:g>번 잘못되었습니다. 태블릿이 초기화됩니다."</string>
     <string name="lockscreen_failed_attempts_now_wiping" product="tv" msgid="2205435033340091883">"Android TV 기기 잠금 해제에 <xliff:g id="NUMBER">%d</xliff:g>번 실패했습니다. Android TV 기기가 초기화됩니다."</string>
     <string name="lockscreen_failed_attempts_now_wiping" product="default" msgid="2203704707679895487">"휴대전화를 잠금 해제하려는 시도가 <xliff:g id="NUMBER">%d</xliff:g>번 잘못되었습니다. 휴대전화가 초기화됩니다."</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown" msgid="6807200118164539589">"<xliff:g id="NUMBER">%d</xliff:g>초 후에 다시 시도하세요."</string>
+    <string name="lockscreen_too_many_failed_attempts_countdown" msgid="6807200118164539589">"<xliff:g id="NUMBER">%d</xliff:g>초 후에 다시 시도하세요"</string>
     <string name="lockscreen_forgot_pattern_button_text" msgid="8362442730606839031">"패턴을 잊으셨나요?"</string>
     <string name="lockscreen_glogin_forgot_pattern" msgid="9218940117797602518">"계정 잠금 해제"</string>
     <string name="lockscreen_glogin_too_many_attempts" msgid="3775904917743034195">"패턴을 너무 많이 시도했습니다."</string>
@@ -1218,7 +1218,7 @@
     <string name="whichApplication" msgid="5432266899591255759">"작업을 수행할 때 사용하는 애플리케이션"</string>
     <string name="whichApplicationNamed" msgid="6969946041713975681">"%1$s을(를) 사용하여 작업 완료"</string>
     <string name="whichApplicationLabel" msgid="7852182961472531728">"작업 완료"</string>
-    <string name="whichViewApplication" msgid="5733194231473132945">"연결 프로그램"</string>
+    <string name="whichViewApplication" msgid="5733194231473132945">"연결 앱"</string>
     <string name="whichViewApplicationNamed" msgid="415164730629690105">"%1$s(으)로 열기"</string>
     <string name="whichViewApplicationLabel" msgid="7367556735684742409">"열기"</string>
     <string name="whichOpenHostLinksWith" msgid="7645631470199397485">"<xliff:g id="HOST">%1$s</xliff:g> 링크를 열 때 사용할 앱"</string>
@@ -1688,7 +1688,7 @@
     <string name="kg_pattern_instructions" msgid="8366024510502517748">"패턴 그리기"</string>
     <string name="kg_sim_pin_instructions" msgid="6479401489471690359">"SIM PIN 입력"</string>
     <string name="kg_pin_instructions" msgid="7355933174673539021">"PIN 입력"</string>
-    <string name="kg_password_instructions" msgid="7179782578809398050">"비밀번호 입력"</string>
+    <string name="kg_password_instructions" msgid="7179782578809398050">"비밀번호를 입력하세요"</string>
     <string name="kg_puk_enter_puk_hint" msgid="6696187482616360994">"이제 SIM을 사용할 수 없습니다. 계속하려면 PUK 코드를 입력합니다. 자세한 내용은 이동통신사에 문의하세요."</string>
     <string name="kg_puk_enter_pin_hint" msgid="8190982314659429770">"원하는 PIN 코드 입력"</string>
     <string name="kg_enter_confirm_pin_hint" msgid="6372557107414074580">"원하는 PIN 코드 확인"</string>
@@ -2227,11 +2227,11 @@
     <string name="resolver_switch_on_work" msgid="4527096360772311894">"일시중지 해제"</string>
     <string name="resolver_no_work_apps_available" msgid="3298291360133337270">"직장 앱 없음"</string>
     <string name="resolver_no_personal_apps_available" msgid="6284837227019594881">"개인 앱 없음"</string>
-    <string name="miniresolver_open_work" msgid="6286176185835401931">"직장 <xliff:g id="APP">%s</xliff:g> 앱을 여시겠습니까?"</string>
+    <string name="miniresolver_open_work" msgid="6286176185835401931">"업무용 <xliff:g id="APP">%s</xliff:g> 앱을 여시겠습니까?"</string>
     <string name="miniresolver_open_in_personal" msgid="807427577794490375">"개인 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
-    <string name="miniresolver_open_in_work" msgid="941341494673509916">"직장 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
-    <string name="miniresolver_call_in_work" msgid="528779988307529039">"직장 앱을 사용한 통화인가요?"</string>
-    <string name="miniresolver_switch_to_work" msgid="1042640606122638596">"직장 앱으로 전환할까요?"</string>
+    <string name="miniresolver_open_in_work" msgid="941341494673509916">"업무용 <xliff:g id="APP">%s</xliff:g> 앱에서 여시겠습니까?"</string>
+    <string name="miniresolver_call_in_work" msgid="528779988307529039">"업무용 앱을 사용한 통화인가요?"</string>
+    <string name="miniresolver_switch_to_work" msgid="1042640606122638596">"업무용 앱으로 전환할까요?"</string>
     <string name="miniresolver_call_information" msgid="6739417525304184083">"귀하의 조직에서 직장 앱을 사용한 통화만 허용합니다."</string>
     <string name="miniresolver_sms_information" msgid="4311292661329483088">"귀하의 조직에서 직장 앱을 사용한 메시지 전송만 허용합니다."</string>
     <string name="miniresolver_private_space_phone_information" msgid="4469511223312488570">"개인 전화 앱에서만 전화를 걸 수 있습니다. 개인 전화로 통화한 내역은 개인 통화 기록에 추가됩니다."</string>

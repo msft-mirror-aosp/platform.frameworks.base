@@ -844,9 +844,9 @@
     <string name="policydesc_watchLogin_secondaryUser" product="automotive" msgid="7180857406058327941">"Memantau bilangan kata laluan tidak betul yang ditaip semasa membuka kunci skrin dan mengunci sistem maklumat hibur atau memadam semua data profil ini jika terlalu banyak kata laluan yang tidak betul ditaip."</string>
     <string name="policydesc_watchLogin_secondaryUser" product="default" msgid="9177645136475155924">"Pantau bilangan kata laluan tidak betul yang ditaip semasa membuka kunci skrin dan kunci telefon atau padam semua data pengguna ini jika terlalu banyak kata laluan yang tidak betul ditaip."</string>
     <string name="policylab_resetPassword" msgid="214556238645096520">"Tukar kunci skrin"</string>
-    <string name="policydesc_resetPassword" msgid="4626419138439341851">"Tukar kunci skrin."</string>
+    <string name="policydesc_resetPassword" msgid="4626419138439341851">"Menukar kunci skrin."</string>
     <string name="policylab_forceLock" msgid="7360335502968476434">"Kunci skrin"</string>
-    <string name="policydesc_forceLock" msgid="1008844760853899693">"Kawal cara dan masa skrin dikunci."</string>
+    <string name="policydesc_forceLock" msgid="1008844760853899693">"Mengawal cara dan masa skrin dikunci."</string>
     <string name="policylab_wipeData" msgid="1359485247727537311">"Padamkan semua data"</string>
     <string name="policydesc_wipeData" product="tablet" msgid="7245372676261947507">"Memadamkan data tablet tanpa amaran dengan melakukan tetapan semula data kilang."</string>
     <string name="policydesc_wipeData" product="tv" msgid="513862488950801261">"Padamkan data peranti Android TV anda tanpa amaran dengan melaksanakan tetapan semula data kilang."</string>
@@ -867,7 +867,7 @@
     <string name="policylab_disableCamera" msgid="5749486347810162018">"Lumpuhkan kamera"</string>
     <string name="policydesc_disableCamera" msgid="3204405908799676104">"Menghalang penggunaan semua kamera peranti."</string>
     <string name="policylab_disableKeyguardFeatures" msgid="5071855750149949741">"Lumpuhkan beberapa ciri kunci skrin"</string>
-    <string name="policydesc_disableKeyguardFeatures" msgid="6641673177041195957">"Halang penggunaan sesetengah ciri kunci skrin."</string>
+    <string name="policydesc_disableKeyguardFeatures" msgid="6641673177041195957">"Menghalang penggunaan sesetengah ciri kunci skrin."</string>
   <string-array name="phoneTypes">
     <item msgid="8996339953292723951">"Rumah"</item>
     <item msgid="7740243458912727194">"Mudah alih"</item>

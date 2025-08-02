@@ -277,7 +277,7 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
     /** Helper for {@link Task#fillTaskInfo}. */
     final TaskInfoHelper mTaskInfoHelper = new TaskInfoHelper();
 
-    final OpaqueActivityHelper mOpaqueActivityHelper = new OpaqueActivityHelper();
+    final OpaqueContainerHelper mOpaqueContainerHelper = new OpaqueContainerHelper();
 
     private final ActivityTaskSupervisorHandler mHandler;
     final Looper mLooper;
@@ -342,6 +342,11 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
      * resumed.
      */
     private ActivityRecord mTopResumedActivity;
+
+    /**
+     * Cached value of the topmost resumed activity that reported to the client.
+     */
+    private ActivityRecord mLastReportedTopResumedActivity;
 
     /**
      * Flag indicating whether we're currently waiting for the previous top activity to handle the
@@ -2290,6 +2295,7 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
             if (topRootTask == null) {
                 // There's no focused task and there won't have any resumed activity either.
                 scheduleTopResumedActivityStateLossIfNeeded();
+                mTopResumedActivity = null;
             }
             if (mService.isSleepingLocked()) {
                 // There won't be a next resumed activity. The top process should still be updated
@@ -2333,25 +2339,27 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
 
     /** Schedule current top resumed activity state loss */
     private void scheduleTopResumedActivityStateLossIfNeeded() {
-        if (mTopResumedActivity == null) {
+        if (mLastReportedTopResumedActivity == null) {
             return;
         }
 
         // mTopResumedActivityWaitingForPrev == true at this point would mean that an activity
         // before the prevTopActivity one hasn't reported back yet. So server never sent the top
         // resumed state change message to prevTopActivity.
-        if (!mTopResumedActivityWaitingForPrev
-                && mTopResumedActivity.scheduleTopResumedActivityChanged(false /* onTop */)) {
-            scheduleTopResumedStateLossTimeout(mTopResumedActivity);
+        if (!mTopResumedActivityWaitingForPrev && readyToResume()
+                && mLastReportedTopResumedActivity.scheduleTopResumedActivityChanged(
+                        false /* onTop */)) {
+            scheduleTopResumedStateLossTimeout(mLastReportedTopResumedActivity);
             mTopResumedActivityWaitingForPrev = true;
-            mTopResumedActivity = null;
+            mLastReportedTopResumedActivity = null;
         }
     }
 
     /** Schedule top resumed state change if previous top activity already reported back. */
     private void scheduleTopResumedActivityStateIfNeeded() {
-        if (mTopResumedActivity != null && !mTopResumedActivityWaitingForPrev) {
+        if (mTopResumedActivity != null && !mTopResumedActivityWaitingForPrev && readyToResume()) {
             mTopResumedActivity.scheduleTopResumedActivityChanged(true /* onTop */);
+            mLastReportedTopResumedActivity = mTopResumedActivity;
         }
     }
 
@@ -2598,6 +2606,14 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
      */
     void endDeferResume() {
         mDeferResumeCount--;
+        if (readyToResume()) {
+            if (mLastReportedTopResumedActivity != null
+                    && mTopResumedActivity != mLastReportedTopResumedActivity) {
+                scheduleTopResumedActivityStateLossIfNeeded();
+            } else if (mLastReportedTopResumedActivity == null) {
+                scheduleTopResumedActivityStateIfNeeded();
+            }
+        }
     }
 
     /** @return True if resume can be called. */
@@ -2887,42 +2903,81 @@ public class ActivityTaskSupervisor implements RecentTasks.Callbacks {
         }
     }
 
-    /** The helper to get the top opaque activity of a container. */
-    static class OpaqueActivityHelper implements Predicate<ActivityRecord> {
+    /** The helper to calculate whether a container is opaque. */
+    static class OpaqueContainerHelper implements Predicate<ActivityRecord> {
         private ActivityRecord mStarting;
-        private boolean mIncludeInvisibleAndFinishing;
+        private boolean mIgnoringInvisibleActivity;
         private boolean mIgnoringKeyguard;
 
-        ActivityRecord getOpaqueActivity(
-                @NonNull WindowContainer<?> container, boolean ignoringKeyguard) {
-            mIncludeInvisibleAndFinishing = true;
-            mIgnoringKeyguard = ignoringKeyguard;
-            return container.getActivity(this,
-                    true /* traverseTopToBottom */, null /* boundary */);
+        /** Whether the container is opaque. */
+        boolean isOpaque(@NonNull WindowContainer<?> container) {
+            return isOpaque(container, null /* starting */, true /* ignoringKeyguard */,
+                    false /* ignoringInvisibleActivity */);
         }
 
-        ActivityRecord getVisibleOpaqueActivity(
+        /**
+         * Whether the container is opaque, but only including visible activities in its
+         * calculation.
+         */
+        boolean isOpaque(
                 @NonNull WindowContainer<?> container, @Nullable ActivityRecord starting,
-                boolean ignoringKeyguard) {
+                boolean ignoringKeyguard,  boolean ignoringInvisibleActivity) {
             mStarting = starting;
-            mIncludeInvisibleAndFinishing = false;
+            mIgnoringInvisibleActivity = ignoringInvisibleActivity;
             mIgnoringKeyguard = ignoringKeyguard;
-            final ActivityRecord opaque = container.getActivity(this,
-                    true /* traverseTopToBottom */, null /* boundary */);
+
+            final boolean isOpaque;
+            isOpaque = isOpaqueInner(container);
             mStarting = null;
-            return opaque;
+            return isOpaque;
+        }
+
+        private boolean isOpaqueInner(@NonNull WindowContainer<?> container) {
+            final boolean isActivity = container.asActivityRecord() != null;
+            final boolean isLeafTaskFragment = container.asTaskFragment() != null
+                    && ((TaskFragment) container).isLeafTaskFragment();
+            if (isActivity || isLeafTaskFragment) {
+                // When it is an activity or leaf task fragment, then opacity is calculated based
+                // on itself or its activities.
+                return container.getActivity(this,
+                        true /* traverseTopToBottom */, null /* boundary */) != null;
+            }
+            // Otherwise, it's considered opaque if any of its opaque children fill this
+            // container, unless the children are adjacent fragments, in which case as long as they
+            // are all opaque then |container| is also considered opaque, even if the adjacent
+            // task fragment aren't filling.
+            for (int i = 0; i < container.getChildCount(); i++) {
+                final WindowContainer<?> child = container.getChildAt(i);
+                if (child.fillsParent() && isOpaque(child)) {
+                    return true;
+                }
+
+                if (child.asTaskFragment() != null
+                        && child.asTaskFragment().getAdjacentTaskFragment() != null) {
+                    final boolean isAnyTranslucent;
+                    final TaskFragment adjacent = child.asTaskFragment()
+                            .getAdjacentTaskFragment();
+                    isAnyTranslucent = !isOpaque(child) || !isOpaque(adjacent);
+                    if (!isAnyTranslucent) {
+                        // This task fragment and all its adjacent task fragments are opaque,
+                        // consider it opaque even if it doesn't fill its parent.
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         @Override
         public boolean test(ActivityRecord r) {
-            if (!mIncludeInvisibleAndFinishing && r != mStarting
+            if (mIgnoringInvisibleActivity && r != mStarting
                     && ((mIgnoringKeyguard && !r.visibleIgnoringKeyguard)
                     || (!mIgnoringKeyguard && !r.isVisible()))) {
                 // Ignore invisible activities that are not the currently starting activity
                 // (about to be visible).
                 return false;
             }
-            return r.occludesParent(mIncludeInvisibleAndFinishing /* includingFinishing */);
+            return r.occludesParent(!mIgnoringInvisibleActivity /* includingFinishing */);
         }
     }
 

@@ -95,7 +95,7 @@
     <string name="user_aspect_ratio_settings_button_hint" msgid="734835849600713016">"அமைப்புகளில் இந்த ஆப்ஸின் தோற்ற விகிதத்தை மாற்றும்"</string>
     <string name="user_aspect_ratio_settings_button_description" msgid="4315566801697411684">"தோற்ற விகிதத்தை மாற்றும்"</string>
     <string name="camera_compat_treatment_suggested_button_description" msgid="8103916969024076767">"கேமரா தொடர்பான சிக்கல்களா?\nமீண்டும் பொருத்த தட்டவும்"</string>
-    <string name="camera_compat_treatment_applied_button_description" msgid="2944157113330703897">"சிக்கல்கள் சரிசெய்யப்படவில்லையா?\nமாற்றியமைக்க தட்டவும்"</string>
+    <string name="camera_compat_treatment_applied_button_description" msgid="2944157113330703897">"சிக்கல்கள் சரிசெய்யப்படவில்லையா?\nமுன்போல் மாற்ற தட்டவும்"</string>
     <string name="camera_compat_dismiss_button_description" msgid="2795364433503817511">"கேமரா தொடர்பான சிக்கல்கள் எதுவும் இல்லையா? நிராகரிக்க தட்டவும்."</string>
     <string name="letterbox_education_dialog_title" msgid="7739895354143295358">"பலவற்றைப் பார்த்தல் மற்றும் செய்தல்"</string>
     <string name="letterbox_education_split_screen_text" msgid="449233070804658627">"திரைப் பிரிப்புக்கு மற்றொரு ஆப்ஸை இழுக்கலாம்"</string>

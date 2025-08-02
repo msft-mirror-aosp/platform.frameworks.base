@@ -469,20 +469,17 @@ class Transition implements BLASTSyncEngine.TransactionReadyListener {
             if (transientRoot == null) continue;
             final WindowContainer<?> rootParent = transientRoot.getParent();
             if (rootParent == null || rootParent.getTopChild() == transientRoot) continue;
-            final ActivityRecord topOpaque = mController.mAtm.mTaskSupervisor.mOpaqueActivityHelper
-                    .getOpaqueActivity(rootParent, true /* ignoringKeyguard */);
-            if (transientRoot.compareTo(topOpaque.getRootTask()) < 0) {
-                occludedCount++;
+            for (int j = rootParent.getChildCount() - 1; j >= 0; --j) {
+                final WindowContainer<?> sibling = rootParent.getChildAt(j);
+                if (sibling == transientRoot) break;
+                if (!sibling.getWindowConfiguration().isAlwaysOnTop() && mController.mAtm
+                        .mTaskSupervisor.mOpaqueContainerHelper.isOpaque(sibling)) {
+                    occludedCount++;
+                    break;
+                }
             }
         }
         if (occludedCount == numTransient) {
-            for (int i = mTransientLaunches.size() - 1; i >= 0; --i) {
-                if (mTransientLaunches.keyAt(i).isDescendantOf(task)) {
-                    // Keep transient activity visible until transition finished, so it won't pause
-                    // with transient-hide tasks that may delay resuming the next top.
-                    return true;
-                }
-            }
             // Let transient-hide activities pause before transition is finished.
             return false;
         }
@@ -1446,16 +1443,15 @@ class Transition implements BLASTSyncEngine.TransactionReadyListener {
         }
 
         // Update the input-sink (touch-blocking) state now that the animation is finished.
-        SurfaceControl.Transaction inputSinkTransaction = null;
+        boolean scheduleAnimation = false;
         for (int i = 0; i < mParticipants.size(); ++i) {
             final ActivityRecord ar = mParticipants.valueAt(i).asActivityRecord();
             if (ar == null || !ar.isVisible() || ar.getParent() == null) continue;
-            if (inputSinkTransaction == null) {
-                inputSinkTransaction = ar.mWmService.mTransactionFactory.get();
-            }
-            ar.mActivityRecordInputSink.applyChangesToSurfaceIfChanged(inputSinkTransaction);
+            scheduleAnimation = true;
+            ar.mActivityRecordInputSink.applyChangesToSurfaceIfChanged(ar.getPendingTransaction());
         }
-        if (inputSinkTransaction != null) inputSinkTransaction.apply();
+        // To apply pending transactions.
+        if (scheduleAnimation) mController.mAtm.mWindowManager.scheduleAnimationLocked();
 
         // Always schedule stop processing when transition finishes because activities don't
         // stop while they are in a transition thus their stop could still be pending.

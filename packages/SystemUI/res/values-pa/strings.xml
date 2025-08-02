@@ -1040,7 +1040,7 @@
     <string name="accessibility_control_increase_window_height" msgid="2200966116612324260">"ਵੱਡਦਰਸ਼ੀ ਵਿੰਡੋ ਦੀ ਉਚਾਈ ਵਧਾਓ"</string>
     <string name="accessibility_control_decrease_window_height" msgid="2054479949445332761">"ਵੱਡਦਰਸ਼ੀ ਵਿੰਡੋ ਦੀ ਉਚਾਈ ਘਟਾਓ"</string>
     <string name="magnification_mode_switch_description" msgid="2698364322069934733">"ਵੱਡਦਰਸ਼ੀਕਰਨ ਸਵਿੱਚ"</string>
-    <string name="magnification_mode_switch_state_full_screen" msgid="5229653514979530561">"ਪੂਰੀ ਸਕ੍ਰੀਨ ਨੂੰ ਵੱਡਦਰਸ਼ੀ ਕਰੋ"</string>
+    <string name="magnification_mode_switch_state_full_screen" msgid="5229653514979530561">"ਪੂਰੀ ਸਕ੍ਰੀਨ ਵੱਡੀ ਕਰੋ"</string>
     <string name="magnification_mode_switch_state_window" msgid="8597100249594076965">"ਸਕ੍ਰੀਨ ਦੇ ਹਿੱਸੇ ਨੂੰ ਵੱਡਾ ਕਰੋ"</string>
     <string name="magnification_open_settings_click_label" msgid="6151849212725923363">"ਵੱਡਦਰਸ਼ੀਕਰਨ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ"</string>
     <string name="magnification_close_settings_click_label" msgid="4642477260651704517">"ਵੱਡਦਰਸ਼ੀਕਰਨ ਸੈਟਿੰਗਾਂ ਬੰਦ ਕਰੋ"</string>

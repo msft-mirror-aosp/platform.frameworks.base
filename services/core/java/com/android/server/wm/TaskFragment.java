@@ -1074,10 +1074,8 @@ class TaskFragment extends WindowContainer<WindowContainer> {
         if (!isAttached() || isForceHidden() || isForceTranslucent()) {
             return true;
         }
-        // A TaskFragment isn't translucent if it has at least one visible activity that occludes
-        // this TaskFragment.
-        return mTaskSupervisor.mOpaqueActivityHelper.getVisibleOpaqueActivity(this,
-                starting, true /* ignoringKeyguard */) == null;
+        return !mTaskSupervisor.mOpaqueContainerHelper.isOpaque(
+                this, starting, true /* ignoringKeyguard */, true /* ignoringInvisibleActivity */);
     }
 
     /**
@@ -1090,8 +1088,7 @@ class TaskFragment extends WindowContainer<WindowContainer> {
             return true;
         }
         // Including finishing Activity if the TaskFragment is becoming invisible in the transition.
-        return mTaskSupervisor.mOpaqueActivityHelper.getOpaqueActivity(this,
-                true /* ignoringKeyguard */) == null;
+        return !mTaskSupervisor.mOpaqueContainerHelper.isOpaque(this);
     }
 
     /**
@@ -1102,8 +1099,8 @@ class TaskFragment extends WindowContainer<WindowContainer> {
         if (!isAttached() || isForceHidden() || isForceTranslucent()) {
             return true;
         }
-        return mTaskSupervisor.mOpaqueActivityHelper.getVisibleOpaqueActivity(this, null,
-                false /* ignoringKeyguard */) == null;
+        return !mTaskSupervisor.mOpaqueContainerHelper.isOpaque(this, /* starting */ null,
+                false /* ignoringKeyguard */, true /* ignoringInvisibleActivity */);
     }
 
     ActivityRecord getTopNonFinishingActivity() {
@@ -1266,9 +1263,13 @@ class TaskFragment extends WindowContainer<WindowContainer> {
                 continue;
             }
 
-            final int otherWindowingMode = other.getWindowingMode();
-            if (otherWindowingMode == WINDOWING_MODE_FULLSCREEN
-                    || (otherWindowingMode != WINDOWING_MODE_PINNED && other.matchParentBounds())) {
+            // Must fill the parent to affect visibility.
+            boolean affectsSiblingVisibility = other.fillsParentBounds();
+            // It also must have filling content itself, to prevent empty or only partially
+            // occluding containers from affecting visibility.
+            affectsSiblingVisibility &= other.hasFillingContent();
+            if (affectsSiblingVisibility) {
+                // This task fragment is fully covered by |other|.
                 if (isTranslucent(other, starting)) {
                     // Can be visible behind a translucent TaskFragment.
                     gotTranslucentFullscreen = true;
@@ -1732,6 +1733,12 @@ class TaskFragment extends WindowContainer<WindowContainer> {
     boolean startPausing(boolean userLeaving, boolean uiSleeping, ActivityRecord resuming,
             String reason) {
         if (!hasDirectChildActivities()) {
+            return false;
+        }
+        if (mResumedActivity != null && mTransitionController.isTransientLaunch(mResumedActivity)) {
+            // Even if the transient activity is occluded, defer pausing (addToStopping will still
+            // be called) it until the transient transition is done. So the current resuming
+            // activity won't need to wait for additional pause complete.
             return false;
         }
 

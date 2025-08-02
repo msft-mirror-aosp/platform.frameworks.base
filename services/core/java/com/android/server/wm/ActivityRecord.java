@@ -1443,7 +1443,7 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
     }
 
     boolean scheduleTopResumedActivityChanged(boolean onTop) {
-        if (!attachedToProcess()) {
+        if (!attachedToProcess() || isState(DESTROYING, DESTROYED)) {
             ProtoLog.w(WM_DEBUG_STATES,
                     "Can't report activity position update - client not running, "
                             + "activityRecord=%s", this);
@@ -8546,6 +8546,15 @@ final class ActivityRecord extends WindowToken implements WindowManagerService.A
         // Reset the temp info which should only take effect for the specified computation.
         mResolveConfigHint.mTmpCompatInsets = null;
         mResolveConfigHint.mTmpOverrideDisplayInfo = null;
+    }
+
+    /**
+     * Return {@code true} always since the activity is always filling parent bounds. The override
+     * is done because if the activity is letterboxed, the bounds may exclude the letterbox size.
+     */
+    @Override
+    boolean fillsParentBounds() {
+        return true;
     }
 
     /**

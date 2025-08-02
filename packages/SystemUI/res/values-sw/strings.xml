@@ -312,7 +312,7 @@
     <string name="quick_settings_bluetooth_audio_sharing_button" msgid="7545274861795853838">"Sikiliza pamoja na wengine"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button_sharing" msgid="3069309588231072128">"Mnasikiliza pamoja"</string>
     <string name="quick_settings_bluetooth_audio_sharing_button_accessibility" msgid="7604615019302091708">"uweke mipangilio ya kusikiliza pamoja"</string>
-    <string name="quick_settings_bluetooth_secondary_label_battery_level" msgid="4182034939479344093">"Chaji ya betri ni <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%s</xliff:g>"</string>
+    <string name="quick_settings_bluetooth_secondary_label_battery_level" msgid="4182034939479344093">"Chaji ni <xliff:g id="BATTERY_LEVEL_AS_PERCENTAGE">%s</xliff:g>"</string>
     <string name="quick_settings_bluetooth_secondary_label_audio" msgid="780333390310051161">"Sauti"</string>
     <string name="quick_settings_bluetooth_secondary_label_headset" msgid="2332093067553000852">"Vifaa vya sauti"</string>
     <string name="quick_settings_bluetooth_secondary_label_input" msgid="3887552721233148132">"Vifaa vya kuingiza sauti"</string>
@@ -508,10 +508,10 @@
     <string name="accessibility_action_label_select_widget" msgid="8897281501387398191">"chagua wijeti"</string>
     <string name="accessibility_action_label_remove_widget" msgid="3373779447448758070">"ondoa wijeti"</string>
     <string name="accessibility_action_label_place_widget" msgid="1914197458644168978">"weka wijeti uliyochagua"</string>
-    <string name="communal_widget_picker_title" msgid="1953369090475731663">"Wijeti zinazoonekana kwenye skrini iliyofungwa"</string>
+    <string name="communal_widget_picker_title" msgid="1953369090475731663">"Wijeti kwenye skrini iliyofungwa"</string>
     <string name="communal_widget_picker_description" msgid="490515450110487871">"Yeyote anaweza kuona wijeti kwenye skrini yako iliyofungwa, hata ikiwa umefunga kishikwambi chako."</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"acha kuchagua wijeti"</string>
-    <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"Wijeti zinazoonekana kwenye skrini iliyofungwa"</string>
+    <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"Wijeti kwenye skrini iliyofungwa"</string>
     <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"Utahitaji kuthibitisha kuwa ni wewe ili ufungue programu ukitumia wijeti. Pia, kumbuka kuwa mtu yeyote anaweza kuziona, hata kishikwambi chako kikiwa kimefungwa. Huenda baadhi ya wijeti hazikukusudiwa kutumika kwenye skrini yako iliyofungwa na huenda si salama kuziweka hapa."</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"Nimeelewa"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"Badili mtumiaji"</string>
@@ -1309,7 +1309,7 @@
     <string name="bt_le_audio_broadcast_dialog_switch_app" msgid="6098768269397105733">"Tangaza kwenye <xliff:g id="SWITCHAPP">%1$s</xliff:g>"</string>
     <string name="bt_le_audio_broadcast_dialog_different_output" msgid="7885102097302562674">"Badilisha maudhui"</string>
     <string name="bt_le_audio_broadcast_dialog_unknown_name" msgid="3791472237793443044">"Haijulikani"</string>
-    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"saa:dk"</string>
+    <string name="dream_time_complication_12_hr_time_format" msgid="4691197486690291529">"h:mm"</string>
     <string name="dream_time_complication_24_hr_time_format" msgid="6248280719733640813">"kk:mm"</string>
     <string name="log_access_confirmation_title" msgid="4843557604739943395">"Ungependa kuruhusu <xliff:g id="LOG_ACCESS_APP_NAME">%s</xliff:g> ifikie kumbukumbu zote za kifaa?"</string>
     <string name="log_access_confirmation_allow" msgid="752147861593202968">"Ruhusu ufikiaji wa mara moja"</string>
@@ -1445,7 +1445,7 @@
     <string name="accessibility_deprecate_extra_dim_dialog_title" msgid="910988771011857460">"Sasa kipunguza mwangaza zaidi ni sehemu ya kitelezi cha mwangaza"</string>
     <string name="accessibility_deprecate_extra_dim_dialog_description" msgid="4453123359258743230">"Sasa unaweza kupunguza kiwango cha mwangaza wa skrini hata zaidi.\n\nKwa kuwa kipengele hiki sasa ni sehemu ya kitelezi cha mwangaza, njia za mkato za kipunguza mwangaza zaidi zinaondolewa."</string>
     <string name="accessibility_deprecate_extra_dim_dialog_button" msgid="3947537827396916005">"Ondoa njia za mkato za kipunguza mwangaza zaidi"</string>
-    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Njia za mkato za kipunguza mwangaza zaidi zimeondolewa"</string>
+    <string name="accessibility_deprecate_extra_dim_dialog_toast" msgid="165474092660941104">"Njia za mkato za kupunguza mwanga zaidi zimeondolewa"</string>
     <string name="qs_edit_mode_category_connectivity" msgid="4559726936546032672">"Muunganisho"</string>
     <string name="qs_edit_mode_category_accessibility" msgid="7969091385071475922">"Ufikivu"</string>
     <string name="qs_edit_mode_category_utilities" msgid="8123080090108420095">"Vipengee"</string>

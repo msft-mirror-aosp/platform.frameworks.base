@@ -2579,6 +2579,7 @@ public class NotificationManagerService extends SystemService {
                 mNotificationChannelLogger,
                 mAppOps,
                 mUserProfiles,
+                mUgmInternal,
                 mShowReviewPermissionsNotification,
                 Clock.systemUTC());
         mRankingHelper = new RankingHelper(getContext(), mRankingHandler, mPreferencesHelper,
@@ -5687,18 +5688,24 @@ public class NotificationManagerService extends SystemService {
 
         // TODO: b/310620812 - Remove getZenRules() when MODES_API is inlined.
         @Override
-        public List<ZenModeConfig.ZenRule> getZenRules() throws RemoteException {
-            enforcePolicyAccess(Binder.getCallingUid(), "getZenRules");
-            return mZenModeHelper.getZenRules();
+        public ParceledListSlice<ZenModeConfig.ZenRule> getZenRules() throws RemoteException {
+            enforcePolicyAccess(Binder.getCallingUid(), "getAutomaticZenRules");
+            return new ParceledListSlice<ZenModeConfig.ZenRule>(mZenModeHelper.getZenRules());
         }
 
         @Override
-        public Map<String, AutomaticZenRule> getAutomaticZenRules() {
+        public ParceledListSlice<AutomaticZenRule.AzrWithId> getAutomaticZenRules() {
             if (!android.app.Flags.modesApi()) {
                 throw new IllegalStateException("getAutomaticZenRules called with flag off!");
             }
-            enforcePolicyAccess(Binder.getCallingUid(), "getAutomaticZenRules");
-            return mZenModeHelper.getAutomaticZenRules();
+            int callingUid = Binder.getCallingUid();
+            enforcePolicyAccess(callingUid, "getAutomaticZenRules");
+            List<AutomaticZenRule.AzrWithId> ruleList = new ArrayList<>();
+            for (Map.Entry<String, AutomaticZenRule> rule :
+                    mZenModeHelper.getAutomaticZenRules().entrySet()) {
+                ruleList.add(new AutomaticZenRule.AzrWithId(rule.getKey(), rule.getValue()));
+            }
+            return new ParceledListSlice<>(ruleList);
         }
 
         @Override
@@ -6657,13 +6664,7 @@ public class NotificationManagerService extends SystemService {
             final Uri originalSoundUri =
                     (originalChannel != null) ? originalChannel.getSound() : null;
             if (soundUri != null && !Objects.equals(originalSoundUri, soundUri)) {
-                Binder.withCleanCallingIdentity(() -> {
-                    mUgmInternal.checkGrantUriPermission(sourceUid, null,
-                            ContentProvider.getUriWithoutUserId(soundUri),
-                            Intent.FLAG_GRANT_READ_URI_PERMISSION,
-                            ContentProvider.getUserIdFromUri(soundUri,
-                            UserHandle.getUserId(sourceUid)));
-                });
+                PermissionHelper.grantUriPermission(mUgmInternal, soundUri, sourceUid);
             }
         }
 

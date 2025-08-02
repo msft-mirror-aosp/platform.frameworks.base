@@ -2355,7 +2355,7 @@
     <string name="window_magnification_prompt_title" msgid="2876703640772778215">"Nye innstillinger for forstørring"</string>
     <string name="window_magnification_prompt_content" msgid="8159173903032344891">"Nå kan du forstørre en del av skjermen"</string>
     <string name="turn_on_magnification_settings_action" msgid="8521433346684847700">"Slå på i innstillingene"</string>
-    <string name="dismiss_action" msgid="1728820550388704784">"Avvis"</string>
+    <string name="dismiss_action" msgid="1728820550388704784">"Lukk"</string>
     <string name="sensor_privacy_start_use_mic_notification_content_title" msgid="2420858361276370367">"Opphev blokkeringen av enhetsmikrofonen"</string>
     <string name="sensor_privacy_start_use_camera_notification_content_title" msgid="7287720213963466672">"Opphev blokkeringen av enhetskameraet"</string>
     <string name="sensor_privacy_start_use_notification_content_text" msgid="7595608891015777346">"For &lt;b&gt;<xliff:g id="APP">%s</xliff:g>&lt;/b&gt; og alle apper og tjenester"</string>

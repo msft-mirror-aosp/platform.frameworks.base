@@ -508,11 +508,11 @@
     <string name="accessibility_action_label_select_widget" msgid="8897281501387398191">"اختيار التطبيق المصغّر"</string>
     <string name="accessibility_action_label_remove_widget" msgid="3373779447448758070">"إزالة التطبيق المصغّر"</string>
     <string name="accessibility_action_label_place_widget" msgid="1914197458644168978">"إضافة التطبيق المصغّر المحدَّد"</string>
-    <string name="communal_widget_picker_title" msgid="1953369090475731663">"التطبيقات المصغّرة المصمَّمة لشاشة القفل"</string>
+    <string name="communal_widget_picker_title" msgid="1953369090475731663">"التطبيقات المصغّرة على شاشة القفل"</string>
     <string name="communal_widget_picker_description" msgid="490515450110487871">"يمكن للجميع رؤية التطبيقات المصغّرة على شاشة القفل، حتى في حال قفل الجهاز اللوحي."</string>
     <string name="accessibility_action_label_unselect_widget" msgid="1041811747619468698">"إلغاء اختيار التطبيق المصغّر"</string>
     <string name="communal_widgets_disclaimer_title" msgid="1150954395585308868">"التطبيقات المصغّرة المصمَّمة لشاشة القفل"</string>
-    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"لفتح تطبيق باستخدام تطبيق مصغَّر، عليك إثبات هويتك. يُرجى ملاحظة أنّ أي شخص يمكنه الاطّلاع محتوى التطبيقات المصغَّرة، حتى وإن كان جهازك اللوحي مُقفلاً. بعض التطبيقات المصغّرة قد لا تكون مُصمَّمة لإضافتها إلى شاشة القفل، وقد يكون هذا الإجراء غير آمن."</string>
+    <string name="communal_widgets_disclaimer_text" msgid="1423545475160506349">"لفتح تطبيق باستخدام تطبيق مصغَّر، عليك إثبات هويتك. يمكن لأي شخص الاطّلاع على محتوى التطبيقات المصغَّرة، حتى لو كان جهازك اللوحي مُقفلاً. لا تكون بعض التطبيقات المصغّرة مُصمَّمة للعرض على شاشة القفل، وبالتالي قد يكون هذا الإجراء غير آمن."</string>
     <string name="communal_widgets_disclaimer_button" msgid="4423059765740780753">"حسنًا"</string>
     <string name="accessibility_multi_user_switch_switcher" msgid="5330448341251092660">"تبديل المستخدم"</string>
     <string name="accessibility_multi_user_list_switcher" msgid="8574105376229857407">"القائمة المنسدلة"</string>

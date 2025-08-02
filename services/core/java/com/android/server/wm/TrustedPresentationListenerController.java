@@ -35,6 +35,7 @@ import android.util.ArrayMap;
 import android.util.IntArray;
 import android.util.Pair;
 import android.util.Size;
+import android.util.SparseArray;
 import android.view.InputWindowHandle;
 import android.window.ITrustedPresentationListener;
 import android.window.TrustedPresentationThresholds;
@@ -248,7 +249,7 @@ public class TrustedPresentationListenerController {
         Rect tmpRect = new Rect();
         Matrix tmpInverseMatrix = new Matrix();
         float[] tmpMatrix = new float[9];
-        Region coveredRegionsAbove = new Region();
+        SparseArray<Region> coveredRegionsAboveByDisplay = new SparseArray<>();
         long currTimeMs = System.currentTimeMillis();
         ProtoLog.v(WM_DEBUG_TPL, "Checking %d windows", mLastWindowHandles.length);
 
@@ -260,6 +261,8 @@ public class TrustedPresentationListenerController {
                 continue;
             }
             tmpRect.set(windowHandle.frame);
+            int displayId = windowHandle.displayId;
+            Region coveredRegionsAbove = coveredRegionsAboveByDisplay.get(displayId, new Region());
             var listeners = mRegisteredListeners.get(windowHandle.getWindowToken());
             if (listeners != null) {
                 Region region = new Region();
@@ -280,6 +283,7 @@ public class TrustedPresentationListenerController {
             }
 
             coveredRegionsAbove.op(tmpRect, Region.Op.UNION);
+            coveredRegionsAboveByDisplay.put(displayId, coveredRegionsAbove);
             ProtoLog.v(WM_DEBUG_TPL, "coveredRegionsAbove updated with %s frame:%s region:%s",
                     windowHandle.name, tmpRect.toShortString(), coveredRegionsAbove);
         }

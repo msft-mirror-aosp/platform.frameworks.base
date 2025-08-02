@@ -19,6 +19,7 @@ package com.android.server.wm;
 import static android.app.ActivityManager.START_DELIVERED_TO_TOP;
 import static android.app.ActivityManager.START_TASK_TO_FRONT;
 import static android.app.ITaskStackListener.FORCED_RESIZEABLE_REASON_SECONDARY_DISPLAY;
+import static android.app.WindowConfiguration.WINDOWING_MODE_FREEFORM;
 import static android.app.WindowConfiguration.WINDOWING_MODE_FULLSCREEN;
 import static android.app.WindowConfiguration.WINDOWING_MODE_MULTI_WINDOW;
 
@@ -45,11 +46,14 @@ import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.timeout;
 
+import android.annotation.NonNull;
 import android.app.ActivityOptions;
 import android.app.WaitResult;
+import android.app.WindowConfiguration;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Rect;
 import android.os.Binder;
 import android.os.ConditionVariable;
 import android.os.IBinder;
@@ -360,6 +364,25 @@ public class ActivityTaskSupervisorTests extends WindowTestsBase {
         assertEquals(activity1.app, mAtm.mTopApp);
     }
 
+    @Test
+    public void testTopResumedActivity_deferResume() {
+        final ActivityRecord activity1 = new ActivityBuilder(mAtm).setCreateTask(true).build();
+        final ActivityRecord activity2 = new ActivityBuilder(mAtm).setCreateTask(true).build();
+        activity2.setState(ActivityRecord.State.RESUMED, "test");
+        assertEquals(activity2.app, mAtm.mTopApp);
+        reset(activity2);
+
+        // Verify that no top-resumed activity changes to the client while defer-resume enabled.
+        mSupervisor.beginDeferResume();
+        activity1.getTask().moveToFront("test");
+        activity1.setState(ActivityRecord.State.RESUMED, "test");
+        verify(activity2, never()).scheduleTopResumedActivityChanged(eq(false));
+
+        // Verify that the change is scheduled to the client after defer-resumed disabled
+        mSupervisor.endDeferResume();
+        verify(activity2).scheduleTopResumedActivityChanged(eq(false));
+    }
+
     /**
      * We need to launch home again after user unlocked for those displays that do not have
      * encryption aware home app.
@@ -456,5 +479,102 @@ public class ActivityTaskSupervisorTests extends WindowTestsBase {
         verify(mAtm).moveTaskToFrontLocked(any(), eq(null), anyInt(), anyInt(), eq(safeOptions));
         verify(mRootWindowContainer.getDefaultTaskDisplayArea()).moveHomeRootTaskToFront(any());
         verify(fullscreenRootTask.getDisplayArea()).moveHomeRootTaskToFront(any());
+    }
+
+    @Test
+    public void testOpaque_leafTask_occludingActivity_isOpaque() {
+        final ActivityRecord activity = new ActivityBuilder(mAtm).setCreateTask(true).build();
+        activity.setOccludesParent(true);
+        final TaskFragment tf = activity.getTaskFragment();
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(tf)).isTrue();
+    }
+
+    @Test
+    public void testOpaque_leafTask_nonOccludingActivity_isTranslucent() {
+        final ActivityRecord activity = new ActivityBuilder(mAtm).setCreateTask(true).build();
+        activity.setOccludesParent(false);
+        final TaskFragment tf = activity.getTaskFragment();
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(tf)).isFalse();
+    }
+
+    @Test
+    public void testOpaque_rootTask_translucentFillingChild_isTranslucent() {
+        final Task rootTask = new TaskBuilder(mSupervisor).setOnTop(true).build();
+        createChildTaskFragment(/* parent */ rootTask,
+                WINDOWING_MODE_FREEFORM, /* opaque */ false, /* filling */ true);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(rootTask)).isFalse();
+    }
+
+    @Test
+    public void testOpaque_rootTask_opaqueAndNotFillingChild_isTranslucent() {
+        final Task rootTask = new TaskBuilder(mSupervisor).setOnTop(true).build();
+        createChildTaskFragment(/* parent */ rootTask,
+                WINDOWING_MODE_FREEFORM, /* opaque */ true, /* filling */ false);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(rootTask)).isFalse();
+    }
+
+    @Test
+    public void testOpaque_rootTask_opaqueAndFillingChild_isOpaque() {
+        final Task rootTask = new TaskBuilder(mSupervisor).setOnTop(true).build();
+        createChildTaskFragment(/* parent */ rootTask,
+                WINDOWING_MODE_FREEFORM, /* opaque */ true, /* filling */ true);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(rootTask)).isTrue();
+    }
+
+    @Test
+    public void testOpaque_rootTask_nonFillingOpaqueAdjacentChildren_isOpaque() {
+        final Task rootTask = new TaskBuilder(mSupervisor).setOnTop(true).build();
+        final TaskFragment tf1 = createChildTaskFragment(/* parent */ rootTask,
+                WINDOWING_MODE_MULTI_WINDOW, /* opaque */ true, /* filling */ false);
+        final TaskFragment tf2 = createChildTaskFragment(/* parent */ rootTask,
+                WINDOWING_MODE_MULTI_WINDOW, /* opaque */ true, /* filling */ false);
+        tf1.setAdjacentTaskFragment(tf2);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(rootTask)).isTrue();
+    }
+
+    @Test
+    public void testOpaque_nonLeafTaskFragmentWithDirectActivity_opaque() {
+        final ActivityRecord directChildActivity = new ActivityBuilder(mAtm).setCreateTask(true)
+                .build();
+        directChildActivity.setOccludesParent(true);
+        final Task nonLeafTask = directChildActivity.getTask();
+        final TaskFragment directChildFragment = new TaskFragment(mAtm, new Binder(),
+                true /* createdByOrganizer */, false /* isEmbedded */);
+        nonLeafTask.addChild(directChildFragment, 0);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(nonLeafTask)).isTrue();
+    }
+
+    @Test
+    public void testOpaque_nonLeafTaskFragmentWithDirectActivity_transparent() {
+        final ActivityRecord directChildActivity = new ActivityBuilder(mAtm).setCreateTask(true)
+                .build();
+        directChildActivity.setOccludesParent(false);
+        final Task nonLeafTask = directChildActivity.getTask();
+        final TaskFragment directChildFragment = new TaskFragment(mAtm, new Binder(),
+                true /* createdByOrganizer */, false /* isEmbedded */);
+        nonLeafTask.addChild(directChildFragment, 0);
+
+        assertThat(mSupervisor.mOpaqueContainerHelper.isOpaque(nonLeafTask)).isFalse();
+    }
+
+    @NonNull
+    private TaskFragment createChildTaskFragment(@NonNull Task parent,
+            @WindowConfiguration.WindowingMode int windowingMode,
+            boolean opaque,
+            boolean filling) {
+        final ActivityRecord activity = new ActivityBuilder(mAtm)
+                .setCreateTask(true).setParentTask(parent).build();
+        activity.setOccludesParent(opaque);
+        final TaskFragment tf = activity.getTaskFragment();
+        tf.setWindowingMode(windowingMode);
+        tf.setBounds(filling ? new Rect() : new Rect(100, 100, 200, 200));
+        return tf;
     }
 }
