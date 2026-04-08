@@ -119,7 +119,7 @@ public class IntentForwarderActivity extends Activity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mInjector = createInjector();
-        mExecutorService = Executors.newSingleThreadExecutor();
+        mExecutorService = mInjector.getExecutorService();
 
         Intent intentReceived = getIntent();
         String className = intentReceived.getComponent().getClassName();
@@ -553,8 +553,7 @@ public class IntentForwarderActivity extends Activity  {
     }
 
     private boolean isDeviceProvisioned() {
-        return Settings.Global.getInt(getContentResolver(),
-                Settings.Global.DEVICE_PROVISIONED, /* def= */ 0) != 0;
+        return mInjector.isDeviceProvisioned();
     }
 
     private boolean isTextMessageIntent(Intent intent) {
@@ -736,6 +735,17 @@ public class IntentForwarderActivity extends Activity  {
         public void showToast(String message, int duration) {
             Toast.makeText(IntentForwarderActivity.this, message, duration).show();
         }
+
+        @Override
+        public ExecutorService getExecutorService() {
+            return Executors.newSingleThreadExecutor();
+        }
+
+        @Override
+        public boolean isDeviceProvisioned() {
+            return Settings.Global.getInt(getContentResolver(),
+                    Settings.Global.DEVICE_PROVISIONED, /* def= */ 0) != 0;
+        }
     }
 
     public interface Injector {
@@ -751,5 +761,9 @@ public class IntentForwarderActivity extends Activity  {
         CompletableFuture<ResolveInfo> resolveActivityAsUser(Intent intent, int flags, int userId);
 
         void showToast(String message, int duration);
+
+        ExecutorService getExecutorService();
+
+        boolean isDeviceProvisioned();
     }
 }
