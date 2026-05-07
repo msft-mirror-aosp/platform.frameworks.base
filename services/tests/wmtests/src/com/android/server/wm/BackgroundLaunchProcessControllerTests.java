@@ -153,6 +153,7 @@ public class BackgroundLaunchProcessControllerTests {
 
     @Test
     public void testBoundByForegroundFgs() {
+        mIsCheckingForFgsStart = true;
         mAppSwitchState = APP_SWITCH_ALLOW;
         mController.addBoundClientUid(999, "visible.package", Context.BIND_ALLOW_ACTIVITY_STARTS);
         mHasActiveVisibleWindow.add(999);
