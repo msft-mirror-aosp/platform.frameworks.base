@@ -61,6 +61,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManagerInternal;
 import android.content.pm.ResolveInfo;
 import android.content.pm.ServiceInfo;
 import android.content.res.XmlResourceParser;
@@ -112,6 +113,7 @@ import com.android.server.accessibility.magnification.FullScreenMagnificationCon
 import com.android.server.accessibility.magnification.MagnificationConnectionManager;
 import com.android.server.accessibility.magnification.MagnificationController;
 import com.android.server.accessibility.magnification.MagnificationProcessor;
+import com.android.server.accessibility.utils.TileServiceUtil;
 import com.android.server.pm.UserManagerInternal;
 import com.android.server.statusbar.StatusBarManagerInternal;
 import com.android.server.wm.ActivityTaskManagerInternal;
@@ -185,6 +187,8 @@ public class AccessibilityManagerServiceTest {
     @Mock private AbstractAccessibilityServiceConnection.SystemSupport mMockSystemSupport;
     @Mock private WindowManagerInternal.AccessibilityControllerInternal mMockA11yController;
     @Mock private PackageManager mMockPackageManager;
+    @Mock
+    private PackageManagerInternal mMockPackageManagerInternal;
     @Mock private WindowManagerInternal mMockWindowManagerService;
     @Mock private AccessibilitySecurityPolicy mMockSecurityPolicy;
     @Mock private SystemActionPerformer mMockSystemActionPerformer;
@@ -219,6 +223,7 @@ public class AccessibilityManagerServiceTest {
         LocalServices.removeServiceForTest(UserManagerInternal.class);
         LocalServices.removeServiceForTest(StatusBarManagerInternal.class);
         LocalServices.removeServiceForTest(PermissionEnforcer.class);
+        LocalServices.removeServiceForTest(PackageManagerInternal.class);
         LocalServices.addService(
                 WindowManagerInternal.class, mMockWindowManagerService);
         LocalServices.addService(
@@ -226,6 +231,7 @@ public class AccessibilityManagerServiceTest {
         LocalServices.addService(
                 UserManagerInternal.class, mMockUserManagerInternal);
         LocalServices.addService(StatusBarManagerInternal.class, mStatusBarManagerInternal);
+        LocalServices.addService(PackageManagerInternal.class, mMockPackageManagerInternal);
         mInputFilter = Mockito.mock(FakeInputFilter.class);
 
         when(mMockMagnificationController.getMagnificationConnectionManager()).thenReturn(
@@ -1885,7 +1891,17 @@ public class AccessibilityManagerServiceTest {
                 /* isAlwaysOnService= */ false);
         userState.mInstalledServices.addAll(
                 List.of(alwaysOnServiceInfo, standardServiceInfo));
-        userState.updateTileServiceMapForAccessibilityServiceLocked();
+        ComponentName alwaysOnA11yServiceTile =
+                new ComponentName(TARGET_ALWAYS_ON_A11Y_SERVICE.getPackageName(),
+                        alwaysOnServiceInfo.getTileServiceName());
+        TileServiceUtil.setupPackageManagerForValidTileService(
+                mMockPackageManagerInternal,
+                userState.mUserId,
+                alwaysOnA11yServiceTile
+        );
+        userState.updateTileServiceMapForAccessibilityServiceLocked(
+                Set.of(alwaysOnA11yServiceTile)
+        );
     }
 
     private void sendBroadcastToAccessibilityManagerService(Intent intent) {
