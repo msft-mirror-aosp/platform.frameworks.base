@@ -217,8 +217,7 @@ class ExternalDisplayPolicy {
 
         mExternalDisplayStatsService.onDisplayConnected(logicalDisplay);
 
-        if ((Build.IS_ENG || Build.IS_USERDEBUG)
-                && SystemProperties.getBoolean(ENABLE_ON_CONNECT, false)) {
+        if (shouldAutoEnable(logicalDisplay)) {
             Slog.w(TAG, "External display is enabled by default, bypassing user consent.");
             mInjector.sendExternalDisplayEventLocked(logicalDisplay, EVENT_DISPLAY_CONNECTED);
             return;
@@ -296,6 +295,12 @@ class ExternalDisplayPolicy {
         } else {
             mExternalDisplayStatsService.onPresentationWindowRemoved(displayId);
         }
+    }
+
+    private boolean shouldAutoEnable(LogicalDisplay logicalDisplay) {
+        return ((Build.IS_ENG || Build.IS_USERDEBUG)
+                && SystemProperties.getBoolean(ENABLE_ON_CONNECT, false))
+                || mLogicalDisplayMapper.isEnabledInLayoutLocked(logicalDisplay);
     }
 
     @GuardedBy("mSyncRoot")
