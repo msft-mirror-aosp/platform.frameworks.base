@@ -2857,6 +2857,13 @@ public class DisplayManagerServiceTest {
         LogicalDisplayMapper logicalDisplayMapper = displayManager.getLogicalDisplayMapper();
         FakeDisplayManagerCallback callback = new FakeDisplayManagerCallback();
         bs.registerCallbackWithEventMask(callback, STANDARD_AND_CONNECTION_DISPLAY_EVENTS);
+        // Create default display, which will be added in default layout by
+        // LogicalDisplayMapper#initializeDefaultDisplayDeviceLocked
+        callback.expectsEvent(EVENT_DISPLAY_ADDED);
+        createFakeDisplayDevice(displayManager, new float[]{60f}, Display.TYPE_INTERNAL);
+        callback.waitForExpectedEvent();
+
+        // Add external display, which won't be in the layout created above
         callback.expectsEvent(EVENT_DISPLAY_CONNECTED);
         FakeDisplayDevice displayDevice =
                 createFakeDisplayDevice(displayManager, new float[]{60f}, Display.TYPE_EXTERNAL);

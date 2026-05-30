@@ -230,11 +230,11 @@ public class ExternalDisplayPolicyTest {
     public void testOnExternalDisplayAvailable() {
 
         mExternalDisplayPolicy.handleExternalDisplayConnectedLocked(mMockedLogicalDisplay);
-        assertNotAskedToEnableDisplay();
+        assertNotAskedUserIfDisplayShouldBeEnabled();
         verify(mMockedExternalDisplayStatsService, never()).onDisplayConnected(any());
 
         mExternalDisplayPolicy.onBootCompleted();
-        assertAskedToEnableDisplay();
+        assertAskedUserIfDisplayShouldBeEnabled();
         verify(mMockedExternalDisplayStatsService).onDisplayConnected(eq(mMockedLogicalDisplay));
     }
 
@@ -243,7 +243,7 @@ public class ExternalDisplayPolicyTest {
         mExternalDisplayPolicy.handleExternalDisplayConnectedLocked(mMockedLogicalDisplay);
         mExternalDisplayPolicy.handleLogicalDisplayDisconnectedLocked(mMockedLogicalDisplay);
         mExternalDisplayPolicy.onBootCompleted();
-        assertNotAskedToEnableDisplay();
+        assertNotAskedUserIfDisplayShouldBeEnabled();
         verify(mMockedExternalDisplayStatsService, never()).onDisplayConnected(any());
         verify(mMockedExternalDisplayStatsService, never()).onDisplayDisconnected(anyInt());
     }
@@ -279,6 +279,14 @@ public class ExternalDisplayPolicyTest {
     }
 
     @Test
+    public void testExternalDisplayAutoEnabledWithLayoutConfiguration() {
+        when(mMockedLogicalDisplayMapper.isEnabledInLayoutLocked(any())).thenReturn(true);
+        mExternalDisplayPolicy.handleExternalDisplayConnectedLocked(mMockedLogicalDisplay);
+        mExternalDisplayPolicy.onBootCompleted();
+        assertNotAskedUserIfDisplayShouldBeEnabled();
+    }
+
+    @Test
     public void testOnCriticalTemperature_disallowAndAllowExternalDisplay() throws RemoteException {
         final var thermalListener = registerThermalListener();
 
@@ -311,7 +319,7 @@ public class ExternalDisplayPolicyTest {
         when(mMockedLogicalDisplay.isEnabledLocked()).thenReturn(enabled);
     }
 
-    private void assertAskedToEnableDisplay() {
+    private void assertAskedUserIfDisplayShouldBeEnabled() {
         // Check sendExternalDisplayEventLocked is triggered when display can be enabled.
         verify(mMockedInjector).sendExternalDisplayEventLocked(mLogicalDisplayCaptor.capture(),
                 mDisplayEventCaptor.capture());
@@ -323,8 +331,7 @@ public class ExternalDisplayPolicyTest {
         clearInvocations(mMockedLogicalDisplay);
     }
 
-    private void assertNotAskedToEnableDisplay() {
-        verify(mMockedInjector, never()).sendExternalDisplayEventLocked(any(), anyInt());
+    private void assertNotAskedUserIfDisplayShouldBeEnabled() {
         verify(mMockedLogicalDisplay, never()).setEnabledLocked(anyBoolean());
     }
 
