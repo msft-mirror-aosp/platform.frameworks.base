@@ -1164,20 +1164,19 @@ public class PreferencesHelperTest extends UiServiceTestCase {
 
         ByteArrayOutputStream baos = writeXmlAndPurge(
                 PKG_N_MR1, UID_N_MR1, false, USER_SYSTEM);
-        String expected_o = "<ranking version=\"4\">\n"
+        String expected = "<ranking version=\"4\">\n"
                 + "<package name=\"com.example.o\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
-                + "=\"false\" uid=\"" + UID_O + "\">\n"
+                + "=\"false\" uid=\"10002\">\n"
                 + "<channel id=\"id\" name=\"name\" importance=\"2\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" orig_imp=\"2\" />\n"
-                + "</package>\n";
-        String expected_n =
-                "<package name=\"com.example.n_mr1\" show_badge=\"true\" "
+                + "</package>\n"
+                + "<package name=\"com.example.n_mr1\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
-                + "=\"false\" uid=\"" + UID_N_MR1 + "\">\n"
+                + "=\"false\" uid=\"10001\">\n"
                 + "<channelGroup id=\"1\" name=\"bye\" blocked=\"false\" locked=\"0\" />\n"
                 + "<channelGroup id=\"2\" name=\"hello\" blocked=\"false\" locked=\"0\" />\n"
                 + "<channel id=\"id1\" name=\"name1\" importance=\"4\" show_badge=\"true\" "
@@ -1192,15 +1191,12 @@ public class PreferencesHelperTest extends UiServiceTestCase {
                 + "<channel id=\"miscellaneous\" name=\"Uncategorized\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" />\n"
-                + "</package>\n";
-        String expected_p =
-                "<package name=\"com.example.p\" show_badge=\"true\" "
+                + "</package>\n"
+                + "<package name=\"com.example.p\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"true\" sent_valid_msg=\"true\""
-                + " user_demote_msg_app=\"true\" sent_valid_bubble=\"false\" uid=\""+ UID_P + "\" />";
-        String actual = baos.toString();
-        assertThat(actual).contains(expected_o);
-        assertThat(actual).contains(expected_n);
-        assertThat(actual).contains(expected_p);
+                + " user_demote_msg_app=\"true\" sent_valid_bubble=\"false\" uid=\"10003\" />\n"
+                + "</ranking>";
+        assertThat(baos.toString()).contains(expected);
     }
 
     @Test
@@ -1255,17 +1251,16 @@ public class PreferencesHelperTest extends UiServiceTestCase {
                 PKG_N_MR1, UID_N_MR1, true, USER_SYSTEM);
         String expected = "<ranking version=\"4\">\n"
                 // Importance 0 because off in permissionhelper
-                "<package name=\"com.example.o\" importance=\"0\" show_badge=\"true\" "
+                + "<package name=\"com.example.o\" importance=\"0\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
                 + "=\"false\">\n"
                 + "<channel id=\"id\" name=\"name\" importance=\"2\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" orig_imp=\"2\" />\n"
-                + "</package>\n";
-        String expected_n =
+                + "</package>\n"
                 // Importance default because on in permission helper
-                "<package name=\"com.example.n_mr1\" importance=\"3\" show_badge=\"true\" "
+                + "<package name=\"com.example.n_mr1\" importance=\"3\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
                 + "=\"false\">\n"
@@ -1283,23 +1278,16 @@ public class PreferencesHelperTest extends UiServiceTestCase {
                 + "<channel id=\"miscellaneous\" name=\"Uncategorized\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" />\n"
-                + "</package>\n";
-        String expected_p =
+                + "</package>\n"
                 // Importance default because on in permission helper
-                "<package name=\"com.example.p\" importance=\"3\" show_badge=\"true\" "
+                + "<package name=\"com.example.p\" importance=\"3\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"true\" sent_valid_msg=\"true\""
                 + " user_demote_msg_app=\"true\" sent_valid_bubble=\"false\" />\n"
                 // Packages that exist solely in permissionhelper
                 + "<package name=\"first\" importance=\"3\" />\n"
                 + "<package name=\"third\" importance=\"0\" />\n"
                 + "</ranking>";
-        String actual = baos.toString();
-        assertThat(actual).contains(expected);
-        assertThat(actual).contains(expected_n);
-        assertThat(actual).contains(expected_p);
-        // Packages that exist solely in permissionhelper
-        assertThat(actual).contains("<package name=\"first\" importance=\"3\"");
-        assertThat(actual).contains("<package name=\"third\" importance=\"0\"");
+        assertThat(baos.toString()).contains(expected);
     }
 
     @Test
@@ -1339,7 +1327,7 @@ public class PreferencesHelperTest extends UiServiceTestCase {
         mHelper.createNotificationChannel(PKG_N_MR1, UID_N_MR1, channel3, false, false,
                 SYSTEM_UID, true);
         mHelper.createNotificationChannel(PKG_O, UID_O, getChannel(), true, false,
-                UID_O, false);
+                UID_N_MR1, false);
 
         mHelper.setShowBadge(PKG_N_MR1, UID_N_MR1, true);
         mHelper.setInvalidMessageSent(PKG_P, UID_P);
@@ -1350,18 +1338,16 @@ public class PreferencesHelperTest extends UiServiceTestCase {
                 PKG_N_MR1, UID_N_MR1, true, USER_SYSTEM);
         String expected = "<ranking version=\"4\">\n"
                 // Importance 0 because off in permissionhelper
-        String expected_o =
-                "<package name=\"com.example.o\" importance=\"0\" show_badge=\"true\" "
+                + "<package name=\"com.example.o\" importance=\"0\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
                 + "=\"false\">\n"
                 + "<channel id=\"id\" name=\"name\" importance=\"2\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" orig_imp=\"2\" />\n"
-                + "</package>\n";
-        String expected_n =
-                // Importance missing because missing from permission helper
-                "<package name=\"com.example.n_mr1\" show_badge=\"true\" "
+                + "</package>\n"
+                // Importance 0 because missing from permission helper
+                + "<package name=\"com.example.n_mr1\" importance=\"0\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"false\" "
                 + "sent_valid_msg=\"false\" user_demote_msg_app=\"false\" sent_valid_bubble"
                 + "=\"false\">\n"
@@ -1379,16 +1365,13 @@ public class PreferencesHelperTest extends UiServiceTestCase {
                 + "<channel id=\"miscellaneous\" name=\"Uncategorized\" "
                 + "sound=\"content://settings/system/notification_sound\" usage=\"5\" "
                 + "content_type=\"4\" flags=\"0\" show_badge=\"true\" />\n"
-                + "</package>\n";
-        String expected_p =
+                + "</package>\n"
                 // Importance default because on in permission helper
-                "<package name=\"com.example.p\" importance=\"3\" show_badge=\"true\" "
+                + "<package name=\"com.example.p\" importance=\"3\" show_badge=\"true\" "
                 + "app_user_locked_fields=\"0\" sent_invalid_msg=\"true\" sent_valid_msg=\"true\""
-                + " user_demote_msg_app=\"true\" sent_valid_bubble=\"false\"";
-        String actual = baos.toString();
-        assertThat(actual).contains(expected_o);
-        assertThat(actual).contains(expected_n);
-        assertThat(actual).contains(expected_p);
+                + " user_demote_msg_app=\"true\" sent_valid_bubble=\"false\" />\n"
+                + "</ranking>";
+        assertThat(baos.toString()).contains(expected);
     }
 
     @Test
@@ -3682,7 +3665,7 @@ public class PreferencesHelperTest extends UiServiceTestCase {
         String actual = sw.toString();
 
         // nobody gets any importance
-        assertThat(actual).doesNotContain("importance=");
+        assertFalse(actual.contains("importance="));
     }
 
     @Test
