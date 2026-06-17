@@ -3760,13 +3760,11 @@ public class RemoteViews implements Parcelable, Filter {
             Object tag = button.getTag(R.id.remote_checked_change_listener_tag);
             // Temporarily unset the checked change listener so calling setChecked doesn't launch
             // the intent.
-            if (tag instanceof OnCheckedChangeListener) {
-                button.setOnCheckedChangeListener(null);
-                button.setChecked(mChecked);
-                button.setOnCheckedChangeListener((OnCheckedChangeListener) tag);
-            } else {
-                button.setChecked(mChecked);
-            }
+            OnCheckedChangeListener saved = (tag instanceof OnCheckedChangeListener)
+                    ? (OnCheckedChangeListener) tag : null;
+            button.setOnCheckedChangeListener(null);
+            button.setChecked(mChecked);
+            button.setOnCheckedChangeListener(saved);
         }
 
         @Override
@@ -3812,9 +3810,6 @@ public class RemoteViews implements Parcelable, Filter {
                 View child = group.getChildAt(i);
                 if (!(child instanceof CompoundButton)) continue;
 
-                Object tag = child.getTag(R.id.remote_checked_change_listener_tag);
-                if (!(tag instanceof OnCheckedChangeListener)) continue;
-
                 // Clear the checked change listener, we'll restore it after the check.
                 ((CompoundButton) child).setOnCheckedChangeListener(null);
             }
@@ -3827,9 +3822,10 @@ public class RemoteViews implements Parcelable, Filter {
                 if (!(child instanceof CompoundButton)) continue;
 
                 Object tag = child.getTag(R.id.remote_checked_change_listener_tag);
-                if (!(tag instanceof OnCheckedChangeListener)) continue;
-
-                ((CompoundButton) child).setOnCheckedChangeListener((OnCheckedChangeListener) tag);
+                if (tag instanceof OnCheckedChangeListener) {
+                    ((CompoundButton) child).setOnCheckedChangeListener(
+                            (OnCheckedChangeListener) tag);
+                }
             }
         }
 
