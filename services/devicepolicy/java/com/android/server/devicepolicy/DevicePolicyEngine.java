@@ -2101,8 +2101,7 @@ final class DevicePolicyEngine {
 
                 readInnerLocked(parser);
 
-            } catch (XmlPullParserException | IOException | ClassNotFoundException
-                    | IllegalArgumentException e) {
+            } catch (XmlPullParserException | IOException | ClassNotFoundException e) {
                 Slogf.wtf(TAG, "Error parsing resources file", e);
             } finally {
                 IoUtils.closeQuietly(input);
@@ -2161,7 +2160,11 @@ final class DevicePolicyEngine {
                         if (policyDefinition == null) {
                             Slogf.w(TAG, "Skipping policy state - unknown policy definition");
                         } else {
-                            policyState = PolicyState.readFromXml(policyDefinition, parser);
+                            try {
+                                policyState = PolicyState.readFromXml(policyDefinition, parser);
+                            } catch (IllegalArgumentException e) {
+                                Slogf.wtf(TAG, "Error parsing policy state", e);
+                            }
                         }
                         break;
                     default:
