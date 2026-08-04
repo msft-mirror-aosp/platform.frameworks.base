@@ -1313,9 +1313,7 @@ public class LockSettingsService extends ILockSettings.Stub {
     }
 
     private boolean getSeparateProfileChallengeEnabledInternal(int userId) {
-        synchronized (mSeparateChallengeLock) {
-            return mStorage.getBoolean(SEPARATE_PROFILE_CHALLENGE_KEY, false, userId);
-        }
+        return mStorage.getBoolean(SEPARATE_PROFILE_CHALLENGE_KEY, false, userId);
     }
 
     @Override
