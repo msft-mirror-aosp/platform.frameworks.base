@@ -97,6 +97,7 @@ import android.os.IBinder;
 import android.os.LocaleList;
 import android.os.Looper;
 import android.os.PowerManager;
+import android.os.Process;
 import android.os.RemoteException;
 import android.os.ResultReceiver;
 import android.os.SystemClock;
@@ -1667,9 +1668,14 @@ final class VirtualDeviceImpl extends IVirtualDevice.Stub
     }
 
     private void checkCallerIsDeviceOwner() {
-        if (Binder.getCallingUid() != mOwnerUid) {
+        final int callingUid = Binder.getCallingUid();
+        checkUidIsDeviceOwner(callingUid);
+    }
+
+    private void checkUidIsDeviceOwner(int uid) {
+        if (uid != mOwnerUid && uid != Process.SYSTEM_UID) {
             throw new SecurityException(
-                "Caller is not the owner of this virtual device");
+                    "Caller is not the owner of this virtual device");
         }
     }
 
@@ -1822,7 +1828,11 @@ final class VirtualDeviceImpl extends IVirtualDevice.Stub
     }
 
     void playSoundEffect(int effectType) {
-        checkCallerIsDeviceOwner();
+        final int callingUid = Binder.getCallingUid();
+        // Allow virtual device owner and apps running on the virtual device to play sound effects.
+        if (!isAppRunningOnVirtualDevice(callingUid)) {
+            checkUidIsDeviceOwner(callingUid);
+        }
         if (mSoundEffectListener == null) {
             return;
         }

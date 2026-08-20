@@ -18,6 +18,7 @@ package com.android.server.pm;
 import static android.content.pm.PackageManager.FEATURE_AUTOMOTIVE;
 import static android.content.pm.PackageManager.FEATURE_EMBEDDED;
 import static android.content.pm.PackageManager.FEATURE_LEANBACK;
+import static android.content.pm.PackageManager.FEATURE_MANAGED_USERS;
 import static android.content.pm.PackageManager.FEATURE_WATCH;
 import static android.multiuser.Flags.FLAG_BLOCK_PRIVATE_SPACE_CREATION;
 import static android.multiuser.Flags.FLAG_ENABLE_PRIVATE_SPACE_FEATURES;
@@ -581,6 +582,26 @@ public final class UserManagerServiceMockedTest {
 
         mockDeviceDemoMode(/* enabled= */ false);
         assertThat(mUms.isUserSwitcherEnabled(USER_ID)).isTrue();
+    }
+
+    @Test
+    public void testCreateProfileForUserEvenWhenDisallowed_appliesDevicePolicyRestrictions()
+            throws Exception {
+        int candidateParentId = mUms.getMainUserId();
+        assumeTrue(mUms.canAddMoreProfilesToUser(USER_TYPE_PROFILE_PRIVATE, candidateParentId,
+                false));
+
+        String restriction = UserManager.DISALLOW_FUN;
+        UserInfo user = mUmi.createProfileForUserEvenWhenDisallowed(
+                "private profile",
+                USER_TYPE_PROFILE_PRIVATE,
+                /* flags= */ 0,
+                candidateParentId,
+                /* disallowedPackages= */ null,
+                /* token= */ null,
+                new String[]{restriction});
+
+        assertThat(mUms.hasUserRestriction(restriction, user.id)).isTrue();
     }
 
     @Test
