@@ -17,6 +17,7 @@
 package com.android.systemui.media.controls.pipeline
 
 import android.annotation.SuppressLint
+import android.annotation.UserIdInt
 import android.app.BroadcastOptions
 import android.app.Notification
 import android.app.Notification.EXTRA_SUBSTITUTE_APP_NAME
@@ -809,8 +810,12 @@ class MediaDataManager(
             }
         }
 
+        val appUid = appInfo?.uid ?: Process.INVALID_UID
         // Album art
-        var artworkBitmap = metadata?.let { loadBitmapFromUri(it) }
+        var artworkBitmap =
+            metadata?.let {
+                loadBitmapFromUri(it, sbn.user.identifier, appUid, sbn.packageName)
+            }
         if (artworkBitmap == null) {
             artworkBitmap = metadata?.getBitmap(MediaMetadata.METADATA_KEY_ART)
         }
@@ -896,7 +901,6 @@ class MediaDataManager(
 
         val currentEntry = mediaEntries.get(key)
         val instanceId = currentEntry?.instanceId ?: logger.getNewInstanceId()
-        val appUid = appInfo?.uid ?: Process.INVALID_UID
 
         if (isNewlyActiveEntry) {
             logSingleVsMultipleMediaAdded(appUid, sbn.packageName, instanceId)
@@ -1238,11 +1242,17 @@ class MediaDataManager(
     }
 
     /** Load a bitmap from the various Art metadata URIs */
-    private fun loadBitmapFromUri(metadata: MediaMetadata): Bitmap? {
+    private fun loadBitmapFromUri(
+        metadata: MediaMetadata,
+        @UserIdInt userId: Int,
+        appUid: Int,
+        packageName: String,
+    ): Bitmap? {
         for (uri in ART_URIS) {
             val uriString = metadata.getString(uri)
             if (!TextUtils.isEmpty(uriString)) {
-                val albumArt = loadBitmapFromUri(Uri.parse(uriString))
+                val albumArt =
+                    loadBitmapFromUriForUser(Uri.parse(uriString), userId, appUid, packageName)
                 if (albumArt != null) {
                     if (DEBUG) Log.d(TAG, "loaded art from $uri")
                     return albumArt
