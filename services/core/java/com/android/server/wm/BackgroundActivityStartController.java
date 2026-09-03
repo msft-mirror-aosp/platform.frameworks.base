@@ -286,7 +286,7 @@ public class BackgroundActivityStartController {
             int realCallingSdkSandboxUidToAppUid =
                     Process.getAppUidForSdkSandboxUid(realCallingUid);
 
-            if (mService.hasActiveVisibleWindow(realCallingSdkSandboxUidToAppUid)) {
+            if (mService.hasActiveVisibleNotPinnedWindow(realCallingSdkSandboxUidToAppUid)) {
                 return logStartAllowedAndReturnCode(BAL_ALLOW_SDK_SANDBOX,
                         /*background*/ false, callingUid, realCallingUid, intent,
                         "uid in SDK sandbox has visible (non-toast) window");
